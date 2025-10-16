@@ -1,0 +1,125 @@
+.class Lcom/gateio/gateio/point/trans/confirm/PointTransConfirmPresenter$3;
+.super Lcom/gateio/rxjava/basemvp/BasePresenter$CustomObserver;
+.source "PointTransConfirmPresenter.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/gateio/gateio/point/trans/confirm/PointTransConfirmPresenter;->sendBindMobileCode()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/gateio/rxjava/basemvp/BasePresenter<",
+        "Lcom/gateio/gateio/point/trans/confirm/PointTransConfirmContract$IView;",
+        "Ljava/lang/Void;",
+        ">.CustomObserver<",
+        "Lcom/gateio/http/entity/ResMsg;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/gateio/gateio/point/trans/confirm/PointTransConfirmPresenter;
+
+
+# direct methods
+.method constructor <init>(Lcom/gateio/gateio/point/trans/confirm/PointTransConfirmPresenter;)V
+    .locals 0
+
+    .line 1
+    .line 2
+    iput-object p1, p0, Lcom/gateio/gateio/point/trans/confirm/PointTransConfirmPresenter$3;->this$0:Lcom/gateio/gateio/point/trans/confirm/PointTransConfirmPresenter;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-direct {p0, p1}, Lcom/gateio/rxjava/basemvp/BasePresenter$CustomObserver;-><init>(Lcom/gateio/rxjava/basemvp/BasePresenter;)V
+
+    .line 6
+    return-void
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+.end method
+
+
+# virtual methods
+.method public onNext(Lcom/gateio/http/entity/ResMsg;)V
+    .locals 2
+
+    .line 2
+    invoke-virtual {p1}, Lcom/gateio/http/entity/ResMsg;->getCode()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string/jumbo v1, "0"
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 3
+    iget-object p1, p0, Lcom/gateio/gateio/point/trans/confirm/PointTransConfirmPresenter$3;->this$0:Lcom/gateio/gateio/point/trans/confirm/PointTransConfirmPresenter;
+
+    invoke-static {p1}, Lcom/gateio/gateio/point/trans/confirm/PointTransConfirmPresenter;->access$200(Lcom/gateio/gateio/point/trans/confirm/PointTransConfirmPresenter;)Lcom/gateio/rxjava/basemvp/IBaseView;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/gateio/gateio/point/trans/confirm/PointTransConfirmContract$IView;
+
+    invoke-interface {p1}, Lcom/gateio/gateio/point/trans/confirm/PointTransConfirmContract$IView;->showTimerCount()V
+
+    goto :goto_0
+
+    .line 4
+    :cond_0
+    invoke-virtual {p1}, Lcom/gateio/http/entity/ResMsg;->getMessage()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lcom/gateio/common/view/MyToast;->show(Ljava/lang/String;)V
+
+    :goto_0
+    return-void
+.end method
+
+.method public bridge synthetic onNext(Ljava/lang/Object;)V
+    .locals 0
+
+    .line 1
+    check-cast p1, Lcom/gateio/http/entity/ResMsg;
+
+    invoke-virtual {p0, p1}, Lcom/gateio/gateio/point/trans/confirm/PointTransConfirmPresenter$3;->onNext(Lcom/gateio/http/entity/ResMsg;)V
+
+    return-void
+.end method

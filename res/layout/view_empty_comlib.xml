@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/gateio_empty_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_empty_com" />
+    <TextView android:textSize="@dimen/ts_14" android:textColor="@color/uikit_text_3_v3" android:gravity="center" android:id="@id/gateio_empty_text" android:paddingTop="@dimen/margin_padding_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/margin_loaned_nodata" />
+</merge>

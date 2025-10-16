@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/bg_wallet" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/layout_header" layout="@layout/layout_main_header" />
+    <FrameLayout android:id="@id/fl_content" style="@style/match_match" />
+</LinearLayout>

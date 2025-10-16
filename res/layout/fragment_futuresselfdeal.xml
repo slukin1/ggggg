@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <CheckBox android:textSize="@dimen/text_size_14" android:textColor="@color/uikit_color_999999_8692a3" android:gravity="center_vertical" android:id="@id/cb_current" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:checked="false" android:text="@string/txt_warning_hidepairs" android:paddingStart="@dimen/margin_padding_5" android:layout_marginStart="16.0dip" style="@style/cb_chain" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/rl_recyel_label" android:paddingTop="@dimen/margin_padding_8" android:paddingBottom="@dimen/margin_padding_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="@color/uikit_color_999999_8692a3" android:text="@string/future_jswtid" android:layout_weight="1.2" style="@style/ww_wrap" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/uikit_color_999999_8692a3" android:id="@id/tv_number_label" android:text="@string/trans_jyl" android:layout_weight="1.2" android:layout_marginStart="4.0dip" style="@style/ww_wrap" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/uikit_color_999999_8692a3" android:text="@string/trans_price" android:layout_marginStart="4.0dip" style="@style/ww_wrap" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/uikit_color_999999_8692a3" android:gravity="end" android:text="@string/trans_time" android:layout_marginStart="4.0dip" style="@style/ww_wrap" />
+    </LinearLayout>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/refresh" style="@style/match_match">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/futures_self_list" android:scrollbars="none" android:fadingEdge="none" android:overScrollMode="never" style="@style/match_match" />
+            <include android:id="@id/empty_view" layout="@layout/layout_empty_view" />
+        </LinearLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

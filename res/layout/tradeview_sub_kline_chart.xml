@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_chart_common_height" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/uikit_text_size_10" android:textColor="@color/uikit_text_4" android:gravity="start" android:id="@id/tvIndicator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textDirection="ltr" android:layout_marginStart="@dimen/uikit_margin_padding_8" />
+    <com.sparkhuu.klinelib.chart.CustomCombinedChart android:id="@id/combineChart" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:layout_gravity="bottom" android:id="@id/divider" android:background="@color/line_grid" android:layout_width="fill_parent" android:layout_height="0.39999998dip" />
+</merge>

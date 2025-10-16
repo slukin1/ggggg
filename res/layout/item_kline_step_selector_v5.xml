@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.third.tradeview.chart.view.CustomClickRadioButton android:id="@id/tab_item" android:text="@string/five_min" style="@style/kline_step_normal"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

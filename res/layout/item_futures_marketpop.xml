@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:padding="@dimen/margin_padding_10" style="@style/wrap_wrap_h"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:layout_width="100.0dip" style="@style/wrap_wrap_h">
+        <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/futures_contract_name" style="@style/tv_user_white_12" />
+        <com.gateio.common.view.CornerTextView android:textColor="@color/uikit_color_2354e6" android:id="@id/futures_contract_index" android:background="@color/uikit_color_10_2354e6" android:paddingTop="1.0dip" android:paddingBottom="1.0dip" android:text="@string/index_title" android:paddingStart="2.0dip" android:paddingEnd="2.0dip" android:layout_marginStart="2.0dip" app:radius="1.0dip" style="@style/tv_user_black_10" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/futures_contract_price" android:layout_width="80.0dip" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/text_size_12" android:id="@id/futures_contract_rate" android:layout_width="80.0dip" android:layout_height="wrap_content" />
+    <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/futures_contract_amount" android:layout_width="100.0dip" style="@style/tv_user_gray_12" />
+</LinearLayout>

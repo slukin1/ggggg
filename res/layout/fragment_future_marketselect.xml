@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/home_sort" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="@color/uikit_color_999999_8692a3" android:id="@id/tv_market_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/futures" />
+        <TextView android:textColor="@color/uikit_color_999999_8692a3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/uikit_color_999999_8692a3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trans_jysl" />
+        <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <com.gateio.gateio.view.GateioSortLabel android:id="@id/tv_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="2.0dip" app:sortLabel="@string/c2c_price" app:sortTag="3" />
+        <TextView android:textColor="@color/uikit_color_999999_8692a3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/" />
+        <com.gateio.gateio.view.GateioSortLabel android:id="@id/tv_rate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="2.0dip" app:sortLabel="@string/region_lib" app:sortTag="4" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/ry_markets" android:visibility="gone" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+    <include android:id="@id/empty_view" layout="@layout/layout_empty_view" />
+</LinearLayout>

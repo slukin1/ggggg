@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TestTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+    </style>
+    <style name="Uikit.Theme.DayNight" parent="@style/Theme.AppCompat.DayNight">
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="Uikit.Theme.DayNight.Dialog" parent="@style/Theme.AppCompat.DayNight.Dialog">
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="Uikit.Theme.DayNight.Dialog.Alert" parent="@style/Theme.AppCompat.DayNight.Dialog.Alert">
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="Uikit.Theme.DayNight.NoActionBar" parent="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+</resources>

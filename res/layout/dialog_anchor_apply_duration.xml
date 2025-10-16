@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_root" android:background="@color/bg_wallet" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/uikit_main_text_color" android:gravity="center_vertical" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_anchor_end_time" android:layout_alignTop="@id/btnSubmit" android:layout_alignBottom="@id/btnSubmit" android:layout_marginStart="@dimen/margin_padding_16" />
+    <com.gateio.lib.uikit.button.GTButtonV3 android:id="@id/btnSubmit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_10" android:text="@string/user_qd" android:layout_marginEnd="@dimen/margin_padding_16" android:layout_alignParentEnd="true" app:uikit_buttonDimenV3="small" app:uikit_buttonTypeV3="primary" />
+    <com.contrarywind.view.WheelView android:id="@id/wheel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/btnSubmit" />
+</RelativeLayout>

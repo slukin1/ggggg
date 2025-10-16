@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="end" android:orientation="vertical" android:background="@drawable/bg_item_wallet_shadow" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.common.view.CornerLinearLayout android:background="@color/color_ffffff_22344d" android:maxWidth="200.0dip" android:paddingStart="15.0dip" android:paddingEnd="15.0dip" app:radius="4.0dip" style="@style/wrap_wrap">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_reminder_config" android:scrollbars="none" android:fadingEdge="none" android:overScrollMode="never" style="@style/match_match" />
+    </com.gateio.common.view.CornerLinearLayout>
+</LinearLayout>

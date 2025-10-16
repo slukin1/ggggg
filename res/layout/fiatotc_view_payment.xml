@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.common.view.CornerView android:id="@id/payment_color" android:layout_width="@dimen/uikit_dp_2" android:layout_height="@dimen/uikit_dp_8" app:radius="8.0dip" />
+    <TextView android:textSize="@dimen/ts_14" android:textColor="@color/uikit_text_3_v3" android:id="@id/payment_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_padding_4" style="@style/Uikit_font_sans_2_0_weight_400" />
+</merge>

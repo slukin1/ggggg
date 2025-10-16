@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruffian.library.widget.RLinearLayout android:orientation="vertical" android:paddingTop="@dimen/uikit_margin_padding_12" android:layout_width="fill_parent" android:layout_height="wrap_content" app:background_normal="@color/uikit_layer_1_v5" app:corner_radius_top_left="@dimen/uikit_dp_16" app:corner_radius_top_right="@dimen/uikit_dp_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_text_primary_v5" android:gravity="center" android:id="@id/retake" android:paddingLeft="@dimen/uikit_margin_padding_16" android:paddingRight="@dimen/uikit_margin_padding_16" android:layout_width="fill_parent" android:layout_height="56.0dip" android:text="@string/kyc_re_take" style="@style/Uikit_font_sans_5_0_weight_500" />
+    <View android:background="@color/uikit_line_divider_v5" android:layout_width="fill_parent" android:layout_height="@dimen/uikit_dp_1" />
+    <TextView android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_text_primary_v5" android:gravity="center" android:id="@id/cancel" android:paddingLeft="@dimen/uikit_margin_padding_16" android:paddingRight="@dimen/uikit_margin_padding_16" android:layout_width="fill_parent" android:layout_height="53.0dip" android:text="@string/kyc_cancel" style="@style/Uikit_font_sans_5_0_weight_500" />
+</com.ruffian.library.widget.RLinearLayout>

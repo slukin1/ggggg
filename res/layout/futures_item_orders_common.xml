@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_root" android:paddingLeft="16.0dip" android:paddingTop="8.0dip" android:paddingRight="16.0dip" android:paddingBottom="8.0dip" style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" style="@style/match_wrap_h">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="12.0dip">
+            <com.gateio.lib.uikit.text.SpecialPairsNameView android:id="@id/orders_name" android:text="---" style="@style/Text_text_primary_16_weight_600_v5" />
+            <com.gateio.lib.uikit.tag.GTTagV5 android:id="@id/ordersTagFreePosition" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4.0dip" app:uikit_tagSizeV5="tag14" app:uikit_tagTextV5="@string/futures_pos_voucher_free" app:uikit_tagTypeV5="new_tag" />
+        </LinearLayout>
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <TextView android:id="@id/tv_time" android:layout_marginStart="4.0dip" style="@style/Text_text_secondary_12_weight_400_v5" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_marginTop="4.0dip" style="@style/match_wrap_h">
+        <com.gateio.lib.uikit.tag.GTTagV5 android:id="@id/orders_side" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="4.0dip" app:radius="2.0dip" app:uikit_tagSizeV5="tag16" app:uikit_tagTextV5="@string/futures_more" app:uikit_tagTypeV5="gray" />
+        <com.gateio.lib.uikit.tag.GTTagV5 android:id="@id/orders_stop_lose" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="4.0dip" app:radius="2.0dip" app:uikit_tagSizeV5="tag16" app:uikit_tagTextV5="@string/futures_zyzs" app:uikit_tagTypeV5="gray" />
+        <com.gateio.lib.uikit.tag.GTTagV5 android:id="@id/orders_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="4.0dip" app:radius="2.0dip" app:uikit_tagSizeV5="tag16" app:uikit_tagTextV5="@string/exchange_limit_v1" app:uikit_tagTypeV5="gray" />
+        <com.gateio.lib.uikit.tag.GTTagV5 android:id="@id/tvSmartMarket" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="4.0dip" app:radius="2.0dip" app:uikit_tagSizeV5="tag16" app:uikit_tagTextV5="@string/exchange_smart_market" app:uikit_tagTypeV5="gray" />
+        <com.gateio.lib.uikit.tag.GTTagV5 android:id="@id/orders_position" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/futures_position_all" android:layout_marginEnd="4.0dip" app:radius="2.0dip" app:uikit_tagSizeV5="tag16" app:uikit_tagTypeV5="gray" />
+        <com.gateio.lib.uikit.tag.GTTagV5 android:id="@id/orders_lever" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="4.0dip" app:radius="2.0dip" app:uikit_tagSizeV5="tag16" app:uikit_tagTypeV5="gray" />
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <com.gateio.lib.uikit.progress_bar.GTProgressV5 android:layout_gravity="center_vertical" android:id="@id/progressBar" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="4.0dip" android:layout_marginEnd="4.0dip" />
+        <TextView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/progressBarText" android:visibility="gone" android:text="--" style="@style/Text_text_secondary_12_weight_400_v5" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:id="@id/tv_title_left" android:layout_width="fill_parent" android:text="--" style="@style/Text_text_secondary_12_weight_400_v5" />
+            <LinearLayout android:layout_width="fill_parent" style="@style/wrap_wrap">
+                <TextView android:id="@id/tv_order_price" style="@style/Text_text_primary_14_weight_500_v5" />
+                <TextView android:id="@id/tv_order_price2" android:visibility="gone" style="@style/Text_text_primary_14_weight_500_v5" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="4.0dip">
+            <TextView android:id="@id/tv_title_center" android:layout_width="fill_parent" android:text="--" style="@style/Text_text_secondary_12_weight_400_v5" />
+            <TextView android:id="@id/tv_amount" android:layout_width="fill_parent" style="@style/Text_text_primary_14_weight_500_v5" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="4.0dip">
+            <TextView android:gravity="end" android:id="@id/tv_title_right" android:layout_width="fill_parent" android:text="--" style="@style/Text_text_secondary_12_weight_400_v5" />
+            <LinearLayout android:gravity="end" android:layout_width="fill_parent" style="@style/wrap_wrap">
+                <TextView android:gravity="end" android:id="@id/tv_order_number" style="@style/Text_text_primary_14_weight_500_v5" />
+                <TextView android:gravity="end" android:id="@id/tv_price_trigger_value2" android:visibility="gone" style="@style/Text_text_primary_14_weight_500_v5" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/ll_line_2" android:visibility="gone" android:layout_marginTop="12.0dip" style="@style/match_wrap_h">
+        <LinearLayout android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/match_wrap">
+            <LinearLayout android:id="@id/layout_order_price" style="@style/match_wrap_h">
+                <TextView android:id="@id/tv_line2_first" android:text="@string/futures_track_order_price_title" style="@style/Text_text_secondary_12_weight_400_v5" />
+                <com.gateio.uiComponent.GateIconFont android:textSize="10.0sp" android:textColor="@color/uikit_icon_quaternary_v5" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+            </LinearLayout>
+            <TextView android:id="@id/tv_price" android:text="@string/futures_market" style="@style/Text_text_primary_14_weight_500_v5" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="0.0dip" android:layout_weight="1.0" android:layout_marginStart="4.0dip" style="@style/match_wrap">
+            <LinearLayout android:id="@id/layout_amount" style="@style/match_wrap_h">
+                <TextView android:id="@id/tv_amount_unit" android:text="@string/futures_v5_amount" style="@style/Text_text_secondary_12_weight_400_v5" />
+                <com.gateio.uiComponent.GateIconFont android:textSize="10.0sp" android:textColor="@color/uikit_icon_quaternary_v5" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+            </LinearLayout>
+            <TextView android:id="@id/tv_amount_count" style="@style/Text_text_primary_14_weight_500_v5" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="4.0dip">
+            <FrameLayout android:gravity="end" android:layout_weight="1.0" style="@style/match_wrap" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_stop" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <TextView android:id="@id/tv_stop_title" android:text="@string/futures_zy_zs" style="@style/Text_text_secondary_12_weight_400_v5" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/layoutEdit" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/uikit_function_trade_sell_v5" android:id="@id/tv_stop_profit" android:text="--" style="@style/Text_text_primary_14_weight_500_v5" />
+            <TextView android:text=" / " style="@style/Text_text_primary_14_weight_500_v5" />
+            <TextView android:textColor="@color/uikit_function_trade_buy_v5" android:id="@id/tv_stop_loss" android:text="--" style="@style/Text_text_primary_14_weight_500_v5" />
+            <com.gateio.uiComponent.GateIconFont android:textSize="12.0sp" android:textColor="@color/uikit_text_secondary_v5" android:gravity="center_vertical" android:id="@id/iv_edit" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="" android:paddingStart="4.0dip" android:paddingEnd="10.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+        <com.gateio.lib.uikit.button.GTButtonV5 android:id="@id/tv_edit_position" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/futures_order_cur_normal_edit" android:layout_weight="1.0" android:layout_marginEnd="8.0dip" app:uikit_buttonDimenV5="xSmall" app:uikit_buttonTypeV5="secondary_gray" />
+        <com.gateio.lib.uikit.button.GTButtonV5 android:id="@id/tv_track" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/exchange_track_order" android:layout_weight="1.0" android:layout_marginEnd="8.0dip" app:uikit_buttonDimenV5="xSmall" app:uikit_buttonTypeV5="secondary_gray" />
+        <com.gateio.lib.uikit.button.GTButtonV5 android:id="@id/tv_cancel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/futures_order_cur_normal_cancel" android:layout_weight="1.0" app:uikit_buttonDimenV5="xSmall" app:uikit_buttonTypeV5="secondary_gray" />
+    </LinearLayout>
+    <View android:id="@id/viewDivider" android:layout_width="fill_parent" android:layout_marginTop="16.0dip" style="@style/view_line_divider_v5" />
+</LinearLayout>

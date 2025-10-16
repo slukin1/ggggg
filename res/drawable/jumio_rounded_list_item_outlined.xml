@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="?jumio_bubble_background_selected" />
+                    <corners android:radius="12.0dip" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <stroke android:width="?jumio_bubble_outline_width_selected" android:color="?jumio_bubble_outline_selected" />
+                    <corners android:radius="12.0dip" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_focused="true">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="?jumio_bubble_background_selected" />
+                    <corners android:radius="12.0dip" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <stroke android:width="?jumio_bubble_outline_width_selected" android:color="?jumio_bubble_outline_selected" />
+                    <corners android:radius="12.0dip" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="?jumio_bubble_background" />
+            <corners android:radius="12.0dip" />
+            <stroke android:width="?jumio_bubble_outline_width" android:color="?jumio_bubble_outline" />
+        </shape>
+    </item>
+</selector>

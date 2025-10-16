@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/uikit_bg_market_item" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/layout_header" layout="@layout/layout_header_normal" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/refresh" android:layout_height="wrap_content" android:layout_below="@id/layout_header" style="@style/match_wrap">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/ll_loan_repay_label" layout="@layout/label_loan_repay" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_loan_records" android:focusableInTouchMode="true" android:scrollbars="none" android:fadingEdge="none" android:overScrollMode="never" style="@style/match_wrap" />
+        </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <com.gateio.lib.uikit.state.GateEmptyViewV2 android:id="@id/tv_empty" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/length_64" />
+</RelativeLayout>

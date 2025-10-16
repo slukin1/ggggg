@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/main" android:background="@color/uikit_bg_primary_v5" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gateio.lib.uikit.title.GTNavBarV5 android:id="@id/nav_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:text="@string/fiatotc_recently_viewed" />
+    <com.gateio.lib.uikit.tab.v5.GTTabsV5 android:id="@id/recent_indicator" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="32.0dip" android:layout_marginBottom="12.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

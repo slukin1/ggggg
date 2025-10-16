@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="16.0dip" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="start" android:orientation="horizontal" android:id="@id/uikit_footer_ll_checkbox" android:visibility="gone" android:layout_marginBottom="@dimen/uikit_margin_padding_16" app:layout_constraintBottom_toTopOf="@id/fl_bottom" app:layout_constraintStart_toStartOf="parent" style="@style/uikit_match_wrap">
+        <com.gateio.lib.uikit.widget.GTCheckBoxV3 android:textSize="@dimen/uikit_text_body_v3" android:textColor="@color/uikit_text_1_v3" android:id="@id/uikit_footer_checkbox" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginTop="2.0dip" android:checked="false" style="@style/Uikit_font_sans_2_0_weight_500" />
+        <TextView android:textSize="@dimen/uikit_text_body_v3" android:textColor="@color/uikit_text_1_v3" android:layout_gravity="center_vertical" android:id="@id/uikit_footer_checkbox_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_weight="1.0" android:paddingStart="8.0dip" style="@style/Uikit_font_sans_2_0_weight_500" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.gateio.lib.uikit.button.GTButtonV3 android:id="@id/uikit_horizontal_second_btn" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="12.0dip" app:uikit_buttonDimenV3="large" app:uikit_buttonTypeV3="outlined" />
+        <com.gateio.lib.uikit.button.GTButtonV3 android:id="@id/uikit_footer_btn" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:uikit_buttonDimenV3="large" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/uikit_ll_footer_vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/uikit_text_3_v3" android:id="@id/uikit_footer_description" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="4.0dip" style="@style/Uikit_font_sans_2_0_weight_400" />
+        <com.gateio.lib.uikit.button.GTButtonV3 android:id="@id/uikit_vertical_second_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" app:uikit_buttonDimenV3="large" app:uikit_buttonTypeV3="outlined" />
+    </LinearLayout>
+</LinearLayout>

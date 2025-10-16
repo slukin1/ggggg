@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/ll_root" android:paddingTop="@dimen/margin_padding_4" style="@style/match_wrap" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/view_top_space" android:layout_width="fill_parent" android:layout_height="@dimen/uikit_margin_padding_12" />
+    <TextView android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_text_1_v3" android:ellipsize="end" android:id="@id/tv_new_title" android:paddingLeft="@dimen/uikit_margin_padding_12" android:paddingRight="@dimen/uikit_margin_padding_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="----" android:maxLines="2" android:lineSpacingExtra="3.0dip" android:paddingHorizontal="@dimen/uikit_margin_padding_12" style="@style/Uikit_font_sans_2_0_weight_600" />
+    <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_3_v3" android:ellipsize="end" android:id="@id/tv_new_title2" android:paddingLeft="@dimen/uikit_margin_padding_12" android:paddingRight="@dimen/uikit_margin_padding_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="---" android:maxLines="2" android:lineSpacingExtra="3.0dip" android:paddingHorizontal="@dimen/uikit_margin_padding_12" style="@style/Uikit_font_sans_2_0_weight_400" />
+    <LinearLayout android:paddingLeft="@dimen/uikit_margin_padding_12" android:paddingRight="@dimen/uikit_margin_padding_12" android:layout_marginTop="10.0dip" android:paddingHorizontal="@dimen/uikit_margin_padding_12" style="@style/match_wrap_h">
+        <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_4_v3" android:gravity="center" android:id="@id/tv_new_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="---" style="@style/Uikit_font_sans_2_0_weight_400" />
+        <View android:layout_height="0.100000024dip" style="@style/ww_wrap" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_new_look" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.gateio.uiComponent.GateIconFont android:textSize="12.0dip" android:textColor="@color/uikit_text_4_v3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+            <TextView android:textColor="@color/uikit_text_4_v3" android:gravity="center" android:id="@id/tv_new_look" android:text="--" android:layout_marginStart="@dimen/margin_padding_4" style="@style/tv_user_gray_12" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_new_share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/uikit_margin_padding_12">
+            <com.gateio.uiComponent.GateIconFont android:textSize="12.0dip" android:textColor="@color/uikit_text_4_v3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+            <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_4_v3" android:gravity="center" android:id="@id/tv_new_share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share" android:layout_marginStart="@dimen/margin_padding_4" style="@style/Uikit_font_sans_2_0_weight_400" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/uikit_divider_1_v3" android:layout_marginLeft="@dimen/uikit_margin_padding_12" android:layout_marginTop="@dimen/uikit_margin_padding_16" android:layout_marginRight="@dimen/uikit_margin_padding_12" android:layout_marginHorizontal="@dimen/uikit_margin_padding_12" style="@style/uikit_view_line_mian_v" />
+</LinearLayout>

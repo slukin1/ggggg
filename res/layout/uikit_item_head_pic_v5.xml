@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:background="@drawable/uikit_currency_title_bac_raec" android:layout_width="108.0dip" android:layout_height="108.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="50.0sp" android:textColor="@color/uikit_text_tertiary_v5" android:id="@id/uikit_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" style="@style/Uikit_font_sans_5_0_weight_600" />
+</LinearLayout>

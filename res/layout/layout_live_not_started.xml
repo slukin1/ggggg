@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_not_start" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/length_44">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/live_bg_rounded_4_card3" android:layout_width="60.0dip" android:layout_height="60.0dip">
+            <TextView android:textSize="@dimen/text_size_28" android:textStyle="bold" android:textColor="@color/uikit_text_1_v3" android:id="@id/iv_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00" />
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/uikit_text_3_v3" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/time_day" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/live_bg_rounded_4_card3" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginStart="@dimen/length_4">
+            <TextView android:textSize="@dimen/text_size_28" android:textStyle="bold" android:textColor="@color/uikit_text_1_v3" android:id="@id/iv_hour" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00" />
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/uikit_text_3_v3" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/time_hour" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/live_bg_rounded_4_card3" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginStart="@dimen/length_4">
+            <TextView android:textSize="@dimen/text_size_28" android:textStyle="bold" android:textColor="@color/uikit_text_1_v3" android:id="@id/iv_minute" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00" />
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/uikit_text_3_v3" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/time_minute" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/live_bg_rounded_4_card3" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginStart="@dimen/length_4">
+            <TextView android:textSize="@dimen/text_size_28" android:textStyle="bold" android:textColor="@color/uikit_text_1_v3" android:id="@id/iv_second" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00" />
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/uikit_text_3_v3" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/time_second" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.gateio.lib.uikit.button.GTButtonV5 android:layout_gravity="center" android:id="@id/btn_notify" android:padding="@dimen/length_12" android:layout_width="226.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/length_16" android:layout_marginBottom="@dimen/length_44" android:text="@string/live_notify_me" app:uikit_buttonDimenV5="small" app:uikit_buttonTypeV5="secondary_gray" />
+</LinearLayout>

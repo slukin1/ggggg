@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/alivc_dialog_error_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/alivc_common_font_14" android:textColor="@color/alivc_common_font_white_light" android:gravity="center" android:id="@id/msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/alivc_net_state_mobile" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/alivc_common_margin_16">
+        <TextView android:textSize="@dimen/alivc_common_font_15" android:textColor="@color/alivc_common_font_white_light" android:gravity="center" android:id="@id/continue_play" android:background="@drawable/alivc_rr_bg_white" android:layout_width="@dimen/alivc_common_width_group_82" android:layout_height="@dimen/alivc_common_height_group_30" android:text="@string/alivc_net_state_mobile_yes" />
+        <TextView android:textSize="@dimen/alivc_common_font_15" android:textColor="@color/alivc_common_font_cyan_light" android:gravity="center" android:id="@id/stop_play" android:background="@drawable/alivc_rr_bg_blue" android:layout_width="@dimen/alivc_common_width_group_82" android:layout_height="@dimen/alivc_common_height_group_30" android:text="@string/alivc_net_state_mobile_no" android:layout_marginStart="@dimen/alivc_common_margin_30" />
+    </LinearLayout>
+</LinearLayout>

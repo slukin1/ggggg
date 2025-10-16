@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingTop="@dimen/length_12" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recommendCardList" android:paddingLeft="@dimen/length_12" android:paddingRight="@dimen/length_12" android:visibility="visible" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:layout_gravity="center|left" android:id="@id/gt_gradient_start" android:background="@drawable/trans_v1_gradient_100_0" android:layout_width="@dimen/length_16" android:layout_height="@dimen/length_32" android:elevation="1.0dip" />
+        <View android:layout_gravity="center|right" android:id="@id/gt_gradient" android:background="@drawable/trans_v1_gradient_0_100" android:layout_width="@dimen/length_16" android:layout_height="@dimen/length_32" android:elevation="1.0dip" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="@dimen/defi_dp8" android:paddingBottom="@dimen/defi_dp8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/defi_dp16" android:paddingEnd="@dimen/defi_dp16"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon_trait" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/defisdk_ic_trait_icon" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/defi_dp8" android:layout_alignParentStart="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toEndOf="@id/icon_trait">
+        <TextView android:textSize="@dimen/defi_sp14" android:textColor="@color/defi_black" android:id="@id/value" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/defi_sp14" android:textColor="@color/defi_dove" android:id="@id/trait" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

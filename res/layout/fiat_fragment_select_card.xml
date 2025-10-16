@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/uikit_dp_16" android:paddingRight="@dimen/uikit_dp_16" android:paddingBottom="@dimen/uikit_dp_16" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/cardListView" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/uikit_dp_8" android:layout_marginBottom="@dimen/uikit_dp_8" android:layout_weight="1.0" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <com.gateio.lib.uikit.button.GTButtonV5 android:id="@id/confirmButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_16" android:text="@string/user_confirm" app:uikit_buttonDimenV5="medium" app:uikit_buttonTypeV5="primary_black" />
+    <com.gateio.lib.uikit.button.GTButtonV5 android:id="@id/addCardButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_12" android:text="@string/fiat_channel_add_card" app:uikit_buttonDimenV5="medium" app:uikit_buttonTypeV5="secondary_gray" />
+</LinearLayout>

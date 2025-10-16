@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.common.view.CornerLinearLayout android:gravity="center_vertical" android:paddingLeft="@dimen/dp_4" android:paddingRight="@dimen/dp_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/dp_4" app:gate_view_radius="@dimen/uikit_radius_xsmall_v5"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.widget.GTUnderlineTextViewV5 android:textSize="@dimen/uikit_text_size_10" android:ellipsize="end" android:id="@id/tvLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:layoutDirection="ltr" app:uikit_underline_dash="false" app:uikit_underline_dashclick="false" style="@style/Uikit_font_sans_5_0_weight_400" />
+</com.gateio.common.view.CornerLinearLayout>

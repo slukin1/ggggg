@@ -1,0 +1,225 @@
+.class public interface abstract Lcom/gateio/biz/base/nps/Api;
+.super Ljava/lang/Object;
+.source "Api.kt"
+
+# interfaces
+.implements Lcom/gateio/http/BaseApiService;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/gateio/biz/base/nps/Api$Companion;
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u00004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010$\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0008f\u0018\u0000 \u00102\u00020\u0001:\u0001\u0010J\u001e\u0010\u0007\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00060\u00050\u00042\u0008\u0008\u0001\u0010\u0003\u001a\u00020\u0002H\'JC\u0010\u000f\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u000e0\u00050\u00042\u0008\u0008\u0001\u0010\u0008\u001a\u00020\u00022\u0008\u0008\u0001\u0010\t\u001a\u00020\u00022\u0019\u0008\u0001\u0010\r\u001a\u0013\u0012\u0004\u0012\u00020\u0002\u0012\t\u0012\u00070\u000b\u00a2\u0006\u0002\u0008\u000c0\nH\'\u00f8\u0001\u0000\u0082\u0002\u0006\n\u0004\u0008!0\u0001\u00a8\u0006\u0011\u00c0\u0006\u0001"
+    }
+    d2 = {
+        "Lcom/gateio/biz/base/nps/Api;",
+        "Lcom/gateio/http/BaseApiService;",
+        "",
+        "type",
+        "Lio/reactivex/rxjava3/core/y;",
+        "Lcom/gateio/http/entity/HttpResultV2;",
+        "Lcom/gateio/biz/base/model/RootBean;",
+        "questionnaireRule",
+        "userId",
+        "token",
+        "",
+        "",
+        "Lkotlin/jvm/JvmSuppressWildcards;",
+        "params",
+        "Lcom/gateio/biz/base/model/CheckBean;",
+        "check",
+        "Companion",
+        "biz_base_core_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+.end annotation
+
+
+# static fields
+.field public static final Companion:Lcom/gateio/biz/base/nps/Api$Companion;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    .line 2
+    sget-object v0, Lcom/gateio/biz/base/nps/Api$Companion;->$$INSTANCE:Lcom/gateio/biz/base/nps/Api$Companion;
+
+    .line 3
+    .line 4
+    sput-object v0, Lcom/gateio/biz/base/nps/Api;->Companion:Lcom/gateio/biz/base/nps/Api$Companion;
+
+    .line 5
+    return-void
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+.end method
+
+
+# virtual methods
+.method public abstract check(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)Lio/reactivex/rxjava3/core/y;
+    .param p1    # Ljava/lang/String;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+
+        .annotation runtime Lretrofit2/http/Header;
+            value = "X-Gate-User-Id"
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/String;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+
+        .annotation runtime Lretrofit2/http/Header;
+            value = "X-Gate-Token"
+        .end annotation
+    .end param
+    .param p3    # Ljava/util/Map;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+
+        .annotation runtime Lretrofit2/http/Body;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/Object;",
+            ">;)",
+            "Lio/reactivex/rxjava3/core/y<",
+            "Lcom/gateio/http/entity/HttpResultV2<",
+            "Lcom/gateio/biz/base/model/CheckBean;",
+            ">;>;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .annotation runtime Lretrofit2/http/POST;
+        value = "nps-backend/nps/questionnaire/user_check"
+    .end annotation
+.end method
+
+.method public abstract questionnaireRule(Ljava/lang/String;)Lio/reactivex/rxjava3/core/y;
+    .param p1    # Ljava/lang/String;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+
+        .annotation runtime Lretrofit2/http/Query;
+            value = "source_type"
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            ")",
+            "Lio/reactivex/rxjava3/core/y<",
+            "Lcom/gateio/http/entity/HttpResultV2<",
+            "Lcom/gateio/biz/base/model/RootBean;",
+            ">;>;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .annotation runtime Lretrofit2/http/GET;
+        value = "nps-backend/nps/questionnaire_rule/query"
+    .end annotation
+.end method

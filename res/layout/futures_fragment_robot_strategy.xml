@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:id="@id/nsTitleLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="end|center" android:id="@id/llTitleLayout" android:layout_width="fill_parent" android:layout_height="24.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip">
+                <com.gateio.lib.uikit.widget.GTCheckBoxV5 android:textSize="12.0dip" android:gravity="center_vertical" android:id="@id/cb_current" android:layout_height="wrap_content" android:checked="false" android:text="@string/futures_v5_position_current_market" android:drawablePadding="4.0dip" app:uikit_button_size_v5="12.0dip" style="@style/Text_text_primary_12_weight_400_v5" />
+                <View android:id="@id/trans_wt_space" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <com.gateio.lib.uikit.button.GTButtonV5 android:id="@id/btn_create_bot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/futures_robot_strategy_create_bots" app:uikit_buttonDimenV5="xxSmall" app:uikit_buttonTypeV5="secondary_gray" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <FrameLayout android:id="@id/flFlutterContent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

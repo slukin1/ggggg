@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/uikit_bg_1_v3" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/layout_header" layout="@layout/layout_header_bg1_v3" />
+    <com.gateio.lib.uikit.state.GTEmptyViewV3 android:id="@id/empty_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="120.0dip" android:layout_below="@id/layout_header" android:layout_centerHorizontal="true" app:uikit_titleTextV3="@string/uikit_loaned_nodata" />
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/swipyrefreshlayout" android:paddingBottom="20.0dip" android:layout_below="@id/layout_header" style="@style/match_match">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/listview" android:visibility="gone" android:scrollbars="none" android:layout_marginBottom="16.0dip" android:listSelector="@color/bg_skin_white" android:divider="@color/uikit_bg_market_line" android:dividerHeight="0.5dip" android:overScrollMode="never" style="@style/match_wrap" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#05000000" />
+            <corners android:radius="20.0dip" />
+            <size android:height="34.0dip" android:width="112.0dip" />
+        </shape>
+    </item>
+    <item android:bottom="@dimen/uikit_dp_2">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/uikit_cmpt_input_v5" />
+            <corners android:radius="20.0dip" />
+            <size android:height="34.0dip" android:width="112.0dip" />
+        </shape>
+    </item>
+</layer-list>

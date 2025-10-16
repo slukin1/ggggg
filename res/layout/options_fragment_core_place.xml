@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutAvailable" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/tvAva" android:text="@string/options_place_available" style="@style/Text_text_secondary_12_weight_400_v5" />
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/layoutAvailableValue" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@id/tvAvailable" android:text="--" style="@style/Text_text_primary_12_weight_500_v5" />
+            <TextView android:id="@id/tvAvailableLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="2.0dip" style="@style/Text_text_primary_12_weight_500_v5" />
+        </LinearLayout>
+        <com.gateio.uiComponent.GateIconFont android:textSize="14.0sp" android:textColor="@color/uikit_icon_primary_v5" android:id="@id/ivAddAssets" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:paddingStart="@dimen/margin_padding_4" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutMaxLong" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_8">
+        <TextView android:id="@id/tvMaxLongLeft" android:text="@string/options_place_max_buy" style="@style/Text_text_secondary_12_weight_400_v5" />
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@id/tvMaxLong" android:text="--" style="@style/Text_text_primary_12_weight_500_v5" />
+            <TextView android:id="@id/tvMaxLongLabel" android:layout_marginStart="2.0dip" style="@style/Text_text_primary_12_weight_500_v5" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutCostLong" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_8">
+        <TextView android:id="@id/tvCostLongLeft" android:text="@string/options_place_cost" style="@style/Text_text_secondary_12_weight_400_v5" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="16.0dip">
+            <TextView android:ellipsize="end" android:gravity="end" android:id="@id/tvCostLong" android:maxLines="1" android:layout_weight="1.0" style="@style/Text_text_primary_12_weight_500_v5" />
+            <TextView android:id="@id/tvCostLongLabel" android:layout_marginStart="2.0dip" style="@style/Text_text_primary_12_weight_500_v5" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.ruffian.library.widget.RLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/llCommitBuy" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginTop="@dimen/margin_padding_8" app:background_normal="@color/uikit_function_trade_buy_v5" app:corner_radius="100.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/uikit_text_always_white_v5" android:id="@id/btnBuy" android:text="@string/options_place_buy" style="@style/Uikit_font_weight_500_wrap_wrap_v5" />
+    </com.ruffian.library.widget.RLinearLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutMaxShort" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_8">
+        <TextView android:id="@id/tvMaxShortLeft" android:text="@string/options_place_max_sell" style="@style/Text_text_secondary_12_weight_400_v5" />
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@id/tvMaxShort" style="@style/Text_text_primary_12_weight_500_v5" />
+            <TextView android:id="@id/tvMaxShortLabel" android:layout_marginStart="2.0dip" style="@style/Text_text_primary_12_weight_500_v5" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutCostShort" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_8">
+        <TextView android:id="@id/tvCostShortLeft" android:text="@string/options_place_cost" style="@style/Text_text_secondary_12_weight_400_v5" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="16.0dip">
+            <TextView android:ellipsize="end" android:gravity="end" android:id="@id/tvCostShort" android:maxLines="1" android:layout_weight="1.0" style="@style/Text_text_primary_12_weight_500_v5" />
+            <TextView android:id="@id/tvCostShortLabel" android:layout_marginStart="2.0dip" style="@style/Text_text_primary_12_weight_500_v5" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.ruffian.library.widget.RLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/llCommitSell" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginTop="@dimen/margin_padding_8" app:background_normal="@color/uikit_function_trade_sell_v5" app:corner_radius="100.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/uikit_text_always_white_v5" android:id="@id/btnSell" android:text="@string/options_place_sell" style="@style/Uikit_font_weight_500_wrap_wrap_v5" />
+    </com.ruffian.library.widget.RLinearLayout>
+</LinearLayout>

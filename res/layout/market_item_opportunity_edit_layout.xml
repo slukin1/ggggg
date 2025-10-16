@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.lib.uikit.daynight.DayNightCornerLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/market_item_opportunity_edit_layout_bg" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:corner_radius="3.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.daynight.DayNightTextView android:textSize="14.0sp" android:textColor="@color/uikit_text_primary_v5" android:id="@id/tv_type" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Uikit_font_sans_5_0_weight_500" />
+    <View android:layout_width="0.0dip" android:layout_height="@dimen/dp_1" android:layout_weight="1.0" />
+    <com.gateio.uiComponent.GateIconFont android:textSize="16.0sp" android:textColor="@color/uikit_icon_primary_v5" android:id="@id/iv_sort" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="" android:paddingStart="5.0dip" android:layout_marginEnd="3.0dip" />
+</com.gateio.lib.uikit.daynight.DayNightCornerLinearLayout>

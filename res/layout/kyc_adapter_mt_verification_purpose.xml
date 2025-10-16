@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_1_v3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_12" android:text="@string/kyc_relationship_with_gate" style="@style/Uikit_font_sans_2_0_weight_400" />
+    <RadioGroup android:orientation="vertical" android:id="@id/rg_relationship" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_12" />
+    <com.gateio.lib.uikit.textarea.GTMultilineInputViewV3 android:id="@id/other_content" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="135.0dip" android:layout_marginTop="8.0dip" app:uikit_hintV3="@string/kyc_other_hint" app:uikit_max_lengthV3="150" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.comlib.view.CornerLinearLayout android:orientation="horizontal" android:background="@color/cmpt_4" android:padding="@dimen/dp_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="318.0dip" android:radius="@dimen/dp_8"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/margin_padding_8" />
+    <TextView android:textSize="@dimen/ts_12" android:textStyle="bold" android:textColor="@color/text_1_light" android:gravity="center_vertical" android:id="@id/info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/margin_padding_16" android:lineSpacingExtra="@dimen/margin_padding_4" />
+</com.gateio.comlib.view.CornerLinearLayout>

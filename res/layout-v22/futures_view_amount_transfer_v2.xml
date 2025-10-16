@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_marginTop="4.0dip" android:src="@mipmap/futures_icon_empty" />
+    <TextView android:id="@id/tvAvailable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" style="@style/Text_text_primary_14_weight_500_v5" />
+    <TextView android:gravity="center_horizontal" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:text="@string/futures_v5_position_empty_tips" android:layout_marginHorizontal="16.0dip" style="@style/Text_text_tertiary_12_weight_400_v5" />
+    <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@id/dynamicEntrance" android:paddingTop="24.0dip" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginHorizontal="16.0dip" app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" app:spanCount="3" />
+</LinearLayout>

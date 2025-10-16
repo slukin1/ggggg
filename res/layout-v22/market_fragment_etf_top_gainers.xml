@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="18.0sp" android:textColor="@color/uikit_text_primary_v5" android:id="@id/market_etf_top_gainers_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:text="@string/market_etf_home_ranking_top_gainers" android:layout_marginHorizontal="16.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Uikit_font_sans_5_0_weight_600" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginHorizontal="16.0dip" app:layout_constraintTop_toBottomOf="@id/market_etf_top_gainers_title">
+        <com.gateio.biz.market.ui_etf_home.top_gainers.MarketETFTopGainerItemView android:id="@id/market_etf_top_gainers_item_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <com.gateio.biz.market.ui_etf_home.top_gainers.MarketETFTopGainerItemView android:id="@id/market_etf_top_gainers_item_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="8.0dip" />
+        <com.gateio.biz.market.ui_etf_home.top_gainers.MarketETFTopGainerItemView android:id="@id/market_etf_top_gainers_item_3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="8.0dip" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

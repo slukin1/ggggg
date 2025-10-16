@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.common.view.CornerLinearLayout android:background="@color/uikit_color_ffffff_111f31" android:padding="@dimen/margin_padding_16" app:left_top_radis="15.0dip" app:right_top_radis="15.0dip" style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout style="@style/match_wrap">
+        <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:text="@string/invest_sh" style="@style/tv_user_black_16" />
+        <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_cancel" android:padding="2.0dip" android:text="@string/user_qx" android:layout_alignParentEnd="true" style="@style/tv_user_white_14" />
+    </RelativeLayout>
+    <LinearLayout android:background="@drawable/finance_ed_wallet_enable_bg" android:layout_marginTop="@dimen/margin_padding_16" style="@style/ll_funding3">
+        <TextView android:textColor="@color/color_999999_7c848d" android:text="@string/invest_dtmc" style="@style/tv_user_white_12" />
+        <TextView android:enabled="true" android:textColor="@color/uikit_color_333333_e7e9ea" android:ellipsize="end" android:id="@id/ed_sh_title" android:singleLine="true" android:layout_marginStart="@dimen/margin_padding_16" style="@style/tv_user_white_14" />
+    </LinearLayout>
+    <LinearLayout android:layout_marginTop="@dimen/margin_padding_16" style="@style/ll_funding3">
+        <TextView android:textColor="@color/color_999999_7c848d" android:text="@string/invest_shfe" style="@style/tv_user_white_12" />
+        <EditText android:textSize="14.0sp" android:textColor="@color/uikit_color_333333_e7e9ea" android:textColorHint="@color/color_999999_7c848d" android:gravity="center_vertical" android:id="@id/ed_sh_content" android:layout_width="0.0dip" android:hint="@string/invest_inputshfe" android:layout_weight="1.0" android:inputType="number" style="@style/ed_funding3" />
+        <TextView android:textColor="@color/color_999999_7c848d" android:text="%" style="@style/tv_user_white_12" />
+    </LinearLayout>
+    <LinearLayout android:layout_marginTop="@dimen/margin_padding_8" style="@style/match_wrap_h">
+        <TextView android:textColor="@color/color_999999_7c848d" android:gravity="center" android:id="@id/tv_percent_25" android:background="@drawable/shape_invest_percent_gray" android:layout_width="0.0dip" android:layout_height="@dimen/margin_padding_24" android:text="25%" android:layout_weight="1.0" style="@style/tv_user_white_12" />
+        <TextView android:textColor="@color/color_999999_7c848d" android:gravity="center" android:id="@id/tv_percent_50" android:background="@drawable/shape_invest_percent_gray" android:layout_width="0.0dip" android:layout_height="@dimen/margin_padding_24" android:text="50%" android:layout_weight="1.0" android:layout_marginStart="@dimen/margin_padding_8" style="@style/tv_user_white_12" />
+        <TextView android:textColor="@color/color_999999_7c848d" android:gravity="center" android:id="@id/tv_percent_75" android:background="@drawable/shape_invest_percent_gray" android:layout_width="0.0dip" android:layout_height="@dimen/margin_padding_24" android:text="75%" android:layout_weight="1.0" android:layout_marginStart="@dimen/margin_padding_8" style="@style/tv_user_white_12" />
+        <TextView android:textColor="@color/color_999999_7c848d" android:gravity="center" android:id="@id/tv_percent_100" android:background="@drawable/shape_invest_percent_gray" android:layout_width="0.0dip" android:layout_height="@dimen/margin_padding_24" android:text="100%" android:layout_weight="1.0" android:layout_marginStart="@dimen/margin_padding_8" style="@style/tv_user_white_12" />
+    </LinearLayout>
+    <com.gateio.common.view.CornerTextView android:textSize="18.0sp" android:textColor="@color/uikit_white" android:gravity="center" android:id="@id/tv_commit" android:background="@color/uikit_color_2354e6" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="@dimen/margin_padding_32" android:text="@string/invest_sh" app:radius="5.0dip" />
+</com.gateio.common.view.CornerLinearLayout>

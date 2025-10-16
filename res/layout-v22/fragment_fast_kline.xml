@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.biz.kline.widget.ListenHeightUpdateLinearLayout android:orientation="vertical" android:id="@id/trans_root_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/divider" android:background="@color/uikit_line_divider_v5" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0.5" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginHorizontal="16.0dip">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_close_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_fast_kline_time" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_alignParentBottom="true" android:layout_toStartOf="@id/ll_close_container" android:layout_alignParentStart="true" />
+        <com.gateio.biz.kline.widget.RTLView android:id="@id/view_over_scroll" android:background="@drawable/kline_over_scroll" android:layout_width="16.0dip" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentBottom="true" android:layout_alignEnd="@id/rv_fast_kline_time" />
+    </RelativeLayout>
+    <View android:id="@id/divider2" android:background="@color/uikit_line_divider_v5" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0.5" />
+    <FrameLayout android:id="@id/kline_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/k_margin_padding_6" android:layout_marginStart="@dimen/k_margin_padding_3" android:layout_marginEnd="@dimen/k_margin_padding_3" />
+    <FrameLayout android:id="@id/kline_countdown_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.gateio.biz.kline.widget.ListenHeightUpdateLinearLayout>

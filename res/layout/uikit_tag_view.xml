@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.common.view.CornerLinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gateio.uiComponent.GateIconFont android:textSize="12.0sp" android:id="@id/tv_left" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="4.0dip" />
+    <TextView android:id="@id/tv_label" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.gateio.uiComponent.GateIconFont android:textSize="12.0sp" android:id="@id/tv_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4.0dip" />
+</com.gateio.common.view.CornerLinearLayout>

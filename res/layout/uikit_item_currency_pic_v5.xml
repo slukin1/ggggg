@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/uikit_currency_item_ll" android:layout_width="wrap_content" android:layout_height="fill_parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/uikit_currency_image" android:layout_width="108.0dip" android:layout_height="108.0dip" android:scaleType="centerCrop" app:border_color="@color/uikit_layer_1_v5" app:type="circle" />
+        <LinearLayout android:gravity="center" android:id="@id/uikit_currency_ll_title" android:background="@drawable/uikit_currency_title_bac_raec" android:visibility="gone" android:layout_width="108.0dip" android:layout_height="108.0dip">
+            <TextView android:textSize="50.0sp" android:textColor="@color/uikit_text_tertiary_v5" android:id="@id/uikit_currency_default_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" style="@style/Uikit_font_sans_5_0_weight_600" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.gateio.common.view.RoundImageView android:id="@id/uikit_currency_sub_image" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginBottom="@dimen/dp_4" android:scaleType="centerCrop" android:layout_marginEnd="@dimen/dp_4" app:border_color="@color/uikit_layer_1_v5" app:layout_constraintBottom_toBottomOf="@id/uikit_currency_item_ll" app:layout_constraintEnd_toEndOf="@id/uikit_currency_item_ll" app:type="circle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

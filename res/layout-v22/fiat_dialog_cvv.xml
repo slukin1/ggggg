@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingLeft="@dimen/uikit_dp_16" android:paddingRight="@dimen/uikit_dp_16" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="@dimen/uikit_dp_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_2_v3" android:id="@id/sub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fiat_security_verification_subtitle" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Uikit_font_sans_2_0_weight_400" />
+    <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_1_v3" android:id="@id/tv_cvv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_16" android:text="CVV Code" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/sub" />
+    <com.gateio.lib.uikit.input.GTEditTextV3 android:id="@id/edit_cvv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_6" app:layout_constraintTop_toBottomOf="@id/tv_cvv" app:uikit_editHintV3="Please enter" app:uikit_editInputTypeV3="number" app:uikit_editTypeV3="stroke" />
+</androidx.constraintlayout.widget.ConstraintLayout>

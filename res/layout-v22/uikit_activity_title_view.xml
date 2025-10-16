@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/uikit_bg_1" android:paddingTop="@dimen/uikit_margin_padding_40" android:paddingBottom="@dimen/uikit_margin_padding_40" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingVertical="@dimen/uikit_margin_padding_40"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.title.GTTitleViewV2 android:id="@id/title3" android:layout_width="fill_parent" android:layout_height="44.0dip" android:text="@string/app_name" />
+    <com.gateio.lib.uikit.title.GTTitleViewV2 android:id="@id/title4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_20" />
+    <com.gateio.lib.uikit.title.GTTitleViewV2 android:id="@id/title5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_20" android:text="@string/app_name" />
+    <com.gateio.lib.uikit.title.GTTitleViewV2 android:id="@id/title6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_20" />
+    <com.gateio.lib.uikit.title.GTTitleViewV2 android:id="@id/title7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_20" android:text="@string/app_name" app:uikit_titleRight="" app:uikit_titleRightSecond="" />
+    <com.gateio.lib.uikit.title.GTTitleViewV2 android:id="@id/title8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_20" android:text="@string/app_name" app:uikit_titleRightText="Text" />
+    <com.gateio.lib.uikit.title.GTTitleViewV2 android:id="@id/title9" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_20" android:text="@string/app_name" />
+    <com.gateio.lib.uikit.title.GTTitleViewV2 android:background="@color/uikit_text_3" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginTop="@dimen/uikit_margin_padding_20" android:text="@string/app_name" app:uikit_titleLeftImg="@mipmap/uikit_checkbox_v2_active" app:uikit_titleRightImg="@mipmap/uikit_star_normal" app:uikit_titleRightSecondImg="@mipmap/uikit_star_select" />
+    <com.gateio.lib.uikit.title.GTTitleViewV2 android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_20" android:text="@string/app_name" app:uikit_titleRightSecondImg="@mipmap/uikit_bg_position_share" />
+    <com.gateio.lib.uikit.title.GTTitleViewV2 android:id="@id/title1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_20" app:uikit_titleTabStyle="normal" />
+    <androidx.viewpager.widget.ViewPager android:id="@id/view_pager1" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+    <com.gateio.lib.uikit.title.GTTitleViewV2 android:id="@id/title2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_20" app:uikit_titleTabStyle="capsule" />
+    <androidx.viewpager.widget.ViewPager android:id="@id/view_pager2" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+</LinearLayout>

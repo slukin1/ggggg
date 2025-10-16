@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.gateio.lib.uikit.cell.GTCellV5 android:id="@id/cell_save_filter" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fiatotc_next_use" />
+        <View android:background="@color/uikit_divider_2_v3" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/margin_padding_16" android:layout_marginTop="@dimen/uikit_dp_4" android:layout_marginRight="@dimen/margin_padding_16" android:layout_marginHorizontal="@dimen/margin_padding_16" />
+        <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_secondary_v5" android:paddingLeft="@dimen/uikit_margin_padding_16" android:paddingRight="@dimen/uikit_margin_padding_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_20" android:layout_marginBottom="@dimen/uikit_dp_4" android:text="@string/fiatotc_ad_types" android:paddingHorizontal="@dimen/uikit_margin_padding_16" style="@style/Uikit_font_sans_5_0_weight_400" />
+        <com.gateio.lib.uikit.cell.GTCellV5 android:id="@id/cell_advertisable_ads" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fiatotc_eligible_ads" />
+        <com.gateio.lib.uikit.cell.GTCellV5 android:id="@id/cell_verification_not_required" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fiatotc_verification_not_required" />
+        <com.gateio.lib.uikit.cell.GTCellV5 android:id="@id/cell_traded_with" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fiatotc_traded" />
+        <com.gateio.lib.uikit.cell.GTCellV5 android:id="@id/cell_following" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fiatotc_following" />
+        <com.gateio.lib.uikit.cell.GTCellV5 android:id="@id/cell_crown" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fiatotc_crown" />
+        <com.gateio.lib.uikit.cell.GTCellV5 android:id="@id/cell_blue_vip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fiatotc_blue_vip" />
+        <com.gateio.lib.uikit.cell.GTCellV5 android:id="@id/cell_shield" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fiatotc_shield" />
+        <View android:background="@color/uikit_divider_2_v3" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/margin_padding_16" android:layout_marginTop="@dimen/uikit_dp_4" android:layout_marginRight="@dimen/margin_padding_16" android:layout_marginHorizontal="@dimen/margin_padding_16" />
+        <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_secondary_v5" android:paddingLeft="@dimen/uikit_margin_padding_16" android:paddingRight="@dimen/uikit_margin_padding_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_16" android:layout_marginBottom="@dimen/uikit_dp_4" android:text="@string/fiatotc_sort" android:paddingHorizontal="@dimen/uikit_margin_padding_16" />
+        <com.gateio.lib.uikit.cell.GTCellV5 android:id="@id/cell_trade_price" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.gateio.lib.uikit.cell.GTCellV5 android:id="@id/cell_trade_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fiatotc_trade_number" />
+        <com.gateio.lib.uikit.cell.GTCellV5 android:id="@id/cell_trade_rate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fiatotc_trade_rate" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="54.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <com.gateio.lib.uikit.widget.GTCheckBoxV5 android:gravity="center" android:id="@id/cb" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:paddingEnd="8.0dip" />
+        <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_primary_v5" android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Uikit_font_sans_5_0_weight_500" />
+    </LinearLayout>
+    <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <com.gateio.biz.kline.widget.GTDropdownColorV5 android:id="@id/dropDownColor" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="36.0dip" />
+        <com.gateio.biz.kline.widget.KlineIndexStepper android:enabled="true" android:id="@id/value" android:background="@drawable/bg_cmpt14_r4" android:visibility="gone" android:layout_width="120.0dip" android:layout_height="36.0dip" android:inputType="number" android:layout_marginStart="8.0dip" app:uikit_stepperDecimals="0" app:uikit_stepperMaxNum="1000" app:uikit_stepperMinNum="0" />
+        <com.gateio.biz.kline.widget.KlineDropDownV5 android:id="@id/dropDownValue" android:visibility="gone" android:layout_width="120.0dip" android:layout_height="36.0dip" />
+    </LinearLayout>
+</merge>

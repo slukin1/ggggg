@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_root" android:background="@color/uikit_transparent" style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fl_bg" android:background="@drawable/market_ball_rounded_black_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.gateio.gateio.marketball.view.root.MarketBallNormalView android:id="@id/market_ball" android:visibility="gone" style="@style/match_wrap" />
+        <com.gateio.gateio.marketball.view.MarketBallCollapsedView android:id="@id/market_collapsed" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</RelativeLayout>

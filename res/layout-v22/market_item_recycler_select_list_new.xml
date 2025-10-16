@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="52.0dip" android:paddingStart="16.0dip" android:paddingEnd="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.uiComponent.GateIconFont android:textSize="20.0sp" android:textColor="@color/uikit_color_2_v3" android:gravity="center" android:id="@id/iv_fav" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:paddingEnd="12.0dip" />
+    <com.gateio.lib.uikit.widget.GTCheckBoxV3 android:gravity="center" android:id="@id/check_select" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginEnd="12.0dip" />
+    <RelativeLayout android:id="@id/rl_ticker" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/market_ll_top_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textColor="@color/uikit_text_1_v3" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" style="@style/Uikit_font_sans_2_0_weight_500" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/uikit_text_3_v3" android:id="@id/tv_exchange" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="2.0dip" />
+            <com.gateio.lib.uikit.tag.GTTagV3 android:id="@id/market_tag_st" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4.0dip" app:uikit_tagSizeV3="tag16" app:uikit_tagTextV3="ST" app:uikit_tagTypeV3="red" />
+            <com.gateio.lib.uikit.tag.GTTagV3 android:id="@id/market_tv_pre_mint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4.0dip" app:uikit_tagShowUnderLineV3="true" app:uikit_tagSizeV3="tag16" app:uikit_tagTextV3="@string/market_pre_mint_label_text" app:uikit_tagTypeV3="orange" />
+            <com.ruffian.library.widget.RTextView android:textSize="10.0sp" android:textColor="@color/uikit_text_5_v3" android:id="@id/tv_tag" android:paddingLeft="4.0dip" android:paddingTop="1.0dip" android:paddingRight="4.0dip" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4.0dip" android:paddingHorizontal="4.0dip" android:paddingVertical="1.0dip" app:background_normal="@color/uikit_cmpt_15_v3" app:corner_radius="2.0dip" />
+            <com.gateio.uiComponent.GateIconFont android:textSize="11.0sp" android:textColor="@color/uikit_funct_10_v3" android:id="@id/tv_hot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_marginStart="4.0dip" />
+            <com.gateio.lib.uikit.tag.GTTagV3 android:id="@id/tv_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4.0dip" app:uikit_tagTextV3="N" app:uikit_tagTypeV3="new_small" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_below="@id/market_ll_top_layout">
+            <TextView android:textSize="11.0sp" android:textColor="@color/uikit_text_3_v3" android:id="@id/tv_vol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/Uikit_font_sans_2_0_weight_400" />
+            <com.gateio.common.view.RoundImageView android:id="@id/market_icon_pilot_chain" android:layout_width="14.0dip" android:layout_height="14.0dip" android:src="@mipmap/market_ic_chain_default" android:scaleType="centerCrop" android:layout_marginStart="8.0dip" app:type="circle" />
+            <TextView android:textSize="12.0sp" android:ellipsize="end" android:id="@id/market_tv_pilot_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="4.0dip" style="@style/Uikit_font_sans_2_0_weight_400" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="end" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textColor="@color/uikit_text_1_v3" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Uikit_font_sans_2_0_weight_500" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/uikit_text_3_v3" android:id="@id/tv_start_in" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/market_trade_start" style="@style/Uikit_font_sans_2_0_weight_500" />
+    </LinearLayout>
+</LinearLayout>

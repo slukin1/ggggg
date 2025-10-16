@@ -1,0 +1,121 @@
+.class final Lio/realm/com_gateio_biz_exchange_service_model_MarketSearchHistoryDaoRealmProxy$MarketSearchHistoryDaoColumnInfo;
+.super Lio/realm/internal/ColumnInfo;
+.source "com_gateio_biz_exchange_service_model_MarketSearchHistoryDaoRealmProxy.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lio/realm/com_gateio_biz_exchange_service_model_MarketSearchHistoryDaoRealmProxy;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = "MarketSearchHistoryDaoColumnInfo"
+.end annotation
+
+
+# instance fields
+.field currencyTypeColKey:J
+
+.field timeMillisColKey:J
+
+.field typeColKey:J
+
+
+# direct methods
+.method constructor <init>(Lio/realm/internal/ColumnInfo;Z)V
+    .locals 0
+
+    .line 6
+    invoke-direct {p0, p1, p2}, Lio/realm/internal/ColumnInfo;-><init>(Lio/realm/internal/ColumnInfo;Z)V
+
+    .line 7
+    invoke-virtual {p0, p1, p0}, Lio/realm/com_gateio_biz_exchange_service_model_MarketSearchHistoryDaoRealmProxy$MarketSearchHistoryDaoColumnInfo;->copy(Lio/realm/internal/ColumnInfo;Lio/realm/internal/ColumnInfo;)V
+
+    return-void
+.end method
+
+.method constructor <init>(Lio/realm/internal/OsSchemaInfo;)V
+    .locals 2
+
+    const/4 v0, 0x3
+
+    .line 1
+    invoke-direct {p0, v0}, Lio/realm/internal/ColumnInfo;-><init>(I)V
+
+    const-string/jumbo v0, "MarketSearchHistoryDao"
+
+    .line 2
+    invoke-virtual {p1, v0}, Lio/realm/internal/OsSchemaInfo;->getObjectSchemaInfo(Ljava/lang/String;)Lio/realm/internal/OsObjectSchemaInfo;
+
+    move-result-object p1
+
+    const-string/jumbo v0, "currencyType"
+
+    .line 3
+    invoke-virtual {p0, v0, v0, p1}, Lio/realm/internal/ColumnInfo;->addColumnDetails(Ljava/lang/String;Ljava/lang/String;Lio/realm/internal/OsObjectSchemaInfo;)J
+
+    move-result-wide v0
+
+    iput-wide v0, p0, Lio/realm/com_gateio_biz_exchange_service_model_MarketSearchHistoryDaoRealmProxy$MarketSearchHistoryDaoColumnInfo;->currencyTypeColKey:J
+
+    const-string/jumbo v0, "type"
+
+    .line 4
+    invoke-virtual {p0, v0, v0, p1}, Lio/realm/internal/ColumnInfo;->addColumnDetails(Ljava/lang/String;Ljava/lang/String;Lio/realm/internal/OsObjectSchemaInfo;)J
+
+    move-result-wide v0
+
+    iput-wide v0, p0, Lio/realm/com_gateio_biz_exchange_service_model_MarketSearchHistoryDaoRealmProxy$MarketSearchHistoryDaoColumnInfo;->typeColKey:J
+
+    const-string/jumbo v0, "timeMillis"
+
+    .line 5
+    invoke-virtual {p0, v0, v0, p1}, Lio/realm/internal/ColumnInfo;->addColumnDetails(Ljava/lang/String;Ljava/lang/String;Lio/realm/internal/OsObjectSchemaInfo;)J
+
+    move-result-wide v0
+
+    iput-wide v0, p0, Lio/realm/com_gateio_biz_exchange_service_model_MarketSearchHistoryDaoRealmProxy$MarketSearchHistoryDaoColumnInfo;->timeMillisColKey:J
+
+    return-void
+.end method
+
+
+# virtual methods
+.method protected final copy(Z)Lio/realm/internal/ColumnInfo;
+    .locals 1
+
+    .line 1
+    new-instance v0, Lio/realm/com_gateio_biz_exchange_service_model_MarketSearchHistoryDaoRealmProxy$MarketSearchHistoryDaoColumnInfo;
+
+    invoke-direct {v0, p0, p1}, Lio/realm/com_gateio_biz_exchange_service_model_MarketSearchHistoryDaoRealmProxy$MarketSearchHistoryDaoColumnInfo;-><init>(Lio/realm/internal/ColumnInfo;Z)V
+
+    return-object v0
+.end method
+
+.method protected final copy(Lio/realm/internal/ColumnInfo;Lio/realm/internal/ColumnInfo;)V
+    .locals 2
+
+    .line 2
+    check-cast p1, Lio/realm/com_gateio_biz_exchange_service_model_MarketSearchHistoryDaoRealmProxy$MarketSearchHistoryDaoColumnInfo;
+
+    .line 3
+    check-cast p2, Lio/realm/com_gateio_biz_exchange_service_model_MarketSearchHistoryDaoRealmProxy$MarketSearchHistoryDaoColumnInfo;
+
+    .line 4
+    iget-wide v0, p1, Lio/realm/com_gateio_biz_exchange_service_model_MarketSearchHistoryDaoRealmProxy$MarketSearchHistoryDaoColumnInfo;->currencyTypeColKey:J
+
+    iput-wide v0, p2, Lio/realm/com_gateio_biz_exchange_service_model_MarketSearchHistoryDaoRealmProxy$MarketSearchHistoryDaoColumnInfo;->currencyTypeColKey:J
+
+    .line 5
+    iget-wide v0, p1, Lio/realm/com_gateio_biz_exchange_service_model_MarketSearchHistoryDaoRealmProxy$MarketSearchHistoryDaoColumnInfo;->typeColKey:J
+
+    iput-wide v0, p2, Lio/realm/com_gateio_biz_exchange_service_model_MarketSearchHistoryDaoRealmProxy$MarketSearchHistoryDaoColumnInfo;->typeColKey:J
+
+    .line 6
+    iget-wide v0, p1, Lio/realm/com_gateio_biz_exchange_service_model_MarketSearchHistoryDaoRealmProxy$MarketSearchHistoryDaoColumnInfo;->timeMillisColKey:J
+
+    iput-wide v0, p2, Lio/realm/com_gateio_biz_exchange_service_model_MarketSearchHistoryDaoRealmProxy$MarketSearchHistoryDaoColumnInfo;->timeMillisColKey:J
+
+    return-void
+.end method

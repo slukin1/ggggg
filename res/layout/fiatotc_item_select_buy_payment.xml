@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="56.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gateio.common.view.CornerView android:id="@id/gif_payment" android:layout_width="@dimen/dp_2" android:layout_height="@dimen/dp_10" />
+    <TextView android:textSize="@dimen/uikit_text_size_16" android:textStyle="normal" android:textColor="@color/uikit_text_primary_v5" android:id="@id/name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/margin_padding_12" style="@style/Uikit_font_sans_5_0_weight_500" />
+    <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_text_primary_v5" android:id="@id/gif_check" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

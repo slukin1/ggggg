@@ -1,0 +1,31 @@
+.class public interface abstract Lcom/tnp/fortvax/core/trident/proto/Response$Account$UnFreezeV2OrBuilder;
+.super Ljava/lang/Object;
+.source "r8-map-id-48c3c0c31ca33f6a594c44aa121cc6034dba737b6ab9115696206bffc382f7bd"
+
+# interfaces
+.implements Lcom/tnp/fortvax/core/protobuf/MessageOrBuilder;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/tnp/fortvax/core/trident/proto/Response$Account;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "UnFreezeV2OrBuilder"
+.end annotation
+
+
+# virtual methods
+.method public abstract getType()Lcom/tnp/fortvax/core/trident/proto/Common$ResourceCode;
+.end method
+
+.method public abstract getTypeValue()I
+.end method
+
+.method public abstract getUnfreezeAmount()J
+.end method
+
+.method public abstract getUnfreezeExpireTime()J
+.end method

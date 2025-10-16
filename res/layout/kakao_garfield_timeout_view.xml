@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alipay.zoloz.zface.ui.animation.widget.ZolozLottieAnimationView android:id="@id/lottie_animation_view" android:layout_width="75.0dip" android:layout_height="75.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

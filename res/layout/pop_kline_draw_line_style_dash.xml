@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/k_margin_padding_5" android:paddingBottom="@dimen/k_margin_padding_5" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.common.view.shadow.ShadowLayout android:orientation="vertical" android:id="@id/ll_draw_dash" android:layout_width="wrap_content" android:layout_height="wrap_content" app:blurRadius="4.0dip" app:llBgColor="@color/uikit_card_1_v3" app:shadowColor="#1a000000" app:shadowRadius="4.0dip" app:xOffset="0.0dip" app:yOffset="0.0dip">
+        <com.gateio.biz.kline.widget.LineView android:id="@id/line_style_dash1" android:layout_width="@dimen/k_margin_padding_40" android:layout_height="@dimen/k_margin_padding_20" android:paddingStart="@dimen/k_margin_padding_10" android:paddingEnd="@dimen/k_margin_padding_10" app:lineDashGap="4.0dip" app:lineDashWidth="7.0dip" />
+        <com.gateio.biz.kline.widget.LineView android:id="@id/line_style_dash2" android:layout_width="@dimen/k_margin_padding_40" android:layout_height="@dimen/k_margin_padding_20" android:paddingStart="@dimen/k_margin_padding_10" android:paddingEnd="@dimen/k_margin_padding_10" app:lineDashGap="3.0dip" app:lineDashWidth="2.0dip" />
+        <com.gateio.biz.kline.widget.LineView android:id="@id/line_style_dash3" android:layout_width="@dimen/k_margin_padding_40" android:layout_height="@dimen/k_margin_padding_20" android:paddingStart="@dimen/k_margin_padding_10" android:paddingEnd="@dimen/k_margin_padding_10" />
+    </com.gateio.common.view.shadow.ShadowLayout>
+</LinearLayout>

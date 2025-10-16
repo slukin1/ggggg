@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="@dimen/uikit_margin_padding_16" android:paddingBottom="@dimen/uikit_dp_8" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_secondary_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wallets_network" style="@style/Uikit_font_sans_5_0_weight_500" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_network" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_4">
+        <TextView android:textSize="@dimen/uikit_text_size_18" android:textColor="@color/uikit_text_primary_v5" android:id="@id/tv_network" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Uikit_font_sans_5_0_weight_600" />
+        <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_icon_primary_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_marginStart="@dimen/uikit_dp_4" />
+    </LinearLayout>
+</LinearLayout>

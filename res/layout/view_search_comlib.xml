@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_input" android:background="@drawable/bg_edit_comlib" android:paddingStart="@dimen/margin_padding_12" android:paddingEnd="@dimen/margin_padding_12" android:layout_toStartOf="@id/tv_finish" style="@style/match_wrap">
+        <ImageView android:id="@id/iv_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_search_comlib" android:layout_centerVertical="true" app:tint="@color/text_4" />
+        <EditText android:textSize="@dimen/ts_14" android:textColor="@color/text_1" android:textColorHint="@color/text_4" android:gravity="center_vertical" android:id="@id/et_search" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/search" android:singleLine="true" android:includeFontPadding="false" android:layout_centerVertical="true" android:imeOptions="actionSearch" android:textCursorDrawable="@drawable/shape_cursor_comlib" android:layout_marginStart="@dimen/margin_padding_8" android:layout_toStartOf="@id/iv_delete" android:layout_toEndOf="@id/iv_search" />
+        <ImageView android:id="@id/iv_delete" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_clear_com" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:tint="@color/text_4" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/ts_16" android:textColor="@color/text_1" android:id="@id/tv_finish" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_qx" android:layout_centerVertical="true" android:layout_marginStart="@dimen/margin_padding_12" android:layout_alignParentEnd="true" />
+</merge>

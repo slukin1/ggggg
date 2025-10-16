@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/v_table_header" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="@color/uikit_text_secondary_v5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/market_display_setting_table_header_type" android:layout_weight="1.0" style="@style/Uikit_font_sans_5_0_weight_400" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/uikit_text_secondary_v5" android:id="@id/tv_Pin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/market_display_setting_table_header_pin" android:layout_marginEnd="15.0dip" style="@style/Uikit_font_sans_5_0_weight_400" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/uikit_text_secondary_v5" android:id="@id/tv_Drag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/market_display_setting_table_header_drag" style="@style/Uikit_font_sans_5_0_weight_400" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_favorite_list" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+        <com.gateio.lib.uikit.state.GTEmptyV5 android:id="@id/market_empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="120.0dip" app:uikit_descTextV5="@string/market_fav_empty_add_hint" app:uikit_emptyButtonTextV5="@string/market_non_login_favorite_add_v2" app:uikit_emptyStartIconV5="" app:uikit_emptyTypeV5="data_empty" />
+    </FrameLayout>
+    <View android:id="@id/v_line" android:background="@color/uikit_line_border_subtle_v5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_bottom" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="58.0dip" android:paddingHorizontal="16.0dip">
+        <com.gateio.lib.uikit.widget.GTCheckBoxV5 android:textSize="14.0sp" android:textColor="@color/uikit_text_primary_v5" android:id="@id/iv_all_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_selectall" android:paddingStart="8.0dip" style="@style/Uikit_font_sans_5_0_weight_500" />
+        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/v_add_groups" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="16.0dip">
+            <com.gateio.uiComponent.GateIconFont android:textSize="16.0sp" android:textColor="@color/uikit_text_disabled_v5" android:id="@id/icon_add_groups" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/uikit_text_disabled_v5" android:id="@id/tv_add_groups" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/market_add_to_group" android:layout_marginStart="4.0dip" style="@style/Uikit_font_sans_5_0_weight_500" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/v_delete" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.gateio.uiComponent.GateIconFont android:textSize="16.0sp" android:textColor="@color/uikit_text_disabled_v5" android:id="@id/icon_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/uikit_text_disabled_v5" android:id="@id/tv_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_delete" android:layout_marginStart="4.0dip" style="@style/Uikit_font_sans_5_0_weight_500" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

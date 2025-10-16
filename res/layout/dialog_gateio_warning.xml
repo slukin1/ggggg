@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.common.view.CornerLinearLayout android:background="@color/uikit_layer_1_v5" app:radius="8.0dip" style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/uikit_text_primary_v5" android:layout_gravity="center_horizontal" android:id="@id/dialog_gateio_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:lineSpacingMultiplier="1.4" android:layout_marginStart="@dimen/margin_padding_20" android:layout_marginEnd="@dimen/margin_padding_20" style="@style/Uikit_font_sans_5_0_weight_400" />
+    <com.gateio.lib.uikit.helper.GTFooterButtonV5 android:id="@id/footerBtn" android:padding="@dimen/uikit_margin_padding_16" android:layout_width="fill_parent" android:layout_height="wrap_content" app:uikit_footerButtonTypeV5="horizontalBtn" app:uikit_footerConfirmTextV5="@string/user_qd" app:uikit_footerSubButtonTextV5="@string/user_qx" style="@style/match_wrap_h" />
+</com.gateio.common.view.CornerLinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="@dimen/uikit_margin_padding_12" android:paddingRight="@dimen/uikit_margin_padding_12" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.countdown.GTCountDownV3 android:id="@id/countdown" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_40" android:layout_marginBottom="@dimen/uikit_margin_padding_24" />
+    <com.gateio.lib.uikit.reminder.GTReminderV3 android:id="@id/countdown_reminder" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/uikit_margin_padding_24" android:text="@string/fiatloan_pay_countdown_tip" app:uikit_reminderTypeV3="waring" />
+</LinearLayout>

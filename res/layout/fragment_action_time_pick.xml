@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.common.view.CornerLinearLayout android:layout_gravity="bottom" android:background="@color/color_ffffff_19202d" app:left_top_radis="16.0dip" app:right_top_radis="16.0dip" style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/rv_topbar" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+        <Button android:textSize="16.0sp" android:textColor="@color/uikit_color_666666_abb0b7" android:gravity="start|center" android:id="@id/btnCancel" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="@string/pickerview_cancel" android:textAllCaps="false" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/uikit_color_333333_e7e9ea" android:gravity="center" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="@string/funding_kssj" android:layout_centerInParent="true" android:layout_marginStart="16.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/uikit_color_2354e6" android:gravity="center" android:id="@id/btnSubmit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pickerview_submit" android:layout_centerVertical="true" android:paddingStart="16.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View style="@style/view_line_v_new" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/timepicker" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip">
+        <com.contrarywind.view.WheelView android:id="@id/year" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <com.contrarywind.view.WheelView android:id="@id/month" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <com.contrarywind.view.WheelView android:id="@id/day" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <com.contrarywind.view.WheelView android:id="@id/hour" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <com.contrarywind.view.WheelView android:id="@id/min" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <com.contrarywind.view.WheelView android:id="@id/second" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+</com.gateio.common.view.CornerLinearLayout>

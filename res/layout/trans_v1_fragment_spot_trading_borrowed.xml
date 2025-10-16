@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/uikit_bg_primary_v5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:id="@id/nsl_content" android:layout_width="fill_parent" android:layout_height="@dimen/length_32" android:fillViewport="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/length_16" android:paddingTop="8.0dip" android:paddingRight="@dimen/length_16" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_primary_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trans_v1_current_loans" android:layout_weight="1.0" style="@style/Uikit_font_sans_5_0_weight_400" />
+            <com.gateio.lib.uikit.button.GTButtonV5 android:id="@id/btn_repayment_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trans_repay_all" app:uikit_buttonDimenV5="xxSmall" app:uikit_buttonTypeV5="secondary_gray" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.gateio.lib.uikit.state.GTEmptyViewV5 android:id="@id/cl_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/nsl_content" app:uikit_emptySizeV5="small" app:uikit_emptyTypeV5="data_empty" app:uikit_titleTextV5="@string/trans_v1_no_data" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_list" android:paddingLeft="@dimen/length_16" android:paddingRight="@dimen/length_16" android:paddingBottom="@dimen/length_80" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/nsl_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/uikit_living_tag_bg" android:layout_width="wrap_content" android:layout_height="@dimen/uikit_dp_16" app:radius="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center_vertical" android:id="@id/iv_live" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:layout_marginHorizontal="3.0dip" app:lottie_fileName="living_push.json" app:lottie_loop="true" />
+    <TextView android:textSize="@dimen/uikit_text_size_14" android:textStyle="bold" android:textColor="@color/uikit_white" android:layout_gravity="center_vertical" android:id="@id/live_text" android:paddingBottom="0.5dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Live" android:layout_marginEnd="4.0dip" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_logo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_marginBottom="1.0dip" android:layout_marginEnd="1.0dip" android:layout_marginVertical="1.0dip" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="end" android:orientation="vertical" android:tag="END" android:background="@color/color_80_000000" android:focusable="true" android:clickable="true" android:layout_width="260.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="12.0sp" android:textColor="@color/uikit_white" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:text="@string/title_video_videoroom_list" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout android:id="@id/refresh_room" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout style="@style/match_match">
+            <TextView android:textColor="#ffc1c1c2" android:gravity="center" android:id="@id/tv_empty_liveroom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="30.0dip" android:text="@string/ticker_not_data" android:drawablePadding="16.0dip" app:drawableTopCompat="@mipmap/ic_empty" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/ry_liveroom" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+</LinearLayout>

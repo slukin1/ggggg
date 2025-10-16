@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/uikit_text_size_24" android:paddingRight="@dimen/uikit_text_size_24" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_text_3" android:id="@id/tv_limit_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Uikit_font_weight_400" />
+    <com.gateio.lib.uikit.input.GTEditTextV2 android:id="@id/ed_user_safePwd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_16" app:uikit_editDimen="medium" app:uikit_editHint="@string/safety_zjmm_hint" app:uikit_editInputType="password" />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/uikit_bg_1_v3" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.search.GTSearchViewV3 android:id="@id/search_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_margin_padding_12" android:layout_marginTop="@dimen/uikit_margin_padding_12" android:layout_marginRight="@dimen/uikit_margin_padding_12" android:layout_marginBottom="@dimen/uikit_margin_padding_12" app:uikit_searchMethodWithEmptyTextV3="true" />
+    <TextView android:textSize="@dimen/uikit_text_size_13" android:textColor="@color/uikit_text_2_v3" android:id="@id/tv_search_smart" android:paddingBottom="20.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_margin_padding_12" android:layout_marginRight="@dimen/uikit_margin_padding_12" android:layout_below="@id/search_view" style="@style/Uikit_font_sans_2_0_weight_500" />
+    <com.gateio.lib.uikit.state.GTEmptyViewV3 android:id="@id/gt_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="48.0dip" android:layout_marginTop="120.0dip" android:layout_marginRight="48.0dip" android:layout_below="@id/search_view" />
+    <com.gateio.biz.market.weight.MarketSearchDefaultView android:id="@id/default_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tv_search_smart" />
+    <LinearLayout android:orientation="vertical" android:id="@id/view_search_result" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tv_search_smart">
+        <net.lucode.hackware.magicindicator.MagicIndicator android:id="@id/magic_indicator" android:layout_width="fill_parent" android:layout_height="31.0dip" android:layout_marginTop="8.0dip" />
+        <View android:background="@color/uikit_divider_2_v3" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <androidx.viewpager.widget.ViewPager android:id="@id/vp_main" android:fadingEdge="none" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+    </LinearLayout>
+    <include android:id="@id/loading" android:visibility="gone" layout="@layout/market_search_loading" />
+</RelativeLayout>

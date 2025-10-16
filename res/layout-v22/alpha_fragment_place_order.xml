@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gateio.lib.uikit.tab.v5.GTTabsV5 android:id="@id/trade_tab" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="28.0dip" />
+    <RelativeLayout android:id="@id/trans_rl_price_type" android:background="@drawable/exchange_shape_input_r6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:paddingStart="@dimen/length_8">
+        <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_primary_v5" android:id="@id/tv_trans_type" android:paddingTop="@dimen/length_5" android:paddingBottom="@dimen/length_5" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/exchange_limit" android:includeFontPadding="false" android:paddingVertical="@dimen/length_5" style="@style/Uikit_font_sans_5_0_weight_500" />
+        <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_icon_primary_v5" android:gravity="center_vertical" android:id="@id/trans_iv_price_type_arrow" android:paddingLeft="@dimen/length_8" android:paddingRight="@dimen/length_8" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="" android:layout_centerVertical="true" android:layout_alignParentEnd="true" android:paddingHorizontal="@dimen/length_8" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/alphaStepSubmit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/length_8">
+        <androidx.fragment.app.FragmentContainerView android:id="@id/fl_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <androidx.fragment.app.FragmentContainerView android:id="@id/fl_bottom_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/length_8" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alert_cancel_array">
+        <item>Ігнорувати лише цього разу</item>
+        <item>Через 10 хвилин</item>
+        <item>Через 30 хвилин</item>
+        <item>Через 2 години</item>
+        <item>Через 24 години</item>
+        <item>Ніколи</item>
+    </string-array>
+    <string-array name="exo_controls_playback_speeds">
+        <item>0,25x</item>
+        <item>0,5x</item>
+        <item>0,75x</item>
+        <item>Звичайна</item>
+        <item>1,25x</item>
+        <item>1,5x</item>
+        <item>2x</item>
+    </string-array>
+    <string-array name="funding_share_desc">
+        <item>Є таке щастя, яке називається стабільністю</item>
+        <item>Вибирайте Gate і заробляйте без зволікань</item>
+        <item>Професійний лідер безмежний</item>
+        <item>Спробуйте свої сили в Gate, щоб проявити свої таланти</item>
+        <item>Усі дороги ведуть до Риму, але надійність на першому місці</item>
+        <item>Збираєтеся керувати грошима? Стабільно</item>
+        <item>Життя варте того, щоб жити, а майбутнє багатообіцяюче</item>
+    </string-array>
+    <string-array name="home_week_string_array">
+        <item>Неділя</item>
+        <item>Понеділок</item>
+        <item>Вівторок</item>
+        <item>Среда</item>
+        <item>Четвер</item>
+        <item>"П'ятниця"</item>
+        <item>Субота</item>
+    </string-array>
+    <string-array name="modify_procedure_items">
+        <item>Виберіть параметри безпеки для зміни</item>
+        <item>Подати заявку на зміну</item>
+        <item>Завершити заявку</item>
+    </string-array>
+    <string-array name="position_share_desc_loss">
+        <item>Зрізати втрати? Ніколи!</item>
+        <item>Тримай і чекай</item>
+        <item>Поменше втрат, будь ласка</item>
+        <item>Хто сміється останнім, той сміється найкраще</item>
+        <item>Підняйся і сяй. Рухайся зараз.</item>
+        <item>Будь добрим зі мною</item>
+        <item>Без паніки</item>
+        <item>Все в. Збережи віру</item>
+    </string-array>
+    <string-array name="position_share_desc_win">
+        <item>Грайте та вигравайте по-крупному.</item>
+        <item>Все як завжди</item>
+        <item>Просто утримуйте</item>
+        <item>Просто тримайте це</item>
+        <item>Наступний крок? Слідкуйте за трендами</item>
+        <item>Я велика зірка!</item>
+        <item>Іди за мною, щоб виграти великі</item>
+        <item>Я як завжди на правильному боці!</item>
+        <item>Довгий чи короткий? Усе залежить від мене.</item>
+    </string-array>
+    <string-array name="push_alert_cancel_array">
+        <item>На 30 хвилин</item>
+        <item>На 2 годин</item>
+        <item>На 24 години</item>
+        <item>Назавжди</item>
+    </string-array>
+    <string-array name="week_string_array">
+        <item>Сонце</item>
+        <item>Пн</item>
+        <item>Вт</item>
+        <item>Ср</item>
+        <item>Чт</item>
+        <item>Пт</item>
+        <item>Сб</item>
+    </string-array>
+</resources>

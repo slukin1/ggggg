@@ -1,0 +1,351 @@
+.class public final Lcom/gateio/gateio/futures/assets/FuturesAssetsRepository;
+.super Lcom/gateio/biz/base/mvvm/GTBaseRepository;
+.source "FuturesAssetsRepository.kt"
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000.\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u0002\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002J\u001c\u0010\u000e\u001a\u0008\u0012\u0004\u0012\u00020\u00100\u000f2\u0006\u0010\u0011\u001a\u00020\u0012H\u0086@\u00a2\u0006\u0002\u0010\u0013R\u001b\u0010\u0003\u001a\u00020\u00048FX\u0086\u0084\u0002\u00a2\u0006\u000c\n\u0004\u0008\u0007\u0010\u0008\u001a\u0004\u0008\u0005\u0010\u0006R\u001b\u0010\t\u001a\u00020\n8FX\u0086\u0084\u0002\u00a2\u0006\u000c\n\u0004\u0008\r\u0010\u0008\u001a\u0004\u0008\u000b\u0010\u000c\u00a8\u0006\u0014"
+    }
+    d2 = {
+        "Lcom/gateio/gateio/futures/assets/FuturesAssetsRepository;",
+        "Lcom/gateio/biz/base/mvvm/GTBaseRepository;",
+        "()V",
+        "accountApi",
+        "Lcom/gateio/biz/account/service/router/provider/AccountLoginApi;",
+        "getAccountApi",
+        "()Lcom/gateio/biz/account/service/router/provider/AccountLoginApi;",
+        "accountApi$delegate",
+        "Lkotlin/Lazy;",
+        "futuresCalculator",
+        "Lcom/gateio/gateio/futures/FuturesCalculator;",
+        "getFuturesCalculator",
+        "()Lcom/gateio/gateio/futures/FuturesCalculator;",
+        "futuresCalculator$delegate",
+        "getAssetsData",
+        "Lcom/gateio/lib/network/result/GTHttpResultKotlin;",
+        "Lcom/gateio/biz/futures/bean/FuturesAssetsResponseBean;",
+        "requestSettle",
+        "",
+        "(Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;",
+        "biz_futures_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+.annotation build Lkotlin/jvm/internal/SourceDebugExtension;
+    value = {
+        "SMAP\nFuturesAssetsRepository.kt\nKotlin\n*S Kotlin\n*F\n+ 1 FuturesAssetsRepository.kt\ncom/gateio/gateio/futures/assets/FuturesAssetsRepository\n+ 2 GTBaseRepository.kt\ncom/gateio/biz/base/mvvm/GTBaseRepository\n*L\n1#1,29:1\n48#2:30\n*S KotlinDebug\n*F\n+ 1 FuturesAssetsRepository.kt\ncom/gateio/gateio/futures/assets/FuturesAssetsRepository\n*L\n21#1:30\n*E\n"
+    }
+.end annotation
+
+
+# instance fields
+.field private final accountApi$delegate:Lkotlin/Lazy;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field private final futuresCalculator$delegate:Lkotlin/Lazy;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 2
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0}, Lcom/gateio/biz/base/mvvm/GTBaseRepository;-><init>()V
+
+    .line 4
+    .line 5
+    sget-object v0, Lkotlin/LazyThreadSafetyMode;->NONE:Lkotlin/LazyThreadSafetyMode;
+
+    .line 6
+    .line 7
+    sget-object v1, Lcom/gateio/gateio/futures/assets/FuturesAssetsRepository$accountApi$2;->INSTANCE:Lcom/gateio/gateio/futures/assets/FuturesAssetsRepository$accountApi$2;
+
+    .line 8
+    .line 9
+    .line 10
+    invoke-static {v0, v1}, Lkotlin/LazyKt;->lazy(Lkotlin/LazyThreadSafetyMode;Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
+
+    .line 11
+    move-result-object v1
+
+    .line 12
+    .line 13
+    iput-object v1, p0, Lcom/gateio/gateio/futures/assets/FuturesAssetsRepository;->accountApi$delegate:Lkotlin/Lazy;
+
+    .line 14
+    .line 15
+    sget-object v1, Lcom/gateio/gateio/futures/assets/FuturesAssetsRepository$futuresCalculator$2;->INSTANCE:Lcom/gateio/gateio/futures/assets/FuturesAssetsRepository$futuresCalculator$2;
+
+    .line 16
+    .line 17
+    .line 18
+    invoke-static {v0, v1}, Lkotlin/LazyKt;->lazy(Lkotlin/LazyThreadSafetyMode;Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
+
+    .line 19
+    move-result-object v0
+
+    .line 20
+    .line 21
+    iput-object v0, p0, Lcom/gateio/gateio/futures/assets/FuturesAssetsRepository;->futuresCalculator$delegate:Lkotlin/Lazy;
+
+    .line 22
+    return-void
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+.end method
+
+
+# virtual methods
+.method public final getAccountApi()Lcom/gateio/biz/account/service/router/provider/AccountLoginApi;
+    .locals 1
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/gateio/gateio/futures/assets/FuturesAssetsRepository;->accountApi$delegate:Lkotlin/Lazy;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-interface {v0}, Lkotlin/Lazy;->getValue()Ljava/lang/Object;
+
+    .line 6
+    move-result-object v0
+
+    .line 7
+    .line 8
+    check-cast v0, Lcom/gateio/biz/account/service/router/provider/AccountLoginApi;
+
+    .line 9
+    return-object v0
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+.end method
+
+.method public final getAssetsData(Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    .locals 8
+    .param p1    # Ljava/lang/String;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p2    # Lkotlin/coroutines/Continuation;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Lkotlin/coroutines/Continuation<",
+            "-",
+            "Lcom/gateio/lib/network/result/GTHttpResultKotlin<",
+            "Lcom/gateio/biz/futures/bean/FuturesAssetsResponseBean;",
+            ">;>;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+
+    .line 1
+    .line 2
+    sget-object v0, Lcom/gateio/lib/network/GTBizHttpClient;->INSTANCE:Lcom/gateio/lib/network/GTBizHttpClient;
+
+    .line 3
+    .line 4
+    const-class v1, Lcom/gateio/biz/futures/repositorys/FuturesApiServiceV3;
+
+    .line 5
+    .line 6
+    .line 7
+    invoke-virtual {v0, v1}, Lcom/gateio/lib/network/GTBizHttpClient;->apiV3(Ljava/lang/Class;)Lcom/gateio/lib/http/GTApiServiceV3;
+
+    .line 8
+    move-result-object v2
+
+    .line 9
+    const/4 v3, 0x0
+
+    .line 10
+    .line 11
+    new-instance v4, Lcom/gateio/gateio/futures/assets/FuturesAssetsRepository$getAssetsData$2;
+
+    .line 12
+    const/4 v0, 0x0
+
+    .line 13
+    .line 14
+    .line 15
+    invoke-direct {v4, p1, v0}, Lcom/gateio/gateio/futures/assets/FuturesAssetsRepository$getAssetsData$2;-><init>(Ljava/lang/String;Lkotlin/coroutines/Continuation;)V
+
+    .line 16
+    const/4 v6, 0x1
+
+    .line 17
+    const/4 v7, 0x0
+
+    .line 18
+    move-object v5, p2
+
+    .line 19
+    .line 20
+    .line 21
+    invoke-static/range {v2 .. v7}, Lcom/gateio/lib/network/result/GTHttpResultKotlinsKt;->runCatchingHttp$default(Lcom/gateio/lib/http/GTApiServiceV3;Lcom/gateio/lib/http/unbox/IGTHttpResultUnboxV2;Lkotlin/jvm/functions/Function2;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+
+    .line 22
+    move-result-object p1
+
+    .line 23
+    return-object p1
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+.end method
+
+.method public final getFuturesCalculator()Lcom/gateio/gateio/futures/FuturesCalculator;
+    .locals 1
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/gateio/gateio/futures/assets/FuturesAssetsRepository;->futuresCalculator$delegate:Lkotlin/Lazy;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-interface {v0}, Lkotlin/Lazy;->getValue()Ljava/lang/Object;
+
+    .line 6
+    move-result-object v0
+
+    .line 7
+    .line 8
+    check-cast v0, Lcom/gateio/gateio/futures/FuturesCalculator;
+
+    .line 9
+    return-object v0
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+.end method

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/uikit_bg_primary_v5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.comlib.view.StatusBarPlaceHolder android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.gateio.lib.uikit.title.GTNavBarV5 android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/uikit_text_size_24" android:textColor="@color/uikit_text_primary_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_12" android:text="@string/fiatotc_settings" android:layout_marginStart="@dimen/margin_padding_16" style="@style/Uikit_font_sans_5_0_weight_600" />
+    <com.gateio.lib.uikit.cell.GTCellV5 android:id="@id/cell_independent_release_coin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_24" android:text="@string/fiatotc_independent_release_coin" app:uikit_cellLeftDesV5="@string/fiatotc_independent_release_coin_tips" />
+    <com.gateio.lib.uikit.cell.GTCellV5 android:id="@id/cell_pay_biometrics" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fiatotc_sell_biometrics_label" app:uikit_cellLeftDesV5="@string/fiatotc_sell_biometrics_tip" />
+</LinearLayout>

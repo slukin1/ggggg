@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.common.view.CornerRelativeLayout android:layout_gravity="center" android:background="@color/uikit_card_2" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:paddingBottom="24.0dip" android:layout_width="340.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true" app:radius="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/uikit_text_1" android:ellipsize="end" android:id="@id/tv_title" android:visibility="gone" android:layout_marginTop="24.0dip" android:maxLines="1" style="@style/uikit_tv_user_black_16" />
+    <ScrollView android:id="@id/scroll_view" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_below="@id/tv_title" android:overScrollMode="never">
+        <LinearLayout android:paddingTop="24.0dip" style="@style/uikit_match_wrap">
+            <TextView android:textColor="@color/uikit_text_3" android:id="@id/tv_content" android:visibility="visible" android:layout_width="fill_parent" android:maxHeight="300.0dip" android:lineSpacingMultiplier="1.15" style="@style/uikit_tv_user_black_14" />
+        </LinearLayout>
+    </ScrollView>
+    <com.gateio.uiComponent.GateButton android:id="@id/tv_cancel" android:layout_marginTop="24.0dip" android:layout_below="@id/scroll_view" app:gate_btn_state="normal" app:gate_btn_text="@string/uikit_i_know" app:gate_btn_type="primary" style="@style/uikit_match_wrap" />
+</com.gateio.common.view.CornerRelativeLayout>

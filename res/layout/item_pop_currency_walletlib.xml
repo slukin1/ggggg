@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/ts_14" android:textColor="@color/text_1" android:id="@id/item_currency" android:paddingTop="@dimen/margin_padding_10" android:paddingBottom="@dimen/margin_padding_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:paddingStart="@dimen/margin_padding_16" android:paddingEnd="@dimen/margin_padding_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

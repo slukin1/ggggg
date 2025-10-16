@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/uikit_background_color2" style="@style/uikit_match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/ll_seekBar" style="@style/uikit_match_wrap">
+        <View style="@style/uikit_view_line_keyboard" />
+        <LinearLayout android:padding="@dimen/uikit_margin_padding_10" style="@style/uikit_match_wrap_h">
+            <ImageView android:id="@id/button_minus" android:src="@mipmap/uikit_ico_minus" style="@style/uikit_wrap_wrap" />
+            <SeekBar android:id="@id/seekBar" android:maxHeight="4.0dip" android:progressDrawable="@drawable/uikit_seekbar_layer_list_red" android:thumb="@mipmap/uikit_slide_point" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" style="@style/uikit_ww_wrap" />
+            <ImageView android:id="@id/button_add" android:src="@mipmap/uikit_ico_plus" style="@style/uikit_wrap_wrap" />
+        </LinearLayout>
+    </LinearLayout>
+    <View style="@style/uikit_view_line_keyboard" />
+    <com.gateio.common.view.NumberKeyboardView android:id="@id/view_keyboard" android:background="@color/uikit_bg_indicator_point_normal" android:shadowColor="@android:color/transparent" android:keyBackground="@drawable/uikit_bnt_click_background" android:keyTextColor="@color/uikit_text_color_black" style="@style/uikit_match_wrap" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/uikit_bg_primary_v5" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.title.GTNavBarV5 android:id="@id/gt_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/market_opportunity_top_movers_title" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.gateio.lib.uikit.tab.v5.GTTabsV5 android:id="@id/gt_indicator" android:layout_width="fill_parent" android:layout_height="44.0dip" />
+        <View android:layout_gravity="end|center" android:background="@drawable/market_shape_linear_gradient_translucent_bg" android:layout_width="32.0dip" android:layout_height="44.0dip" />
+    </FrameLayout>
+    <View android:id="@id/view_line_2" android:background="@color/uikit_line_divider_v5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <com.gateio.lib.uikit.state.GTEmptyViewV5 android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:uikit_emptyButtonTextV5="@string/market_empty_reload" app:uikit_emptyTypeV5="data_empty" app:uikit_titleTextV5="@string/ticker_not_data" />
+    <androidx.viewpager.widget.ViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/ll_root" android:paddingStart="@dimen/margin_padding_16" android:paddingEnd="@dimen/margin_padding_16" style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_marginTop="16.0dip" style="@style/match_wrap_h">
+        <TextView android:textColor="@color/text_wallet_gray2" android:id="@id/tv_income_id" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/tv_user_black_14" />
+        <TextView android:textColor="@color/text_wallet_gray2" android:id="@id/tv_income_start" android:layout_width="0.0dip" android:layout_weight="1.6" style="@style/tv_user_black_14" />
+        <TextView android:textColor="@color/bg_theme_red_new" android:gravity="end" android:id="@id/tv_income_jslx" android:layout_width="0.0dip" android:layout_weight="1.6" style="@style/tv_user_black_14" />
+    </LinearLayout>
+    <LinearLayout android:layout_marginTop="16.0dip" style="@style/match_wrap_h">
+        <TextView android:textColor="@color/text_wallet_gray2" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/tv_user_black_14" />
+        <TextView android:textColor="@color/text_wallet_gray2" android:id="@id/tv_income_edn" android:layout_width="0.0dip" android:layout_weight="1.6" style="@style/tv_user_black_14" />
+        <TextView android:textColor="@color/text_wallet_gray2" android:gravity="end" android:id="@id/tv_income_pjcc" android:layout_width="0.0dip" android:layout_weight="1.6" style="@style/tv_user_black_14" />
+    </LinearLayout>
+    <View android:layout_marginTop="@dimen/margin_padding_16" style="@style/view_line_v2" />
+</LinearLayout>

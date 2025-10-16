@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.lib.uikit.widget.AdaptiveLinearLayout android:orientation="vertical" android:background="@color/uikit_cmpt_16_v3" android:layout_width="fill_parent" android:layout_height="fill_parent" app:left_top_radis="@dimen/uikit_radius_12" app:right_top_radis="@dimen/uikit_radius_12"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.gateio.lib.uikit.helper.GTPopupHeaderV3 android:id="@id/uikit_popup_header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.gateio.lib.uikit.alert.GTAlertV3 android:id="@id/uikit_popup_v3_alert" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_12" android:layout_marginEnd="@dimen/uikit_dp_16" />
+        <net.lucode.hackware.magicindicator.MagicIndicator android:id="@id/uikit_popup_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="44.0dip" android:layout_marginTop="7.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:id="@id/uikit_popup_view_line" android:background="@color/uikit_divider_2_v3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <androidx.core.widget.NestedScrollView android:id="@id/scroll_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/uikit_margin_padding_16" android:layout_weight="1.0" android:overScrollMode="never">
+                <FrameLayout android:id="@id/fl_content_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="start" android:orientation="horizontal" android:id="@id/ll_tips" android:visibility="gone" android:layout_margin="@dimen/uikit_dp_16" app:layout_constraintBottom_toTopOf="@id/fl_bottom" app:layout_constraintStart_toStartOf="parent" style="@style/uikit_match_wrap">
+            <com.gateio.lib.uikit.widget.GTCheckBoxV3 android:id="@id/cb_tips" android:layout_width="@dimen/uikit_dp_16" android:layout_height="@dimen/uikit_dp_16" android:layout_marginTop="@dimen/uikit_dp_2" android:checked="false" />
+            <TextView android:textSize="@dimen/uikit_text_body_v3" android:textColor="@color/uikit_text_1_v3" android:id="@id/cb_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/uikit_marketball_no_tip" android:layout_weight="1.0" android:paddingStart="@dimen/uikit_dp_8" style="@style/Uikit_font_sans_2_0_weight_400" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/fl_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/uikit_margin_padding_24" app:layout_constraintBottom_toBottomOf="parent">
+            <LinearLayout android:id="@id/ll_bottom" android:layout_height="44.0dip" android:layout_marginStart="@dimen/uikit_margin_padding_16" android:layout_marginEnd="@dimen/uikit_margin_padding_16" style="@style/uikit_match_wrap_h">
+                <com.gateio.lib.uikit.button.GTButtonV3 android:id="@id/btn_cancel" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/uikit_user_qx" android:layout_weight="1.0" app:uikit_buttonDimenV3="large" app:uikit_buttonTypeV3="outlined" />
+                <View android:id="@id/view_bottom_line" android:background="@color/uikit_transparent" android:visibility="gone" android:layout_width="12.0dip" android:layout_height="wrap_content" />
+                <com.gateio.lib.uikit.button.GTButtonV3 android:id="@id/btn_confirm" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/uikit_user_qd" android:layout_weight="1.0" app:uikit_buttonDimenV3="large" app:uikit_buttonTypeV3="primary" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_vertical_bottom" android:visibility="gone" android:layout_height="wrap_content" android:layout_marginStart="@dimen/uikit_margin_padding_16" android:layout_marginEnd="@dimen/uikit_margin_padding_16" style="@style/uikit_match_wrap_h">
+                <com.gateio.lib.uikit.button.GTButtonV3 android:id="@id/btn_vertical_confirm" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/uikit_user_qd" app:uikit_buttonDimenV3="large" app:uikit_buttonTypeV3="primary" />
+                <com.gateio.lib.uikit.button.GTButtonV3 android:id="@id/btn_vertical_cancel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_12" android:text="@string/uikit_user_qx" app:uikit_buttonDimenV3="large" app:uikit_buttonTypeV3="outlined" />
+                <com.gateio.lib.uikit.button.GTButtonV3 android:id="@id/btn_vertical_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_20" app:uikit_buttonDimenV3="small" app:uikit_buttonTypeV3="text_blue" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</com.gateio.lib.uikit.widget.AdaptiveLinearLayout>

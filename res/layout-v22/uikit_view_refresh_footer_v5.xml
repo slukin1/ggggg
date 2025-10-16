@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingTop="@dimen/uikit_spacing_32_v5" android:paddingBottom="@dimen/uikit_spacing_32_v5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/uikit_spacing_32_v5"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@id/uikit_refresh_footer_loading" android:layout_width="16.0dip" android:layout_height="16.0dip" app:lottie_autoPlay="true" app:lottie_fileName="btn_loading_black_v5.json" app:lottie_loop="true" />
+</FrameLayout>

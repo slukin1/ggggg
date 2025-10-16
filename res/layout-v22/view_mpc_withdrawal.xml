@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.walletslib.view.WalletsDropdownView android:id="@id/gd_mpc_address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_margin_padding_16" android:layout_marginRight="@dimen/uikit_margin_padding_16" android:layout_marginHorizontal="@dimen/uikit_margin_padding_16" app:uikit_dropdownDimenV5="large" />
+    <com.gateio.walletslib.view.WalletsDropdownView android:id="@id/gd_mpc_network" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_margin_padding_16" android:layout_marginTop="@dimen/uikit_dp_24" android:layout_marginRight="@dimen/uikit_margin_padding_16" android:layout_marginHorizontal="@dimen/uikit_margin_padding_16" app:uikit_dropdownDimenV5="large" />
+</androidx.appcompat.widget.LinearLayoutCompat>

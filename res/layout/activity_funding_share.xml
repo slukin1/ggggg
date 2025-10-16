@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_root" android:background="@mipmap/ic_share_funding_wn" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:id="@id/share_content" android:layout_marginTop="80.0dip" style="@style/match_wrap">
+        <androidx.cardview.widget.CardView android:layout_marginStart="@dimen/margin_padding_24" android:layout_marginEnd="@dimen/margin_padding_24" app:cardBackgroundColor="@color/uikit_white" app:cardCornerRadius="@dimen/radius_5" style="@style/wrap_wrap">
+            <LinearLayout android:layout_marginTop="120.0dip" style="@style/match_wrap">
+                <LinearLayout android:gravity="center_horizontal" android:layout_margin="@dimen/margin_padding_16" style="@style/match_wrap">
+                    <TextView android:textStyle="bold" android:textColor="@color/txt_theme_gray" android:id="@id/tv_desc" style="@style/tv_user_black_18" />
+                    <LinearLayout android:gravity="center_vertical" android:layout_marginTop="@dimen/margin_padding_24" style="@style/wrap_wrap_h">
+                        <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/uikit_white" android:background="@drawable/bnt_theme_buy_new" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="13.0dip" android:text="@string/c2c_loan_lend" android:paddingStart="4.0dip" android:paddingEnd="4.0dip" />
+                        <TextView android:textColor="@color/txt_theme_gray" android:id="@id/tv_currency" android:layout_marginStart="4.0dip" style="@style/tv_user_black_18" />
+                        <TextView android:textColor="@color/text_market_second" android:text="@string/funding_gglcsyl" android:layout_marginStart="4.0dip" style="@style/tv_user_black_16" />
+                        <ImageView android:id="@id/iv_rate" android:layout_width="10.0dip" android:layout_height="10.0dip" android:src="@mipmap/uikit_ico_down2_red" android:layout_marginStart="4.0dip" />
+                    </LinearLayout>
+                    <TextView android:textSize="45.0sp" android:textColor="@color/bg_theme_red_new" android:id="@id/tv_rate" android:layout_marginTop="@dimen/margin_padding_16" style="@style/tv_user_black_20" />
+                    <TextView android:textColor="@color/txt_theme_gray_light" android:text="@string/funding_cknh" style="@style/tv_user_black_14" />
+                </LinearLayout>
+                <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@mipmap/icon_invest_share" android:scaleType="fitXY" />
+                <LinearLayout android:gravity="center" android:layout_height="80.0dip" android:layout_marginTop="@dimen/margin_padding_8" android:layout_marginBottom="@dimen/margin_padding_16" android:layout_marginStart="@dimen/margin_padding_16" android:layout_marginEnd="@dimen/margin_padding_16" style="@style/match_wrap_h">
+                    <ImageView android:layout_gravity="center" android:layout_width="80.0dip" android:layout_height="wrap_content" android:src="@mipmap/btn_logon_logo" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_marginEnd="@dimen/margin_padding_5" />
+                    <TextView android:textColor="@color/color_bcbcbc" android:text="@string/share_tips" android:layout_weight="1.0" style="@style/tv_user_black_12" />
+                    <ImageView android:id="@id/qrcode_image" android:layout_width="80.0dip" android:layout_height="80.0dip" android:scaleType="fitXY" android:adjustViewBounds="true" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <ImageView android:layout_width="180.0dip" android:layout_height="180.0dip" android:layout_marginTop="@dimen/margin_padding_8" android:src="@mipmap/ic_share_funding_wn_center" android:scaleType="centerInside" android:layout_centerHorizontal="true" />
+    <TextView android:textStyle="bold" android:textColor="@color/uikit_white" android:gravity="center" android:id="@id/tv_point_share" android:background="@drawable/fade_share_commit" android:paddingTop="@dimen/margin_padding_8" android:paddingBottom="@dimen/margin_padding_8" android:layout_marginTop="@dimen/margin_padding_24" android:text="@string/share_commit" android:layout_below="@id/share_content" android:layout_centerHorizontal="true" android:paddingStart="32.0dip" android:paddingEnd="32.0dip" style="@style/tv_user_black_20" />
+</RelativeLayout>

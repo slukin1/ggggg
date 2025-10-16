@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/bg_wallet" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/layout_main_header" />
+    <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/uikit_color_2354e6" android:gravity="center" android:id="@id/tv_commit" android:background="@color/color_f1f1f1_2b364d" android:visibility="gone" android:layout_height="44.0dip" android:text="@string/user_delete" android:layout_alignParentBottom="true" style="@style/match_wrap" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh" android:layout_above="@id/tv_commit" android:layout_below="@id/layout_header" style="@style/match_match">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:visibility="gone" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:overScrollMode="never" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" />
+            <TextView android:textColor="#ffc1c1c2" android:gravity="center" android:id="@id/tv_empty" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="30.0dip" android:text="@string/ticker_not_data" android:drawablePadding="16.0dip" app:drawableTopCompat="@mipmap/ic_empty" />
+        </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</RelativeLayout>

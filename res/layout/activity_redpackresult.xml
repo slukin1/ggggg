@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/uikit_white" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.common.view.GateioTitleView android:id="@id/gt_title" android:layout_width="fill_parent" android:layout_height="48.0dip" app:bg="@color/color_d93d42" app:leftSrc="@mipmap/ic_command_goback" app:rightVisibility="false" app:titleText="@string/command_detail" />
+    <androidx.core.widget.NestedScrollView android:scrollbars="none" android:fadingEdge="none" android:descendantFocusability="blocksDescendants" android:overScrollMode="never" style="@style/match_match">
+        <LinearLayout android:gravity="center_horizontal" style="@style/match_match">
+            <LinearLayout android:gravity="center_horizontal" android:background="@color/color_d93d42" style="@style/match_wrap">
+                <LinearLayout android:gravity="center" android:layout_height="35.0dip" android:layout_marginTop="@dimen/margin_padding_24" style="@style/wrap_wrap_h">
+                    <com.gateio.common.view.GateioAvatarView android:id="@id/item_head" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_centerInParent="true" app:avatar_text_size="16" />
+                    <TextView android:textStyle="bold" android:id="@id/tv_name" android:layout_marginStart="@dimen/margin_padding_8" style="@style/tv_user_white_16" />
+                </LinearLayout>
+                <TextView android:ellipsize="end" android:id="@id/tv_msg" android:layout_marginTop="@dimen/margin_padding_8" android:maxLines="3" style="@style/tv_user_white_16" />
+            </LinearLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="50.0dip" android:src="@mipmap/bg_hongbao" android:scaleType="fitXY" />
+            <TextView android:textColor="@color/color_868686" android:id="@id/tv_coin" android:layout_marginTop="24.0dip" style="@style/tv_user_white_16" />
+            <TextView android:textSize="32.0dip" android:textStyle="bold" android:textColor="@color/color_5d5d5d" android:id="@id/tv_amount" android:layout_marginTop="4.0dip" style="@style/tv_user_black_20" />
+            <TextView android:textColor="@color/color_c6c6ca" android:layout_marginTop="4.0dip" android:text="@string/warining_redpack_result" style="@style/tv_user_white_14" />
+            <ImageView android:id="@id/iv_luck" android:layout_marginTop="@dimen/margin_padding_16" android:src="@mipmap/ic_command_luck" android:scaleType="centerInside" android:layout_marginStart="@dimen/margin_padding_16" android:layout_marginEnd="@dimen/margin_padding_16" style="@style/wrap_wrap" />
+            <TextView android:textColor="@color/color_b3b3b5" android:id="@id/tv_hasget" android:background="@color/color_fff9e9" android:paddingTop="@dimen/margin_padding_8" android:paddingBottom="@dimen/margin_padding_8" android:layout_width="fill_parent" android:layout_marginTop="@dimen/margin_padding_16" android:paddingStart="@dimen/margin_padding_16" style="@style/tv_user_white_12" />
+            <RelativeLayout android:descendantFocusability="blocksDescendants" style="@style/match_match">
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:scrollbars="none" android:fadingEdge="none" android:overScrollMode="never" android:nestedScrollingEnabled="false" style="@style/match_match" />
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

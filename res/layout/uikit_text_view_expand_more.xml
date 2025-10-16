@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_color_666666_abb0b7" android:ellipsize="end" android:id="@id/tv_expand_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" />
+    <TextView android:id="@id/tv_content_all" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textSize="@dimen/uikit_text_size_14" android:textStyle="bold" android:textColor="@color/uikit_color_748ea3_7b94a8" android:id="@id/tv_expand" android:paddingTop="@dimen/uikit_margin_padding_6" android:paddingRight="@dimen/uikit_margin_padding_6" android:paddingBottom="@dimen/uikit_margin_padding_6" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/uikit_miniapp_expand" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_root" android:background="@color/uikit_bg_primary_v5" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true">
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="44.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="@color/uikit_text_primary_v5" android:layout_width="0.0dip" android:text="@string/futures_testnet" android:layout_weight="1.0" android:layout_marginStart="16.0dip" style="@style/Text_text_primary_16_weight_600_v5" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/uikit_text_primary_v5" android:gravity="end|center" android:id="@id/tvBack" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/futures_back_to_live" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" style="@style/Text_text_secondary_14_weight_500_v5" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/fm_root" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</RelativeLayout>

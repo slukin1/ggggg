@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/uikit_bg_primary_v5" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.title.GTNavBarV5 android:id="@id/market_titleview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/market_floating_custom_watchlist_title_add_coins" app:uikit_titleLeftColorV5="@color/uikit_icon_1_v3" app:uikit_titleLeftV5="" />
+    <androidx.fragment.app.FragmentContainerView android:id="@id/market_fragment" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip">
+        <com.gateio.lib.uikit.button.GTButtonV5 android:id="@id/market_ball_reset_btn" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/reset" android:layout_weight="1.0" android:layout_marginEnd="6.0dip" app:uikit_buttonDimenV5="medium" app:uikit_buttonTypeV5="secondary_gray" />
+        <com.gateio.lib.uikit.button.GTButtonV5 android:id="@id/market_ball_next_btn" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/button_next" android:layout_weight="1.0" android:layout_marginStart="6.0dip" app:uikit_buttonDimenV5="medium" app:uikit_buttonTypeV5="primary_black" />
+    </LinearLayout>
+</LinearLayout>

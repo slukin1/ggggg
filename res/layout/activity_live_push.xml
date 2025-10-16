@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout android:layout_gravity="end" android:id="@id/drawer_layout" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout style="@style/match_match">
+        <FrameLayout android:id="@id/fl_content" style="@style/match_match" />
+        <ImageView android:id="@id/iv_live_bg" android:visibility="gone" android:src="@mipmap/poor_network" android:scaleType="centerCrop" style="@style/match_match" />
+        <include layout="@layout/view_exo_player_safe" />
+        <include layout="@layout/layout_live_func" />
+    </RelativeLayout>
+    <LinearLayout android:layout_gravity="start" android:tag="START" android:layout_width="260.0dip" android:layout_height="fill_parent">
+        <fragment android:name="com.gateio.gateio.pusher.fragment.mutelist.LiveMuteListFragment" android:id="@id/live_mute_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="end" android:tag="END" android:layout_width="260.0dip" android:layout_height="fill_parent">
+        <fragment android:name="com.gateio.gateio.pusher.fragment.rewardlist.LiveRewardListFragment" android:id="@id/live_reward_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

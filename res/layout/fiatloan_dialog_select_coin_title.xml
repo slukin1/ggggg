@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/driveView" android:background="@drawable/fiatloan_select_coin_drag" android:layout_width="@dimen/uikit_dp_32" android:layout_height="@dimen/uikit_dp_3" android:layout_marginTop="@dimen/uikit_margin_padding_8" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/contentLayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_2" android:minHeight="@dimen/uikit_margin_padding_40" android:paddingStart="@dimen/uikit_dp_4" android:paddingEnd="@dimen/uikit_dp_4" app:layout_constraintTop_toBottomOf="@id/driveView">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/uikit_text_size_18" android:textColor="@color/uikit_text_1_v3" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Uikit_font_sans_2_0_weight_700" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/customLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/contentLayout" app:layout_goneMarginTop="@dimen/uikit_margin_padding_12" />
+</androidx.constraintlayout.widget.ConstraintLayout>

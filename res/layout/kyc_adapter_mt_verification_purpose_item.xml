@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_text_1_v3" android:id="@id/rb_payment" android:background="@drawable/kyc_choose_id_type_bg" android:paddingLeft="@dimen/uikit_margin_padding_16" android:paddingRight="@dimen/uikit_margin_padding_16" android:layout_width="fill_parent" android:layout_height="48.0dip" android:button="@null" app:drawableEndCompat="@drawable/kyc_choose_channel_item_checkbox" style="@style/Uikit_font_sans_2_0_weight_500"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

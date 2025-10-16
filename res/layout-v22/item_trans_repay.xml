@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/length_32"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.widget.GTCheckBoxV5 android:textColor="@color/uikit_text_primary_v5" android:gravity="center_vertical" android:id="@id/cb_table1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:drawablePadding="@dimen/length_4" android:layout_weight="1.0" app:uikit_button_size_v5="12.0sp" app:uikit_isCorner_v5="false" style="@style/Uikit_font_sans_5_0_weight_400" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="@color/uikit_text_primary_v5" android:id="@id/tv_table2" android:paddingLeft="@dimen/length_4" android:paddingRight="@dimen/length_4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingHorizontal="@dimen/length_4" style="@style/Uikit_font_sans_5_0_weight_400" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="@color/uikit_text_primary_v5" android:gravity="end" android:id="@id/tv_table3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Uikit_font_sans_5_0_weight_400" />
+</LinearLayout>

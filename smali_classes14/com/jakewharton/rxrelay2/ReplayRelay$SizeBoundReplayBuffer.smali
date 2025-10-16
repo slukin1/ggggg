@@ -1,0 +1,944 @@
+.class final Lcom/jakewharton/rxrelay2/ReplayRelay$SizeBoundReplayBuffer;
+.super Ljava/util/concurrent/atomic/AtomicReference;
+.source "ReplayRelay.java"
+
+# interfaces
+.implements Lcom/jakewharton/rxrelay2/ReplayRelay$ReplayBuffer;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/jakewharton/rxrelay2/ReplayRelay;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = "SizeBoundReplayBuffer"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/util/concurrent/atomic/AtomicReference<",
+        "Ljava/lang/Object;",
+        ">;",
+        "Lcom/jakewharton/rxrelay2/ReplayRelay$ReplayBuffer<",
+        "TT;>;"
+    }
+.end annotation
+
+
+# static fields
+.field private static final serialVersionUID:J = 0xf5f291fe2c1030bL
+
+
+# instance fields
+.field volatile head:Lcom/jakewharton/rxrelay2/ReplayRelay$Node;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/jakewharton/rxrelay2/ReplayRelay$Node<",
+            "TT;>;"
+        }
+    .end annotation
+.end field
+
+.field final maxSize:I
+
+.field size:I
+
+.field tail:Lcom/jakewharton/rxrelay2/ReplayRelay$Node;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/jakewharton/rxrelay2/ReplayRelay$Node<",
+            "TT;>;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method constructor <init>(I)V
+    .locals 3
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
+
+    .line 4
+    .line 5
+    if-lez p1, :cond_0
+
+    .line 6
+    .line 7
+    iput p1, p0, Lcom/jakewharton/rxrelay2/ReplayRelay$SizeBoundReplayBuffer;->maxSize:I
+
+    .line 8
+    .line 9
+    new-instance p1, Lcom/jakewharton/rxrelay2/ReplayRelay$Node;
+
+    .line 10
+    const/4 v0, 0x0
+
+    .line 11
+    .line 12
+    .line 13
+    invoke-direct {p1, v0}, Lcom/jakewharton/rxrelay2/ReplayRelay$Node;-><init>(Ljava/lang/Object;)V
+
+    .line 14
+    .line 15
+    iput-object p1, p0, Lcom/jakewharton/rxrelay2/ReplayRelay$SizeBoundReplayBuffer;->tail:Lcom/jakewharton/rxrelay2/ReplayRelay$Node;
+
+    .line 16
+    .line 17
+    iput-object p1, p0, Lcom/jakewharton/rxrelay2/ReplayRelay$SizeBoundReplayBuffer;->head:Lcom/jakewharton/rxrelay2/ReplayRelay$Node;
+
+    .line 18
+    return-void
+
+    .line 19
+    .line 20
+    :cond_0
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
+    .line 21
+    .line 22
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    .line 23
+    .line 24
+    .line 25
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 26
+    .line 27
+    const-string/jumbo v2, "maxSize > 0 required but it was "
+
+    .line 28
+    .line 29
+    .line 30
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 31
+    .line 32
+    .line 33
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 34
+    .line 35
+    .line 36
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 37
+    move-result-object p1
+
+    .line 38
+    .line 39
+    .line 40
+    invoke-direct {v0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    .line 41
+    throw v0
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+.end method
+
+
+# virtual methods
+.method public add(Ljava/lang/Object;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;)V"
+        }
+    .end annotation
+
+    .line 1
+    .line 2
+    new-instance v0, Lcom/jakewharton/rxrelay2/ReplayRelay$Node;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-direct {v0, p1}, Lcom/jakewharton/rxrelay2/ReplayRelay$Node;-><init>(Ljava/lang/Object;)V
+
+    .line 6
+    .line 7
+    iget-object p1, p0, Lcom/jakewharton/rxrelay2/ReplayRelay$SizeBoundReplayBuffer;->tail:Lcom/jakewharton/rxrelay2/ReplayRelay$Node;
+
+    .line 8
+    .line 9
+    iput-object v0, p0, Lcom/jakewharton/rxrelay2/ReplayRelay$SizeBoundReplayBuffer;->tail:Lcom/jakewharton/rxrelay2/ReplayRelay$Node;
+
+    .line 10
+    .line 11
+    iget v1, p0, Lcom/jakewharton/rxrelay2/ReplayRelay$SizeBoundReplayBuffer;->size:I
+
+    .line 12
+    .line 13
+    add-int/lit8 v1, v1, 0x1
+
+    .line 14
+    .line 15
+    iput v1, p0, Lcom/jakewharton/rxrelay2/ReplayRelay$SizeBoundReplayBuffer;->size:I
+
+    .line 16
+    .line 17
+    .line 18
+    invoke-virtual {p1, v0}, Ljava/util/concurrent/atomic/AtomicReference;->set(Ljava/lang/Object;)V
+
+    .line 19
+    .line 20
+    .line 21
+    invoke-virtual {p0}, Lcom/jakewharton/rxrelay2/ReplayRelay$SizeBoundReplayBuffer;->trim()V
+
+    .line 22
+    return-void
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+.end method
+
+.method public getValue()Ljava/lang/Object;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()TT;"
+        }
+    .end annotation
+
+    .annotation build Lio/reactivex/annotations/Nullable;
+    .end annotation
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/jakewharton/rxrelay2/ReplayRelay$SizeBoundReplayBuffer;->head:Lcom/jakewharton/rxrelay2/ReplayRelay$Node;
+
+    .line 3
+    .line 4
+    .line 5
+    :goto_0
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    .line 6
+    move-result-object v1
+
+    .line 7
+    .line 8
+    check-cast v1, Lcom/jakewharton/rxrelay2/ReplayRelay$Node;
+
+    .line 9
+    .line 10
+    if-nez v1, :cond_0
+
+    .line 11
+    .line 12
+    iget-object v0, v0, Lcom/jakewharton/rxrelay2/ReplayRelay$Node;->value:Ljava/lang/Object;
+
+    .line 13
+    return-object v0
+
+    .line 14
+    :cond_0
+    move-object v0, v1
+
+    .line 15
+    goto :goto_0
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+.end method
+
+.method public getValues([Ljava/lang/Object;)[Ljava/lang/Object;
+    .locals 5
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "([TT;)[TT;"
+        }
+    .end annotation
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/jakewharton/rxrelay2/ReplayRelay$SizeBoundReplayBuffer;->head:Lcom/jakewharton/rxrelay2/ReplayRelay$Node;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-virtual {p0}, Lcom/jakewharton/rxrelay2/ReplayRelay$SizeBoundReplayBuffer;->size()I
+
+    .line 6
+    move-result v1
+
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    const/4 v3, 0x0
+
+    .line 9
+    .line 10
+    if-nez v1, :cond_0
+
+    .line 11
+    array-length v0, p1
+
+    .line 12
+    .line 13
+    if-eqz v0, :cond_3
+
+    .line 14
+    .line 15
+    aput-object v2, p1, v3
+
+    .line 16
+    goto :goto_1
+
+    .line 17
+    :cond_0
+    array-length v4, p1
+
+    .line 18
+    .line 19
+    if-ge v4, v1, :cond_1
+
+    .line 20
+    .line 21
+    .line 22
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 23
+    move-result-object p1
+
+    .line 24
+    .line 25
+    .line 26
+    invoke-virtual {p1}, Ljava/lang/Class;->getComponentType()Ljava/lang/Class;
+
+    .line 27
+    move-result-object p1
+
+    .line 28
+    .line 29
+    .line 30
+    invoke-static {p1, v1}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;I)Ljava/lang/Object;
+
+    .line 31
+    move-result-object p1
+
+    .line 32
+    .line 33
+    check-cast p1, [Ljava/lang/Object;
+
+    .line 34
+    .line 35
+    :cond_1
+    :goto_0
+    if-eq v3, v1, :cond_2
+
+    .line 36
+    .line 37
+    .line 38
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    .line 39
+    move-result-object v0
+
+    .line 40
+    .line 41
+    check-cast v0, Lcom/jakewharton/rxrelay2/ReplayRelay$Node;
+
+    .line 42
+    .line 43
+    iget-object v4, v0, Lcom/jakewharton/rxrelay2/ReplayRelay$Node;->value:Ljava/lang/Object;
+
+    .line 44
+    .line 45
+    aput-object v4, p1, v3
+
+    .line 46
+    .line 47
+    add-int/lit8 v3, v3, 0x1
+
+    .line 48
+    goto :goto_0
+
+    .line 49
+    :cond_2
+    array-length v0, p1
+
+    .line 50
+    .line 51
+    if-le v0, v1, :cond_3
+
+    .line 52
+    .line 53
+    aput-object v2, p1, v1
+
+    .line 54
+    :cond_3
+    :goto_1
+    return-object p1
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+.end method
+
+.method public replay(Lcom/jakewharton/rxrelay2/ReplayRelay$ReplayDisposable;)V
+    .locals 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/jakewharton/rxrelay2/ReplayRelay$ReplayDisposable<",
+            "TT;>;)V"
+        }
+    .end annotation
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-virtual {p1}, Ljava/util/concurrent/atomic/AtomicInteger;->getAndIncrement()I
+
+    .line 4
+    move-result v0
+
+    .line 5
+    .line 6
+    if-eqz v0, :cond_0
+
+    .line 7
+    return-void
+
+    .line 8
+    .line 9
+    :cond_0
+    iget-object v0, p1, Lcom/jakewharton/rxrelay2/ReplayRelay$ReplayDisposable;->downstream:Lio/reactivex/x;
+
+    .line 10
+    .line 11
+    iget-object v1, p1, Lcom/jakewharton/rxrelay2/ReplayRelay$ReplayDisposable;->index:Ljava/lang/Object;
+
+    .line 12
+    .line 13
+    check-cast v1, Lcom/jakewharton/rxrelay2/ReplayRelay$Node;
+
+    .line 14
+    const/4 v2, 0x1
+
+    .line 15
+    .line 16
+    if-nez v1, :cond_1
+
+    .line 17
+    .line 18
+    iget-object v1, p0, Lcom/jakewharton/rxrelay2/ReplayRelay$SizeBoundReplayBuffer;->head:Lcom/jakewharton/rxrelay2/ReplayRelay$Node;
+
+    .line 19
+    .line 20
+    :cond_1
+    :goto_0
+    iget-boolean v3, p1, Lcom/jakewharton/rxrelay2/ReplayRelay$ReplayDisposable;->cancelled:Z
+
+    .line 21
+    .line 22
+    if-eqz v3, :cond_2
+
+    .line 23
+    const/4 v0, 0x0
+
+    .line 24
+    .line 25
+    iput-object v0, p1, Lcom/jakewharton/rxrelay2/ReplayRelay$ReplayDisposable;->index:Ljava/lang/Object;
+
+    .line 26
+    return-void
+
+    .line 27
+    .line 28
+    .line 29
+    :cond_2
+    invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    .line 30
+    move-result-object v3
+
+    .line 31
+    .line 32
+    check-cast v3, Lcom/jakewharton/rxrelay2/ReplayRelay$Node;
+
+    .line 33
+    .line 34
+    if-nez v3, :cond_4
+
+    .line 35
+    .line 36
+    .line 37
+    invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    .line 38
+    move-result-object v3
+
+    .line 39
+    .line 40
+    if-eqz v3, :cond_3
+
+    .line 41
+    goto :goto_0
+
+    .line 42
+    .line 43
+    :cond_3
+    iput-object v1, p1, Lcom/jakewharton/rxrelay2/ReplayRelay$ReplayDisposable;->index:Ljava/lang/Object;
+
+    .line 44
+    neg-int v2, v2
+
+    .line 45
+    .line 46
+    .line 47
+    invoke-virtual {p1, v2}, Ljava/util/concurrent/atomic/AtomicInteger;->addAndGet(I)I
+
+    .line 48
+    move-result v2
+
+    .line 49
+    .line 50
+    if-nez v2, :cond_1
+
+    .line 51
+    return-void
+
+    .line 52
+    .line 53
+    :cond_4
+    iget-object v1, v3, Lcom/jakewharton/rxrelay2/ReplayRelay$Node;->value:Ljava/lang/Object;
+
+    .line 54
+    .line 55
+    .line 56
+    invoke-interface {v0, v1}, Lio/reactivex/x;->onNext(Ljava/lang/Object;)V
+
+    .line 57
+    move-object v1, v3
+
+    .line 58
+    goto :goto_0
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+.end method
+
+.method public size()I
+    .locals 3
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/jakewharton/rxrelay2/ReplayRelay$SizeBoundReplayBuffer;->head:Lcom/jakewharton/rxrelay2/ReplayRelay$Node;
+
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    .line 5
+    .line 6
+    :goto_0
+    const v2, 0x7fffffff
+
+    .line 7
+    .line 8
+    if-eq v1, v2, :cond_1
+
+    .line 9
+    .line 10
+    .line 11
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    .line 12
+    move-result-object v0
+
+    .line 13
+    .line 14
+    check-cast v0, Lcom/jakewharton/rxrelay2/ReplayRelay$Node;
+
+    .line 15
+    .line 16
+    if-nez v0, :cond_0
+
+    .line 17
+    goto :goto_1
+
+    .line 18
+    .line 19
+    :cond_0
+    add-int/lit8 v1, v1, 0x1
+
+    .line 20
+    goto :goto_0
+
+    .line 21
+    :cond_1
+    :goto_1
+    return v1
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+.end method
+
+.method trim()V
+    .locals 2
+
+    .line 1
+    .line 2
+    iget v0, p0, Lcom/jakewharton/rxrelay2/ReplayRelay$SizeBoundReplayBuffer;->size:I
+
+    .line 3
+    .line 4
+    iget v1, p0, Lcom/jakewharton/rxrelay2/ReplayRelay$SizeBoundReplayBuffer;->maxSize:I
+
+    .line 5
+    .line 6
+    if-le v0, v1, :cond_0
+
+    .line 7
+    .line 8
+    add-int/lit8 v0, v0, -0x1
+
+    .line 9
+    .line 10
+    iput v0, p0, Lcom/jakewharton/rxrelay2/ReplayRelay$SizeBoundReplayBuffer;->size:I
+
+    .line 11
+    .line 12
+    iget-object v0, p0, Lcom/jakewharton/rxrelay2/ReplayRelay$SizeBoundReplayBuffer;->head:Lcom/jakewharton/rxrelay2/ReplayRelay$Node;
+
+    .line 13
+    .line 14
+    .line 15
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    .line 16
+    move-result-object v0
+
+    .line 17
+    .line 18
+    check-cast v0, Lcom/jakewharton/rxrelay2/ReplayRelay$Node;
+
+    .line 19
+    .line 20
+    iput-object v0, p0, Lcom/jakewharton/rxrelay2/ReplayRelay$SizeBoundReplayBuffer;->head:Lcom/jakewharton/rxrelay2/ReplayRelay$Node;
+
+    .line 21
+    :cond_0
+    return-void
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+.end method
+
+.method public trimHead()V
+    .locals 3
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/jakewharton/rxrelay2/ReplayRelay$SizeBoundReplayBuffer;->head:Lcom/jakewharton/rxrelay2/ReplayRelay$Node;
+
+    .line 3
+    .line 4
+    iget-object v1, v0, Lcom/jakewharton/rxrelay2/ReplayRelay$Node;->value:Ljava/lang/Object;
+
+    .line 5
+    .line 6
+    if-eqz v1, :cond_0
+
+    .line 7
+    .line 8
+    new-instance v1, Lcom/jakewharton/rxrelay2/ReplayRelay$Node;
+
+    .line 9
+    const/4 v2, 0x0
+
+    .line 10
+    .line 11
+    .line 12
+    invoke-direct {v1, v2}, Lcom/jakewharton/rxrelay2/ReplayRelay$Node;-><init>(Ljava/lang/Object;)V
+
+    .line 13
+    .line 14
+    .line 15
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    .line 16
+    move-result-object v0
+
+    .line 17
+    .line 18
+    .line 19
+    invoke-virtual {v1, v0}, Ljava/util/concurrent/atomic/AtomicReference;->lazySet(Ljava/lang/Object;)V
+
+    .line 20
+    .line 21
+    iput-object v1, p0, Lcom/jakewharton/rxrelay2/ReplayRelay$SizeBoundReplayBuffer;->head:Lcom/jakewharton/rxrelay2/ReplayRelay$Node;
+
+    .line 22
+    :cond_0
+    return-void
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+.end method

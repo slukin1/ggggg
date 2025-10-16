@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingLeft="@dimen/uikit_margin_padding_24" android:paddingRight="@dimen/uikit_margin_padding_24" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.input.GTEditTextV3 android:id="@id/name" android:layout_width="fill_parent" android:layout_height="wrap_content" app:uikit_editBottomTextV3="@string/security_ukey_name_tip" app:uikit_editDimenV3="large" app:uikit_editHintV3="@string/security_please_enter" app:uikit_editTypeV3="stroke" />
+</LinearLayout>

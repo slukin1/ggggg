@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:paddingHorizontal="16.0dip" style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+        <TextView android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/exchange_futures_assets_transferable" android:layout_weight="1.0" android:layout_marginEnd="@dimen/margin_padding_10" style="@style/Text_text_secondary_14_weight_400_v5" />
+        <TextView android:gravity="end" android:id="@id/futures_assets_available_transferable" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/Text_text_primary_14_weight_500_v5" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <TextView android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/exchange_futures_assets_futures_bonus" android:layout_weight="1.0" android:layout_marginEnd="@dimen/margin_padding_10" style="@style/Text_text_secondary_14_weight_400_v5" />
+        <TextView android:gravity="end" android:id="@id/futures_assets_available_futures_bonus" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/Text_text_primary_14_weight_500_v5" />
+    </LinearLayout>
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/exchange_futures_assets_available_usdt_tip" style="@style/Text_text_primary_14_weight_400_v5" />
+</LinearLayout>

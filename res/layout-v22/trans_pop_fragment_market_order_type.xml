@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:tag="layout/trans_pop_fragment_market_order_type_0" android:background="@drawable/trans_v1_layer_1_top_r12" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="@dimen/length_40" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/uikit_text_primary_v5" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/length_24" android:text="@string/exchange_market_order_type" style="@style/Uikit_font_sans_5_0_weight_600" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/length_16">
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rlMarket" android:padding="@dimen/length_16" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_text_1_v3" android:id="@id/tvMarket" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/exchange_market" style="@style/Uikit_font_sans_5_0_weight_500" />
+            <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_secondary_v5" android:id="@id/tvMarketInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/length_2" android:text="@string/exchange_futures_v5_market_tips" android:layout_below="@id/tvMarket" android:layout_alignParentStart="true" style="@style/Uikit_font_sans_5_0_weight_400" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rlSmartMarket" android:padding="@dimen/length_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+            <TextView android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_text_1_v3" android:id="@id/tvSmartMarket" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/exchange_smart_market" style="@style/Uikit_font_sans_5_0_weight_500" />
+            <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_secondary_v5" android:id="@id/tvSmartMarketInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/length_2" android:text="@string/exchange_futures_v5_market_smart_tips" android:layout_below="@id/tvSmartMarket" android:layout_alignParentStart="true" style="@style/Uikit_font_sans_5_0_weight_400" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_secondary_v5" android:id="@id/tvSmartMarketTips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/length_12" android:text="@string/exchange_smart_market_tip_v1_new" style="@style/Uikit_font_sans_5_0_weight_400" />
+    </LinearLayout>
+</LinearLayout>

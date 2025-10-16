@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/match_wrap_h"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/ll_content" android:background="@drawable/k_bg_global" android:padding="@dimen/k_margin_padding_10" android:layout_height="125.0dip" android:layout_margin="8.0dip" style="@style/match_wrap">
+        <LinearLayout style="@style/match_wrap_h">
+            <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_1" android:layout_gravity="center_vertical" android:id="@id/tv_trans_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" style="@style/Uikit_font_weight_600" />
+            <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_3" android:layout_gravity="center_vertical" android:id="@id/tv_trans_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:layout_marginStart="@dimen/k_margin_padding_10" style="@style/Uikit_font_weight_400" />
+            <View android:layout_height="@dimen/w_0.1" style="@style/ww_wrap" />
+            <TextView android:textSize="@dimen/uikit_text_size_14" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tv_trans_changed" android:visibility="visible" android:layout_width="78.0dip" android:layout_height="28.0dip" android:layout_marginEnd="@dimen/k_margin_padding_5" style="@style/Uikit_font_weight_500" />
+        </LinearLayout>
+        <View android:id="@id/view_line" android:background="@color/uikit_divider_2" android:layout_height="@dimen/w_1" android:layout_marginTop="@dimen/k_margin_padding_10" style="@style/view_line_v" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/k_margin_padding_6">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginEnd="@dimen/k_margin_padding_16" android:layout_toStartOf="@id/ll_market_right" android:layout_alignParentStart="true">
+                <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_2" android:id="@id/tv_trans_price_m" android:text="--" style="@style/tv_user_gray_14" />
+                <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_2" android:id="@id/tv_trans_price_r" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/k_margin_padding_3" android:text="--" style="@style/Uikit_font_weight_600" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_market_right" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentEnd="true">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/uikit_text_3" android:id="@id/tv_trans_gao_left" android:text="@string/high" android:singleLine="true" style="@style/tv_user_gray_12" />
+                    <TextView android:textColor="@color/uikit_text_2" android:gravity="end" android:id="@id/tv_trans_gao" android:text="--" android:singleLine="true" android:layout_weight="1.0" android:layout_marginStart="10.0dip" style="@style/tv_user_gray_12" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                    <TextView android:textColor="@color/uikit_text_3" android:id="@id/tv_trans_di_left" android:text="@string/low" android:singleLine="true" style="@style/tv_user_gray_12" />
+                    <TextView android:textColor="@color/k_color_text" android:gravity="end" android:id="@id/tv_trans_di" android:text="--" android:singleLine="true" android:layout_weight="1.0" android:layout_marginStart="10.0dip" style="@style/tv_user_gray_12" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                    <TextView android:textColor="@color/uikit_text_3" android:id="@id/tv_trans_liang_left" android:text="@string/vol" android:singleLine="true" style="@style/tv_user_gray_12" />
+                    <TextView android:textColor="@color/uikit_text_2" android:gravity="end" android:id="@id/tv_trans_liang" android:text="--" android:singleLine="true" android:layout_weight="1.0" android:layout_marginStart="10.0dip" style="@style/tv_user_gray_12" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

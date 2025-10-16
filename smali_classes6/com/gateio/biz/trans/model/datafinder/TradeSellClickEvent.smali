@@ -1,0 +1,464 @@
+.class public Lcom/gateio/biz/trans/model/datafinder/TradeSellClickEvent;
+.super Ljava/lang/Object;
+.source "TradeSellClickEvent.java"
+
+# interfaces
+.implements Lcom/gateio/lib/datafinder/protocol/GTBaseFinderEvent;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/gateio/biz/trans/model/datafinder/TradeSellClickEvent$TradeSell;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lcom/gateio/lib/datafinder/protocol/GTBaseFinderEvent<",
+        "Lcom/gateio/biz/trans/model/datafinder/TradeSellClickEvent$TradeSell;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field accountType:I
+
+.field borrowAmount:Ljava/lang/String;
+
+.field currencyName:Ljava/lang/String;
+
+.field exchangeName:Ljava/lang/String;
+
+.field isMarginTrading:Z
+
+.field isSmartMarket:Z
+
+.field orderType:I
+
+.field totalAmount:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>(IILjava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Z)V
+    .locals 0
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    iput p1, p0, Lcom/gateio/biz/trans/model/datafinder/TradeSellClickEvent;->accountType:I
+
+    .line 6
+    .line 7
+    iput p2, p0, Lcom/gateio/biz/trans/model/datafinder/TradeSellClickEvent;->orderType:I
+
+    .line 8
+    .line 9
+    iput-object p3, p0, Lcom/gateio/biz/trans/model/datafinder/TradeSellClickEvent;->exchangeName:Ljava/lang/String;
+
+    .line 10
+    .line 11
+    iput-object p4, p0, Lcom/gateio/biz/trans/model/datafinder/TradeSellClickEvent;->currencyName:Ljava/lang/String;
+
+    .line 12
+    .line 13
+    iput-boolean p5, p0, Lcom/gateio/biz/trans/model/datafinder/TradeSellClickEvent;->isMarginTrading:Z
+
+    .line 14
+    .line 15
+    iput-object p6, p0, Lcom/gateio/biz/trans/model/datafinder/TradeSellClickEvent;->totalAmount:Ljava/lang/String;
+
+    .line 16
+    .line 17
+    iput-object p7, p0, Lcom/gateio/biz/trans/model/datafinder/TradeSellClickEvent;->borrowAmount:Ljava/lang/String;
+
+    .line 18
+    .line 19
+    iput-boolean p8, p0, Lcom/gateio/biz/trans/model/datafinder/TradeSellClickEvent;->isSmartMarket:Z
+
+    .line 20
+    return-void
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
+    .line 154
+    .line 155
+    .line 156
+    .line 157
+    .line 158
+    .line 159
+    .line 160
+    .line 161
+    .line 162
+    .line 163
+    .line 164
+    .line 165
+    .line 166
+    .line 167
+    .line 168
+    .line 169
+    .line 170
+.end method
+
+
+# virtual methods
+.method public body()Lcom/gateio/biz/trans/model/datafinder/TradeSellClickEvent$TradeSell;
+    .locals 3
+
+    .line 2
+    new-instance v0, Lcom/gateio/biz/trans/model/datafinder/TradeSellClickEvent$TradeSell;
+
+    invoke-direct {v0}, Lcom/gateio/biz/trans/model/datafinder/TradeSellClickEvent$TradeSell;-><init>()V
+
+    .line 3
+    iget v1, p0, Lcom/gateio/biz/trans/model/datafinder/TradeSellClickEvent;->accountType:I
+
+    invoke-virtual {v0, v1}, Lcom/gateio/biz/trans/model/datafinder/TradeSellClickEvent$TradeSell;->setAccountType(I)V
+
+    .line 4
+    iget v1, p0, Lcom/gateio/biz/trans/model/datafinder/TradeSellClickEvent;->orderType:I
+
+    iget-boolean v2, p0, Lcom/gateio/biz/trans/model/datafinder/TradeSellClickEvent;->isSmartMarket:Z
+
+    invoke-virtual {v0, v1, v2}, Lcom/gateio/biz/trans/model/datafinder/TradeSellClickEvent$TradeSell;->setOrderType(IZ)V
+
+    .line 5
+    iget-object v1, p0, Lcom/gateio/biz/trans/model/datafinder/TradeSellClickEvent;->exchangeName:Ljava/lang/String;
+
+    iput-object v1, v0, Lcom/gateio/biz/trans/model/datafinder/TradeSellClickEvent$TradeSell;->exchange_name:Ljava/lang/String;
+
+    .line 6
+    iget-object v1, p0, Lcom/gateio/biz/trans/model/datafinder/TradeSellClickEvent;->currencyName:Ljava/lang/String;
+
+    iput-object v1, v0, Lcom/gateio/biz/trans/model/datafinder/TradeSellClickEvent$TradeSell;->currency_name:Ljava/lang/String;
+
+    .line 7
+    iget-boolean v1, p0, Lcom/gateio/biz/trans/model/datafinder/TradeSellClickEvent;->isMarginTrading:Z
+
+    iput-boolean v1, v0, Lcom/gateio/biz/trans/model/datafinder/TradeSellClickEvent$TradeSell;->is_margin_trading:Z
+
+    .line 8
+    iget-object v1, p0, Lcom/gateio/biz/trans/model/datafinder/TradeSellClickEvent;->borrowAmount:Ljava/lang/String;
+
+    iput-object v1, v0, Lcom/gateio/biz/trans/model/datafinder/TradeSellClickEvent$TradeSell;->borrow_amount:Ljava/lang/String;
+
+    .line 9
+    iget-object v1, p0, Lcom/gateio/biz/trans/model/datafinder/TradeSellClickEvent;->totalAmount:Ljava/lang/String;
+
+    iput-object v1, v0, Lcom/gateio/biz/trans/model/datafinder/TradeSellClickEvent$TradeSell;->total_amount:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public bridge synthetic body()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/gateio/biz/trans/model/datafinder/TradeSellClickEvent;->body()Lcom/gateio/biz/trans/model/datafinder/TradeSellClickEvent$TradeSell;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public eventName()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    .line 2
+    const-string/jumbo v0, "trade_sell_click"
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+.end method
+
+.method public synthetic parseBodyToJSONObject()Lorg/json/JSONObject;
+    .locals 1
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-static {p0}, Lh7/a;->a(Lcom/gateio/lib/datafinder/protocol/GTBaseFinderEvent;)Lorg/json/JSONObject;
+
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+.end method
+
+.method public synthetic parseBodyToJSONObjectWithValidation()Lorg/json/JSONObject;
+    .locals 1
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-static {p0}, Lh7/a;->b(Lcom/gateio/lib/datafinder/protocol/GTBaseFinderEvent;)Lorg/json/JSONObject;
+
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+.end method
+
+.method public synthetic printLog()Z
+    .locals 1
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-static {p0}, Lh7/a;->c(Lcom/gateio/lib/datafinder/protocol/GTBaseFinderEvent;)Z
+
+    .line 4
+    move-result v0
+
+    .line 5
+    return v0
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+.end method

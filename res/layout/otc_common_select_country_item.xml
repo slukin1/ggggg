@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.input.GTInputV5 android:id="@id/gt_input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/otc_verification_please_choose" app:uikit_editAlwaysShowHintV5="false" app:uikit_editDimenV5="large" app:uikit_editHintV5="@string/otc_verification_please_choose" />
+    <View android:id="@id/click_wrapper" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/uikit_margin_padding_20" />
+</FrameLayout>

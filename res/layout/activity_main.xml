@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/main_fragment_container" android:background="@color/uikit_bg_primary_v5" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="-20.0dip" android:layout_above="@id/fl_bottom" />
+    <ViewStub android:id="@id/stub_network_alert" android:layout="@layout/gt_network_alert" android:inflatedId="@id/gt_network_alert" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="76.0dip" />
+    <View android:id="@id/shadow_layout_bg" android:background="@drawable/bg_social_drawer_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignBottom="@id/main_fragment_container" />
+    <com.gateio.uiComponent.shadow.BoxShadowLayout android:id="@id/shadow_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignBottom="@id/main_fragment_container" app:box_radiusTopLeft="@dimen/uikit_radius_12" app:box_radiusTopRight="@dimen/uikit_radius_12" app:box_shadowAlpha="0.1" app:box_shadowBlur="8.0dip" app:box_shadowColor="@color/black" app:box_shadowOffsetVertical="-1.0dip">
+        <com.gateio.common.view.CornerLinearLayout android:orientation="vertical" android:id="@id/cll_social_drawer" android:background="@color/uikit_bg_primary_v5" android:layout_width="fill_parent" android:layout_height="fill_parent" app:left_top_radis="@dimen/uikit_radius_12" app:right_top_radis="@dimen/uikit_radius_12">
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/ll_social_top" android:background="@drawable/bg_social_drawer_bg" android:layout_width="fill_parent" android:layout_height="52.0dip">
+                <View android:id="@id/iv_social_top_scroll" android:background="@drawable/bg_social_drawer" android:layout_width="31.0dip" android:layout_height="@dimen/uikit_dp_3" android:layout_marginTop="@dimen/uikit_margin_padding_6" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                <net.lucode.hackware.magicindicator.MagicIndicator android:id="@id/title_tab_lay" android:paddingBottom="12.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="16.0dip" app:layout_constraintEnd_toStartOf="@id/iv_social_top_up" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                <View android:id="@id/clickView" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/title_tab_lay" app:layout_constraintTop_toTopOf="parent" />
+                <View android:id="@id/view_moments_tabbar_shadow" android:background="@drawable/bg_shadow_home_moments_tab" android:layout_width="12.0dip" android:layout_height="fill_parent" app:layout_constraintEnd_toStartOf="@id/iv_social_top_up" />
+                <com.gateio.uiComponent.GateIconFont android:textSize="16.0dip" android:textColor="@color/uikit_text_secondary_v5" android:gravity="center" android:id="@id/iv_social_top_up" android:background="@color/uikit_layer_1_v5" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <FrameLayout android:id="@id/frame_social_drawer" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </com.gateio.common.view.CornerLinearLayout>
+    </com.gateio.uiComponent.shadow.BoxShadowLayout>
+    <View android:id="@id/moments_top_social" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+    <FrameLayout android:id="@id/fl_bottom" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.gateio.lib.uikit.tabbar.GTTabBarBottomNavigatorV5 android:id="@id/main_navigator" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+</RelativeLayout>

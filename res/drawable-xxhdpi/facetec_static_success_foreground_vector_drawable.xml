@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="24.0dip" android:width="24.0dip" android:viewportWidth="24.0" android:viewportHeight="24.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:name="check">
+        <path android:name="tick" android:pathData="M7.35,12.74 l2.79,2.88 l6.51,-6.54" android:strokeColor="#ffffffff" android:strokeWidth="1.0" android:strokeMiterLimit="10.0" />
+    </group>
+</vector>

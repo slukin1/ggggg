@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/index_vol_setting" android:layout_width="fill_parent" android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gateio.biz.kline.widget.KLineIndexInputView android:id="@id/index_vol_1" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="@dimen/uikit_margin_padding_12" android:layout_marginRight="@dimen/uikit_margin_padding_12" app:indexInputType="valueAndColor" app:indexLabel="MA1" app:indexShowCheck="true" />
+    <com.gateio.biz.kline.widget.KLineIndexInputView android:id="@id/index_vol_2" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="@dimen/uikit_margin_padding_12" android:layout_marginRight="@dimen/uikit_margin_padding_12" app:indexInputType="valueAndColor" app:indexLabel="MA2" app:indexShowCheck="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/k_margin_padding_12" android:layout_marginTop="@dimen/k_margin_padding_16" android:layout_marginRight="@dimen/k_margin_padding_12" android:layout_marginBottom="@dimen/k_margin_padding_16">
+        <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_primary_v5" android:id="@id/index_vol_introduction_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/txt_coin_ann" android:includeFontPadding="false" style="@style/Uikit_font_sans_5_0_weight_500" />
+        <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_secondary_v5" android:id="@id/index_vol_introduction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/k_margin_padding_4" android:text="@string/kline_vol_desc_introduction" android:includeFontPadding="false" style="@style/Uikit_font_sans_5_0_weight_400" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:fillViewport="true" android:layout_weight="1.0" style="@style/match_match">
+        <LinearLayout android:gravity="center_horizontal" android:background="@color/color_d93d42" style="@style/match_wrap">
+            <com.gateio.common.view.GateioTitleView android:id="@id/gt_title" android:layout_width="fill_parent" android:layout_height="48.0dip" app:bg="@color/uikit_transparent" app:leftSrc="@mipmap/ic_command_goback" app:rightVisibility="false" app:titleText="@string/redpach_fhb" />
+            <LinearLayout android:gravity="center_horizontal" android:background="@drawable/bg_command_send" android:padding="@dimen/margin_padding_16" style="@style/match_match">
+                <com.gateio.common.view.CornerLinearLayout android:gravity="center_vertical" android:background="@color/uikit_white" android:layout_height="48.0dip" android:layout_marginTop="@dimen/margin_padding_8" android:paddingStart="@dimen/margin_padding_16" android:paddingEnd="@dimen/margin_padding_16" app:radius="4.0dip" style="@style/match_wrap_h">
+                    <TextView android:textColor="@color/color_5d5d5d" android:text="@string/margin_loan_coin" style="@style/tv_user_white_14" />
+                    <LinearLayout android:gravity="end|center" android:orientation="horizontal" android:id="@id/ll_coin" android:layout_centerVertical="true" style="@style/match_match_h">
+                        <ImageView android:id="@id/iv_logo" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginStart="10.0dip" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/color_5d5d5d" android:gravity="end" android:id="@id/ed_coin" android:background="@null" android:text="--" android:drawablePadding="10.0dip" app:drawableEndCompat="@mipmap/arrow_depth_down" style="@style/tv_trans_currency" />
+                    </LinearLayout>
+                </com.gateio.common.view.CornerLinearLayout>
+                <LinearLayout android:gravity="end" android:layout_marginTop="4.0dip" style="@style/match_wrap_h">
+                    <com.gateio.lib.uikit.text.GTDashTextView android:textSize="12.0sp" android:textColor="@color/brand_1" android:id="@id/tv_avalible" android:text="@string/asset_ky" app:color="@color/brand_1" app:dash="false" app:tips="@string/uikit_availableUpgradeTooltip" app:title="@string/title_alert_ts" style="@style/tv_user_black_12" />
+                </LinearLayout>
+                <com.gateio.common.view.CornerLinearLayout android:gravity="center_vertical" android:background="@color/uikit_white" android:layout_height="48.0dip" android:layout_marginTop="@dimen/margin_padding_8" android:paddingStart="@dimen/margin_padding_16" android:paddingEnd="@dimen/margin_padding_16" app:radius="4.0dip" style="@style/match_wrap_h">
+                    <TextView android:textColor="@color/color_5d5d5d" android:id="@id/tv_amount" android:text="@string/trans_amount" style="@style/tv_user_white_14" />
+                    <EditText android:textSize="14.0sp" android:textColor="@color/color_3a3a3a" android:textColorHint="@color/text_trans_title" android:gravity="end|center" android:id="@id/ed_amount" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/warning_redpack_amount" android:singleLine="true" android:inputType="numberDecimal" style="@style/tv_trans_currency" />
+                </com.gateio.common.view.CornerLinearLayout>
+                <com.gateio.common.view.CornerLinearLayout android:gravity="center_vertical" android:background="@color/uikit_white" android:layout_height="48.0dip" android:layout_marginTop="@dimen/margin_padding_16" android:paddingStart="@dimen/margin_padding_16" android:paddingEnd="@dimen/margin_padding_16" app:radius="4.0dip" style="@style/match_wrap_h">
+                    <TextView android:textColor="@color/color_5d5d5d" android:text="@string/redpach_hbgs" style="@style/tv_user_white_14" />
+                    <EditText android:textSize="14.0sp" android:textColor="@color/color_3a3a3a" android:textColorHint="@color/text_trans_title" android:gravity="end|center" android:id="@id/ed_count" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/warning_redpack_count" android:singleLine="true" android:digits="\ 1234567890" android:inputType="number" style="@style/tv_trans_currency" />
+                </com.gateio.common.view.CornerLinearLayout>
+                <com.gateio.common.view.CornerLinearLayout android:gravity="center_vertical" android:background="@color/uikit_white" android:padding="@dimen/margin_padding_16" android:layout_marginTop="@dimen/margin_padding_16" app:radius="4.0dip" style="@style/match_wrap">
+                    <TextView android:textColor="@color/color_5d5d5d" android:text="@string/command_hbzt" style="@style/tv_user_white_14" />
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:scrollbars="none" android:fadingEdge="none" android:layout_marginTop="@dimen/margin_padding_8" android:overScrollMode="never" style="@style/match_wrap" />
+                </com.gateio.common.view.CornerLinearLayout>
+                <com.gateio.common.view.CornerLinearLayout android:gravity="center_vertical" android:background="@color/uikit_white" android:layout_marginTop="@dimen/margin_padding_16" android:paddingStart="@dimen/margin_padding_16" android:paddingEnd="@dimen/margin_padding_16" app:radius="4.0dip" style="@style/match_wrap_h">
+                    <EditText android:textSize="14.0sp" android:textColor="@color/color_3a3a3a" android:textColorHint="@color/text_trans_title" android:id="@id/ed_content" android:background="@null" android:layout_width="fill_parent" android:minHeight="48.0dip" android:hint="@string/redpack_gxfc" android:singleLine="false" android:inputType="text" style="@style/tv_trans_currency" />
+                </com.gateio.common.view.CornerLinearLayout>
+                <LinearLayout android:layout_marginTop="@dimen/margin_padding_24" style="@style/wrap_wrap_h">
+                    <TextView android:textSize="@dimen/text_size_32" android:textStyle="bold" android:textColor="@color/color_343434" android:gravity="center" android:id="@id/tv_local_price" style="@style/wrap_wrap" />
+                    <TextView android:textSize="@dimen/text_size_16" android:textStyle="bold" android:textColor="@color/color_343434" android:gravity="center" android:id="@id/tv_local_unit" android:layout_marginStart="8.0dip" style="@style/wrap_wrap" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/color_b3b3b5" android:gravity="center" android:layout_marginTop="@dimen/margin_padding_24" android:text="@string/command_thzh" style="@style/wrap_wrap" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center_horizontal" android:background="@color/color_fff9e9" android:padding="@dimen/margin_padding_16" style="@style/match_wrap">
+        <com.gateio.common.view.CornerTextView android:gravity="center" android:id="@id/tv_commit" android:background="@color/color_f25050" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/redpach_sjhb" android:layout_alignParentBottom="true" app:radius="4.0dip" style="@style/tv_user_white_18" />
+    </LinearLayout>
+</LinearLayout>

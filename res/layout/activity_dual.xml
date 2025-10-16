@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:background="@color/uikit_color_ffffff_111f31" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.common.view.GateioTitleView android:id="@id/title_view" android:layout_width="fill_parent" android:layout_height="40.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:leftSrc="@mipmap/uikit_btn_back" app:rightSecondSrc="@mipmap/ic_position_navi" app:rightSecondVisibility="true" app:rightSrc="@mipmap/ic_question_amm" app:titleText="@string/asset_ssb" />
+    <net.lucode.hackware.magicindicator.MagicIndicator android:id="@id/tabs" android:layout_width="fill_parent" android:layout_height="@dimen/tab_trans" android:overScrollMode="never" app:layout_constraintTop_toBottomOf="@id/title_view" />
+    <com.gateio.common.view.CustomViewpager android:id="@id/view_pager" android:scrollbars="none" android:fadingEdge="none" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="0.0dip" android:overScrollMode="never" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/tabs" />
+</androidx.constraintlayout.widget.ConstraintLayout>

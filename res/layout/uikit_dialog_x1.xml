@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.lib.uikit.widget.AdaptiveLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_spacing_20_v5" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout android:id="@id/ll_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/uikit_dp_16" android:paddingEnd="@dimen/uikit_dp_16">
+                <TextView android:textSize="@dimen/uikit_text_subtitle" android:textColor="@color/uikit_text_primary_v5" android:ellipsize="end" android:id="@id/tv_dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="21.0dip" android:maxLines="2" style="@style/Uikit_font_sans_5_0_weight_600" />
+            </LinearLayout>
+            <FrameLayout android:id="@id/fl_content_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ScrollView android:scrollbarSize="3.0dip" android:scrollbarThumbVertical="@mipmap/uikit_scrollbar_v5" android:id="@id/uikit_dialog_scrollview" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fadeScrollbars="false" android:layout_marginEnd="4.0dip">
+                    <LinearLayout android:id="@id/ll_content" android:paddingStart="@dimen/uikit_spacing_16_v5" android:paddingEnd="@dimen/uikit_spacing_12_v5" style="@style/uikit_match_wrap">
+                        <com.gateio.lib.uikit.text.GTMultiLineTextViewV5 android:scrollbarSize="@dimen/uikit_dp_40" android:textSize="14.0sp" android:textColor="@color/uikit_text_primary_v5" android:id="@id/tv_dialog_bold_content" android:visibility="gone" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fadeScrollbars="false" style="@style/Uikit_font_sans_5_0_weight_400" />
+                        <com.gateio.lib.uikit.text.GTMultiLineTextViewV5 android:scrollbarSize="@dimen/uikit_dp_40" android:textSize="14.0sp" android:textColor="@color/uikit_text_secondary_v5" android:id="@id/tv_dialog_content" android:visibility="gone" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fadeScrollbars="false" style="@style/Uikit_font_sans_5_0_weight_400" />
+                        <com.gateio.lib.uikit.reminder.GTReminderV5 android:id="@id/dialogReminder" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_spacing_20_v5" />
+                    </LinearLayout>
+                </ScrollView>
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_verify_code" android:paddingLeft="@dimen/uikit_dp_24" android:paddingRight="@dimen/uikit_dp_24" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_16" android:layout_marginBottom="@dimen/uikit_dp_24">
+                <com.gateio.lib.uikit.input.GTInputV5 android:id="@id/et_verify_code" android:layout_width="fill_parent" android:layout_height="wrap_content" app:uikit_editHintV3="Please enter" app:uikit_editTypeV3="stroke" app:uikit_editVisibleDeleteV3="false" />
+                <com.gateio.lib.uikit.text.GTMultiLineTextViewV5 android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_secondary_v5" android:id="@id/tv_verify_code_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_8" />
+            </LinearLayout>
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_dialog_close" android:padding="@dimen/uikit_dp_12" android:visibility="visible" android:layout_width="@dimen/uikit_spacing_48_v5" android:layout_height="@dimen/uikit_spacing_48_v5" android:src="@mipmap/uikit_ic_dialog_close_x1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_goneMarginEnd="@dimen/uikit_margin_padding_16" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.gateio.lib.uikit.helper.GTFooterButtonV5 android:id="@id/uikit_footer_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_spacing_16_v5" android:layout_marginTop="@dimen/uikit_spacing_24_v5" android:layout_marginRight="@dimen/uikit_spacing_16_v5" />
+    <View android:layout_width="fill_parent" android:layout_height="16.0dip" />
+</com.gateio.lib.uikit.widget.AdaptiveLinearLayout>

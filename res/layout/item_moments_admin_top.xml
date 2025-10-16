@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.common.view.CornerLinearLayout android:gravity="center" android:background="@color/uikit_color_f2f2f2_22344d" android:layout_marginStart="8.0dip" app:radius="4.0dip" style="@style/wrap_wrap_h"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/uikit_color_333333_e6e6e6" android:layout_gravity="center_vertical" android:id="@id/tv_name" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:layout_marginStart="@dimen/margin_padding_8" style="@style/tv_user_black_14" />
+    <ImageView android:layout_gravity="center_vertical" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@mipmap/ic_trans_close" android:layout_marginStart="6.0dip" android:layout_marginEnd="6.0dip" />
+</com.gateio.common.view.CornerLinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/llContent" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_text_primary_v5" android:id="@id/layoutLabel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/length_16" android:layout_marginTop="@dimen/length_10" android:layout_marginRight="@dimen/length_16" style="@style/Uikit_font_sans_5_0_weight_500" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivVideo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/length_16" android:layout_marginTop="@dimen/length_16" android:layout_marginRight="@dimen/length_16" android:layout_marginBottom="@dimen/length_14" android:src="@mipmap/alpha_ic_menu_video_study" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler" android:paddingLeft="@dimen/length_12" android:paddingRight="@dimen/length_12" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/length_6" android:overScrollMode="never" app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:spanCount="4" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

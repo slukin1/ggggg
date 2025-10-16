@@ -1,0 +1,46 @@
+.class public final Lorg/conscrypt/OpenSSLSignature$SHA512RSAPSS;
+.super Lorg/conscrypt/OpenSSLSignature$RSAPSSPadding;
+.source "OpenSSLSignature.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lorg/conscrypt/OpenSSLSignature;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "SHA512RSAPSS"
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 4
+
+    .line 1
+    .line 2
+    sget-wide v0, Lorg/conscrypt/EvpMdRef$SHA512;->EVP_MD:J
+
+    .line 3
+    .line 4
+    const-string/jumbo v2, "SHA-512"
+
+    .line 5
+    .line 6
+    sget v3, Lorg/conscrypt/EvpMdRef$SHA512;->SIZE_BYTES:I
+
+    .line 7
+    .line 8
+    .line 9
+    invoke-direct {p0, v0, v1, v2, v3}, Lorg/conscrypt/OpenSSLSignature$RSAPSSPadding;-><init>(JLjava/lang/String;I)V
+
+    .line 10
+    return-void
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+.end method

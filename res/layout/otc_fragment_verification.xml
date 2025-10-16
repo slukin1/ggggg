@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/uikit_bg_primary_v5" android:paddingBottom="@dimen/uikit_margin_padding_24" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerview" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.gateio.lib.uikit.state.GTEmptyV5 android:id="@id/otc_empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:uikit_emptyTypeV5="data_empty" app:uikit_titleTextV5="@string/otc_no_data" />
+</FrameLayout>

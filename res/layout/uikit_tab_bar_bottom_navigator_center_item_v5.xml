@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.anim.GTLottieAnimationViewV5 android:id="@id/iv_tab_anim" android:layout_width="48.0dip" android:layout_height="48.0dip" />
+    <TextView android:textSize="@dimen/uikit_spacing_10_v5" android:textColor="@color/uikit_selector_tab_bar_bottom_item_text_v5" android:gravity="center_horizontal" android:id="@id/tv_tab_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_spacing_2_v5" android:lines="1" android:layoutDirection="ltr" app:autoSizeMaxTextSize="@dimen/uikit_spacing_10_v5" app:autoSizeMinTextSize="@dimen/uikit_spacing_8_v5" app:autoSizeStepGranularity="1.0sp" app:autoSizeTextType="uniform" style="@style/Uikit_font_sans_5_0_weight_500" />
+</merge>

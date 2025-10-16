@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/llIcebergLayout" android:tag="layout/futures_pop_advanced_options_chase_limit_v5_0" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/layoutChaseLimitCb" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.gateio.lib.uikit.widget.GTCheckBoxV5 android:id="@id/cbChaseLimit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:paddingEnd="4.0dip" app:uikit_button_size_v5="12.0dip" />
+        <com.gateio.gateio.view.FuturesDashTextViewV5 android:textSize="12.0sp" android:textColor="@color/uikit_text_primary_v5" android:ellipsize="end" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/futures_chase_limit_max_chase_distance" android:maxLines="1" app:uikit_underline_color="@color/uikit_text_tertiary_v5" app:uikit_underline_show_more_text="false" app:uikit_underline_tips="@string/futures_chase_limit_max_chase_distance_desc" style="@style/Uikit_font_sans_5_0_weight_400" />
+    </LinearLayout>
+    <com.gateio.lib.uikit.input.GTInputV5 android:id="@id/et_max_chase_distance" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_8" app:uikit_editAlwaysShowHintV5="true" app:uikit_editGravityV5="start" app:uikit_editHintV5="@string/futures_please_enter" app:uikit_editInputDropdownArrowMarginV5="2.0dip" app:uikit_editInputTypeV5="decimal" app:uikit_editRightTextColorV5="@color/uikit_text_primary_v5" app:uikit_editVisibleDeleteV5="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llChasePrice" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+        <TextView android:textSize="11.0sp" android:text="≈" style="@style/Text_text_secondary_12_weight_400_v5" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/uikit_function_trade_buy_v5" android:id="@id/tvBuyChasePrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" style="@style/Uikit_font_sans_2_0_weight_400" />
+        <TextView android:textSize="11.0sp" android:id="@id/tvSlAllLine" android:text=" / " style="@style/Text_text_secondary_12_weight_400_v5" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/uikit_function_trade_sell_v5" android:id="@id/tvSellChasePrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" style="@style/Uikit_font_sans_2_0_weight_400" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/llChaseLimitIntervalValue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_8" android:layout_marginBottom="@dimen/margin_padding_8">
+        <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/futures_chase_limit_chase_interval" style="@style/Text_text_secondary_12_weight_400_v5" />
+        <TextView android:gravity="end" android:layout_gravity="center_vertical" android:id="@id/tvChaseLimitIntervalValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/futures_chase_limit_chase_interval_value" android:layout_weight="1.0" style="@style/Text_text_primary_12_weight_500_v5" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_pd_2_v3" android:gravity="center" android:id="@id/tv_direction" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Uikit_font_sans_2_0_weight_700" />
+        <TextView android:textSize="@dimen/uikit_text_size_13" android:textColor="@color/uikit_text_1_v3" android:id="@id/tv_quantity" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:layout_weight="1.0" style="@style/Uikit_font_sans_2_0_weight_500" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_6">
+        <ImageView android:id="@id/iv_status" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginEnd="@dimen/uikit_dp_4" />
+        <TextView android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_text_1_v3" android:id="@id/tv_status" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="4.0dip" style="@style/Uikit_font_sans_2_0_weight_700" />
+        <ImageView android:id="@id/iv_countdown" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@mipmap/fiatotc_ic_time_countdown" />
+        <Chronometer android:id="@id/chronometer_countdown" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="2.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rl_progress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_12">
+        <TextView android:id="@id/v_line1" android:background="@color/uikit_divider_2_v3" android:layout_width="fill_parent" android:layout_height="4.0dip" android:layout_centerVertical="true" android:layout_toStartOf="@id/tv_progress2" android:layout_toEndOf="@id/tv_progress1" />
+        <TextView android:id="@id/v_line2" android:background="@color/uikit_divider_2_v3" android:layout_width="fill_parent" android:layout_height="4.0dip" android:layout_centerVertical="true" android:layout_toStartOf="@id/tv_progress3" android:layout_toEndOf="@id/tv_progress2" />
+        <TextView android:textSize="@dimen/uikit_text_size_10" android:textColor="@color/uikit_text_8_v3" android:gravity="center" android:id="@id/tv_progress1" android:background="@drawable/fiatotc_solid_icon3_r4" android:layout_width="14.0dip" android:layout_height="14.0dip" style="@style/Uikit_font_sans_2_0_weight_700" />
+        <TextView android:textSize="@dimen/uikit_text_size_10" android:textColor="@color/uikit_text_8_v3" android:gravity="center" android:id="@id/tv_progress2" android:background="@drawable/fiatotc_solid_icon3_r4" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_centerInParent="true" style="@style/Uikit_font_sans_2_0_weight_700" />
+        <TextView android:textSize="@dimen/uikit_text_size_10" android:textColor="@color/uikit_text_8_v3" android:gravity="center" android:id="@id/tv_progress3" android:background="@drawable/fiatotc_solid_icon3_r4" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_alignParentEnd="true" style="@style/Uikit_font_sans_2_0_weight_700" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_12">
+        <TextView android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_text_1_v3" android:id="@id/tv_fiat" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Uikit_font_sans_2_0_weight_700" />
+    </LinearLayout>
+</LinearLayout>

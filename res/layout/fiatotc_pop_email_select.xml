@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/card" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="180.0dip" android:layout_marginLeft="@dimen/uikit_dp_16" android:layout_marginRight="@dimen/uikit_dp_16" android:layout_marginBottom="@dimen/margin_padding_16" app:cardBackgroundColor="@color/uikit_bg_secondary_v5" app:cardCornerRadius="8.0dip" app:cardElevation="4.0dip">
+        <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/recycler" android:fitsSystemWindows="true" android:scrollbars="vertical" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </androidx.cardview.widget.CardView>
+</merge>

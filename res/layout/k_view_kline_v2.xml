@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.sparkhuu.klinelib.chart.view.KlineLegendTextView android:textColor="@color/ma5" android:id="@id/tv_index_text" android:paddingTop="@dimen/dp_4" android:visibility="visible" android:layout_marginStart="0.0dip" style="@style/styleKlineLegend" />
+    <com.sparkhuu.klinelib.chart.view.KTimeLineAttachMatchRelativeLayout android:id="@id/ktimeline_rl_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/tv_index_text">
+        <com.sparkhuu.klinelib.chart.view.KFrameLayout android:id="@id/fl_main_chart" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/tv_index_text">
+            <ImageView android:layout_gravity="center" android:id="@id/iv_logo" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="25.0dip" android:src="@mipmap/ic_logo" />
+            <com.sparkhuu.klinelib.chart.KCustomCombinedChart android:id="@id/price_chart" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/tuya_zoom_in" android:background="@drawable/bg_circle_tuya_zoom" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="100.0dip" android:scaleType="fitXY" />
+            <com.gateio.lib.uikit.state.GTLoadingViewV5 android:layout_gravity="center" android:id="@id/progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <View android:id="@id/mainDivider" style="@style/styleKlineChartDivider" />
+        </com.sparkhuu.klinelib.chart.view.KFrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/fl_main_chart">
+            <FrameLayout android:id="@id/fm_vol" android:visibility="visible" style="@style/styleKlineSubChartContainer">
+                <com.sparkhuu.klinelib.chart.view.KlineLegendTextView android:textColor="@color/uikit_text_4" android:id="@id/tv_volume" style="@style/styleKlineLegend" />
+                <com.sparkhuu.klinelib.chart.CustomCombinedChart android:id="@id/vol_chart" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/fm_macd" android:visibility="gone" android:layout_marginTop="-2.0dip" style="@style/styleKlineSubChartContainer">
+                <com.sparkhuu.klinelib.chart.view.KlineLegendTextView android:id="@id/tv_macd" style="@style/styleKlineLegend" />
+                <com.sparkhuu.klinelib.chart.CustomCombinedChart android:id="@id/macd_chart" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <View android:id="@id/macdDivider" style="@style/styleKlineChartDivider" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/fm_kdj" android:visibility="gone" style="@style/styleKlineSubChartContainer">
+                <com.sparkhuu.klinelib.chart.view.KlineLegendTextView android:id="@id/tv_kdj" style="@style/styleKlineLegend" />
+                <com.sparkhuu.klinelib.chart.CustomCombinedChart android:id="@id/kdj_chart" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <View android:id="@id/kdjDivider" style="@style/styleKlineChartDivider" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/fm_rsi" android:visibility="gone" style="@style/styleKlineSubChartContainer">
+                <com.sparkhuu.klinelib.chart.view.KlineLegendTextView android:id="@id/tv_rsi" style="@style/styleKlineLegend" />
+                <com.sparkhuu.klinelib.chart.CustomCombinedChart android:id="@id/rsi_chart" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <View android:id="@id/rsiDivider" style="@style/styleKlineChartDivider" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/fm_wr" android:visibility="gone" style="@style/styleKlineSubChartContainer">
+                <com.sparkhuu.klinelib.chart.view.KlineLegendTextView android:id="@id/tv_wr" style="@style/styleKlineLegend" />
+                <com.sparkhuu.klinelib.chart.CustomCombinedChart android:id="@id/wr_chart" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <View android:id="@id/wrDivider" style="@style/styleKlineChartDivider" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/fm_obv" android:visibility="gone" style="@style/styleKlineSubChartContainer">
+                <com.sparkhuu.klinelib.chart.view.KlineLegendTextView android:id="@id/tv_obv" style="@style/styleKlineLegend" />
+                <com.sparkhuu.klinelib.chart.CustomCombinedChart android:id="@id/obv_chart" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <View android:id="@id/obvDivider" style="@style/styleKlineChartDivider" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/fm_stochrsi" android:visibility="gone" style="@style/styleKlineSubChartContainer">
+                <com.sparkhuu.klinelib.chart.view.KlineLegendTextView android:id="@id/tv_stochrsi" style="@style/styleKlineLegend" />
+                <com.sparkhuu.klinelib.chart.CustomCombinedChart android:id="@id/stochrsi_chart" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <View android:id="@id/stochrsiDivider" style="@style/styleKlineChartDivider" />
+            </FrameLayout>
+        </LinearLayout>
+        <View android:id="@id/touch_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <androidx.appcompat.widget.AppCompatImageView android:textColor="@color/uikit_icon_3_v3" android:id="@id/iv_full_screen" android:padding="5.0dip" android:visibility="visible" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginBottom="27.0dip" android:src="@mipmap/kline_ic_fullscreen" android:layout_alignBottom="@id/fl_main_chart" android:layout_marginStart="7.0dip" android:layout_marginEnd="3.0dip" />
+        <androidx.appcompat.widget.AppCompatImageView android:gravity="center" android:id="@id/iv_draw_state" android:padding="5.0dip" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginBottom="27.0dip" android:src="@mipmap/kline_ic_show_draw" android:layout_alignBottom="@id/fl_main_chart" android:layout_marginEnd="60.0dip" android:layout_alignParentEnd="true" />
+        <androidx.appcompat.widget.AppCompatImageView android:gravity="center" android:id="@id/iv_reset_scale_y" android:padding="5.0dip" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginBottom="27.0dip" android:src="@mipmap/kline_ic_scale_y" android:layout_alignBottom="@id/fl_main_chart" android:layout_marginEnd="5.0dip" android:layout_alignParentEnd="true" />
+    </com.sparkhuu.klinelib.chart.view.KTimeLineAttachMatchRelativeLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentStart="true" android:layout_alignParentEnd="true">
+        <com.sparkhuu.klinelib.chart.view.KLineChartInfoView android:id="@id/k_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_6" android:layout_marginStart="@dimen/uikit_margin_padding_8" android:layout_marginEnd="@dimen/uikit_margin_padding_8" />
+    </FrameLayout>
+</RelativeLayout>

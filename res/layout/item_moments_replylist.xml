@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/ll_root" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/uikit_color_333333_e6e6e6" android:ellipsize="end" android:id="@id/tv_content" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="4" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/uikit_color_999999_8692a3" android:id="@id/tv_translate" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/moments_translate" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_content" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/uikit_color_333333_e6e6e6" android:id="@id/tv_translated_content" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_translate" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/uikit_bg_3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:apps="http://schemas.android.com/apk/res-auto">
+    <com.gateio.comlib.view.StatusBarPlaceHolder android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/back" android:layout_width="wrap_content" android:layout_height="@dimen/title_height" android:src="@mipmap/icon_left_arrow" android:paddingStart="@dimen/margin_padding_16" apps:tint="@color/uikit_text_2" />
+    <TextView android:textSize="@dimen/ts_20" android:textStyle="bold" android:textColor="@color/uikit_text_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_24" android:text="@string/security_del_account_reason_hint" android:lineSpacingExtra="@dimen/dp_7" android:paddingStart="@dimen/dp_12" android:paddingEnd="@dimen/dp_12" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/reason_group" android:padding="@dimen/margin_padding_12" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/layout1" android:paddingTop="@dimen/margin_padding_12" android:paddingBottom="@dimen/margin_padding_12" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <CheckBox android:id="@id/reason_1" android:background="@null" android:layout_width="fill_parent" android:layout_height="@dimen/uikit_dp_16" android:button="@null" android:drawableStart="@drawable/selector_checkbox_comlib" />
+            <TextView android:textColor="@color/uikit_text_1" android:id="@id/label1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/security_del_account_reason_1" android:lineSpacingExtra="@dimen/margin_padding_5" android:layout_marginStart="@dimen/margin_padding_24" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/layout2" android:paddingTop="@dimen/margin_padding_12" android:paddingBottom="@dimen/margin_padding_12" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout1">
+            <CheckBox android:id="@id/reason_2" android:background="@null" android:layout_width="fill_parent" android:layout_height="@dimen/uikit_dp_16" android:button="@null" android:drawableStart="@drawable/selector_checkbox_comlib" />
+            <TextView android:textColor="@color/uikit_text_1" android:id="@id/label2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/security_del_account_reason_2" android:lineSpacingExtra="@dimen/margin_padding_5" android:layout_marginStart="@dimen/margin_padding_24" />
+        </RelativeLayout>
+        <RelativeLayout android:paddingTop="@dimen/margin_padding_12" android:paddingBottom="@dimen/margin_padding_12" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout2">
+            <CheckBox android:id="@id/reason_other" android:background="@null" android:layout_width="fill_parent" android:layout_height="@dimen/uikit_dp_16" android:button="@null" android:drawableStart="@drawable/selector_checkbox_comlib" />
+            <TextView android:textColor="@color/uikit_text_1" android:id="@id/label_other" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/security_del_account_reason_3" android:lineSpacingExtra="@dimen/margin_padding_5" android:layout_marginStart="@dimen/margin_padding_24" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_12" android:layout_marginEnd="@dimen/dp_12">
+        <EditText android:enabled="false" android:textSize="@dimen/uikit_text_size_14" android:gravity="start" android:id="@id/specify_reason" android:background="@drawable/security_selector_edit_walletlib" android:padding="@dimen/dp_12" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_100" android:hint="@string/security_del_account_reason_input" android:maxLength="50" android:textCursorDrawable="@drawable/uikit_shape_edit_cursor_v3" />
+        <TextView android:textSize="@dimen/ts_12" android:textColor="@color/uikit_text_4" android:layout_gravity="end|bottom|center" android:id="@id/count" android:padding="@dimen/dp_12" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <Space style="@style/space" />
+    <com.gateio.lib.uikit.button.GTButtonV3 android:enabled="false" android:id="@id/next" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_padding_30" android:text="@string/uikit_bubble_next" android:layout_marginStart="@dimen/margin_padding_12" android:layout_marginEnd="@dimen/margin_padding_12" apps:uikit_buttonDimenV3="medium" apps:uikit_buttonTypeV3="primary" />
+</LinearLayout>

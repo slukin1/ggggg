@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/ll_root" android:paddingEnd="4.0dip" style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="#ffa0a3a7" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/Uikit_font_sans_5_0_weight_400" />
+    <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/tv_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:maxLines="5" style="@style/Uikit_font_sans_5_0_weight_400" />
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/uikit_bg_market_item" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/layout_header" layout="@layout/layout_header_normal" />
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout style="@style/match_match">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/bg_theme_red" android:id="@id/tv_label" android:layout_width="wrap_content" android:text="---" style="@style/tv_user_black_14" />
+                <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_alignParentEnd="true" style="@style/wrap_wrap">
+                    <TextView android:text="@string/margin_loan_zdxj" android:layout_marginStart="8.0dip" style="@style/tv_user_black_14" />
+                    <Switch android:id="@id/sw_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:thumb="@drawable/uikit_switch_custom_thumb_selector" android:track="@drawable/uikit_switch_custom_track_selector" />
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip">
+                <TextView android:textColor="@color/text_trans_gray3" android:layout_width="0.0dip" android:text="@string/margin_loan_jrzje" android:layout_weight="1.0" android:layout_marginEnd="@dimen/margin_padding_10" style="@style/tv_user_black_12" />
+                <TextView android:textColor="@color/text_trans_gray3" android:id="@id/tv_margin_period" android:layout_width="0.0dip" android:layout_weight="1.0" android:layout_marginEnd="@dimen/margin_padding_10" style="@style/tv_user_black_12" />
+                <TextView android:textColor="@color/text_trans_gray3" android:gravity="end" android:id="@id/tv_rate_label" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/tv_user_black_12" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip">
+                <TextView android:textColor="@color/text_trans_gray2" android:id="@id/tv_jrzje" android:layout_width="0.0dip" android:layout_weight="1.0" android:layout_marginEnd="@dimen/margin_padding_10" style="@style/tv_user_black_14" />
+                <TextView android:textColor="@color/text_trans_gray2" android:id="@id/tv_period" android:layout_width="0.0dip" android:layout_weight="1.0" android:layout_marginEnd="@dimen/margin_padding_10" style="@style/tv_user_black_14" />
+                <TextView android:textColor="@color/text_trans_gray2" android:gravity="end" android:id="@id/tv_rate" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/tv_user_black_14" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip">
+                <TextView android:textColor="@color/text_trans_gray3" android:id="@id/tv_margin_repayed_label" android:layout_width="0.0dip" android:text="@string/margin_loan_notye" android:layout_weight="1.0" android:layout_marginEnd="@dimen/margin_padding_10" style="@style/tv_user_black_12" />
+                <TextView android:textColor="@color/text_trans_gray3" android:id="@id/tv_interrest_label" android:layout_width="0.0dip" android:layout_weight="1.0" android:layout_marginEnd="@dimen/margin_padding_10" style="@style/tv_user_black_12" />
+                <TextView android:textColor="@color/text_trans_gray3" android:gravity="end" android:id="@id/tv_interrest_total_label" android:layout_width="0.0dip" android:text="@string/margin_loan_repay_total" android:layout_weight="1.0" style="@style/tv_user_black_12" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="15.0dip" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip">
+                <TextView android:textColor="@color/text_trans_gray2" android:id="@id/tv_repayed" android:layout_width="0.0dip" android:layout_weight="1.0" android:layout_marginEnd="@dimen/margin_padding_10" style="@style/tv_user_black_14" />
+                <TextView android:textColor="@color/text_trans_gray2" android:id="@id/tv_interrest" android:layout_width="0.0dip" android:layout_weight="1.0" android:layout_marginEnd="@dimen/margin_padding_10" style="@style/tv_user_black_14" />
+                <TextView android:textColor="@color/text_trans_gray2" android:gravity="end" android:id="@id/tv_total_interrest" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/tv_user_black_14" />
+            </LinearLayout>
+            <TextView android:textColor="@color/text_trans_order_second" android:text="@string/pb_margin_repayed" android:singleLine="true" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" style="@style/tv_user_gray_12" />
+            <ProgressBar android:id="@id/pb_margin_risk" android:layout_width="fill_parent" android:layout_height="12.0dip" android:layout_marginTop="8.0dip" android:max="100" android:progressDrawable="@drawable/uikit_bg_progress_trans_red_new" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" style="?android:progressBarStyleHorizontal" />
+            <RelativeLayout android:layout_marginTop="4.0dip" android:layout_marginBottom="15.0dip" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" style="@style/match_wrap">
+                <TextView android:textColor="@color/text_trans_order_second" android:id="@id/tv_pb_left" android:singleLine="true" style="@style/tv_user_gray_12" />
+                <TextView android:textColor="@color/text_trans_order_second" android:id="@id/tv_pb_right" android:singleLine="true" android:layout_alignParentEnd="true" style="@style/tv_user_gray_12" />
+            </RelativeLayout>
+            <View android:layout_height="@dimen/margin_padding_16" style="@style/view_line_v" />
+            <LinearLayout android:padding="@dimen/activity_horizontal_margin" style="@style/match_wrap">
+                <LinearLayout style="@style/match_wrap_h">
+                    <TextView android:textColor="@color/text_trans_gray3" android:minWidth="60.0dip" android:text="@string/futures_ddh" style="@style/tv_user_gray_12" />
+                    <TextView android:textColor="@color/text_trans_order_second" android:id="@id/tv_id" android:layout_marginStart="@dimen/margin_padding_24" style="@style/tv_user_gray_12" />
+                </LinearLayout>
+                <LinearLayout android:layout_marginTop="@dimen/margin_padding_8" style="@style/match_wrap_h">
+                    <TextView android:textColor="@color/text_trans_gray3" android:minWidth="60.0dip" android:text="@string/funding_kssj" style="@style/tv_user_gray_12" />
+                    <TextView android:textColor="@color/text_trans_order_second" android:id="@id/tv_start_time" android:layout_marginStart="@dimen/margin_padding_24" style="@style/tv_user_gray_12" />
+                </LinearLayout>
+                <LinearLayout android:layout_marginTop="@dimen/margin_padding_8" style="@style/match_wrap_h">
+                    <TextView android:textColor="@color/text_trans_gray3" android:minWidth="60.0dip" android:text="@string/funding_jssj" style="@style/tv_user_gray_12" />
+                    <TextView android:textColor="@color/text_trans_order_second" android:id="@id/tv_period_time" android:layout_marginStart="@dimen/margin_padding_24" style="@style/tv_user_gray_12" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:layout_height="@dimen/margin_padding_16" style="@style/view_line_v" />
+            <TextView android:textColor="@color/text_order_jymx" android:layout_margin="@dimen/margin_padding_16" android:text="@string/margin_repay_record" style="@style/tv_user_black_20" />
+            <View style="@style/view_line_v" />
+            <RelativeLayout android:descendantFocusability="blocksDescendants" style="@style/match_wrap">
+                <include android:id="@id/ll_loan_repay_label" layout="@layout/label_loan_repay" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_loan_records" android:focusableInTouchMode="true" android:scrollbars="none" android:fadingEdge="none" android:layout_below="@id/ll_loan_repay_label" android:overScrollMode="never" style="@style/match_wrap" />
+                <com.gateio.lib.uikit.state.GateEmptyViewV2 android:id="@id/tv_empty" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/length_64" />
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

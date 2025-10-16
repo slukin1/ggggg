@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.input.GTInputV5 android:id="@id/trans_input" android:layout_width="fill_parent" android:layout_height="wrap_content" app:uikit_editAlwaysShowHintV5="true" app:uikit_editGravityV3="start" app:uikit_editHintV5="@string/exchange_v1_amount" app:uikit_editInputDropdownArrowMarginV5="2.0dip" app:uikit_editInputTypeV5="decimal" app:uikit_editRightTextColorV5="@color/uikit_text_primary_v5" app:uikit_editVisibleDeleteV5="false" />
+</merge>

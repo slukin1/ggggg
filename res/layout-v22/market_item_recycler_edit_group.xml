@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruffian.library.widget.RLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_root" android:background="@color/uikit_bg_primary_v5" android:layout_width="fill_parent" android:layout_height="52.0dip" android:paddingStart="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_select" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:layout_weight="1.0" android:layout_marginVertical="6.0dip">
+        <com.gateio.lib.uikit.widget.GTCheckBoxV5 android:gravity="center" android:id="@id/iv_select" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/uikit_text_primary_v5" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="12.0dip" style="@style/Uikit_font_sans_5_0_weight_500" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.gateio.uiComponent.GateIconFont android:textSize="20.0sp" android:textColor="@color/uikit_icon_tertiary_v5" android:gravity="center" android:layout_gravity="end|center" android:id="@id/iv_edit" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="" android:layout_marginEnd="107.0dip" />
+        <com.gateio.uiComponent.GateIconFont android:textSize="20.0sp" android:textColor="@color/uikit_icon_tertiary_v5" android:gravity="center" android:layout_gravity="end|center" android:id="@id/iv_hide" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="" android:layout_marginEnd="55.0dip" />
+        <com.gateio.uiComponent.GateIconFont android:textSize="20.0sp" android:textColor="@color/uikit_icon_tertiary_v5" android:gravity="center" android:layout_gravity="end|center" android:id="@id/iv_sort" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="" android:layout_marginEnd="16.0dip" />
+    </FrameLayout>
+</com.ruffian.library.widget.RLinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.text.GTMultiLineTextViewV3 android:textSize="@dimen/uikit_text_size_18" android:textColor="@color/uikit_text_1_v3" android:id="@id/tv_grop_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_4" android:text="@string/wallets_fiatotc_buy_crypto" android:layout_marginStart="@dimen/uikit_dp_16" android:layout_marginEnd="@dimen/uikit_dp_16" style="@style/Uikit_font_sans_2_0_weight_700" />
+    <com.gateio.lib.uikit.action_sheet.GTCustomScrollbarRecyclerView android:id="@id/rv_sub_options" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_12" android:layout_marginStart="@dimen/uikit_dp_12" android:layout_marginEnd="@dimen/dp_4" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+</LinearLayout>

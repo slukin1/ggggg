@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.steps.GTStepBarV5 android:id="@id/step" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_16" android:layout_marginEnd="@dimen/uikit_margin_padding_16" app:uikit_stepBarWithNumberV5="true" />
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_16" />
+    <LinearLayout android:id="@id/guide_bottom_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_margin_padding_16" android:layout_marginTop="@dimen/uikit_margin_padding_16" android:layout_marginRight="@dimen/uikit_margin_padding_16" android:layout_marginHorizontal="@dimen/uikit_margin_padding_16">
+        <com.gateio.lib.uikit.button.GTButtonV5 android:id="@id/previous" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/fiatotc_previous" android:layout_weight="1.0" android:layout_marginEnd="@dimen/uikit_margin_padding_12" app:uikit_buttonDimenV5="medium" app:uikit_buttonTypeV5="secondary_gray" />
+        <com.gateio.lib.uikit.button.GTButtonV5 android:id="@id/next" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/fiatotc_next" android:layout_weight="1.0" app:uikit_buttonDimenV5="medium" app:uikit_buttonTypeV5="primary_black" />
+    </LinearLayout>
+</LinearLayout>

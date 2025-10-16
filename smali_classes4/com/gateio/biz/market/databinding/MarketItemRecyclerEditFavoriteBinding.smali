@@ -1,0 +1,669 @@
+.class public final Lcom/gateio/biz/market/databinding/MarketItemRecyclerEditFavoriteBinding;
+.super Ljava/lang/Object;
+.source "MarketItemRecyclerEditFavoriteBinding.java"
+
+# interfaces
+.implements Landroidx/viewbinding/ViewBinding;
+
+
+# instance fields
+.field public final ivSelect:Lcom/gateio/lib/uikit/widget/GTCheckBoxV5;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final ivSort:Lcom/gateio/uiComponent/GateIconFont;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final ivTop:Lcom/gateio/uiComponent/GateIconFont;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final llRoot:Lcom/ruffian/library/widget/RLinearLayout;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final llSelect:Landroid/widget/LinearLayout;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final marketPilotIcon:Lcom/gateio/common/view/RoundImageView;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final marketTvPilotAddress:Landroid/widget/TextView;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final marketTvPreMint:Lcom/gateio/lib/uikit/tag/GTTagV5;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field private final rootView:Lcom/ruffian/library/widget/RLinearLayout;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final tvMarketTag:Lcom/gateio/lib/uikit/tag/GTTagV5;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final tvName:Landroid/widget/TextView;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final tvQuoteCurrency:Landroid/widget/TextView;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+
+# direct methods
+.method private constructor <init>(Lcom/ruffian/library/widget/RLinearLayout;Lcom/gateio/lib/uikit/widget/GTCheckBoxV5;Lcom/gateio/uiComponent/GateIconFont;Lcom/gateio/uiComponent/GateIconFont;Lcom/ruffian/library/widget/RLinearLayout;Landroid/widget/LinearLayout;Lcom/gateio/common/view/RoundImageView;Landroid/widget/TextView;Lcom/gateio/lib/uikit/tag/GTTagV5;Lcom/gateio/lib/uikit/tag/GTTagV5;Landroid/widget/TextView;Landroid/widget/TextView;)V
+    .locals 0
+    .param p1    # Lcom/ruffian/library/widget/RLinearLayout;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Lcom/gateio/lib/uikit/widget/GTCheckBoxV5;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p3    # Lcom/gateio/uiComponent/GateIconFont;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p4    # Lcom/gateio/uiComponent/GateIconFont;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p5    # Lcom/ruffian/library/widget/RLinearLayout;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p6    # Landroid/widget/LinearLayout;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p7    # Lcom/gateio/common/view/RoundImageView;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p8    # Landroid/widget/TextView;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p9    # Lcom/gateio/lib/uikit/tag/GTTagV5;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p10    # Lcom/gateio/lib/uikit/tag/GTTagV5;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p11    # Landroid/widget/TextView;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p12    # Landroid/widget/TextView;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    iput-object p1, p0, Lcom/gateio/biz/market/databinding/MarketItemRecyclerEditFavoriteBinding;->rootView:Lcom/ruffian/library/widget/RLinearLayout;
+
+    .line 6
+    .line 7
+    iput-object p2, p0, Lcom/gateio/biz/market/databinding/MarketItemRecyclerEditFavoriteBinding;->ivSelect:Lcom/gateio/lib/uikit/widget/GTCheckBoxV5;
+
+    .line 8
+    .line 9
+    iput-object p3, p0, Lcom/gateio/biz/market/databinding/MarketItemRecyclerEditFavoriteBinding;->ivSort:Lcom/gateio/uiComponent/GateIconFont;
+
+    .line 10
+    .line 11
+    iput-object p4, p0, Lcom/gateio/biz/market/databinding/MarketItemRecyclerEditFavoriteBinding;->ivTop:Lcom/gateio/uiComponent/GateIconFont;
+
+    .line 12
+    .line 13
+    iput-object p5, p0, Lcom/gateio/biz/market/databinding/MarketItemRecyclerEditFavoriteBinding;->llRoot:Lcom/ruffian/library/widget/RLinearLayout;
+
+    .line 14
+    .line 15
+    iput-object p6, p0, Lcom/gateio/biz/market/databinding/MarketItemRecyclerEditFavoriteBinding;->llSelect:Landroid/widget/LinearLayout;
+
+    .line 16
+    .line 17
+    iput-object p7, p0, Lcom/gateio/biz/market/databinding/MarketItemRecyclerEditFavoriteBinding;->marketPilotIcon:Lcom/gateio/common/view/RoundImageView;
+
+    .line 18
+    .line 19
+    iput-object p8, p0, Lcom/gateio/biz/market/databinding/MarketItemRecyclerEditFavoriteBinding;->marketTvPilotAddress:Landroid/widget/TextView;
+
+    .line 20
+    .line 21
+    iput-object p9, p0, Lcom/gateio/biz/market/databinding/MarketItemRecyclerEditFavoriteBinding;->marketTvPreMint:Lcom/gateio/lib/uikit/tag/GTTagV5;
+
+    .line 22
+    .line 23
+    iput-object p10, p0, Lcom/gateio/biz/market/databinding/MarketItemRecyclerEditFavoriteBinding;->tvMarketTag:Lcom/gateio/lib/uikit/tag/GTTagV5;
+
+    .line 24
+    .line 25
+    iput-object p11, p0, Lcom/gateio/biz/market/databinding/MarketItemRecyclerEditFavoriteBinding;->tvName:Landroid/widget/TextView;
+
+    .line 26
+    .line 27
+    iput-object p12, p0, Lcom/gateio/biz/market/databinding/MarketItemRecyclerEditFavoriteBinding;->tvQuoteCurrency:Landroid/widget/TextView;
+
+    .line 28
+    return-void
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+.end method
+
+.method public static bind(Landroid/view/View;)Lcom/gateio/biz/market/databinding/MarketItemRecyclerEditFavoriteBinding;
+    .locals 15
+    .param p0    # Landroid/view/View;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 1
+    .line 2
+    sget v0, Lcom/gateio/biz/market/R$id;->iv_select:I
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-static {p0, v0}, Landroidx/viewbinding/ViewBindings;->findChildViewById(Landroid/view/View;I)Landroid/view/View;
+
+    .line 6
+    move-result-object v1
+
+    .line 7
+    move-object v4, v1
+
+    .line 8
+    .line 9
+    check-cast v4, Lcom/gateio/lib/uikit/widget/GTCheckBoxV5;
+
+    .line 10
+    .line 11
+    if-eqz v4, :cond_0
+
+    .line 12
+    .line 13
+    sget v0, Lcom/gateio/biz/market/R$id;->iv_sort:I
+
+    .line 14
+    .line 15
+    .line 16
+    invoke-static {p0, v0}, Landroidx/viewbinding/ViewBindings;->findChildViewById(Landroid/view/View;I)Landroid/view/View;
+
+    .line 17
+    move-result-object v1
+
+    .line 18
+    move-object v5, v1
+
+    .line 19
+    .line 20
+    check-cast v5, Lcom/gateio/uiComponent/GateIconFont;
+
+    .line 21
+    .line 22
+    if-eqz v5, :cond_0
+
+    .line 23
+    .line 24
+    sget v0, Lcom/gateio/biz/market/R$id;->iv_top:I
+
+    .line 25
+    .line 26
+    .line 27
+    invoke-static {p0, v0}, Landroidx/viewbinding/ViewBindings;->findChildViewById(Landroid/view/View;I)Landroid/view/View;
+
+    .line 28
+    move-result-object v1
+
+    .line 29
+    move-object v6, v1
+
+    .line 30
+    .line 31
+    check-cast v6, Lcom/gateio/uiComponent/GateIconFont;
+
+    .line 32
+    .line 33
+    if-eqz v6, :cond_0
+
+    .line 34
+    move-object v7, p0
+
+    .line 35
+    .line 36
+    check-cast v7, Lcom/ruffian/library/widget/RLinearLayout;
+
+    .line 37
+    .line 38
+    sget v0, Lcom/gateio/biz/market/R$id;->ll_select:I
+
+    .line 39
+    .line 40
+    .line 41
+    invoke-static {p0, v0}, Landroidx/viewbinding/ViewBindings;->findChildViewById(Landroid/view/View;I)Landroid/view/View;
+
+    .line 42
+    move-result-object v1
+
+    .line 43
+    move-object v8, v1
+
+    .line 44
+    .line 45
+    check-cast v8, Landroid/widget/LinearLayout;
+
+    .line 46
+    .line 47
+    if-eqz v8, :cond_0
+
+    .line 48
+    .line 49
+    sget v0, Lcom/gateio/biz/market/R$id;->market_pilot_icon:I
+
+    .line 50
+    .line 51
+    .line 52
+    invoke-static {p0, v0}, Landroidx/viewbinding/ViewBindings;->findChildViewById(Landroid/view/View;I)Landroid/view/View;
+
+    .line 53
+    move-result-object v1
+
+    .line 54
+    move-object v9, v1
+
+    .line 55
+    .line 56
+    check-cast v9, Lcom/gateio/common/view/RoundImageView;
+
+    .line 57
+    .line 58
+    if-eqz v9, :cond_0
+
+    .line 59
+    .line 60
+    sget v0, Lcom/gateio/biz/market/R$id;->market_tv_pilot_address:I
+
+    .line 61
+    .line 62
+    .line 63
+    invoke-static {p0, v0}, Landroidx/viewbinding/ViewBindings;->findChildViewById(Landroid/view/View;I)Landroid/view/View;
+
+    .line 64
+    move-result-object v1
+
+    .line 65
+    move-object v10, v1
+
+    .line 66
+    .line 67
+    check-cast v10, Landroid/widget/TextView;
+
+    .line 68
+    .line 69
+    if-eqz v10, :cond_0
+
+    .line 70
+    .line 71
+    sget v0, Lcom/gateio/biz/market/R$id;->market_tv_pre_mint:I
+
+    .line 72
+    .line 73
+    .line 74
+    invoke-static {p0, v0}, Landroidx/viewbinding/ViewBindings;->findChildViewById(Landroid/view/View;I)Landroid/view/View;
+
+    .line 75
+    move-result-object v1
+
+    .line 76
+    move-object v11, v1
+
+    .line 77
+    .line 78
+    check-cast v11, Lcom/gateio/lib/uikit/tag/GTTagV5;
+
+    .line 79
+    .line 80
+    if-eqz v11, :cond_0
+
+    .line 81
+    .line 82
+    sget v0, Lcom/gateio/biz/market/R$id;->tv_market_tag:I
+
+    .line 83
+    .line 84
+    .line 85
+    invoke-static {p0, v0}, Landroidx/viewbinding/ViewBindings;->findChildViewById(Landroid/view/View;I)Landroid/view/View;
+
+    .line 86
+    move-result-object v1
+
+    .line 87
+    move-object v12, v1
+
+    .line 88
+    .line 89
+    check-cast v12, Lcom/gateio/lib/uikit/tag/GTTagV5;
+
+    .line 90
+    .line 91
+    if-eqz v12, :cond_0
+
+    .line 92
+    .line 93
+    sget v0, Lcom/gateio/biz/market/R$id;->tv_name:I
+
+    .line 94
+    .line 95
+    .line 96
+    invoke-static {p0, v0}, Landroidx/viewbinding/ViewBindings;->findChildViewById(Landroid/view/View;I)Landroid/view/View;
+
+    .line 97
+    move-result-object v1
+
+    .line 98
+    move-object v13, v1
+
+    .line 99
+    .line 100
+    check-cast v13, Landroid/widget/TextView;
+
+    .line 101
+    .line 102
+    if-eqz v13, :cond_0
+
+    .line 103
+    .line 104
+    sget v0, Lcom/gateio/biz/market/R$id;->tv_quote_currency:I
+
+    .line 105
+    .line 106
+    .line 107
+    invoke-static {p0, v0}, Landroidx/viewbinding/ViewBindings;->findChildViewById(Landroid/view/View;I)Landroid/view/View;
+
+    .line 108
+    move-result-object v1
+
+    .line 109
+    move-object v14, v1
+
+    .line 110
+    .line 111
+    check-cast v14, Landroid/widget/TextView;
+
+    .line 112
+    .line 113
+    if-eqz v14, :cond_0
+
+    .line 114
+    .line 115
+    new-instance p0, Lcom/gateio/biz/market/databinding/MarketItemRecyclerEditFavoriteBinding;
+
+    .line 116
+    move-object v2, p0
+
+    .line 117
+    move-object v3, v7
+
+    .line 118
+    .line 119
+    .line 120
+    invoke-direct/range {v2 .. v14}, Lcom/gateio/biz/market/databinding/MarketItemRecyclerEditFavoriteBinding;-><init>(Lcom/ruffian/library/widget/RLinearLayout;Lcom/gateio/lib/uikit/widget/GTCheckBoxV5;Lcom/gateio/uiComponent/GateIconFont;Lcom/gateio/uiComponent/GateIconFont;Lcom/ruffian/library/widget/RLinearLayout;Landroid/widget/LinearLayout;Lcom/gateio/common/view/RoundImageView;Landroid/widget/TextView;Lcom/gateio/lib/uikit/tag/GTTagV5;Lcom/gateio/lib/uikit/tag/GTTagV5;Landroid/widget/TextView;Landroid/widget/TextView;)V
+
+    .line 121
+    return-object p0
+
+    .line 122
+    .line 123
+    .line 124
+    :cond_0
+    invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
+
+    .line 125
+    move-result-object p0
+
+    .line 126
+    .line 127
+    .line 128
+    invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getResourceName(I)Ljava/lang/String;
+
+    .line 129
+    move-result-object p0
+
+    .line 130
+    .line 131
+    new-instance v0, Ljava/lang/NullPointerException;
+
+    .line 132
+    .line 133
+    const-string/jumbo v1, "Missing required view with ID: "
+
+    .line 134
+    .line 135
+    .line 136
+    invoke-virtual {v1, p0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 137
+    move-result-object p0
+
+    .line 138
+    .line 139
+    .line 140
+    invoke-direct {v0, p0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    .line 141
+    throw v0
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
+    .line 154
+    .line 155
+    .line 156
+    .line 157
+    .line 158
+    .line 159
+    .line 160
+    .line 161
+    .line 162
+    .line 163
+    .line 164
+    .line 165
+    .line 166
+    .line 167
+    .line 168
+    .line 169
+    .line 170
+    .line 171
+    .line 172
+    .line 173
+    .line 174
+.end method
+
+.method public static inflate(Landroid/view/LayoutInflater;)Lcom/gateio/biz/market/databinding/MarketItemRecyclerEditFavoriteBinding;
+    .locals 2
+    .param p0    # Landroid/view/LayoutInflater;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    const/4 v0, 0x0
+
+    const/4 v1, 0x0
+
+    .line 1
+    invoke-static {p0, v0, v1}, Lcom/gateio/biz/market/databinding/MarketItemRecyclerEditFavoriteBinding;->inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Lcom/gateio/biz/market/databinding/MarketItemRecyclerEditFavoriteBinding;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Lcom/gateio/biz/market/databinding/MarketItemRecyclerEditFavoriteBinding;
+    .locals 2
+    .param p0    # Landroid/view/LayoutInflater;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p1    # Landroid/view/ViewGroup;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 2
+    sget v0, Lcom/gateio/biz/market/R$layout;->market_item_recycler_edit_favorite:I
+
+    const/4 v1, 0x0
+
+    invoke-virtual {p0, v0, p1, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+
+    move-result-object p0
+
+    if-eqz p2, :cond_0
+
+    .line 3
+    invoke-virtual {p1, p0}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
+
+    .line 4
+    :cond_0
+    invoke-static {p0}, Lcom/gateio/biz/market/databinding/MarketItemRecyclerEditFavoriteBinding;->bind(Landroid/view/View;)Lcom/gateio/biz/market/databinding/MarketItemRecyclerEditFavoriteBinding;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public bridge synthetic getRoot()Landroid/view/View;
+    .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0}, Lcom/gateio/biz/market/databinding/MarketItemRecyclerEditFavoriteBinding;->getRoot()Lcom/ruffian/library/widget/RLinearLayout;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public getRoot()Lcom/ruffian/library/widget/RLinearLayout;
+    .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 2
+    iget-object v0, p0, Lcom/gateio/biz/market/databinding/MarketItemRecyclerEditFavoriteBinding;->rootView:Lcom/ruffian/library/widget/RLinearLayout;
+
+    return-object v0
+.end method

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_left_icon" android:visibility="gone" android:layout_width="@dimen/uikit_dp_36" android:layout_height="@dimen/uikit_dp_36" android:scaleType="fitXY" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_text_1" android:id="@id/tv_label" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:includeFontPadding="false" android:fontFamily="@font/uikit_font_product_sans" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/iv_left_icon" app:layout_constraintTop_toTopOf="parent" app:layout_goneMarginStart="0.0dip" style="@style/Uikit_font_weight_700" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_3" android:gravity="center" android:id="@id/tv_sub_vertical" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="@id/tv_label" app:layout_constraintStart_toStartOf="@id/tv_label" app:layout_constraintTop_toBottomOf="@id/tv_label" style="@style/Uikit_font_weight_400" />
+    <LinearLayout android:gravity="center|right" android:id="@id/ll_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.gateio.lib.uikit.tag.GTTagV2 android:layout_gravity="center" android:id="@id/item_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" app:uikit_tagBackgroundColor="@color/uikit_neutral_2" app:uikit_tagDimen="m" />
+        <com.gateio.lib.uikit.button.GTButtonV2 android:layout_gravity="center" android:id="@id/item_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" app:uikit_buttonStyle="small" />
+    </LinearLayout>
+</merge>

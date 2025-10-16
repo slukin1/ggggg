@@ -1,0 +1,38 @@
+.class public interface abstract Lt9/l$a;
+.super Ljava/lang/Object;
+.source "MarkwonVisitor.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lt9/l;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "a"
+.end annotation
+
+
+# virtual methods
+.method public abstract a(Lt9/l;Lorg/commonmark/node/Node;)V
+    .param p1    # Lt9/l;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Lorg/commonmark/node/Node;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+.end method
+
+.method public abstract b(Lt9/l;Lorg/commonmark/node/Node;)V
+    .param p1    # Lt9/l;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Lorg/commonmark/node/Node;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+.end method

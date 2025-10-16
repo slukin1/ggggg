@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center" android:orientation="vertical" android:visibility="visible"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/empty_image_iv" android:layout_width="96.0dip" android:layout_height="96.0dip" android:layout_marginBottom="@dimen/uikit_dp_8" android:src="@mipmap/uikit_empty_no_data_v3" />
+    <com.gateio.lib.uikit.text.GTMultiLineTextViewV3 android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_3_v3" android:gravity="center" android:id="@id/empty_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_8" android:lineSpacingExtra="4.0dip" style="@style/Uikit_font_sans_2_0_weight_400" />
+    <com.gateio.lib.uikit.button.GTButtonV3 android:layout_gravity="center_horizontal" android:id="@id/button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_24" app:uikit_buttonDimenV3="small" />
+</merge>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/box_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.gateio.uiComponent.shadow.BoxShadowLayout android:id="@id/cardView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="16.0dip" app:box_shadowAlpha="0.06" app:box_shadowBlur="16.0dip" app:box_shadowColor="@color/uikit_shadow_color_float_v3" app:box_shadowOffsetVertical="@dimen/uikit_dp_4">
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/cll" android:background="@drawable/uikit_cmpt16_radius_8_v3" android:paddingLeft="@dimen/uikit_dp_12" android:paddingTop="@dimen/uikit_dp_8" android:paddingRight="@dimen/uikit_dp_12" android:paddingBottom="@dimen/uikit_dp_8" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/ll_popup_title" android:paddingTop="@dimen/uikit_dp_8" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_text_1_v3" android:id="@id/tv_dropdown_popup_title" android:paddingTop="@dimen/uikit_dp_16" android:paddingBottom="@dimen/uikit_dp_16" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Uikit_font_sans_2_0_weight_600" />
+                    <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_20" android:textColor="@color/uikit_icon_3_v3" android:id="@id/iv_close" android:paddingTop="@dimen/uikit_dp_8" android:paddingBottom="@dimen/uikit_dp_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:paddingStart="@dimen/uikit_dp_8" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+                <com.gateio.lib.uikit.search.GTSearchViewV3 android:id="@id/search_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_8" android:layout_marginBottom="@dimen/uikit_dp_8" app:uikit_searchShowDropDownV3="true" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+                <com.gateio.lib.uikit.state.GTEmptyViewV3 android:layout_gravity="center_horizontal" android:id="@id/empty_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_marginBottom="80.0dip" app:uikit_emptyTypeV3="search_empty" />
+            </LinearLayout>
+        </com.gateio.uiComponent.shadow.BoxShadowLayout>
+        <View android:id="@id/view_mask" android:background="@color/uikit_bg_3_v3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+</FrameLayout>

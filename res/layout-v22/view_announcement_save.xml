@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:background="@mipmap/bg_share_ann" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@mipmap/icon_share_decoration" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <ImageView android:id="@id/iv_top_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_margin_padding_16" android:layout_marginTop="@dimen/uikit_margin_padding_24" android:layout_marginRight="@dimen/uikit_margin_padding_16" android:src="@mipmap/icon_share_top_logo" android:layout_marginHorizontal="@dimen/uikit_margin_padding_16" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_margin_padding_16" android:layout_marginTop="@dimen/uikit_margin_padding_24" android:layout_marginRight="@dimen/uikit_margin_padding_16" android:layout_marginBottom="@dimen/uikit_margin_padding_16" android:layout_marginHorizontal="@dimen/uikit_margin_padding_16" app:cardBackgroundColor="@color/uikit_bg_1_v3" app:cardCornerRadius="@dimen/uikit_margin_padding_8" app:cardElevation="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/iv_top_icon">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.gateio.gateio.activity.share.DynamicHeightImageView android:id="@id/iv_webview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <View android:layout_gravity="bottom" android:id="@id/view_grad" android:background="@drawable/share_top_bg" android:layout_width="fill_parent" android:layout_height="80.0dip" />
+                    </FrameLayout>
+                    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/ll_scan" android:paddingBottom="@dimen/uikit_dp_32" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_margin_padding_16" android:layout_marginRight="@dimen/uikit_margin_padding_16" android:layout_marginHorizontal="@dimen/uikit_margin_padding_16">
+                        <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_margin_padding_12" android:textColor="@color/uikit_text_5_v3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                        <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_5_v3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/share_scan_more" android:layout_weight="1.0" android:layout_marginStart="@dimen/margin_padding_4" style="@style/Uikit_font_sans_2_0_weight_400" />
+                        <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_margin_padding_12" android:textColor="@color/uikit_text_5_v3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_marginStart="4.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/black" android:paddingLeft="@dimen/uikit_margin_padding_16" android:paddingRight="@dimen/uikit_margin_padding_16" android:layout_width="fill_parent" android:layout_height="96.0dip" android:paddingHorizontal="@dimen/uikit_margin_padding_16">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_share_bottom_logo" />
+                <TextView android:textSize="11.0sp" android:textColor="#ff989fb3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_8" android:text="@string/share_scan_guide" android:textAlignment="viewStart" style="@style/Uikit_font_sans_2_0_weight_400" />
+            </LinearLayout>
+            <ImageView android:id="@id/share_logo" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_marginStart="@dimen/uikit_margin_padding_24" />
+        </LinearLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>

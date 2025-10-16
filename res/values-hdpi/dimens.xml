@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="jumio_confirmation_image_preview_height">300.0dip</dimen>
+    <dimen name="jumio_face_animation_height">200.0dip</dimen>
+    <dimen name="jumio_nfc_animation_height">240.0dip</dimen>
+    <dimen name="jumio_reject_image_preview_height">200.0dip</dimen>
+    <dimen name="message_view_text_content_padding">8.0dip</dimen>
+    <dimen name="take_photo_size">50.0dip</dimen>
+    <dimen name="z_text_size_15">12.0dip</dimen>
+</resources>

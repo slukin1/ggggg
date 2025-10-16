@@ -1,0 +1,32 @@
+.class public final Lcom/tencent/qcloud/tuicore/TUIConstants$TUIChat$Extension$GroupProfileMemberListExtension;
+.super Ljava/lang/Object;
+.source "TUIConstants.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/tencent/qcloud/tuicore/TUIConstants$TUIChat$Extension;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "GroupProfileMemberListExtension"
+.end annotation
+
+
+# static fields
+.field public static final EXTENSION_ID:Ljava/lang/String; = "TUIChatGroupProfileMemberGridExtension"
+
+.field public static final GROUP_PROFILE_BEAN:Ljava/lang/String; = "TUIChatGroupProfileBean"
+
+.field public static final VIEW_TYPE:Ljava/lang/String; = "TUIChatExtensionViewType"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

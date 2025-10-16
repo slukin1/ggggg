@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:background="@drawable/shape_keyboard_input" android:padding="@dimen/w_2" android:layout_width="150.0dip" android:layout_margin="@dimen/margin_padding_5" android:layout_centerHorizontal="true" style="@style/wrap_wrap">
+        <ListView android:id="@id/listview" android:scrollbars="none" android:listSelector="@color/uikit_background_color2" android:divider="@color/background_color" android:dividerHeight="@dimen/w_0.1" style="@style/match_match" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llHelperRoot" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/llHelperError" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_error_v5" android:id="@id/helperError" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Uikit_font_sans_5_0_weight_400" />
+            <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_brand_v5" android:ellipsize="end" android:id="@id/helperErrorAction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:paddingStart="8.0dip" style="@style/Uikit_font_sans_5_0_weight_500" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/llHelper" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.gateio.lib.uikit.widget.GTUnderlineTextViewV5 android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_tertiary_v5" android:gravity="center" android:id="@id/helperText" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:layoutDirection="ltr" app:uikit_underline_dashclick="false" style="@style/Uikit_font_sans_5_0_weight_400" />
+            <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_icon_quaternary_v5" android:id="@id/helperTextIcon" android:focusableInTouchMode="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+            <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_primary_v5" android:ellipsize="end" android:id="@id/helperSubtext" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="8.0dip" style="@style/Uikit_font_sans_5_0_weight_500" />
+            <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_brand_v5" android:ellipsize="end" android:id="@id/helperAction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="8.0dip" style="@style/Uikit_font_sans_5_0_weight_500" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/helperSuffix" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/uikit_spacing_12_v5">
+        <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_primary_v5" android:layout_gravity="end|center" android:id="@id/helperSuffixActionText" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Uikit_font_sans_5_0_weight_400" />
+        <com.gateio.uiComponent.GateIconFont android:textSize="12.0sp" android:textColor="@color/uikit_icon_primary_v5" android:layout_gravity="end|center" android:id="@id/helperSuffixActionIconRight" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="4.0dip" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alert_cancel_array">
+        <item>今回は無視</item>
+        <item>10分後</item>
+        <item>30分後</item>
+        <item>2時間後</item>
+        <item>24時間後</item>
+        <item>入力しない</item>
+    </string-array>
+    <string-array name="exo_controls_playback_speeds">
+        <item>0.25x</item>
+        <item>0.5x</item>
+        <item>0.75x</item>
+        <item>標準</item>
+        <item>1.25x</item>
+        <item>1.5x</item>
+        <item>2x</item>
+    </string-array>
+    <string-array name="funding_share_desc">
+        <item>安定性という名の幸せがあります</item>
+        <item>Gateを選んで、簡単に勝利しましょう</item>
+        <item>真のリーダーの能力には限りがない</item>
+        <item>Gateで才能を発揮しましょう</item>
+        <item>すべての道はローマに通じていますが、まずは堅牢性です</item>
+        <item>着実にお金を管理しましょう</item>
+        <item>人生は生きる価値があり、未来は約束されています</item>
+    </string-array>
+    <string-array name="home_week_string_array">
+        <item>日曜日</item>
+        <item>月曜日</item>
+        <item>火曜日</item>
+        <item>水曜日</item>
+        <item>木曜日</item>
+        <item>金曜日</item>
+        <item>土曜日</item>
+    </string-array>
+    <string-array name="modify_procedure_items">
+        <item>変更するセキュリティ設定を選択してください</item>
+        <item>変更を適用</item>
+        <item>アプリケーションを終了します</item>
+    </string-array>
+    <string-array name="position_share_desc_loss">
+        <item>ロスカット? まさか!</item>
+        <item>ちょっと待とう。</item>
+        <item>下げ止まって！</item>
+        <item>最後に笑う者が勝つ。</item>
+        <item>行くなら今だ。</item>
+        <item>優しくしてよ。</item>
+        <item>パニック禁止。</item>
+        <item>全突っ込み。信じよう。</item>
+    </string-array>
+    <string-array name="position_share_desc_win">
+        <item>全力投資で大勝ちだ。</item>
+        <item>いつものようにオールイン</item>
+        <item>ただホールドする</item>
+        <item>ただ保持する</item>
+        <item>次のステップは？トレンドに乗ろう</item>
+        <item>大スターだ！</item>
+        <item>大勝ちしたければフォローして。</item>
+        <item>いつも正しい!</item>
+        <item>ロングかショート？自分次第。</item>
+    </string-array>
+    <string-array name="push_alert_cancel_array">
+        <item>30分間</item>
+        <item>2時間</item>
+        <item>24時間</item>
+        <item>無期限</item>
+    </string-array>
+    <string-array name="week_string_array">
+        <item>日</item>
+        <item>月</item>
+        <item>火</item>
+        <item>水</item>
+        <item>木</item>
+        <item>金</item>
+        <item>土</item>
+    </string-array>
+</resources>

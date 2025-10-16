@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.input.GTInputV5 android:id="@id/firstNameInput" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:uikit_editDimenV5="large" />
+    <com.gateio.lib.uikit.input.GTInputV5 android:id="@id/lastNameInput" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="12.0dip" app:uikit_editDimenV5="large" />
+</LinearLayout>

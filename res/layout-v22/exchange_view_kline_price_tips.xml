@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/uikit_dp_16" android:paddingRight="@dimen/uikit_dp_16" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="16.0dip" android:paddingHorizontal="@dimen/uikit_dp_16"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_display" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@mipmap/exchange_ic_kline_price" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/uikit_text_primary_v5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/exchange_setting_kline_in_price_tips" style="@style/Uikit_font_sans_5_0_weight_400" />
+</LinearLayout>

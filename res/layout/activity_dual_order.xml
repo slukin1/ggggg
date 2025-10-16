@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/uikit_color_ffffff_111f31" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.common.view.GateioTitleView android:id="@id/title_view" android:layout_width="fill_parent" android:layout_height="48.0dip" app:leftSrc="@mipmap/uikit_btn_back" app:rightVisibility="false" app:titleText="@string/hold_wdcb" />
+    <net.lucode.hackware.magicindicator.MagicIndicator android:id="@id/tabs" android:layout_width="fill_parent" android:layout_height="40.0dip" android:overScrollMode="never" />
+    <com.gateio.common.view.CustomViewpager android:id="@id/view_pager" android:scrollbars="none" android:fadingEdge="none" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+</LinearLayout>

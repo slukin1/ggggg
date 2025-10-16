@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/bg_skin_white" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_main_header" />
+    <ListView android:id="@id/global_market_listview" android:scrollbars="none" android:divider="@null" style="@style/match_match" />
+</LinearLayout>

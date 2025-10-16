@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:id="@id/layoutRoot" android:background="@color/uikit_bg_mask_v5" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.popup.GTPopupDragLinearLayout android:orientation="vertical" android:id="@id/layoutContentRoot" android:background="@color/uikit_layer_1_v5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" app:left_top_radis="@dimen/uikit_radius_12" app:right_top_radis="@dimen/uikit_radius_12">
+        <include android:id="@id/layoutCommonTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" layout="@layout/futures_layout_dialog_common_title" />
+        <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:overScrollMode="never">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_padding_16" android:layout_marginRight="@dimen/margin_padding_16" android:layout_marginHorizontal="@dimen/margin_padding_16">
+                    <TextView android:textSize="18.0sp" android:textColor="@color/uikit_function_trade_buy_v5" android:gravity="center" android:id="@id/futures_cur_price" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="--" android:includeFontPadding="false" android:layout_weight="1.0" style="@style/Uikit_font_weight_600_wrap_wrap_v5" />
+                    <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:ellipsize="end" android:gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/futures_mark_price_v1" android:maxLines="2" android:layout_weight="1.0" style="@style/Text_text_secondary_12_weight_400_v5" />
+                        <com.gateio.gateio.view.FuturesDashTextViewV5 android:id="@id/futures_marked_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:maxLines="1" android:layout_weight="1.0" android:layout_marginStart="@dimen/margin_padding_4" app:uikit_underline_color="@color/uikit_text_tertiary_v5" app:uikit_underline_title="@string/futures_v5_mark_price" style="@style/Text_text_primary_18_weight_600_v5" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:layout_marginTop="16.0dip" style="@style/view_line_divider_v5" />
+                <com.gateio.biz.exchange.ui.widget.ExchangeAskBidView android:id="@id/llAskBidView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:layout_marginHorizontal="16.0dip" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:layout_marginHorizontal="16.0dip">
+                    <com.gateio.uiComponent.GateIconFont android:textSize="12.0sp" android:textColor="@color/uikit_text_secondary_v5" android:gravity="center" android:id="@id/ivExchangeBuy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignTop="@id/tv_buy_amount_label" android:layout_alignBottom="@id/tv_buy_amount_label" android:layout_toEndOf="@id/tv_buy_amount_label" />
+                    <TextView android:gravity="center_vertical" android:id="@id/tv_buy_amount_label" android:text="@string/futures_v1_amount" style="@style/Text_text_secondary_12_weight_400_v5" />
+                    <TextView android:text="@string/exchange_bid" android:layout_toStartOf="@id/viewCenter1" style="@style/Text_text_secondary_12_weight_400_v5" />
+                    <View android:id="@id/viewCenter1" android:layout_width="12.0dip" android:layout_height="0.0dip" android:layout_centerHorizontal="true" />
+                    <TextView android:text="@string/exchange_ask" android:layout_toEndOf="@id/viewCenter1" style="@style/Text_text_secondary_12_weight_400_v5" />
+                    <TextView android:gravity="center_vertical" android:id="@id/tv_sell_amount_label" android:text="@string/futures_v1_amount" android:layout_toStartOf="@id/iv_exchange_sell" style="@style/Text_text_secondary_12_weight_400_v5" />
+                    <com.gateio.uiComponent.GateIconFont android:textSize="12.0sp" android:textColor="@color/uikit_text_secondary_v5" android:gravity="center" android:id="@id/iv_exchange_sell" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignTop="@id/tv_sell_amount_label" android:layout_alignBottom="@id/tv_sell_amount_label" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="@dimen/margin_padding_8" android:layout_marginRight="16.0dip" android:layout_marginHorizontal="16.0dip">
+                    <com.gateio.biz.futures.depth.more.GateioDepthMoreListView android:id="@id/trans_depth_buys" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:depthItemCount="30" app:depthType="true" app:useType="2" />
+                    <com.gateio.biz.futures.depth.more.GateioDepthMoreListView android:id="@id/trans_depth_sell" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:depthItemCount="30" app:depthType="false" app:useType="2" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </com.gateio.lib.uikit.popup.GTPopupDragLinearLayout>
+</LinearLayout>

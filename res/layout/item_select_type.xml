@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:enabled="false" android:textSize="14.0sp" android:textColor="@color/uikit_selector_color_brand_1_text_1" android:gravity="center" android:id="@id/cb_name" android:background="@drawable/uikit_bg_card_1_radio_8" android:clickable="false" android:layout_width="fill_parent" android:layout_height="52.0dip" android:button="@null" android:text="--" style="@style/Uikit_font_weight_500" />
+</FrameLayout>

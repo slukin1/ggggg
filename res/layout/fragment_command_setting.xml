@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/color_d93d42" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.common.view.GateioTitleView android:id="@id/gt_title" android:layout_width="fill_parent" android:layout_height="48.0dip" app:bg="@color/uikit_transparent" app:leftSrc="@mipmap/ic_command_goback" app:rightVisibility="false" app:titleText="@string/command_szkl" />
+    <ScrollView android:layout_below="@id/gt_title" android:nestedScrollingEnabled="false" style="@style/match_match">
+        <LinearLayout style="@style/match_wrap">
+            <ImageView android:id="@id/iv_bg" android:scaleType="fitXY" style="@style/match_wrap" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageView android:layout_height="48.0dip" android:src="@mipmap/bg_command_bottom" android:scaleType="fitXY" android:layout_above="@id/ll_bottom" style="@style/match_wrap" />
+    <LinearLayout android:id="@id/ll_bottom" android:background="@color/color_ff3a3a" android:padding="@dimen/margin_padding_16" android:layout_alignParentBottom="true" style="@style/match_wrap">
+        <com.gateio.common.view.CornerLinearLayout android:gravity="center_vertical" android:background="@color/uikit_white" app:radius="4.0dip" style="@style/match_wrap_h">
+            <EditText android:textSize="18.0sp" android:textColor="@color/color_5d5d5d" android:textColorHint="@color/text_trans_title" android:id="@id/ed_content" android:background="@null" android:layout_width="fill_parent" android:minHeight="48.0dip" android:hint="@string/command_limit" android:singleLine="true" android:inputType="text" android:layout_marginStart="@dimen/margin_padding_16" android:layout_marginEnd="@dimen/margin_padding_16" style="@style/tv_trans_currency" />
+        </com.gateio.common.view.CornerLinearLayout>
+        <com.gateio.common.view.CornerTextView android:textColor="@color/color_6b3800" android:gravity="center" android:id="@id/tv_commit" android:background="@color/color_ffdd99" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="@dimen/margin_padding_24" android:text="@string/command_schb" app:radius="4.0dip" style="@style/tv_user_white_18" />
+    </LinearLayout>
+</RelativeLayout>

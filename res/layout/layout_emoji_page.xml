@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gateio.keyboard.widget.EmojiViewPager android:orientation="vertical" android:id="@id/emoji_view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/emoji_indicator_view" />
+    <com.gateio.keyboard.widget.EmojiIndicatorView android:gravity="center" android:orientation="horizontal" android:id="@id/emoji_indicator_view" android:paddingBottom="@dimen/margin_padding_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/view_spit" />
+    <View android:id="@id/view_spit" android:background="@color/split_line_color_new" android:layout_width="fill_parent" android:layout_height="@dimen/split_horizontal_height" android:layout_above="@id/emoji_table_bar" />
+    <com.gateio.keyboard.widget.EmojiTabBar android:orientation="vertical" android:id="@id/emoji_table_bar" android:layout_width="fill_parent" android:layout_height="@dimen/emoji_table_bar" android:layout_alignParentBottom="true" />
+</RelativeLayout>

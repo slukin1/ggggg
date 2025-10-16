@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/funLin" android:paddingBottom="12.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="12.0dip" android:paddingEnd="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/wait_buttons" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="48.0dip" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/defi_colorPrimary" android:layout_width="wrap_content" android:layout_height="12.0dip">
+        <TextView android:textSize="10.0sp" android:textColor="@color/defi_dark_seed_danger" android:id="@id/text_debug" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip" android:text="DEBUG" android:layout_marginStart="2.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/primary_button_wrapper" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:layout_weight="0.5">
+            <Button android:textColor="@color/defi_white" android:id="@id/primary_button" android:background="@drawable/defisdk_selector_round_button" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ProgressBar android:id="@id/primary_spinner" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerVertical="true" android:layout_marginStart="8.0dip" android:translationZ="20.0dip" android:indeterminateTint="@color/defi_white" />
+        </RelativeLayout>
+        <Button android:id="@id/secondary_button" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:layout_weight="0.5" style="@style/defi_AwButton.Secondary" />
+        <ImageButton android:gravity="center" android:id="@id/more_button" android:background="@drawable/defisdk_selector_round_button_secondary" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="48.0dip" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:src="@drawable/defisdk_ic_trait_icon" android:layout_weight="0.2" android:drawableTint="@color/defi_theme_color" app:tint="@drawable/defisdk_selector_button_text_secondary" />
+    </LinearLayout>
+</LinearLayout>

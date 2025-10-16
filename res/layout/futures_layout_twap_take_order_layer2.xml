@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/length_8">
+        <com.gateio.gateio.view.FuturesDashTextViewV5 android:layout_gravity="center_vertical" android:id="@id/tvOrderDurationTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/exchange_futures_twap_order_duration" app:uikit_underline_color="@color/uikit_text_tertiary_v5" app:uikit_underline_show_more_text="false" app:uikit_underline_tips="@string/exchange_futures_twap_order_duration_tips" app:uikit_underline_title="@string/exchange_futures_twap_order_duration" style="@style/Text_text_secondary_12_weight_400_v5" />
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="end|center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/llOrderDuration" android:layout_width="wrap_content" android:layout_weight="1.0" style="@style/wrap_wrap_h">
+            <TextView android:gravity="end" android:layout_gravity="center_vertical" android:id="@id/tvOrderDuration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" style="@style/Text_text_primary_12_weight_500_v5" />
+            <TextView android:gravity="end" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="s" style="@style/Text_text_primary_12_weight_500_v5" />
+            <com.gateio.uiComponent.GateIconFont android:textSize="12.0sp" android:textColor="@color/uikit_icon_primary_v5" android:gravity="center_vertical" android:id="@id/ivOrderDurationArrow" android:layout_width="12.0dip" android:layout_height="12.0dip" android:text="" android:layout_marginStart="@dimen/margin_padding_4" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/length_8">
+        <com.gateio.gateio.view.FuturesDashTextViewV5 android:id="@id/tvOrderSingleAmountTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/exchange_futures_amount_per_order" android:layout_marginEnd="@dimen/margin_padding_4" app:uikit_underline_color="@color/uikit_text_tertiary_v5" app:uikit_underline_dash="false" app:uikit_underline_dashclick="false" app:uikit_underline_tips="@string/futures_trading_account_tips" app:uikit_underline_title="@string/exchange_futures_amount_per_order" style="@style/Text_text_secondary_12_weight_400_v5" />
+        <TextView android:gravity="end|center" android:layout_gravity="center_vertical" android:id="@id/tvOrderSingleAmount" android:text="--" android:layout_weight="1.0" android:textDirection="ltr" style="@style/Text_text_primary_12_weight_500_v5" />
+    </LinearLayout>
+</LinearLayout>

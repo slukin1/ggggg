@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/margin_padding_10" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/calendar_event_dot" android:layout_width="@dimen/margin_padding_8" android:layout_height="@dimen/margin_padding_8" />
+        <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_main_text_color" android:ellipsize="end" android:id="@id/calendar_event_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:lines="1" android:layout_weight="1.0" android:layout_marginStart="@dimen/margin_padding_10" />
+        <ImageView android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@mipmap/security_icon_arrow_right" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_color_666666_abb4c2" android:id="@id/calendar_event_brief" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_5" android:layout_marginStart="@dimen/margin_padding_10" android:layout_marginEnd="@dimen/margin_padding_5" />
+</LinearLayout>

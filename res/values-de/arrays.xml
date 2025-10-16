@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alert_cancel_array">
+        <item>Nur dieses Mal ignorieren</item>
+        <item>10 Minuten später</item>
+        <item>30 Minuten später</item>
+        <item>2 Stunden später</item>
+        <item>24 Stunden später</item>
+        <item>nie</item>
+    </string-array>
+    <string-array name="exo_controls_playback_speeds">
+        <item>0,25-fach</item>
+        <item>0,5-fach</item>
+        <item>0,75-fach</item>
+        <item>Standard</item>
+        <item>1,25-fach</item>
+        <item>1,5-fach</item>
+        <item>2-fach</item>
+    </string-array>
+    <string-array name="funding_share_desc">
+        <item>Es gibt eine Art von Glück, die sich Stabilität nennt</item>
+        <item>Entscheiden Sie sich für Gate und gewinnen Sie im Handumdrehen</item>
+        <item>Ein professioneller Leader hat keine Grenzen</item>
+        <item>Versuchen Sie Ihr Glück bei Gate und stellen Sie Ihr Talent unter Beweis</item>
+        <item>Alle Wege führen nach Rom, aber Robustheit steht an erster Stelle</item>
+        <item>Sie möchten Geld verwalten? Sachte!</item>
+        <item>Das Leben ist lebenswert und die Zukunft ist vielversprechend</item>
+    </string-array>
+    <string-array name="home_week_string_array">
+        <item>Sonntag</item>
+        <item>Montag</item>
+        <item>Dienstag</item>
+        <item>Mittwoch</item>
+        <item>Donnerstag</item>
+        <item>Freitag</item>
+        <item>Samstag</item>
+    </string-array>
+    <string-array name="modify_procedure_items">
+        <item>Wählen Sie eine Sicherheitseinstellung aus, die Sie ändern möchten</item>
+        <item>Änderung beantragen</item>
+        <item>Antrag abgeschlossen</item>
+    </string-array>
+    <string-array name="position_share_desc_loss">
+        <item>Schadensbegrenzung? Niemals!</item>
+        <item>Behalten und warten.</item>
+        <item>Weniger Verlust, bitte</item>
+        <item>Wer zuletzt lacht, lacht am besten</item>
+        <item>"Auf geht's. Handeln Sie jetzt."</item>
+        <item>Seien Sie nett zu mir</item>
+        <item>Keine Panik</item>
+        <item>„All in“. Bleiben Sie zuversichtlich</item>
+    </string-array>
+    <string-array name="position_share_desc_win">
+        <item>Alles einsetzen und große Gewinne einstreichen.</item>
+        <item>„All in“ wie immer.</item>
+        <item>Nur halten.</item>
+        <item>Einfach behalten</item>
+        <item>Der nächste Schritt? Folgen Sie Trends</item>
+        <item>Ich bin der Star!</item>
+        <item>Folgen Sie mir, um große Gewinne einzustreichen.</item>
+        <item>Ich bin wie immer auf der richtigen Seite!</item>
+        <item>Long oder Short? Alles hängt von mir ab.</item>
+    </string-array>
+    <string-array name="push_alert_cancel_array">
+        <item>Für 30 Minuten</item>
+        <item>Für 2 Stunden</item>
+        <item>Für 24 Stunden</item>
+        <item>Immer</item>
+    </string-array>
+    <string-array name="week_string_array">
+        <item>So.</item>
+        <item>Mo.</item>
+        <item>Die.</item>
+        <item>Mi.</item>
+        <item>Do.</item>
+        <item>Frei.</item>
+        <item>Sa.</item>
+    </string-array>
+</resources>

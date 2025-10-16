@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.lib.uikit.popup.GTPopupDragLinearLayout android:orientation="vertical" android:background="@color/uikit_layer_1_v5" android:layout_width="fill_parent" android:layout_height="fill_parent" app:left_top_radis="@dimen/uikit_radius_12" app:right_top_radis="@dimen/uikit_radius_12"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.gateio.lib.uikit.helper.GTPopupHeaderV5 android:id="@id/uikit_popup_header" android:paddingTop="@dimen/uikit_spacing_12_v5" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <androidx.core.widget.NestedScrollView android:id="@id/scroll_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:overScrollMode="never">
+            <FrameLayout android:id="@id/fl_content_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </androidx.core.widget.NestedScrollView>
+        <FrameLayout android:id="@id/frame_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <com.gateio.lib.uikit.helper.GTFooterButtonV5 android:id="@id/uikit_popup_footer_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="@dimen/uikit_spacing_24_v5" android:layout_marginRight="16.0dip" android:layout_marginHorizontal="16.0dip" app:uikit_footerButtonLargeSizeV5="true" />
+    <View android:id="@id/uikit_popup_bottom_view" android:layout_width="fill_parent" android:layout_height="@dimen/uikit_margin_padding_16" />
+</com.gateio.lib.uikit.popup.GTPopupDragLinearLayout>

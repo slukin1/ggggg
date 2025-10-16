@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:background="@drawable/selector_item_network_choice" android:layout_width="fill_parent" android:layout_height="@dimen/dp_52" android:paddingStart="@dimen/margin_padding_16" android:paddingEnd="@dimen/margin_padding_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:apps="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/ts_16" android:textColor="@color/text_1" android:id="@id/network" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="@dimen/margin_padding_10" apps:drawableEndCompat="@mipmap/ic_network_hot_wa" apps:drawableTint="@color/selector_funct1_trans_walletlib" />
+    <Space style="@style/space" />
+    <TextView android:textSize="@dimen/ts_14" android:textColor="@color/text_4" android:id="@id/paused" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wallets_paused" />
+</LinearLayout>

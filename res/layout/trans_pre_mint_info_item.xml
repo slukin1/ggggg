@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/length_16" android:paddingTop="@dimen/length_8" android:paddingRight="@dimen/length_16" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/length_16">
+        <ImageView android:id="@id/iv_pre_mint_coin" android:layout_width="@dimen/length_20" android:layout_height="@dimen/length_20" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_text_primary_v5" android:id="@id/tv_pre_mint_coin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/length_6" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/iv_pre_mint_coin" app:layout_constraintTop_toTopOf="parent" style="@style/Uikit_font_sans_5_0_weight_500" />
+        <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_text_secondary_v5" android:gravity="end" android:id="@id/iv_pre_mint_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_expand" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.gateio.biz.trans.widget.TransPreMintInfoView android:id="@id/view_pre_mint_first" android:layout_width="fill_parent" android:layout_height="wrap_content" app:currentStatusText="@string/trans_premint_spot_market_opens" />
+            <com.gateio.biz.trans.widget.TransPreMintInfoView android:id="@id/view_pre_mint_second" android:layout_width="fill_parent" android:layout_height="wrap_content" app:currentStatusText="@string/trans_premint_spot_market_closes" />
+            <com.gateio.biz.trans.widget.TransPreMintInfoView android:id="@id/view_pre_mint_third" android:layout_width="fill_parent" android:layout_height="wrap_content" app:currentStatusText="@string/trans_clear_balance_after_snapshot" />
+            <com.gateio.biz.trans.widget.TransPreMintInfoView android:id="@id/view_pre_mint_forth" android:layout_width="fill_parent" android:layout_height="wrap_content" app:currentStatusText="@string/trans_delivery_starts" />
+            <com.gateio.biz.trans.widget.TransPreMintInfoView android:id="@id/view_pre_mint_five" android:layout_width="fill_parent" android:layout_height="wrap_content" app:currentStatusText="@string/trans_delivery_ends" />
+            <com.gateio.biz.trans.widget.TransPreMintInfoView android:id="@id/view_pre_mint_six" android:layout_width="fill_parent" android:layout_height="wrap_content" app:currentStatusText="@string/trans_settlement_completes" app:showDashedLine="false" />
+        </LinearLayout>
+        <com.gateio.biz.trans.widget.TransPreMintInfoView android:id="@id/view_pre_mint_current" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" app:currentStatusText="@string/trans_settlement_completes" app:showDashedLine="false" />
+    </RelativeLayout>
+    <View android:id="@id/divider" android:background="@color/uikit_line_divider_v5" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/length_16" android:layout_marginBottom="8.0dip" />
+</LinearLayout>

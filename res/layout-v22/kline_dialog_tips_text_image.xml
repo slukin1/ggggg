@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:paddingLeft="@dimen/uikit_dp_16" android:paddingRight="@dimen/uikit_dp_16" android:paddingBottom="@dimen/uikit_dp_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/uikit_dp_16"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="@color/uikit_text_primary_v5" android:id="@id/tv_content_above" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" style="@style/Uikit_font_sans_5_0_weight_400" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:adjustViewBounds="true" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="@color/uikit_text_primary_v5" android:id="@id/tv_content_below" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" style="@style/Uikit_font_sans_5_0_weight_400" />
+</androidx.appcompat.widget.LinearLayoutCompat>

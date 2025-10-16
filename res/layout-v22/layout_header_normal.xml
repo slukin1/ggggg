@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_header" android:background="@color/uikit_bg_1_v3" android:layout_width="fill_parent" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <ImageView android:id="@id/btn_head_back" android:paddingLeft="10.0dip" android:paddingTop="12.0dip" android:paddingRight="10.0dip" android:paddingBottom="12.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@mipmap/uikit_btn_back" android:layout_centerVertical="true" android:paddingHorizontal="10.0dip" android:paddingVertical="12.0dip" />
+        <TextView android:textSize="@dimen/text_size_18" android:textStyle="bold" android:textColor="@color/uikit_main_header_txt_normal" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tv_title" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="200.0dip" android:maxLines="2" android:layout_centerInParent="true" android:layout_marginEnd="@dimen/margin_padding_10" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_right_tv" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginEnd="2.0dip" android:layout_alignParentEnd="true">
+            <ImageView android:id="@id/btn_right_sencond_front" android:padding="12.0dip" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@mipmap/ic_margin_loan_trade" android:scaleType="fitCenter" />
+            <ImageView android:id="@id/btn_right_front" android:padding="12.0dip" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@mipmap/ic_margin_loan_trade" android:scaleType="fitCenter" />
+            <TextView android:textSize="14.0sp" android:gravity="center" android:id="@id/tv_right_front" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxWidth="80.0dip" android:paddingHorizontal="14.0dip" style="@style/MainHeaderTxt" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

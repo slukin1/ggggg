@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_primary_v5" android:id="@id/tv_quit_tip" android:paddingLeft="@dimen/uikit_margin_padding_16" android:paddingRight="@dimen/uikit_margin_padding_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_4" android:text="@string/kyc_quit_kyc3_tip1" android:lineSpacingExtra="@dimen/uikit_margin_padding_5" style="@style/Uikit_font_sans_5_0_weight_400" />
+    <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_primary_v5" android:id="@id/tv_quit_tip1" android:paddingLeft="@dimen/uikit_margin_padding_16" android:paddingRight="@dimen/uikit_margin_padding_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_12" android:text="@string/kyc_quit_kyc3_tip2" android:lineSpacingExtra="@dimen/uikit_margin_padding_5" style="@style/Uikit_font_sans_5_0_weight_400" />
+</LinearLayout>

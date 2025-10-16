@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/uikit_bg_primary_v5" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.title.GTNavBarV5 android:id="@id/title" android:layout_width="fill_parent" android:layout_height="44.0dip" android:text="@string/fiat_confirm_order" />
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.gateio.biz_fiat_channel.widget.FiatAmountTitleView android:id="@id/fiat_amount_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" />
+            <com.gateio.biz_fiat_channel.widget.FiatOrderDescView android:id="@id/fiat_desc_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="29.0dip" />
+            <com.gateio.lib.uikit.reminder.GTReminderV5 android:id="@id/tv_reminder_tip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_margin_padding_16" android:layout_marginTop="@dimen/uikit_margin_padding_16" android:layout_marginRight="@dimen/uikit_margin_padding_16" android:text="@string/fiat_transfer_subtitle" app:uikit_reminderVisualStyleV5="normal" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/fiat_choose_channel_unselected_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip">
+                <TextView android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_text_primary_v5" android:ellipsize="end" android:gravity="start" android:id="@id/order_type" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/uikit_margin_padding_16" android:text="@string/fiat_bank_account_details" android:lines="1" style="@style/Uikit_font_sans_5_0_weight_600" />
+                <LinearLayout android:orientation="vertical" android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.gateio.biz_fiat_channel.widget.FiatOrderFooterView android:id="@id/fiat_footer_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

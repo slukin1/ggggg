@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/bg_wallet" style="@style/match_match_normal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh" style="@style/match_ww_h">
+        <androidx.core.widget.NestedScrollView android:id="@id/nest_scroll" android:scrollbars="none" android:fadingEdge="none" android:fillViewport="true" android:overScrollMode="never" style="@style/match_match_normal">
+            <LinearLayout android:padding="@dimen/margin_padding_16" style="@style/match_match_normal">
+                <LinearLayout style="@style/ll_funding3">
+                    <TextView android:textColor="@color/text_wallet_gray4" android:text="@string/point_dfuid" style="@style/tv_user_white_12" />
+                    <EditText android:gravity="center_vertical" android:id="@id/ed_point_uid" android:layout_width="0.0dip" android:hint="@string/point_input_uid" android:layout_weight="1.0" android:inputType="number" style="@style/ed_funding3" />
+                </LinearLayout>
+                <LinearLayout android:layout_marginTop="@dimen/margin_padding_16" style="@style/ll_funding3">
+                    <TextView android:textColor="@color/text_wallet_gray4" android:text="@string/point_dfzh" style="@style/tv_user_white_12" />
+                    <EditText android:gravity="center_vertical" android:id="@id/ed_point_dfzh" android:layout_width="0.0dip" android:hint="@string/point_input_phone" android:layout_weight="1.0" android:inputType="text" style="@style/ed_funding3" />
+                </LinearLayout>
+                <LinearLayout android:layout_marginTop="@dimen/margin_padding_16" style="@style/ll_funding3">
+                    <TextView android:textColor="@color/text_wallet_gray4" android:text="@string/point_zrsl" style="@style/tv_user_white_12" />
+                    <EditText android:gravity="center_vertical" android:id="@id/ed_point_zrsl" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/ed_funding3" />
+                    <TextView android:textColor="@color/text_wallet_gray4" android:text="POINT" style="@style/tv_user_white_12" />
+                </LinearLayout>
+                <LinearLayout android:layout_marginTop="@dimen/margin_padding_16" style="@style/ll_funding3">
+                    <TextView android:textColor="@color/text_wallet_gray4" android:text="@string/point_zrze" style="@style/tv_user_white_12" />
+                    <EditText android:gravity="center_vertical" android:id="@id/ed_point_zrze" android:layout_width="0.0dip" android:hint="@string/point_input_pay" android:layout_weight="1.0" style="@style/ed_funding3" />
+                    <TextView android:textColor="@color/text_wallet_gray4" android:text="USDT" style="@style/tv_user_white_12" />
+                </LinearLayout>
+                <TextView android:textColor="@color/text_wallet_gray4" android:background="@color/bg_card_bottom" android:padding="@dimen/margin_padding_16" android:layout_marginTop="@dimen/margin_padding_24" android:layout_marginBottom="@dimen/margin_padding_24" android:text="@string/point_uidxdf" android:lineSpacingMultiplier="1.4" style="@style/tv_user_white_12" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <View style="@style/view_line_v2" />
+    <TextView android:gravity="center" android:id="@id/tv_point_buy" android:background="@color/uikit_color_2354e6" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/point_tjzr" style="@style/tv_user_white_18" />
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_live_home_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_live_home_live_now" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_20" android:textStyle="bold" android:textColor="@color/uikit_text_1" android:paddingTop="@dimen/margin_padding_12" android:paddingBottom="@dimen/margin_padding_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_now" android:layout_marginStart="@dimen/margin_padding_8" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/live_rv_live_now" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/live_item_home_live_foot" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/uikit_text_2" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/live_more" android:layout_marginEnd="@dimen/alivc_common_margin_10" />
+                <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/text_size_14" android:textColor="@color/uikit_text_2" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="" android:rotation="180.0" app:left_or_right="true" />
+            </LinearLayout>
+        </LinearLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_20" android:textStyle="bold" android:textColor="@color/uikit_text_1" android:gravity="center" android:id="@id/tv_recommended_hosts" android:paddingBottom="@dimen/margin_padding_24" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_24" android:text="@string/live_recommended_hosts" android:layout_marginStart="@dimen/margin_padding_8" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/live_rv_recommended_hosts" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false" app:layout_constraintTop_toBottomOf="@id/tv_recommended_hosts" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_live_home_soon" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_20" android:textStyle="bold" android:textColor="@color/uikit_text_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="36.0dip" android:text="@string/live_coming_soon" android:layout_weight="1.0" android:layout_marginStart="@dimen/margin_padding_8" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/live_rv_coming_soon" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_16" android:nestedScrollingEnabled="true" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/ll_live_home_soon_more" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/uikit_text_2" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/live_more" android:layout_marginEnd="@dimen/alivc_common_margin_10" />
+            <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/text_size_14" android:textColor="@color/uikit_text_2" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="" app:left_or_right="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_live_all_replays" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_20" android:textStyle="bold" android:textColor="@color/uikit_text_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/live_all_replays" android:layout_weight="1.0" android:layout_marginStart="@dimen/margin_padding_8" />
+            <LinearLayout android:id="@id/ll_live_all_replays_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginEnd="16.0dip">
+                <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/uikit_text_2" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/live_more" android:layout_marginEnd="@dimen/alivc_common_margin_10" />
+                <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/text_size_18" android:textStyle="bold" android:textColor="@color/uikit_text_2" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="" app:left_or_right="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

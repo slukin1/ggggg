@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/uikit_bg_5" android:paddingBottom="@dimen/dp_100" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/imageView" android:layout_width="100.0dip" android:layout_height="100.0dip" android:src="@mipmap/live_not_context" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/uikit_text_3" android:id="@id/tv_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/ticker_not_data" app:layout_constraintEnd_toEndOf="@id/imageView" app:layout_constraintStart_toStartOf="@id/imageView" app:layout_constraintTop_toBottomOf="@id/imageView" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

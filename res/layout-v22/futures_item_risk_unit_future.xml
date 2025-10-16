@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/ll_root" android:tag="layout/futures_item_risk_unit_future_0" style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/viewDivider" style="@style/view_line_divider_v5" />
+    <LinearLayout android:gravity="center_vertical" android:layout_marginTop="12.0dip" style="@style/match_wrap_h">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/ll_position_name" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.gateio.lib.uikit.text.SpecialPairsNameView android:gravity="center_vertical" android:id="@id/position_name" android:text="---" style="@style/Text_text_primary_16_weight_600_v5" />
+            <com.gateio.lib.uikit.tag.GTTagV5 android:textSize="10.0sp" android:id="@id/position_side" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/futures_more" android:layout_marginStart="4.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/ll_item_root_label_profitun" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_item_label_profitun" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="12.0dip">
+            <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.gateio.gateio.view.FuturesDashTextViewV5 android:textSize="12.0sp" android:gravity="center_vertical" android:id="@id/tv_label_profit_un" android:text="@string/futures_profit_un_v1" android:maxLines="2" app:uikit_underline_dashclick="false" style="@style/Text_text_secondary_12_weight_400_v5" />
+                <com.gateio.uiComponent.GateIconFont android:textSize="12.0sp" android:textColor="@color/uikit_icon_quaternary_v5" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:paddingHorizontal="4.0dip" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_profit_unrealize_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:id="@id/tv_profit_unrealize_vertical" android:textDirection="ltr" style="@style/Text_text_primary_16_weight_600_v5" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="end" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="12.0dip">
+            <com.gateio.gateio.view.FuturesDashTextViewV5 android:textSize="12.0sp" android:gravity="end|center" android:id="@id/tv_label_profit" android:layout_width="wrap_content" android:text="@string/futures_comb_bond_risk_unit_profit_has" android:maxLines="1" app:uikit_underline_dashclick="false" style="@style/Text_text_secondary_12_weight_400_v5" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:gravity="end" android:id="@id/tv_profit" style="@style/Text_text_primary_16_weight_600_v5" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.gateio.gateio.view.FuturesDashTextViewV5 android:id="@id/tvAmountUnit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/futures_v1_amount" android:layout_weight="1.0" app:uikit_underline_dashclick="true" app:uikit_underline_tips="@string/futures_comb_bond_risk_unit_qty_tips" style="@style/Text_text_secondary_12_weight_400_v5" />
+            <TextView android:id="@id/tv_amount" android:layout_width="fill_parent" android:layout_weight="1.0" style="@style/Text_text_primary_14_weight_500_v5" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.gateio.gateio.view.FuturesDashTextViewV5 android:id="@id/tv_initial_margin_title" android:layout_width="fill_parent" android:text="@string/futures_comb_bond_risk_unit_initial_margin" android:layout_weight="1.0" android:layout_marginStart="4.0dip" app:uikit_underline_dash="false" app:uikit_underline_dashclick="false" app:uikit_underline_tips="@string/futures_comb_bond_risk_unit_initial_margin_tips" style="@style/Text_text_secondary_12_weight_400_v5" />
+            <TextView android:id="@id/tv_initial_margin_value" android:layout_width="fill_parent" android:layout_weight="1.0" android:layout_marginStart="4.0dip" style="@style/Text_text_primary_14_weight_500_v5" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.gateio.gateio.view.FuturesDashTextViewV5 android:gravity="end" android:id="@id/tv_mmr_title" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/futures_v5_position_mm" android:layout_weight="1.0" android:layout_marginStart="4.0dip" app:uikit_underline_dash="false" app:uikit_underline_dashclick="false" app:uikit_underline_tips="@string/futures_comb_bond_risk_unit_initial_margin_tips" style="@style/Text_text_secondary_12_weight_400_v5" />
+            <TextView android:gravity="end" android:id="@id/tv_mmr_value" android:layout_width="fill_parent" android:layout_weight="1.0" android:layout_marginStart="4.0dip" style="@style/Text_text_primary_14_weight_500_v5" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.gateio.gateio.view.FuturesDashTextViewV5 android:id="@id/tv_label_price_average" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/positon_price_average" android:layout_weight="1.0" app:uikit_underline_dash="true" app:uikit_underline_dashclick="false" app:uikit_underline_tips="@string/futures_comb_bond_risk_unit_entry_price_tips" style="@style/Text_text_secondary_12_weight_400_v5" />
+            <TextView android:id="@id/tv_price_entry" android:layout_width="fill_parent" android:layout_weight="1.0" style="@style/Text_text_primary_14_weight_500_v5" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.gateio.gateio.view.FuturesDashTextViewV5 android:id="@id/tv_label_price_mark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/futures_mark_price_v1" android:layout_weight="1.0" android:layout_marginStart="4.0dip" app:uikit_underline_dash="true" app:uikit_underline_dashclick="false" style="@style/Text_text_secondary_12_weight_400_v5" />
+            <TextView android:id="@id/tv_price_mark" android:layout_width="fill_parent" android:layout_weight="1.0" android:layout_marginStart="4.0dip" style="@style/Text_text_primary_14_weight_500_v5" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.gateio.gateio.view.FuturesDashTextViewV5 android:gravity="end" android:id="@id/tv_label_position_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/futures_comb_bond_risk_unit_position_value" android:layout_weight="1.0" android:layout_marginStart="4.0dip" app:uikit_underline_dash="false" app:uikit_underline_dashclick="false" app:uikit_underline_tips="" style="@style/Text_text_secondary_12_weight_400_v5" />
+            <TextView android:gravity="end" android:id="@id/tv_position_value" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginStart="4.0dip" style="@style/Text_text_primary_14_weight_500_v5" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.gateio.gateio.view.FuturesPositionButton android:id="@id/position_button_risk" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" />
+</LinearLayout>

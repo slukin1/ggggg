@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:padding="@dimen/margin_padding_12" android:layout_marginStart="@dimen/margin_padding_16" android:layout_marginEnd="@dimen/margin_padding_16" style="@style/match_wrap_h"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_invest_bz" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/tv_user_gray_12" />
+    <LinearLayout android:layout_width="0.0dip" android:layout_weight="0.9" style="@style/match_wrap">
+        <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_invest_cysl" style="@style/tv_user_gray_12" />
+        <TextView android:textColor="@color/color_999999_7c848d" android:id="@id/tv_invest_cysl_local" style="@style/tv_user_gray_12" />
+    </LinearLayout>
+    <LinearLayout android:gravity="end" android:layout_width="0.0dip" android:layout_weight="0.9" style="@style/match_wrap">
+        <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_invest_yshsl" style="@style/tv_user_gray_12" />
+        <TextView android:textColor="@color/color_999999_7c848d" android:id="@id/tv_invest_yshsl_local" style="@style/tv_user_gray_12" />
+    </LinearLayout>
+</LinearLayout>

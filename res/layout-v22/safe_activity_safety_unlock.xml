@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/uikit_bg_1_v3" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.title.GTTitleViewV3 android:id="@id/password_title" android:layout_width="fill_parent" android:layout_height="44.0dip" android:text="@string/safe_app_unlock" />
+    <com.gateio.lib.uikit.cell.GTCellV3 android:id="@id/safety_setting_gesture" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="12.0dip" android:text="@string/gesture_setting_name" app:uikit_cellRightSubV3="@string/safetycenter_nosetting" app:uikit_cellShowRightArrowV3="true" app:uikit_cellTypeV3="card" />
+    <com.gateio.lib.uikit.cell.GTCellV3 android:id="@id/safety_setting_fingure" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:text="@string/safetycenter_print_unlock" android:layout_marginHorizontal="12.0dip" app:uikit_cellTypeV3="card" />
+    <com.gateio.lib.uikit.cell.GTCellV3 android:id="@id/safety_setting_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="12.0dip" android:text="@string/safe_auto_lock" app:uikit_cellRightSubV3="" app:uikit_cellShowRightArrowV3="true" app:uikit_cellTypeV3="card" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/uikit_margin_padding_16" android:paddingRight="@dimen/uikit_margin_padding_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/uikit_margin_padding_16">
+        <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_secondary_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wallets_withdraw_amount_tip_limit" />
+        <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_primary_v5" android:gravity="end" android:id="@id/tv_limit_day" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:textAlignment="viewEnd" android:layout_marginStart="@dimen/uikit_margin_padding_12" style="@style/Uikit_font_sans_5_0_weight_500" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/uikit_margin_padding_16" android:paddingRight="@dimen/uikit_margin_padding_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_8" android:paddingHorizontal="@dimen/uikit_margin_padding_16">
+        <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_secondary_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wallets_withdraw_amount_tip_remain" />
+        <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_primary_v5" android:gravity="end" android:id="@id/tv_limit_remain" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:textAlignment="viewEnd" android:layout_marginStart="@dimen/uikit_margin_padding_12" style="@style/Uikit_font_sans_5_0_weight_500" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_primary_v5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_margin_padding_16" android:layout_marginTop="@dimen/uikit_margin_padding_16" android:layout_marginRight="@dimen/uikit_margin_padding_16" android:text="@string/wallets_withdraw_amount_tip_desc" android:layout_marginHorizontal="@dimen/uikit_margin_padding_16" />
+</LinearLayout>

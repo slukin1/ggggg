@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alert_cancel_array">
+        <item>Chỉ bỏ qua lần này</item>
+        <item>10 phút sau</item>
+        <item>30 phút sau</item>
+        <item>2 giờ sau</item>
+        <item>24 giờ sau</item>
+        <item>Không</item>
+    </string-array>
+    <string-array name="exo_controls_playback_speeds">
+        <item>0,25x</item>
+        <item>0,5x</item>
+        <item>0,75x</item>
+        <item>Bình thường</item>
+        <item>1,25x</item>
+        <item>1,5x</item>
+        <item>2x</item>
+    </string-array>
+    <string-array name="funding_share_desc">
+        <item>Có một loại hạnh phúc được gọi là ổn định</item>
+        <item>Chọn Gate và giành chiến thắng trong chốc lát</item>
+        <item>Nhà lãnh đạo chuyên nghiệp là vô hạn</item>
+        <item>Hãy thử sức với Gate để thể hiện tài năng của bạn</item>
+        <item>Mọi con đường đều dẫn đến Rome nhưng sự mạnh mẽ là trên hết</item>
+        <item>Sẽ quản lý tiền? Vững vàng</item>
+        <item>Cuộc sống đáng sống và tương lai đầy hứa hẹn</item>
+    </string-array>
+    <string-array name="home_week_string_array">
+        <item>Chủ nhật</item>
+        <item>Thứ hai</item>
+        <item>Thứ ba</item>
+        <item>Thứ tư</item>
+        <item>Thứ năm</item>
+        <item>Thứ sáu</item>
+        <item>Thứ bảy</item>
+    </string-array>
+    <string-array name="modify_procedure_items">
+        <item>Chọn nội dung bảo mật đã bị mất</item>
+        <item>Đăng ký chỉnh sửa nội dung bảo mật</item>
+        <item>Đăng ký hoàn tất</item>
+    </string-array>
+    <string-array name="position_share_desc_loss">
+        <item>Cắt lỗ? Không bao giờ!</item>
+        <item>Giữ và chờ đợi.</item>
+        <item>Xin hãy bớt lỗ</item>
+        <item>Người kiểm soát được tình huống ở phút cuối là người thành công nhất</item>
+        <item>Đứng dậy và tỏa sáng. Di chuyển ngay bây giờ.</item>
+        <item>Hãy đối xử tốt với tôi</item>
+        <item>Không hoảng sợ</item>
+        <item>Đặt tất cả. Giữ vững niềm tin</item>
+    </string-array>
+    <string-array name="position_share_desc_win">
+        <item>Đặt tất cả và thắng lớn.</item>
+        <item>Đặt tất cả như mọi khi.</item>
+        <item>Chỉ cần giữ</item>
+        <item>Chỉ cần giữ nó</item>
+        <item>Bước tiếp theo? Theo dõi xu hướng</item>
+        <item>Tôi là ngôi sao lớn!</item>
+        <item>Theo tôi để thắng lớn</item>
+        <item>Tôi vẫn ở phía bên phải như mọi khi!</item>
+        <item>Mua hay bán? Tất cả tùy thuộc vào tôi.</item>
+    </string-array>
+    <string-array name="push_alert_cancel_array">
+        <item>30 phút</item>
+        <item>2h</item>
+        <item>24h</item>
+        <item>Mãi mãi</item>
+    </string-array>
+    <string-array name="week_string_array">
+        <item>Chủ nhật</item>
+        <item>Thứ hai</item>
+        <item>Thứ ba</item>
+        <item>Thứ tư</item>
+        <item>Thứ năm</item>
+        <item>Thứ sáu</item>
+        <item>Thứ bảy</item>
+    </string-array>
+</resources>

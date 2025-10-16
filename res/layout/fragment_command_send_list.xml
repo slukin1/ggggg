@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/bg_3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout android:id="@id/swipe_refresh" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.gateio.modulelive.view.LiveHomeScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_count" android:background="@color/bg_3" android:layout_width="fill_parent" android:layout_height="260.0dip" app:layout_constraintTop_toTopOf="parent">
+                    <com.gateio.common.view.GateioAvatarView android:id="@id/gav_command" android:layout_width="@dimen/length_64" android:layout_height="@dimen/length_64" android:layout_marginTop="@dimen/length_36" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                    <TextView android:textColor="@color/uikit_text_3_v3" android:id="@id/tv_command_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="" app:layout_constraintEnd_toEndOf="@id/gav_command" app:layout_constraintStart_toStartOf="@id/gav_command" app:layout_constraintTop_toBottomOf="@id/gav_command" />
+                    <TextView android:textSize="@dimen/text_size_24" android:textStyle="bold" android:textColor="@color/uikit_text_1_v3" android:id="@id/tv_reward_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_40" android:text="$0" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_command_name" />
+                    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/uikit_text_2_v3" android:id="@id/tv_reward_money_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/command_a_total_sent" app:layout_constraintEnd_toEndOf="@id/tv_reward_money" app:layout_constraintStart_toStartOf="@id/tv_reward_money" app:layout_constraintTop_toBottomOf="@id/tv_reward_money" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView android:gravity="center" android:id="@id/tv_null_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_180" android:text="@string/command_null_hint_send" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_command_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </com.gateio.modulelive.view.LiveHomeScrollView>
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+</FrameLayout>

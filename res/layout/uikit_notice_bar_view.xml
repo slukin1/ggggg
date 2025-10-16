@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.common.view.CornerLinearLayout android:gravity="center_vertical" android:paddingLeft="@dimen/uikit_margin_padding_12" android:paddingRight="@dimen/uikit_margin_padding_12" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_16" android:layout_gravity="center_vertical" android:id="@id/tv_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/uikit_margin_padding_8" />
+    <TextView android:textSize="@dimen/uikit_text_size_12" android:ellipsize="marquee" android:id="@id/tv_content" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:marqueeRepeatLimit="marquee_forever" />
+    <com.gateio.lib.uikit.notice.VerticalTextview android:textSize="@dimen/uikit_text_size_12" android:id="@id/tv_vertical" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_12" android:layout_gravity="center_vertical" android:id="@id/tv_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/uikit_margin_padding_8" />
+</com.gateio.common.view.CornerLinearLayout>

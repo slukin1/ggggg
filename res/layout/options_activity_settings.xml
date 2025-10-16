@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/uikit_bg_primary_v5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.gateio.view.GateioStatusPlaceHolderBar android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.gateio.lib.uikit.title.GTTitleViewV3 android:id="@id/title_view" android:layout_width="fill_parent" android:layout_height="44.0dip" android:text="@string/options_trade_setting" />
+    <androidx.core.widget.NestedScrollView android:background="@color/uikit_bg_primary_v5" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.gateio.lib.uikit.cell.GTCellV5 android:id="@id/cell_limit_order" android:layout_width="fill_parent" android:layout_height="56.0dip" android:text="@string/exchange_v1_alert_confirm" app:uikit_cellSwitchSizeV5="small" />
+            <com.gateio.lib.uikit.cell.GTCellV5 android:id="@id/cell_order_finish_notification" android:layout_width="fill_parent" android:layout_height="56.0dip" android:text="@string/exchange_order_filled_notification" app:uikit_cellShowRightArrowV5="true" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

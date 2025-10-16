@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/calendar_header" android:background="@color/uikit_bg_market_item" android:paddingTop="@dimen/margin_padding_10" android:paddingBottom="@dimen/margin_padding_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/margin_padding_10" android:paddingEnd="@dimen/margin_padding_10">
+        <TextView android:textSize="@dimen/uikit_text_size_25" android:textColor="@color/uikit_main_text_color" android:id="@id/calendar_month" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_main_text_color" android:id="@id/calendar_today" android:padding="@dimen/margin_padding_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/security_calendar_today" />
+        <ImageView android:id="@id/calendar_close" android:padding="@dimen/margin_padding_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_home_notify_cancel" />
+    </LinearLayout>
+    <com.gateio.biz.apps_security.widget.calendar.CalendarGroup android:id="@id/calendar_group" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

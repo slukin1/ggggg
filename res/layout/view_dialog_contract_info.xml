@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/ts_14" android:textColor="@color/uikit_text_primary_v5" android:id="@id/subTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_margin_padding_16" android:layout_marginTop="@dimen/uikit_margin_padding_8" android:layout_marginRight="@dimen/uikit_margin_padding_16" android:text="@string/wallets_deposit_contract_notice" style="@style/Uikit_font_sans_5_0_weight_400" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/shape_border_line_8" android:padding="@dimen/uikit_dp_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_margin_padding_16" android:layout_marginTop="@dimen/uikit_margin_padding_12" android:layout_marginRight="@dimen/uikit_margin_padding_16">
+        <TextView android:textSize="@dimen/ts_14" android:textColor="@color/uikit_text_1_v3" android:ellipsize="end" android:id="@id/tv_url" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1.0" style="@style/Uikit_font_sans_5_0_weight_600" />
+        <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_margin_padding_20" android:textColor="@color/uikit_icon_primary_v5" android:id="@id/iv_copy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_marginStart="@dimen/uikit_dp_8" />
+    </LinearLayout>
+</LinearLayout>

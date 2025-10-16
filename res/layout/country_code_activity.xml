@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/uikit_bg_1_v3" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gateio.lib.uikit.title.GTTitleViewV3 android:id="@id/countrycode_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/user_country" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/search_layout" android:padding="@dimen/margin_padding_5" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_below="@id/countrycode_title">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_search" android:layout_marginStart="@dimen/margin_padding_5" />
+        <EditText android:textSize="@dimen/text_size_14" android:textColor="@color/uikit_text_card_title" android:textColorHint="@color/uikit_text_card_desc" android:layout_gravity="center_vertical" android:id="@id/search_for_countrycode" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/margin_padding_5" android:hint="@string/search" android:singleLine="true" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/countrycode_listview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/search_layout" />
+    <com.gateio.gateio.activity.countrycode.SideBar android:id="@id/search_country_side" android:layout_width="30.0dip" android:layout_height="fill_parent" android:layout_marginBottom="50.0dip" android:layout_below="@id/search_layout" android:layout_alignParentEnd="true" />
+</RelativeLayout>

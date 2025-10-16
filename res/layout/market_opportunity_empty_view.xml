@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Space android:id="@id/top_spacer" android:layout_width="fill_parent" android:layout_height="70.0dip" app:layout_constraintTop_toTopOf="parent" />
+    <com.gateio.lib.uikit.state.GTEmptyViewV3 android:id="@id/market_empty_view" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/bottom_spacer" app:layout_constraintStart_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/top_spacer" app:uikit_emptyButtonTextV3="@string/market_refresh_page" app:uikit_emptyTypeV3="data_empty" app:uikit_titleTextV3="@string/ticker_not_data" />
+    <Space android:id="@id/bottom_spacer" android:layout_width="fill_parent" android:layout_height="120.0dip" app:layout_constraintBottom_toBottomOf="parent" />
+</merge>

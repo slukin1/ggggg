@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_vertical" android:id="@id/reason_layout" android:paddingTop="@dimen/margin_padding_16" android:paddingBottom="@dimen/margin_padding_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="56.0dip">
+        <TextView android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_text_primary_v5" android:id="@id/reason_order" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1. " android:lineSpacingExtra="@dimen/uikit_dp_4" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Uikit_font_sans_5_0_weight_400" />
+        <TextView android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_text_primary_v5" android:id="@id/reason_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="reason" android:lineSpacingExtra="@dimen/uikit_dp_4" android:layout_marginEnd="@dimen/uikit_margin_padding_12" app:layout_constraintEnd_toStartOf="@id/reason_icon" app:layout_constraintStart_toEndOf="@id/reason_order" app:layout_constraintTop_toTopOf="@id/reason_order" style="@style/Uikit_font_sans_5_0_weight_400" />
+        <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_20" android:textColor="@color/uikit_text_tips_v5" android:id="@id/reason_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.gateio.lib.uikit.textarea.GTTextAreaV5 android:id="@id/text_area" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

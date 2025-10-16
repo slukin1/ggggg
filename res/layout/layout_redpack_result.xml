@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:id="@id/ll_result" android:visibility="gone" android:layout_width="300.0dip" style="@style/wrap_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:background="@mipmap/bg_live_hongbao_open_up" android:paddingTop="44.0dip" android:paddingStart="@dimen/margin_padding_16" android:paddingEnd="@dimen/margin_padding_16" style="@style/match_wrap">
+        <com.gateio.common.view.GateioAvatarView android:id="@id/result_head" android:layout_width="56.0dip" android:layout_height="56.0dip" />
+        <TextView android:textColor="@color/color_FFEBCC" android:id="@id/tv_result_userName" android:layout_marginTop="20.0dip" android:text="---" style="@style/tv_user_white_16" />
+        <TextView android:textColor="@color/color_FFEBCC" android:id="@id/tv_result_content" android:layout_marginTop="8.0dip" android:text="---" style="@style/tv_user_black_20" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:background="@mipmap/bg_live_hongbao_open_down" android:paddingStart="@dimen/margin_padding_16" android:paddingEnd="@dimen/margin_padding_16" style="@style/match_wrap">
+        <TextView android:textColor="@color/color_868686" android:id="@id/tv_result_coin" android:text="---" style="@style/tv_user_white_14" />
+        <TextView android:textStyle="bold" android:textColor="@color/color_5d5d5d" android:id="@id/tv_result_amount" android:layout_marginTop="@dimen/margin_padding_16" android:text="---" style="@style/tv_user_black_28" />
+        <TextView android:textColor="@color/color_c6c6ca" android:layout_marginTop="@dimen/margin_padding_8" android:text="@string/warining_redpack_result" style="@style/tv_user_black_14" />
+    </LinearLayout>
+</LinearLayout>

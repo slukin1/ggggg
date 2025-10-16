@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#80000000" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="15.0dip" android:paddingEnd="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="12.0sp" android:textColor="@color/uikit_white" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="---" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_qqjg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:textColor="@color/uikit_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/option_qqjg" android:drawablePadding="4.0dip" app:drawableStartCompat="@mipmap/ic_option_qqjg" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/uikit_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="(USDT):" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/uikit_white" android:id="@id/tv_qqjg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="---" android:layout_marginStart="4.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:textColor="@color/uikit_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/option_bdjg" android:drawablePadding="4.0dip" app:drawableStartCompat="@mipmap/ic_option_bjjg" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/uikit_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="(USDT):" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/uikit_white" android:id="@id/tv_bjjg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="---" android:layout_marginStart="4.0dip" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/margin_padding_20" android:paddingEnd="@dimen/margin_padding_20"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_code" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/margin_padding_7">
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/uikit_text_color_white" android:gravity="center" android:id="@id/google_verify_code1" android:background="@null" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+            <View android:id="@id/google_verify_bottom1" android:background="#ff3f8eed" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/margin_padding_7" android:layout_marginEnd="@dimen/margin_padding_7">
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/uikit_text_color_white" android:gravity="center" android:id="@id/google_verify_code2" android:background="@null" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+            <View android:id="@id/google_verify_bottom2" android:background="#ff999999" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/margin_padding_7" android:layout_marginEnd="@dimen/margin_padding_7">
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/uikit_text_color_white" android:gravity="center" android:id="@id/google_verify_code3" android:background="@null" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+            <View android:id="@id/google_verify_bottom3" android:background="#ff999999" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/margin_padding_7">
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/uikit_text_color_white" android:gravity="center" android:id="@id/google_verify_code4" android:background="@null" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+            <View android:id="@id/google_verify_bottom4" android:background="#ff999999" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/margin_padding_7">
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/uikit_text_color_white" android:gravity="center" android:id="@id/google_verify_code5" android:background="@null" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+            <View android:id="@id/google_verify_bottom5" android:background="#ff999999" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/margin_padding_7">
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/uikit_text_color_white" android:gravity="center" android:id="@id/google_verify_code6" android:background="@null" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+            <View android:id="@id/google_verify_bottom6" android:background="#ff999999" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <EditText android:textColor="@android:color/transparent" android:id="@id/google_verify_code" android:background="@android:color/transparent" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cursorVisible="false" android:layout_alignTop="@id/ll_code" android:layout_alignBottom="@id/ll_code" android:inputType="number" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="bottom" android:background="@drawable/shape_main_dialog_top" style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/uikit_color_333333_e6e6e6" android:id="@id/tv_download" android:padding="@dimen/margin_padding_16" android:text="@string/video_download" android:layout_centerVertical="true" style="@style/tv_user_white_16" />
+    <View style="@style/uikit_view_line_mian_v" />
+    <TextView android:textColor="@color/uikit_color_333333_e6e6e6" android:id="@id/tv_share" android:padding="@dimen/margin_padding_16" android:text="@string/video_share" style="@style/tv_user_white_16" />
+    <View style="@style/view_line_mian_v_blod" />
+    <TextView android:textColor="@color/uikit_color_333333_e6e6e6" android:id="@id/tv_cancel" android:padding="@dimen/margin_padding_16" android:text="@string/user_qx" style="@style/tv_user_white_16" />
+</LinearLayout>

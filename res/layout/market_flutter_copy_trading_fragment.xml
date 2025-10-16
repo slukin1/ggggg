@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gateio.biz.market.flutter_box.MarketArrowInterceptScrollView android:id="@id/intercept_scrollview" android:layout_width="wrap_content" android:layout_height="fill_parent" android:fillViewport="true">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/relative_copy_flutter" android:layout_width="fill_parent" android:layout_height="500.0dip" />
+            <RelativeLayout android:id="@id/market_copy_skeleton_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/market_flutter_copy_skeleton_view" />
+            </RelativeLayout>
+        </FrameLayout>
+    </com.gateio.biz.market.flutter_box.MarketArrowInterceptScrollView>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_primary_v5" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_margin_padding_16" android:layout_marginTop="@dimen/uikit_margin_padding_8" android:layout_marginRight="@dimen/uikit_margin_padding_16" android:layout_marginBottom="@dimen/margin_padding_4" android:text="@string/wallets_withdrawal_method" style="@style/Uikit_font_sans_5_0_weight_500" />
+    <com.gateio.lib.uikit.selector.GTSelectorV5 android:id="@id/selector" android:paddingLeft="@dimen/uikit_margin_padding_16" android:paddingTop="@dimen/uikit_margin_padding_8" android:paddingRight="@dimen/uikit_margin_padding_16" android:paddingBottom="@dimen/uikit_margin_padding_8" android:layout_width="fill_parent" android:layout_height="wrap_content" app:uikit_selectorSingleSelectV5="true" app:uikit_selectorSpanCountV5="4" app:uikit_selectorTypeV5="tag" />
+</LinearLayout>

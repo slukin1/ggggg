@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.common.view.CornerRelativeLayout android:background="@color/uikit_color_ffffff_111f31" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" app:radius="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_quote" android:layout_width="24.0dip" android:layout_height="24.0dip" />
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_quote" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="---" android:layout_marginStart="8.0dip" android:layout_toEndOf="@id/iv_quote" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/color_999999_7c848d" android:id="@id/tv_quote_exchange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="---" android:layout_below="@id/tv_quote" android:layout_marginStart="8.0dip" android:layout_toEndOf="@id/iv_quote" />
+</com.gateio.common.view.CornerRelativeLayout>

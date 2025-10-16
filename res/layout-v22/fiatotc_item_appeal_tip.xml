@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.lib.uikit.reminder.GTReminderV5 android:id="@id/reminder" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_dp_16" android:layout_marginTop="@dimen/uikit_dp_16" android:layout_marginRight="@dimen/uikit_dp_16" android:layout_marginHorizontal="@dimen/uikit_dp_16" app:uikit_reminderTypeV5="neutral"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

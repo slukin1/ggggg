@@ -1,0 +1,245 @@
+.class public final Lcom/gateio/lib/apps_kyc/R$anim;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/gateio/lib/apps_kyc/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "anim"
+.end annotation
+
+
+# static fields
+.field public static final abc_fade_in:I = 0x7f010000
+
+.field public static final abc_fade_out:I = 0x7f010001
+
+.field public static final abc_grow_fade_in_from_bottom:I = 0x7f010002
+
+.field public static final abc_popup_enter:I = 0x7f010003
+
+.field public static final abc_popup_exit:I = 0x7f010004
+
+.field public static final abc_shrink_fade_out_from_bottom:I = 0x7f010005
+
+.field public static final abc_slide_in_bottom:I = 0x7f010006
+
+.field public static final abc_slide_in_top:I = 0x7f010007
+
+.field public static final abc_slide_out_bottom:I = 0x7f010008
+
+.field public static final abc_slide_out_top:I = 0x7f010009
+
+.field public static final abc_tooltip_enter:I = 0x7f01000a
+
+.field public static final abc_tooltip_exit:I = 0x7f01000b
+
+.field public static final anim_corner_breath:I = 0x7f010010
+
+.field public static final anim_garfield_shake:I = 0x7f010012
+
+.field public static final anim_layout_bottom_out:I = 0x7f010013
+
+.field public static final anim_non:I = 0x7f010015
+
+.field public static final anim_progress_rotate:I = 0x7f010016
+
+.field public static final anim_trans_from_bottom:I = 0x7f010018
+
+.field public static final btn_checkbox_to_checked_box_inner_merged_animation:I = 0x7f01001a
+
+.field public static final btn_checkbox_to_checked_box_outer_merged_animation:I = 0x7f01001b
+
+.field public static final btn_checkbox_to_checked_icon_null_animation:I = 0x7f01001c
+
+.field public static final btn_checkbox_to_unchecked_box_inner_merged_animation:I = 0x7f01001d
+
+.field public static final btn_checkbox_to_unchecked_check_path_merged_animation:I = 0x7f01001e
+
+.field public static final btn_checkbox_to_unchecked_icon_null_animation:I = 0x7f01001f
+
+.field public static final btn_radio_to_off_mtrl_dot_group_animation:I = 0x7f010020
+
+.field public static final btn_radio_to_off_mtrl_ring_outer_animation:I = 0x7f010021
+
+.field public static final btn_radio_to_off_mtrl_ring_outer_path_animation:I = 0x7f010022
+
+.field public static final btn_radio_to_on_mtrl_dot_group_animation:I = 0x7f010023
+
+.field public static final btn_radio_to_on_mtrl_ring_outer_animation:I = 0x7f010024
+
+.field public static final btn_radio_to_on_mtrl_ring_outer_path_animation:I = 0x7f010025
+
+.field public static final design_bottom_sheet_slide_in:I = 0x7f01002c
+
+.field public static final design_bottom_sheet_slide_out:I = 0x7f01002d
+
+.field public static final design_snackbar_in:I = 0x7f01002e
+
+.field public static final design_snackbar_out:I = 0x7f01002f
+
+.field public static final face_liveness_leftout:I = 0x7f010033
+
+.field public static final face_liveness_progress_circle_shape:I = 0x7f010034
+
+.field public static final face_liveness_rightin:I = 0x7f010035
+
+.field public static final face_slide_in_left:I = 0x7f010036
+
+.field public static final face_slide_in_right:I = 0x7f010037
+
+.field public static final face_slide_out_left:I = 0x7f010038
+
+.field public static final face_slide_out_right:I = 0x7f010039
+
+.field public static final facetec_activity_finish:I = 0x7f01003a
+
+.field public static final facetec_check_animation:I = 0x7f01003b
+
+.field public static final facetec_circle_stroke_end_animation:I = 0x7f01003c
+
+.field public static final facetec_circle_stroke_path_animation:I = 0x7f01003d
+
+.field public static final facetec_circle_stroke_width_animation:I = 0x7f01003e
+
+.field public static final facetec_cross_1_animation:I = 0x7f01003f
+
+.field public static final facetec_cross_2_animation:I = 0x7f010040
+
+.field public static final facetec_fade_out:I = 0x7f010041
+
+.field public static final facetec_slide_in_left:I = 0x7f010042
+
+.field public static final facetec_slide_out_left:I = 0x7f010043
+
+.field public static final facetec_text_from_center:I = 0x7f010044
+
+.field public static final focusview_show:I = 0x7f010045
+
+.field public static final fragment_fast_out_extra_slow_in:I = 0x7f010046
+
+.field public static final iproov__pop:I = 0x7f010057
+
+.field public static final iproov__wiggle:I = 0x7f010058
+
+.field public static final mtrl_bottom_sheet_slide_in:I = 0x7f010060
+
+.field public static final mtrl_bottom_sheet_slide_out:I = 0x7f010061
+
+.field public static final mtrl_card_lowers_interpolator:I = 0x7f010062
+
+.field public static final nav_default_enter_anim:I = 0x7f010063
+
+.field public static final nav_default_exit_anim:I = 0x7f010064
+
+.field public static final nav_default_pop_enter_anim:I = 0x7f010065
+
+.field public static final nav_default_pop_exit_anim:I = 0x7f010066
+
+.field public static final progress_circle_shape:I = 0x7f01006b
+
+.field public static final ps_anim_album_dismiss:I = 0x7f01006c
+
+.field public static final ps_anim_album_show:I = 0x7f01006d
+
+.field public static final ps_anim_alpha_enter:I = 0x7f01006e
+
+.field public static final ps_anim_alpha_exit:I = 0x7f01006f
+
+.field public static final ps_anim_anticipate_interpolator:I = 0x7f010070
+
+.field public static final ps_anim_down_out:I = 0x7f010071
+
+.field public static final ps_anim_enter:I = 0x7f010072
+
+.field public static final ps_anim_exit:I = 0x7f010073
+
+.field public static final ps_anim_fade_in:I = 0x7f010074
+
+.field public static final ps_anim_fade_out:I = 0x7f010075
+
+.field public static final ps_anim_fall_enter:I = 0x7f010076
+
+.field public static final ps_anim_layout_fall_enter:I = 0x7f010077
+
+.field public static final ps_anim_modal_in:I = 0x7f010078
+
+.field public static final ps_anim_modal_out:I = 0x7f010079
+
+.field public static final ps_anim_overshoot_interpolator:I = 0x7f01007a
+
+.field public static final ps_anim_up_in:I = 0x7f01007b
+
+.field public static final slide_in:I = 0x7f01007e
+
+.field public static final slide_out:I = 0x7f010081
+
+.field public static final stay:I = 0x7f010084
+
+.field public static final text_swicher_alpha_in:I = 0x7f010085
+
+.field public static final text_swicher_alpha_out:I = 0x7f010086
+
+.field public static final text_swicher_in:I = 0x7f010087
+
+.field public static final text_swicher_out:I = 0x7f010088
+
+.field public static final ucrop_item_animation_fall_down:I = 0x7f01008a
+
+.field public static final ucrop_layout_animation_fall_down:I = 0x7f01008b
+
+.field public static final ucrop_loader_circle_path:I = 0x7f01008c
+
+.field public static final ucrop_loader_circle_scale:I = 0x7f01008d
+
+.field public static final uikit_anim_bottom_in:I = 0x7f01008e
+
+.field public static final uikit_anim_bottom_in_v5:I = 0x7f01008f
+
+.field public static final uikit_anim_bottom_out:I = 0x7f010090
+
+.field public static final uikit_anim_bottom_out_v5:I = 0x7f010091
+
+.field public static final uikit_anim_left_in_v3:I = 0x7f010092
+
+.field public static final uikit_anim_left_out_v3:I = 0x7f010093
+
+.field public static final uikit_anim_progress_rotate:I = 0x7f010094
+
+.field public static final uikit_anim_right_in_v3:I = 0x7f010095
+
+.field public static final uikit_anim_right_out_v3:I = 0x7f010096
+
+.field public static final uikit_dialog_slide_in_end_v5:I = 0x7f010097
+
+.field public static final uikit_dialog_slide_in_start_v5:I = 0x7f010098
+
+.field public static final uikit_dialog_slide_out_end_v5:I = 0x7f010099
+
+.field public static final uikit_dialog_slide_out_start_v5:I = 0x7f01009a
+
+.field public static final uikit_dialog_top_in_end_v5:I = 0x7f01009b
+
+.field public static final uikit_dialog_top_in_start_v5:I = 0x7f01009c
+
+.field public static final uikit_pop_anim_scale_in:I = 0x7f01009e
+
+.field public static final uikit_pop_anim_scale_out:I = 0x7f01009f
+
+.field public static final uikit_toast_fade_in:I = 0x7f0100a1
+
+.field public static final uikit_toast_fade_out:I = 0x7f0100a2
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

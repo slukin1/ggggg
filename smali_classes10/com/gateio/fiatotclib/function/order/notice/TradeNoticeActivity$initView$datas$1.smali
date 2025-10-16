@@ -1,0 +1,171 @@
+.class final Lcom/gateio/fiatotclib/function/order/notice/TradeNoticeActivity$initView$datas$1;
+.super Lkotlin/jvm/internal/Lambda;
+.source "TradeNoticeActivity.kt"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/gateio/fiatotclib/function/order/notice/TradeNoticeActivity;->initView()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/jvm/internal/Lambda;",
+        "Lkotlin/jvm/functions/Function0<",
+        "Lkotlin/Unit;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u0008\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n\u00a2\u0006\u0002\u0008\u0002"
+    }
+    d2 = {
+        "<anonymous>",
+        "",
+        "invoke"
+    }
+    k = 0x3
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/gateio/fiatotclib/function/order/notice/TradeNoticeActivity;
+
+
+# direct methods
+.method constructor <init>(Lcom/gateio/fiatotclib/function/order/notice/TradeNoticeActivity;)V
+    .locals 0
+
+    .line 1
+    .line 2
+    iput-object p1, p0, Lcom/gateio/fiatotclib/function/order/notice/TradeNoticeActivity$initView$datas$1;->this$0:Lcom/gateio/fiatotclib/function/order/notice/TradeNoticeActivity;
+
+    .line 3
+    const/4 p1, 0x0
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
+
+    .line 7
+    return-void
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+.end method
+
+
+# virtual methods
+.method public bridge synthetic invoke()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/gateio/fiatotclib/function/order/notice/TradeNoticeActivity$initView$datas$1;->invoke()V
+
+    sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object v0
+.end method
+
+.method public final invoke()V
+    .locals 4
+
+    .line 2
+    new-instance v0, Landroid/os/Bundle;
+
+    invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
+
+    .line 3
+    sget-object v1, Lcom/gateio/baselib/utils/HttpUtils;->INSTANCE:Lcom/gateio/baselib/utils/HttpUtils;
+
+    const-string/jumbo v2, "help/c2c/operating-instructions/17252/step-by-step-instructions-on-p2p-quick-trading-on-app"
+
+    invoke-virtual {v1, v2}, Lcom/gateio/http/BaseHttpMethods;->getWholeUrl(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string/jumbo v2, "url"
+
+    .line 4
+    invoke-virtual {v0, v2, v1}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 5
+    iget-object v1, p0, Lcom/gateio/fiatotclib/function/order/notice/TradeNoticeActivity$initView$datas$1;->this$0:Lcom/gateio/fiatotclib/function/order/notice/TradeNoticeActivity;
+
+    sget v2, Lcom/gateio/fiatotclib/R$string;->fiatotc_trade_notice_item1_content_mark:I
+
+    invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string/jumbo v2, "title"
+
+    invoke-virtual {v0, v2, v1}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 6
+    invoke-static {}, Lcom/gateio/fiatotclib/provider/FiatOtcLibProviderKt;->getFiatOtcLibProvider()Lcom/gateio/fiatotclib/provider/FiatOtcLibProvider;
+
+    move-result-object v1
+
+    invoke-interface {v1}, Lcom/gateio/fiatotclib/provider/FiatOtcLibProvider;->getWebview()Lkotlin/jvm/functions/Function3;
+
+    move-result-object v1
+
+    iget-object v2, p0, Lcom/gateio/fiatotclib/function/order/notice/TradeNoticeActivity$initView$datas$1;->this$0:Lcom/gateio/fiatotclib/function/order/notice/TradeNoticeActivity;
+
+    sget-object v3, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    invoke-interface {v1, v2, v0, v3}, Lkotlin/jvm/functions/Function3;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-void
+.end method

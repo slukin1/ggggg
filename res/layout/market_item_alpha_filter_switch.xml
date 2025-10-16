@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/vParent" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/uikit_text_primary_v5" android:id="@id/tvTittle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="All DEX（24）" android:layout_marginStart="16.0dip" style="@style/Uikit_font_sans_5_0_weight_500" />
+    <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <com.gateio.lib.uikit.switchview.GTSwitchV5 android:gravity="center" android:id="@id/vSwitch" android:paddingLeft="16.0dip" android:paddingTop="10.0dip" android:paddingRight="16.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" app:uikit_switchStyleV5="large" />
+</androidx.appcompat.widget.LinearLayoutCompat>

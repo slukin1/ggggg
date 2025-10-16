@@ -1,0 +1,33 @@
+.class interface abstract Landroidx/media3/exoplayer/rtsp/RtpDataChannel;
+.super Ljava/lang/Object;
+.source "RtpDataChannel.java"
+
+# interfaces
+.implements Landroidx/media3/datasource/DataSource;
+
+
+# annotations
+.annotation build Landroidx/media3/common/util/UnstableApi;
+.end annotation
+
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/media3/exoplayer/rtsp/RtpDataChannel$Factory;
+    }
+.end annotation
+
+
+# virtual methods
+.method public abstract getInterleavedBinaryDataListener()Landroidx/media3/exoplayer/rtsp/RtspMessageChannel$InterleavedBinaryDataListener;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end method
+
+.method public abstract getLocalPort()I
+.end method
+
+.method public abstract getTransport()Ljava/lang/String;
+.end method
+
+.method public abstract needsClosingOnLoadCompletion()Z
+.end method

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/colorTransparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.state.GTLoadingViewV5 android:layout_gravity="center" android:id="@id/uikit_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:uikit_shadowBottomHeight="@dimen/uikit_margin_padding_80" app:uikit_shadowLeftHeight="@dimen/uikit_margin_padding_80" app:uikit_shadowOffsetY="@dimen/dp_4" app:uikit_shadowRadius="40" app:uikit_shadowRightHeight="@dimen/uikit_margin_padding_80" app:uikit_shadowRound="@dimen/uikit_radius_8" app:uikit_shadowTopHeight="@dimen/uikit_margin_padding_80" />
+</androidx.constraintlayout.widget.ConstraintLayout>

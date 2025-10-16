@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="70.0dip" style="@style/wrap_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_Content" android:background="@color/transparent_light" android:layout_width="wrap_content" android:layout_height="36.0dip" android:layout_centerVertical="true" android:paddingStart="28.0dip" android:paddingEnd="40.0dip" android:layout_marginStart="20.0dip">
+        <TextView android:textColor="@color/color_FFEBCC" android:id="@id/tv_UserName" style="@style/tv_user_black_14" />
+        <TextView android:textStyle="bold" android:id="@id/tv_Message" style="@style/tv_user_white_12" />
+    </LinearLayout>
+    <ImageView android:id="@id/ivgift" android:background="@mipmap/ic_live_gift_coin" android:padding="20.0dip" android:layout_width="70.0dip" android:layout_height="70.0dip" android:scaleType="centerInside" android:layout_centerVertical="true" android:layout_marginStart="-35.0dip" android:layout_toEndOf="@id/ll_Content" />
+    <com.gateio.gateio.view.gift.GiftCountTextView android:textColor="@color/color_FFCD80" android:id="@id/giftNum" android:visibility="gone" android:text="x1" android:layout_centerVertical="true" android:layout_marginStart="16.0dip" android:layout_toEndOf="@id/ivgift" style="@style/tv_user_black_24" />
+    <com.gateio.common.view.GateioAvatarView android:id="@id/crvheadimage" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_centerVertical="true" app:avatar_text_size="18" />
+</RelativeLayout>

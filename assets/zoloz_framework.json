@@ -1,0 +1,15 @@
+{
+  "framework_version": "3.61.0",
+  "configs": [
+    {
+      "config_file_name":"zoloz_biometric.json",
+      "bundle_name":"",
+      "dynamic":false
+    }
+  ],
+  "productId": "$packageName",
+
+  "logServerHost": "https://open-sea.zoloz.com",
+  "public_key_t": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAid3Qr831XYq55LdO4NBI9l1N2j8h8NaPFwISl2vKlH6ftvTIdbPQ4/Zmb2Bjm7CP986tPZq92oWnzkLkVy0Tmkc/YPRF+kMdP/EUMKAb/nKjTUzXwQSNADG0dSyNAojiyaxUneNrG7hONnuQOANfgKV0qGkEYOpr/5SnQMvvnsV4E3JTkvfGfYTc6Y1vr4c/PEHcz5I/uIyv8sV52aLzxdOf8G7K219llS6wRWYa02H9xIl3d6nnRx4VJTvA9eZVemunuG4OHzTdhZ+RdMIDpMCeuhb2pGlcy/uP8UPr4aiQ0tkxfwD8FgcmqwCtHmEZWESMCPiPtSEV/ztyM+vQNQIDAQAB",
+  "public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhFkEaT2orLpL+lbDdDp1I7b9iG7E+D7DqZWsmy84e7Tm33kUOXYjOuZhnASevVowDyDbumJq4++d1FnA/jUy+Dmi8hkL10qztDaLod4opfzFXAfq3p3PsjOr0qN7wvX/nu+Ko2A0xO/2elnih3iIXMxU2K988+TspQLQZXN+ZyaJTF4uB1BgczQgDTHaC7eVPbS0AZWs61/b3PfhIqvT/DkYUva3yHciAthQTOVv6P4Yxjoid1huthFYob6MwsCrD62m4GamYACsQTSZgmvU49XbcGxnnvnHmwb1B/KHqA78U8YXL2MHoZZODLzd51JUUmdVZAv1Cr6J2NHiRbN3/QIDAQAB"
+}

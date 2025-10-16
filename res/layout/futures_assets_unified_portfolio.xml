@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/layoutMMrContent" layout="@layout/futures_assets_unified_mmr_view" />
+    <LinearLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.gateio.gateio.view.FuturesDashTextViewV5 android:id="@id/futures_assets_line_1_label_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/exchange_futures_assets_total_maintenance_margin_level" android:layout_weight="1.0" android:layout_marginEnd="@dimen/margin_padding_10" app:uikit_underline_tips="@string/exchange_futures_assets_total_maintenance_margin_level_tip_portfolio" app:uikit_underline_title="@string/futures_v5_mmr_tips_title_v1" style="@style/Text_text_secondary_12_weight_400_v5" />
+        <com.gateio.gateio.view.FuturesDashTextViewV5 android:gravity="end" android:id="@id/futures_assets_line_1_label_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/exchange_futures_assets_total_initial_margin_level" android:layout_weight="1.0" app:uikit_underline_tips="@string/exchange_futures_assets_total_initial_margin_level_tip_portfolio" app:uikit_underline_title="@string/futures_v5_imr_tips_title_v1" style="@style/Text_text_secondary_12_weight_400_v5" />
+    </LinearLayout>
+    <LinearLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/futures_assets_line_1_value_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/margin_padding_10" style="@style/Text_text_primary_14_weight_500_v5" />
+        <TextView android:gravity="end" android:id="@id/futures_assets_line_1_value_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Text_text_primary_14_weight_500_v5" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <com.gateio.gateio.view.FuturesDashTextViewV5 android:id="@id/futures_assets_line_2_label_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/exchange_v1_account_equity" android:layout_weight="1.0" android:layout_marginEnd="@dimen/margin_padding_10" app:uikit_underline_tips="@string/exchange_futures_assets_equity_tip_v1" style="@style/Text_text_secondary_12_weight_400_v5" />
+        <com.gateio.gateio.view.FuturesDashTextViewV5 android:gravity="end" android:id="@id/futures_assets_line_2_label_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/exchange_futures_assets_total_margin_balance" android:layout_weight="1.0" app:uikit_underline_tips="@string/exchange_futures_assets_total_margin_balance_tip_portfolio_2" style="@style/Text_text_secondary_12_weight_400_v5" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/futures_assets_line_2_value_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/margin_padding_10" style="@style/Text_text_primary_14_weight_500_v5" />
+        <LinearLayout android:gravity="end" android:orientation="horizontal" android:id="@id/futures_assets_line_2_value_2_root" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:gravity="end" android:id="@id/futures_assets_line_2_value_2" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/Text_text_primary_14_weight_500_v5" />
+            <com.gateio.uiComponent.GateIconFont android:textSize="12.0sp" android:textColor="@color/uikit_icon_primary_v5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:paddingStart="4.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <com.gateio.gateio.view.FuturesDashTextViewV5 android:id="@id/futures_assets_line_3_label_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/exchange_futures_assets_liability" app:uikit_underline_tips="@string/exchange_futures_assets_liability_tip" style="@style/Text_text_secondary_12_weight_400_v5" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/futures_assets_line_3_value_1" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Text_text_primary_14_weight_500_v5" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+        <com.gateio.lib.uikit.button.GTButtonV5 android:id="@id/futures_assets_btn_deposit" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/futures_deposit" android:layout_weight="1.0" app:uikit_buttonDimenV5="xSmall" app:uikit_buttonTypeV5="secondary_gray" />
+        <com.gateio.lib.uikit.button.GTButtonV5 android:id="@id/futures_assets_btn_borrow_repay" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/exchange_futures_assets_btn_borrow_repay" android:layout_weight="1.0" android:layout_marginStart="8.0dip" app:uikit_buttonDimenV5="xSmall" app:uikit_buttonTypeV5="secondary_gray" />
+        <com.gateio.lib.uikit.button.GTButtonV5 android:id="@id/futures_assets_btn_transfer" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/futures_transfer" android:layout_weight="1.0" android:layout_marginStart="8.0dip" app:uikit_buttonDimenV5="xSmall" app:uikit_buttonTypeV5="secondary_gray" />
+    </LinearLayout>
+</LinearLayout>

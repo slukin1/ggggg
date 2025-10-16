@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/uikit_margin_padding_16" android:paddingRight="@dimen/uikit_margin_padding_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/uikit_margin_padding_16">
+        <ImageView android:paddingTop="@dimen/uikit_margin_padding_10" android:paddingBottom="@dimen/uikit_margin_padding_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_16" android:src="@mipmap/fiatotc_ic_welcome_v5" android:paddingVertical="@dimen/uikit_margin_padding_10" />
+        <TextView android:textSize="@dimen/uikit_text_size_20" android:textColor="@color/uikit_text_primary_v5" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fiatotc_welcome_to_p2p" style="@style/Uikit_font_sans_5_0_weight_600" />
+        <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_secondary_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_8" android:text="@string/fiatotc_guide_tip1" style="@style/Uikit_font_sans_5_0_weight_400" />
+        <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_secondary_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_12" android:text="@string/fiatotc_guide_tip2" style="@style/Uikit_font_sans_5_0_weight_400" />
+        <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_secondary_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_12" android:text="@string/fiatotc_guide_tip3" style="@style/Uikit_font_sans_5_0_weight_400" />
+        <Space android:layout_width="wrap_content" android:layout_height="@dimen/uikit_margin_padding_40" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

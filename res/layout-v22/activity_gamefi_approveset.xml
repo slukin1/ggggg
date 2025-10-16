@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/uikit_bg_1" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/layout_header" layout="@layout/layout_header_bg1" />
+    <RelativeLayout android:id="@id/rl_auth_manage" android:background="@drawable/uikit_bg_card_2_radio_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_padding_12" android:layout_marginTop="@dimen/margin_padding_16" android:layout_marginRight="@dimen/margin_padding_12" android:layout_marginBottom="@dimen/margin_padding_16" android:minHeight="48.0dip" android:layout_marginHorizontal="@dimen/margin_padding_12" android:layout_marginVertical="@dimen/margin_padding_16">
+        <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_1" android:id="@id/tv_auth_manage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/user_settings_authorized_services" android:layout_centerVertical="true" android:layout_marginStart="@dimen/margin_padding_16" style="@style/Uikit_font_weight_500" />
+        <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_1" android:id="@id/iv_merchant_customer_copy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_2" android:text="" android:layout_centerVertical="true" android:paddingStart="@dimen/margin_padding_5" android:layout_marginEnd="@dimen/margin_padding_16" android:layout_alignParentEnd="true" app:left_or_right="true" />
+    </RelativeLayout>
+</LinearLayout>

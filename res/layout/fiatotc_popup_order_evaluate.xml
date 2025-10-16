@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/uikit_margin_padding_16" android:paddingTop="@dimen/margin_padding_16" android:paddingRight="@dimen/uikit_margin_padding_16" android:paddingBottom="@dimen/margin_padding_8" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.rate.GTRatingV5 android:id="@id/rating_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.gateio.lib.uikit.textarea.GTTextAreaV5 android:id="@id/miv_evaluate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_16" app:uikit_hintV5="@string/fiatotc_evaluate_tips" />
+</LinearLayout>

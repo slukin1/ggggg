@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="center_vertical" android:id="@id/viewLeftAngle" android:background="@drawable/angle_left" android:layout_width="15.0dip" android:layout_height="15.0dip" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_marker_trade_line" android:padding="@dimen/uikit_margin_padding_8" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/chart_gray_8e949e" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/white" android:id="@id/tvContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_3" />
+    </LinearLayout>
+    <View android:layout_gravity="center_vertical" android:id="@id/viewRightAngle" android:background="@drawable/angle_right" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" />
+</LinearLayout>

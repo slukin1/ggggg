@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="51.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioButton android:textColor="@color/uikit_color_333333_e7e9ea" android:gravity="center" android:id="@id/tv_coin" android:layout_width="fill_parent" android:layout_height="50.0dip" android:button="@null" android:text="@string/user_qx" />
+    <View style="@style/view_line_v_new" />
+</LinearLayout>

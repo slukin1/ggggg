@@ -1,0 +1,354 @@
+{
+  "timestamp": 1719200253377,
+  "method": "/apim/v3/home/layout-modules",
+  "code": 200,
+  "message": "Success",
+  "page": null,
+  "limit": null,
+  "total": null,
+  "data": {
+    "markets": [{
+      "code": "activity",
+      "image": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/bee0bad54de9cc83ff16160892b5283d9d401e44.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/4b3bd24b0861b3870994ff6664d7d9b276e3109a.png",
+        "guide_light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/72a211a921af92513d417c3ec37975e5967177cf.png",
+        "guide_dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/19e330caedeac0e988773af6676820773d04bda6.png"
+      },
+      "image_en": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/bee0bad54de9cc83ff16160892b5283d9d401e44.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/4b3bd24b0861b3870994ff6664d7d9b276e3109a.png",
+        "guide_light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/72a211a921af92513d417c3ec37975e5967177cf.png",
+        "guide_dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/19e330caedeac0e988773af6676820773d04bda6.png"
+      },
+      "image_cn": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/bee0bad54de9cc83ff16160892b5283d9d401e44.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/4b3bd24b0861b3870994ff6664d7d9b276e3109a.png",
+        "guide_light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/72a211a921af92513d417c3ec37975e5967177cf.png",
+        "guide_dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/19e330caedeac0e988773af6676820773d04bda6.png"
+      },
+      "type": "1"
+    }, {
+      "code": "assets",
+      "image": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/77c1e38ec9c3ac6e389eb5d4ea504af2708b84b4.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/756649b715ed7a76c133139713154d0dbb53b49d.png"
+      },
+      "image_en": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/77c1e38ec9c3ac6e389eb5d4ea504af2708b84b4.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/756649b715ed7a76c133139713154d0dbb53b49d.png"
+      },
+      "image_cn": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/77c1e38ec9c3ac6e389eb5d4ea504af2708b84b4.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/756649b715ed7a76c133139713154d0dbb53b49d.png"
+      },
+      "type": "1"
+    }, {
+      "code": "navigator",
+      "image": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/817780c4ec8661fa2a8c06a90f166c7142cfcca7.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/8f8d2e6fc9a681134b8f8c68219e1a2f2c7f8471.png"
+      },
+      "image_en": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/817780c4ec8661fa2a8c06a90f166c7142cfcca7.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/8f8d2e6fc9a681134b8f8c68219e1a2f2c7f8471.png"
+      },
+      "image_cn": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/817780c4ec8661fa2a8c06a90f166c7142cfcca7.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/8f8d2e6fc9a681134b8f8c68219e1a2f2c7f8471.png"
+      },
+      "type": "1"
+    }, {
+      "code": "ticker",
+      "image": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/bbb2bc735737bdd00eb0d4dab533819f9d231f75.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/87bb1420787943a148846889101adc3ec2d3108a.png"
+      },
+      "image_en": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/bbb2bc735737bdd00eb0d4dab533819f9d231f75.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/87bb1420787943a148846889101adc3ec2d3108a.png"
+      },
+      "image_cn": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/bbb2bc735737bdd00eb0d4dab533819f9d231f75.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/87bb1420787943a148846889101adc3ec2d3108a.png"
+      },
+      "type": "1"
+    }, {
+      "code": "p2p",
+      "image": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/c6b30b3f9268f0513240f77143c588c806adc6a1.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/ff1cc65c641d4fb45e055c59f80c5b55ccc73896.png"
+      },
+      "image_en": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/c6b30b3f9268f0513240f77143c588c806adc6a1.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/ff1cc65c641d4fb45e055c59f80c5b55ccc73896.png"
+      },
+      "image_cn": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/c6b30b3f9268f0513240f77143c588c806adc6a1.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/ff1cc65c641d4fb45e055c59f80c5b55ccc73896.png"
+      },
+      "type": "1"
+    }],
+    "moments": [{
+      "code": "activity",
+      "image": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/bee0bad54de9cc83ff16160892b5283d9d401e44.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/4b3bd24b0861b3870994ff6664d7d9b276e3109a.png",
+        "guide_light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/72a211a921af92513d417c3ec37975e5967177cf.png",
+        "guide_dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/19e330caedeac0e988773af6676820773d04bda6.png"
+      },
+      "image_en": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/bee0bad54de9cc83ff16160892b5283d9d401e44.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/4b3bd24b0861b3870994ff6664d7d9b276e3109a.png",
+        "guide_light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/72a211a921af92513d417c3ec37975e5967177cf.png",
+        "guide_dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/19e330caedeac0e988773af6676820773d04bda6.png"
+      },
+      "image_cn": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/bee0bad54de9cc83ff16160892b5283d9d401e44.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/4b3bd24b0861b3870994ff6664d7d9b276e3109a.png",
+        "guide_light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/72a211a921af92513d417c3ec37975e5967177cf.png",
+        "guide_dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/19e330caedeac0e988773af6676820773d04bda6.png"
+      },
+      "type": "2"
+    }, {
+      "code": "assets",
+      "image": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/77c1e38ec9c3ac6e389eb5d4ea504af2708b84b4.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/756649b715ed7a76c133139713154d0dbb53b49d.png"
+      },
+      "image_en": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/77c1e38ec9c3ac6e389eb5d4ea504af2708b84b4.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/756649b715ed7a76c133139713154d0dbb53b49d.png"
+      },
+      "image_cn": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/77c1e38ec9c3ac6e389eb5d4ea504af2708b84b4.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/756649b715ed7a76c133139713154d0dbb53b49d.png"
+      },
+      "type": "2"
+    }, {
+      "code": "navigator",
+      "image": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/817780c4ec8661fa2a8c06a90f166c7142cfcca7.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/8f8d2e6fc9a681134b8f8c68219e1a2f2c7f8471.png"
+      },
+      "image_en": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/817780c4ec8661fa2a8c06a90f166c7142cfcca7.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/8f8d2e6fc9a681134b8f8c68219e1a2f2c7f8471.png"
+      },
+      "image_cn": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/817780c4ec8661fa2a8c06a90f166c7142cfcca7.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/8f8d2e6fc9a681134b8f8c68219e1a2f2c7f8471.png"
+      },
+      "type": "2"
+    }, {
+      "code": "ticker",
+      "image": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/bbb2bc735737bdd00eb0d4dab533819f9d231f75.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/87bb1420787943a148846889101adc3ec2d3108a.png"
+      },
+      "image_en": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/bbb2bc735737bdd00eb0d4dab533819f9d231f75.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/87bb1420787943a148846889101adc3ec2d3108a.png"
+      },
+      "image_cn": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/bbb2bc735737bdd00eb0d4dab533819f9d231f75.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/87bb1420787943a148846889101adc3ec2d3108a.png"
+      },
+      "type": "2"
+    }, {
+      "code": "market",
+      "image": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/604b8881e196efb0da3a7d262fbd19a4a4fdbf52.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/5a680cc7ed5f7315ea5b047b15d9bb8eb2627464.png"
+      },
+      "image_en": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/604b8881e196efb0da3a7d262fbd19a4a4fdbf52.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/5a680cc7ed5f7315ea5b047b15d9bb8eb2627464.png"
+      },
+      "image_cn": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/604b8881e196efb0da3a7d262fbd19a4a4fdbf52.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/5a680cc7ed5f7315ea5b047b15d9bb8eb2627464.png"
+      },
+      "type": "2"
+    }, {
+      "code": "blog",
+      "image": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/d13b945878e23443128a87ebdaf629c21b2aeeb4.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/2663f5edd18c53cc2803780e60c61b6374c63e0f.png"
+      },
+      "image_en": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/d13b945878e23443128a87ebdaf629c21b2aeeb4.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/2663f5edd18c53cc2803780e60c61b6374c63e0f.png"
+      },
+      "image_cn": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/d13b945878e23443128a87ebdaf629c21b2aeeb4.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/2663f5edd18c53cc2803780e60c61b6374c63e0f.png"
+      },
+      "type": "2"
+    }, {
+      "code": "p2p",
+      "image": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/c6b30b3f9268f0513240f77143c588c806adc6a1.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/ff1cc65c641d4fb45e055c59f80c5b55ccc73896.png"
+      },
+      "image_en": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/c6b30b3f9268f0513240f77143c588c806adc6a1.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/ff1cc65c641d4fb45e055c59f80c5b55ccc73896.png"
+      },
+      "image_cn": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/c6b30b3f9268f0513240f77143c588c806adc6a1.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/ff1cc65c641d4fb45e055c59f80c5b55ccc73896.png"
+      },
+      "type": "2"
+    }],
+    "market_customs": [{
+      "code": "assets",
+      "image": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/77c1e38ec9c3ac6e389eb5d4ea504af2708b84b4.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/756649b715ed7a76c133139713154d0dbb53b49d.png"
+      },
+      "image_en": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/77c1e38ec9c3ac6e389eb5d4ea504af2708b84b4.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/756649b715ed7a76c133139713154d0dbb53b49d.png"
+      },
+      "image_cn": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/77c1e38ec9c3ac6e389eb5d4ea504af2708b84b4.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/756649b715ed7a76c133139713154d0dbb53b49d.png"
+      },
+      "type": "1"
+    }, {
+      "code": "navigator",
+      "image": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/817780c4ec8661fa2a8c06a90f166c7142cfcca7.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/8f8d2e6fc9a681134b8f8c68219e1a2f2c7f8471.png"
+      },
+      "image_en": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/817780c4ec8661fa2a8c06a90f166c7142cfcca7.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/8f8d2e6fc9a681134b8f8c68219e1a2f2c7f8471.png"
+      },
+      "image_cn": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/817780c4ec8661fa2a8c06a90f166c7142cfcca7.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/8f8d2e6fc9a681134b8f8c68219e1a2f2c7f8471.png"
+      },
+      "type": "1"
+    }, {
+      "code": "activity",
+      "image": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/bee0bad54de9cc83ff16160892b5283d9d401e44.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/4b3bd24b0861b3870994ff6664d7d9b276e3109a.png",
+        "guide_light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/72a211a921af92513d417c3ec37975e5967177cf.png",
+        "guide_dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/19e330caedeac0e988773af6676820773d04bda6.png"
+      },
+      "image_en": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/bee0bad54de9cc83ff16160892b5283d9d401e44.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/4b3bd24b0861b3870994ff6664d7d9b276e3109a.png",
+        "guide_light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/72a211a921af92513d417c3ec37975e5967177cf.png",
+        "guide_dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/19e330caedeac0e988773af6676820773d04bda6.png"
+      },
+      "image_cn": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/bee0bad54de9cc83ff16160892b5283d9d401e44.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/4b3bd24b0861b3870994ff6664d7d9b276e3109a.png",
+        "guide_light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/72a211a921af92513d417c3ec37975e5967177cf.png",
+        "guide_dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/19e330caedeac0e988773af6676820773d04bda6.png"
+      },
+      "type": "1"
+    }, {
+      "code": "ticker",
+      "image": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/bbb2bc735737bdd00eb0d4dab533819f9d231f75.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/87bb1420787943a148846889101adc3ec2d3108a.png"
+      },
+      "image_en": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/bbb2bc735737bdd00eb0d4dab533819f9d231f75.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/87bb1420787943a148846889101adc3ec2d3108a.png"
+      },
+      "image_cn": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/bbb2bc735737bdd00eb0d4dab533819f9d231f75.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/87bb1420787943a148846889101adc3ec2d3108a.png"
+      },
+      "type": "1"
+    }],
+    "moment_customs": [{
+      "code": "assets",
+      "image": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/77c1e38ec9c3ac6e389eb5d4ea504af2708b84b4.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/756649b715ed7a76c133139713154d0dbb53b49d.png"
+      },
+      "image_en": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/77c1e38ec9c3ac6e389eb5d4ea504af2708b84b4.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/756649b715ed7a76c133139713154d0dbb53b49d.png"
+      },
+      "image_cn": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/77c1e38ec9c3ac6e389eb5d4ea504af2708b84b4.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/756649b715ed7a76c133139713154d0dbb53b49d.png"
+      },
+      "type": "2"
+    }, {
+      "code": "activity",
+      "image": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/bee0bad54de9cc83ff16160892b5283d9d401e44.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/4b3bd24b0861b3870994ff6664d7d9b276e3109a.png",
+        "guide_light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/72a211a921af92513d417c3ec37975e5967177cf.png",
+        "guide_dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/19e330caedeac0e988773af6676820773d04bda6.png"
+      },
+      "image_en": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/bee0bad54de9cc83ff16160892b5283d9d401e44.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/4b3bd24b0861b3870994ff6664d7d9b276e3109a.png",
+        "guide_light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/72a211a921af92513d417c3ec37975e5967177cf.png",
+        "guide_dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/19e330caedeac0e988773af6676820773d04bda6.png"
+      },
+      "image_cn": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/bee0bad54de9cc83ff16160892b5283d9d401e44.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/4b3bd24b0861b3870994ff6664d7d9b276e3109a.png",
+        "guide_light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/72a211a921af92513d417c3ec37975e5967177cf.png",
+        "guide_dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/19e330caedeac0e988773af6676820773d04bda6.png"
+      },
+      "type": "2"
+    }, {
+      "code": "ticker",
+      "image": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/bbb2bc735737bdd00eb0d4dab533819f9d231f75.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/87bb1420787943a148846889101adc3ec2d3108a.png"
+      },
+      "image_en": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/bbb2bc735737bdd00eb0d4dab533819f9d231f75.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/87bb1420787943a148846889101adc3ec2d3108a.png"
+      },
+      "image_cn": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/bbb2bc735737bdd00eb0d4dab533819f9d231f75.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/87bb1420787943a148846889101adc3ec2d3108a.png"
+      },
+      "type": "2"
+    }, {
+      "code": "market",
+      "image": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/604b8881e196efb0da3a7d262fbd19a4a4fdbf52.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/5a680cc7ed5f7315ea5b047b15d9bb8eb2627464.png"
+      },
+      "image_en": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/604b8881e196efb0da3a7d262fbd19a4a4fdbf52.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/5a680cc7ed5f7315ea5b047b15d9bb8eb2627464.png"
+      },
+      "image_cn": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/604b8881e196efb0da3a7d262fbd19a4a4fdbf52.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/5a680cc7ed5f7315ea5b047b15d9bb8eb2627464.png"
+      },
+      "type": "2"
+    }, {
+      "code": "blog",
+      "image": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/d13b945878e23443128a87ebdaf629c21b2aeeb4.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/2663f5edd18c53cc2803780e60c61b6374c63e0f.png"
+      },
+      "image_en": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/d13b945878e23443128a87ebdaf629c21b2aeeb4.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/2663f5edd18c53cc2803780e60c61b6374c63e0f.png"
+      },
+      "image_cn": {
+        "light": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/d13b945878e23443128a87ebdaf629c21b2aeeb4.png",
+        "dark": "https://s3.ap-northeast-1.amazonaws.com/gimg.gateimg.com/copy_trading_banner/2663f5edd18c53cc2803780e60c61b6374c63e0f.png"
+      },
+      "type": "2"
+    }]
+  }
+}

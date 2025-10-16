@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textColor="@color/uikit_text_primary_v5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:text="@string/kline_cancel_the_orders" android:layout_marginHorizontal="16.0dip" style="@style/Uikit_font_sans_5_0_weight_600" />
+    <com.gateio.lib.uikit.widget.GTCheckBoxV5 android:textSize="14.0sp" android:textColor="@color/uikit_text_primary_v5" android:gravity="center_vertical" android:id="@id/kline_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="16.0dip" android:checked="false" android:text="@string/moments_space_switch_not_alert" android:drawablePadding="4.0dip" android:layout_marginHorizontal="16.0dip" app:uikit_button_size_v5="16.0dip" style="@style/Uikit_font_sans_5_0_weight_400" />
+</LinearLayout>

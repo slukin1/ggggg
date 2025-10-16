@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/uikit_text_4" android:gravity="center" android:id="@id/label_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="100.0dip" android:maxLines="2" app:autoSizeMaxTextSize="@dimen/uikit_text_size_12" app:autoSizeMinTextSize="@dimen/uikit_text_size_9" app:autoSizeStepGranularity="1.0sp" app:autoSizeTextType="uniform" />
+    <com.gateio.uiComponent.GateIconFont android:textSize="12.0sp" android:textColor="@color/uikit_selector_color_brand_1_text_4" android:gravity="center" android:id="@id/icon_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:paddingEnd="@dimen/uikit_dp_2" android:layout_marginStart="@dimen/uikit_dp_2" />
+    <androidx.appcompat.widget.LinearLayoutCompat android:layout_gravity="center" android:orientation="vertical" android:id="@id/label_icon_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="2.0dip">
+        <View android:layout_width="1.0dip" android:layout_height="0.0dip" />
+        <com.gateio.uiComponent.GateIconFont android:textSize="5.5sp" android:textColor="@color/uikit_selector_color_brand_1_text_4" android:id="@id/label_icon_up" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-1.0dip" android:text="" android:rotation="180.0" />
+        <com.gateio.uiComponent.GateIconFont android:textSize="5.5sp" android:textColor="@color/uikit_selector_color_brand_1_text_4" android:id="@id/label_icon_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</merge>

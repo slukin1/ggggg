@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/uikit_bg_primary_v5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.comlib.view.StatusBarPlaceHolder android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.gateio.lib.uikit.title.GTNavBarV5 android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fiatotc_trade_history" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/dropdown_layout" android:paddingLeft="@dimen/uikit_dp_12" android:paddingRight="@dimen/uikit_dp_12" android:layout_width="fill_parent" android:layout_height="@dimen/uikit_dp_40" android:paddingHorizontal="@dimen/uikit_dp_12">
+        <com.gateio.fiatotclib.function.flexible.view.FlexibleDropDown android:id="@id/type_dropdown" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.gateio.fiatotclib.function.flexible.view.FlexibleDropDown android:id="@id/status_dropdown" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/uikit_dp_16" />
+    </LinearLayout>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/swipe_refresh" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_dp_16" android:layout_marginRight="@dimen/uikit_dp_16" android:overScrollMode="never" android:layout_marginHorizontal="@dimen/uikit_dp_16" />
+            <com.gateio.lib.uikit.state.GTEmptyViewV5 android:id="@id/empty_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_80" android:layout_centerHorizontal="true" app:uikit_emptyTypeV5="data_empty" app:uikit_titleTextV5="@string/fiatotc_no_order" />
+        </RelativeLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

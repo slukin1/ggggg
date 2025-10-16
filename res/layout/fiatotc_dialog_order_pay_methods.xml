@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.comlib.view.CornerRelativeLayout android:background="@color/card_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:topLeftRadius="@dimen/margin_padding_16" android:topRightRadius="@dimen/margin_padding_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/ts_16" android:textStyle="bold" android:textColor="@color/text_1" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_padding_16" android:layout_marginTop="@dimen/margin_padding_24" android:layout_marginRight="@dimen/margin_padding_16" android:text="@string/fiatotc_step1_describe" />
+    <ImageView android:id="@id/close" android:padding="@dimen/margin_padding_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/fiatotc_icon_close" android:layout_alignParentEnd="true" app:tint="@color/text_4" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_16" android:layout_marginBottom="@dimen/margin_padding_12" android:layout_below="@id/title" />
+</com.gateio.comlib.view.CornerRelativeLayout>

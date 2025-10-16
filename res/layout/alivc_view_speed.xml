@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/uikit_transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/speed_view" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/speed_view" android:background="@color/alivc_common_bg_black_alpha_80" android:layout_width="fill_parent" android:layout_height="194.0dip" android:layout_alignParentBottom="true">
+        <RadioGroup android:orientation="vertical" android:id="@id/speed_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioButton android:textSize="@dimen/alivc_common_font_14" android:textColor="@drawable/selector_record_playlist_txt" android:gravity="center" android:id="@id/normal" android:layout_width="fill_parent" android:layout_height="48.0dip" android:button="@null" android:text="@string/alivc_speed_one_times" />
+            <ImageView android:background="@color/color_50_ffffff" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RadioButton android:textSize="@dimen/alivc_common_font_14" android:textColor="@drawable/selector_record_playlist_txt" android:gravity="center" android:id="@id/one_quartern" android:layout_width="fill_parent" android:layout_height="48.0dip" android:button="@null" android:text="@string/alivc_speed_optf_times" />
+            <ImageView android:background="@color/color_50_ffffff" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RadioButton android:textSize="@dimen/alivc_common_font_14" android:textColor="@drawable/selector_record_playlist_txt" android:gravity="center" android:id="@id/one_half" android:layout_width="fill_parent" android:layout_height="48.0dip" android:button="@null" android:text="@string/alivc_speed_opt_times" />
+            <ImageView android:background="@color/color_50_ffffff" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RadioButton android:textSize="@dimen/alivc_common_font_14" android:textColor="@drawable/selector_record_playlist_txt" android:gravity="center" android:id="@id/two" android:layout_width="fill_parent" android:layout_height="48.0dip" android:button="@null" android:text="@string/alivc_speed_twice_times" />
+        </RadioGroup>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/alivc_common_font_14" android:textColor="#ffe7e7e7" android:gravity="center" android:id="@id/speed_tip" android:background="#99000000" android:padding="15.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="75.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</merge>

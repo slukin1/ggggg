@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/uikit_spacing_16_v5" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_primary_v5" android:ellipsize="end" android:id="@id/tv_payment_item_desc" android:layout_width="0.0dip" android:layout_height="wrap_content" android:lines="1" android:layout_weight="1.0" style="@style/Uikit_font_sans_5_0_weight_400" />
+    <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_icon_quaternary_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" app:left_or_right="true" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="28.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:gravity="center_vertical" android:layout_gravity="start" android:id="@id/trans_depth_color" android:layout_width="100.0dip" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/llLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="4.0dip">
+        <TextView android:gravity="center_vertical" android:id="@id/trans_depth_price" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="--" android:lines="1" android:includeFontPadding="false" style="@style/Text_text_primary_12_weight_400_v5" />
+        <com.gateio.lib.uikit.badge.GTBadgeViewV2 android:layout_gravity="center_vertical" android:id="@id/view_dot" android:visibility="invisible" android:layout_width="4.0dip" android:layout_height="4.0dip" android:layout_marginStart="@dimen/dp_2" app:uikit_badgeBackgroundColor="@color/uikit_icon_5_v3" />
+        <TextView android:gravity="end|center" android:id="@id/trans_depth_count" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="--" android:lines="1" android:includeFontPadding="false" android:layout_weight="1.0" app:autoSizeMaxTextSize="@dimen/text_size_12" app:autoSizeMinTextSize="5.0sp" app:autoSizeStepGranularity="1.0sp" app:autoSizeTextType="uniform" style="@style/Text_text_primary_12_weight_400_v5" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" style="@style/m_m_bg_bg_color2"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/pop_shodow" android:background="@drawable/ic_trans_pop_shadow" android:layout_width="fill_parent" android:layout_height="@dimen/margin_padding_8" android:layout_alignParentBottom="true" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/coin_search_rv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/pop_shodow" />
+</RelativeLayout>

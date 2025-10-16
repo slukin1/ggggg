@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/uikit_footer_checkbox_root" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/uikit_margin_padding_16">
+        <com.gateio.lib.uikit.widget.GTCheckBoxV5 android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_primary_v5" android:id="@id/uikit_footer_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:minWidth="0.0dip" style="@style/Uikit_font_sans_5_0_weight_400" />
+        <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_primary_v5" android:id="@id/uikit_footer_checkbox_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="8.0dip" style="@style/Uikit_font_sans_5_0_weight_400" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.gateio.lib.uikit.button.GTButtonV5 android:id="@id/uikit_horizontal_second_btn" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minWidth="@dimen/uikit_spacing_48_v5" android:text="@string/uikit_user_qx" android:layout_weight="1.0" android:layout_marginEnd="@dimen/uikit_spacing_12_v5" app:uikit_buttonDimenV5="medium" app:uikit_buttonTypeV5="secondary_gray" />
+        <com.gateio.lib.uikit.button.GTButtonV5 android:id="@id/uikit_footer_btn" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minWidth="@dimen/uikit_spacing_48_v5" android:text="@string/uikit_user_qd" android:layout_weight="1.0" app:uikit_buttonDimenV5="medium" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/uikit_vertical_second_btn_ll" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_spacing_12_v5">
+        <com.gateio.lib.uikit.button.GTButtonV5 android:id="@id/uikit_vertical_second_btn" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minWidth="@dimen/uikit_spacing_48_v5" android:text="@string/uikit_user_qx" android:layout_weight="1.0" app:uikit_buttonDimenV5="medium" app:uikit_buttonTypeV5="secondary_gray" />
+        <com.gateio.lib.uikit.button.GTButtonV5 android:id="@id/uikit_vertical_second_btn2" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minWidth="@dimen/uikit_spacing_48_v5" android:layout_weight="1.0" android:layout_marginStart="@dimen/uikit_spacing_12_v5" app:uikit_buttonDimenV5="medium" app:uikit_buttonTypeV5="secondary_gray" />
+    </LinearLayout>
+    <com.gateio.lib.uikit.button.GTButtonV5 android:layout_gravity="center_horizontal" android:id="@id/uikit_footer_text_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:minWidth="@dimen/uikit_spacing_48_v5" app:uikit_buttonTypeV5="text_black_solid" />
+</LinearLayout>

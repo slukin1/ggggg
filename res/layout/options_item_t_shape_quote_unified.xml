@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/options_item_t_shape_quote_unified_0" android:layout_width="fill_parent" android:layout_height="37.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/fieldContainer" android:layout_width="fill_parent" android:layout_height="36.0dip">
+        <TextView android:gravity="end|center" android:id="@id/tvLastPrice" android:layout_width="72.0dip" android:layout_height="wrap_content" android:paddingEnd="4.0dip" style="@style/Text_text_primary_12_weight_400_v5" />
+        <TextView android:gravity="end|center" android:id="@id/tvLeverage" android:layout_width="72.0dip" android:layout_height="wrap_content" android:paddingEnd="4.0dip" style="@style/Text_text_primary_12_weight_400_v5" />
+        <TextView android:gravity="end|center" android:id="@id/tvTradeSize24" android:layout_width="72.0dip" android:layout_height="wrap_content" android:paddingEnd="4.0dip" style="@style/Text_text_primary_12_weight_400_v5" />
+        <TextView android:gravity="end|center" android:id="@id/tvHoldSize" android:layout_width="72.0dip" android:layout_height="wrap_content" android:paddingEnd="4.0dip" style="@style/Text_text_primary_12_weight_400_v5" />
+        <TextView android:gravity="end|center" android:id="@id/tvVega" android:layout_width="72.0dip" android:layout_height="wrap_content" android:paddingEnd="4.0dip" style="@style/Text_text_primary_12_weight_400_v5" />
+        <TextView android:gravity="end|center" android:id="@id/tvTheta" android:layout_width="72.0dip" android:layout_height="wrap_content" android:paddingEnd="4.0dip" style="@style/Text_text_primary_12_weight_400_v5" />
+        <TextView android:gravity="end|center" android:id="@id/tvGamma" android:layout_width="72.0dip" android:layout_height="wrap_content" android:paddingEnd="4.0dip" style="@style/Text_text_primary_12_weight_400_v5" />
+        <TextView android:gravity="end|center" android:id="@id/tvDelta" android:layout_width="72.0dip" android:layout_height="wrap_content" android:paddingEnd="4.0dip" style="@style/Text_text_primary_12_weight_400_v5" />
+        <TextView android:gravity="end|center" android:id="@id/tvBidSize" android:layout_width="72.0dip" android:layout_height="wrap_content" android:paddingEnd="4.0dip" style="@style/Text_text_primary_12_weight_400_v5" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="72.0dip" android:layout_height="wrap_content">
+            <TextView android:gravity="end|center" android:id="@id/tvBidPrice" android:layout_width="72.0dip" android:layout_height="wrap_content" android:paddingEnd="4.0dip" style="@style/Text_text_primary_12_weight_400_v5" />
+            <TextView android:gravity="end|center" android:id="@id/tvBidIv" android:layout_width="72.0dip" android:layout_height="wrap_content" android:paddingEnd="4.0dip" style="@style/Text_text_secondary_12_weight_400_v5" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="72.0dip" android:layout_height="wrap_content">
+            <TextView android:gravity="end|center" android:id="@id/tvMarkPrice" android:layout_width="72.0dip" android:layout_height="wrap_content" android:paddingEnd="4.0dip" style="@style/Text_text_primary_12_weight_400_v5" />
+            <TextView android:gravity="end|center" android:id="@id/tvMarkIv" android:layout_width="72.0dip" android:layout_height="wrap_content" android:paddingEnd="4.0dip" style="@style/Text_text_secondary_12_weight_400_v5" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="72.0dip" android:layout_height="wrap_content">
+            <TextView android:gravity="end|center" android:id="@id/tvAskPrice" android:layout_width="72.0dip" android:layout_height="wrap_content" android:paddingEnd="4.0dip" style="@style/Text_text_primary_12_weight_400_v5" />
+            <TextView android:gravity="end|center" android:id="@id/tvAskIv" android:layout_width="72.0dip" android:layout_height="wrap_content" android:paddingEnd="4.0dip" style="@style/Text_text_secondary_12_weight_400_v5" />
+        </LinearLayout>
+        <TextView android:gravity="end|center" android:id="@id/tvAskSize" android:layout_width="72.0dip" android:layout_height="wrap_content" android:paddingEnd="4.0dip" style="@style/Text_text_primary_12_weight_400_v5" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="72.0dip" android:layout_height="wrap_content">
+            <TextView android:gravity="end|center" android:id="@id/tvPosition" android:layout_width="72.0dip" android:layout_height="wrap_content" android:paddingEnd="4.0dip" style="@style/Text_text_primary_12_weight_400_v5" />
+            <TextView android:gravity="end|center" android:id="@id/tvPositionPnl" android:layout_width="72.0dip" android:layout_height="wrap_content" android:paddingEnd="4.0dip" style="@style/Text_text_primary_12_weight_400_v5" />
+        </LinearLayout>
+    </LinearLayout>
+    <View style="@style/view_line_divider_v5_1dp" />
+</LinearLayout>

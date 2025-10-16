@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.common.view.CornerTextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_2" android:ellipsize="end" android:gravity="center" android:id="@id/tv_tag" android:background="@color/uikit_cmpt_3" android:paddingLeft="@dimen/uikit_margin_padding_12" android:paddingRight="@dimen/uikit_margin_padding_12" android:layout_width="fill_parent" android:layout_height="32.0dip" android:maxLines="1" app:radius="@dimen/uikit_dp_4" style="@style/Uikit_font_weight_500"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

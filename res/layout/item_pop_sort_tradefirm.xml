@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/ll_root" android:minWidth="100.0dip" android:minHeight="35.0dip" style="@style/match_wrap_h"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/uikit_color_333333_e6e6e6" android:id="@id/tv_sort" android:text="@string/trans_time" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" style="@style/tv_user_black_12" />
+</LinearLayout>

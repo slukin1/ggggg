@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/iv_logo" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_logo" />
+    <com.sparkhuu.klinelib.chart.KCustomCombinedChart android:id="@id/price_chart" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/tuya_zoom_in" android:background="@drawable/bg_circle_tuya_zoom" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="100.0dip" android:scaleType="fitXY" />
+    <com.gateio.lib.uikit.state.GTLoadingViewV2 android:layout_gravity="center" android:id="@id/progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateTint="@color/uikit_brand_1_v3" />
+    <View android:layout_gravity="bottom" android:id="@id/viewGrid" android:background="@color/line_grid" android:layout_width="fill_parent" android:layout_height="0.39999998dip" />
+    <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_icon_1_v3" android:gravity="center" android:layout_gravity="bottom" android:id="@id/iv_back_right" android:background="@drawable/bg_oval_card1" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginBottom="@dimen/uikit_margin_padding_30" android:text="" android:layout_marginEnd="60.0dip" android:layout_alignParentEnd="true" />
+    <com.gateio.uiComponent.GateIconFont android:textColor="@color/uikit_icon_3_v3" android:layout_gravity="bottom" android:id="@id/iv_full_screen" android:padding="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="26.0dip" android:text="" android:layout_marginStart="@dimen/uikit_margin_padding_8" />
+</merge>

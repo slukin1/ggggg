@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.gateio.view.KeyboardLayout android:id="@id/board_layout" android:background="@color/uikit_transparent" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/v_outside" android:layout_above="@id/ll_msg" style="@style/match_match" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/ll_msg" android:background="@color/uikit_white" android:layout_alignParentBottom="true" android:paddingStart="@dimen/margin_padding_16" android:paddingEnd="@dimen/margin_padding_16" style="@style/match_wrap_h">
+        <EditText android:textSize="@dimen/text_size_18" android:textColor="@color/black" android:textColorHint="@color/gray" android:gravity="center_vertical" android:id="@id/ed_text" android:background="@color/uikit_white" android:layout_height="50.0dip" android:hint="@string/chat_qsrnr_hint" android:singleLine="true" android:layout_weight="1.0" android:imeOptions="actionSend" style="@style/match_wrap" />
+        <TextView android:id="@id/tv_send" android:background="@drawable/shape_send" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:text="@string/user_fs" android:paddingStart="@dimen/margin_padding_16" android:paddingEnd="@dimen/margin_padding_16" android:layout_marginStart="@dimen/margin_padding_16" style="@style/tv_user_white_12" />
+    </LinearLayout>
+</com.gateio.gateio.view.KeyboardLayout>

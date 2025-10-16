@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/item_loan_ava" android:paddingTop="@dimen/margin_padding_16" android:paddingStart="@dimen/margin_padding_16" android:paddingEnd="@dimen/margin_padding_16" style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" style="@style/match_wrap_h">
+        <LinearLayout android:layout_width="0.0dip" android:layout_weight="1.2" style="@style/wrap_wrap_h">
+            <TextView android:textStyle="bold" android:textColor="@color/color_f25050" android:id="@id/tv_rate" android:text="---" style="@style/tv_user_black_14" />
+            <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_rate2" android:text="---" style="@style/tv_user_black_12" />
+        </LinearLayout>
+        <TextView android:textStyle="bold" android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_amount" android:layout_width="0.0dip" android:text="---" android:layout_weight="1.0" style="@style/tv_user_black_14" />
+        <TextView android:textStyle="bold" android:textColor="@color/uikit_color_333333_e7e9ea" android:gravity="end" android:id="@id/tv_peroid" android:layout_width="0.0dip" android:text="---" android:layout_weight="1.0" style="@style/tv_user_black_14" />
+        <ImageView android:id="@id/iv_arrow" android:layout_width="30.0dip" android:layout_height="14.0dip" android:src="@mipmap/icon_arrow_right" android:scaleType="fitEnd" />
+    </LinearLayout>
+    <View android:layout_marginTop="@dimen/margin_padding_16" style="@style/view_line_v2" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.common.view.CornerLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="374.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gateio.lib.uikit.tab.v5.GTTabsV5 android:id="@id/indicator1" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="4.0dip" />
+    <View android:background="@color/uikit_divider_2_v3" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <com.gateio.comlib.view.CustomViewpager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_weight="1.0" />
+</com.gateio.common.view.CornerLinearLayout>

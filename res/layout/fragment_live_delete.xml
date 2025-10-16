@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom" android:background="@color/color_80_000000" android:paddingTop="@dimen/margin_padding_16" style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/uikit_white" android:ellipsize="end" android:id="@id/tv_msg" android:padding="@dimen/margin_padding_16" android:layout_width="fill_parent" android:maxLines="2" android:drawablePadding="4.0dip" style="@style/tv_user_white_12" />
+    <View style="@style/view_line_v3" />
+    <TextView android:textColor="@color/uikit_white" android:gravity="center" android:id="@id/tv_delete" android:padding="@dimen/margin_padding_16" android:text="@string/user_delete" android:drawablePadding="4.0dip" style="@style/tv_user_white_14" />
+    <View style="@style/view_line_v3" />
+    <TextView android:textColor="@color/uikit_white" android:gravity="center" android:id="@id/tv_mute" android:padding="@dimen/margin_padding_16" android:text="@string/live_mute_gyh" android:drawablePadding="4.0dip" style="@style/tv_user_white_14" />
+    <View style="@style/view_line_v3" />
+    <TextView android:textColor="@color/uikit_white" android:gravity="center" android:id="@id/tv_cancel" android:padding="@dimen/margin_padding_16" android:text="@string/user_qx" android:drawablePadding="4.0dip" style="@style/tv_user_white_14" />
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.text.GTMultiLineTextViewV3 android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_6_v3" android:layout_gravity="center" android:id="@id/tv_context" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="327.0dip" style="@style/Uikit_font_sans_2_0_weight_500" />
+</merge>

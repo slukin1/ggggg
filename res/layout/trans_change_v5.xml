@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:background="@drawable/exchange_shape_input_r6" android:paddingLeft="@dimen/length_8" android:paddingRight="@dimen/length_8" android:layout_width="@dimen/length_116" android:layout_height="@dimen/length_40"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/uikit_text_primary_v5" android:gravity="center" android:id="@id/uikit_tv_change" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:minLines="1" style="@style/Uikit_font_sans_5_0_weight_500" />
+    <com.gateio.uiComponent.GateIconFont android:textSize="12.0sp" android:textColor="@color/uikit_icon_primary_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_marginStart="@dimen/uikit_dp_2" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout android:id="@id/klineMeMeBoxRefresh" android:layout_width="fill_parent" android:layout_height="fill_parent" app:srlEnableLoadMore="false" app:srlEnableRefresh="false">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/klineMeMeBoxRv" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="16.0dip" />
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+    <androidx.core.widget.NestedScrollView android:id="@id/nestScroll" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.gateio.biz.kline.widget.StateView android:id="@id/klineMeMeBoxStateView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_12" />
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

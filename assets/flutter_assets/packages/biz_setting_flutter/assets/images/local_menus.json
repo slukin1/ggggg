@@ -1,0 +1,194 @@
+{
+  "all": [],
+  "default_menus": [],
+  "authed_menus": [{
+    "code": "information",
+    "name": "Information",
+    "children": [ {
+      "code": "learn",
+      "name": "Gate Learn",
+      "url": "https://app.cdapp.net/learn",
+      "image": "https://gimg2.gateimg.com/image/1711801903200692360GateLearnLight.png",
+      "hoted": false,
+      "login": false,
+      "top_order": 0,
+      "default_order": 10,
+      "default_menu": 0,
+      "support_langs": []
+    }, {
+      "code": "boke",
+      "name": "blog",
+      "url": "https://app.cdapp.net/blog",
+      "image": "https://gimg2.gateimg.com/image/171180190327185689BlogLight.png",
+      "hoted": false,
+      "login": false,
+      "top_order": 9,
+      "default_order": 0,
+      "default_menu": 0,
+      "support_langs": []
+    },{
+      "code": "bigdata",
+      "name": "Analytics",
+      "image": "https://gimg2.gateimg.com/image/1711797148921672139BigDataLight.png",
+      "hoted": false,
+      "login": false,
+      "top_order": 0,
+      "default_order": 0,
+      "default_menu": 0,
+      "support_langs": []
+    }]
+  }, {
+    "code": "more",
+    "name": "More",
+    "children": [{
+      "code": "preference",
+      "name": "Preferences",
+      "image": "https://gimg2.gateimg.com/image/1711589260501789934PreferenceSettingsLight.png",
+      "hoted": false,
+      "login": false,
+      "top_order": 0,
+      "default_order": 0,
+      "default_menu": 0,
+      "support_langs": []
+    }]
+  } ],
+  "not_logged_menus": [{
+    "code": "information",
+    "name": "Information",
+    "children": [ {
+      "code": "learn",
+      "name": "Gate Learn",
+      "url": "https://app.cdapp.net/learn",
+      "image": "https://gimg2.gateimg.com/image/1711801903200692360GateLearnLight.png",
+      "hoted": false,
+      "login": false,
+      "top_order": 0,
+      "default_order": 10,
+      "default_menu": 0,
+      "support_langs": []
+    }, {
+      "code": "boke",
+      "name": "Blog",
+      "url": "https://app.cdapp.net/blog",
+      "image": "https://gimg2.gateimg.com/image/171180190327185689BlogLight.png",
+      "hoted": false,
+      "login": false,
+      "top_order": 9,
+      "default_order": 0,
+      "default_menu": 0,
+      "support_langs": []
+    },{
+      "code": "bigdata",
+      "name": "Analytics",
+      "image": "https://gimg2.gateimg.com/image/1711797148921672139BigDataLight.png",
+      "hoted": false,
+      "login": false,
+      "top_order": 0,
+      "default_order": 0,
+      "default_menu": 0,
+      "support_langs": []
+    }]
+  }, {
+    "code": "more",
+    "name": "More",
+    "children": [{
+      "code": "preference",
+      "name": "Preferences",
+      "image": "https://gimg2.gateimg.com/image/1711589260501789934PreferenceSettingsLight.png",
+      "hoted": false,
+      "login": false,
+      "top_order": 0,
+      "default_order": 0,
+      "default_menu": 0,
+      "support_langs": []
+    }]
+  }],
+  "recommend": [{
+    "code": "ybb",
+    "name": "Simple Earn",
+    "url": "https://app.cdapp.net/lend-earn",
+    "image": "https://gimg2.gateimg.com/image/1711589260937946671SimpleEarnLight.png",
+    "hoted": false,
+    "login": false,
+    "top_order": 98,
+    "default_order": 0,
+    "default_menu": 0,
+    "support_langs": []
+  }, {
+    "code": "ybb",
+    "name": "Simple Earn",
+    "url": "https://app.cdapp.net/lend-earn",
+    "image": "https://gimg2.gateimg.com/image/1671420757222055055light.png",
+    "hoted": false,
+    "login": false,
+    "top_order": 97,
+    "default_order": 99,
+    "default_menu": 97,
+    "support_langs": []
+  }, {
+    "code": "wealth",
+    "name": "Gate Wealth",
+    "url": "https://app.cdapp.net/institution/wealth?is_show_title=1",
+    "image": "https://gimg2.gateimg.com/image/1711797148806447255GateWealthLight.png",
+    "hoted": false,
+    "login": false,
+    "top_order": 95,
+    "default_order": 0,
+    "default_menu": 0,
+    "support_langs": []
+  }, {
+    "code": "wealth",
+    "name": "Gate Wealth",
+    "url": "https://app.cdapp.net/institution/wealth?is_show_title=1",
+    "image": "https://gimg.gateimg.com/image/1680523736495357981%E8%B4%A2%E5%AF%8C%E7%AE%A1%E7%90%86.png",
+    "hoted": true,
+    "login": true,
+    "top_order": 12,
+    "default_order": 9,
+    "default_menu": 93,
+    "support_langs": []
+  }, {
+    "code": "strategy",
+    "name": "Bots",
+    "image": "https://gimg2.gateimg.com/image/171158926046096454BotsLight.png",
+    "hoted": false,
+    "login": false,
+    "top_order": 4,
+    "default_order": 0,
+    "default_menu": 0,
+    "support_langs": []
+  }, {
+    "code": "strategy",
+    "name": "Bots",
+    "image": "https://gimg2.gateimg.com/image/17012460519026663142bots.png",
+    "hoted": false,
+    "login": false,
+    "top_order": 99,
+    "default_order": 12,
+    "default_menu": 99,
+    "support_langs": []
+  }, {
+    "code": "rewards",
+    "name": "Vouchers",
+    "url": "https://app.cdapp.net/h5_coupon/coupon_center?tab=1&needNavBar=1",
+    "image": "https://gimg2.gateimg.com/image/1711801903751162309RewardCenterLight.png",
+    "hoted": false,
+    "login": true,
+    "top_order": 95,
+    "default_order": 0,
+    "default_menu": 0,
+    "support_langs": []
+  }, {
+    "code": "rewards",
+    "name": "Vouchers",
+    "url": "https://app.cdapp.net/h5_coupon/coupon_center?tab=1&needNavBar=1",
+    "image": "https://app.cdapp.net/images/mobileapp/top_menus/ic_home_header_rewards_20211216.png",
+    "hoted": false,
+    "login": true,
+    "top_order": 0,
+    "default_order": 0,
+    "default_menu": 0,
+    "support_langs": []
+  }],
+  "customer": []
+}

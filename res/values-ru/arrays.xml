@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alert_cancel_array">
+        <item>Проигнорировать в этот раз</item>
+        <item>10 минут спустя</item>
+        <item>30 минут спустя</item>
+        <item>2 часа спустя</item>
+        <item>24 часа спустя</item>
+        <item>Никогда</item>
+    </string-array>
+    <string-array name="exo_controls_playback_speeds">
+        <item>0,25</item>
+        <item>0,5</item>
+        <item>0,75</item>
+        <item>Обычная</item>
+        <item>1,25</item>
+        <item>1,5</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="funding_share_desc">
+        <item>Стабильность — это счастье</item>
+        <item>Выберите Gate и выигрывайте с легкостью</item>
+        <item>Профессиональный лидер не имеет границ</item>
+        <item>Попробуйте свои силы в Gate, чтобы показать свои таланты</item>
+        <item>Все дороги ведут в Рим, но на первом месте надежность</item>
+        <item>Собираетесь управлять деньгами? Готовьтесь</item>
+        <item>Жизнь стоит того, чтобы жить, а будущее многообещающе</item>
+    </string-array>
+    <string-array name="home_week_string_array">
+        <item>Воскресенье</item>
+        <item>Понедельник</item>
+        <item>Вторник</item>
+        <item>Среда</item>
+        <item>Четверг</item>
+        <item>Пятница</item>
+        <item>Суббота</item>
+    </string-array>
+    <string-array name="modify_procedure_items">
+        <item>Выберите настройки безопасности для изменения</item>
+        <item>Подать заявку на изменение</item>
+        <item>Завершить заявку</item>
+    </string-array>
+    <string-array name="position_share_desc_loss">
+        <item>Сократить потери? Никогда!</item>
+        <item>Держать и ждать.</item>
+        <item>Поменьше потерь, пожалуйста</item>
+        <item>Хорошо смеется тот, кто смеется последним</item>
+        <item>Проснись и пой. Двигайтесь сейчас.</item>
+        <item>Будьте добры ко мне</item>
+        <item>Без паники</item>
+        <item>Ва-банк. Сохраняйте веру</item>
+    </string-array>
+    <string-array name="position_share_desc_win">
+        <item>Играйте и выигрывайте по-крупному.</item>
+        <item>Ва-банк, как всегда.</item>
+        <item>Просто держите</item>
+        <item>Просто удержите это</item>
+        <item>Следующий шаг? Следите за тенденциями</item>
+        <item>Я — большая звезда!</item>
+        <item>Следуйте за мной, чтобы выиграть по-крупному</item>
+        <item>Я на правильной стороне, как всегда!</item>
+        <item>Длинный или короткий? Все зависит от меня.</item>
+    </string-array>
+    <string-array name="push_alert_cancel_array">
+        <item>В течение 30 минут</item>
+        <item>В течение 2 часов</item>
+        <item>В течение 24 часов</item>
+        <item>Навсегда</item>
+    </string-array>
+    <string-array name="week_string_array">
+        <item>Вс</item>
+        <item>Пн</item>
+        <item>Вт</item>
+        <item>Ср</item>
+        <item>Чт</item>
+        <item>Пт</item>
+        <item>Сб</item>
+    </string-array>
+</resources>

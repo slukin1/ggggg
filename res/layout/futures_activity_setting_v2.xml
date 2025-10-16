@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/uikit_bg_primary_v5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gateio.gateio.view.GateioStatusPlaceHolderBar android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.gateio.lib.uikit.title.GTTitleViewV3 android:id="@id/title_view" android:layout_width="fill_parent" android:layout_height="44.0dip" android:text="@string/exchange_futures_trading_settings" />
+    <com.gateio.lib.uikit.tab.v5.GTTabsV5 android:id="@id/magic_indicator_trans" android:layout_width="fill_parent" android:layout_height="44.0dip" />
+    <View style="@style/view_line_divider_v5" />
+    <androidx.viewpager.widget.ViewPager android:id="@id/vp_trans" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

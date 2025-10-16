@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/cll_content" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_1_v3" android:id="@id/tv_name" android:paddingTop="@dimen/uikit_margin_padding_10" android:paddingBottom="@dimen/uikit_margin_padding_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/uikit_margin_padding_12" android:layout_toStartOf="@id/gif_checked" android:layout_alignParentStart="true" style="@style/Uikit_font_sans_2_0_weight_500" />
+    <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_icon_9_v3" android:id="@id/gif_checked" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/uikit_margin_padding_12" android:layout_alignParentEnd="true" />
+</RelativeLayout>

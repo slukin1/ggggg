@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/v_outside" android:background="@color/pickerview_bgColor_overlay" android:layout_above="@id/ll_bottom" style="@style/match_match" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_bottom" android:background="@color/color_ffffff_19202d" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_moments_save" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="51.0dip">
+            <RadioButton android:textColor="@color/color_5d5d5d_edf2fa" android:gravity="center" android:id="@id/rb_save" android:layout_width="fill_parent" android:layout_height="50.0dip" android:button="@null" android:text="@string/user_save" />
+            <ImageView android:background="@color/color_eaebed_2b364d" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_moments_cancel" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="51.0dip">
+            <RadioButton android:textColor="@color/color_5d5d5d_edf2fa" android:gravity="center" android:id="@id/rb_cancel" android:layout_width="fill_parent" android:layout_height="50.0dip" android:button="@null" android:text="@string/user_qx" />
+            <ImageView android:background="@color/color_eaebed_2b364d" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

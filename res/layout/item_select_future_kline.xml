@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="77.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/k_text_333333_e6e6e6" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/item_assert_trade_tv" android:paddingTop="@dimen/k_margin_padding_16" android:paddingBottom="@dimen/k_margin_padding_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="USDT" />
+    <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/k_color_sub" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/item_assert_trade_unit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="USDT" android:layout_below="@id/item_assert_trade_tv" />
+    <View android:id="@id/view_k_line" android:background="@color/uikit_divider_2" android:layout_width="fill_parent" android:layout_height="@dimen/k_w_0.5" android:layout_alignParentBottom="true" />
+</RelativeLayout>

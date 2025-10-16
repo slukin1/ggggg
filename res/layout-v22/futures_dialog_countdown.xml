@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruffian.library.widget.RRelativeLayout android:layout_gravity="center" android:layout_width="340.0dip" android:layout_centerInParent="true" app:background_normal="@color/uikit_layer_1_v5" app:corner_radius="8.0dip" style="@style/wrap_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:id="@id/alert_dialog_title" android:layout_marginLeft="16.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="4.0dip" android:lineSpacingMultiplier="1.15" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip" android:layout_marginHorizontal="16.0dip" style="@style/Text_text_primary_16_weight_600_v5" />
+    <ScrollView android:id="@id/sv_content" android:scrollbars="none" android:fadingEdge="none" android:fillViewport="true" android:layout_below="@id/alert_dialog_title" android:overScrollMode="never" style="@style/match_wrap">
+        <LinearLayout style="@style/match_wrap">
+            <TextView android:id="@id/alert_dialog_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="12.0dip" android:lineSpacingMultiplier="1.4" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" style="@style/Text_text_primary_14_weight_400_v5" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip">
+                <cn.iwgang.countdownview.CountdownView android:id="@id/countview" android:layout_width="wrap_content" android:layout_height="wrap_content" app:isHideTimeBackground="true" app:isShowDay="false" app:isShowHour="false" app:isShowMinute="false" app:isShowSecond="true" app:isSuffixTextBold="false" app:isTimeTextBold="false" app:suffixDayLeftMargin="4.0dip" app:suffixDayRightMargin="4.0dip" app:suffixGravity="center" app:suffixHourLeftMargin="4.0dip" app:suffixHourRightMargin="4.0dip" app:suffixSecondLeftMargin="4.0dip" app:suffixSecondRightMargin="4.0dip" app:suffixTextColor="@color/uikit_text_primary_v5" app:suffixTextSize="14.0sp" app:timeTextColor="@color/uikit_text_primary_v5" app:timeTextSize="14.0sp" />
+                <TextView android:id="@id/tips_alert_countdown" android:lineSpacingMultiplier="1.4" style="@style/Text_text_primary_14_weight_400_v5" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:id="@id/ll_bottom" android:layout_below="@id/sv_content" style="@style/match_wrap_h">
+        <com.gateio.lib.uikit.button.GTButtonV5 android:id="@id/tv_confirm" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginBottom="24.0dip" android:text="@string/user_qd" android:layout_weight="1.0" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" app:radius="8.0dip" style="@style/Btn_white_14_bg_brand_1_r8_weight_600" />
+    </LinearLayout>
+</com.ruffian.library.widget.RRelativeLayout>

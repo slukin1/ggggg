@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/black" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/view_exo_player" />
+    <ImageView android:id="@id/iv_placeholder" android:src="@mipmap/bg_live_placeholder" android:scaleType="fitXY" android:layout_centerInParent="true" style="@style/match_match" />
+    <LinearLayout android:gravity="center" android:layout_centerInParent="true" style="@style/wrap_wrap">
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/animation_view" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="60.0dip" app:lottie_autoPlay="true" app:lottie_fileName="video_loading.json" app:lottie_loop="true" />
+        <TextView android:id="@id/tv_loading" android:visibility="gone" android:layout_marginTop="@dimen/margin_padding_8" style="@style/tv_user_white_12" />
+    </LinearLayout>
+</RelativeLayout>

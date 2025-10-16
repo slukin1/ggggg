@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/view_empty" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <com.ruffian.library.widget.RLinearLayout android:orientation="vertical" android:id="@id/ll_root" android:layout_width="fill_parent" android:layout_height="wrap_content" app:background_normal="@color/uikit_bg_primary_v5" app:corner_radius_top_left="12.0dip" app:corner_radius_top_right="12.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18.0sp" android:textColor="@color/uikit_text_primary_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/market_add_to_group" style="@style/Uikit_font_sans_5_0_weight_700" />
+            <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <com.gateio.uiComponent.GateIconFont android:textSize="16.0sp" android:textColor="@color/uikit_icon_quaternary_v5" android:id="@id/iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_groups" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:overScrollMode="never" />
+        <LinearLayout android:orientation="horizontal" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.gateio.lib.uikit.button.GTButtonV5 android:id="@id/btn_create_group" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/market_create_group" android:layout_weight="1.0" android:layout_marginEnd="12.0dip" app:uikit_buttonDimenV5="medium" app:uikit_buttonTypeV5="secondary_gray" />
+            <com.gateio.lib.uikit.button.GTButtonV5 android:enabled="false" android:id="@id/btn_save" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/user_save" android:layout_weight="1.0" app:uikit_buttonDimenV5="medium" app:uikit_buttonTypeV5="primary_black" />
+        </LinearLayout>
+    </com.ruffian.library.widget.RLinearLayout>
+</LinearLayout>

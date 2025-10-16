@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:radius="5.0dip" />
+            <solid android:color="@color/uikit_text_color_hint" />
+        </shape>
+    </item>
+    <item>
+        <clip>
+            <shape>
+                <corners android:radius="5.0dip" />
+                <solid android:color="@color/bg_thme_green2" />
+            </shape>
+        </clip>
+    </item>
+    <item>
+        <clip>
+            <shape>
+                <corners android:radius="5.0dip" />
+                <solid android:color="@color/bg_thme_green2" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

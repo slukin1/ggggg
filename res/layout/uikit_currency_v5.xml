@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/uikit_currency_root" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/uikit_rv_currency" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <LinearLayout android:orientation="vertical" android:id="@id/uikit_currency_ll" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0sp" android:textColor="@color/uikit_text_primary_v5" android:gravity="start|center" android:id="@id/uikit_currency_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_marginEnd="@dimen/uikit_dp_4" style="@style/Uikit_font_sans_5_0_weight_500" />
+            <com.gateio.uiComponent.GateIconFont android:textSize="12.0sp" android:id="@id/uikit_currency_title_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/uikit_dp_4" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/uikit_text_secondary_v5" android:gravity="start|center" android:id="@id/uikit_currency_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_3" android:layout_marginBottom="@dimen/uikit_dp_1" android:includeFontPadding="false" android:layout_marginEnd="4.0dip" style="@style/Uikit_font_sans_5_0_weight_400" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/uikit_text_primary_v5" android:gravity="start|center" android:id="@id/uikit_currency_horizontal_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_marginEnd="4.0dip" style="@style/Uikit_font_sans_5_0_weight_400" />
+            <com.gateio.lib.uikit.tag.GTTagV5 android:id="@id/uikit_currency_tag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:uikit_tagSizeV5="tag16" app:uikit_tagTypeV5="gray" />
+        </LinearLayout>
+        <LinearLayout android:gravity="start|center" android:id="@id/uikit_currency_ll_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="@color/uikit_text_secondary_v5" android:gravity="start|center" android:id="@id/uikit_currency_bottom_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" style="@style/Uikit_font_sans_5_0_weight_400" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

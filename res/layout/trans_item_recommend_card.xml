@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/trans_shape_future_max_lever_bg_r8" android:paddingLeft="@dimen/length_8" android:paddingRight="@dimen/length_8" android:layout_height="@dimen/length_32" style="@style/wrap_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_content" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_primary_v5" android:id="@id/tv_ft_max_lever" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/length_4" style="@style/Uikit_font_sans_5_0_weight_500" />
+        <TextView android:textSize="@dimen/uikit_text_size_10" android:textColor="@color/uikit_text_warning_v5" android:gravity="center" android:id="@id/tg_tf" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginEnd="@dimen/length_4" style="@style/Uikit_font_sans_5_0_weight_400" />
+        <TextView android:textSize="@dimen/uikit_text_size_10" android:textColor="@color/uikit_text_primary_v5" android:gravity="center" android:id="@id/tv_change" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginEnd="@dimen/length_4" style="@style/Uikit_font_sans_5_0_weight_400" />
+    </LinearLayout>
+    <View android:id="@id/v_view" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_icon_tertiary_v5" android:gravity="end" android:layout_gravity="end|center" android:id="@id/iv_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" app:left_or_right="true" />
+</LinearLayout>

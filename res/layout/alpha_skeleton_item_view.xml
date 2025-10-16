@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.third.skeletonLayout.widget.SkeletonTextView android:id="@id/alphaEventSkeletonImage" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_marginStart="16.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:maskCornerRadius="11.0dip" />
+    <com.gateio.third.skeletonLayout.widget.SkeletonTextView android:id="@id/alphaEventSkeletonTitle" android:layout_width="0.0dip" android:layout_height="26.0dip" android:layout_marginStart="12.0dip" android:layout_marginEnd="16.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/alphaEventSkeletonImage" app:layout_constraintTop_toTopOf="parent" app:maskCornerRadius="8.0dip" />
+    <com.gateio.third.skeletonLayout.widget.SkeletonTextView android:id="@id/alphaEventSkeletonSubtitle" android:layout_width="150.0dip" android:layout_height="26.0dip" android:layout_marginTop="12.0dip" android:layout_marginStart="12.0dip" app:layout_constraintStart_toEndOf="@id/alphaEventSkeletonImage" app:layout_constraintTop_toBottomOf="@id/alphaEventSkeletonTitle" app:maskCornerRadius="8.0dip" />
+</androidx.constraintlayout.widget.ConstraintLayout>

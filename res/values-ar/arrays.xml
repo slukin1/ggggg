@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alert_cancel_array">
+        <item>تجاهل هذه المرة فقط</item>
+        <item>بعد 10 دقائق</item>
+        <item>بعد 30 دقيقة</item>
+        <item>بعد ساعتين</item>
+        <item>بعد 24 ساعة</item>
+        <item>أبدًا</item>
+    </string-array>
+    <string-array name="exo_controls_playback_speeds">
+        <item>أسرع بـ 0.25 مرة</item>
+        <item>أسرع بـ 0.5 مرات</item>
+        <item>أسرع بـ 0.75 مرة</item>
+        <item>عادية</item>
+        <item>أسرع بـ 1.25 مرة</item>
+        <item>أسرع بـ 1.5 مرة</item>
+        <item>أسرع بمرتين</item>
+    </string-array>
+    <string-array name="funding_share_desc">
+        <item>هناك نوع من السعادة يسمى الاستقرار</item>
+        <item>تداول في Gate لتحقيق الأرباح بسهولة</item>
+        <item>القائد المحترف لا حدود له</item>
+        <item>جرّب Gate لإظهار قدراتك في التداول</item>
+        <item>كل الطرق صحيحة، لكن تأتي المتانة في المقام الأول</item>
+        <item>هل ستذهب لإدارة الأموال؟ ثابت</item>
+        <item>الحياة تستحق العناء والمستقبل واعد</item>
+    </string-array>
+    <string-array name="home_week_string_array">
+        <item>الأحد</item>
+        <item>الإثنين</item>
+        <item>يوم الثلاثاء</item>
+        <item>الأربعاء</item>
+        <item>يوم الخميس</item>
+        <item>جمعة</item>
+        <item>السبت</item>
+    </string-array>
+    <string-array name="modify_procedure_items">
+        <item>اختر عنصر الأمان المفقود</item>
+        <item>تطبيق لتغيير عناصر الأمان</item>
+        <item>إنهاء التطبيق</item>
+    </string-array>
+    <string-array name="position_share_desc_loss">
+        <item>قطع الخسارة؟ مطلقًا!</item>
+        <item>احتفظ وانتظر.</item>
+        <item>يرجى الحد من الخسارة</item>
+        <item>من يضحك أخيرًا ، يضحك بشكل أفضل</item>
+        <item>اصعد وتألق. تحرك الآن.</item>
+        <item>كن لطيفًا معي</item>
+        <item>لا ذعر</item>
+        <item>كل الأموال في الصفقة! حافظ على الإيمان</item>
+    </string-array>
+    <string-array name="position_share_desc_win">
+        <item>غامر واربح الكثير.</item>
+        <item>الكل في كما هو الحال دائمًا.</item>
+        <item>ما عليك سوى الاحتفاظ</item>
+        <item>ما عليك سوى الاحتفاظ بها</item>
+        <item>ما الخطوة التالية؟ اتبع المؤشرات</item>
+        <item>أنا النجم الكبير!</item>
+        <item>اتبعني لتربح أكبر</item>
+        <item>أنا في الجانب الأيمن كما هو الحال دائمًا!</item>
+        <item>طويلة الأجل أم قصيرة الأجل؟ الأمر برمته متروك لي.</item>
+    </string-array>
+    <string-array name="push_alert_cancel_array">
+        <item>لمدة 30 دقيقة</item>
+        <item>لمدة ساعتين</item>
+        <item>لمدة 24 ساعة</item>
+        <item>إلى الأبد</item>
+    </string-array>
+    <string-array name="week_string_array">
+        <item>الاحد</item>
+        <item>الاثنين</item>
+        <item>الثلاثاء</item>
+        <item>الأربعاء</item>
+        <item>الخميس</item>
+        <item>الجمعة</item>
+        <item>السبت</item>
+    </string-array>
+</resources>

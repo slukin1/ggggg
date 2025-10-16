@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.uiComponent.shadow.BoxShadowLayout android:id="@id/cardView" android:background="@drawable/uikit_bg_card_2_radio_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_marginHorizontal="10.0dip" app:box_shadowAlpha="0.08" app:box_shadowBlur="14.0dip" app:box_shadowColor="@color/uikit_shadow_card_blur_color" app:box_shadowOffsetVertical="4.0dip">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:overScrollMode="never" android:layout_marginVertical="8.0dip" />
+    </com.gateio.uiComponent.shadow.BoxShadowLayout>
+</FrameLayout>

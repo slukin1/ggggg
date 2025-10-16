@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/ll_root" android:tag="layout/position_item_risk_unit_0" app:border_color_normal="@color/uikit_divider_2_v3" app:border_width_normal="0.0dip" app:corner_radius="4.0dip" style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/ll_parent" android:paddingBottom="12.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginHorizontal="16.0dip" style="@style/match_wrap">
+        <LinearLayout android:gravity="center_vertical" style="@style/match_wrap_h">
+            <LinearLayout android:gravity="center_vertical" android:id="@id/ll_risk_unit_name" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/iv_coin_icon" android:layout_width="28.0dip" android:layout_height="28.0dip" />
+                <com.gateio.lib.uikit.text.SpecialPairsNameView android:textSize="18.0sp" android:gravity="center_vertical" android:id="@id/risk_unit_name" android:text="---" android:layout_marginStart="8.0dip" android:layout_marginEnd="4.0dip" style="@style/Text_text_primary_16_weight_600_v5" />
+            </LinearLayout>
+            <View style="@style/ww_match_h" />
+            <com.gateio.uiComponent.GateIconFont android:textSize="20.0sp" android:textColor="@color/uikit_icon_quaternary_v5" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/iv_show_sub" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="" android:paddingStart="12.0dip" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.gateio.biz_options.view.OptionsDashTextViewV5 android:id="@id/tvInitialMarginTitle" android:visibility="visible" android:layout_width="fill_parent" android:text="@string/position_comb_bond_risk_unit_initial_margin" android:layout_weight="1.0" app:uikit_underline_dashclick="false" app:uikit_underline_tips="@string/position_comb_bond_risk_unit_initial_margin_tips" style="@style/Text_text_secondary_12_weight_400_v5" />
+                <TextView android:id="@id/tvInitialMargin" android:layout_width="fill_parent" android:layout_weight="1.0" style="@style/Text_text_primary_14_weight_500_v5" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.gateio.biz_options.view.OptionsDashTextViewV5 android:id="@id/tvMMRTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/position_v5_position_mm" android:layout_weight="1.0" android:layout_marginStart="4.0dip" app:uikit_underline_dashclick="false" style="@style/Text_text_secondary_12_weight_400_v5" />
+                <TextView android:id="@id/tvMMR" android:layout_width="fill_parent" android:layout_weight="1.0" android:layout_marginStart="4.0dip" style="@style/Text_text_primary_14_weight_500_v5" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.gateio.biz_options.view.OptionsDashTextViewV5 android:gravity="end" android:id="@id/tvSpotHedgingTitle" android:visibility="visible" android:layout_width="fill_parent" android:text="@string/position_v5_spot_hedging" android:layout_weight="1.0" android:layout_marginStart="4.0dip" app:uikit_underline_dashclick="false" style="@style/Text_text_secondary_12_weight_400_v5" />
+                <TextView android:gravity="end" android:id="@id/tvSpotHedging" android:layout_width="fill_parent" android:layout_weight="1.0" android:layout_marginStart="4.0dip" style="@style/Text_text_primary_14_weight_500_v5" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:id="@id/tv_risk_unit_delta_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/position_comb_bond_delta" android:layout_weight="1.0" style="@style/Text_text_secondary_12_weight_400_v5" />
+                <TextView android:id="@id/tv_risk_unit_delta" android:layout_width="fill_parent" android:layout_weight="1.0" style="@style/Text_text_primary_14_weight_500_v5" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:id="@id/tv_risk_unit_gamma_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/position_comb_bond_gamma" android:layout_weight="1.0" android:layout_marginStart="4.0dip" style="@style/Text_text_secondary_12_weight_400_v5" />
+                <TextView android:id="@id/tv_risk_unit_gamma" android:layout_width="fill_parent" android:layout_weight="1.0" android:layout_marginStart="4.0dip" style="@style/Text_text_primary_14_weight_500_v5" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:gravity="end" android:id="@id/tv_risk_unit_vaga_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/position_comb_bond_vega" android:layout_weight="1.0" android:layout_marginStart="4.0dip" style="@style/Text_text_secondary_12_weight_400_v5" />
+                <TextView android:gravity="end" android:id="@id/tv_risk_unit_vaga" android:layout_width="fill_parent" android:layout_weight="1.0" android:layout_marginStart="4.0dip" style="@style/Text_text_primary_14_weight_500_v5" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+            <TextView android:id="@id/tv_risk_unit_theta_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/position_comb_bond_theta" android:layout_weight="1.0" style="@style/Text_text_secondary_12_weight_400_v5" />
+            <TextView android:id="@id/tv_risk_unit_theta" android:layout_width="fill_parent" android:layout_weight="1.0" style="@style/Text_text_primary_14_weight_500_v5" />
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/futuresPositionAllCur" android:visibility="visible" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:overScrollMode="never" android:layout_marginHorizontal="16.0dip" />
+    <View android:id="@id/viewDivider" android:layout_marginTop="@dimen/length_4" style="@style/view_line_divider_v5" />
+</LinearLayout>

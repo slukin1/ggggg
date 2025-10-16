@@ -1,0 +1,21 @@
+.class public Lcom/zoloz/rpccommon/NetResponse;
+.super Ljava/lang/Object;
+.source "NetResponse.java"
+
+
+# instance fields
+.field public responseBody:[B
+
+.field public rpcCode:I
+
+.field public statisticData:Lcom/zoloz/rpccommon/StatisticData;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

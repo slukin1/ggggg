@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="horizontal" android:paddingLeft="@dimen/margin_padding_12" android:paddingTop="9.0dip" android:paddingRight="@dimen/margin_padding_12" android:paddingBottom="9.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_16" android:radius="@dimen/margin_padding_4" android:paddingHorizontal="@dimen/margin_padding_12" android:paddingVertical="9.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:layout_gravity="center_vertical" android:id="@id/check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:drawableStart="@drawable/fiatotc_selector_ring_oval" />
+    <TextView android:textSize="@dimen/ts_14" android:textColor="@color/text_1" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/dp_1" android:layout_marginStart="@dimen/ts_12" android:textFontWeight="500" />
+</merge>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/black" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gateio.gateio.moments.video.player.CommonMediaController android:id="@id/common_controller" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/iv_close" android:layout_margin="16.0dip" android:src="@mipmap/ic_close" android:layout_alignParentEnd="true" style="@style/style_action_video_icon_top" />
+    <TextView android:textColor="@color/uikit_white" android:id="@id/tv_confirm" android:background="@drawable/red_radius_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:text="@string/account_manage_complete" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" android:layout_alignParentEnd="true" />
+</RelativeLayout>

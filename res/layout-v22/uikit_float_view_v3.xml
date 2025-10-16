@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_root" android:background="@color/uikit_transparent" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.uiComponent.shadow.BoxShadowLayout android:id="@id/view_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" app:box_shadowAlpha="0.2" app:box_shadowBlur="16.0dip" app:box_shadowColor="@color/uikit_shadow_color_float_v3" app:box_shadowOffsetVertical="3.0dip">
+        <com.ruffian.library.widget.RRelativeLayout android:id="@id/rl_home" android:layout_width="44.0dip" android:layout_height="44.0dip" app:background_normal="@color/uikit_brand_1_v3" app:corner_radius="30.0dip">
+            <ImageView android:id="@id/iv_float" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/home_ic_floating_normal" android:layout_centerInParent="true" />
+        </com.ruffian.library.widget.RRelativeLayout>
+        <com.ruffian.library.widget.RRelativeLayout android:id="@id/rl_social" android:paddingLeft="@dimen/uikit_dp_8" android:paddingRight="@dimen/uikit_dp_8" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/uikit_dp_32" android:paddingHorizontal="@dimen/uikit_dp_8" app:background_normal="@color/uikit_float_bg_social_v3" app:corner_radius="@dimen/uikit_radius_3">
+            <LinearLayout android:id="@id/ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <com.airbnb.lottie.LottieAnimationView android:id="@id/lav_live_notice" android:background="@drawable/uikit_bg_round3_gradient6" android:padding="@dimen/uikit_dp_2" android:visibility="gone" android:layout_width="14.0dip" android:layout_height="14.0dip" app:lottie_autoPlay="true" app:lottie_fileName="living_push.json" app:lottie_loop="true" />
+                <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_icon_1_v3" android:id="@id/tv_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View android:id="@id/lav_moment_notice" android:background="@drawable/uikit_bg_round_gradient6" android:visibility="gone" android:layout_width="@dimen/uikit_margin_padding_6" android:layout_height="@dimen/uikit_margin_padding_6" android:layout_marginTop="-2.0dip" android:layout_alignTop="@id/ll" android:layout_marginEnd="-2.0dip" android:layout_alignEnd="@id/ll" />
+            <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_1_v3" android:id="@id/tv_tab_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Moments" android:layout_centerVertical="true" android:layout_marginStart="@dimen/uikit_margin_padding_6" android:layout_toEndOf="@id/ll" style="@style/Uikit_font_sans_2_0_weight_600" />
+            <View android:id="@id/view_line" android:background="@color/uikit_divider_4_v3" android:layout_width="@dimen/uikit_dp_1" android:layout_height="@dimen/uikit_dp_8" android:layout_centerVertical="true" android:layout_marginStart="@dimen/uikit_margin_padding_6" android:layout_toEndOf="@id/tv_tab_name" />
+            <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_icon_3_v3" android:gravity="center_vertical" android:id="@id/iv_close" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="" android:paddingStart="@dimen/uikit_margin_padding_6" android:layout_toEndOf="@id/view_line" />
+        </com.ruffian.library.widget.RRelativeLayout>
+    </com.gateio.uiComponent.shadow.BoxShadowLayout>
+    <FrameLayout android:id="@id/view_mini" android:visibility="gone" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_centerVertical="true" android:layoutDirection="ltr">
+        <com.ruffian.library.widget.RFrameLayout android:layout_gravity="end|center" android:id="@id/fl_mini" android:layout_width="16.0dip" android:layout_height="44.0dip" android:layoutDirection="ltr" app:background_normal="@color/uikit_brand_1_v3" app:corner_radius_bottom_left="8.0dip" app:corner_radius_top_left="8.0dip">
+            <ImageView android:layout_gravity="center" android:id="@id/iv_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/home_ic_floating_mini" />
+            <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_icon_1_v3" android:layout_gravity="center" android:id="@id/tv_arrow_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+        </com.ruffian.library.widget.RFrameLayout>
+    </FrameLayout>
+</RelativeLayout>

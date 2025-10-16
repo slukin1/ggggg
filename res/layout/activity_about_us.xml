@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/uikit_bg_primary_v5" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <com.gateio.uiComponent.GateIconFont android:textSize="20.0dip" android:textColor="@color/uikit_icon_secondary_v5" android:gravity="center_vertical" android:id="@id/tv_back" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="" android:paddingStart="12.0dip" android:paddingEnd="10.0dip" app:left_or_right="true" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/uikit_text_primary_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_gywm" android:layout_centerInParent="true" style="@style/Uikit_font_sans_2_0_weight_600" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:src="@mipmap/ic_about_us_logo" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/uikit_text_tertiary_v5" android:layout_gravity="center_horizontal" android:id="@id/aboutus_versionlabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="@dimen/uikit_margin_padding_24" style="@style/Uikit_font_sans_2_0_weight_400" />
+            <com.gateio.biz.base.weight.UserRateComponent android:id="@id/rl_about_us_user_rate" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/aboutus_about" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="56.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/uikit_text_primary_v5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/user_gywm" android:layout_weight="1.0" />
+                <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_icon_quaternary_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" app:left_or_right="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="56.0dip">
+                <com.gateio.gateio.update.AppUpdateView android:id="@id/aboutus_update" android:layout_width="fill_parent" android:layout_height="fill_parent" app:updateview_type="appupdate_second" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/net_status" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="56.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/uikit_text_primary_v5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/network_state" android:layout_weight="1.0" />
+                <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_icon_quaternary_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" app:left_or_right="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/clear_cache" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="56.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/uikit_text_primary_v5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/user_clear_cache" android:layout_weight="1.0" />
+                <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_icon_quaternary_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" app:left_or_right="true" />
+            </LinearLayout>
+            <View android:background="@color/uikit_line_divider_v5" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rate_app" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="56.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/uikit_text_primary_v5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/app_go_to_rate" android:layout_weight="1.0" />
+                <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_icon_quaternary_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" app:left_or_right="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/share_app" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="56.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/uikit_text_primary_v5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/share_app" android:layout_weight="1.0" />
+                <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_icon_quaternary_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" app:left_or_right="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/join_gt_community" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="56.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/uikit_text_primary_v5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/join_gt_community" android:layout_weight="1.0" />
+                <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_icon_quaternary_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" app:left_or_right="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/aboutus_licenses_disclosures" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="52.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/uikit_text_1_v3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/licenses_and_disclosures" android:layout_weight="1.0" />
+                <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_icon_3_v3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" app:left_or_right="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/user_privacy" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="56.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/uikit_text_primary_v5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/futures_agreement_title" android:layout_weight="1.0" />
+                <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_icon_quaternary_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" app:left_or_right="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/aboutus_privacy" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="56.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/uikit_text_primary_v5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/login_create_account_policy" android:layout_weight="1.0" />
+                <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_icon_quaternary_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" app:left_or_right="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

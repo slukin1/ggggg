@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.lib.uikit.input.GTEditTextV3 android:id="@id/passkey_title_editview" android:paddingLeft="@dimen/uikit_dp_16" android:paddingTop="@dimen/dp_4" android:paddingRight="@dimen/uikit_dp_16" android:paddingBottom="@dimen/uikit_dp_24" android:layout_width="fill_parent" android:layout_height="wrap_content" app:uikit_editTypeV3="stroke"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

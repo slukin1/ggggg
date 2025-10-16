@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.search.GTSearchV5 android:id="@id/search" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginStart="17.0dip" android:layout_marginEnd="16.0dip" android:paddingHorizontal="0.0dip" app:uikit_searchSizeV5="medium" />
+    <FrameLayout android:id="@id/market_select_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

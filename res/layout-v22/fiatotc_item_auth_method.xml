@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.comlib.view.CornerLinearLayout android:gravity="center_vertical" android:background="@color/uikit_bg_1" android:paddingLeft="@dimen/uikit_margin_padding_12" android:paddingTop="@dimen/uikit_margin_padding_16" android:paddingRight="@dimen/uikit_margin_padding_12" android:paddingBottom="@dimen/uikit_margin_padding_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/uikit_margin_padding_12" android:paddingVertical="@dimen/uikit_margin_padding_16" app:radius="@dimen/uikit_dp_8"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/fiatotc_auth_google" />
+    <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_1" android:id="@id/method" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/uikit_dp_8" style="@style/Uikit_font_weight_500" />
+    <com.gateio.lib.uikit.tag.GTTagV2 android:textColor="@color/text_2" android:id="@id/unbound" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fiatotc_unbound" app:uikit_tagBackgroundColor="@color/uikit_neutral_2" app:uikit_tagDimen="s" app:uikit_tagRadius="@dimen/uikit_dp_2" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/fiatotc_arrow_right_12" android:layout_marginStart="@dimen/uikit_dp_4" app:tint="@color/uikit_text_2" />
+</com.gateio.comlib.view.CornerLinearLayout>

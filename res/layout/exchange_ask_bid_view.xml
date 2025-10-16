@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/uikit_text_size_10" android:textColor="@color/trans_mark_buy" android:id="@id/tv_buy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="B" android:layout_centerVertical="true" android:layout_alignParentStart="true" style="@style/Uikit_font_sans_5_0_weight_400" />
+    <com.gateio.biz.exchange.ui.widget.ExChangeProgressBar android:id="@id/exchange_progress" android:layout_width="wrap_content" android:layout_height="4.0dip" android:layout_marginLeft="@dimen/length_2" android:layout_marginRight="@dimen/length_2" android:layout_centerVertical="true" android:layout_toStartOf="@id/tv_sell" android:layout_toEndOf="@id/tv_buy" app:exchange_gap="@dimen/length_1" />
+    <TextView android:textSize="@dimen/uikit_text_size_10" android:textColor="@color/trans_mark_sell" android:id="@id/tv_sell" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="S" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/Uikit_font_sans_5_0_weight_400" />
+</RelativeLayout>

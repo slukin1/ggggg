@@ -1,0 +1,771 @@
+.class public Lcom/gateio/biz/kline/entity/StrategyStatisticsEntity;
+.super Ljava/lang/Object;
+.source "StrategyStatisticsEntity.java"
+
+
+# instance fields
+.field private avg_profit_rate:Ljava/lang/String;
+
+.field private copy_profit:Ljava/lang/String;
+
+.field private num:Ljava/lang/String;
+
+.field private profit_share:Ljava/lang/String;
+
+.field private ranking_update_time:Ljava/lang/String;
+
+.field private strategy_type:Ljava/lang/String;
+
+.field private total_follow_num:Ljava/lang/String;
+
+.field private total_invest:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getAvg_profit_rate()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/gateio/biz/kline/entity/StrategyStatisticsEntity;->avg_profit_rate:Ljava/lang/String;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+.end method
+
+.method public getCopy_profit()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/gateio/biz/kline/entity/StrategyStatisticsEntity;->copy_profit:Ljava/lang/String;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+.end method
+
+.method public getNum()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/gateio/biz/kline/entity/StrategyStatisticsEntity;->num:Ljava/lang/String;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+.end method
+
+.method public getProfit_share()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/gateio/biz/kline/entity/StrategyStatisticsEntity;->profit_share:Ljava/lang/String;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+.end method
+
+.method public getRanking_update_time()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/gateio/biz/kline/entity/StrategyStatisticsEntity;->ranking_update_time:Ljava/lang/String;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+.end method
+
+.method public getStrategy_type()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/gateio/biz/kline/entity/StrategyStatisticsEntity;->strategy_type:Ljava/lang/String;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+.end method
+
+.method public getTotal_follow_num()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/gateio/biz/kline/entity/StrategyStatisticsEntity;->total_follow_num:Ljava/lang/String;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+.end method
+
+.method public getTotal_invest()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/gateio/biz/kline/entity/StrategyStatisticsEntity;->total_invest:Ljava/lang/String;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+.end method
+
+.method public isBid()Z
+    .locals 5
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/gateio/biz/kline/entity/StrategyStatisticsEntity;->avg_profit_rate:Ljava/lang/String;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-static {v0}, Lcom/gateio/common/tool/NumberUtil;->parseDouble(Ljava/lang/String;)D
+
+    .line 6
+    move-result-wide v0
+
+    .line 7
+    .line 8
+    const-wide/16 v2, 0x0
+
+    .line 9
+    .line 10
+    cmpl-double v4, v0, v2
+
+    .line 11
+    .line 12
+    if-ltz v4, :cond_0
+
+    .line 13
+    const/4 v0, 0x1
+
+    .line 14
+    goto :goto_0
+
+    .line 15
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 16
+    :goto_0
+    return v0
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+.end method
+
+.method public setAvg_profit_rate(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    .line 2
+    iput-object p1, p0, Lcom/gateio/biz/kline/entity/StrategyStatisticsEntity;->avg_profit_rate:Ljava/lang/String;
+
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+.end method
+
+.method public setCopy_profit(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    .line 2
+    iput-object p1, p0, Lcom/gateio/biz/kline/entity/StrategyStatisticsEntity;->copy_profit:Ljava/lang/String;
+
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+.end method
+
+.method public setNum(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    .line 2
+    iput-object p1, p0, Lcom/gateio/biz/kline/entity/StrategyStatisticsEntity;->num:Ljava/lang/String;
+
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+.end method
+
+.method public setProfit_share(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    .line 2
+    iput-object p1, p0, Lcom/gateio/biz/kline/entity/StrategyStatisticsEntity;->profit_share:Ljava/lang/String;
+
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+.end method
+
+.method public setRanking_update_time(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    .line 2
+    iput-object p1, p0, Lcom/gateio/biz/kline/entity/StrategyStatisticsEntity;->ranking_update_time:Ljava/lang/String;
+
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+.end method
+
+.method public setStrategy_type(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    .line 2
+    iput-object p1, p0, Lcom/gateio/biz/kline/entity/StrategyStatisticsEntity;->strategy_type:Ljava/lang/String;
+
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+.end method
+
+.method public setTotal_follow_num(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    .line 2
+    iput-object p1, p0, Lcom/gateio/biz/kline/entity/StrategyStatisticsEntity;->total_follow_num:Ljava/lang/String;
+
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+.end method
+
+.method public setTotal_invest(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    .line 2
+    iput-object p1, p0, Lcom/gateio/biz/kline/entity/StrategyStatisticsEntity;->total_invest:Ljava/lang/String;
+
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+.end method

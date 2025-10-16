@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alert_cancel_array">
+        <item>仅忽略本次</item>
+        <item>10分钟后</item>
+        <item>30分钟后</item>
+        <item>2小时后</item>
+        <item>24小时后</item>
+        <item>永不提示</item>
+    </string-array>
+    <string-array name="chat_mute_unit">
+        <item>分钟</item>
+        <item>小时</item>
+        <item>天</item>
+        <item>月</item>
+    </string-array>
+    <string-array name="funding_share_desc">
+        <item>有一种幸福叫做稳</item>
+        <item>躺赢的人生不需要解释</item>
+        <item>专业领跑无限可能</item>
+        <item>小试牛刀，初显身手</item>
+        <item>道路千万条，稳字第一条</item>
+        <item>来理财吗？稳稳的那种</item>
+        <item>人间值得，未来可期</item>
+    </string-array>
+    <string-array name="home_week_string_array">
+        <item>星期日</item>
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+    </string-array>
+    <string-array name="modify_procedure_items">
+        <item>选择丢失的安全项</item>
+        <item>申请更改安全项</item>
+        <item>完成申请</item>
+    </string-array>
+    <string-array name="position_share_desc_loss">
+        <item>割肉是不可能了，这辈子都不可能割肉的</item>
+        <item>扶我起来，我还能炒币</item>
+        <item>大佬求轻割</item>
+        <item>大家稳住，这是敌军的阴谋</item>
+        <item>币友们，起床搬砖啦</item>
+        <item>我不属韭菜，我劝你善良</item>
+        <item>不要慌，技术性调整</item>
+        <item>不要怂就是干</item>
+    </string-array>
+    <string-array name="position_share_desc_win">
+        <item>夜观天象，众卿今晚梭哈</item>
+        <item>老夫玩币都是一把梭</item>
+        <item>上来了，就别下车</item>
+        <item>老哥这波稳</item>
+        <item>币圈大佬？叫我干啥</item>
+        <item>我就是币圈最靓的星</item>
+        <item>收割秘籍，九代单传</item>
+        <item>确认过眼神，我是对的人</item>
+        <item>空多K线掌上纹，掌声送给币圈人</item>
+    </string-array>
+    <string-array name="push_alert_cancel_array">
+        <item>30分钟</item>
+        <item>2小时</item>
+        <item>24小时</item>
+        <item>永不提示</item>
+    </string-array>
+    <string-array name="week_string_array">
+        <item>星期日</item>
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+    </string-array>
+    <string-array name="weekday">
+        <item>日</item>
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+    </string-array>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:text="@string/futures_chase_limit_max_chase_price" android:layout_weight="1.0" style="@style/Text_text_secondary_14_weight_400_v5" />
+    <TextView android:id="@id/tvMaxChase" style="@style/Text_text_primary_14_weight_500_v5" />
+</LinearLayout>

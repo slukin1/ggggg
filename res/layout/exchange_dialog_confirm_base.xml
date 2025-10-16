@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruffian.library.widget.RLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:background_normal="@color/uikit_cmpt_16_v3" app:corner_radius_top_left="16.0dip" app:corner_radius_top_right="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title_view" layout="@layout/exchange_dialog_title_view" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+    <com.gateio.lib.uikit.widget.GTCheckBoxV3 android:textSize="14.0dip" android:textColor="@color/uikit_text_1_v3" android:gravity="center_vertical" android:id="@id/check_no_reminder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:text="@string/no_tip_me" android:drawablePadding="4.0dip" app:uikit_button_size_v3="14.0dip" style="@style/Uikit_font_sans_2_0_weight_400" />
+    <com.gateio.lib.uikit.button.GTButtonV3 android:id="@id/btn_confirm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="35.0dip" android:text="@string/trans_qr" app:uikit_buttonDimenV3="medium" app:uikit_buttonTypeV3="primary" />
+</com.ruffian.library.widget.RLinearLayout>

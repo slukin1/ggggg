@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/linear_item" android:background="@drawable/fiat_choose_channel_bg" android:padding="@dimen/uikit_margin_padding_16" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/channel_icon" android:visibility="gone" android:layout_width="@dimen/uikit_dp_24" android:layout_height="@dimen/uikit_dp_24" android:scaleType="centerInside" android:layout_marginEnd="@dimen/uikit_dp_8" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_1_v3" android:layout_gravity="center_vertical" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Uikit_font_sans_2_0_weight_700" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_8">
+                <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_3_v3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fiat_unit_price" />
+                <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_1_v3" android:id="@id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/uikit_dp_4" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/labels" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.gateio.lib.uikit.button.GTButtonV3 android:textSize="@dimen/uikit_text_size_12" android:layout_gravity="center_vertical" android:id="@id/p2p_add_payment" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fiat_add" app:uikit_buttonDimenV3="xSmall" app:uikit_buttonTypeV3="text" />
+    </LinearLayout>
+    <View android:id="@id/divide" android:background="@color/uikit_divider_2_v3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="12.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/p2p_payment" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

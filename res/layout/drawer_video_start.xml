@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="start" android:orientation="vertical" android:tag="START" android:background="@color/color_80_000000" android:focusable="true" android:clickable="true" android:layout_width="240.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/uikit_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:text="@string/title_video_mute_list" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/refresh" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="16.0dip">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/ry_limit" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

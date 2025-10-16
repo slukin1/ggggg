@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_marginEnd="@dimen/margin_padding_16" style="@style/match_wrap_h">
+        <net.lucode.hackware.magicindicator.MagicIndicator android:id="@id/tabs" android:layout_width="fill_parent" android:layout_height="@dimen/tab_trans" android:overScrollMode="never" android:layout_toStartOf="@id/tv_select" />
+        <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_select" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:text="@string/trans_qb" android:layout_centerVertical="true" android:paddingStart="4.0dip" android:paddingEnd="4.0dip" android:layout_marginStart="@dimen/margin_padding_16" android:layout_toStartOf="@id/iv_select" style="@style/tv_user_black_14" />
+        <ImageView android:id="@id/iv_select" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/wrap_wrap" />
+    </RelativeLayout>
+    <View style="@style/view_line_v_new" />
+    <com.gateio.common.view.CustomViewpager android:id="@id/view_pager" android:scrollbars="none" android:fadingEdge="none" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+</LinearLayout>

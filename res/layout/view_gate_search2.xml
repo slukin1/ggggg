@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_gate_search" android:paddingTop="12.0dip" android:paddingStart="@dimen/margin_padding_16" android:paddingEnd="@dimen/margin_padding_16" style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_height="30.0dip" app:cardBackgroundColor="@color/uikit_color_f7f7f7_1c2b42" app:cardCornerRadius="15.0dip" app:cardElevation="0.0dip" style="@style/match_wrap" />
+    <TextView android:textColor="@color/uikit_color_999999_8692a3" android:gravity="center_vertical" android:paddingTop="12.0dip" android:text="@string/search" android:drawablePadding="4.0dip" android:layout_centerInParent="true" app:drawableStartCompat="@mipmap/ic_live_search2" style="@style/tv_user_white_12" />
+</RelativeLayout>

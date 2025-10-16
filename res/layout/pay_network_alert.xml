@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.lib.uikit.alert.GTAlertV5 android:id="@id/gt_network_alert" android:tag="gt_network_alert" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="76.0dip" android:text="@string/network_down_please_check" app:uikit_alertEndIconVisibleV5="false" app:uikit_alertShowCloseV5="true" app:uikit_alertTypeV5="red"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/item_all" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/uikit_color_333333_e6e6e6" android:id="@id/item_tv_country_code" android:padding="@dimen/margin_padding_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_padding_10" android:text="中国" android:layout_centerVertical="true" android:layout_toStartOf="@id/item_tv_country_status" />
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/uikit_color_999999_8692a3" android:id="@id/item_tv_country_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/register_live_country_not_supported" android:layout_centerVertical="true" android:paddingStart="@dimen/margin_padding_5" android:paddingEnd="@dimen/margin_padding_35" android:layout_alignParentEnd="true" />
+</RelativeLayout>

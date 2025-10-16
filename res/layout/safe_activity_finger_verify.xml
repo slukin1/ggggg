@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/uikit_bg_market_item" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/uikit_main_text_color" android:layout_gravity="end" android:id="@id/finger_skip" android:padding="@dimen/margin_padding_5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/safetycenter_password_login" app:drawableStartCompat="@mipmap/verify_style_switch" />
+    <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@mipmap/icon_gateio" />
+    <TextView android:textSize="@dimen/text_size_22" android:textStyle="bold" android:textColor="@color/uikit_main_text_color" android:layout_gravity="center_horizontal" android:id="@id/finger_verify_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_20" />
+    <TextView android:textColor="@color/second_text_color" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_10" android:text="@string/fingerprint_userprint" />
+    <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/finger_touch" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@mipmap/icon_touch_id" />
+    <TextView android:textColor="@color/common_red" android:layout_gravity="center_horizontal" android:id="@id/finger_verify_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_20" android:text="@string/fingerprint_dialog_guide" />
+    <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="2.0" />
+    <TextView android:textColor="@color/c2c_blue" android:gravity="center" android:id="@id/finger_verify_cancel" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_padding_20" android:text="@string/fingerprint_dialog_usepassword" />
+</LinearLayout>

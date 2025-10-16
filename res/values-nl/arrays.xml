@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alert_cancel_array">
+        <item>Alleen deze keer negeren</item>
+        <item>10 minuten later</item>
+        <item>30 minuten later</item>
+        <item>2 uur later</item>
+        <item>24 uur later</item>
+        <item>Nooit</item>
+    </string-array>
+    <string-array name="exo_controls_playback_speeds">
+        <item>0,25x</item>
+        <item>0,5x</item>
+        <item>0,75x</item>
+        <item>Normaal</item>
+        <item>1,25x</item>
+        <item>1,5x</item>
+        <item>2x</item>
+    </string-array>
+    <string-array name="funding_share_desc">
+        <item>Geluk bestaat, het noemt stabiliteit</item>
+        <item>Kies Gate en win in een handomdraai</item>
+        <item>Een professionele leider is grenzeloos</item>
+        <item>Probeer Gate uit om uw talenten weer te geven</item>
+        <item>Alle wegen leiden naar Rome maar robuustheid staat voorop</item>
+        <item>Wil je beter geld beheren? Stabiliteit is de sleutel</item>
+        <item>Het leven is de moeite waard en de toekomst is veelbelovend</item>
+    </string-array>
+    <string-array name="home_week_string_array">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+    <string-array name="modify_procedure_items">
+        <item>Kies een beveiligingsinstelling om te wijzigen</item>
+        <item>Een wijziging aanvragen</item>
+        <item>Toepassing beëindigen</item>
+    </string-array>
+    <string-array name="position_share_desc_loss">
+        <item>Verlies beperken? Nooit!</item>
+        <item>Houden en afwachten.</item>
+        <item>Minder verlies</item>
+        <item>Hij die het laatst lacht, lacht het best.</item>
+        <item>Rise and shine. Tijd voor actie.</item>
+        <item>Wees vriendelijk tegen me.</item>
+        <item>Geen paniek.</item>
+        <item>All in. Ik heb er vertrouwen in.</item>
+    </string-array>
+    <string-array name="position_share_desc_win">
+        <item>All-in en win veel.</item>
+        <item>All in, zoals altijd.</item>
+        <item>Gewoon vasthouden</item>
+        <item>Bewaar het gewoon</item>
+        <item>De volgende stap? Trends volgen</item>
+        <item>Ik ben de beste!</item>
+        <item>Volg mij om groots te winnen.</item>
+        <item>Ik ben op de goede weg zoals altijd!</item>
+        <item>Long of short? Dat hangt van mij af.</item>
+    </string-array>
+    <string-array name="push_alert_cancel_array">
+        <item>For 30 minutes</item>
+        <item>For 2 hours</item>
+        <item>For 24 hours</item>
+        <item>Forever</item>
+    </string-array>
+    <string-array name="week_string_array">
+        <item>zo</item>
+        <item>ma</item>
+        <item>di</item>
+        <item>wo</item>
+        <item>do</item>
+        <item>vr</item>
+        <item>za</item>
+    </string-array>
+</resources>

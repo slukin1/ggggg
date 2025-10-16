@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/selector_item_check_bg" android:layout_width="fill_parent" android:layout_height="@dimen/dp_52" android:layout_marginBottom="8.0dip" android:paddingStart="@dimen/margin_padding_16" android:paddingEnd="@dimen/margin_padding_16" android:layout_marginStart="@dimen/margin_padding_24" android:layout_marginEnd="@dimen/margin_padding_24"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/ts_16" android:textColor="@color/text_1" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="@dimen/margin_padding_10" app:drawableEndCompat="@mipmap/ic_network_hot_wa" app:drawableTint="@color/selector_funct1_trans_walletlib" />
+    <Space style="@style/space" />
+    <TextView android:textSize="@dimen/ts_14" android:textColor="@color/text_4" android:id="@id/paused" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wallets_paused" />
+    <ImageView android:id="@id/check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_checkbox_comlib" />
+</LinearLayout>

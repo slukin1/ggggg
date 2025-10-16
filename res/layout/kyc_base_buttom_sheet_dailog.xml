@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruffian.library.widget.RLinearLayout android:orientation="vertical" android:paddingBottom="@dimen/uikit_margin_padding_12" android:layout_width="fill_parent" android:layout_height="fill_parent" app:background_normal="@color/uikit_layer_1_v5" app:corner_radius_top_left="@dimen/uikit_radius_12" app:corner_radius_top_right="@dimen/uikit_radius_12"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.kyclib.view.select_common.SelectCommonHeader android:id="@id/popup_header" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.core.widget.NestedScrollView android:id="@id/content_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHeight_max="500.0dip" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.gateio.lib.uikit.helper.GTFooterButtonV5 android:id="@id/footer_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_16" android:layout_marginBottom="@dimen/margin_padding_16" android:layout_marginStart="@dimen/uikit_margin_padding_16" android:layout_marginEnd="@dimen/uikit_margin_padding_16" />
+</com.ruffian.library.widget.RLinearLayout>

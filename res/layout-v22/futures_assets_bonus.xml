@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:paddingHorizontal="16.0dip" style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/futures_assets_currency_header" layout="@layout/futures_assets_currency_header" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+        <com.gateio.gateio.view.FuturesDashTextViewV5 android:id="@id/futures_assets_line_1_label_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/exchange_futures_assets_wallet_assets" android:layout_weight="1.0" android:layout_marginEnd="@dimen/margin_padding_10" app:uikit_underline_tips="@string/exchange_futures_assets_wallet_assets_tip" style="@style/Text_text_secondary_12_weight_400_v5" />
+        <com.gateio.gateio.view.FuturesDashTextViewV5 android:gravity="end" android:id="@id/futures_assets_line_1_label_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/exchange_futures_assets_account_assets" android:layout_weight="1.0" app:uikit_underline_tips="@string/exchange_futures_assets_account_assets_tip" style="@style/Text_text_secondary_12_weight_400_v5" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/futures_assets_line_1_value_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/margin_padding_10" style="@style/Text_text_primary_14_weight_500_v5" />
+        <TextView android:gravity="end" android:id="@id/futures_assets_line_1_value_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Text_text_primary_14_weight_500_v5" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <com.gateio.gateio.view.FuturesDashTextViewV5 android:id="@id/futures_assets_line_2_label_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/exchange_futures_assets_unrealized_pnl" android:layout_weight="1.0" android:layout_marginEnd="@dimen/margin_padding_10" app:uikit_underline_tips="@string/exchange_futures_assets_unrealized_pnl_tip" style="@style/Text_text_secondary_12_weight_400_v5" />
+        <com.gateio.gateio.view.FuturesDashTextViewV5 android:gravity="end" android:id="@id/futures_assets_line_2_label_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/exchange_futures_assets_available" android:layout_weight="1.0" app:uikit_underline_tips="@string/exchange_futures_assets_available_tip" style="@style/Text_text_secondary_12_weight_400_v5" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/futures_assets_line_2_value_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/margin_padding_10" style="@style/Text_text_primary_14_weight_500_v5" />
+        <TextView android:gravity="end" android:id="@id/futures_assets_line_2_value_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Text_text_primary_14_weight_500_v5" />
+    </LinearLayout>
+</LinearLayout>

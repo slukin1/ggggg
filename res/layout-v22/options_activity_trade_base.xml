@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/uikit_bg_primary_v5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.gateio.view.GateioStatusPlaceHolderBar android:id="@id/holderBar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/layoutHeader" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.gateio.lib.uikit.alert.GTAlertV5 android:id="@id/gt_network_alert" android:tag="gt_network_alert" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/network_down_please_check" app:uikit_alertEndIconVisibleV5="false" app:uikit_alertShowCloseV5="true" app:uikit_alertTypeV5="red" />
+    <ViewStub android:id="@id/options_stub_system_upgrade" android:layout="@layout/options_view_center_tips" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/tvOptionsChain" />
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/mSwipeRefreshLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:srlEnableLoadMore="false" app:srlHeaderMaxDragRate="1.5" app:srlHeaderTriggerRate="0.7">
+        <com.gateio.biz.exchange.ui.widget.ExchangeRefreshHeaderV5 android:id="@id/futuresRefreshHeader" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/optionsCoordinator" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.google.android.material.appbar.AppBarLayout android:orientation="vertical" android:id="@id/optionsAppbar" android:background="@color/uikit_bg_primary_v5" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip" app:layout_behavior="com.gateio.lib.uikit.behavior.AppBarLayoutBehaviorV2">
+                <FrameLayout android:id="@id/layoutExpand" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" app:layout_scrollFlags="scroll" />
+                <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/margin_padding_16" android:paddingBottom="@dimen/margin_padding_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginHorizontal="8.0dip" app:layout_scrollFlags="scroll">
+                    <FrameLayout android:id="@id/layoutPlace" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_weight="200.0" android:layout_marginHorizontal="8.0dip" />
+                    <FrameLayout android:id="@id/layoutDepth" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="133.0" android:layout_marginStart="2.0dip" android:layout_marginEnd="8.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.gateio.lib.uikit.tab.v5.GTTabsV5 android:id="@id/optionsTabs" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_weight="1.0" />
+                    <com.gateio.uiComponent.GateIconFont android:textSize="20.0sp" android:textColor="@color/uikit_icon_tertiary_v5" android:layout_gravity="center_vertical" android:id="@id/ivOrderHistory" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_marginEnd="@dimen/margin_padding_16" />
+                </LinearLayout>
+                <View android:background="@color/uikit_line_divider_v5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            </com.google.android.material.appbar.AppBarLayout>
+            <androidx.viewpager2.widget.ViewPager2 android:id="@id/optionsViewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

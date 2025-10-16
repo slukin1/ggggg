@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/browserLin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/statusBarView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="22.0dip" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/actionBarLayout" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <ImageView android:id="@id/browserBackImg" android:background="@drawable/defisdk_navigation_goback_light" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginStart="12.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <ImageView android:id="@id/backDappList" android:background="@drawable/defisdk_navigation_golist_light" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginEnd="12.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="@dimen/defi_sp18" android:textColor="#ff333333" android:ellipsize="end" android:gravity="center" android:id="@id/browserTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="36.0dip" android:layout_marginEnd="36.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/backDappList" app:layout_constraintStart_toEndOf="@id/browserBackImg" app:layout_constraintTop_toTopOf="parent" />
+        <ImageView android:id="@id/browserReload" android:background="@drawable/defisdk_reload_day" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginEnd="16.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/backDappList" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.gate_sdk.web3_wallet.dapps.widget.DappBrowserSwipeLayout android:id="@id/swipe_refresh" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:id="@id/progressBar" android:layout_width="fill_parent" android:layout_height="3.0dip" android:indeterminate="false" android:progressTint="@color/defi_theme_color" style="?android:progressBarStyleHorizontal" />
+            <com.gate_sdk.web3_wallet.dapps.web3.Web3View android:id="@id/web3view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </com.gate_sdk.web3_wallet.dapps.widget.DappBrowserSwipeLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/card_1" android:paddingBottom="@dimen/margin_padding_30" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/ts_16" android:textStyle="bold" android:textColor="@color/text_1" android:padding="@dimen/margin_padding_24" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/wallets_giveaway_packages" android:layout_weight="1.0" />
+        <ImageView android:id="@id/close" android:paddingTop="@dimen/margin_padding_20" android:paddingBottom="@dimen/margin_padding_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_close_co" android:paddingStart="@dimen/margin_padding_24" android:paddingEnd="@dimen/margin_padding_24" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/ts_14" android:textColor="@color/uikit_text_3_v3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wallets_cash_out" android:layout_marginStart="@dimen/margin_padding_24" android:layout_marginEnd="@dimen/margin_padding_24" />
+    <com.gateio.walletslib.view.RatioLinearLayout android:orientation="horizontal" android:background="@mipmap/ic_point_card_wa" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_16" android:layout_marginBottom="@dimen/margin_padding_24" android:layout_marginStart="@dimen/margin_padding_24" android:layout_marginEnd="@dimen/margin_padding_24">
+        <RelativeLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0">
+            <TextView android:textSize="@dimen/ts_36" android:textStyle="bold" android:textColor="@color/text_1_light" android:id="@id/detention_point" android:paddingBottom="@dimen/margin_padding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            <TextView android:textColor="@color/text_1_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wallets_deductible_handling_fee" android:layout_below="@id/detention_point" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </com.gateio.walletslib.view.RatioLinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_padding_24" android:layout_marginEnd="@dimen/margin_padding_24">
+        <com.gateio.comlib.view.CornerTextView android:textSize="@dimen/ts_18" android:textStyle="bold" android:textColor="@color/brand_1" android:gravity="center" android:id="@id/reject" android:background="@color/bg_fifth" android:padding="@dimen/dp_10" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/wallets_continue" android:layout_weight="1.0" android:radius="@dimen/dp_5" />
+        <com.gateio.comlib.view.CornerTextView android:textSize="@dimen/ts_18" android:textStyle="bold" android:textColor="@color/uikit_text_inverse_primary_v5" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/receive" android:background="@color/uikit_cmpt_button_primary_v5" android:padding="@dimen/margin_padding_10" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/wallets_go_to_trade" android:layout_weight="1.0" android:radius="@dimen/dp_5" android:layout_marginStart="@dimen/margin_padding_8" />
+    </LinearLayout>
+</LinearLayout>

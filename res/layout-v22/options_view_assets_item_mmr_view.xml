@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruffian.library.widget.RLinearLayout android:gravity="center_vertical" android:id="@id/layoutRoot" android:paddingLeft="12.0dip" android:paddingTop="10.0dip" android:paddingRight="12.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="12.0dip" android:paddingVertical="10.0dip" app:border_color_normal="@color/uikit_line_border_subtle_v5" app:border_width_normal="1.0dip" app:corner_radius="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:text="@string/exchange_unified_account_mmr" android:layout_weight="1.0" style="@style/Text_text_primary_12_weight_500_v5" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/layoutMmr" android:visibility="visible" style="@style/wrap_match_h">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/icMmr" android:visibility="visible" android:layout_width="14.0dip" android:layout_height="14.0dip" android:src="@mipmap/exchange_icon_mmr_high" android:scaleType="centerCrop" />
+        <com.gateio.biz_options.view.OptionsDashTextViewV5 android:textColor="@color/uikit_text_success_v5" android:id="@id/tvMmr" android:visibility="visible" android:maxLines="1" android:layout_marginStart="4.0dip" app:uikit_underline_color="@color/uikit_text_success_v5" app:uikit_underline_dashclick="false" app:uikit_underline_show_more_text="false" style="@style/Text_text_primary_12_weight_500_v5" />
+    </LinearLayout>
+</com.ruffian.library.widget.RLinearLayout>

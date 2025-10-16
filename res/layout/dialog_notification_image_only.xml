@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ruffian.library.widget.RImageView android:id="@id/iv_only_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" app:corner_radius="8.0dip" />
+    <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_24" android:textColor="@color/uikit_bg_always_white_v5" android:id="@id/iv_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_16" android:text="" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@android:color/transparent" android:paddingBottom="60.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:textAlignment="center"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/statusRoot" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="14.0dip">
+            <ImageView android:id="@id/accessImage" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="110.0dip" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="76.0sp" android:id="@id/accessIcon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <TextView android:textSize="20.0sp" android:ellipsize="none" android:layout_gravity="center_horizontal" android:id="@id/accessTopText" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:textAlignment="center" />
+        <TextView android:textSize="20.0sp" android:layout_gravity="center_horizontal" android:id="@id/accessBottomText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/uikit_margin_padding_16" android:paddingTop="@dimen/uikit_margin_padding_8" android:paddingRight="@dimen/uikit_margin_padding_16" android:paddingBottom="@dimen/uikit_margin_padding_24" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_2_v3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fiatotc_account_safe_verify_tip" style="@style/Uikit_font_sans_2_0_weight_400" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/risk_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

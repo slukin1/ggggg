@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruffian.library.widget.RLinearLayout android:id="@id/clRoot" android:paddingBottom="16.0dip" app:background_normal="@color/uikit_layer_1_v5" app:corner_radius_top_left="12.0dip" app:corner_radius_top_right="12.0dip" style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/layoutCommonTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/futures_layout_dialog_common_title" />
+    <LinearLayout android:orientation="vertical" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+        <include android:id="@id/layoutCommonHeader" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginHorizontal="16.0dip" layout="@layout/futures_layout_dialog_common_pair_header" />
+        <RelativeLayout android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="16.0dip" android:layout_marginHorizontal="16.0dip" style="@style/match_wrap_h">
+            <TextView android:id="@id/tvOrderTypeTitle" android:maxWidth="225.0dip" android:text="@string/futures_v5_place_order_order_type" style="@style/Text_text_secondary_14_weight_400_v5" />
+            <TextView android:gravity="end" android:id="@id/tvOrderType" android:layout_width="fill_parent" android:text="--" android:layout_marginStart="4.0dip" android:layout_toEndOf="@id/tvOrderTypeTitle" style="@style/Text_text_primary_14_weight_500_v5" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rl_price_trigger" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:layout_marginHorizontal="16.0dip" style="@style/match_wrap_h">
+            <TextView android:id="@id/tv_title1" android:maxWidth="225.0dip" android:text="@string/futures_trigger_price" style="@style/Text_text_secondary_14_weight_400_v5" />
+            <TextView android:gravity="end" android:id="@id/tv_price_trigger" android:layout_width="fill_parent" android:text="--" android:layout_marginStart="4.0dip" android:layout_toEndOf="@id/tv_title1" style="@style/Text_text_primary_14_weight_500_v5" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:layout_marginHorizontal="16.0dip" style="@style/match_wrap_h">
+            <TextView android:id="@id/tv_price" android:text="@string/futures_v5_order_price" style="@style/Text_text_secondary_14_weight_400_v5" />
+            <TextView android:gravity="end" android:id="@id/tv_wtjg" android:layout_width="fill_parent" android:text="--" android:layout_marginStart="4.0dip" android:layout_toEndOf="@id/tv_price" style="@style/Text_text_primary_14_weight_500_v5" />
+            <TextView android:gravity="end" android:id="@id/tv_wtjg2" android:visibility="gone" android:layout_width="fill_parent" android:text="@string/futures_best" android:layout_marginStart="4.0dip" android:layout_toEndOf="@id/tv_price" style="@style/Text_text_primary_14_weight_500_v5" />
+        </RelativeLayout>
+        <LinearLayout android:id="@id/llPositionValue" android:visibility="gone" android:layout_width="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:layout_marginHorizontal="16.0dip" style="@style/wrap_wrap_h">
+            <com.gateio.gateio.view.FuturesDashTextViewV5 android:text="@string/futures_est_value" app:uikit_underline_tips="@string/futures_value_or_cost_tip" style="@style/Text_text_secondary_14_weight_400_v5" />
+            <TextView android:gravity="end" android:id="@id/tvOrderValue" android:layout_width="fill_parent" android:text="---" android:layout_marginStart="4.0dip" style="@style/Text_text_primary_14_weight_500_v5" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/rlWtsl" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:layout_marginHorizontal="16.0dip" style="@style/match_wrap_h">
+            <TextView android:id="@id/tv_wtsl_label" android:text="@string/futures_v5_amount_v1" style="@style/Text_text_secondary_14_weight_400_v5" />
+            <TextView android:gravity="end" android:id="@id/tv_wtsl" android:layout_width="fill_parent" android:text="--" android:layout_marginStart="4.0dip" android:layout_toEndOf="@id/tv_wtsl_label" style="@style/Text_text_primary_14_weight_500_v5" />
+        </RelativeLayout>
+        <LinearLayout android:id="@id/llMarginMode" android:visibility="visible" android:layout_width="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:layout_marginHorizontal="16.0dip" style="@style/wrap_wrap_h">
+            <TextView android:text="@string/futures_v5_place_order_margin_mode" style="@style/Text_text_secondary_14_weight_400_v5" />
+            <TextView android:gravity="end" android:id="@id/tvMarginMode" android:layout_width="fill_parent" android:text="---" android:layout_marginStart="8.0dip" style="@style/Text_text_primary_14_weight_500_v5" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/rl_est_gains" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:layout_marginHorizontal="16.0dip" style="@style/match_wrap_h">
+            <TextView android:id="@id/tv_title4" android:text="@string/futures_v5_place_order_est_pnl" android:layout_weight="1.0" style="@style/Text_text_secondary_14_weight_400_v5" />
+            <TextView android:gravity="end" android:id="@id/tv_est_gains" android:layout_width="wrap_content" android:text="--" android:textDirection="ltr" android:layout_marginStart="8.0dip" style="@style/Text_text_primary_14_weight_500_v5" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/rl_show_num" android:visibility="gone" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:layout_marginHorizontal="16.0dip" style="@style/match_wrap_h">
+            <TextView android:id="@id/tv_show_num_title" android:text="@string/futures_mark_show_num" style="@style/Text_text_secondary_14_weight_400_v5" />
+            <TextView android:gravity="end" android:id="@id/tv_show_num" android:layout_width="fill_parent" android:text="--" android:layout_marginStart="8.0dip" style="@style/Text_text_primary_14_weight_500_v5" />
+        </LinearLayout>
+        <TextView android:textColor="@color/uikit_text_warning_v5" android:id="@id/cl_tips" android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="16.0dip" android:text="@string/futures_v5_place_order_est_pnl_tips" android:layout_marginHorizontal="16.0dip" style="@style/Text_text_primary_12_weight_400_v5" />
+    </LinearLayout>
+    <com.gateio.lib.uikit.widget.GTCheckBoxV5 android:textSize="14.0sp" android:gravity="center_vertical" android:id="@id/cb_tips" android:visibility="visible" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:checked="false" android:text="@string/no_tip_me" android:drawablePadding="8.0dip" android:layout_marginHorizontal="16.0dip" app:uikit_button_size_v5="16.0dip" style="@style/Text_text_primary_14_weight_400_v5" />
+    <com.gateio.lib.uikit.button.GTButtonV5 android:id="@id/tv_confirm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_padding_16" android:layout_marginTop="16.0dip" android:layout_marginRight="@dimen/margin_padding_16" android:layout_marginBottom="16.0dip" android:text="@string/trans_qr" android:layout_marginHorizontal="@dimen/margin_padding_16" android:layout_marginVertical="16.0dip" app:layout_constraintBottom_toBottomOf="parent" app:uikit_buttonDimenV5="medium" app:uikit_buttonTypeV5="primary_black" />
+</com.ruffian.library.widget.RLinearLayout>

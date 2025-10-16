@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/color_f6f7f8_061725" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/swipyrefreshlayout" style="@style/match_match">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/listview" android:visibility="gone" android:scrollbars="none" android:listSelector="@color/bg_skin_white" android:divider="@color/uikit_bg_market_line" android:dividerHeight="0.5dip" android:overScrollMode="never" style="@style/match_wrap" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <TextView android:textSize="16.0sp" android:textColor="@color/color_b3b3b3_67738a" android:gravity="center" android:id="@id/tv_empty" android:text="@string/ticker_not_data" android:drawablePadding="8.0dip" android:layout_centerInParent="true" app:drawableTopCompat="@mipmap/ic_empty" style="@style/tv_user_black_16" />
+</RelativeLayout>

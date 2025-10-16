@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/uikit_bg_primary_v5" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <com.gateio.uiComponent.GateIconFont android:textSize="20.0sp" android:textColor="@color/uikit_icon_primary_v5" android:gravity="center_vertical" android:id="@id/iv_back" android:paddingLeft="@dimen/margin_padding_12" android:paddingRight="@dimen/margin_padding_12" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="" android:paddingHorizontal="@dimen/margin_padding_12" app:left_or_right="true" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/uikit_text_primary_v5" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/market_hqsz" style="@style/Uikit_font_sans_5_0_weight_600" />
+    </FrameLayout>
+    <com.gateio.common.view.CornerLinearLayout android:orientation="vertical" android:id="@id/ll_expand" android:background="@drawable/market_setting_selected" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginHorizontal="16.0dip" android:paddingHorizontal="16.0dip">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textColor="@color/uikit_text_primary_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/market_expand_candlestick_charts" style="@style/Uikit_font_sans_5_0_weight_500" />
+        <FrameLayout android:id="@id/v_expand_parent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+            <ImageView android:id="@id/iv_expand" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@mipmap/market_setting_img_expand" android:adjustViewBounds="true" />
+            <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@id/anim_expand" android:layout_width="fill_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" app:lottie_autoPlay="true" app:lottie_loop="true" />
+        </FrameLayout>
+    </com.gateio.common.view.CornerLinearLayout>
+    <com.gateio.common.view.CornerLinearLayout android:orientation="vertical" android:id="@id/ll_enter" android:background="@drawable/market_setting_unselect" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="16.0dip" android:layout_marginHorizontal="16.0dip" android:paddingHorizontal="16.0dip">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textColor="@color/uikit_text_primary_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/market_enter_trading_candlestick_charts" style="@style/Uikit_font_sans_5_0_weight_500" />
+        <FrameLayout android:id="@id/v_enter_parent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+            <ImageView android:layout_gravity="center" android:id="@id/iv_enter" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@mipmap/market_setting_img_enter" android:adjustViewBounds="true" />
+            <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@id/anim_enter" android:layout_width="fill_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" app:lottie_autoPlay="true" app:lottie_loop="true" />
+        </FrameLayout>
+    </com.gateio.common.view.CornerLinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/uikit_bg_primary_v5" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.title.GTNavBarV5 android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fiat_orders" />
+    <com.gateio.lib.uikit.tab.v5.GTTabsV5 android:id="@id/trade_type_tab" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/vp" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

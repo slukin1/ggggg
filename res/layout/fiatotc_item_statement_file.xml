@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp_4"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_8" android:layout_marginEnd="@dimen/uikit_dp_8">
+        <com.gateio.fiatotclib.view.RoundImageView android:id="@id/file" android:background="@drawable/fiatotc_bg1_divider5_r6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" app:imageWidthEqualHeight="true" app:roundradius="2.0" />
+        <ImageView android:id="@id/add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/fiatotc_icon_add_24" android:layout_centerInParent="true" app:tint="@color/uikit_icon_3_v3" />
+    </RelativeLayout>
+    <ImageView android:id="@id/delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/fiatotc_close_16" android:layout_alignParentEnd="true" />
+</RelativeLayout>

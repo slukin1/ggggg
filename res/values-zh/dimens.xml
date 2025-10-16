@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="limit_dialog_text_size">14.0sp</dimen>
+    <dimen name="uikit_limit_dialog_text_size">14.0sp</dimen>
+    <dimen name="width_timer_expired">50.0dip</dimen>
+    <dimen name="width_timer_price_pop">70.0dip</dimen>
+</resources>

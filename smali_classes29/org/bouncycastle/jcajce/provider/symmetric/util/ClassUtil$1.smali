@@ -1,0 +1,97 @@
+.class final Lorg/bouncycastle/jcajce/provider/symmetric/util/ClassUtil$1;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Ljava/security/PrivilegedAction;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lorg/bouncycastle/jcajce/provider/symmetric/util/ClassUtil;->loadClass(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Class;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic val$className:Ljava/lang/String;
+
+
+# direct methods
+.method constructor <init>(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    .line 2
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ClassUtil$1;->val$className:Ljava/lang/String;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 6
+    return-void
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+.end method
+
+
+# virtual methods
+.method public run()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    .line 2
+    :try_start_0
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ClassUtil$1;->val$className:Ljava/lang/String;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+
+    .line 6
+    move-result-object v0
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 7
+    return-object v0
+
+    .line 8
+    :catch_0
+    const/4 v0, 0x0
+
+    .line 9
+    return-object v0
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+.end method

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingTop="@dimen/dp_2" android:paddingBottom="@dimen/dp_2" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_content" android:background="@drawable/selector_item_check_bg_network" android:paddingLeft="@dimen/uikit_margin_padding_12" android:paddingTop="@dimen/uikit_margin_padding_10" android:paddingRight="@dimen/uikit_margin_padding_12" android:paddingBottom="@dimen/uikit_margin_padding_10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.gateio.walletslib.view.CircularImageView android:id="@id/icon_net" android:layout_width="@dimen/uikit_dp_32" android:layout_height="@dimen/uikit_dp_32" />
+        <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_1_v3" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="@dimen/margin_padding_10" android:layout_marginStart="@dimen/uikit_dp_8" style="@style/Uikit_font_sans_2_0_weight_500" />
+        <ImageView android:id="@id/iv_hot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_network_hot_wa" android:layout_marginStart="@dimen/uikit_dp_4" app:tint="@color/uikit_funct_1_v3" />
+        <com.gateio.lib.uikit.tag.GTTagV3 android:id="@id/gt_pause" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/uikit_dp_4" app:uikit_tagTextV3="@string/wallets_paused" app:uikit_tagTypeV3="gray" />
+        <Space style="@style/space" />
+        <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_icon_9_v3" android:id="@id/gt_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" app:left_or_right="false" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</FrameLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/ll_future_detail_normal" android:padding="@dimen/activity_horizontal_margin" style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/match_wrap_h">
+        <TextView android:textColor="@color/uikit_color_666666_abb0b7" android:layout_width="0.0dip" android:text="@string/future_wtj" android:layout_weight="1.2" style="@style/tv_user_gray_12" />
+        <TextView android:textColor="@color/uikit_color_666666_abb0b7" android:id="@id/tv_title_number" android:layout_width="0.0dip" android:text="@string/trans_wtsl" android:layout_weight="1.0" style="@style/tv_user_gray_12" />
+        <TextView android:textColor="@color/uikit_color_666666_abb0b7" android:gravity="end" android:layout_width="0.0dip" android:text="@string/futures_res" android:layout_weight="1.0" style="@style/tv_user_gray_12" />
+    </LinearLayout>
+    <LinearLayout style="@style/match_wrap_h">
+        <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_price" android:layout_width="0.0dip" android:layout_weight="1.2" style="@style/tv_user_black_12" />
+        <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_num" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/tv_user_black_12" />
+        <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:gravity="end" android:id="@id/tv_from" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/tv_user_black_12" />
+    </LinearLayout>
+    <LinearLayout android:layout_marginTop="@dimen/margin_padding_8" style="@style/match_wrap">
+        <TextView android:textColor="@color/uikit_color_666666_abb0b7" android:text="@string/trans_jyjd" style="@style/tv_user_gray_14" />
+        <ProgressBar android:id="@id/pb_order" android:layout_width="fill_parent" android:layout_height="8.0dip" android:layout_marginTop="8.0dip" android:max="100" style="?android:progressBarStyleHorizontal" />
+        <RelativeLayout android:layout_marginTop="4.0dip" style="@style/match_wrap">
+            <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_progress_num" android:singleLine="true" style="@style/tv_user_gray_12" />
+            <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_progress_percent" android:singleLine="true" android:layout_alignParentEnd="true" style="@style/tv_user_gray_12" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

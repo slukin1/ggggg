@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/fr_qrcode" android:background="@drawable/shape_deposit_qrcode_bg" android:padding="@dimen/uikit_margin_padding_12" android:layout_width="160.0dip" android:layout_height="160.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/qrcode" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="center" android:id="@id/coin_image" android:layout_width="@dimen/uikit_margin_padding_24" android:layout_height="@dimen/uikit_margin_padding_24" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_text_primary_v5" android:gravity="center_horizontal" android:id="@id/tag_Id" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_margin_padding_16" android:layout_marginTop="@dimen/uikit_margin_padding_24" android:layout_marginRight="@dimen/uikit_margin_padding_16" style="@style/Uikit_font_sans_5_0_weight_600" />
+</androidx.appcompat.widget.LinearLayoutCompat>

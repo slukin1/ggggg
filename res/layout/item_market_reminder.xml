@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.common.view.CornerLinearLayout android:orientation="vertical" android:background="@color/uikit_card_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:radius="8.0dip" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_check" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="12.0dip" android:paddingEnd="12.0dip">
+        <CheckBox android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/cb_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@drawable/cb_checkbox_market_reminder" android:layout_centerVertical="true" android:paddingEnd="8.0dip" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/uikit_text_1" android:id="@id/tv_market" android:layout_centerVertical="true" android:layout_toEndOf="@id/cb_select" style="@style/tv_user_black_16" />
+        <TextView android:textColor="@color/uikit_text_1" android:id="@id/tv_edit" android:text="@string/user_xg" android:layout_alignParentEnd="true" style="@style/tv_user_black_14" />
+        <TextView android:textColor="@color/uikit_text_3" android:id="@id/tv_delete" android:text="@string/main_delete" android:layout_centerVertical="true" android:layout_marginEnd="16.0dip" android:layout_toStartOf="@id/tv_edit" style="@style/tv_user_black_14" />
+    </RelativeLayout>
+    <View android:background="@color/uikit_divider_2" style="@style/uikit_view_line_mian_v" />
+    <LinearLayout android:layout_marginTop="16.0dip" android:layout_marginBottom="@dimen/margin_padding_10" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" style="@style/match_wrap_h">
+        <TextView android:textColor="@color/uikit_text_2" android:id="@id/tv_title1" android:text="@string/notification_jgzz" android:layout_weight="1.0" android:layout_marginEnd="16.0dip" style="@style/tv_user_black_14" />
+        <TextView android:textColor="@color/uikit_text_2" android:id="@id/tv_max_price" style="@style/tv_user_black_14" />
+    </LinearLayout>
+    <LinearLayout android:layout_marginTop="@dimen/margin_padding_10" android:layout_marginBottom="@dimen/margin_padding_10" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" style="@style/match_wrap_h">
+        <TextView android:textColor="@color/uikit_text_2" android:id="@id/tv_title2" android:text="@string/notification_jgdz" android:layout_weight="1.0" android:layout_marginEnd="16.0dip" style="@style/tv_user_black_14" />
+        <TextView android:textColor="@color/uikit_text_2" android:id="@id/tv_low_price" style="@style/tv_user_black_14" />
+    </LinearLayout>
+    <LinearLayout android:layout_marginTop="@dimen/margin_padding_10" android:layout_marginBottom="@dimen/margin_padding_10" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" style="@style/match_wrap_h">
+        <TextView android:textColor="@color/uikit_text_2" android:id="@id/tv_title3" android:text="@string/notification_zfc" android:layout_weight="1.0" android:layout_marginEnd="16.0dip" style="@style/tv_user_black_14" />
+        <TextView android:textColor="@color/uikit_text_2" android:id="@id/tv_max_rate" style="@style/tv_user_black_14" />
+    </LinearLayout>
+    <LinearLayout android:layout_marginTop="@dimen/margin_padding_10" android:layout_marginBottom="@dimen/margin_padding_10" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" style="@style/match_wrap_h">
+        <TextView android:textColor="@color/uikit_text_2" android:id="@id/tv_title4" android:text="@string/notification_dfc" android:layout_weight="1.0" android:layout_marginEnd="16.0dip" style="@style/tv_user_black_14" />
+        <TextView android:textColor="@color/uikit_text_2" android:id="@id/tv_low_rate" style="@style/tv_user_black_14" />
+    </LinearLayout>
+    <LinearLayout android:layout_marginTop="@dimen/margin_padding_10" android:layout_marginBottom="@dimen/margin_padding_10" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" style="@style/match_wrap_h">
+        <TextView android:textColor="@color/uikit_text_2" android:id="@id/tv_title5" android:text="@string/notification_txpl" android:layout_weight="1.0" android:layout_marginEnd="16.0dip" style="@style/tv_user_black_14" />
+        <TextView android:textColor="@color/uikit_text_2" android:id="@id/tv_frequency" style="@style/tv_user_black_14" />
+    </LinearLayout>
+</com.gateio.common.view.CornerLinearLayout>

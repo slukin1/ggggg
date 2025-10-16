@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/uikit_bg_primary_v5" android:focusable="true" android:focusableInTouchMode="true" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.title.GTNavBarV5 android:id="@id/search_title" android:layout_width="fill_parent" android:layout_height="44.0dip" android:text="@string/wallets_select_coin_deposit" app:uikit_titleColorV5="@color/uikit_icon_primary_v5" app:uikit_titleLeftColorV5="@color/uikit_icon_secondary_v5" app:uikit_titleRightColorV5="@color/uikit_icon_secondary_v5" app:uikit_titleRightSecondColorV5="@color/uikit_icon_secondary_v5" app:uikit_titleRightSecondV5="" app:uikit_titleRightV5="" />
+    <com.gateio.lib.uikit.search.GTSearchV5 android:id="@id/search" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="@dimen/uikit_margin_padding_16" android:layout_marginTop="@dimen/uikit_margin_padding_8" android:layout_marginRight="@dimen/uikit_margin_padding_16" android:layout_marginBottom="@dimen/uikit_margin_padding_8" android:hint="@string/wallets_travel_serch" android:layout_marginHorizontal="@dimen/uikit_margin_padding_16" />
+    <com.gateio.walletslib.view.SelectCoinWelfareView android:id="@id/welfare_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.gateio.lib.uikit.state.GTEmptyViewV5 android:layout_gravity="center_horizontal" android:id="@id/search_empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_80" app:uikit_emptyTypeV5="results_empty" app:uikit_titleTextV5="@string/wallets_search_no_data_new" />
+        <com.gateio.walletslib.view.SearchShowView android:id="@id/searchView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coor_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.google.android.material.appbar.AppBarLayout android:orientation="vertical" android:id="@id/app_bar" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+                <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll">
+                    <com.gateio.comlib.view.GateFlowViewV5 android:id="@id/search_history" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.gateio.comlib.view.GateDropdownView android:gravity="center_vertical" android:layout_gravity="end" android:id="@id/gt_pilot_drop" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_margin_padding_16" android:layout_marginRight="@dimen/uikit_margin_padding_16" android:layout_centerVertical="true" android:layout_alignParentEnd="true" android:layout_marginHorizontal="@dimen/uikit_margin_padding_16" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                </RelativeLayout>
+            </com.google.android.material.appbar.AppBarLayout>
+            <com.gateio.common.view.CustomViewpager android:id="@id/vp_main" android:fadingEdge="none" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </FrameLayout>
+</LinearLayout>

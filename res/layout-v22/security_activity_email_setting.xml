@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/uikit_bg_1_v3" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.title.GTTitleViewV3 android:id="@id/email_setting_title" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/security_safety_email_setting" />
+    <View android:background="@color/uikit_bg_2_v3" android:layout_width="fill_parent" android:layout_height="@dimen/margin_padding_8" />
+    <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/margin_padding_15" android:paddingBottom="@dimen/margin_padding_15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/margin_padding_10" android:paddingEnd="@dimen/margin_padding_10">
+        <TextView android:textColor="@color/uikit_color_333333_e6e6e6" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/security_safety_email_bind" android:layout_weight="1.0" />
+        <TextView android:textColor="@color/uikit_color_333333_e6e6e6" android:id="@id/email_setting_email" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/ts_14" android:textColor="@color/uikit_text_5_v3" android:id="@id/email_setting_email_edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_padding_6" android:layout_marginRight="@dimen/margin_padding_6" android:text="@string/security_user_xg" android:layout_marginHorizontal="@dimen/margin_padding_6" style="@style/Uikit_font_weight_500" />
+    </LinearLayout>
+    <View android:background="@color/uikit_bg_2_v3" android:layout_width="fill_parent" android:layout_height="@dimen/margin_padding_8" />
+    <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_color_666666_abb4c2" android:padding="@dimen/margin_padding_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/security_safe_email_label" />
+    <View android:background="@color/uikit_divider_2_v3" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/margin_padding_10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/uikit_color_333333_e6e6e6" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/user_login" android:layout_weight="1.0" />
+        <com.gateio.lib.uikit.switchview.GTSwitchV3 android:id="@id/email_setting_login" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View android:background="@color/uikit_divider_2_v3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="@dimen/margin_padding_10" android:layout_marginEnd="@dimen/margin_padding_10" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/margin_padding_10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/uikit_color_333333_e6e6e6" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/security_safety_email_safe" android:layout_weight="1.0" />
+        <com.gateio.lib.uikit.switchview.GTSwitchV3 android:id="@id/email_setting_safe" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View android:background="@color/uikit_divider_2_v3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="@dimen/margin_padding_10" android:layout_marginEnd="@dimen/margin_padding_10" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/margin_padding_10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/uikit_color_333333_e6e6e6" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/asset_tx" android:layout_weight="1.0" />
+        <com.gateio.lib.uikit.switchview.GTSwitchV3 android:id="@id/email_setting_withdraw" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View android:background="@color/uikit_divider_2_v3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="@dimen/margin_padding_10" android:layout_marginEnd="@dimen/margin_padding_10" />
+</LinearLayout>

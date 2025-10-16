@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/uikit_text_size_10" android:textColor="@color/ma5" android:id="@id/tv_index_text" android:paddingTop="1.0dip" android:paddingBottom="1.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textDirection="ltr" android:layout_marginStart="@dimen/uikit_margin_padding_8" />
+    <com.sparkhuu.klinelib.chart.view.KTimeLineAttachMatchRelativeLayout android:id="@id/ktimeline_rl_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/tv_index_text">
+        <com.sparkhuu.klinelib.chart.view.KFrameLayout android:id="@id/fl_main_chart" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/tv_index_text">
+            <ImageView android:layout_gravity="center" android:id="@id/iv_logo" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_logo" />
+            <com.sparkhuu.klinelib.chart.KCustomCombinedChart android:id="@id/price_chart" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/tuya_zoom_in" android:background="@drawable/bg_circle_tuya_zoom" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="100.0dip" android:scaleType="fitXY" />
+            <com.gateio.lib.uikit.state.GTLoadingViewV2 android:layout_gravity="center" android:id="@id/progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateTint="@color/uikit_brand_1_v3" />
+            <View android:layout_gravity="bottom" android:background="@color/line_grid" android:layout_width="fill_parent" android:layout_height="0.39999998dip" />
+        </com.sparkhuu.klinelib.chart.view.KFrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/fl_main_chart">
+            <FrameLayout android:orientation="vertical" android:id="@id/fm_vol" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_chart_common_height" android:layoutDirection="ltr">
+                <TextView android:textSize="@dimen/uikit_text_size_10" android:textColor="@color/uikit_text_4" android:gravity="start" android:id="@id/tv_volume" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textDirection="ltr" android:layout_marginStart="@dimen/uikit_margin_padding_8" />
+                <com.sparkhuu.klinelib.chart.CustomCombinedChart android:id="@id/vol_chart" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <View android:layout_gravity="bottom" android:background="@color/line_grid" android:layout_width="fill_parent" android:layout_height="0.39999998dip" />
+            </FrameLayout>
+            <FrameLayout android:orientation="vertical" android:id="@id/fm_macd" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_chart_common_height" android:layoutDirection="ltr">
+                <TextView android:textSize="@dimen/uikit_text_size_10" android:textColor="@color/uikit_text_4" android:gravity="start" android:id="@id/tv_macd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textDirection="ltr" android:layout_marginStart="@dimen/uikit_margin_padding_8" />
+                <com.sparkhuu.klinelib.chart.CustomCombinedChart android:id="@id/macd_chart" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <View android:layout_gravity="bottom" android:background="@color/line_grid" android:layout_width="fill_parent" android:layout_height="0.39999998dip" />
+            </FrameLayout>
+            <FrameLayout android:orientation="vertical" android:id="@id/fm_kdj" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_chart_common_height" android:layoutDirection="ltr">
+                <TextView android:textSize="@dimen/uikit_text_size_10" android:textColor="@color/uikit_text_4" android:gravity="start" android:id="@id/tv_kdj" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textDirection="ltr" android:layout_marginStart="@dimen/uikit_margin_padding_8" />
+                <com.sparkhuu.klinelib.chart.CustomCombinedChart android:id="@id/kdj_chart" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <View android:layout_gravity="bottom" android:background="@color/line_grid" android:layout_width="fill_parent" android:layout_height="0.39999998dip" />
+            </FrameLayout>
+            <FrameLayout android:orientation="vertical" android:id="@id/fm_rsi" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_chart_common_height" android:layoutDirection="ltr">
+                <TextView android:textSize="@dimen/uikit_text_size_10" android:gravity="start" android:id="@id/tv_rsi" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textDirection="ltr" android:layout_marginStart="@dimen/uikit_margin_padding_8" />
+                <com.sparkhuu.klinelib.chart.CustomCombinedChart android:id="@id/rsi_chart" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <View android:layout_gravity="bottom" android:background="@color/line_grid" android:layout_width="fill_parent" android:layout_height="0.39999998dip" />
+            </FrameLayout>
+            <FrameLayout android:orientation="vertical" android:id="@id/fm_wr" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_chart_common_height" android:layoutDirection="ltr">
+                <TextView android:textSize="@dimen/uikit_text_size_10" android:gravity="start" android:id="@id/tv_wr" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textDirection="ltr" android:layout_marginStart="@dimen/uikit_margin_padding_8" />
+                <com.sparkhuu.klinelib.chart.CustomCombinedChart android:id="@id/wr_chart" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <View android:layout_gravity="bottom" android:background="@color/line_grid" android:layout_width="fill_parent" android:layout_height="0.39999998dip" />
+            </FrameLayout>
+            <FrameLayout android:orientation="vertical" android:id="@id/fm_obv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_chart_common_height" android:layoutDirection="ltr">
+                <TextView android:textSize="@dimen/uikit_text_size_10" android:gravity="start" android:id="@id/tv_obv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textDirection="ltr" android:layout_marginStart="@dimen/uikit_margin_padding_8" />
+                <com.sparkhuu.klinelib.chart.CustomCombinedChart android:id="@id/obv_chart" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <View android:layout_gravity="bottom" android:background="@color/line_grid" android:layout_width="fill_parent" android:layout_height="0.39999998dip" />
+            </FrameLayout>
+            <FrameLayout android:orientation="vertical" android:id="@id/fm_stochrsi" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_chart_common_height" android:layoutDirection="ltr">
+                <TextView android:textSize="@dimen/uikit_text_size_10" android:gravity="start" android:id="@id/tv_stochrsi" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textDirection="ltr" android:layout_marginStart="@dimen/uikit_margin_padding_8" />
+                <com.sparkhuu.klinelib.chart.CustomCombinedChart android:id="@id/stochrsi_chart" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <View android:layout_gravity="bottom" android:background="@color/line_grid" android:layout_width="fill_parent" android:layout_height="0.39999998dip" />
+            </FrameLayout>
+        </LinearLayout>
+        <View android:id="@id/touch_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_icon_1_v3" android:gravity="center" android:id="@id/iv_back_right" android:background="@drawable/bg_oval_card1" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginBottom="@dimen/uikit_margin_padding_30" android:text="" android:layout_alignBottom="@id/fl_main_chart" android:layout_marginEnd="60.0dip" android:layout_alignParentEnd="true" />
+        <com.gateio.uiComponent.GateIconFont android:textColor="@color/uikit_icon_3_v3" android:id="@id/iv_full_screen" android:padding="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="26.0dip" android:text="" android:layout_alignBottom="@id/fl_main_chart" android:layout_marginStart="@dimen/uikit_margin_padding_8" />
+    </com.sparkhuu.klinelib.chart.view.KTimeLineAttachMatchRelativeLayout>
+    <com.sparkhuu.klinelib.chart.view.KLineChartInfoView android:id="@id/k_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_6" android:layout_alignParentTop="true" android:layout_marginStart="@dimen/uikit_margin_padding_8" android:layout_marginEnd="@dimen/uikit_margin_padding_8" />
+</RelativeLayout>

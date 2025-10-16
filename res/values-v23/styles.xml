@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Menu" parent="@android:style/TextAppearance.Material.Widget.ActionBar.Menu" />
+    <style name="Base.TextAppearance.AppCompat.Widget.Button.Inverse" parent="@android:style/TextAppearance.Material.Widget.Button.Inverse" />
+    <style name="Base.Theme.AppCompat" parent="@style/Base.V23.Theme.AppCompat" />
+    <style name="Base.Theme.AppCompat.Light" parent="@style/Base.V23.Theme.AppCompat.Light" />
+    <style name="Base.Theme.Jumio" parent="@style/Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:colorBackground">?jumio_background</item>
+        <item name="android:textColorPrimary">?jumio_text_foreground</item>
+        <item name="android:textColor">?jumio_text_foreground</item>
+        <item name="android:textColorHint">?jumio_search_bubble_foreground</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/jumio_grey200</item>
+        <item name="android:navigationBarColor">@color/nav_bar_scrim</item>
+        <item name="android:windowLightStatusBar">@bool/use_light_system_bars</item>
+        <item name="android:windowLightNavigationBar">@bool/use_light_system_bars</item>
+        <item name="bottomSheetDialogTheme">@style/Jumio.BottomSheetDialog</item>
+        <item name="bottomSheetStyle">@style/Jumio.ModalBottomSheet</item>
+        <item name="colorButtonNormal">@color/jumio_white</item>
+        <item name="colorControlActivated">@color/jumio_white</item>
+        <item name="colorControlNormal">?jumio_selection_icon_foreground</item>
+        <item name="colorOnPrimary">@color/jumio_grey200</item>
+        <item name="colorPrimary">@color/jumio_primary</item>
+        <item name="colorPrimaryVariant">@color/jumio_primary_dark</item>
+        <item name="colorSecondary">@color/jumio_gray_1</item>
+        <item name="jumio_background">@color/jumio_white</item>
+        <item name="jumio_bubble_background">@color/jumio_gray_1</item>
+        <item name="jumio_bubble_background_selected">@color/jumio_gray_4</item>
+        <item name="jumio_bubble_foreground">@color/jumio_gray_12</item>
+        <item name="jumio_bubble_outline">@color/jumio_gray_5</item>
+        <item name="jumio_bubble_outline_selected">@color/jumio_gray_7</item>
+        <item name="jumio_bubble_outline_width">@dimen/jumio_stroke_small</item>
+        <item name="jumio_bubble_outline_width_selected">@dimen/jumio_stroke_medium</item>
+        <item name="jumio_circle_item_background">@color/jumio_gray_3</item>
+        <item name="jumio_circle_item_foreground">@color/jumio_gray_7</item>
+        <item name="jumio_confirmation_image_background">@color/jumio_gray_1</item>
+        <item name="jumio_confirmation_image_background_border">@color/jumio_gray_3</item>
+        <item name="jumio_divider_color">@color/jumio_gray_7</item>
+        <item name="jumio_doc_type_icon_foreground">@color/jumio_gray_7</item>
+        <item name="jumio_error_circle_gradient_end">@color/jumio_yellow_2</item>
+        <item name="jumio_error_circle_gradient_start">@color/jumio_yellow_1</item>
+        <item name="jumio_error_circle_plain">@color/jumio_yellow_1</item>
+        <item name="jumio_face_outline">@color/jumio_gray_8</item>
+        <item name="jumio_face_primary">@color/jumio_gray_3</item>
+        <item name="jumio_face_secondary">@color/jumio_gray_6</item>
+        <item name="jumio_face_success">@color/jumio_primary</item>
+        <item name="jumio_image_border">@color/jumio_gray_3</item>
+        <item name="jumio_indicator_active">@color/jumio_gray_7</item>
+        <item name="jumio_indicator_default">@color/jumio_gray_3</item>
+        <item name="jumio_loading_circle_gradient_end">@color/jumio_green_5</item>
+        <item name="jumio_loading_circle_gradient_start">@color/jumio_primary</item>
+        <item name="jumio_loading_circle_icon">@color/jumio_white</item>
+        <item name="jumio_loading_circle_plain">@color/jumio_primary</item>
+        <item name="jumio_navigation_icon">@color/jumio_gray_12</item>
+        <item name="jumio_navigation_icon_dark">@color/jumio_gray_12</item>
+        <item name="jumio_primary_button_background">@color/jumio_primary</item>
+        <item name="jumio_primary_button_background_disabled">@color/jumio_green_1</item>
+        <item name="jumio_primary_button_background_pressed">@color/jumio_green_5</item>
+        <item name="jumio_primary_button_foreground">@color/jumio_gray_12</item>
+        <item name="jumio_primary_button_foreground_disabled">@color/jumio_gray_6</item>
+        <item name="jumio_primary_button_foreground_pressed">@color/jumio_black</item>
+        <item name="jumio_primary_button_outline">@android:color/transparent</item>
+        <item name="jumio_scanview_animation_background">@color/jumio_scrim_3</item>
+        <item name="jumio_scanview_bubble_background">@color/jumio_scrim_3</item>
+        <item name="jumio_scanview_bubble_foreground">@color/jumio_white</item>
+        <item name="jumio_scanview_foreground">@color/jumio_white</item>
+        <item name="jumio_scanview_shutter">@color/jumio_white</item>
+        <item name="jumio_scanview_shutter_dark">@color/jumio_gray_12</item>
+        <item name="jumio_scanview_shutter_dark_pressed">@color/jumio_white_alpha35</item>
+        <item name="jumio_scanview_shutter_pressed">@color/jumio_scrim_1</item>
+        <item name="jumio_search_bubble_background">@color/jumio_gray_6</item>
+        <item name="jumio_search_bubble_foreground">@color/jumio_gray_5</item>
+        <item name="jumio_secondary_button_background">@color/jumio_gray_2</item>
+        <item name="jumio_secondary_button_background_disabled">@color/jumio_gray_1</item>
+        <item name="jumio_secondary_button_background_pressed">@color/jumio_gray_3</item>
+        <item name="jumio_secondary_button_foreground">@color/jumio_gray_12</item>
+        <item name="jumio_secondary_button_foreground_disabled">@color/jumio_gray_5</item>
+        <item name="jumio_secondary_button_foreground_pressed">@color/jumio_gray_12</item>
+        <item name="jumio_secondary_button_outline">@color/jumio_gray_5</item>
+        <item name="jumio_selection_icon_foreground">@color/jumio_gray_7</item>
+        <item name="jumio_switch_thumb_off">@color/jumio_gray_2</item>
+        <item name="jumio_switch_track_off">@color/jumio_gray_5</item>
+        <item name="jumio_switch_track_on">@color/jumio_green_alpha50</item>
+        <item name="jumio_text_foreground">@color/jumio_gray_12</item>
+        <item name="materialAlertDialogTheme">@style/Jumio.MaterialAlertDialog</item>
+        <item name="materialButtonStyle">@style/Jumio.MaterialButton</item>
+        <item name="switchStyle">@style/Jumio.MaterialSwitch</item>
+    </style>
+    <style name="Base.Theme.MaterialThemeBuilder" parent="@style/Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">?colorSurface</item>
+        <item name="android:navigationBarColor">?android:colorBackground</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:navigationBarDividerColor">?colorControlHighlight</item>
+    </style>
+    <style name="Base.Widget.AppCompat.ActionButton.Overflow" parent="@android:style/Widget.Material.ActionButton.Overflow" />
+    <style name="Base.Widget.AppCompat.Button.Borderless.Colored" parent="@android:style/Widget.Material.Button.Borderless.Colored" />
+    <style name="Base.Widget.AppCompat.Button.Colored" parent="@android:style/Widget.Material.Button.Colored">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Widget.Button.Colored</item>
+    </style>
+    <style name="Base.Widget.AppCompat.EditText" parent="@android:style/Widget.Material.EditText">
+        <item name="android:breakStrategy">simple</item>
+        <item name="android:hyphenationFrequency">none</item>
+    </style>
+    <style name="Base.Widget.AppCompat.RatingBar.Indicator" parent="@android:style/Widget.Material.RatingBar.Indicator" />
+    <style name="Base.Widget.AppCompat.RatingBar.Small" parent="@android:style/Widget.Material.RatingBar.Small" />
+    <style name="Base.Widget.AppCompat.Spinner.Underlined" parent="@android:style/Widget.Material.Spinner.Underlined" />
+    <style name="Base.Widget.AppCompat.TextView" parent="@android:style/Widget.Material.TextView">
+        <item name="android:breakStrategy">high_quality</item>
+        <item name="android:hyphenationFrequency">none</item>
+    </style>
+    <style name="CardView" parent="@style/Base.CardView">
+        <item name="cardBackgroundColor">?android:colorBackgroundFloating</item>
+    </style>
+    <style name="ThemeOverlay.Material3.AutoCompleteTextView" parent="@style/Base.ThemeOverlay.Material3.AutoCompleteTextView">
+        <item name="colorControlNormal">@color/m3_textfield_indicator_text_color</item>
+    </style>
+    <style name="ThemeOverlay.Material3.TextInputEditText" parent="@style/Base.ThemeOverlay.Material3.TextInputEditText">
+        <item name="colorControlNormal">@color/m3_textfield_indicator_text_color</item>
+    </style>
+    <style name="Widget.Material3.ActionBar.Solid" parent="@style/Base.Widget.Material3.ActionBar.Solid">
+        <item name="background">@drawable/m3_appbar_background</item>
+        <item name="backgroundSplit">@drawable/m3_appbar_background</item>
+        <item name="backgroundStacked">@drawable/m3_appbar_background</item>
+    </style>
+    <style name="Widget.Material3.ActionMode" parent="@style/Base.Widget.Material3.ActionMode">
+        <item name="background">@drawable/m3_appbar_background</item>
+        <item name="backgroundSplit">@drawable/m3_appbar_background</item>
+    </style>
+    <style name="Widget.Material3.CompoundButton.CheckBox" parent="@style/Base.Widget.Material3.CompoundButton.CheckBox">
+        <item name="android:background">@drawable/m3_selection_control_ripple</item>
+    </style>
+    <style name="Widget.Material3.CompoundButton.RadioButton" parent="@style/Base.Widget.Material3.CompoundButton.RadioButton">
+        <item name="android:background">@drawable/m3_radiobutton_ripple</item>
+    </style>
+    <style name="Widget.Material3.CompoundButton.Switch" parent="@style/Base.Widget.Material3.CompoundButton.Switch">
+        <item name="android:background">@drawable/m3_selection_control_ripple</item>
+    </style>
+    <style name="Widget.Material3.Light.ActionBar.Solid" parent="@style/Base.Widget.Material3.Light.ActionBar.Solid">
+        <item name="background">@drawable/m3_appbar_background</item>
+        <item name="backgroundSplit">@drawable/m3_appbar_background</item>
+        <item name="backgroundStacked">@drawable/m3_appbar_background</item>
+    </style>
+    <style name="Widget.Material3.TabLayout.OnSurface" parent="@style/Base.Widget.Material3.TabLayout.OnSurface">
+        <item name="android:background">@drawable/m3_tabs_transparent_background</item>
+    </style>
+    <style name="Widget.MaterialComponents.PopupMenu.ContextMenu" parent="@style/Base.Widget.MaterialComponents.PopupMenu.ContextMenu">
+        <item name="android:popupBackground">?popupMenuBackground</item>
+        <item name="android:popupElevation">8.0dip</item>
+    </style>
+    <style name="Widget.MaterialComponents.PopupMenu.ListPopupWindow" parent="@style/Base.Widget.MaterialComponents.PopupMenu.ListPopupWindow">
+        <item name="android:popupBackground">?popupMenuBackground</item>
+        <item name="android:popupElevation">8.0dip</item>
+    </style>
+    <style name="Base.V23.Theme.AppCompat" parent="@style/Base.V22.Theme.AppCompat">
+        <item name="actionBarItemBackground">?android:actionBarItemBackground</item>
+        <item name="actionMenuTextAppearance">?android:actionMenuTextAppearance</item>
+        <item name="actionMenuTextColor">?android:actionMenuTextColor</item>
+        <item name="actionOverflowButtonStyle">?android:actionOverflowButtonStyle</item>
+        <item name="controlBackground">@drawable/abc_control_background_material</item>
+        <item name="ratingBarStyleIndicator">?android:ratingBarStyleIndicator</item>
+        <item name="ratingBarStyleSmall">?android:ratingBarStyleSmall</item>
+    </style>
+    <style name="Base.V23.Theme.AppCompat.Light" parent="@style/Base.V22.Theme.AppCompat.Light">
+        <item name="actionBarItemBackground">?android:actionBarItemBackground</item>
+        <item name="actionMenuTextAppearance">?android:actionMenuTextAppearance</item>
+        <item name="actionMenuTextColor">?android:actionMenuTextColor</item>
+        <item name="actionOverflowButtonStyle">?android:actionOverflowButtonStyle</item>
+        <item name="controlBackground">@drawable/abc_control_background_material</item>
+        <item name="ratingBarStyleIndicator">?android:ratingBarStyleIndicator</item>
+        <item name="ratingBarStyleSmall">?android:ratingBarStyleSmall</item>
+    </style>
+</resources>

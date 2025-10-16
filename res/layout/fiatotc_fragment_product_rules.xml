@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_spacing_16_v5" android:layout_marginTop="@dimen/uikit_spacing_20_v5" android:layout_marginRight="@dimen/uikit_spacing_16_v5">
+        <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_primary_v5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fiatotc_earnings" style="@style/Uikit_font_sans_5_0_weight_500" />
+        <com.gateio.lib.uikit.text.GTMultiLineTextViewV5 android:textColor="@color/uikit_text_secondary_v5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_spacing_12_v5" android:text="@string/fiatotc_earnings_des" style="@style/Uikit_font_sans_5_0_weight_400" />
+        <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_primary_v5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_spacing_16_v5" android:text="@string/fiatotc_redemption" style="@style/Uikit_font_sans_5_0_weight_500" />
+        <com.gateio.lib.uikit.text.GTMultiLineTextViewV5 android:textColor="@color/uikit_text_secondary_v5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_spacing_12_v5" android:text="@string/fiatotc_redemption_des" style="@style/Uikit_font_sans_5_0_weight_400" />
+    </LinearLayout>
+</ScrollView>

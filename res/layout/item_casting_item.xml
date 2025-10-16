@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="@dimen/length_12"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.widget.GTUnderlineTextViewV5 android:textSize="10.0sp" android:textColor="@color/uikit_text_tertiary_v5" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" style="@style/Uikit_font_sans_5_0_weight_400" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/uikit_text_primary_v5" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" style="@style/Uikit_font_sans_5_0_weight_500" />
+</LinearLayout>

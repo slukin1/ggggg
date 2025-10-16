@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:padding="@dimen/uikit_margin_padding_16" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="14.0dip" android:layout_height="14.0dip" android:src="@drawable/shape_new_user_progress" />
+            <View android:background="@color/uikit_text_brand_v5" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_primary_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_10" android:text="@string/home_new_conversion_sign_up" style="@style/Uikit_font_sans_5_0_weight_600" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0">
+        <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <View android:background="@color/uikit_text_brand_v5" android:layout_width="0.0dip" android:layout_height="2.0dip" android:layout_weight="1.0" />
+            <ImageView android:layout_width="14.0dip" android:layout_height="14.0dip" android:src="@drawable/shape_new_user_progress" />
+            <View android:background="@color/uikit_text_brand_v5" android:layout_width="0.0dip" android:layout_height="2.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_primary_v5" android:gravity="center" android:layout_gravity="center" android:paddingLeft="@dimen/uikit_margin_padding_10" android:paddingRight="@dimen/uikit_margin_padding_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_10" android:text="@string/home_new_conversion_identity_verification" style="@style/Uikit_font_sans_5_0_weight_600" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <View android:background="@color/uikit_cmpt_slider_inactive_line_v5" android:layout_width="0.0dip" android:layout_height="2.0dip" android:layout_weight="1.0" />
+            <ImageView android:layout_width="14.0dip" android:layout_height="14.0dip" android:src="@drawable/shape_new_user_pause" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_tertiary_v5" android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_10" android:text="@string/home_new_conversion_deposit" style="@style/Uikit_font_sans_5_0_weight_600" />
+    </LinearLayout>
+</LinearLayout>

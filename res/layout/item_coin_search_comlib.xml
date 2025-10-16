@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="@dimen/margin_padding_10" android:paddingBottom="@dimen/margin_padding_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/margin_padding_16" android:paddingEnd="@dimen/margin_padding_16"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_logo" android:layout_width="@dimen/margin_padding_15" android:layout_height="@dimen/margin_padding_15" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/ts_14" android:textStyle="bold" android:textColor="@color/text_1" android:id="@id/tv_currency" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/margin_padding_5" android:layout_toEndOf="@id/iv_logo" />
+    <TextView android:textSize="@dimen/ts_12" android:textColor="@color/uikit_text_3_v3" android:id="@id/tv_coin_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBaseline="@id/tv_currency" android:layout_centerVertical="true" android:layout_marginStart="@dimen/margin_padding_5" android:layout_toEndOf="@id/tv_currency" />
+    <TextView android:textSize="@dimen/ts_14" android:textColor="@color/text_4" android:id="@id/tv_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="20.0dip" android:layout_alignParentEnd="true" />
+</RelativeLayout>

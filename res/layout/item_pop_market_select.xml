@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/root_view" android:paddingLeft="@dimen/margin_padding_16" android:paddingTop="@dimen/margin_padding_12" android:paddingRight="@dimen/margin_padding_16" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/uikit_color_333333_e6e6e6" android:id="@id/tv_item" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/uikit_color_999999_8692a3" android:id="@id/tv_group" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_item" />
+    <View android:background="@color/uikit_color_ededed_263852" android:layout_width="0.0dip" android:layout_height="1.0px" android:layout_marginTop="@dimen/margin_padding_12" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_group" />
+</androidx.constraintlayout.widget.ConstraintLayout>

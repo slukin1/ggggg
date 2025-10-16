@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_spot_change" android:paddingTop="@dimen/k_margin_padding_6" android:paddingBottom="@dimen/k_margin_padding_6" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/uikit_text_size_10" android:textColor="@color/uikit_text_secondary_v5" android:layout_gravity="center" android:id="@id/tv_change_today_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kline_spot_change_today" style="@style/Uikit_font_sans_5_0_weight_400" />
+            <TextView android:textSize="@dimen/uikit_text_size_10" android:textColor="@color/uikit_function_trade_buy_v5" android:layout_gravity="center" android:id="@id/tv_change_today" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/k_margin_padding_2" android:text="--" style="@style/Uikit_font_sans_5_0_weight_400" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/uikit_text_size_10" android:textColor="@color/uikit_text_secondary_v5" android:layout_gravity="center" android:id="@id/tv_change_7_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kline_spot_change_days" style="@style/Uikit_font_sans_5_0_weight_400" />
+            <TextView android:textSize="@dimen/uikit_text_size_10" android:textColor="@color/uikit_function_trade_buy_v5" android:layout_gravity="center" android:id="@id/tv_change_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/k_margin_padding_2" android:text="--" style="@style/Uikit_font_sans_5_0_weight_400" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/uikit_text_size_10" android:textColor="@color/uikit_text_secondary_v5" android:layout_gravity="center" android:id="@id/tv_change_30_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kline_spot_change_days" style="@style/Uikit_font_sans_5_0_weight_400" />
+            <TextView android:textSize="@dimen/uikit_text_size_10" android:textColor="@color/uikit_function_trade_buy_v5" android:layout_gravity="center" android:id="@id/tv_change_30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/k_margin_padding_2" android:text="--" style="@style/Uikit_font_sans_5_0_weight_400" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/uikit_text_size_10" android:textColor="@color/uikit_text_secondary_v5" android:layout_gravity="center" android:id="@id/tv_change_90_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kline_spot_change_days" style="@style/Uikit_font_sans_5_0_weight_400" />
+            <TextView android:textSize="@dimen/uikit_text_size_10" android:textColor="@color/uikit_function_trade_buy_v5" android:layout_gravity="center" android:id="@id/tv_change_90" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/k_margin_padding_2" android:text="--" style="@style/Uikit_font_sans_5_0_weight_400" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/uikit_text_size_10" android:textColor="@color/uikit_text_secondary_v5" android:layout_gravity="center" android:id="@id/tv_change_180_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kline_spot_change_days" style="@style/Uikit_font_sans_5_0_weight_400" />
+            <TextView android:textSize="@dimen/uikit_text_size_10" android:textColor="@color/uikit_function_trade_buy_v5" android:layout_gravity="center" android:id="@id/tv_change_180" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/k_margin_padding_2" android:text="--" style="@style/Uikit_font_sans_5_0_weight_400" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/uikit_text_size_10" android:textColor="@color/uikit_text_secondary_v5" android:layout_gravity="center" android:id="@id/tv_change_year_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kline_spot_change_year" style="@style/Uikit_font_sans_5_0_weight_400" />
+            <TextView android:textSize="@dimen/uikit_text_size_10" android:textColor="@color/uikit_function_trade_buy_v5" android:layout_gravity="center" android:id="@id/tv_change_year" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/k_margin_padding_2" android:text="--" style="@style/Uikit_font_sans_5_0_weight_400" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/view_change_divider" android:background="@color/uikit_line_divider_v5" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0.5" />
+</merge>

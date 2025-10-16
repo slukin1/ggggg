@@ -1,0 +1,89 @@
+{
+  "eth": {
+    "networkType": "0",
+    "networkName": "Ethereum",
+    "networkImage": "https://prd-web-imgs.s3.ap-northeast-1.amazonaws.com/prd-web3-asset-imgs-triple/ETH.png",
+    "networkChainSimpleName": "ETH",
+    "networkChainID": "1",
+    "networkCoinType": "60",
+    "networkQRCodeChainNameArr": [
+      "ethereum"
+    ],
+    "networkSimpleSymbol": "ETH",
+    "networkFullSymbol": "Ethereum",
+    "networkPrecision": "18",
+    "networkApiAddress": "https://api.etherscan.io",
+    "networkBrowserAddress": "https://etherscan.io",
+    "networkGateChainName": "ETH",
+    "networkRestAddressArr": [
+      ""
+    ],
+    "networkColor": "#5A8AF7",
+    "networkQRCodeChainPrefix": "ethereum",
+    "confirmBlocks": 32,
+    "confirmTimes": "15.00",
+    "networkRpcAddressArr": [
+      "https://eth.llamarpc.com",
+      "https://api.bitstack.com/v1/0x3fUpL6bfQiybois33AustWo6LO3Lg5/ZlK9w6jeamGLx5pfRy3v83ozFuLPWKqi/ETH/mainnet"
+    ],
+    "confirmTimesTotal": "15.00"
+  },
+  "solana": {
+    "networkType": "0",
+    "networkName": "Solana",
+    "networkImage": "https://prd-web-imgs.s3.ap-northeast-1.amazonaws.com/prd-web3-asset-imgs-triple/SOL.png",
+    "networkChainSimpleName": "SOL",
+    "networkChainID": "",
+    "networkCoinType": "501",
+    "networkQRCodeChainNameArr": [
+      "solana"
+    ],
+    "networkSimpleSymbol": "SOL",
+    "networkFullSymbol": "Solana",
+    "networkPrecision": "9",
+    "networkApiAddress": "https://public-api.solscan.io",
+    "networkBrowserAddress": "https://explorer.solana.com",
+    "networkGateChainName": "SOL",
+    "networkRestAddressArr": [
+      ""
+    ],
+    "networkColor": "#2DD6BC",
+    "networkQRCodeChainPrefix": "solana",
+    "confirmBlocks": 20,
+    "confirmTimes": "1.00",
+    "networkRpcAddressArr": [
+      "https://api.bitstack.com/v1/0x3fUpL6bfQiybois33AustWo6LO3Lg5/hvIMK3wphAuzJUccVVMRl0whLmZJr2ZS/SOL/mainnet"
+    ],
+    "confirmTimesTotal": "1.00"
+  },
+  "base": {
+    "networkType": "1",
+    "networkName": "Base",
+    "networkImage": "https://prd-web-imgs.s3.ap-northeast-1.amazonaws.com/prd-web3-asset-imgs-triple/BASE.png",
+    "networkChainSimpleName": "BASE",
+    "networkChainID": "8453",
+    "networkCoinType": "60",
+    "networkQRCodeChainNameArr": [
+      "base"
+    ],
+    "networkSimpleSymbol": "ETH",
+    "networkFullSymbol": "Ethereum",
+    "networkPrecision": "18",
+    "networkApiAddress": null,
+    "networkBrowserAddress": "https://basescan.org",
+    "networkGateChainName": "BASEEVM",
+    "networkRestAddressArr": [
+      ""
+    ],
+    "networkColor": "#E8EEFE",
+    "networkQRCodeChainPrefix": "ethereum",
+    "confirmBlocks": 100,
+    "confirmTimes": "2.00",
+    "networkRpcAddressArr": [
+      "https://mainnet.base.org",
+      "https://api.bitstack.com/v1/0x3fUpL6bfQiybois33AustWo6LO3Lg5/IyA3NGslT5u2g8e5yHsn6IVMuySQbAmO/BASE/mainnet",
+      "https://developer-access-mainnet.base.org"
+    ],
+    "confirmTimesTotal": "2.00"
+  }
+}

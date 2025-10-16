@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/bg_wallet" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/layout_header" layout="@layout/layout_main_header" />
+    <androidx.drawerlayout.widget.DrawerLayout android:layout_gravity="end" android:id="@id/drawer_layout" style="@style/match_match">
+        <LinearLayout style="@style/match_match">
+            <RelativeLayout style="@style/match_wrap">
+                <net.lucode.hackware.magicindicator.MagicIndicator android:layout_gravity="center_horizontal" android:id="@id/magic_indicator" android:layout_height="48.0dip" android:paddingStart="@dimen/margin_padding_8" android:layout_toStartOf="@id/iv_filter" style="@style/match_wrap" />
+                <ImageView android:id="@id/iv_filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_filter" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/margin_padding_16" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <View style="@style/view_line_v2" />
+            <com.gateio.common.view.CustomViewpager android:id="@id/view_pager" style="@style/match_match" />
+        </LinearLayout>
+        <include android:id="@id/rl_drawer" layout="@layout/drawar_hold_bill" />
+    </androidx.drawerlayout.widget.DrawerLayout>
+</LinearLayout>

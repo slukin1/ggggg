@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gateio.biz.kline.widget.KlineLayoutTitle android:id="@id/layoutHeader" android:layout_width="fill_parent" android:layout_height="44.0dip" android:paddingEnd="12.0dip" />
+    <FrameLayout android:id="@id/titleBottomContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" />
+    <com.gateio.biz.kline.widget.KlinePreMintTitleView android:id="@id/pre_mint_title" android:layout_width="fill_parent" android:layout_height="44.0dip" android:paddingEnd="12.0dip" />
+    <com.gateio.biz.kline.widget.KlineCustomAlertView android:orientation="vertical" android:id="@id/alert_premint_tips" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</merge>

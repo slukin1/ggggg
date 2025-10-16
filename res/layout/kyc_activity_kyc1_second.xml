@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/uikit_margin_padding_16" android:paddingRight="@dimen/uikit_margin_padding_16" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.input.GTInputV5 android:id="@id/full_name" android:layout_width="fill_parent" android:layout_height="wrap_content" app:uikit_editDimenV5="large" app:uikit_editHintV5="@string/kyc_enter_hint" app:uikit_editTitleV5="@string/kyc_full_name" />
+    <com.gateio.lib.uikit.input.GTInputV5 android:id="@id/first_name" android:layout_width="fill_parent" android:layout_height="wrap_content" app:uikit_editDimenV5="large" app:uikit_editHintV5="@string/kyc_enter_hint" app:uikit_editTitleV5="@string/kyc_first_name" />
+    <com.gateio.lib.uikit.input.GTInputV5 android:id="@id/last_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_24" app:uikit_editDimenV5="large" app:uikit_editHintV5="@string/kyc_enter_hint" app:uikit_editTitleV5="@string/kyc_last_name" />
+    <com.gateio.lib.uikit.input.GTInputV5 android:id="@id/id_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_24" app:uikit_editDimenV5="large" app:uikit_editHintV5="@string/kyc_enter_hint" app:uikit_editTitleV5="@string/kyc_document_id" />
+    <com.gateio.kyclib.view.KycDropdownView android:id="@id/dropdown_birth" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_24" android:text="@string/kyc_choose_hint" />
+</LinearLayout>

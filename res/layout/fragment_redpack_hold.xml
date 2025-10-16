@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" style="@style/wrap_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_redpack_hold" />
+    <include layout="@layout/layout_redpack_result" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_cancel" android:visibility="gone" android:layout_marginTop="24.0dip" android:src="@mipmap/ic_cancel_redpack" style="@style/wrap_wrap" />
+</LinearLayout>

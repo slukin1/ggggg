@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/options_assets_currency_header" layout="@layout/options_view_assets_currency_header" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <com.gateio.biz_options.view.OptionsDashTextViewV5 android:id="@id/options_assets_line_1_label_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/exchange_futures_assets_total_margin_balance" android:layout_weight="1.0" android:layout_marginEnd="@dimen/margin_padding_10" app:uikit_underline_tips="@string/exchange_futures_assets_margin_balance_usdt_tip" style="@style/Text_text_secondary_12_weight_400_v5" />
+        <com.gateio.biz_options.view.OptionsDashTextViewV5 android:gravity="end" android:id="@id/options_assets_line_1_label_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/exchange_futures_assets_unrealized_pnl" android:layout_weight="1.0" app:uikit_underline_tips="@string/exchange_futures_assets_unrealized_pnl_tip" style="@style/Text_text_secondary_12_weight_400_v5" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/options_assets_line_1_value_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/margin_padding_10" style="@style/Text_text_primary_14_weight_500_v5" />
+        <TextView android:gravity="end" android:id="@id/options_assets_line_1_value_2" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" style="@style/Text_text_primary_14_weight_500_v5" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <com.gateio.biz_options.view.OptionsDashTextViewV5 android:id="@id/options_assets_line_2_label_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/exchange_futures_assets_total_maintenance_margin_level" android:layout_weight="1.0" android:layout_marginEnd="@dimen/margin_padding_10" app:uikit_underline_tips="@string/exchange_futures_assets_maintenance_margin_level_usdt_tip" app:uikit_underline_title="@string/exchange_v1_pmml_details_title" style="@style/Text_text_secondary_12_weight_400_v5" />
+        <com.gateio.biz_options.view.OptionsDashTextViewV5 android:gravity="end" android:id="@id/options_assets_line_2_label_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/exchange_futures_assets_total_initial_margin_level" android:layout_weight="1.0" app:uikit_underline_tips="@string/exchange_futures_assets_initial_margin_level_usdt_tip" app:uikit_underline_title="@string/exchange_v1_piml_detail_title" style="@style/Text_text_secondary_12_weight_400_v5" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/options_assets_line_2_value_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/margin_padding_10" style="@style/Text_text_primary_14_weight_500_v5" />
+        <TextView android:gravity="end" android:id="@id/options_assets_line_2_value_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Text_text_primary_14_weight_500_v5" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+        <com.gateio.lib.uikit.button.GTButtonV5 android:id="@id/options_assets_btn_deposit" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/options_deposit" android:layout_weight="1.0" app:uikit_buttonDimenV5="xSmall" app:uikit_buttonTypeV5="secondary_gray" />
+        <com.gateio.lib.uikit.button.GTButtonV5 android:id="@id/options_assets_btn_transfer" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/options_transfer" android:layout_weight="1.0" android:layout_marginStart="8.0dip" app:uikit_buttonDimenV5="xSmall" app:uikit_buttonTypeV5="secondary_gray" />
+        <com.gateio.lib.uikit.button.GTButtonV5 android:id="@id/options_assets_btn_convert" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/exchange_futures_assets_btn_convert" android:layout_weight="1.0" android:layout_marginStart="8.0dip" app:uikit_buttonDimenV5="xSmall" app:uikit_buttonTypeV5="secondary_gray" />
+    </LinearLayout>
+</LinearLayout>

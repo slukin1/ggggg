@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/shape_top_corner10" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_16" android:textStyle="bold" android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_16" android:text="@string/service_question_cate_hint" android:layout_centerHorizontal="true" android:layout_marginStart="@dimen/margin_padding_15" android:layout_marginEnd="@dimen/margin_padding_15" />
+    <ImageView android:id="@id/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_close_comment" android:layout_alignTop="@id/title" android:layout_alignBottom="@id/title" android:layout_marginEnd="@dimen/margin_padding_15" android:layout_alignParentEnd="true" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/cates" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_16" android:layout_below="@id/title" />
+</RelativeLayout>

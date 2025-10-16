@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.lib.uikit.title.GTTitleNavBarV5 android:id="@id/title_exchange" android:layout_width="fill_parent" android:layout_height="44.0dip" android:text="@string/home_web3_switch_classic"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

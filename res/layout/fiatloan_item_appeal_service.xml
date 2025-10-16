@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/uikit_margin_padding_24"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.common.view.GateioAvatarView android:id="@id/avatar" android:layout_width="@dimen/uikit_margin_padding_28" android:layout_height="@dimen/uikit_margin_padding_28" android:layout_alignParentEnd="true" app:avatar_text_size="14" />
+    <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_1_v3" android:id="@id/nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_marginEnd="@dimen/uikit_margin_padding_8" android:layout_toStartOf="@id/avatar" style="@style/Uikit_font_sans_2_0_weight_700" />
+    <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_1_v3" android:id="@id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_8" android:layout_below="@id/nickname" android:layout_alignEnd="@id/nickname" style="@style/Uikit_font_sans_2_0_weight_400" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/pic1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_8" android:layout_below="@id/message" android:layout_alignEnd="@id/nickname" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/pic2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_8" android:layout_below="@id/pic1" android:layout_alignEnd="@id/nickname" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/pic3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_8" android:layout_below="@id/pic2" android:layout_alignEnd="@id/nickname" />
+</RelativeLayout>

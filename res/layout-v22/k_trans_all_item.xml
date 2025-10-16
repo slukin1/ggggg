@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/ll_root" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:minHeight="30.0dip" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" style="@style/match_wrap_h"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_primary_v5" android:id="@id/trans_all_time" android:textFontWeight="400" style="@style/ww_wrap" />
+    <LinearLayout style="@style/ww_wrap">
+        <TextView android:id="@id/trans_all_price" style="@style/tv_user_black_12" />
+        <TextView android:textColor="@color/uikit_text_3_v3" android:id="@id/trans_all_cny" android:layout_marginTop="@dimen/k_margin_padding_2" android:textDirection="ltr" style="@style/tv_user_black_12" />
+    </LinearLayout>
+    <LinearLayout android:gravity="end" style="@style/ww_wrap">
+        <TextView android:textColor="@color/uikit_text_primary_v5" android:id="@id/trans_all_number" style="@style/tv_user_black_12" />
+        <TextView android:textColor="@color/uikit_text_secondary_v5" android:id="@id/trans_all_cny2" android:layout_marginTop="@dimen/k_margin_padding_2" android:textDirection="ltr" style="@style/tv_user_black_12" />
+    </LinearLayout>
+</LinearLayout>

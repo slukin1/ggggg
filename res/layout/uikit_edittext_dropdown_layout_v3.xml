@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_start_dropdown" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.dropdown.GTDropdownV3 android:id="@id/dropdown_start" android:layout_width="wrap_content" android:layout_height="wrap_content" app:uikit_dropdownCoinDimenV3="size16" />
+    <View android:background="@color/uikit_divider_4_v3" android:layout_width="@dimen/uikit_dp_1" android:layout_height="@dimen/uikit_margin_padding_14" android:layout_marginLeft="@dimen/uikit_dp_8" android:layout_marginRight="@dimen/uikit_dp_8" />
+</LinearLayout>

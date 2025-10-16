@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.gateio.view.CornerConstraintLayout android:background="@color/uikit_bg_primary_v5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:id="@id/nestScroll" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/length_16" android:paddingEnd="@dimen/length_16">
+            <LinearLayout android:gravity="center_vertical" android:id="@id/ll_current_market" android:paddingTop="@dimen/dp_8" android:paddingBottom="@dimen/dp_8" android:layout_width="wrap_content" android:layout_height="@dimen/length_40" android:paddingVertical="@dimen/dp_8" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <com.gateio.lib.uikit.widget.GTCheckBoxV5 android:textSize="12.0dip" android:gravity="center_vertical" android:id="@id/cb_current_market" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:text="@string/exchange_v1_current_market" android:drawablePadding="4.0dip" app:uikit_button_size_v5="12.0dip" style="@style/Text_text_primary_12_weight_400_v5" />
+            </LinearLayout>
+            <com.gateio.lib.uikit.button.GTButtonV5 android:id="@id/btn_cancel_all" android:layout_width="wrap_content" android:layout_height="@dimen/length_24" android:text="@string/exchange_v1_cancel_all" app:layout_constraintBottom_toBottomOf="@id/ll_current_market" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/ll_current_market" app:uikit_buttonDimenV5="xxSmall" app:uikit_buttonTypeV5="secondary_gray" />
+            <com.gateio.lib.uikit.state.GTEmptyV5 android:id="@id/optionsBottomProcessEmptyView" android:background="@color/uikit_bg_primary_v5" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/length_8" app:layout_constraintTop_toBottomOf="@id/ll_current_market" app:uikit_emptySizeV5="small" app:uikit_titleTextV5="@string/exchange_v1_no_data" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/optionsBottomOrderRV" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="-8.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/nestScroll" />
+</com.gateio.gateio.view.CornerConstraintLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_18" android:layout_marginStart="@dimen/margin_padding_16" android:layout_marginEnd="@dimen/margin_padding_16"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/uikit_main_text_color" android:id="@id/anchor_apply_step1_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_anchor_apply_step1" />
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/uikit_main_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_anchor_apply_step2" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/uikit_main_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_anchor_apply_step3" android:layout_alignParentEnd="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_10" android:layout_below="@id/anchor_apply_step1_title">
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/uikit_white" android:gravity="center" android:background="@drawable/shape_circle_blue_calendar_16" android:layout_width="20.0dip" android:layout_height="20.0dip" android:text="1" />
+        <View android:id="@id/anchor_apply_step2_line" android:background="@color/anchor_gray" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" android:layout_marginStart="@dimen/margin_padding_8" android:layout_marginEnd="@dimen/margin_padding_8" />
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/uikit_white" android:gravity="center" android:id="@id/anchor_apply_step2" android:background="@drawable/shape_circle_gray" android:layout_width="20.0dip" android:layout_height="20.0dip" android:text="2" />
+        <View android:id="@id/anchor_apply_step3_line" android:background="@color/anchor_gray" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" android:layout_marginStart="@dimen/margin_padding_8" android:layout_marginEnd="@dimen/margin_padding_8" />
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/uikit_white" android:gravity="center" android:id="@id/anchor_apply_step3" android:background="@drawable/shape_circle_gray" android:layout_width="20.0dip" android:layout_height="20.0dip" android:text="3" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:padding="@dimen/margin_padding_16" android:layout_alignParentBottom="true" style="@style/match_wrap_h"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_live_talk" android:background="@drawable/bg_live_talk" android:padding="@dimen/margin_padding_8" android:layout_width="@dimen/margin_padding_40" android:layout_height="@dimen/margin_padding_40" android:src="@mipmap/ic_live_talk" />
+    <ImageView android:id="@id/iv_live_redpack" android:background="@drawable/bg_live_talk" android:padding="@dimen/margin_padding_8" android:layout_width="@dimen/margin_padding_40" android:layout_height="@dimen/margin_padding_40" android:src="@mipmap/ic_live_redpack" android:layout_marginStart="@dimen/margin_padding_10" />
+    <ImageView android:id="@id/iv_live_slientlist" android:background="@drawable/bg_live_talk" android:padding="@dimen/margin_padding_8" android:layout_width="@dimen/margin_padding_40" android:layout_height="@dimen/margin_padding_40" android:src="@mipmap/ic_live_slientlist" android:layout_marginStart="@dimen/margin_padding_10" />
+    <ImageView android:id="@id/iv_live_mirror" android:background="@drawable/bg_live_talk" android:padding="@dimen/margin_padding_8" android:layout_width="@dimen/margin_padding_40" android:layout_height="@dimen/margin_padding_40" android:src="@mipmap/ic_mirror_off" android:layout_marginStart="@dimen/margin_padding_10" />
+    <ImageView android:id="@id/iv_live_share" android:background="@drawable/bg_live_talk" android:padding="@dimen/margin_padding_8" android:layout_width="@dimen/margin_padding_40" android:layout_height="@dimen/margin_padding_40" android:src="@mipmap/ic_share_live" android:layout_marginStart="@dimen/margin_padding_10" />
+    <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_20" android:gravity="center" android:id="@id/iv_im_translate" android:background="@drawable/bg_live_talk" android:layout_width="@dimen/margin_padding_40" android:layout_height="@dimen/margin_padding_40" android:text="" android:layout_marginStart="@dimen/margin_padding_10" />
+</LinearLayout>

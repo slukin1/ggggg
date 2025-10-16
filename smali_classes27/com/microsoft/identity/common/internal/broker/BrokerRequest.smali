@@ -1,0 +1,1270 @@
+.class public Lcom/microsoft/identity/common/internal/broker/BrokerRequest;
+.super Ljava/lang/Object;
+.source "BrokerRequest.java"
+
+# interfaces
+.implements Ljava/io/Serializable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/microsoft/identity/common/internal/broker/BrokerRequest$BrokerRequestBuilder;,
+        Lcom/microsoft/identity/common/internal/broker/BrokerRequest$SerializedNames;
+    }
+.end annotation
+
+
+# static fields
+.field private static final serialVersionUID:J = -0x78a8442b37605eaL
+
+
+# instance fields
+.field private mApplicationName:Ljava/lang/String;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "client_app_name"
+    .end annotation
+.end field
+
+.field private mApplicationVersion:Ljava/lang/String;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "client_app_version"
+    .end annotation
+.end field
+
+.field private mAuthenticationScheme:Lcom/microsoft/identity/common/internal/authscheme/AbstractAuthenticationScheme;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "authentication_scheme"
+    .end annotation
+.end field
+
+.field private mAuthority:Ljava/lang/String;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "authority"
+    .end annotation
+.end field
+
+.field private mAuthorizationAgent:Ljava/lang/String;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "authorization_agent"
+    .end annotation
+.end field
+
+.field private mClaims:Ljava/lang/String;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "claims"
+    .end annotation
+.end field
+
+.field private mClientId:Ljava/lang/String;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "client_id"
+    .end annotation
+.end field
+
+.field private mCorrelationId:Ljava/lang/String;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "correlation_id"
+    .end annotation
+.end field
+
+.field private mEnvironment:Ljava/lang/String;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "environment"
+    .end annotation
+.end field
+
+.field private mExtraOptions:Ljava/lang/String;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "extra_options"
+    .end annotation
+.end field
+
+.field private mExtraQueryStringParameter:Ljava/lang/String;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "extra_query_param"
+    .end annotation
+.end field
+
+.field private mForceRefresh:Z
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "force_refresh"
+    .end annotation
+.end field
+
+.field private mHomeAccountId:Ljava/lang/String;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "home_account_id"
+    .end annotation
+.end field
+
+.field private mLocalAccountId:Ljava/lang/String;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "local_account_id"
+    .end annotation
+.end field
+
+.field private mMsalVersion:Ljava/lang/String;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "client_version"
+    .end annotation
+.end field
+
+.field private mMultipleCloudsSupported:Z
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "multiple_clouds_supported"
+    .end annotation
+.end field
+
+.field private mPowerOptCheckEnabled:Z
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "power_opt_check_enabled"
+    .end annotation
+.end field
+
+.field private mPrompt:Ljava/lang/String;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "prompt"
+    .end annotation
+.end field
+
+.field private mRedirect:Ljava/lang/String;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "redirect_uri"
+    .end annotation
+.end field
+
+.field private mScope:Ljava/lang/String;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "scopes"
+    .end annotation
+.end field
+
+.field private mSdkType:Lcom/microsoft/identity/common/internal/request/SdkType;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "client_sdk_type"
+    .end annotation
+.end field
+
+.field private mUserName:Ljava/lang/String;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "username"
+    .end annotation
+.end field
+
+
+# direct methods
+.method constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/microsoft/identity/common/internal/request/SdkType;Ljava/lang/String;ZLjava/lang/String;Lcom/microsoft/identity/common/internal/authscheme/AbstractAuthenticationScheme;Z)V
+    .locals 11
+    .param p1    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p3    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p4    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p5    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p6    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p8    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p9    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p10    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p11    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p12    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p13    # Z
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p14    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p15    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p16    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p17    # Lcom/microsoft/identity/common/internal/request/SdkType;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p18    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p19    # Z
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p20    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p21    # Lcom/microsoft/identity/common/internal/authscheme/AbstractAuthenticationScheme;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p22    # Z
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move-object v2, p2
+
+    move-object v3, p3
+
+    move-object v4, p4
+
+    move-object/from16 v5, p10
+
+    move-object/from16 v6, p14
+
+    move-object/from16 v7, p15
+
+    move-object/from16 v8, p16
+
+    move-object/from16 v9, p17
+
+    move-object/from16 v10, p18
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    if-eqz v1, :cond_9
+
+    if-eqz v2, :cond_8
+
+    if-eqz v3, :cond_7
+
+    if-eqz v4, :cond_6
+
+    if-eqz v5, :cond_5
+
+    if-eqz v6, :cond_4
+
+    if-eqz v7, :cond_3
+
+    if-eqz v8, :cond_2
+
+    if-eqz v9, :cond_1
+
+    if-eqz v10, :cond_0
+
+    iput-object v1, v0, Lcom/microsoft/identity/common/internal/broker/BrokerRequest;->mAuthority:Ljava/lang/String;
+
+    iput-object v2, v0, Lcom/microsoft/identity/common/internal/broker/BrokerRequest;->mScope:Ljava/lang/String;
+
+    iput-object v3, v0, Lcom/microsoft/identity/common/internal/broker/BrokerRequest;->mRedirect:Ljava/lang/String;
+
+    iput-object v4, v0, Lcom/microsoft/identity/common/internal/broker/BrokerRequest;->mClientId:Ljava/lang/String;
+
+    move-object/from16 v1, p5
+
+    iput-object v1, v0, Lcom/microsoft/identity/common/internal/broker/BrokerRequest;->mUserName:Ljava/lang/String;
+
+    move-object/from16 v1, p6
+
+    iput-object v1, v0, Lcom/microsoft/identity/common/internal/broker/BrokerRequest;->mHomeAccountId:Ljava/lang/String;
+
+    move-object/from16 v1, p7
+
+    iput-object v1, v0, Lcom/microsoft/identity/common/internal/broker/BrokerRequest;->mLocalAccountId:Ljava/lang/String;
+
+    move-object/from16 v1, p8
+
+    iput-object v1, v0, Lcom/microsoft/identity/common/internal/broker/BrokerRequest;->mExtraQueryStringParameter:Ljava/lang/String;
+
+    move-object/from16 v1, p9
+
+    iput-object v1, v0, Lcom/microsoft/identity/common/internal/broker/BrokerRequest;->mExtraOptions:Ljava/lang/String;
+
+    iput-object v5, v0, Lcom/microsoft/identity/common/internal/broker/BrokerRequest;->mCorrelationId:Ljava/lang/String;
+
+    move-object/from16 v1, p11
+
+    iput-object v1, v0, Lcom/microsoft/identity/common/internal/broker/BrokerRequest;->mPrompt:Ljava/lang/String;
+
+    move-object/from16 v1, p12
+
+    iput-object v1, v0, Lcom/microsoft/identity/common/internal/broker/BrokerRequest;->mClaims:Ljava/lang/String;
+
+    move/from16 v1, p13
+
+    iput-boolean v1, v0, Lcom/microsoft/identity/common/internal/broker/BrokerRequest;->mForceRefresh:Z
+
+    iput-object v6, v0, Lcom/microsoft/identity/common/internal/broker/BrokerRequest;->mApplicationName:Ljava/lang/String;
+
+    iput-object v7, v0, Lcom/microsoft/identity/common/internal/broker/BrokerRequest;->mApplicationVersion:Ljava/lang/String;
+
+    iput-object v8, v0, Lcom/microsoft/identity/common/internal/broker/BrokerRequest;->mMsalVersion:Ljava/lang/String;
+
+    iput-object v9, v0, Lcom/microsoft/identity/common/internal/broker/BrokerRequest;->mSdkType:Lcom/microsoft/identity/common/internal/request/SdkType;
+
+    iput-object v10, v0, Lcom/microsoft/identity/common/internal/broker/BrokerRequest;->mEnvironment:Ljava/lang/String;
+
+    move/from16 v1, p19
+
+    iput-boolean v1, v0, Lcom/microsoft/identity/common/internal/broker/BrokerRequest;->mMultipleCloudsSupported:Z
+
+    move-object/from16 v1, p20
+
+    iput-object v1, v0, Lcom/microsoft/identity/common/internal/broker/BrokerRequest;->mAuthorizationAgent:Ljava/lang/String;
+
+    move-object/from16 v1, p21
+
+    iput-object v1, v0, Lcom/microsoft/identity/common/internal/broker/BrokerRequest;->mAuthenticationScheme:Lcom/microsoft/identity/common/internal/authscheme/AbstractAuthenticationScheme;
+
+    move/from16 v1, p22
+
+    iput-boolean v1, v0, Lcom/microsoft/identity/common/internal/broker/BrokerRequest;->mPowerOptCheckEnabled:Z
+
+    return-void
+
+    :cond_0
+    new-instance v1, Ljava/lang/NullPointerException;
+
+    const-string/jumbo v2, "environment is marked non-null but is null"
+
+    invoke-direct {v1, v2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    throw v1
+
+    :cond_1
+    new-instance v1, Ljava/lang/NullPointerException;
+
+    const-string/jumbo v2, "sdkType is marked non-null but is null"
+
+    invoke-direct {v1, v2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    throw v1
+
+    :cond_2
+    new-instance v1, Ljava/lang/NullPointerException;
+
+    const-string/jumbo v2, "msalVersion is marked non-null but is null"
+
+    invoke-direct {v1, v2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    throw v1
+
+    :cond_3
+    new-instance v1, Ljava/lang/NullPointerException;
+
+    const-string/jumbo v2, "applicationVersion is marked non-null but is null"
+
+    invoke-direct {v1, v2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    throw v1
+
+    :cond_4
+    new-instance v1, Ljava/lang/NullPointerException;
+
+    const-string/jumbo v2, "applicationName is marked non-null but is null"
+
+    invoke-direct {v1, v2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    throw v1
+
+    :cond_5
+    new-instance v1, Ljava/lang/NullPointerException;
+
+    const-string/jumbo v2, "correlationId is marked non-null but is null"
+
+    invoke-direct {v1, v2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    throw v1
+
+    :cond_6
+    new-instance v1, Ljava/lang/NullPointerException;
+
+    const-string/jumbo v2, "clientId is marked non-null but is null"
+
+    invoke-direct {v1, v2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    throw v1
+
+    :cond_7
+    new-instance v1, Ljava/lang/NullPointerException;
+
+    const-string/jumbo v2, "redirect is marked non-null but is null"
+
+    invoke-direct {v1, v2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    throw v1
+
+    :cond_8
+    new-instance v1, Ljava/lang/NullPointerException;
+
+    const-string/jumbo v2, "scope is marked non-null but is null"
+
+    invoke-direct {v1, v2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    throw v1
+
+    :cond_9
+    new-instance v1, Ljava/lang/NullPointerException;
+
+    const-string/jumbo v2, "authority is marked non-null but is null"
+
+    invoke-direct {v1, v2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    throw v1
+.end method
+
+.method public static builder()Lcom/microsoft/identity/common/internal/broker/BrokerRequest$BrokerRequestBuilder;
+    .locals 1
+
+    .line 1
+    .line 2
+    new-instance v0, Lcom/microsoft/identity/common/internal/broker/BrokerRequest$BrokerRequestBuilder;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-direct {v0}, Lcom/microsoft/identity/common/internal/broker/BrokerRequest$BrokerRequestBuilder;-><init>()V
+
+    .line 6
+    return-object v0
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+.end method
+
+
+# virtual methods
+.method public getApplicationName()Ljava/lang/String;
+    .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/microsoft/identity/common/internal/broker/BrokerRequest;->mApplicationName:Ljava/lang/String;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+.end method
+
+.method public getApplicationVersion()Ljava/lang/String;
+    .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/microsoft/identity/common/internal/broker/BrokerRequest;->mApplicationVersion:Ljava/lang/String;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+.end method
+
+.method public getAuthenticationScheme()Lcom/microsoft/identity/common/internal/authscheme/AbstractAuthenticationScheme;
+    .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/microsoft/identity/common/internal/broker/BrokerRequest;->mAuthenticationScheme:Lcom/microsoft/identity/common/internal/authscheme/AbstractAuthenticationScheme;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+.end method
+
+.method public getAuthority()Ljava/lang/String;
+    .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/microsoft/identity/common/internal/broker/BrokerRequest;->mAuthority:Ljava/lang/String;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+.end method
+
+.method public getAuthorizationAgent()Ljava/lang/String;
+    .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/microsoft/identity/common/internal/broker/BrokerRequest;->mAuthorizationAgent:Ljava/lang/String;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+.end method
+
+.method public getClaims()Ljava/lang/String;
+    .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/microsoft/identity/common/internal/broker/BrokerRequest;->mClaims:Ljava/lang/String;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+.end method
+
+.method public getClientId()Ljava/lang/String;
+    .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/microsoft/identity/common/internal/broker/BrokerRequest;->mClientId:Ljava/lang/String;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+.end method
+
+.method public getCorrelationId()Ljava/lang/String;
+    .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/microsoft/identity/common/internal/broker/BrokerRequest;->mCorrelationId:Ljava/lang/String;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+.end method
+
+.method public getEnvironment()Ljava/lang/String;
+    .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/microsoft/identity/common/internal/broker/BrokerRequest;->mEnvironment:Ljava/lang/String;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+.end method
+
+.method public getExtraOptions()Ljava/lang/String;
+    .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/microsoft/identity/common/internal/broker/BrokerRequest;->mExtraOptions:Ljava/lang/String;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+.end method
+
+.method public getExtraQueryStringParameter()Ljava/lang/String;
+    .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/microsoft/identity/common/internal/broker/BrokerRequest;->mExtraQueryStringParameter:Ljava/lang/String;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+.end method
+
+.method public getHomeAccountId()Ljava/lang/String;
+    .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/microsoft/identity/common/internal/broker/BrokerRequest;->mHomeAccountId:Ljava/lang/String;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+.end method
+
+.method public getLocalAccountId()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/microsoft/identity/common/internal/broker/BrokerRequest;->mLocalAccountId:Ljava/lang/String;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+.end method
+
+.method public getMsalVersion()Ljava/lang/String;
+    .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/microsoft/identity/common/internal/broker/BrokerRequest;->mMsalVersion:Ljava/lang/String;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+.end method
+
+.method public getPrompt()Ljava/lang/String;
+    .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/microsoft/identity/common/internal/broker/BrokerRequest;->mPrompt:Ljava/lang/String;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+.end method
+
+.method public getRedirect()Ljava/lang/String;
+    .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/microsoft/identity/common/internal/broker/BrokerRequest;->mRedirect:Ljava/lang/String;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+.end method
+
+.method public getScope()Ljava/lang/String;
+    .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/microsoft/identity/common/internal/broker/BrokerRequest;->mScope:Ljava/lang/String;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+.end method
+
+.method public getSdkType()Lcom/microsoft/identity/common/internal/request/SdkType;
+    .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/microsoft/identity/common/internal/broker/BrokerRequest;->mSdkType:Lcom/microsoft/identity/common/internal/request/SdkType;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+.end method
+
+.method public getUserName()Ljava/lang/String;
+    .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/microsoft/identity/common/internal/broker/BrokerRequest;->mUserName:Ljava/lang/String;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+.end method
+
+.method public isForceRefresh()Z
+    .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    .line 1
+    .line 2
+    iget-boolean v0, p0, Lcom/microsoft/identity/common/internal/broker/BrokerRequest;->mForceRefresh:Z
+
+    .line 3
+    return v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+.end method
+
+.method public isMultipleCloudsSupported()Z
+    .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 1
+    .line 2
+    iget-boolean v0, p0, Lcom/microsoft/identity/common/internal/broker/BrokerRequest;->mMultipleCloudsSupported:Z
+
+    .line 3
+    return v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+.end method
+
+.method public isPowerOptCheckEnabled()Z
+    .locals 1
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    .line 1
+    .line 2
+    iget-boolean v0, p0, Lcom/microsoft/identity/common/internal/broker/BrokerRequest;->mPowerOptCheckEnabled:Z
+
+    .line 3
+    return v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+.end method

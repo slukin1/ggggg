@@ -1,0 +1,29 @@
+{
+  "resMsg": {
+    "method": "compliance.check.v2",
+    "code": 0,
+    "msg": "success"
+  },
+  "datas": {
+    "modules": {
+      "module_trade": {
+        "name": "module_trade",
+        "enabled": true,
+        "modeType": 1,
+        "customization": null,
+        "features": [{
+          "name": "pilot",
+          "enabled": false,
+          "modeType": 1,
+          "customization": null,
+          "features": []
+        }]
+      }
+    },
+    "tips": {
+      "content": "",
+      "enable": false
+    },
+    "version": "3.0.0"
+  }
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/uikit_color_ffffff_111f31" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.common.view.GateioTitleView android:id="@id/title_view" android:layout_width="fill_parent" android:layout_height="48.0dip" app:rightVisibility="false" app:titleText="@string/http_dns_resolution_service_title" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh" style="@style/match_match">
+        <LinearLayout style="@style/match_wrap">
+            <com.gateio.walletslib.view.NoticeView android:gravity="center_vertical" android:id="@id/notice" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_padding_16" android:layout_marginRight="@dimen/margin_padding_16" android:hint="@string/http_dns_resolution_service_proxy_tip" android:layout_marginHorizontal="@dimen/margin_padding_16" />
+            <TextView android:textColor="@color/color_999999_7c848d" android:id="@id/tv_kxjd" android:layout_marginLeft="@dimen/margin_padding_16" android:layout_marginTop="@dimen/margin_padding_16" android:layout_marginRight="@dimen/margin_padding_16" android:text="@string/net_kxjd" android:layout_marginHorizontal="@dimen/margin_padding_16" style="@style/tv_user_black_14" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_padding_16" android:layout_marginRight="@dimen/margin_padding_16" android:overScrollMode="never" android:layout_marginHorizontal="@dimen/margin_padding_16" />
+            <TextView android:textColor="@color/color_999999_7c848d" android:layout_gravity="center_horizontal" android:id="@id/tv_time" android:layout_marginTop="20.0dip" android:text="@string/net_kxjd" style="@style/tv_user_black_12" />
+        </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

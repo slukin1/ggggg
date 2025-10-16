@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/exchange_spot_root_fragment_v1_0" android:background="@color/uikit_bg_primary_v5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.gateio.gateio.view.GateioStatusPlaceHolderBar android:id="@id/holder_bar" android:background="@color/uikit_bg_primary_v5" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coorLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip" app:layout_behavior="com.gateio.lib.uikit.behavior.AppBarLayoutBehaviorV2">
+                <com.gateio.lib.uikit.tab.v5.GTTabsV5 android:id="@id/firstTab" android:layout_width="fill_parent" android:layout_height="44.0dip" app:layout_scrollFlags="scroll|snap" />
+            </com.google.android.material.appbar.AppBarLayout>
+            <FrameLayout android:id="@id/main_fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/fl_bottom_mini_kline" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</FrameLayout>

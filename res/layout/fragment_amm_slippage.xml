@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.common.view.CornerLinearLayout android:layout_gravity="bottom" android:id="@id/ll_bottom" android:background="@color/color_ffffff_19202d" app:left_top_radis="16.0dip" app:right_top_radis="16.0dip" style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/amm_slippage" />
+        <ImageView android:textSize="14.0sp" android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_close" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RadioGroup android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip">
+        <RadioButton android:textSize="14.0sp" android:textColor="@color/selector_blue_666666" android:id="@id/slippage_1" android:background="@drawable/bg_slippage_selector" android:checked="true" android:text="1%" style="@style/main_footer_bar_radio" />
+        <RadioButton android:textSize="14.0sp" android:textColor="@color/selector_blue_666666" android:id="@id/splipage_3" android:background="@drawable/bg_slippage_selector" android:text="3%" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" style="@style/main_footer_bar_radio" />
+        <RadioButton android:textSize="14.0sp" android:textColor="@color/selector_blue_666666" android:id="@id/slippage_5" android:background="@drawable/bg_slippage_selector" android:text="5%" style="@style/main_footer_bar_radio" />
+    </RadioGroup>
+    <com.gateio.common.view.CornerTextView android:textSize="14.0sp" android:textColor="@color/color_e93a3d" android:background="@color/color_10_e93a3d" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/tips_amm_slippage" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" app:radius="4.0dip" />
+    <LinearLayout android:id="@id/ll_action" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="36.0dip" android:layout_marginBottom="16.0dip" android:layout_below="@id/tv_base" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip">
+        <com.gateio.common.view.CornerTextView android:textSize="16.0sp" android:textColor="@color/uikit_color_333333_e6e6e6" android:gravity="center" android:id="@id/ctv_reset" android:background="@color/uikit_color_f2f2f2_22344d" android:padding="8.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/reset" android:layout_weight="1.0" app:radius="6.0dip" />
+        <com.gateio.common.view.CornerTextView android:textSize="16.0sp" android:textColor="@color/uikit_white" android:gravity="center" android:id="@id/ctv_confirm" android:background="@color/uikit_color_2354e6" android:padding="8.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/user_confirm" android:layout_weight="1.0" android:layout_marginStart="8.0dip" app:radius="6.0dip" />
+    </LinearLayout>
+</com.gateio.common.view.CornerLinearLayout>

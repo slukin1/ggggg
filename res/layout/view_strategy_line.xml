@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sparkhuu.klinelib.chart.CustomCombinedChart android:id="@id/custom" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.sparkhuu.klinelib.chart.view.KLineChartInfoView android:id="@id/k_info" android:background="@color/chart_info_color" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

@@ -1,0 +1,528 @@
+.class public Lcom/alipay/mobile/security/faceauth/api/AntDetectResponse;
+.super Ljava/lang/Object;
+.source "AntDetectResponse.java"
+
+# interfaces
+.implements Ljava/io/Serializable;
+
+
+# static fields
+.field private static final serialVersionUID:J = 0x6eL
+
+
+# instance fields
+.field ext:Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field isSuccess:Z
+
+.field result:I
+
+.field resultMessage:Ljava/lang/String;
+
+.field tag:Ljava/lang/String;
+
+.field token:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 2
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    const-string/jumbo v0, ""
+
+    .line 6
+    .line 7
+    iput-object v0, p0, Lcom/alipay/mobile/security/faceauth/api/AntDetectResponse;->token:Ljava/lang/String;
+
+    .line 8
+    .line 9
+    iput-object v0, p0, Lcom/alipay/mobile/security/faceauth/api/AntDetectResponse;->resultMessage:Ljava/lang/String;
+
+    .line 10
+    const/4 v1, 0x0
+
+    .line 11
+    .line 12
+    iput v1, p0, Lcom/alipay/mobile/security/faceauth/api/AntDetectResponse;->result:I
+
+    .line 13
+    .line 14
+    iput-boolean v1, p0, Lcom/alipay/mobile/security/faceauth/api/AntDetectResponse;->isSuccess:Z
+
+    .line 15
+    .line 16
+    iput-object v0, p0, Lcom/alipay/mobile/security/faceauth/api/AntDetectResponse;->tag:Ljava/lang/String;
+
+    .line 17
+    .line 18
+    new-instance v0, Ljava/util/HashMap;
+
+    .line 19
+    .line 20
+    .line 21
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    .line 22
+    .line 23
+    iput-object v0, p0, Lcom/alipay/mobile/security/faceauth/api/AntDetectResponse;->ext:Ljava/util/Map;
+
+    .line 24
+    return-void
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+.end method
+
+
+# virtual methods
+.method public getExt()Ljava/util/Map;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/alipay/mobile/security/faceauth/api/AntDetectResponse;->ext:Ljava/util/Map;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+.end method
+
+.method public getResult()I
+    .locals 1
+
+    .line 1
+    .line 2
+    iget v0, p0, Lcom/alipay/mobile/security/faceauth/api/AntDetectResponse;->result:I
+
+    .line 3
+    return v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+.end method
+
+.method public getResultMessage()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/alipay/mobile/security/faceauth/api/AntDetectResponse;->resultMessage:Ljava/lang/String;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+.end method
+
+.method public getTag()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/alipay/mobile/security/faceauth/api/AntDetectResponse;->tag:Ljava/lang/String;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+.end method
+
+.method public getToken()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/alipay/mobile/security/faceauth/api/AntDetectResponse;->token:Ljava/lang/String;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+.end method
+
+.method public isSuccess()Z
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-boolean v0, p0, Lcom/alipay/mobile/security/faceauth/api/AntDetectResponse;->isSuccess:Z
+
+    .line 3
+    return v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+.end method
+
+.method public setExt(Ljava/util/Map;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    .line 2
+    iput-object p1, p0, Lcom/alipay/mobile/security/faceauth/api/AntDetectResponse;->ext:Ljava/util/Map;
+
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public setResult(I)V
+    .locals 0
+
+    .line 1
+    .line 2
+    iput p1, p0, Lcom/alipay/mobile/security/faceauth/api/AntDetectResponse;->result:I
+
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public setResultMessage(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    .line 2
+    iput-object p1, p0, Lcom/alipay/mobile/security/faceauth/api/AntDetectResponse;->resultMessage:Ljava/lang/String;
+
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public setSuccess(Z)V
+    .locals 0
+
+    .line 1
+    .line 2
+    iput-boolean p1, p0, Lcom/alipay/mobile/security/faceauth/api/AntDetectResponse;->isSuccess:Z
+
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public setTag(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    .line 2
+    iput-object p1, p0, Lcom/alipay/mobile/security/faceauth/api/AntDetectResponse;->tag:Ljava/lang/String;
+
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public setToken(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    .line 2
+    iput-object p1, p0, Lcom/alipay/mobile/security/faceauth/api/AntDetectResponse;->token:Ljava/lang/String;
+
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method

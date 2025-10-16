@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/uikit_bg_3" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="2.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:apps="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/title" android:layout_width="fill_parent" android:layout_height="@dimen/title_height">
+        <ImageView android:id="@id/back" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@mipmap/icon_left_arrow" android:paddingStart="@dimen/margin_padding_16" apps:tint="@color/uikit_text_2" />
+        <TextView android:textSize="@dimen/ts_16" android:textStyle="bold" android:textColor="@color/uikit_text_1" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/security_authorized_device_title" />
+        <ImageView android:layout_gravity="end" android:id="@id/right" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@mipmap/security_authorized_device_ic_edit" android:paddingStart="@dimen/margin_padding_8" android:paddingEnd="@dimen/margin_padding_16" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.gateio.comlib.view.GateioEmptyView android:id="@id/empty" android:layout_width="fill_parent" android:layout_height="wrap_content" apps:emptyText="@string/security_authorized_device_empty" />
+        <com.scwang.smart.refresh.layout.SmartRefreshLayout android:id="@id/refresher" android:layout_width="fill_parent" android:layout_height="fill_parent" apps:srlEnableLoadMore="false">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/devices" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" apps:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+    </FrameLayout>
+</LinearLayout>

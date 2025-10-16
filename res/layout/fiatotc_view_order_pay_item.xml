@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/ts_14" android:textColor="@color/uikit_text_3_v3" android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Uikit_font_sans_2_0_weight_400" />
+    <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_icon_3_v3" android:id="@id/tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_marginStart="@dimen/dp_4" />
+    <TextView android:textSize="@dimen/ts_14" android:textColor="@color/uikit_text_1_v3" android:gravity="end" android:id="@id/text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp_8" style="@style/Uikit_font_sans_2_0_weight_500" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/copy" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/fiatotc_icon_copy" android:layout_marginStart="@dimen/margin_padding_4" app:tint="@color/uikit_icon_3_v3" />
+</merge>

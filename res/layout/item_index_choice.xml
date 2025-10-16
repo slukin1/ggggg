@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/ll_root" style="@style/wrap_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:background="@drawable/bg_item_trans_histroy" android:layout_height="48.0dip" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" style="@style/match_wrap_h">
+        <CheckBox android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/cb_select" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="48.0dip" android:checked="false" android:text="" android:layout_marginStart="10.0dip" style="@style/cb_warning_tickersub" />
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/tv_currency_vol" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textColor="@color/text_trans_gray" android:id="@id/tv_currency_name" android:layout_alignParentTop="true" android:layout_alignParentStart="true" style="@style/tv_user_black_14" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/text_trans_gray" android:id="@id/tv_exchange_name" android:visibility="gone" android:layout_alignBottom="@id/tv_currency_name" android:layout_toEndOf="@id/tv_currency_name" style="@style/tv_user_black_14" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="8.0dip">
+            <TextView android:textColor="@color/text_trans_title" android:layout_gravity="center_vertical" android:id="@id/tv_currentPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/tv_user_black_14" />
+        </RelativeLayout>
+        <TextView android:textColor="@color/bg_thme_green2" android:gravity="end" android:layout_gravity="center_vertical" android:id="@id/btn_ratePercent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="58.0dip" android:singleLine="true" style="@style/tv_user_white_14" />
+    </LinearLayout>
+    <View android:id="@id/line" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" style="@style/view_line_v" />
+</LinearLayout>

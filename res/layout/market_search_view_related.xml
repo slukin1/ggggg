@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_text_1_v3" android:id="@id/tv_related_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/market_search_related" android:layout_marginStart="12.0dip" style="@style/Uikit_font_sans_2_0_weight_500" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_related" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="@dimen/margin_padding_2" android:layout_marginStart="12.0dip" android:layout_marginEnd="4.0dip" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/vParent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rvList" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+    <com.gateio.lib.uikit.state.GTEmptyV5 android:gravity="center" android:id="@id/vEmpty" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="80.0dip" app:uikit_descTextV5="@string/market_pilot_main_no_results_found" app:uikit_emptySizeV5="small" app:uikit_emptyTypeV5="results_empty" />
+</FrameLayout>

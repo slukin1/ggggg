@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.lib.uikit.widget.AdaptiveLinearLayout android:orientation="vertical" android:background="@color/uikit_cmpt_16_v3" android:layout_width="fill_parent" android:layout_height="fill_parent" app:left_top_radis="@dimen/uikit_radius_12" app:right_top_radis="@dimen/uikit_radius_12"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/uikit_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="12.0dip" />
+    <com.gateio.lib.uikit.helper.GTPopupHeaderV3 android:id="@id/uikit_filter_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.gateio.lib.uikit.search.GTSearchViewV3 android:id="@id/uikit_filter_search" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:layout_marginVertical="8.0dip" android:paddingHorizontal="16.0dip" />
+    <com.gateio.lib.uikit.action_sheet.GTCustomScrollbarRecyclerView android:id="@id/rv_options" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginEnd="3.0dip" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <com.gateio.lib.uikit.state.GTEmptyViewV3 android:id="@id/uikit_filter_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" app:uikit_emptyTypeV3="search_empty" app:uikit_titleTextV3="@string/uikit_loaned_nodata" />
+    <com.gateio.lib.uikit.helper.GTFooterButtonV3 android:id="@id/uikit_filter_footer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.gateio.lib.uikit.widget.AdaptiveLinearLayout>

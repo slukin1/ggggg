@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.state.GateEmptyViewV2 android:id="@id/view_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.gateio.lib.uikit.state.GTLoadingViewV2 android:layout_gravity="center" android:id="@id/view_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" app:uikit_shadowBottomHeight="@dimen/uikit_margin_padding_80" app:uikit_shadowCardColor="@color/uikit_cmpt_12" app:uikit_shadowColor="@color/uikit_loading_shadow_card_color" app:uikit_shadowLeftHeight="@dimen/uikit_margin_padding_80" app:uikit_shadowOffsetY="@dimen/dp_4" app:uikit_shadowRadius="40" app:uikit_shadowRightHeight="@dimen/uikit_margin_padding_80" app:uikit_shadowRound="@dimen/uikit_radius_8" app:uikit_shadowTopHeight="@dimen/uikit_margin_padding_80" />
+    <com.gateio.lib.uikit.result.GTResultV2 android:id="@id/view_result" android:layout_width="wrap_content" android:layout_height="wrap_content" app:uikit_imageResource="@mipmap/uikit_result_failed" />
+</merge>

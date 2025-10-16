@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/uikit_dp_16" android:paddingBottom="@dimen/uikit_dp_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_dp_16" android:layout_marginRight="@dimen/uikit_dp_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.reminder.GTReminderV5 android:id="@id/otc_rect_question_title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:uikit_reminderTitleV5="" app:uikit_reminderTypeV5="neutral" />
+    <LinearLayout android:orientation="vertical" android:id="@id/otc_verification_multiple_layout" android:paddingBottom="@dimen/uikit_dp_13" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <GridLayout android:id="@id/upload_container" android:paddingTop="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:rowCount="2" android:columnCount="3" />
+</LinearLayout>

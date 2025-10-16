@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/uikit_bg_primary_v5" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.title.GTTitleViewV3 android:id="@id/title" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/fiat_details" />
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/srl" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.google.android.material.appbar.AppBarLayout android:background="@color/uikit_bg_primary_v5" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+                <com.gateio.third.skeletonLayout.SkeletonLayout android:id="@id/ske" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll">
+                    <include android:id="@id/header" layout="@layout/fiat_recurring_buy_detail_head" />
+                </com.gateio.third.skeletonLayout.SkeletonLayout>
+            </com.google.android.material.appbar.AppBarLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/uikit_dp_12" android:layout_marginTop="@dimen/uikit_dp_16" android:layout_marginRight="@dimen/uikit_dp_12" android:layout_marginBottom="@dimen/uikit_dp_16" android:layout_marginHorizontal="@dimen/uikit_dp_12" android:layout_marginVertical="@dimen/uikit_dp_16" app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

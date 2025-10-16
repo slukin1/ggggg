@@ -1,0 +1,73 @@
+.class public abstract Lx9/b;
+.super Ljava/lang/Object;
+.source "CssInlineStyleParser.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lx9/b$b;
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static a()Lx9/b;
+    .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 1
+    .line 2
+    new-instance v0, Lx9/b$b;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-direct {v0}, Lx9/b$b;-><init>()V
+
+    .line 6
+    return-object v0
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+.end method
+
+
+# virtual methods
+.method public abstract b(Ljava/lang/String;)Ljava/lang/Iterable;
+    .param p1    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            ")",
+            "Ljava/lang/Iterable<",
+            "Lx9/c;",
+            ">;"
+        }
+    .end annotation
+.end method

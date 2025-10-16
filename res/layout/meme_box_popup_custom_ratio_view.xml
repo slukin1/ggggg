@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_container" android:paddingLeft="@dimen/uikit_dp_16" android:paddingTop="@dimen/uikit_dp_16" android:paddingRight="@dimen/uikit_dp_16" android:paddingBottom="@dimen/uikit_dp_8" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_primary_v5" android:id="@id/tv_custom_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:maxLines="1" style="@style/Uikit_font_sans_5_0_weight_400" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <com.gateio.lib.uikit.input.GTInputV5 android:id="@id/et_number_left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/uikit_dp_16" app:uikit_editHintV5="" app:uikit_editInputTypeV5="decimal" app:uikit_editVisibleDeleteV5="false" />
+        <com.gateio.lib.uikit.input.GTInputV5 android:id="@id/et_number_center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/uikit_dp_16" app:uikit_editHintV5="" app:uikit_editInputTypeV5="decimal" app:uikit_editVisibleDeleteV5="false" />
+        <com.gateio.lib.uikit.input.GTInputV5 android:id="@id/et_number_right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:uikit_editHintV5="" app:uikit_editInputTypeV5="decimal" app:uikit_editVisibleDeleteV5="false" />
+    </LinearLayout>
+</LinearLayout>

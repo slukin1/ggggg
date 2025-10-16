@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.comlib.view.TintImageView android:id="@id/back" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@mipmap/icon_left_arrow" android:layout_centerVertical="true" android:paddingStart="@dimen/margin_padding_16" />
+    <TextView android:textSize="@dimen/ts_18" android:textStyle="bold" android:textColor="@color/text_1" android:ellipsize="end" android:gravity="center" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:lines="1" android:layout_marginStart="@dimen/margin_padding_80" android:layout_marginEnd="@dimen/margin_padding_80" app:autoSizeMaxTextSize="@dimen/ts_18" app:autoSizeMinTextSize="@dimen/ts_10" app:autoSizeStepGranularity="1.0sp" app:autoSizeTextType="uniform" />
+    <com.gateio.comlib.view.TintImageView android:id="@id/help" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@mipmap/ic_help_wa" android:layout_centerVertical="true" android:paddingStart="@dimen/margin_padding_8" android:paddingEnd="@dimen/margin_padding_8" android:layout_toStartOf="@id/record" />
+    <com.gateio.comlib.view.TintImageView android:id="@id/record" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@mipmap/ic_record_wa" android:layout_centerVertical="true" android:paddingStart="@dimen/margin_padding_8" android:paddingEnd="@dimen/margin_padding_16" android:layout_alignParentEnd="true" />
+</merge>

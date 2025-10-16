@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/layout_loan_title" android:paddingTop="16.0dip" android:paddingStart="@dimen/margin_padding_16" android:paddingEnd="16.0dip" style="@style/match_wrap_h"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/color_999999_7c848d" android:id="@id/tv_rate" android:layout_width="0.0dip" android:text="@string/finance_trans_v1_daily_interest_rate" android:layout_weight="1.2" style="@style/tv_user_white_12" />
+    <TextView android:textColor="@color/color_999999_7c848d" android:layout_width="0.0dip" android:text="@string/finance_trans_v1_loan_amount" android:layout_weight="1.0" style="@style/tv_user_white_12" />
+    <TextView android:textColor="@color/color_999999_7c848d" android:gravity="end" android:id="@id/tv_peroid" android:layout_width="0.0dip" android:text="@string/margin_loan_period" android:layout_weight="1.0" style="@style/tv_user_white_12" />
+    <ImageView android:id="@id/iv_arrow" android:layout_width="30.0dip" android:layout_height="14.0dip" />
+</LinearLayout>

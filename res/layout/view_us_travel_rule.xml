@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/uikit_margin_padding_16" android:paddingRight="@dimen/uikit_margin_padding_16" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:apps="http://schemas.android.com/apk/res-auto">
+    <com.gateio.walletslib.view.DepositDropdownView android:id="@id/gd_address_type" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_16" />
+    <com.gateio.walletslib.view.DepositDropdownView android:id="@id/gd_address_from" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_24" />
+    <com.gateio.walletslib.view.DepositDropdownView android:id="@id/gd_travel_user_state" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_24" />
+    <FrameLayout android:id="@id/fr_item_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,40 @@
+.class public final Lcom/tencent/qcloud/tuicore/TUIConstants$DeviceInfo;
+.super Ljava/lang/Object;
+.source "TUIConstants.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/tencent/qcloud/tuicore/TUIConstants;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "DeviceInfo"
+.end annotation
+
+
+# static fields
+.field public static final BRAND_GOOGLE_ELSE:I = 0x7d2
+
+.field public static final BRAND_HONOR:I = 0x7d6
+
+.field public static final BRAND_HUAWEI:I = 0x7d1
+
+.field public static final BRAND_MEIZU:I = 0x7d3
+
+.field public static final BRAND_OPPO:I = 0x7d4
+
+.field public static final BRAND_VIVO:I = 0x7d5
+
+.field public static final BRAND_XIAOMI:I = 0x7d0
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

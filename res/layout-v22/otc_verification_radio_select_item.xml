@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/uikit_dp_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_dp_16" android:layout_marginRight="@dimen/uikit_dp_16" android:layout_marginHorizontal="@dimen/uikit_dp_16" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.text.GTMultiLineTextViewV5 android:textSize="14.0sp" android:textColor="@color/uikit_text_primary_v5" android:id="@id/add_info_radio_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" style="@style/Uikit_font_sans_5_0_weight_400" />
+    <GridLayout android:orientation="horizontal" android:id="@id/otc_verification_item_radio_layout" android:paddingTop="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:rowCount="3" android:columnCount="2" />
+</LinearLayout>

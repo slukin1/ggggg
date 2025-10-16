@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/uikit_bg_1_v3" android:paddingTop="@dimen/uikit_dp_8" style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/pay_top_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.gateio.common.view.CornerView android:id="@id/paytype_color" android:layout_width="3.0dip" android:layout_height="12.0dip" android:layout_centerVertical="true" app:radius="9.0dip" />
+        <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_1_v3" android:id="@id/paytype" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_8" android:layout_marginBottom="@dimen/uikit_dp_8" android:layout_centerVertical="true" android:layout_marginStart="@dimen/uikit_dp_4" android:layout_toEndOf="@id/paytype_color" android:layout_marginVertical="@dimen/uikit_dp_8" style="@style/Uikit_font_sans_2_0_weight_500" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/add_payment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+            <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_icon_1_v3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+            <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_1_v3" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fiatotc_add" android:layout_marginStart="@dimen/uikit_dp_4" style="@style/Uikit_font_sans_2_0_weight_500" />
+        </LinearLayout>
+        <com.gateio.lib.uikit.widget.GTCheckBoxV3 android:id="@id/payment_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="0.0dip" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <com.gateio.comlib.view.CornerLinearLayout android:orientation="vertical" android:id="@id/muliti_layout" android:background="@color/uikit_card_1_v3" android:paddingLeft="@dimen/uikit_dp_12" android:paddingTop="@dimen/uikit_dp_16" android:paddingRight="@dimen/uikit_dp_12" android:paddingBottom="@dimen/uikit_dp_16" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/uikit_dp_8" android:radius="@dimen/uikit_dp_8" android:paddingHorizontal="@dimen/uikit_dp_12" android:paddingVertical="@dimen/uikit_dp_16">
+        <RadioGroup android:orientation="vertical" android:id="@id/accountList" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/add_account" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+            <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_icon_1_v3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+            <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_1_v3" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fiatotc_add" android:layout_marginStart="@dimen/uikit_dp_4" style="@style/Uikit_font_sans_2_0_weight_500" />
+        </LinearLayout>
+    </com.gateio.comlib.view.CornerLinearLayout>
+    <View android:background="@color/uikit_divider_2_v3" android:layout_width="fill_parent" android:layout_height="@dimen/uikit_w_0.5" android:layout_marginTop="@dimen/uikit_dp_8" />
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alert_cancel_array">
+        <item>ไม่สนใจเวลานี้เท่านั้น</item>
+        <item>10 นาทีต่อมา</item>
+        <item>30 นาทีต่อมา</item>
+        <item>2 ชั่วโมงต่อมา</item>
+        <item>24 ชั่วโมงต่อมา</item>
+        <item>ไม่เคย</item>
+    </string-array>
+    <string-array name="exo_controls_playback_speeds">
+        <item>0.25x</item>
+        <item>0.5x</item>
+        <item>0.75x</item>
+        <item>ปกติ</item>
+        <item>1.25x</item>
+        <item>1.5x</item>
+        <item>2x</item>
+    </string-array>
+    <string-array name="funding_share_desc">
+        <item>ความสุขแบบหนึ่งที่เรียกว่าความมั่นคง</item>
+        <item>เลือก Gate เพื่อการใช้งานที่ง่าย</item>
+        <item>ผู้นำมืออาชีพไม่มีที่สิ้นสุด</item>
+        <item>ลองใช้งาน Gate เพื่อแสดงความสามารถของคุณ</item>
+        <item>ถนนทุกสายมุ่งสู่กรุงโรม แต่ความแข็งแกร่งต้องมาก่อน</item>
+        <item>จะจัดการเงินใช่ไหม มั่นคง</item>
+        <item>ชีวิตมีค่าควรแก่การดํารงชีวิตและอนาคตมีแนวโน้มที่ดี</item>
+    </string-array>
+    <string-array name="home_week_string_array">
+        <item>วันอาทิตย์</item>
+        <item>วันจันทร์</item>
+        <item>วันอังคาร</item>
+        <item>วันพุธ</item>
+        <item>วันพฤหัสบดี</item>
+        <item>วันศุกร์</item>
+        <item>วันเสาร์</item>
+    </string-array>
+    <string-array name="modify_procedure_items">
+        <item>เลือกการรายการที่ต้องการไข</item>
+        <item>ยื่นเรื่องแก้ไขความเปลอดภัย</item>
+        <item>ยื่นเรื่องเสร็จสิ้น</item>
+    </string-array>
+    <string-array name="position_share_desc_loss">
+        <item>คัตลอสไหม ไม่!</item>
+        <item>เก็บและรอ</item>
+        <item>เสียให้น้อยลง</item>
+        <item>คนที่หัวเราะเป็นคนสุดท้าย หัวเราะได้ดังกว่า</item>
+        <item>พร้อมทะยาน ย้ายเดี๋ยวนี้</item>
+        <item>ดีกับฉันหน่อย</item>
+        <item>ไม่ต้องตระหนก</item>
+        <item>หมดหน้าตัก จงศรัทธาต่อไป</item>
+    </string-array>
+    <string-array name="position_share_desc_win">
+        <item>ลงหมดหน้าตักและรับผลตอบแทนก้อนใหญ่</item>
+        <item>หมดหน้าตักเช่นเคย</item>
+        <item>เพียงแค่ถือ</item>
+        <item>แค่เก็บไว้</item>
+        <item>ขั้นตอนต่อไป? ติดตามแนวโน้ม</item>
+        <item>ฉันเป็นดาวที่เจิดจ้า!</item>
+        <item>ติดตามฉันเพื่อรับผลตอบแทนก้อนใหญ่</item>
+        <item>ฉันอยู่ทางด้านขวาเช่นเคย!</item>
+        <item>Long หรือ Short ทั้งหมดขึ้นอยู่กับฉัน</item>
+    </string-array>
+    <string-array name="push_alert_cancel_array">
+        <item>เป็นเวลา 30 นาที</item>
+        <item>เป็นเวลา 2 ชั่วโมง</item>
+        <item>เป็นเวลา 24 ชั่วโมง</item>
+        <item>ตลอดไป</item>
+    </string-array>
+    <string-array name="week_string_array">
+        <item>วันอาทิตย์</item>
+        <item>วันจันทร์</item>
+        <item>วันอังคาร</item>
+        <item>วันพุธ</item>
+        <item>วันพฤหัสบดี</item>
+        <item>วันศุกร์</item>
+        <item>วันเสาร์</item>
+    </string-array>
+</resources>

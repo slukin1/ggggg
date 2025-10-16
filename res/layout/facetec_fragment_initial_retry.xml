@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facetec.sdk.aj android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/contentLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="10.0" android:layout_centerInParent="true">
+        <TextView android:textSize="26.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/initialRetryHeader" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Let's try that again" android:maxLines="2" android:includeFontPadding="false" android:textAlignment="center" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/initialRetrySubtext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:text="But first, please take a look at your images and correct your environment." android:maxLines="3" android:includeFontPadding="false" android:textAlignment="center" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/sideBySideLayout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:baselineAligned="false" android:layout_weight="8.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:weightSum="10.0" android:layout_marginEnd="10.0dip">
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="9.5">
+                    <ImageView android:id="@id/yourZoomImage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:adjustViewBounds="true" android:scaleX="-1.0" />
+                    <ImageView android:id="@id/yourZoomImageBorder" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+                </FrameLayout>
+                <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/yourZoomText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Your ZoOm" android:maxLines="1" android:includeFontPadding="false" android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:weightSum="10.0" android:layout_marginStart="10.0dip">
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="9.5">
+                    <view android:id="@id/idealImageSlideshowView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:adjustViewBounds="true" class="com.facetec.sdk.al" />
+                    <ImageView android:id="@id/idealZoomImage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+                    <ImageView android:id="@id/idealOval" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/facetec_oval_ideal" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+                    <ImageView android:id="@id/idealZoomImageBorder" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+                </FrameLayout>
+                <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/idealZoomText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Ideal ZoOm" android:maxLines="1" android:includeFontPadding="false" android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/bottomTips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="10.0dip" android:text="• Neutral Expression, No Smiling\n• No Glare or Extreme Lighting" android:includeFontPadding="false" />
+    </LinearLayout>
+</com.facetec.sdk.aj>

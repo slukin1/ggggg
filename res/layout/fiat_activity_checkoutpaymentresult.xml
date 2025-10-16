@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/uikit_bg_primary_v5" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.title.GTTitleViewV3 android:id="@id/title" android:layout_width="fill_parent" android:layout_height="48.0dip" />
+    <ImageView android:layout_width="144.0dip" android:layout_height="144.0dip" android:layout_marginTop="@dimen/uikit_margin_padding_40" android:src="@drawable/fiat_order_result" />
+    <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_3_v3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_24" android:text="@string/fiat_estimated" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_8" android:baselineAligned="true">
+        <TextView android:textSize="@dimen/uikit_text_size_24" android:textColor="@color/uikit_text_1_v3" android:id="@id/tv_receive" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Uikit_font_sans_2_0_weight_700" />
+        <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_1_v3" android:id="@id/tv_receive_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Uikit_font_sans_2_0_weight_700" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_3_v3" android:gravity="center" android:id="@id/tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_margin_padding_12" android:layout_marginTop="@dimen/uikit_margin_padding_16" android:layout_marginRight="@dimen/uikit_margin_padding_12" />
+    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <include layout="@layout/fiat_powered_by" />
+    <com.gateio.lib.uikit.button.GTButtonV3 android:id="@id/go_spot_wallet" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_dp_12" android:layout_marginTop="@dimen/uikit_dp_16" android:layout_marginRight="@dimen/uikit_dp_12" android:layout_marginBottom="8.0dip" android:text="@string/fiat_go_spot_wallet" app:uikit_buttonDimenV3="medium" app:uikit_buttonTypeV3="primary" />
+    <com.gateio.lib.uikit.button.GTButtonV3 android:id="@id/orderHistory" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_dp_12" android:layout_marginTop="@dimen/uikit_margin_padding_8" android:layout_marginRight="@dimen/uikit_dp_12" android:layout_marginBottom="@dimen/uikit_dp_16" android:text="@string/fiat_order_history" app:uikit_buttonDimenV3="medium" app:uikit_buttonTypeV3="secondary" />
+</LinearLayout>

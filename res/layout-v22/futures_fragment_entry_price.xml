@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.lib.uikit.popup.GTPopupDragLinearLayout android:orientation="vertical" android:id="@id/clRoot" android:background="@color/uikit_layer_1_v5" android:paddingBottom="16.0dip" app:left_top_radis="@dimen/uikit_radius_12" app:right_top_radis="@dimen/uikit_radius_12" style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/layoutCommonTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" layout="@layout/futures_layout_dialog_common_title" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginHorizontal="16.0dip">
+        <TextView android:text="@string/futures_v5_position_entry_price_big" android:layout_weight="1.0" style="@style/Text_text_secondary_14_weight_400_v5" />
+        <TextView android:id="@id/tvAvgPrice" style="@style/Text_text_primary_14_weight_500_v5" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:layout_marginHorizontal="16.0dip">
+        <TextView android:text="@string/futures_profit_loss_balance_price_title" android:layout_weight="1.0" style="@style/Text_text_secondary_14_weight_400_v5" />
+        <TextView android:id="@id/tvBalancePrice" style="@style/Text_text_primary_14_weight_500_v5" />
+        <com.gateio.uiComponent.GateIconFont android:textSize="14.0sp" android:textColor="@color/uikit_icon_quaternary_v5" android:id="@id/ivNote" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:paddingStart="8.0dip" />
+    </LinearLayout>
+    <View android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="16.0dip" android:layout_marginHorizontal="16.0dip" style="@style/view_line_divider_v5" />
+    <TextView android:id="@id/alertProfitLossBalance" android:visibility="visible" android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:text="@string/futures_profit_loss_perp_tips" android:lineSpacingMultiplier="1.3" android:layout_marginHorizontal="16.0dip" style="@style/Text_text_tertiary_14_weight_400_v5" />
+</com.gateio.lib.uikit.popup.GTPopupDragLinearLayout>

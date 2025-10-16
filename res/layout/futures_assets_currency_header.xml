@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="wrap_content" style="@style/match_wrap_h"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/futures_assets_iv_currency_icon" android:layout_width="@dimen/length_20" android:layout_height="@dimen/length_20" android:scaleType="centerCrop" />
+    <TextView android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/futures_assets_market_currency" android:lines="1" android:includeFontPadding="false" android:layout_marginStart="4.0dip" style="@style/Text_text_primary_16_weight_500_v5" />
+    <TextView android:ellipsize="end" android:gravity="start" android:id="@id/futures_assets_market_currency_full" android:layout_marginTop="3.0dip" android:lines="1" android:includeFontPadding="false" android:textAlignment="viewStart" android:layout_marginStart="4.0dip" style="@style/Text_text_secondary_12_weight_400_v5" />
+</LinearLayout>

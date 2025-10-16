@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <solid android:color="@color/uikit_neutral_3_v3" />
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <scale android:drawable="@drawable/uikit_progress_gradient_v3" android:scaleWidth="100%" />
+    </item>
+</layer-list>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/main" android:background="@color/uikit_layer_1_v5" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:apps="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.tab.v5.GTTabsV5 android:id="@id/otc_guide_tabs" android:layout_width="fill_parent" android:layout_height="@dimen/uikit_margin_padding_40" />
+    <androidx.viewpager.widget.ViewPager android:id="@id/otc_guide_view_pager" android:layout_width="fill_parent" android:layout_height="500.0dip" apps:layout_constraintStart_toStartOf="parent" apps:layout_constraintTop_toTopOf="parent" />
+</LinearLayout>

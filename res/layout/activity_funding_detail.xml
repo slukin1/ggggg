@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/bg_wallet" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/layout_header" layout="@layout/layout_main_header" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh" style="@style/match_ww_h">
+        <androidx.core.widget.NestedScrollView android:id="@id/nest_scroll" android:scrollbars="none" android:fadingEdge="none" android:fillViewport="true" android:overScrollMode="never" style="@style/match_match">
+            <LinearLayout android:id="@id/ll_content" style="@style/match_wrap">
+                <LinearLayout android:padding="@dimen/activity_horizontal_margin" style="@style/match_wrap">
+                    <LinearLayout android:gravity="center_vertical" style="@style/match_wrap_h">
+                        <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/uikit_white" android:id="@id/tv_type" android:background="@drawable/bnt_theme_buy_new" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="13.0dip" android:text="@string/c2c_loan_lend" android:paddingStart="4.0dip" android:paddingEnd="4.0dip" />
+                        <TextView android:textColor="@color/text_wallet_gray2" android:id="@id/tv_funding_name" android:layout_weight="1.0" android:layout_marginStart="4.0dip" style="@style/tv_user_black_18" />
+                        <TextView android:textColor="@color/text_wallet_gray4" android:text="@string/funding_zdfd" style="@style/tv_user_black_14" />
+                        <Switch android:enabled="false" android:id="@id/sw_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:thumb="@drawable/uikit_switch_custom_thumb_selector" android:track="@drawable/uikit_switch_custom_track_selector" android:layout_marginStart="4.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_marginTop="@dimen/margin_padding_16" style="@style/match_wrap_h">
+                        <TextView android:textColor="@color/text_wallet_gray3" android:id="@id/tv_funding_sl" android:layout_width="0.0dip" android:text="@string/funding_sl" android:layout_weight="1.2" style="@style/tv_user_gray_12" />
+                        <TextView android:textColor="@color/text_wallet_gray3" android:layout_width="0.0dip" android:text="@string/funding_llt" android:layout_weight="1.0" style="@style/tv_user_gray_12" />
+                        <TextView android:textColor="@color/text_wallet_gray3" android:gravity="end" android:layout_width="0.0dip" android:text="@string/funding_qxt" android:layout_weight="1.0" style="@style/tv_user_gray_12" />
+                    </LinearLayout>
+                    <LinearLayout style="@style/match_wrap_h">
+                        <TextView android:textColor="@color/text_wallet_gray2" android:id="@id/tv_funding_amount" android:layout_width="0.0dip" android:layout_weight="1.2" style="@style/tv_user_black_18" />
+                        <TextView android:textColor="@color/text_wallet_gray2" android:id="@id/tv_funding_rate" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/tv_user_black_18" />
+                        <TextView android:textColor="@color/text_wallet_gray2" android:gravity="end" android:id="@id/tv_funding_day" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/tv_user_black_18" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_marginTop="@dimen/margin_padding_16" style="@style/match_wrap">
+                        <RelativeLayout style="@style/match_wrap">
+                            <TextView android:textColor="@color/text_wallet_gray3" android:id="@id/tv_funding_wcjd" android:text="@string/trans_jyjd" style="@style/tv_user_gray_10" />
+                            <TextView android:textColor="@color/uikit_color_2354e6" android:id="@id/tv_state" android:singleLine="true" android:layout_marginStart="4.0dip" android:layout_alignParentEnd="true" style="@style/tv_user_black_10" />
+                        </RelativeLayout>
+                        <ProgressBar android:id="@id/pb_order" android:layout_width="fill_parent" android:layout_height="12.0dip" android:layout_marginTop="4.0dip" android:max="100" android:progressDrawable="@drawable/uikit_bg_progress_trans_red_new" style="?android:progressBarStyleHorizontal" />
+                        <RelativeLayout android:layout_marginTop="2.0dip" style="@style/match_wrap">
+                            <TextView android:textColor="@color/text_wallet_gray5" android:id="@id/tv_progress_num" android:singleLine="true" style="@style/tv_user_gray_12" />
+                            <TextView android:textColor="@color/text_wallet_gray5" android:id="@id/tv_progress_percent" android:singleLine="true" android:layout_alignParentEnd="true" style="@style/tv_user_gray_12" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:layout_height="@dimen/margin_padding_16" style="@style/view_line_v2_blod" />
+                <LinearLayout android:padding="@dimen/activity_horizontal_margin" style="@style/match_wrap">
+                    <LinearLayout style="@style/match_wrap_h">
+                        <TextView android:textColor="@color/text_wallet_gray3" android:minWidth="60.0dip" android:text="@string/futures_ddh" style="@style/tv_user_gray_12" />
+                        <TextView android:textColor="@color/text_wallet_gray4" android:id="@id/tv_id" android:layout_marginStart="@dimen/margin_padding_24" style="@style/tv_user_gray_12" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_marginTop="@dimen/margin_padding_8" style="@style/match_wrap_h">
+                        <TextView android:textColor="@color/text_wallet_gray3" android:minWidth="60.0dip" android:text="@string/funding_kssj" style="@style/tv_user_gray_12" />
+                        <TextView android:textColor="@color/text_wallet_gray4" android:id="@id/tv_start_time" android:layout_marginStart="@dimen/margin_padding_24" style="@style/tv_user_gray_12" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:layout_height="@dimen/margin_padding_16" style="@style/view_line_v2_blod" />
+                <TextView android:textColor="@color/text_wallet_gray2" android:layout_margin="@dimen/margin_padding_16" android:text="@string/funding_jkjl" style="@style/tv_user_black_20" />
+                <View style="@style/view_line_v2" />
+                <RelativeLayout android:descendantFocusability="blocksDescendants" style="@style/match_match">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:scrollbars="none" android:fadingEdge="none" android:overScrollMode="never" android:nestedScrollingEnabled="false" style="@style/match_match" />
+                    <com.gateio.lib.uikit.state.GateEmptyViewV2 android:id="@id/tv_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/length_64" />
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <View android:id="@id/v_line_bottom" android:visibility="gone" style="@style/view_line_v2" />
+    <TextView android:gravity="center" android:id="@id/tv_funding_cancel" android:visibility="gone" android:text="@string/trans_cx" style="@style/but_user_login" />
+</LinearLayout>

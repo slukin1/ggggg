@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:background="@color/uikit_cmpt_16_v3" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_margin_padding_16" android:layout_marginTop="@dimen/uikit_margin_padding_12" android:layout_marginRight="@dimen/uikit_margin_padding_16" android:layout_marginBottom="@dimen/uikit_dp_4">
+                <ImageView android:id="@id/coin_image_title" android:layout_width="@dimen/uikit_margin_padding_28" android:layout_height="@dimen/uikit_margin_padding_28" />
+                <TextView android:textSize="@dimen/uikit_text_size_18" android:textColor="@color/uikit_text_primary_v5" android:id="@id/tv_title_share" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:textAlignment="viewStart" android:layout_marginStart="@dimen/uikit_margin_padding_8" style="@style/Uikit_font_sans_5_0_weight_600" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/fr_qrcode" android:background="@drawable/shape_deposit_qrcode_bg" android:padding="@dimen/uikit_margin_padding_12" android:layout_width="156.0dip" android:layout_height="156.0dip" android:layout_marginLeft="@dimen/uikit_margin_padding_16" android:layout_marginTop="@dimen/uikit_margin_padding_16" android:layout_marginRight="@dimen/uikit_margin_padding_16">
+                <ImageView android:layout_gravity="center" android:id="@id/qrcode" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <ImageView android:layout_gravity="center" android:id="@id/coin_image_qrcode" android:layout_width="@dimen/uikit_margin_padding_24" android:layout_height="@dimen/uikit_margin_padding_24" />
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/gt_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_margin_padding_16" android:layout_marginTop="@dimen/uikit_dp_8" android:layout_marginRight="@dimen/uikit_margin_padding_16" />
+            <com.gateio.lib.uikit.reminder.GTReminderV5 android:id="@id/alert" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_margin_padding_16" android:layout_marginTop="@dimen/uikit_margin_padding_8" android:layout_marginRight="@dimen/uikit_margin_padding_16" android:layout_marginBottom="@dimen/uikit_margin_padding_24" android:text="@string/wallets_deposit_share_notice" app:uikit_alertTypeV5="info" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

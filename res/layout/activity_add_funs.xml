@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/main" android:background="@color/uikit_bg_primary_v5" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.title.GTNavBarV5 android:id="@id/title" android:layout_width="fill_parent" android:layout_height="44.0dip" />
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_padding_16" android:layout_marginTop="@dimen/uikit_margin_padding_8" android:layout_marginRight="@dimen/margin_padding_16" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/uikit_text_primary_v5" android:id="@id/item_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_padding_16" android:layout_marginTop="@dimen/margin_padding_32" android:layout_marginRight="@dimen/margin_padding_16" android:text="@string/wallets_add_funds_activity_title" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/fragment_container" app:layout_goneMarginTop="@dimen/uikit_margin_padding_8" style="@style/Uikit_font_sans_5_0_weight_600" />
+            <com.gateio.lib.uikit.action_sheet.GTCustomScrollbarRecyclerView android:id="@id/rv_options" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_12" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/item_title" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

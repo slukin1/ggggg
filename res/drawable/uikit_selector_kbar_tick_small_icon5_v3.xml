@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@mipmap/uikit_seekbar_select_small_icon5_v3" />
+    <item android:drawable="@mipmap/uikit_seekbar_normal_small_v3" />
+</selector>

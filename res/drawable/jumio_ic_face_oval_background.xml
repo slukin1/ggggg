@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="200.0dip" android:width="159.0dip" android:viewportWidth="159.0" android:viewportHeight="200.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:id="@id/jumio_ic_face_oval_background" android:fillColor="#ffffffff" android:pathData="M79.44,0H0V100V200H79.44H159V0H79.44ZM79.44,0C123.32,0 158.89,44.77 158.89,100C158.89,155.23 123.32,200 79.44,200C35.57,200 0,155.23 0,100C0,44.77 35.57,0 79.44,0Z" android:fillType="evenOdd" />
+</vector>

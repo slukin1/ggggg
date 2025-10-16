@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:id="@id/rv_topbar" android:background="@drawable/bg_picker_option" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/btnCancel" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_centerVertical="true" android:layout_marginStart="16.0dip" />
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/pickerview_topbar_title" android:gravity="center" android:id="@id/tvTitle" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerVertical="true" />
+    <TextView android:textSize="16.0sp" android:textColor="#ff2354e6" android:gravity="center" android:id="@id/btnSubmit" android:paddingLeft="16.0dip" android:paddingTop="5.0dip" android:paddingRight="16.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/pickerview_submit" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

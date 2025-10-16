@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruffian.library.widget.RLinearLayout android:orientation="vertical" android:id="@id/clRoot" android:paddingBottom="16.0dip" app:background_normal="@color/uikit_layer_1_v5" app:corner_radius_top_left="12.0dip" app:corner_radius_top_right="12.0dip" style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/layoutCommonTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/futures_layout_dialog_common_title" />
+    <LinearLayout android:paddingStart="16.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/match_wrap">
+        <com.gateio.lib.uikit.selector.GTSelectorV5 android:id="@id/selectorPrice" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="16.0dip" android:layout_marginEnd="16.0dip" app:uikit_selectorDefaultAddItemDecorationV5="true" app:uikit_selectorSingleSelectV5="true" app:uikit_selectorSizeV5="small" app:uikit_selectorSpanCountV5="2" app:uikit_selectorTypeV5="check" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_marginTop="16.0dip" android:layout_marginEnd="16.0dip" style="@style/match_wrap">
+            <TextView android:id="@id/tv_profit_unrealize_title" android:text="@string/futures_profit_un_v1" android:layout_weight="1.0" style="@style/Text_text_primary_14_weight_400_v5" />
+            <TextView android:gravity="end" android:id="@id/tv_profit_unrealize" android:text="--" android:textDirection="ltr" android:layout_marginStart="12.0dip" style="@style/Text_text_primary_14_weight_500_v5" />
+            <TextView android:gravity="end" android:id="@id/tv_profit_unrealize_local" android:visibility="gone" android:text="--" android:textDirection="ltr" android:layout_marginStart="2.0dip" style="@style/Text_text_primary_12_weight_500_v5" />
+        </LinearLayout>
+        <TextView android:textColor="@color/uikit_text_warning_v5" android:id="@id/gt_alert" android:visibility="visible" android:layout_marginTop="16.0dip" android:text="@string/futures_position_profit_un_tips_last" android:lineSpacingMultiplier="1.3" android:layout_marginEnd="16.0dip" style="@style/Text_text_primary_12_weight_400_v5" />
+        <RelativeLayout android:id="@id/gtAlertPort" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+            <TextView android:textColor="@color/uikit_text_warning_v5" android:id="@id/gt_alert1" android:visibility="visible" android:text="@string/futures_portfolio_un_pnl_tips_last" android:layout_centerVertical="true" android:lineSpacingMultiplier="1.3" android:layout_marginEnd="16.0dip" style="@style/Text_text_primary_12_weight_400_v5" />
+            <TextView android:textColor="@color/uikit_text_warning_v5" android:id="@id/gt_alert2" android:visibility="invisible" android:text="@string/futures_portfolio_un_pnl_tips_mark" android:layout_centerVertical="true" android:lineSpacingMultiplier="1.3" android:layout_marginEnd="16.0dip" style="@style/Text_text_primary_12_weight_400_v5" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_height="18.0dip" android:layout_marginTop="12.0dip" android:layout_marginEnd="16.0dip" style="@style/match_wrap">
+            <TextView android:id="@id/tv_profit_realize_local_title" android:layout_width="fill_parent" android:text="@string/future_profit_on" android:layout_weight="1.0" style="@style/Text_text_primary_14_weight_400_v5" />
+            <TextView android:gravity="end" android:id="@id/tv_profit_realize" android:text="--" android:textDirection="ltr" android:layout_marginStart="12.0dip" style="@style/Text_text_primary_14_weight_500_v5" />
+            <TextView android:gravity="end" android:id="@id/tv_profit_realize_local" android:visibility="gone" android:text="--" android:textDirection="ltr" android:layout_marginStart="2.0dip" style="@style/Text_text_primary_12_weight_500_v5" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginEnd="@dimen/length_16">
+            <TextView android:text="@string/futures_v5_wsxyk_closed_pnl" android:layout_weight="1.0" style="@style/Text_text_secondary_12_weight_400_v5" />
+            <TextView android:id="@id/tv_reduce_value" android:text="--" android:textDirection="ltr" style="@style/Text_text_primary_12_weight_500_v5" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginEnd="@dimen/length_16">
+            <TextView android:text="@string/futures_funding" android:layout_weight="1.0" style="@style/Text_text_secondary_12_weight_400_v5" />
+            <TextView android:id="@id/tv_funding_value" android:text="--" android:textDirection="ltr" style="@style/Text_text_primary_12_weight_500_v5" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginEnd="@dimen/length_16">
+            <TextView android:text="@string/futures_v5_wsxyk_fee" android:layout_weight="1.0" style="@style/Text_text_secondary_12_weight_400_v5" />
+            <TextView android:id="@id/tv_trading_fee_value" android:text="--" android:textDirection="ltr" style="@style/Text_text_primary_12_weight_500_v5" />
+        </LinearLayout>
+        <com.gateio.lib.uikit.button.GTButtonV5 android:layout_gravity="center_vertical" android:id="@id/tv_confirm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginBottom="16.0dip" android:text="@string/futures_confirm" android:layout_marginEnd="16.0dip" app:uikit_buttonDimenV5="medium" app:uikit_buttonTypeV5="primary_black" />
+    </LinearLayout>
+</com.ruffian.library.widget.RLinearLayout>

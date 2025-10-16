@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.comlib.view.CornerLinearLayout android:background="@color/bg_1" android:radius="8.0dip" style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/ts_14" android:textColor="@color/text_1" android:layout_gravity="center_horizontal" android:id="@id/dialog_gateio_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:lineSpacingMultiplier="1.4" android:layout_marginStart="@dimen/margin_padding_20" android:layout_marginEnd="@dimen/margin_padding_20" />
+    <View android:background="@color/split_primary" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="@dimen/margin_padding_24" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_bottom" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="@dimen/ts_16" android:textColor="@color/text_1" android:gravity="center" android:id="@id/dialog_gateio_cancel" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/user_qx" android:layout_weight="1.0" />
+        <View android:id="@id/button_split_line" android:background="@color/split_primary" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <TextView android:textSize="@dimen/ts_16" android:textColor="@color/brand_1" android:gravity="center" android:id="@id/dialog_gateio_confirm" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/user_qd" android:layout_weight="1.0" />
+    </LinearLayout>
+</com.gateio.comlib.view.CornerLinearLayout>

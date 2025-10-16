@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/uikit_text_brand_v5" />
+    <padding android:top="-2.0dip" android:bottom="-2.0dip" />
+    <size android:width="@dimen/uikit_dp_1.5" />
+    <corners android:radius="@dimen/uikit_radius_2" />
+</shape>

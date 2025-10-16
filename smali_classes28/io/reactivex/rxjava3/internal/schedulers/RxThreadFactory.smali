@@ -1,0 +1,329 @@
+.class public final Lio/reactivex/rxjava3/internal/schedulers/RxThreadFactory;
+.super Ljava/util/concurrent/atomic/AtomicLong;
+.source "RxThreadFactory.java"
+
+# interfaces
+.implements Ljava/util/concurrent/ThreadFactory;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lio/reactivex/rxjava3/internal/schedulers/RxThreadFactory$a;
+    }
+.end annotation
+
+
+# static fields
+.field private static final serialVersionUID:J = -0x6c1ac31a817da8a4L
+
+
+# instance fields
+.field final nonBlocking:Z
+
+.field final prefix:Ljava/lang/String;
+
+.field final priority:I
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "prefix"
+        }
+    .end annotation
+
+    const/4 v0, 0x5
+
+    const/4 v1, 0x0
+
+    .line 1
+    invoke-direct {p0, p1, v0, v1}, Lio/reactivex/rxjava3/internal/schedulers/RxThreadFactory;-><init>(Ljava/lang/String;IZ)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;I)V
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "prefix",
+            "priority"
+        }
+    .end annotation
+
+    const/4 v0, 0x0
+
+    .line 2
+    invoke-direct {p0, p1, p2, v0}, Lio/reactivex/rxjava3/internal/schedulers/RxThreadFactory;-><init>(Ljava/lang/String;IZ)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;IZ)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "prefix",
+            "priority",
+            "nonBlocking"
+        }
+    .end annotation
+
+    .line 3
+    invoke-direct {p0}, Ljava/util/concurrent/atomic/AtomicLong;-><init>()V
+
+    .line 4
+    iput-object p1, p0, Lio/reactivex/rxjava3/internal/schedulers/RxThreadFactory;->prefix:Ljava/lang/String;
+
+    .line 5
+    iput p2, p0, Lio/reactivex/rxjava3/internal/schedulers/RxThreadFactory;->priority:I
+
+    .line 6
+    iput-boolean p3, p0, Lio/reactivex/rxjava3/internal/schedulers/RxThreadFactory;->nonBlocking:Z
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public newThread(Ljava/lang/Runnable;)Ljava/lang/Thread;
+    .locals 3
+    .param p1    # Ljava/lang/Runnable;
+        .annotation build Lio/reactivex/rxjava3/annotations/NonNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "r"
+        }
+    .end annotation
+
+    .line 1
+    .line 2
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 3
+    .line 4
+    iget-object v1, p0, Lio/reactivex/rxjava3/internal/schedulers/RxThreadFactory;->prefix:Ljava/lang/String;
+
+    .line 5
+    .line 6
+    .line 7
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 8
+    .line 9
+    const/16 v1, 0x2d
+
+    .line 10
+    .line 11
+    .line 12
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 13
+    .line 14
+    .line 15
+    invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicLong;->incrementAndGet()J
+
+    .line 16
+    move-result-wide v1
+
+    .line 17
+    .line 18
+    .line 19
+    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    .line 20
+    .line 21
+    .line 22
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 23
+    move-result-object v0
+
+    .line 24
+    .line 25
+    iget-boolean v1, p0, Lio/reactivex/rxjava3/internal/schedulers/RxThreadFactory;->nonBlocking:Z
+
+    .line 26
+    .line 27
+    if-eqz v1, :cond_0
+
+    .line 28
+    .line 29
+    new-instance v1, Lio/reactivex/rxjava3/internal/schedulers/RxThreadFactory$a;
+
+    .line 30
+    .line 31
+    .line 32
+    invoke-direct {v1, p1, v0}, Lio/reactivex/rxjava3/internal/schedulers/RxThreadFactory$a;-><init>(Ljava/lang/Runnable;Ljava/lang/String;)V
+
+    .line 33
+    goto :goto_0
+
+    .line 34
+    .line 35
+    :cond_0
+    new-instance v1, Lcom/didiglobal/booster/instrument/ShadowThread;
+
+    .line 36
+    .line 37
+    const-string/jumbo v2, "\u200bio.reactivex.rxjava3.internal.schedulers.RxThreadFactory"
+
+    .line 38
+    .line 39
+    .line 40
+    invoke-direct {v1, p1, v0, v2}, Lcom/didiglobal/booster/instrument/ShadowThread;-><init>(Ljava/lang/Runnable;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 41
+    .line 42
+    :goto_0
+    iget p1, p0, Lio/reactivex/rxjava3/internal/schedulers/RxThreadFactory;->priority:I
+
+    .line 43
+    .line 44
+    .line 45
+    invoke-virtual {v1, p1}, Ljava/lang/Thread;->setPriority(I)V
+
+    .line 46
+    const/4 p1, 0x1
+
+    .line 47
+    .line 48
+    .line 49
+    invoke-virtual {v1, p1}, Ljava/lang/Thread;->setDaemon(Z)V
+
+    .line 50
+    return-object v1
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    .line 2
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 6
+    .line 7
+    const-string/jumbo v1, "RxThreadFactory["
+
+    .line 8
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    iget-object v1, p0, Lio/reactivex/rxjava3/internal/schedulers/RxThreadFactory;->prefix:Ljava/lang/String;
+
+    .line 13
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    const-string/jumbo v1, "]"
+
+    .line 18
+    .line 19
+    .line 20
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 21
+    .line 22
+    .line 23
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 24
+    move-result-object v0
+
+    .line 25
+    return-object v0
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+.end method

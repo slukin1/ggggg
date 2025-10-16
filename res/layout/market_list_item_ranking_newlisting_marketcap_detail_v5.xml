@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/margin_padding_10" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/layout_top" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/market_list_item_ranking_newlisting_marketcap_v5" />
+    <include android:id="@id/cl_detail" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/market_list_item_detail_k_line_v5" />
+</LinearLayout>

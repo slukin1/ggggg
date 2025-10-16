@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="oval"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/uikit_cmpt_16_v3" />
+    <stroke android:width="@dimen/uikit_stroke_width_v3" android:color="@color/uikit_divider_5_v3" />
+    <size android:height="44.0dip" android:width="44.0dip" />
+</shape>

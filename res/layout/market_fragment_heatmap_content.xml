@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.daynight.DayNightConstraintLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="13.5dip" android:layout_marginEnd="13.5dip">
+        <com.gateio.biz.market.weight.treemap.MarketMapLayoutView android:id="@id/mapLayoutView" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="8.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent" app:market_borderWidth="2.0dip" app:market_cornerRadius="8.0dip" />
+        <RelativeLayout android:gravity="center_horizontal" android:id="@id/market_rl_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="80.0dip" />
+    </com.gateio.lib.uikit.daynight.DayNightConstraintLayout>
+</FrameLayout>

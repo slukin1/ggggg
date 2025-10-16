@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gateio.biz.kline.widget.KlineTabLayout android:layout_gravity="center" android:id="@id/tablayout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <View android:layout_gravity="center_vertical" android:background="@color/uikit_divider_1_v3" android:visibility="visible" android:layout_width="1.0dip" android:layout_height="16.0dip" android:layout_marginLeft="@dimen/dp_7" android:layout_marginRight="@dimen/dp_7" android:layout_marginHorizontal="@dimen/dp_7" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/more" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textColor="@color/uikit_text_1_v3" android:gravity="center" android:id="@id/tv_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="7.0dip" android:text="@string/kline_more" android:minEms="2" android:layout_marginVertical="7.0dip" style="@style/Uikit_font_weight_500" />
+        <com.gateio.uiComponent.GateIconFont android:textSize="11.0sp" android:textColor="@color/uikit_text_1_v3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+    </LinearLayout>
+</LinearLayout>

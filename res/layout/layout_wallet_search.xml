@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_search" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginStart="@dimen/margin_padding_15" android:layout_marginEnd="@dimen/margin_padding_15"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0sp" android:textColor="@color/uikit_color_2354e6" android:gravity="center" android:id="@id/tv_all" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/trans_qb" android:paddingStart="5.0dip" android:layout_alignParentEnd="true" />
+    <ImageView android:id="@id/iv_delete_search" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_delete_market" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/margin_padding_5" android:layout_toStartOf="@id/tv_all" />
+    <EditText android:textSize="14.0sp" android:textColor="@color/text_trans_desc" android:textColorHint="@color/text_wallet_gray3" android:id="@id/search_for_coin" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/search" android:singleLine="true" android:drawablePadding="5.0dip" android:layout_centerVertical="true" android:layout_toStartOf="@id/iv_delete_search" app:drawableStartCompat="@mipmap/ic_search_market" />
+</RelativeLayout>

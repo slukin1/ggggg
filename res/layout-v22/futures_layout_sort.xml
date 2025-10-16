@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruffian.library.widget.RLinearLayout android:orientation="vertical" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:background_normal="@color/uikit_layer_1_v5" app:corner_radius_top_left="12.0dip" app:corner_radius_top_right="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/layoutCommonTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/futures_layout_dialog_common_title" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:layout_marginHorizontal="16.0dip">
+        <com.gateio.biz.futures.widget.FuturesSortLabelView android:id="@id/viewPositionDate" android:layout_width="fill_parent" android:layout_height="wrap_content" app:sortTitle="@string/futures_v5_position_entry_time" />
+        <com.gateio.biz.futures.widget.FuturesSortLabelView android:id="@id/viewCoin" android:layout_width="fill_parent" android:layout_height="wrap_content" app:sortTitle="@string/futures_coin_name_by" />
+        <com.gateio.biz.futures.widget.FuturesSortLabelView android:id="@id/viewRoi" android:layout_width="fill_parent" android:layout_height="wrap_content" app:sortTitle="@string/future_by_return" />
+        <com.gateio.biz.futures.widget.FuturesSortLabelView android:id="@id/viewIncome" android:layout_width="fill_parent" android:layout_height="wrap_content" app:sortTitle="@string/futures_v5_position_return" />
+        <com.gateio.biz.futures.widget.FuturesSortLabelView android:id="@id/viewValue" android:layout_width="fill_parent" android:layout_height="wrap_content" app:sortTitle="@string/futures_by_position_value" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:layout_marginHorizontal="16.0dip">
+        <com.gateio.lib.uikit.button.GTButtonV5 android:id="@id/btnReset" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/reset" android:layout_weight="1.0" android:layout_marginEnd="8.0dip" app:uikit_buttonDimenV5="medium" app:uikit_buttonTypeV5="secondary_gray" />
+        <com.gateio.lib.uikit.button.GTButtonV5 android:id="@id/btnOK" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/futures_confirm" android:layout_weight="1.0" app:uikit_buttonDimenV5="medium" app:uikit_buttonTypeV5="primary_black" />
+    </LinearLayout>
+</com.ruffian.library.widget.RLinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.common.view.CornerLinearLayout android:orientation="vertical" android:background="@color/uikit_color_ffffff_111f31" android:layout_width="280.0dip" android:layout_height="fill_parent" app:right_bottom_radis="16.0dip" app:right_top_radis="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <net.lucode.hackware.magicindicator.MagicIndicator android:id="@id/tabs" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_margin="8.0dip" />
+    <com.gateio.common.view.CustomViewpager android:id="@id/vp_content" android:scrollbars="none" android:fadingEdge="none" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+</com.gateio.common.view.CornerLinearLayout>

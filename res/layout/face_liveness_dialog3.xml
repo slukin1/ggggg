@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:background="@drawable/face_liveness_shape_dialog_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/dialog_text_size" android:textColor="@color/face_liveness_black" android:id="@id/tv_face_dialog_title0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/dialog_text_size" android:textColor="@color/face_liveness_black" android:gravity="center_horizontal" android:id="@id/tv_face_dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="19.0dip" android:layout_marginRight="12.0dip" android:layout_below="@id/tv_face_dialog_title0" android:layout_centerHorizontal="true" />
+    <View android:id="@id/line" android:background="#ff979797" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="24.0dip" android:layout_below="@id/tv_face_dialog_title" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dialog_item_height" android:layout_below="@id/line">
+        <TextView android:textSize="@dimen/dialog_text_size" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_face_dialog_left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/face_dialog_cancel" android:layout_weight="1.0" />
+        <View android:background="#ff979797" android:layout_width="0.5dip" android:layout_height="@dimen/dialog_item_height" />
+        <TextView android:textSize="@dimen/dialog_text_size" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_face_dialog_right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/face_dialog_confirm" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

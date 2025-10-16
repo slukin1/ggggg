@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.common.view.CornerLinearLayout android:layout_gravity="bottom" android:id="@id/ll_bottom" android:background="@color/uikit_color_main_bg" app:left_top_radis="12.0dip" app:right_top_radis="12.0dip" style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_moments_accountcenter" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="51.0dip">
+        <RadioButton android:textSize="@dimen/text_size_16" android:textColor="@color/uikit_color_333333_e6e6e6" android:gravity="center" android:id="@id/rb_accountcenter" android:layout_width="fill_parent" android:layout_height="50.0dip" android:button="@null" android:text="@string/moments_account_center" />
+        <View style="@style/uikit_view_line_mian_v" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_moments_blacklist" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="51.0dip">
+        <RadioButton android:textSize="@dimen/text_size_16" android:textColor="@color/uikit_color_333333_e6e6e6" android:gravity="center" android:id="@id/rb_blacklist" android:layout_width="fill_parent" android:layout_height="50.0dip" android:button="@null" android:text="@string/blacklist_add" />
+        <View style="@style/uikit_view_line_mian_v" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_moments_following" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="51.0dip">
+        <RadioButton android:textSize="@dimen/text_size_16" android:textColor="@color/uikit_color_333333_e6e6e6" android:gravity="center" android:id="@id/rb_flowing" android:layout_width="fill_parent" android:layout_height="50.0dip" android:button="@null" android:text="@string/user_gz" />
+        <View style="@style/uikit_view_line_mian_v" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_moments_gateset" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="51.0dip">
+        <RadioButton android:textSize="@dimen/text_size_16" android:textColor="@color/uikit_color_333333_e6e6e6" android:gravity="center" android:id="@id/rb_gateset" android:layout_width="fill_parent" android:layout_height="50.0dip" android:button="@null" android:text="@string/moments_gateset_vip" />
+        <View style="@style/uikit_view_line_mian_v" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_moments_block" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="51.0dip">
+        <RadioButton android:textSize="@dimen/text_size_16" android:textColor="@color/uikit_color_333333_e6e6e6" android:gravity="center" android:id="@id/rb_block" android:layout_width="fill_parent" android:layout_height="50.0dip" android:button="@null" android:text="@string/user_block" />
+        <View style="@style/uikit_view_line_mian_v" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_super_v_block" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="51.0dip">
+        <RadioButton android:textSize="@dimen/text_size_16" android:textColor="@color/uikit_color_333333_e6e6e6" android:gravity="center" android:id="@id/rb_super_v_block" android:layout_width="fill_parent" android:layout_height="50.0dip" android:button="@null" android:text="@string/user_super_v_block" />
+        <View style="@style/uikit_view_line_mian_v" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_moments_setting" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="51.0dip">
+        <RadioButton android:textSize="@dimen/text_size_16" android:textColor="@color/uikit_color_333333_e6e6e6" android:gravity="center" android:id="@id/rb_setting" android:layout_width="fill_parent" android:layout_height="50.0dip" android:button="@null" android:text="@string/moments_kjfw" />
+        <View style="@style/uikit_view_line_mian_v" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_moments_top" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="51.0dip">
+        <RadioButton android:textSize="@dimen/text_size_16" android:textColor="@color/uikit_color_333333_e6e6e6" android:gravity="center" android:id="@id/rb_top" android:layout_width="fill_parent" android:layout_height="50.0dip" android:button="@null" android:text="@string/moments_zd" />
+        <View style="@style/uikit_view_line_mian_v" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_admin_top" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="51.0dip">
+        <RadioButton android:textSize="@dimen/text_size_16" android:textColor="@color/uikit_color_333333_e6e6e6" android:gravity="center" android:id="@id/rb_admin_top" android:layout_width="fill_parent" android:layout_height="50.0dip" android:button="@null" android:text="@string/moment_szgczd" />
+        <View style="@style/uikit_view_line_mian_v" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_moments_del" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="51.0dip">
+        <RadioButton android:textSize="@dimen/text_size_16" android:textColor="@color/uikit_color_2354e6" android:gravity="center" android:id="@id/rb_del" android:layout_width="fill_parent" android:layout_height="50.0dip" android:button="@null" android:text="@string/moments_delete2" />
+        <View style="@style/uikit_view_line_mian_v" />
+    </LinearLayout>
+    <View style="@style/view_line_mian_v_blod" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_moments_cancel" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="51.0dip">
+        <RadioButton android:textSize="@dimen/text_size_16" android:textColor="@color/uikit_color_333333_e6e6e6" android:gravity="center" android:id="@id/rb_cancel" android:layout_width="fill_parent" android:layout_height="50.0dip" android:button="@null" android:text="@string/user_qx" />
+    </LinearLayout>
+</com.gateio.common.view.CornerLinearLayout>

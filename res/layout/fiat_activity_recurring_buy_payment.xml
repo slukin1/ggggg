@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/uikit_bg_primary_v5" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.title.GTTitleViewV3 android:id="@id/title" android:layout_width="fill_parent" android:layout_height="48.0dip" app:uikit_titleRightColorV3="@color/uikit_icon_1_v3" app:uikit_titleRightV3="" />
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/uikit_dp_24" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/uikit_text_size_20" android:textColor="@color/uikit_text_1_v3" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fiat_recurring_buy" style="@style/Uikit_font_sans_2_0_weight_700" />
+            <com.gateio.lib.uikit.description.GTDescriptionViewV3 android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_12" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/card" android:background="@drawable/fiat_stroke_d5_corner_12" android:paddingLeft="@dimen/uikit_dp_12" android:paddingTop="@dimen/uikit_dp_12" android:paddingRight="@dimen/uikit_dp_12" android:paddingBottom="@dimen/uikit_dp_12" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_dp_12" android:layout_marginTop="@dimen/uikit_dp_12" android:layout_marginRight="@dimen/uikit_dp_12">
+                <ImageView android:id="@id/iv_card_logo" android:layout_width="32.0dip" android:layout_height="32.0dip" android:scaleType="centerInside" />
+                <ImageView android:id="@id/iv_dot" android:visibility="gone" android:layout_width="28.0dip" android:layout_height="wrap_content" android:src="@drawable/fiat_dot" android:layout_marginStart="8.0dip" app:tint="@color/uikit_text_1_v3" />
+                <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_1_v3" android:id="@id/card_last4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/uikit_dp_8" style="@style/Uikit_font_sans_2_0_weight_500" />
+                <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_text_1_v3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+            </LinearLayout>
+            <com.gateio.lib.uikit.alert.GTAlertV3 android:id="@id/alert" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_dp_12" android:layout_marginTop="@dimen/uikit_dp_12" android:layout_marginRight="@dimen/uikit_dp_12" android:text="@string/fiat_recurring_buy_notice" app:uikit_alertEndIconVisibleV3="false" app:uikit_alertStartIconVisibleV3="false" app:uikit_alertTypeV3="yellow" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.gateio.lib.uikit.helper.GTFooterButtonV3 android:id="@id/btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_dp_12" android:layout_marginRight="@dimen/uikit_dp_12" app:uikit_footerCheckBoxTextV3="@string/fiat_pay_now_check" />
+</LinearLayout>

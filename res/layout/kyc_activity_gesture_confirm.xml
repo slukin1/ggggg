@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/uikit_bg_always_black_v5" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.title.GTNavBarV5 android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/kyc_gesture_confirm_label_v5" app:uikit_titleColorV5="@color/uikit_text_always_white_v5" app:uikit_titleLeftColorV5="@color/uikit_text_always_white_v5" />
+    <ImageView android:id="@id/gesture" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/operateLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_32" android:layout_marginBottom="@dimen/uikit_dp_32">
+        <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_24" android:textColor="@color/uikit_neutral_7_v5" android:gravity="center" android:id="@id/retake" android:background="@drawable/kyc_shape_circle_white" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="@dimen/uikit_dp_32" android:layout_marginRight="@dimen/uikit_dp_32" android:text="" />
+        <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_24" android:textColor="@color/uikit_neutral_7_v5" android:gravity="center" android:id="@id/confirm" android:background="@drawable/kyc_shape_circle_white" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="@dimen/uikit_dp_32" android:layout_marginRight="@dimen/uikit_dp_32" android:text="" />
+    </LinearLayout>
+</LinearLayout>

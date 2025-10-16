@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.third.skeletonLayout.SkeletonLayout android:paddingLeft="@dimen/dp_12" android:paddingTop="@dimen/dp_8" android:paddingRight="@dimen/dp_12" android:paddingBottom="@dimen/dp_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/dp_12" android:paddingVertical="@dimen/dp_8"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/ll_pair" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintEnd_toStartOf="@id/ll_type" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <com.gateio.third.skeletonLayout.widget.SkeletonTextView android:id="@id/table_left" android:layout_width="wrap_content" android:layout_height="32.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:maskCornerRadius="2.0dip" app:maskHeight="32.0dip" app:maskWidth="77.0dip" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout android:id="@id/ll_type" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_12" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/ll_data" app:layout_constraintStart_toEndOf="@id/ll_pair" app:layout_constraintTop_toTopOf="parent">
+            <com.gateio.third.skeletonLayout.widget.SkeletonTextView android:gravity="center_vertical" android:id="@id/tv_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" app:maskCornerRadius="2.0dip" app:maskHeight="19.0dip" app:maskWidth="96.0dip" style="@style/Uikit_font_sans_2_0_weight_400" />
+        </LinearLayout>
+        <LinearLayout android:gravity="end|center" android:id="@id/ll_data" android:layout_width="72.0dip" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_12" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/ll_type" app:layout_constraintTop_toTopOf="parent">
+            <com.gateio.third.skeletonLayout.widget.SkeletonTextView android:id="@id/tv_risa" android:layout_width="64.0dip" android:layout_height="19.0dip" app:maskCornerRadius="2.0dip" style="@style/Uikit_font_sans_2_0_weight_400" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.gateio.third.skeletonLayout.SkeletonLayout>

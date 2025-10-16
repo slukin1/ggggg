@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/llMarket" android:paddingLeft="@dimen/length_16" android:paddingTop="@dimen/length_10" android:paddingRight="@dimen/length_16" android:paddingBottom="@dimen/length_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/length_16" android:paddingVertical="@dimen/length_10" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/llLimit">
+                <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_24" android:textColor="@color/uikit_icon_primary_v5" android:layout_gravity="center_vertical" android:id="@id/ivMarketSimple" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/length_8" android:layout_marginEnd="@dimen/length_12">
+                    <TextView android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_text_primary_v5" android:gravity="center_vertical" android:id="@id/tvMarketTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/exchange_market" style="@style/Uikit_font_sans_5_0_weight_500" />
+                    <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_3_v3" android:gravity="center_vertical" android:id="@id/tvMarketInfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/length_2" android:text="@string/exchange_futures_v5_market_tips" style="@style/Uikit_font_sans_5_0_weight_400" />
+                </LinearLayout>
+                <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_20" android:textColor="@color/uikit_icon_primary_v5" android:layout_gravity="center_vertical" android:id="@id/cbMarket" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/llLimit" android:paddingLeft="@dimen/length_16" android:paddingTop="@dimen/length_10" android:paddingRight="@dimen/length_16" android:paddingBottom="@dimen/length_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/length_8" android:paddingHorizontal="@dimen/length_16" android:paddingVertical="@dimen/length_10" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/llBasicOrder">
+                <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_24" android:textColor="@color/uikit_icon_primary_v5" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/length_8" android:layout_marginEnd="@dimen/length_12">
+                    <TextView android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_text_primary_v5" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/exchange_limit" style="@style/Uikit_font_sans_5_0_weight_500" />
+                    <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_3_v3" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/length_2" android:text="@string/exchange_limit_simple_desc" style="@style/Uikit_font_sans_5_0_weight_400" />
+                </LinearLayout>
+                <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_20" android:textColor="@color/uikit_icon_primary_v5" android:layout_gravity="center_vertical" android:id="@id/cbLimit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.keyboard.MomentsReplyEmoticonsBoard android:id="@id/emotion_board" android:layout_width="fill_parent" android:layout_height="fill_parent" app:hasBottom="true">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.gateio.keyboard.MomentsReplyEmoticonsBoard>
+</androidx.core.widget.NestedScrollView>

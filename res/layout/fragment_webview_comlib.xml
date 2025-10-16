@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:background="@color/bg_skin_white" android:fitsSystemWindows="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.comlib.view.StatusBarPlaceHolder android:id="@id/statusBarPlaceHolder" android:background="@color/bg_1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.gateio.comlib.view.TitleView android:id="@id/titleview" android:background="@color/bg_1" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_below="@id/statusBarPlaceHolder" app:rightVisibility="false" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/refresh_layout" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/titleview" android:overScrollMode="never">
+        <include android:id="@id/webView" layout="@layout/view_web_comlib" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_error" android:background="@color/bg_skin_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/titleview">
+        <TextView android:textSize="@dimen/ts_18" android:textColor="@color/text_2" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_padding_40" android:text="@string/error" android:paddingStart="@dimen/margin_padding_16" android:paddingEnd="@dimen/margin_padding_16" />
+        <TextView android:textColor="@color/brand_1" android:id="@id/layout_main_retry" android:padding="@dimen/margin_padding_10" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chart_cs" />
+    </LinearLayout>
+</RelativeLayout>

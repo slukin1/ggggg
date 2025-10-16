@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_root" android:background="@color/uikit_bg_primary_v5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:id="@id/llTop" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/length_40" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip">
+                <com.gateio.lib.uikit.widget.GTCheckBoxV5 android:textSize="12.0dip" android:gravity="center_vertical" android:id="@id/cb_current" android:layout_height="wrap_content" android:checked="false" android:text="@string/exchange_v1_current_market" android:drawablePadding="4.0dip" app:uikit_button_size_v5="12.0dip" style="@style/Text_text_primary_12_weight_400_v5" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rvRiskUnit" android:paddingBottom="32.0dip" android:visibility="visible" android:scrollbars="none" android:fadingEdge="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-8.0dip" android:layout_below="@id/llTop" android:overScrollMode="never" />
+</RelativeLayout>

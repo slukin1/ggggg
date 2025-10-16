@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.biz.gate_otc.wallet.WalletDropdownView android:id="@id/item_dropdown" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.airbnb.lottie.LottieAnimationView android:layout_gravity="bottom|center" android:id="@id/item_loading" android:layout_width="wrap_content" android:layout_height="@dimen/uikit_margin_padding_20" android:layout_marginBottom="@dimen/uikit_margin_padding_14" app:lottie_autoPlay="true" app:lottie_fileName="btn_loading_black_v5.json" app:lottie_loop="true" />
+</FrameLayout>

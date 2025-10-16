@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.rtmp.ui.TXCloudVideoView android:id="@id/pusher_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/iv_live_start" android:layout_width="84.0dip" android:layout_height="84.0dip" android:src="@mipmap/ic_live_start" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/iv_live_pause" android:background="@drawable/bg_live_talk" android:padding="@dimen/margin_padding_8" android:visibility="gone" android:layout_width="@dimen/margin_padding_40" android:layout_height="@dimen/margin_padding_40" android:layout_margin="@dimen/margin_padding_16" android:src="@mipmap/ic_live_pause" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

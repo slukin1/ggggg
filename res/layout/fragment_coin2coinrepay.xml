@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/bg_tab_trans" android:layout_width="fill_parent" android:layout_height="48.0dip" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+        <com.google.android.material.tabs.TabLayout android:id="@id/tabs" android:layout_width="fill_parent" android:layout_height="@dimen/tab_trans" android:overScrollMode="never" app:tabBackground="@color/transparent" app:tabIndicatorColor="@color/uikit_color_2354e6" app:tabMode="scrollable" app:tabPaddingEnd="15.0dip" app:tabPaddingStart="15.0dip" app:tabRippleColor="@android:color/transparent" app:tabSelectedTextColor="@color/uikit_color_2354e6" app:tabTextAppearance="@style/TabLayoutTextStyle" app:tabTextColor="@color/text_trans_title" />
+        <View android:background="@color/horizonal_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <com.gateio.common.view.CustomViewpager android:id="@id/vp_view_repay" android:scrollbars="none" android:fadingEdge="none" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+</LinearLayout>

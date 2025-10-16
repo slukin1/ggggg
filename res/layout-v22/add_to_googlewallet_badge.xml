@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/googlewallet_button_background" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="53.0sp" android:contentDescription="@string/add_to_googlewallet_button_content_description"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="2.0">
+        <ImageView android:paddingTop="8.0sp" android:paddingBottom="8.0sp" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/badge_add_to_googlewallet_button_content" android:scaleType="fitCenter" android:layout_weight="1.0" android:contentDescription="@string/text_content_description" android:paddingStart="20.0sp" android:paddingEnd="18.0sp" android:paddingVertical="8.0sp" />
+    </LinearLayout>
+    <ImageView android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/googlewallet_button_overlay" android:scaleType="fitXY" android:contentDescription="@string/overlay_content_description" />
+</RelativeLayout>

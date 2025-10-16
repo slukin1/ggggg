@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingTop="@dimen/margin_padding_8" android:paddingBottom="@dimen/margin_padding_8" style="@style/match_wrap_h"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/text_trans_gray2" android:id="@id/tv_text1" android:layout_width="0.0dip" android:text="--" android:layout_weight="1.0" style="@style/tv_user_black_12" />
+    <TextView android:textColor="@color/text_trans_gray2" android:id="@id/tv_text2" android:layout_width="0.0dip" android:text="--" android:layout_weight="1.0" style="@style/tv_user_black_12" />
+    <TextView android:textColor="@color/text_trans_gray2" android:id="@id/tv_text3" android:layout_width="0.0dip" android:text="--" android:layout_weight="1.0" style="@style/tv_user_black_12" />
+    <TextView android:textColor="@color/text_trans_gray2" android:gravity="end" android:id="@id/tv_text4" android:layout_width="0.0dip" android:text="--" android:layout_weight="1.0" style="@style/tv_user_black_12" />
+</LinearLayout>

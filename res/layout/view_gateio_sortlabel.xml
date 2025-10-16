@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/uikit_color_999999_8692a3" android:gravity="center" android:id="@id/label_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="100.0dip" />
+    <ImageView android:id="@id/label_icon" android:layout_width="8.0dip" android:layout_height="@dimen/home_sort" android:src="@mipmap/ic_trans_sort_def" android:scaleType="fitCenter" android:layout_marginStart="2.0dip" />
+</merge>

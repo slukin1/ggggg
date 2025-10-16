@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_ask_bid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_10">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="@color/uikit_color_333333_e6e6e6" android:id="@id/tv_decimal" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:visibility="gone" android:text="@string/depth_interval" android:layout_centerVertical="true" android:paddingStart="8.0dip" android:paddingEnd="6.0dip" android:layout_toStartOf="@id/iv_type" app:drawableEndCompat="@mipmap/ic_new_gate_arrow_down" style="@style/rl_trans_new" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_type" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@mipmap/ic_depth_buy_sell" android:layout_centerVertical="true" android:layout_marginStart="@dimen/margin_padding_8" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <com.gateio.common.view.DashTextView android:textColor="@color/uikit_color_999999_8692a3" android:id="@id/tv_title" android:layout_marginTop="8.0dip" android:text="@string/futures_askbid_title" app:tips="@string/futures_askbid" app:title="@string/futures_askbid_title" style="@style/tv_user_gray_12" />
+    <androidx.cardview.widget.CardView android:id="@id/cv" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" app:cardBackgroundColor="@color/uikit_transparent" app:cardCornerRadius="16.0dip" app:cardElevation="0.0dip" style="@style/match_wrap">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="32.0dip">
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_percent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <View android:id="@id/v_buy" style="@style/ww_wrap" />
+                <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_middle" style="@style/wrap_wrap" />
+                <View android:id="@id/v_sell" style="@style/ww_wrap" />
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:id="@id/tv_buy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="---" android:layout_centerVertical="true" android:layout_marginStart="@dimen/margin_padding_8" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:id="@id/tv_sell" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="---" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/margin_padding_8" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme4MainFont" parent="@style/AppTheme4Main" />
+    <style name="AppThemeFont" parent="@style/BaseAppTheme" />
+    <style name="AppThemeNoBarFont" parent="@style/AppTheme.NoBar" />
+    <style name="AppThemeTransFont" parent="@style/AppThemeTrans" />
+    <style name="AppThemeTranslucentNoTitleBarFont" parent="@android:style/Theme.Translucent.NoTitleBar" />
+    <style name="Dialog_Style_Font" parent="@style/Dialog_Style" />
+    <style name="TabLayoutTextStyle" parent="@style/TextAppearance.AppCompat.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="textAllCaps">false</item>
+    </style>
+    <style name="Theme.Base" parent="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:textViewStyle">@style/TextViewStyle.TextDirection</item>
+        <item name="android:windowAnimationStyle">@style/Uikit_Activity_Animation</item>
+        <item name="android:textDirection">locale</item>
+        <item name="editTextStyle">@style/EditTextStyle.Alignment</item>
+    </style>
+</resources>

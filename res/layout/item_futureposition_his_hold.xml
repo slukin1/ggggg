@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/ll_root" android:background="@drawable/bg_item_trans_histroy" android:paddingStart="@dimen/margin_padding_16" android:paddingEnd="@dimen/margin_padding_16" style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:paddingTop="@dimen/margin_padding_8" android:paddingBottom="@dimen/margin_padding_8" style="@style/match_wrap_h">
+        <LinearLayout android:gravity="start" android:layout_weight="1.5" style="@style/ww_wrap_h">
+            <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/uikit_white" android:id="@id/futures_side" android:paddingBottom="1.0dip" android:minWidth="10.0dip" android:text="@string/futures_more" android:paddingStart="2.0dip" android:paddingEnd="2.0dip" style="@style/wrap_wrap" />
+            <TextView android:textColor="@color/text_trans_gray2" android:id="@id/futures_number" android:layout_marginStart="4.0dip" style="@style/tv_user_gray_14" />
+        </LinearLayout>
+        <LinearLayout android:layout_weight="1.4" style="@style/ww_wrap">
+            <TextView android:textSize="@dimen/text_size_14" android:id="@id/futures_pnl" style="@style/wrap_wrap" />
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textColor="@color/text_trans_gray3" android:gravity="end" android:id="@id/futures_time" android:lineSpacingMultiplier="1.15" style="@style/ww_wrap" />
+    </LinearLayout>
+    <View style="@style/view_line_v" />
+</LinearLayout>

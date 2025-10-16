@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="ring" android:thicknessRatio="16.0" android:useLevel="false">
+            <solid android:color="@color/uikit_cmpt_carousel_bg_v5" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="ring" android:thicknessRatio="16.0" android:useLevel="false">
+            <gradient android:startColor="#00ffffff" android:endColor="@color/uikit_icon_primary_v5" android:angle="0.0" android:type="sweep" />
+        </shape>
+    </item>
+</layer-list>

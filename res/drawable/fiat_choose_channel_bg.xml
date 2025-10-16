@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/uikit_cmpt_input_v5" />
+            <corners android:radius="@dimen/uikit_radius_8" />
+            <stroke android:width="0.5dip" android:color="@color/uikit_line_border_strong_v5" />
+        </shape>
+    </item>
+    <item android:state_selected="true" android:drawable="@drawable/fiat_choose_channel_selected_bg" />
+    <item android:state_selected="false" android:drawable="@drawable/fiat_choose_channel_unselected_bg" />
+</selector>

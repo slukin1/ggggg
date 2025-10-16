@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/ll_root" style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/account_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingEnd="16.0dip">
+        <com.gateio.common.view.GateioAvatarView android:id="@id/account_avatar" android:layout_width="41.0dip" android:layout_height="41.0dip" android:layout_marginTop="20.0dip" android:layout_centerVertical="true" android:layout_marginStart="@dimen/margin_padding_16" app:avatar_enable_border="true" app:avatar_live_label="true" app:avatar_live_tag_bottom_margin="5.0dip" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/uikit_color_333333_e6e6e6" android:id="@id/account_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_dlzc" android:layout_centerVertical="true" android:layout_marginStart="12.0dip" android:layout_toEndOf="@id/account_avatar" />
+        <ImageView android:id="@id/account_vip_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="4.0dip" android:layout_toEndOf="@id/account_name" />
+    </RelativeLayout>
+    <View android:layout_marginStart="57.0dip" style="@style/uikit_view_line_mian_v" />
+</LinearLayout>

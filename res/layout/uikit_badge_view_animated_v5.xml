@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.common.view.CornerRelativeLayout android:layout_width="wrap_content" android:layout_height="@dimen/uikit_dp_15" app:radius="99.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.badge.GTBadgeV5 android:id="@id/uikit_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" app:uikit_badgeSizeV5="small" />
+    <com.gateio.lib.uikit.badge.ScanningImageView android:id="@id/scanning_round_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignEnd="@id/uikit_badge" />
+</com.gateio.common.view.CornerRelativeLayout>

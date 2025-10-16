@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.bobble.AdjustTextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_white" android:layout_gravity="center" android:id="@id/tv_context" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="196.0dip" style="@style/Uikit_font_weight_500" />
+    <com.gateio.lib.uikit.button.GTButtonV2 android:id="@id/btn_min" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/uikit_dp_16" app:uikit_buttonStyle="small" />
+</merge>

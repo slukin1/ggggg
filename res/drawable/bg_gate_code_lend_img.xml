@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="88.0dip" android:width="88.0dip" android:viewportWidth="88.0" android:viewportHeight="88.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#ffa7f757" android:pathData="M17.294,16.294m7.794,4.5a9,9 78.162,1 0,-15.588 -9a9,9 78.162,1 0,15.588 9" />
+    <group>
+        <clip-path android:pathData="M39.925,4.766l20.332,5.448l-2.978,11.115l-20.332,-5.448z" />
+        <path android:fillColor="@color/uikit_text_primary_v5" android:pathData="M49.106,15.6L56.148,11.534L57.149,13.266L50.016,17.385L57.655,19.432L57.138,21.364L49.743,19.382L53.735,26.295L52.003,27.296L47.884,20.162L45.793,27.964L43.861,27.446L45.924,19.747L38.92,23.791L37.919,22.059L44.834,18.067L36.854,15.928L37.371,13.997L45.597,16.201L41.478,9.067L43.21,8.067L47.202,14.98L49.296,7.162L51.228,7.679L49.106,15.6Z" />
+    </group>
+    <path android:fillColor="@color/uikit_bg_primary_v5" android:pathData="M13.612,18.824l63.751,17.082l2.329,-8.693l-63.751,-17.082z" android:strokeColor="@color/uikit_text_primary_v5" android:strokeWidth="1.0" />
+    <path android:fillColor="@color/uikit_text_primary_v5" android:pathData="M46.498,17.8l1.932,0.518l-2.588,9.659l-1.932,-0.518z" />
+    <path android:fillColor="@color/uikit_bg_primary_v5" android:pathData="M76.5,40.5l-66,-0l-0,35l66,0z" android:strokeColor="@color/uikit_text_primary_v5" android:strokeWidth="1.0" />
+    <path android:fillColor="@color/uikit_text_primary_v5" android:pathData="M44,40l-2,-0l-0,36l2,0z" />
+</vector>

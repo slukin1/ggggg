@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:id="@id/layoutRoot" android:background="@color/uikit_bg_mask_v5" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ruffian.library.widget.RLinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/layoutContentRoot" android:layout_width="fill_parent" android:layout_height="wrap_content" app:background_normal="@color/uikit_layer_1_v5" app:corner_radius_top_left="12.0dip" app:corner_radius_top_right="12.0dip">
+        <include android:id="@id/layoutCommonTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/futures_layout_dialog_common_title" />
+        <include android:id="@id/layoutCommonHeader" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" layout="@layout/futures_layout_dialog_common_pair_header" />
+        <androidx.core.widget.NestedScrollView android:id="@id/nsInfoLayout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:paddingTop="4.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:id="@id/llOrderType" android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="16.0dip" style="@style/match_wrap_h">
+                    <TextView android:maxWidth="225.0dip" android:text="@string/futures_v5_place_order_order_type" style="@style/Text_text_secondary_14_weight_400_v5" />
+                    <TextView android:gravity="end" android:id="@id/tvOrderType" android:layout_width="fill_parent" android:text="--" android:layout_marginStart="8.0dip" style="@style/Text_text_primary_14_weight_500_v5" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/rl_price_trigger" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" style="@style/match_wrap_h">
+                    <TextView android:maxWidth="225.0dip" android:text="@string/futures_trigger_price" style="@style/Text_text_secondary_14_weight_400_v5" />
+                    <TextView android:gravity="end" android:id="@id/tv_price_trigger" android:layout_width="fill_parent" android:text="--" android:layout_marginStart="8.0dip" style="@style/Text_text_primary_14_weight_500_v5" />
+                </LinearLayout>
+                <LinearLayout android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" style="@style/match_wrap_h">
+                    <TextView android:id="@id/tv_price" android:text="@string/futures_v5_order_price" style="@style/Text_text_secondary_14_weight_400_v5" />
+                    <TextView android:gravity="end" android:id="@id/tv_wtjg" android:layout_width="fill_parent" android:text="--" android:layout_marginStart="8.0dip" style="@style/Text_text_primary_14_weight_500_v5" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/layoutLastPrice" android:visibility="gone" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" style="@style/match_wrap_h">
+                    <TextView android:text="@string/futures_last_price_v1" style="@style/Text_text_secondary_14_weight_400_v5" />
+                    <TextView android:gravity="end" android:id="@id/tvLastPrice" android:layout_width="fill_parent" android:text="--" android:layout_marginStart="8.0dip" style="@style/Text_text_primary_14_weight_500_v5" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/rlWtsl" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" style="@style/match_wrap_h">
+                    <TextView android:id="@id/tv_wtsl_label" android:text="@string/futures_v5_amount_v1" style="@style/Text_text_secondary_14_weight_400_v5" />
+                    <TextView android:gravity="end" android:id="@id/tv_wtsl" android:layout_width="fill_parent" android:text="--" android:layout_marginStart="8.0dip" style="@style/Text_text_primary_14_weight_500_v5" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/llPositionValue" android:visibility="gone" android:layout_width="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" style="@style/wrap_wrap_h">
+                    <com.gateio.gateio.view.FuturesDashTextViewV5 android:id="@id/tvOrderValueTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/futures_est_value" app:uikit_underline_tips="@string/futures_value_or_cost_tip" style="@style/Text_text_secondary_14_weight_400_v5" />
+                    <TextView android:gravity="end" android:id="@id/tvOrderValue" android:layout_width="fill_parent" android:text="---" android:layout_marginStart="8.0dip" style="@style/Text_text_primary_14_weight_500_v5" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/llMarginMode" android:visibility="visible" android:layout_width="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" style="@style/wrap_wrap_h">
+                    <TextView android:text="@string/futures_v5_place_order_margin_mode" style="@style/Text_text_secondary_14_weight_400_v5" />
+                    <TextView android:gravity="end" android:id="@id/tvMarginMode" android:layout_width="fill_parent" android:text="---" android:layout_marginStart="8.0dip" style="@style/Text_text_primary_14_weight_500_v5" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/rl_position_bail" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" style="@style/match_wrap_h">
+                    <com.gateio.gateio.view.FuturesDashTextViewV5 android:id="@id/dtv_position_bail_label" android:maxWidth="240.0dip" android:text="@string/futures_v5_margin" app:uikit_underline_dash="true" app:uikit_underline_dashclick="false" app:uikit_underline_tips="@string/futures_cb_tips" style="@style/Text_text_secondary_14_weight_400_v5" />
+                    <TextView android:gravity="end" android:id="@id/tv_position_bail" android:layout_width="fill_parent" android:text="--" android:layout_marginStart="8.0dip" style="@style/Text_text_primary_14_weight_500_v5" />
+                </LinearLayout>
+                <View android:id="@id/divider" android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="16.0dip" style="@style/view_line_divider_v5" />
+                <LinearLayout android:id="@id/rl_mark_price" android:visibility="gone" android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="16.0dip" style="@style/match_wrap_h">
+                    <TextView android:text="@string/futures_mark_price_v1" style="@style/Text_text_secondary_14_weight_400_v5" />
+                    <TextView android:gravity="end" android:id="@id/tv_mark_price" android:layout_width="fill_parent" android:text="--" android:layout_marginStart="8.0dip" style="@style/Text_text_primary_14_weight_500_v5" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/rl_liquidation_price" android:visibility="gone" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" style="@style/match_wrap_h">
+                    <com.gateio.gateio.view.FuturesDashTextViewV5 android:id="@id/dtv_liquidation_price" android:maxWidth="200.0dip" android:text="@string/futures_est_liq_price" app:uikit_underline_dash="true" app:uikit_underline_dashclick="true" app:uikit_underline_tips="@string/futures_liquidation_price_desc" style="@style/Text_text_secondary_14_weight_400_v5" />
+                    <TextView android:gravity="end" android:id="@id/tv_liquidation_price" android:layout_width="fill_parent" android:text="--" android:layout_marginStart="8.0dip" style="@style/Text_text_primary_14_weight_500_v5" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/rl_mark_liquidation_price" android:visibility="gone" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" style="@style/match_wrap_h">
+                    <com.gateio.gateio.view.FuturesDashTextViewV5 android:id="@id/dtv_mark_liquidation_price" android:maxWidth="245.0dip" android:text="@string/futures_backhand_order_price_dif" app:uikit_underline_dash="true" app:uikit_underline_dashclick="false" app:uikit_underline_show_more_text="false" app:uikit_underline_tips="@string/futures_v5_liquidation_price_desc" style="@style/Text_text_secondary_14_weight_400_v5" />
+                    <TextView android:gravity="end" android:id="@id/tv_mark_liquidation_price" android:layout_width="fill_parent" android:minWidth="50.0dip" android:text="--" android:layout_marginStart="8.0dip" style="@style/Text_text_primary_14_weight_500_v5" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/rl_stop" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" style="@style/match_wrap_h">
+                    <TextView android:id="@id/tv_stop_title" android:maxWidth="200.0dip" android:text="@string/futures_stop_profit_v1_tp_title_v1" style="@style/Text_text_secondary_14_weight_400_v5" />
+                    <TextView android:ellipsize="end" android:gravity="end" android:id="@id/tv_stop" android:layout_width="fill_parent" android:text="--" android:maxLines="2" android:layout_marginStart="8.0dip" style="@style/Text_text_primary_14_weight_500_v5" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/rl_limit_stop" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" style="@style/match_wrap_h">
+                    <TextView android:id="@id/tv_limit_stop_title" android:maxWidth="200.0dip" android:text="@string/futures_tp_price" style="@style/Text_text_secondary_14_weight_400_v5" />
+                    <TextView android:ellipsize="end" android:gravity="end" android:id="@id/tv_limit_stop" android:layout_width="fill_parent" android:text="--" android:maxLines="2" android:layout_marginStart="8.0dip" style="@style/Text_text_primary_14_weight_500_v5" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/rl_lose" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" style="@style/match_wrap_h">
+                    <TextView android:id="@id/tv_lose_title" android:maxWidth="200.0dip" android:text="@string/futures_stop_profit_v1_sl_title_v1" style="@style/Text_text_secondary_14_weight_400_v5" />
+                    <TextView android:ellipsize="end" android:gravity="end" android:id="@id/tv_lose" android:layout_width="fill_parent" android:text="--" android:maxLines="2" android:layout_marginStart="8.0dip" style="@style/Text_text_primary_14_weight_500_v5" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/rl_limit_lose" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" style="@style/match_wrap_h">
+                    <TextView android:id="@id/tv_limit_lose_title" android:maxWidth="200.0dip" android:text="@string/futures_sl_price" style="@style/Text_text_secondary_14_weight_400_v5" />
+                    <TextView android:ellipsize="end" android:gravity="end" android:id="@id/tv_limit_lose" android:layout_width="fill_parent" android:text="--" android:maxLines="2" android:layout_marginStart="4.0dip" style="@style/Text_text_primary_14_weight_500_v5" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/rlExecutionType" android:visibility="gone" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" style="@style/match_wrap_h">
+                    <TextView android:id="@id/tvExecutionTypeTitle" android:text="@string/futures_v5_place_order_execution_type" style="@style/Text_text_secondary_14_weight_400_v5" />
+                    <TextView android:gravity="end" android:id="@id/tvExecutionType" android:layout_width="fill_parent" android:text="--" android:layout_marginStart="8.0dip" style="@style/Text_text_primary_14_weight_500_v5" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/rl_show_num" android:visibility="gone" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" style="@style/match_wrap_h">
+                    <TextView android:id="@id/tv_show_num_title" android:text="@string/futures_mark_show_num" style="@style/Text_text_secondary_14_weight_400_v5" />
+                    <TextView android:gravity="end" android:id="@id/tv_show_num" android:layout_width="fill_parent" android:text="--" android:layout_marginStart="8.0dip" style="@style/Text_text_primary_14_weight_500_v5" />
+                </LinearLayout>
+                <View android:id="@id/view_price_protect_divider" android:visibility="gone" android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="16.0dip" style="@style/view_line_divider_v5" />
+                <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/rl_price_diff_protect" android:visibility="gone" android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="16.0dip" style="@style/match_wrap_h">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutTips" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                        <TextView android:id="@id/tv_price_diff_title" android:maxWidth="200.0dip" android:text="@string/futures_protect_price" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Text_text_primary_16_weight_400_v5" />
+                        <com.gateio.uiComponent.GateIconFont android:textSize="12.0sp" android:textColor="@color/uikit_text_tertiary_v5" android:id="@id/iv_price_diff_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_marginStart="4.0dip" app:layout_constraintBottom_toBottomOf="@id/tv_price_diff_title" app:layout_constraintStart_toEndOf="@id/tv_price_diff_title" app:layout_constraintTop_toTopOf="@id/tv_price_diff_title" />
+                    </LinearLayout>
+                    <com.gateio.lib.uikit.switchview.GTSwitchV5 android:id="@id/sw_price_diff" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:layout_constraintBottom_toBottomOf="@id/layoutTips" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/layoutTips" app:uikit_switchStyleV5="medium" />
+                    <TextView android:id="@id/tv_price_diff_desc" android:layout_width="fill_parent" android:layout_marginTop="4.0dip" android:text="@string/futures_price_diff_protect_desc" android:lineSpacingMultiplier="1.3" app:layout_constraintStart_toStartOf="@id/layoutTips" app:layout_constraintTop_toBottomOf="@id/layoutTips" style="@style/Text_text_tertiary_12_weight_400_v5" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView android:textColor="@color/uikit_text_warning_v5" android:id="@id/cl_tips" android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="16.0dip" android:text="@string/futures_v5_place_order_est_pnl_tips" app:layout_constraintBottom_toTopOf="@id/cb_tips" style="@style/Text_text_tertiary_12_weight_400_v5" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <com.gateio.lib.uikit.widget.GTCheckBoxV5 android:textSize="14.0sp" android:gravity="center_vertical" android:id="@id/cb_tips" android:visibility="visible" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:checked="false" android:text="@string/no_tip_me" android:drawablePadding="8.0dip" app:uikit_button_size_v5="16.0dip" style="@style/Text_text_primary_14_weight_400_v5" />
+        <com.gateio.lib.uikit.button.GTButtonV5 android:id="@id/tv_confirm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:text="@string/trans_qr" app:uikit_buttonDimenV5="medium" app:uikit_buttonTypeV5="primary_black" />
+    </com.ruffian.library.widget.RLinearLayout>
+</LinearLayout>

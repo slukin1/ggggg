@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/jumio_rounded_list_item_outlined" android:paddingTop="@dimen/jumio_padding_extra_small" android:paddingBottom="@dimen/jumio_padding_extra_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/jumio_selection_item_height_large" android:paddingStart="@dimen/jumio_padding_medium" android:paddingEnd="@dimen/jumio_padding_medium"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/item_icon" android:layout_width="48.0dip" android:layout_height="48.0dip" app:srcCompat="@drawable/jumio_ic_driver_license" app:tint="?jumio_doc_type_icon_foreground" />
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/jumio_padding_small">
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/Jumio.TextAppearance.Subtitle" android:textColor="?jumio_bubble_foreground" android:id="@id/item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jumio_idtype_dl" />
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/Jumio.TextAppearance.Subtitle.Small" android:textSize="14.0sp" android:textColor="?jumio_bubble_foreground" android:id="@id/item_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/jumio_id_scan_guide_photo_side" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

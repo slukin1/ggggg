@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alert_cancel_array">
+        <item>Hanya abaikan saat ini</item>
+        <item>10 menit kemudian</item>
+        <item>30 menit kemudian</item>
+        <item>2 jam kemudian</item>
+        <item>24 jam kemudian</item>
+        <item>Tidak pernah</item>
+    </string-array>
+    <string-array name="exo_controls_playback_speeds">
+        <item>0,25x</item>
+        <item>0,5x</item>
+        <item>0,75x</item>
+        <item>Normal</item>
+        <item>1,25x</item>
+        <item>1,5x</item>
+        <item>2x</item>
+    </string-array>
+    <string-array name="funding_share_desc">
+        <item>Ada kebahagiaan yang disebut stabilitas</item>
+        <item>Pilih Gate dan menangkan dengan mudah</item>
+        <item>Pemimpin profesional tidak mengenal batas</item>
+        <item>Coba gunakan Gate untuk menunjukkan bakat Anda</item>
+        <item>Semua memberikan hasil sama namun ketangguhan lebih utama</item>
+        <item>Ingin mengelola uang? Bersiaplah</item>
+        <item>Hidup layak dijalani dan ada masa depan yang menjanjikan</item>
+    </string-array>
+    <string-array name="home_week_string_array">
+        <item>Minggu</item>
+        <item>Senin</item>
+        <item>Selasa</item>
+        <item>Rabu</item>
+        <item>Kamis</item>
+        <item>Jumat</item>
+        <item>Sabtu</item>
+    </string-array>
+    <string-array name="modify_procedure_items">
+        <item>Pilih pengaturan keamanan yang akan diubah</item>
+        <item>Ajukan permohonan perubahan</item>
+        <item>Selesaikan permohonan</item>
+    </string-array>
+    <string-array name="position_share_desc_loss">
+        <item>Menutup kerugian? Tidak pernah!</item>
+        <item>Simpan dan tunggu.</item>
+        <item>Lebih sedikit kerugian</item>
+        <item>Ia yang tertawa terakhir, tertawa paling baik</item>
+        <item>Bangun dan bersiap. Bergerak sekarang.</item>
+        <item>Bersikaplah baik kepada saya</item>
+        <item>Jangan Panik</item>
+        <item>Semua masuk. Percayalah</item>
+    </string-array>
+    <string-array name="position_share_desc_win">
+        <item>Masukkan semua dan menang besar.</item>
+        <item>Masukkan semua seperti biasa.</item>
+        <item>Cukup tahan</item>
+        <item>Cukup simpan</item>
+        <item>Langkah berikutnya? Ikuti tren</item>
+        <item>Saya bintang besar!</item>
+        <item>Ikuti saya untuk menang besar</item>
+        <item>Saya selalu berada di sisi yang benar!</item>
+        <item>Long atau Short? Semuanya di tangan saya.</item>
+    </string-array>
+    <string-array name="push_alert_cancel_array">
+        <item>Selama 30 menit</item>
+        <item>Selama 2 jam</item>
+        <item>Selama 24 jam</item>
+        <item>Selamanya</item>
+    </string-array>
+    <string-array name="week_string_array">
+        <item>Min</item>
+        <item>Sen</item>
+        <item>Sel</item>
+        <item>Rab</item>
+        <item>Kam</item>
+        <item>Jum</item>
+        <item>Sab</item>
+    </string-array>
+</resources>

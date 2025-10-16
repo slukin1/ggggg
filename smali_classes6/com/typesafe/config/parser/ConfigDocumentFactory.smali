@@ -1,0 +1,103 @@
+.class public final Lcom/typesafe/config/parser/ConfigDocumentFactory;
+.super Ljava/lang/Object;
+.source "ConfigDocumentFactory.java"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static parseFile(Ljava/io/File;)Lcom/typesafe/config/parser/ConfigDocument;
+    .locals 1
+
+    .line 2
+    invoke-static {}, Lcom/typesafe/config/ConfigParseOptions;->defaults()Lcom/typesafe/config/ConfigParseOptions;
+
+    move-result-object v0
+
+    invoke-static {p0, v0}, Lcom/typesafe/config/parser/ConfigDocumentFactory;->parseFile(Ljava/io/File;Lcom/typesafe/config/ConfigParseOptions;)Lcom/typesafe/config/parser/ConfigDocument;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static parseFile(Ljava/io/File;Lcom/typesafe/config/ConfigParseOptions;)Lcom/typesafe/config/parser/ConfigDocument;
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1}, Lcom/typesafe/config/impl/Parseable;->newFile(Ljava/io/File;Lcom/typesafe/config/ConfigParseOptions;)Lcom/typesafe/config/impl/Parseable;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Lcom/typesafe/config/impl/Parseable;->parseConfigDocument()Lcom/typesafe/config/parser/ConfigDocument;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static parseReader(Ljava/io/Reader;)Lcom/typesafe/config/parser/ConfigDocument;
+    .locals 1
+
+    .line 2
+    invoke-static {}, Lcom/typesafe/config/ConfigParseOptions;->defaults()Lcom/typesafe/config/ConfigParseOptions;
+
+    move-result-object v0
+
+    invoke-static {p0, v0}, Lcom/typesafe/config/parser/ConfigDocumentFactory;->parseReader(Ljava/io/Reader;Lcom/typesafe/config/ConfigParseOptions;)Lcom/typesafe/config/parser/ConfigDocument;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static parseReader(Ljava/io/Reader;Lcom/typesafe/config/ConfigParseOptions;)Lcom/typesafe/config/parser/ConfigDocument;
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1}, Lcom/typesafe/config/impl/Parseable;->newReader(Ljava/io/Reader;Lcom/typesafe/config/ConfigParseOptions;)Lcom/typesafe/config/impl/Parseable;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Lcom/typesafe/config/impl/Parseable;->parseConfigDocument()Lcom/typesafe/config/parser/ConfigDocument;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static parseString(Ljava/lang/String;)Lcom/typesafe/config/parser/ConfigDocument;
+    .locals 1
+
+    .line 2
+    invoke-static {}, Lcom/typesafe/config/ConfigParseOptions;->defaults()Lcom/typesafe/config/ConfigParseOptions;
+
+    move-result-object v0
+
+    invoke-static {p0, v0}, Lcom/typesafe/config/parser/ConfigDocumentFactory;->parseString(Ljava/lang/String;Lcom/typesafe/config/ConfigParseOptions;)Lcom/typesafe/config/parser/ConfigDocument;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static parseString(Ljava/lang/String;Lcom/typesafe/config/ConfigParseOptions;)Lcom/typesafe/config/parser/ConfigDocument;
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1}, Lcom/typesafe/config/impl/Parseable;->newString(Ljava/lang/String;Lcom/typesafe/config/ConfigParseOptions;)Lcom/typesafe/config/impl/Parseable;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Lcom/typesafe/config/impl/Parseable;->parseConfigDocument()Lcom/typesafe/config/parser/ConfigDocument;
+
+    move-result-object p0
+
+    return-object p0
+.end method

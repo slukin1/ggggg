@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View android:layout_gravity="center" android:id="@id/icon_font_bg" android:background="@color/uikit_bg_always_white_v5" android:layout_width="28.0dip" android:layout_height="28.0dip" />
+        <com.gateio.uiComponent.GateIconFont android:textSize="56.0sp" android:textColor="@color/uikit_text_success_v5" android:gravity="center" android:id="@id/uikit_iv_result" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+    </FrameLayout>
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="@color/uikit_text_primary_v5" android:gravity="center" android:id="@id/tv_result_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_spacing_32_v5" android:layout_marginTop="16.0dip" android:layout_marginRight="@dimen/uikit_spacing_32_v5" android:minHeight="@dimen/uikit_dp_24" android:layout_marginHorizontal="@dimen/uikit_spacing_32_v5" style="@style/Uikit_font_sans_5_0_weight_500" />
+    <com.gateio.lib.uikit.text.GTMultiLineTextViewV5 android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_secondary_v5" android:gravity="center" android:id="@id/tv_result_content" android:paddingTop="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_spacing_32_v5" android:layout_marginRight="@dimen/uikit_spacing_32_v5" android:layout_marginHorizontal="@dimen/uikit_spacing_32_v5" app:uikit_multiLineSpaceV5="space2" style="@style/Uikit_font_sans_5_0_weight_400" />
+</merge>

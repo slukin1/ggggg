@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.lib.uikit.popup.GTPopupDragLinearLayout android:orientation="vertical" android:background="@color/uikit_layer_1_v5" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:left_top_radis="@dimen/uikit_radius_12" app:right_top_radis="@dimen/uikit_radius_12"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/layoutCommonTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" layout="@layout/futures_layout_dialog_common_title" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent">
+        <com.ruffian.library.widget.RLinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/llOneWay" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="@dimen/length_16" android:layout_marginRight="16.0dip" android:layout_marginHorizontal="16.0dip" app:border_color_normal="@color/uikit_line_divider_v5" app:border_color_selected="@color/uikit_cmpt_component_active_v5" app:border_width_normal="1.0dip" app:corner_radius="8.0dip">
+            <TextView android:text="@string/futures_module_single" style="@style/Text_text_primary_16_weight_500_v5" />
+            <TextView android:layout_marginTop="2.0dip" android:text="@string/futures_one_way_mode_desc" style="@style/Text_text_secondary_12_weight_400_v5" />
+        </com.ruffian.library.widget.RLinearLayout>
+        <com.ruffian.library.widget.RLinearLayout android:enabled="false" android:orientation="vertical" android:id="@id/llHedgeWay" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="@dimen/length_8" android:layout_marginRight="16.0dip" android:layout_marginHorizontal="16.0dip" app:border_color_normal="@color/uikit_line_divider_v5" app:border_color_selected="@color/uikit_cmpt_component_active_v5" app:border_width_normal="1.0dip" app:corner_radius="8.0dip">
+            <TextView android:text="@string/futures_module_dueal" style="@style/Text_text_primary_16_weight_500_v5" />
+            <TextView android:layout_marginTop="@dimen/length_2" android:text="@string/futures_hedge_mode_desc_v1" style="@style/Text_text_secondary_12_weight_400_v5" />
+        </com.ruffian.library.widget.RLinearLayout>
+        <TextView android:id="@id/tvPositionModeTips" android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="16.0dip" android:text="@string/futures_position_mode_tip" android:layout_marginHorizontal="16.0dip" style="@style/Text_text_secondary_12_weight_400_v5" />
+    </LinearLayout>
+</com.gateio.lib.uikit.popup.GTPopupDragLinearLayout>

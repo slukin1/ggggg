@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_container" android:paddingLeft="@dimen/uikit_dp_16" android:paddingTop="@dimen/uikit_dp_16" android:paddingRight="@dimen/uikit_dp_16" android:paddingBottom="@dimen/uikit_dp_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/uikit_dp_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.selector.GTSelectorV5 android:id="@id/selector" android:layout_width="fill_parent" android:layout_height="wrap_content" app:uikit_selectorItemSpaceV5="large" app:uikit_selectorShowBadgeV5="true" app:uikit_selectorSpanCountV5="2" app:uikit_selectorTypeV5="tag" />
+</LinearLayout>

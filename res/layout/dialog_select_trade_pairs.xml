@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/ed_asset_bg" android:paddingTop="@dimen/margin_padding_15" android:paddingBottom="@dimen/margin_padding_15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/margin_padding_20" android:paddingEnd="@dimen/margin_padding_20"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/uikit_main_text_color" android:id="@id/select_trade" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_padding_10" android:text="@string/asset_list_qxzbz" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerview" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

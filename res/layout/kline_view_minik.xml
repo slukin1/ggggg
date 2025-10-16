@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/divider1" android:background="@color/uikit_line_divider_v5" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0.5" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="32.0dip">
+        <com.gateio.biz.kline.widget.KlineStepSelectorView android:id="@id/kline_step_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <com.gateio.biz.kline.widget.RTLView android:id="@id/view_over_scroll" android:background="@drawable/kline_over_scroll" android:layout_width="16.0dip" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentBottom="true" android:layout_alignEnd="@id/kline_step_selector" />
+    </RelativeLayout>
+    <View android:id="@id/divider2" android:background="@color/uikit_line_divider_v5" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0.5" />
+    <com.gateio.biz.kline.widget.StateView android:id="@id/kline_state_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.sparkhuu.klinelib.chart.KTimeLineView android:id="@id/kline_chart" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.gateio.biz.kline.widget.StateView>
+</merge>

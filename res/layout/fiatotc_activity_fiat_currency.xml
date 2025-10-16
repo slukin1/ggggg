@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/uikit_bg_1_v3" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.title.GTTitleViewV3 android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fiatotc_select_fiat" />
+    <com.gateio.lib.uikit.search.GTSearchViewV3 android:id="@id/search_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_padding_12" android:layout_marginTop="@dimen/uikit_margin_padding_8" android:layout_marginRight="@dimen/margin_padding_12" android:layout_marginBottom="@dimen/uikit_margin_padding_8" />
+    <FrameLayout android:paddingLeft="@dimen/uikit_margin_padding_16" android:paddingRight="@dimen/uikit_margin_padding_16" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/uikit_margin_padding_8">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rc_content" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+        <com.gateio.lib.uikit.state.GTEmptyViewV3 android:layout_gravity="center_horizontal" android:id="@id/empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_40" app:uikit_emptyTypeV3="search_empty" app:uikit_titleTextV3="@string/fiatotc_no_result_found" />
+    </FrameLayout>
+</LinearLayout>

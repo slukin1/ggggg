@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/screen_cost_ll" android:background="@color/alivc_common_bg_black" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <FrameLayout android:id="@id/fl" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/alivc_screen_costing_background" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="@dimen/alivc_common_font_14" android:textColor="@color/alivc_common_font_gray_light" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/tv_screen_cost_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alivc_screen_costting" android:drawablePadding="@dimen/alivc_common_padding_10" app:drawableStartCompat="@drawable/alivc_screen_cost_pointer_red_shape" />
+        </FrameLayout>
+        <TextView android:id="@id/tv_exit" android:padding="@dimen/alivc_common_padding_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/alivc_common_margin_30" android:text="@string/alivc_screen_cost_exit" android:layout_below="@id/fl" style="@style/btn_style" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/titlebar" android:background="@mipmap/alivc_titlebar_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <TextView android:textSize="@dimen/alivc_common_font_18" android:textColor="@color/alivc_common_font_white_light" android:ellipsize="end" android:id="@id/alivc_title_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" android:layout_marginStart="@dimen/alivc_common_margin_8" android:layout_marginEnd="@dimen/alivc_common_margin_8" />
+        <ImageView android:id="@id/alivc_title_download" android:padding="@dimen/alivc_common_padding_16" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_donwload" />
+        <ImageView android:id="@id/alivc_title_more" android:padding="@dimen/alivc_common_padding_16" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/alivc_more" />
+    </LinearLayout>
+    <ImageView android:id="@id/alivc_screen_lock" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/alivc_screen_unlock" android:layout_centerVertical="true" android:layout_marginStart="@dimen/alivc_common_margin_10" android:layout_alignParentStart="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/alivc_common_margin_10" android:layout_alignParentEnd="true">
+        <ImageView android:id="@id/iv_input_danmaku" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/alivc_input_danmaku_icon" />
+        <ImageView android:id="@id/alivc_screen_shot" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/alivc_common_margin_4" android:src="@mipmap/alivc_screen_shot" />
+        <ImageView android:id="@id/alivc_screen_recoder" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/alivc_common_margin_4" android:src="@mipmap/alivc_recorder" />
+    </LinearLayout>
+    <include layout="@layout/layout_live_reord_bottom" />
+    <ImageView android:id="@id/alivc_player_state" android:background="@drawable/live_bg_radius100_bg3" android:padding="12.0dip" android:layout_width="64.0dip" android:layout_height="64.0dip" android:scaleType="fitXY" android:layout_centerInParent="true" />
+</merge>

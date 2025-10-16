@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/uikit_bg_primary_v5" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.title.GTNavBarV5 android:id="@id/market_title_view" android:layout_width="fill_parent" android:layout_height="44.0dip" android:text="@string/market_setting_real_time_market_tracking" app:uikit_titleLeftColorV5="@color/uikit_icon_secondary_v5" app:uikit_titleLeftV5="" app:uikit_titleRightColorV5="@color/uikit_icon_secondary_v5" app:uikit_titleRightV5="" />
+    <com.gateio.lib.uikit.cell.GTCellV5 android:id="@id/market_ball_show_cell" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/market_floating_floating_window_display" app:uikit_cellSwitchSizeV5="small" />
+    <LinearLayout android:id="@id/ll_xfsz" android:visibility="visible" style="@style/match_wrap">
+        <View android:background="@color/uikit_bg_2_v3" android:layout_width="fill_parent" android:layout_height="6.0dip" />
+        <com.gateio.lib.uikit.cell.GTCellV5 android:id="@id/market_ball_fiat_quote_cell" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/market_floating_fiat_as_the_quote_currency" app:uikit_cellSwitchSizeV5="small" />
+        <com.gateio.lib.uikit.cell.GTCellV5 android:id="@id/market_ball_trending_news_cell" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/market_floating_trending_news" app:uikit_cellSwitchSizeV5="small" />
+        <com.gateio.lib.uikit.cell.GTCellV5 android:id="@id/market_ball_display_setting_cell" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/market_floating_floating_window_display_settings" app:uikit_cellShowRightArrowV5="true" />
+        <com.gateio.lib.uikit.cell.GTCellV5 android:id="@id/market_ball_track_fav_cell" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/market_floating_track_favorites" app:uikit_cellSwitchSizeV5="small" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/market_ball_custom_fav_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <View android:background="@color/uikit_line_divider_v5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/uikit_text_primary_v5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:text="@string/market_floating_custom_watchlist" style="@style/Uikit_font_sans_5_0_weight_400" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="@color/uikit_text_secondary_v5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/market_floating_custom_watchlist_title_coin" android:layout_weight="80.0" style="@style/Uikit_font_sans_5_0_weight_400" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/uikit_text_secondary_v5" android:gravity="end" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/market_floating_custom_watchlist_title_pin" android:layout_weight="13.0" android:layout_marginStart="12.0dip" style="@style/Uikit_font_sans_5_0_weight_400" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/uikit_text_secondary_v5" android:gravity="end" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/market_floating_custom_watchlist_title_drag" android:layout_weight="11.0" android:layout_marginStart="8.0dip" style="@style/Uikit_font_sans_5_0_weight_400" />
+        </LinearLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_weight="1.0">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/market_ball_custom_fav_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.gateio.lib.uikit.state.GTEmptyV5 android:id="@id/market_ball_custom_fav_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" app:uikit_descTextV5="@string/ticker_not_data" app:uikit_emptySizeV5="small" app:uikit_emptyTypeV5="data_empty" />
+        </FrameLayout>
+        <com.gateio.lib.uikit.button.GTButtonV5 android:id="@id/market_ball_custom_fav_add" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:text="@string/market_floating_custom_watchlist_title_add" app:uikit_buttonDimenV5="large" app:uikit_buttonTypeV5="primary_black" />
+    </LinearLayout>
+</LinearLayout>

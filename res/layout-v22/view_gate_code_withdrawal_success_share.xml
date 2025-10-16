@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:apps="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:background="@color/uikit_bg_primary_v5" android:paddingLeft="@dimen/uikit_margin_padding_16" android:paddingRight="@dimen/uikit_margin_padding_16" android:paddingBottom="@dimen/uikit_dp_32" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/uikit_margin_padding_16">
+            <com.gateio.lib.uikit.reminder.GTReminderV5 android:id="@id/reminder" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_24" android:text="@string/wallets_withdrawal_share_warning" app:uikit_reminderTypeV5="neutral" />
+            <com.gateio.gateio.view.CornerConstraintLayoutV5 android:layout_gravity="center_horizontal" android:id="@id/fr_qrcode" android:padding="@dimen/uikit_margin_padding_8" android:layout_width="156.0dip" android:layout_height="156.0dip" android:layout_marginTop="@dimen/uikit_margin_padding_20">
+                <ImageView android:layout_gravity="center" android:id="@id/qrcode" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <ImageView android:layout_gravity="center" android:id="@id/coin_image_qrcode" android:layout_width="@dimen/uikit_margin_padding_24" android:layout_height="@dimen/uikit_margin_padding_24" android:src="@mipmap/ic_share_logo" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            </com.gateio.gateio.view.CornerConstraintLayoutV5>
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="132.0dip" android:layout_height="32.0dip" android:layout_marginLeft="@dimen/uikit_margin_padding_16" android:layout_marginTop="22.0dip" android:layout_marginRight="@dimen/uikit_margin_padding_16" android:src="@mipmap/ic_gateio_ic" android:layout_marginHorizontal="@dimen/uikit_margin_padding_16" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

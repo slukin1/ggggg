@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.lib.uikit.popup.GTPopupDragLinearLayout android:id="@id/layoutRoot" android:background="@color/uikit_layer_1_v5" android:layout_width="fill_parent" android:layout_height="wrap_content" app:left_top_radis="@dimen/length_12" app:right_top_radis="@dimen/length_12"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ruffian.library.widget.RLinearLayout android:orientation="vertical" android:paddingBottom="@dimen/length_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/length_24">
+        <com.gateio.lib.uikit.tab.v5.GTTabsV5 android:id="@id/tabLayout" android:layout_width="fill_parent" android:layout_height="@dimen/length_40" />
+        <com.gateio.biz.exchange.ui.widget.WrapContentViewPager android:id="@id/vp_menu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/length_6" />
+    </com.ruffian.library.widget.RLinearLayout>
+</com.gateio.lib.uikit.popup.GTPopupDragLinearLayout>

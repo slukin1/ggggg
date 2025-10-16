@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.third.skeletonLayout.SkeletonLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/fiat_shape_d2_r8" android:paddingLeft="@dimen/uikit_dp_12" android:paddingRight="@dimen/uikit_dp_12" android:layout_width="176.0dip" android:layout_height="60.0dip" android:paddingHorizontal="@dimen/uikit_dp_12" app:showShimmer="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/uikit_text_size_13" android:textColor="@color/uikit_text_2_v3" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="30.0dip" style="@style/Uikit_font_sans_2_0_weight_500" />
+            <com.gateio.biz_fiat_channel.widget.AutoScaleSizeTextView android:gravity="end" android:id="@id/rate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="@dimen/uikit_dp_8" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_4">
+            <TextView android:textSize="@dimen/uikit_text_size_10" android:textColor="@color/uikit_text_3_v3" android:id="@id/historical_roi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fiat_historical_roi" />
+            <TextView android:textSize="@dimen/uikit_text_size_10" android:gravity="end" android:id="@id/dimension" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="50.0dip" android:layout_marginStart="@dimen/uikit_dp_8" style="@style/Uikit_font_sans_2_0_weight_500" />
+        </LinearLayout>
+    </LinearLayout>
+</com.gateio.third.skeletonLayout.SkeletonLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.comlib.view.CornerRelativeLayout android:background="@color/bg_1" android:paddingLeft="@dimen/margin_padding_12" android:paddingTop="@dimen/margin_padding_20" android:paddingRight="@dimen/margin_padding_12" android:paddingBottom="@dimen/margin_padding_20" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_padding_16" android:layout_marginRight="@dimen/margin_padding_16" android:layout_marginBottom="@dimen/margin_padding_12" android:radius="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.fiatotclib.view.PaymentView android:id="@id/payment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/fiatotc_ic_bold_arrow_right" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:tint="@color/text_1" />
+</com.gateio.comlib.view.CornerRelativeLayout>

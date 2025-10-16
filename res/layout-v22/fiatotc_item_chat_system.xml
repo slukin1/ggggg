@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/ts_12" android:textColor="@color/uikit_text_3_v3" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_16" android:layout_marginBottom="@dimen/margin_padding_16" android:layout_marginVertical="@dimen/margin_padding_16" style="@style/Uikit_font_sans_2_0_weight_400" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/card_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.gateio.comlib.view.CornerTextView android:textSize="@dimen/ts_14" android:textColor="@color/uikit_text_1_v3" android:id="@id/message" android:background="@drawable/fiatotc_bg1_divider5_r8_n2" android:padding="@dimen/margin_padding_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:radius="4.0dip" android:lineSpacingExtra="@dimen/margin_padding_4" android:textIsSelectable="true" style="@style/Uikit_font_sans_2_0_weight_500" />
+        <com.gateio.fiatotclib.function.chat.view.FiatOtcChatOrderFlowView android:id="@id/order_flow_card" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.gateio.lib.uikit.reminder.GTReminderV3 android:id="@id/reminder" android:layout_width="fill_parent" android:layout_height="wrap_content" app:uikit_reminderShowStartIconV3="true" app:uikit_reminderTypeV3="waring" />
+    </LinearLayout>
+</LinearLayout>

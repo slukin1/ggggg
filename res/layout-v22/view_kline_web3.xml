@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.biz.kline.widget.ListenHeightUpdateFrameLayout android:id="@id/fl_root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_text_secondary_v5" android:gravity="center" android:id="@id/trans_pair_index" android:padding="@dimen/k_margin_padding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerVertical="true" android:layout_marginEnd="8.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <com.gateio.biz.kline.widget.OverLayHorizontalScrollView android:scrollbars="none" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_toStartOf="@id/trans_pair_index" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/trans_pair_index" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_base_time" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="16.0dip">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_kline_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:layout_marginVertical="4.0dip" />
+                    <com.gateio.biz.kline.widget.FakeBoldRadioButton android:id="@id/trans_pair_more" android:background="@drawable/kline_bg_step_selector" android:minHeight="32.0dip" android:text="@string/tradeview_more" android:drawablePadding="@dimen/k_margin_padding_5" android:drawableTint="@color/selector_arrow_color" app:drawableEndCompat="@mipmap/ic_k_setting_down" style="@style/kline_step_normal" />
+                </LinearLayout>
+            </com.gateio.biz.kline.widget.OverLayHorizontalScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <com.gateio.biz.kline.widget.StateView android:id="@id/timeline_state_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.sparkhuu.klinelib.chart.KTimeLineView android:id="@id/timeline" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </com.gateio.biz.kline.widget.StateView>
+        <com.gateio.biz.kline.widget.OverLayHorizontalScrollView android:id="@id/ll_main_sub_scroll" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="32.0dip" android:fillViewport="true" app:layout_constraintTop_toBottomOf="@id/layoutKline">
+            <com.gateio.biz.kline.widget.KlineIndexSelectorView android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_main_sub" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="8.0dip" />
+        </com.gateio.biz.kline.widget.OverLayHorizontalScrollView>
+    </LinearLayout>
+</com.gateio.biz.kline.widget.ListenHeightUpdateFrameLayout>

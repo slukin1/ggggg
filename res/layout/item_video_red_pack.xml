@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/cl_root" android:layout_width="@dimen/dp_90" android:layout_height="42.0dip" android:layout_marginTop="@dimen/length_8"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/text_size_11" android:textColor="@color/uikit_text_6_v3" android:gravity="end|center" android:id="@id/tv_time" android:background="@drawable/bg_video_item_red_pack" android:layout_width="@dimen/dp_90" android:layout_height="@dimen/uikit_dp_32" android:layout_marginBottom="2.0dip" android:layout_alignParentBottom="true" android:layout_marginStart="2.0dip" android:layout_alignParentEnd="true" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="48.0dip" android:layout_height="fill_parent" android:layout_alignParentStart="true">
+        <ImageView android:id="@id/imageView5" android:layout_width="38.0dip" android:layout_height="33.0dip" android:src="@drawable/ic_video_rad_pack_item" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="@dimen/uikit_text_size_8" android:textColor="#ffb44343" android:ellipsize="end" android:gravity="center" android:id="@id/tv_follow" android:background="@drawable/bg_video_item_red_pack_tv" android:paddingTop="@dimen/length_1" android:paddingBottom="@dimen/length_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_red_pack_follow_gift" android:maxLines="2" android:paddingStart="@dimen/length_4" android:paddingEnd="@dimen/length_4" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

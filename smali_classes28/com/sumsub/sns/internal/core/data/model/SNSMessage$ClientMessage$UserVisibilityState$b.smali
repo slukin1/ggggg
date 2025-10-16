@@ -1,0 +1,153 @@
+.class public final Lcom/sumsub/sns/internal/core/data/model/SNSMessage$ClientMessage$UserVisibilityState$b;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/sumsub/sns/internal/core/data/model/SNSMessage$ClientMessage$UserVisibilityState;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "b"
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/sumsub/sns/internal/core/data/model/SNSMessage$ClientMessage$UserVisibilityState$b;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Lcom/sumsub/sns/internal/core/data/model/SNSMessage$ClientMessage$UserVisibilityState;
+    .locals 3
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    .line 2
+    new-instance v0, Lcom/sumsub/sns/internal/core/data/model/SNSMessage$ClientMessage$UserVisibilityState;
+
+    .line 3
+    .line 4
+    new-instance v1, Lcom/sumsub/sns/internal/core/data/model/SNSMessage$ClientMessage$UserVisibilityState$c;
+
+    .line 5
+    .line 6
+    sget-object v2, Lcom/sumsub/sns/internal/core/data/model/SNSMessage$ClientMessage$UserVisibilityState$Visibility;->HIDDEN:Lcom/sumsub/sns/internal/core/data/model/SNSMessage$ClientMessage$UserVisibilityState$Visibility;
+
+    .line 7
+    .line 8
+    .line 9
+    invoke-virtual {v2}, Lcom/sumsub/sns/internal/core/data/model/SNSMessage$ClientMessage$UserVisibilityState$Visibility;->getValue()Ljava/lang/String;
+
+    .line 10
+    move-result-object v2
+
+    .line 11
+    .line 12
+    .line 13
+    invoke-direct {v1, v2}, Lcom/sumsub/sns/internal/core/data/model/SNSMessage$ClientMessage$UserVisibilityState$c;-><init>(Ljava/lang/String;)V
+
+    .line 14
+    .line 15
+    .line 16
+    invoke-direct {v0, v1}, Lcom/sumsub/sns/internal/core/data/model/SNSMessage$ClientMessage$UserVisibilityState;-><init>(Lcom/sumsub/sns/internal/core/data/model/SNSMessage$ClientMessage$UserVisibilityState$c;)V
+
+    .line 17
+    return-object v0
+    .line 18
+.end method
+
+.method public final b()Lcom/sumsub/sns/internal/core/data/model/SNSMessage$ClientMessage$UserVisibilityState;
+    .locals 3
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    .line 2
+    new-instance v0, Lcom/sumsub/sns/internal/core/data/model/SNSMessage$ClientMessage$UserVisibilityState;
+
+    .line 3
+    .line 4
+    new-instance v1, Lcom/sumsub/sns/internal/core/data/model/SNSMessage$ClientMessage$UserVisibilityState$c;
+
+    .line 5
+    .line 6
+    sget-object v2, Lcom/sumsub/sns/internal/core/data/model/SNSMessage$ClientMessage$UserVisibilityState$Visibility;->VISIBLE:Lcom/sumsub/sns/internal/core/data/model/SNSMessage$ClientMessage$UserVisibilityState$Visibility;
+
+    .line 7
+    .line 8
+    .line 9
+    invoke-virtual {v2}, Lcom/sumsub/sns/internal/core/data/model/SNSMessage$ClientMessage$UserVisibilityState$Visibility;->getValue()Ljava/lang/String;
+
+    .line 10
+    move-result-object v2
+
+    .line 11
+    .line 12
+    .line 13
+    invoke-direct {v1, v2}, Lcom/sumsub/sns/internal/core/data/model/SNSMessage$ClientMessage$UserVisibilityState$c;-><init>(Ljava/lang/String;)V
+
+    .line 14
+    .line 15
+    .line 16
+    invoke-direct {v0, v1}, Lcom/sumsub/sns/internal/core/data/model/SNSMessage$ClientMessage$UserVisibilityState;-><init>(Lcom/sumsub/sns/internal/core/data/model/SNSMessage$ClientMessage$UserVisibilityState$c;)V
+
+    .line 17
+    return-object v0
+    .line 18
+.end method
+
+.method public final serializer()Lkotlinx/serialization/KSerializer;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lkotlinx/serialization/KSerializer<",
+            "Lcom/sumsub/sns/internal/core/data/model/SNSMessage$ClientMessage$UserVisibilityState;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    .line 2
+    sget-object v0, Lcom/sumsub/sns/internal/core/data/model/SNSMessage$ClientMessage$UserVisibilityState$a;->a:Lcom/sumsub/sns/internal/core/data/model/SNSMessage$ClientMessage$UserVisibilityState$a;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+.end method

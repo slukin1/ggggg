@@ -1,0 +1,484 @@
+.class public Lcom/alipay/mobile/security/bio/api/BioParameter;
+.super Ljava/lang/Object;
+.source "BioParameter.java"
+
+# interfaces
+.implements Ljava/io/Serializable;
+
+
+# static fields
+.field private static final serialVersionUID:J = 0x6fL
+
+
+# instance fields
+.field private autoClose:Z
+
+.field private bundle:Landroid/os/Bundle;
+
+.field private extProperty:Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private headImageUrl:Ljava/lang/String;
+
+.field public isValidate:Z
+
+.field private protocol:Ljava/lang/String;
+
+.field private remoteURL:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    new-instance v0, Ljava/util/HashMap;
+
+    .line 6
+    .line 7
+    .line 8
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    .line 9
+    .line 10
+    iput-object v0, p0, Lcom/alipay/mobile/security/bio/api/BioParameter;->extProperty:Ljava/util/Map;
+
+    .line 11
+    const/4 v0, 0x1
+
+    .line 12
+    .line 13
+    iput-boolean v0, p0, Lcom/alipay/mobile/security/bio/api/BioParameter;->autoClose:Z
+
+    .line 14
+    const/4 v0, 0x0
+
+    .line 15
+    .line 16
+    iput-boolean v0, p0, Lcom/alipay/mobile/security/bio/api/BioParameter;->isValidate:Z
+
+    .line 17
+    return-void
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+.end method
+
+
+# virtual methods
+.method public addExtProperty(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/alipay/mobile/security/bio/api/BioParameter;->extProperty:Ljava/util/Map;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 6
+    return-void
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+.end method
+
+.method public getBundle()Landroid/os/Bundle;
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/alipay/mobile/security/bio/api/BioParameter;->bundle:Landroid/os/Bundle;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+.end method
+
+.method public getExtProperty()Ljava/util/Map;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/alipay/mobile/security/bio/api/BioParameter;->extProperty:Ljava/util/Map;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+.end method
+
+.method public getHeadImageUrl()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/alipay/mobile/security/bio/api/BioParameter;->headImageUrl:Ljava/lang/String;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+.end method
+
+.method public getProtocol()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/alipay/mobile/security/bio/api/BioParameter;->protocol:Ljava/lang/String;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+.end method
+
+.method public getRemoteURL()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lcom/alipay/mobile/security/bio/api/BioParameter;->remoteURL:Ljava/lang/String;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+.end method
+
+.method public isAutoClose()Z
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-boolean v0, p0, Lcom/alipay/mobile/security/bio/api/BioParameter;->autoClose:Z
+
+    .line 3
+    return v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+.end method
+
+.method public setAutoClose(Z)V
+    .locals 0
+
+    .line 1
+    .line 2
+    iput-boolean p1, p0, Lcom/alipay/mobile/security/bio/api/BioParameter;->autoClose:Z
+
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public setBundle(Landroid/os/Bundle;)V
+    .locals 0
+
+    .line 1
+    .line 2
+    iput-object p1, p0, Lcom/alipay/mobile/security/bio/api/BioParameter;->bundle:Landroid/os/Bundle;
+
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public setHeadImageUrl(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    .line 2
+    iput-object p1, p0, Lcom/alipay/mobile/security/bio/api/BioParameter;->headImageUrl:Ljava/lang/String;
+
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public setProtocol(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    .line 2
+    iput-object p1, p0, Lcom/alipay/mobile/security/bio/api/BioParameter;->protocol:Ljava/lang/String;
+
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public setRemoteURL(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    .line 2
+    iput-object p1, p0, Lcom/alipay/mobile/security/bio/api/BioParameter;->remoteURL:Ljava/lang/String;
+
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method

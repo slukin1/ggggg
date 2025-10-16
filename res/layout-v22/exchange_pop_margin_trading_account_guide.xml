@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/llRoot" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/ivPop" android:background="@mipmap/exchange_ic_reverse_triangle_v1" android:layout_width="wrap_content" android:layout_height="8.0dip" />
+    <com.gateio.common.view.CornerLinearLayout android:background="@color/uikit_cmpt_6_v3" android:paddingTop="@dimen/length_8" android:paddingBottom="@dimen/length_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="8.0dip" android:paddingStart="@dimen/length_12" android:paddingEnd="4.0dip" android:layout_marginHorizontal="5.0dip" android:layout_marginVertical="8.0dip" android:paddingVertical="@dimen/length_8" app:radius="@dimen/length_6">
+        <TextView android:textSize="12.0sp" android:textColor="@color/uikit_text_6_v3" android:id="@id/tv_text_info" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/exchange_set_up_account_mode_guide_tip" android:layout_weight="1.0" android:lineSpacingMultiplier="1.3" style="@style/Uikit_font_sans_2_0_weight_500" />
+        <com.gateio.uiComponent.GateIconFont android:textSize="12.0sp" android:textColor="@color/uikit_icon_6_v3" android:id="@id/ivClose" android:paddingLeft="@dimen/length_8" android:paddingRight="@dimen/length_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:paddingHorizontal="@dimen/length_8" />
+    </com.gateio.common.view.CornerLinearLayout>
+</FrameLayout>

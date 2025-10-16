@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.uiComponent.GateIconFont android:textSize="20.0sp" android:textColor="@color/uikit_text_2" android:gravity="center" android:id="@id/gate_title_left" android:layout_width="38.0dip" android:layout_height="fill_parent" android:text="" app:left_or_right="true" />
+    <com.gateio.uiComponent.GateIconFont android:textSize="12.0sp" android:textColor="@color/uikit_text_1" android:gravity="center" android:id="@id/gate_title_left_second" android:layout_width="32.0dip" android:layout_height="32.0dip" />
+    <LinearLayout android:gravity="center" style="@style/uikit_ww_match_h">
+        <TextView android:textColor="@color/uikit_text_1" android:id="@id/gate_title_text" app:autoSizeMaxTextSize="@dimen/uikit_text_size_16" app:autoSizeMinTextSize="@dimen/uikit_text_size_14" app:autoSizeStepGranularity="1.0sp" app:autoSizeTextType="uniform" style="@style/uikit_MainHeaderTxt" />
+        <com.gateio.uiComponent.GateIconFont android:textSize="14.0sp" android:textColor="@color/uikit_text_1" android:id="@id/gate_title_center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_marginStart="4.0dip" />
+    </LinearLayout>
+    <com.gateio.uiComponent.GateIconFont android:textSize="24.0sp" android:textColor="@color/uikit_text_1" android:gravity="center" android:id="@id/gate_title_right_third" android:visibility="gone" android:layout_width="38.0dip" android:layout_height="fill_parent" />
+    <com.gateio.uiComponent.GateIconFont android:textSize="24.0sp" android:textColor="@color/uikit_text_1" android:gravity="center" android:id="@id/gate_title_right_second" android:layout_width="38.0dip" android:layout_height="fill_parent" />
+    <com.gateio.uiComponent.GateIconFont android:textSize="24.0sp" android:textColor="@color/uikit_text_1" android:gravity="center" android:id="@id/gate_title_right" android:layout_width="38.0dip" android:layout_height="fill_parent" android:layout_marginEnd="11.0dip" />
+</merge>

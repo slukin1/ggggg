@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.common.view.scan.CustomBarcodeView android:id="@id/zxing_barcode_surface" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.gateio.common.view.scan.CustomQRViewfinderView android:id="@id/zxing_viewfinder_view" android:layout_width="fill_parent" android:layout_height="fill_parent" app:textOffset="24.0dip" app:zxing_viewfinder_mask="@color/uikit_black_alpha_50_v5" />
+    <TextView android:textColor="@color/zxing_status_text" android:gravity="center_horizontal" android:layout_gravity="bottom|center" android:id="@id/zxing_status_view" android:background="@color/zxing_transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="250.0dip" android:text="@string/custom_scan_tips" android:paddingStart="@dimen/margin_padding_50" android:paddingEnd="@dimen/margin_padding_50" />
+</FrameLayout>

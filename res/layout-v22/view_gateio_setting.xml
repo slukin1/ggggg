@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/margin_padding_12" android:paddingBottom="@dimen/margin_padding_12" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingEnd="@dimen/margin_padding_6" android:paddingVertical="@dimen/margin_padding_12">
+        <TextView android:textSize="14.0dip" android:textColor="@color/uikit_text_1" android:id="@id/setting_view_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/user_ltssz" android:drawablePadding="@dimen/margin_padding_8" android:layout_weight="1.0" android:layout_marginStart="@dimen/margin_padding_16" app:drawableStartCompat="@mipmap/chat_settings" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/uikit_text_3" android:ellipsize="end" android:id="@id/setting_view_lowest_volume" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxEms="10" android:singleLine="true" android:layout_marginEnd="@dimen/margin_padding_10" />
+        <com.gateio.common.view.SwitchView android:id="@id/setting_view_switch" android:layout_width="32.0dip" android:layout_height="16.0dip" android:layout_marginEnd="@dimen/margin_padding_10" />
+        <ImageView android:id="@id/setting_view_rightarrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_arrow_next" android:layout_marginEnd="2.0dip" />
+    </LinearLayout>
+    <View android:id="@id/splitline" android:background="@color/uikit_bg_market_line" android:layout_marginLeft="@dimen/margin_padding_16" android:layout_marginRight="@dimen/margin_padding_16" android:layout_marginHorizontal="@dimen/margin_padding_16" style="@style/view_line_v" />
+</merge>

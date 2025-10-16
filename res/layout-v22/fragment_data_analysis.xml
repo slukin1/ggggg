@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/position_chart_head" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" layout="@layout/layout_item_analysis" />
+        <com.gateio.biz.kline.widget.StateView android:id="@id/position_chart_state" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include android:id="@id/position_chart_tablayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" layout="@layout/layout_kline_chart_tablayout" />
+                <LinearLayout android:orientation="vertical" android:id="@id/position_chart_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.github.mikephil.charting.charts.CombinedChart android:id="@id/position_chart" android:layout_width="fill_parent" android:layout_height="180.0dip" android:layout_marginTop="12.0dip" />
+                    <com.gateio.biz.kline.widget.ChartIndicator android:layout_gravity="center" android:id="@id/position_chart_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:layout_marginVertical="12.0dip" />
+                </LinearLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </com.gateio.biz.kline.widget.StateView>
+        <include android:id="@id/rate_chart_head" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" layout="@layout/layout_item_analysis" />
+        <com.gateio.biz.kline.widget.StateView android:id="@id/rate_chart_state" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/rate_chart_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.github.mikephil.charting.charts.CombinedChart android:id="@id/rate_chart" android:layout_width="fill_parent" android:layout_height="180.0dip" android:layout_marginTop="12.0dip" />
+                    <com.gateio.biz.kline.widget.ChartIndicator android:layout_gravity="center" android:id="@id/rate_chart_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:layout_marginVertical="12.0dip" />
+                </LinearLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </com.gateio.biz.kline.widget.StateView>
+        <include android:id="@id/ls_acc_chart_head" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" layout="@layout/layout_item_analysis" />
+        <com.gateio.biz.kline.widget.StateView android:id="@id/ls_acc_chart_state" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include android:id="@id/ls_acc_tablayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" layout="@layout/layout_kline_chart_tablayout" />
+                <LinearLayout android:orientation="vertical" android:id="@id/ls_acc_chart_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.github.mikephil.charting.charts.CombinedChart android:id="@id/ls_acc_chart" android:layout_width="fill_parent" android:layout_height="180.0dip" android:layout_marginTop="12.0dip" />
+                    <com.gateio.biz.kline.widget.ChartIndicator android:layout_gravity="center" android:id="@id/ls_acc_chart_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" />
+                    <com.gateio.biz.kline.widget.ChartIndicator android:layout_gravity="center" android:id="@id/ls_acc_chart_indicator1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_marginVertical="10.0dip" />
+                </LinearLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </com.gateio.biz.kline.widget.StateView>
+        <include android:id="@id/ls_size_chart_head" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" layout="@layout/layout_item_analysis" />
+        <com.gateio.biz.kline.widget.StateView android:id="@id/ls_size_chart_state" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include android:id="@id/ls_size_tablayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" layout="@layout/layout_kline_chart_tablayout" />
+                <LinearLayout android:orientation="vertical" android:id="@id/ls_size_chart_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.github.mikephil.charting.charts.CombinedChart android:id="@id/ls_size_chart" android:layout_width="fill_parent" android:layout_height="180.0dip" android:layout_marginTop="12.0dip" />
+                    <com.gateio.biz.kline.widget.ChartIndicator android:layout_gravity="center" android:id="@id/ls_size_chart_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" />
+                    <com.gateio.biz.kline.widget.ChartIndicator android:layout_gravity="center" android:id="@id/ls_size_chart_indicator1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_marginVertical="10.0dip" />
+                </LinearLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </com.gateio.biz.kline.widget.StateView>
+        <include android:id="@id/sl_chart_head" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" layout="@layout/layout_item_analysis" />
+        <com.gateio.biz.kline.widget.StateView android:id="@id/long_short_chart_state" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include android:id="@id/long_short_tablayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" layout="@layout/layout_kline_chart_tablayout" />
+                <LinearLayout android:orientation="vertical" android:id="@id/long_short_chart_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.github.mikephil.charting.charts.CombinedChart android:id="@id/long_short_chart" android:layout_width="fill_parent" android:layout_height="180.0dip" android:layout_marginTop="12.0dip" />
+                    <com.gateio.biz.kline.widget.ChartIndicator android:layout_gravity="center" android:id="@id/ls_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" />
+                    <com.gateio.biz.kline.widget.ChartIndicator android:layout_gravity="center" android:id="@id/ls_indicator1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_marginVertical="10.0dip" />
+                </LinearLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </com.gateio.biz.kline.widget.StateView>
+        <include android:id="@id/gap_chart_head" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" layout="@layout/layout_item_analysis" />
+        <com.gateio.biz.kline.widget.StateView android:id="@id/gap_chart_state" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include android:id="@id/gap_chart_tablayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" layout="@layout/layout_kline_chart_tablayout" />
+                <LinearLayout android:orientation="vertical" android:id="@id/gap_chart_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.github.mikephil.charting.charts.CombinedChart android:id="@id/gap_chart" android:layout_width="fill_parent" android:layout_height="180.0dip" android:layout_marginTop="12.0dip" />
+                    <com.gateio.biz.kline.widget.ChartIndicator android:layout_gravity="center" android:id="@id/gap_chart_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:layout_marginVertical="12.0dip" />
+                </LinearLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </com.gateio.biz.kline.widget.StateView>
+        <include android:id="@id/trade_chart_head" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" layout="@layout/layout_item_analysis" />
+        <com.gateio.biz.kline.widget.StateView android:id="@id/trade_chart_state" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include android:id="@id/trade_chart_tablayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" layout="@layout/layout_kline_chart_tablayout" />
+                <LinearLayout android:orientation="vertical" android:id="@id/trade_chart_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.github.mikephil.charting.charts.BarChart android:id="@id/trade_chart" android:layout_width="fill_parent" android:layout_height="180.0dip" android:layout_marginTop="12.0dip" />
+                    <com.gateio.biz.kline.widget.ChartIndicator android:layout_gravity="center" android:id="@id/trade_chart_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:layout_marginVertical="12.0dip" />
+                </LinearLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </com.gateio.biz.kline.widget.StateView>
+        <include android:id="@id/liquidation_chart_head" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" layout="@layout/layout_item_analysis" />
+        <com.gateio.biz.kline.widget.StateView android:id="@id/liquidation_chart_state" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include android:id="@id/liquidation_chart_tablayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" layout="@layout/layout_kline_chart_tablayout" />
+                <LinearLayout android:orientation="vertical" android:id="@id/liquidation_chart_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.github.mikephil.charting.charts.BarChart android:id="@id/liquidation_chart" android:layout_width="fill_parent" android:layout_height="180.0dip" android:layout_marginTop="12.0dip" />
+                    <com.gateio.biz.kline.widget.ChartIndicator android:layout_gravity="center" android:id="@id/liquidation_chart_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:layout_marginVertical="12.0dip" />
+                </LinearLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </com.gateio.biz.kline.widget.StateView>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

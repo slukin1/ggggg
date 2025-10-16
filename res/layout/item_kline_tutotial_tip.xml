@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_settings_base" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/uikit_text_size_18" android:textColor="@color/uikit_text_1_v3" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_8" style="@style/Uikit_font_sans_5_0_weight_700" />
+        <androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/bg_divider1_r8" android:layout_width="fill_parent" android:layout_height="287.0dip" android:layout_marginTop="@dimen/uikit_dp_16">
+            <com.gateio.lib.uikit.anim.GTLottieAnimationViewV3 android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:lottie_autoPlay="true" app:lottie_fileName="btn_loading_black_v3.json" app:lottie_loop="true" />
+            <com.gateio.common.view.RoundImageView android:id="@id/iv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="1.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:round_radius="@dimen/margin_padding_8" app:type="round" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_3_v3" android:id="@id/tv_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_16" style="@style/Uikit_font_sans_5_0_weight_500" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

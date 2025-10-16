@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.gateio.marketball.view.MarketItemView android:id="@id/market_view_item" android:visibility="gone" style="@style/match_wrap" />
+    <LinearLayout android:gravity="center" android:id="@id/rl_add" style="@style/match_wrap">
+        <com.gateio.uiComponent.GateIconFont android:textSize="16.0sp" android:textColor="#ff84888c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffa0a3a7" android:layout_gravity="center" android:id="@id/tv_add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/market_floating_add" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" style="@style/Uikit_font_sans_5_0_weight_500" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:scrollbarThumbVertical="@drawable/recyclerview_market_ball_custom_scrollbar_thumb" android:scrollbarStyle="outsideOverlay" android:id="@id/recycler_view" android:visibility="gone" android:scrollbars="vertical" android:fadingEdge="none" android:fadeScrollbars="false" android:overScrollMode="never" android:nestedScrollingEnabled="false" style="@style/match_wrap" />
+</LinearLayout>

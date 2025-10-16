@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/uikit_bg_primary_v5" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.title.GTNavBarV5 android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/market_select_add_to_fav" app:uikit_titleLeftColorV3="@color/uikit_icon_primary_v5" app:uikit_titleLeftV3="" />
+    <androidx.fragment.app.FragmentContainerView android:id="@id/market_frag" android:tag="market_frag_tag" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Frames v2: Multi Input</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <form
+      id="payment-form"
+      method="POST"
+      action="https://merchant.com/charge-card"
+    >
+      <label for="card-number" id="card-number-title"></label>
+      <div class="input-container card-number">
+        
+        <div class="card-number-frame"></div>
+        <div class="icon-container payment-method">
+          <img id="logo-payment-method" />
+        </div>
+      </div>
+
+      <span class="error-message error-message__card-number" id="card-number-error"></span>
+
+
+      <div>
+        <div>
+          <label for="expiry-date" id="expiry-date-title"></label>
+          <div class="input-container expiry-date">
+            
+            <div class="expiry-date-frame"></div>
+            
+          </div>
+          <span class="error-message error-message__expiry-date" id="expiry-data-error"></span>
+        </div>
+
+        <div class="space">
+        </div>
+
+        <div>
+          <label for="cvv" id="cvv-title"></label>
+          <div class="input-container cvv">
+            
+            <div class="cvv-frame"></div>
+            
+          </div>
+          <span class="error-message error-message__cvv" id="cvv-error"></span>
+        </div>
+      </div>
+    </form>
+    <script src="https://cdn.checkout.com/js/framesv2.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

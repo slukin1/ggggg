@@ -1,0 +1,245 @@
+.class public Lcom/meizu/cloud/pushsdk/notification/b/c;
+.super Lcom/meizu/cloud/pushsdk/notification/a;
+
+
+# direct methods
+.method public constructor <init>(Landroid/content/Context;Lcom/meizu/cloud/pushsdk/notification/PushNotificationBuilder;)V
+    .locals 0
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0, p1, p2}, Lcom/meizu/cloud/pushsdk/notification/a;-><init>(Landroid/content/Context;Lcom/meizu/cloud/pushsdk/notification/PushNotificationBuilder;)V
+
+    .line 4
+    return-void
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+.end method
+
+
+# virtual methods
+.method protected a(Landroid/app/Notification;Lcom/meizu/cloud/pushsdk/handler/MessageV3;)V
+    .locals 5
+
+    .line 1
+    invoke-static {}, Lcom/meizu/cloud/pushsdk/util/MinSdkChecker;->isSupportNotificationBuild()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    new-instance v0, Landroid/widget/RemoteViews;
+
+    iget-object v1, p0, Lcom/meizu/cloud/pushsdk/notification/a;->a:Landroid/content/Context;
+
+    invoke-virtual {v1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+
+    move-result-object v1
+
+    iget-object v2, p0, Lcom/meizu/cloud/pushsdk/notification/a;->a:Landroid/content/Context;
+
+    invoke-static {v2}, Lcom/meizu/cloud/pushsdk/notification/c/c;->a(Landroid/content/Context;)I
+
+    move-result v2
+
+    invoke-direct {v0, v1, v2}, Landroid/widget/RemoteViews;-><init>(Ljava/lang/String;I)V
+
+    iget-object v1, p0, Lcom/meizu/cloud/pushsdk/notification/a;->a:Landroid/content/Context;
+
+    invoke-static {v1}, Lcom/meizu/cloud/pushsdk/notification/c/c;->d(Landroid/content/Context;)I
+
+    move-result v1
+
+    invoke-virtual {p2}, Lcom/meizu/cloud/pushsdk/handler/MessageV3;->getTitle()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v1, v2}, Landroid/widget/RemoteViews;->setTextViewText(ILjava/lang/CharSequence;)V
+
+    iget-object v1, p0, Lcom/meizu/cloud/pushsdk/notification/a;->a:Landroid/content/Context;
+
+    invoke-static {v1}, Lcom/meizu/cloud/pushsdk/notification/c/c;->e(Landroid/content/Context;)I
+
+    move-result v1
+
+    invoke-virtual {p2}, Lcom/meizu/cloud/pushsdk/handler/MessageV3;->getContent()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v1, v2}, Landroid/widget/RemoteViews;->setTextViewText(ILjava/lang/CharSequence;)V
+
+    iget-object v1, p0, Lcom/meizu/cloud/pushsdk/notification/a;->a:Landroid/content/Context;
+
+    invoke-static {v1}, Lcom/meizu/cloud/pushsdk/notification/c/c;->f(Landroid/content/Context;)I
+
+    move-result v1
+
+    const-string/jumbo v2, "setTime"
+
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v3
+
+    invoke-virtual {v0, v1, v2, v3, v4}, Landroid/widget/RemoteViews;->setLong(ILjava/lang/String;J)V
+
+    invoke-virtual {p0, v0, p2}, Lcom/meizu/cloud/pushsdk/notification/b/c;->a(Landroid/widget/RemoteViews;Lcom/meizu/cloud/pushsdk/handler/MessageV3;)V
+
+    iget-object p2, p0, Lcom/meizu/cloud/pushsdk/notification/a;->a:Landroid/content/Context;
+
+    invoke-static {p2}, Lcom/meizu/cloud/pushsdk/notification/c/c;->g(Landroid/content/Context;)I
+
+    move-result p2
+
+    const/16 v1, 0x8
+
+    invoke-virtual {v0, p2, v1}, Landroid/widget/RemoteViews;->setViewVisibility(II)V
+
+    iget-object p2, p0, Lcom/meizu/cloud/pushsdk/notification/a;->a:Landroid/content/Context;
+
+    invoke-static {p2}, Lcom/meizu/cloud/pushsdk/notification/c/c;->h(Landroid/content/Context;)I
+
+    move-result p2
+
+    invoke-virtual {v0, p2, v1}, Landroid/widget/RemoteViews;->setViewVisibility(II)V
+
+    iput-object v0, p1, Landroid/app/Notification;->contentView:Landroid/widget/RemoteViews;
+
+    :cond_0
+    return-void
+.end method
+
+.method protected a(Landroid/widget/RemoteViews;Lcom/meizu/cloud/pushsdk/handler/MessageV3;)V
+    .locals 2
+
+    .line 2
+    invoke-virtual {p2}, Lcom/meizu/cloud/pushsdk/handler/MessageV3;->getAppIconSetting()Lcom/meizu/cloud/pushsdk/notification/model/AppIconSetting;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {p0}, Lcom/meizu/cloud/pushsdk/notification/a;->a()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    invoke-virtual {p2}, Lcom/meizu/cloud/pushsdk/handler/MessageV3;->getAppIconSetting()Lcom/meizu/cloud/pushsdk/notification/model/AppIconSetting;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/meizu/cloud/pushsdk/notification/model/AppIconSetting;->isDefaultLargeIcon()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    invoke-virtual {p2}, Lcom/meizu/cloud/pushsdk/handler/MessageV3;->getAppIconSetting()Lcom/meizu/cloud/pushsdk/notification/model/AppIconSetting;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/meizu/cloud/pushsdk/notification/model/AppIconSetting;->getLargeIconUrl()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Lcom/meizu/cloud/pushsdk/notification/a;->a(Ljava/lang/String;)Landroid/graphics/Bitmap;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    iget-object p2, p0, Lcom/meizu/cloud/pushsdk/notification/a;->a:Landroid/content/Context;
+
+    invoke-static {p2}, Lcom/meizu/cloud/pushsdk/notification/c/c;->k(Landroid/content/Context;)I
+
+    move-result p2
+
+    invoke-virtual {p1, p2, v0}, Landroid/widget/RemoteViews;->setImageViewBitmap(ILandroid/graphics/Bitmap;)V
+
+    goto :goto_0
+
+    :cond_0
+    iget-object v0, p0, Lcom/meizu/cloud/pushsdk/notification/a;->a:Landroid/content/Context;
+
+    invoke-static {v0}, Lcom/meizu/cloud/pushsdk/notification/c/c;->k(Landroid/content/Context;)I
+
+    move-result v0
+
+    iget-object v1, p0, Lcom/meizu/cloud/pushsdk/notification/a;->a:Landroid/content/Context;
+
+    invoke-virtual {p2}, Lcom/meizu/cloud/pushsdk/handler/MessageV3;->getUploadDataPackageName()Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-virtual {p0, v1, p2}, Lcom/meizu/cloud/pushsdk/notification/a;->a(Landroid/content/Context;Ljava/lang/String;)Landroid/graphics/Bitmap;
+
+    move-result-object p2
+
+    invoke-virtual {p1, v0, p2}, Landroid/widget/RemoteViews;->setImageViewBitmap(ILandroid/graphics/Bitmap;)V
+
+    :goto_0
+    return-void
+.end method

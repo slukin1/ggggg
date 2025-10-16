@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/uikit_text_inverse_primary_v5" android:gravity="center_horizontal" android:id="@id/tv_progress" android:background="@drawable/uikit_bg_icon_5_radio_4_v5" android:paddingLeft="4.0dip" android:paddingTop="@dimen/uikit_spacing_2_v5" android:paddingRight="4.0dip" android:paddingBottom="@dimen/uikit_spacing_2_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="4.0dip" android:paddingVertical="@dimen/uikit_spacing_2_v5" style="@style/Uikit_font_sans_5_0_weight_400" />
+</FrameLayout>

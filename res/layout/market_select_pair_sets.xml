@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/uikit_bg_1_v3" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.title.GTTitleViewV3 android:id="@id/market_titleview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/market_select_pair_select" app:uikit_titleLeftColorV3="@color/uikit_icon_1_v3" app:uikit_titleLeftV3="" />
+    <RelativeLayout android:id="@id/ll_bottom" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" style="@style/match_wrap_h">
+        <LinearLayout android:id="@id/ll_reset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <com.gateio.uiComponent.GateIconFont android:textColor="@color/uikit_text_1_v3" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:paddingEnd="@dimen/dp_8" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/uikit_text_1_v3" android:gravity="center" android:layout_gravity="end" android:id="@id/tv_reset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reset" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/ll_commit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+            <TextView android:textSize="14.0sp" android:textColor="@color/uikit_text_5_v3" android:gravity="center" android:id="@id/tv_commit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tips_next" />
+            <com.gateio.uiComponent.GateIconFont android:textColor="@color/uikit_icon_5_v3" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:paddingStart="8.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <androidx.fragment.app.FragmentContainerView android:id="@id/fc_market" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/ll_bottom" android:layout_below="@id/market_titleview" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Space android:id="@id/spacer" android:layout_width="fill_parent" android:layout_height="80.0dip" app:layout_constraintTop_toTopOf="parent" />
+    <com.gateio.lib.uikit.state.GTEmptyV5 android:gravity="center" android:id="@id/emptyView" android:layout_width="fill_parent" android:layout_height="wrap_content" app:uikit_descTextV5="@string/market_fav_empty_add_hint" app:uikit_emptySizeV5="medium" app:uikit_emptyTypeV5="data_empty" />
+    <com.gateio.lib.uikit.button.GTButtonV5 android:layout_gravity="center_horizontal" android:id="@id/btnAdd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/market_non_login_favorite_add_v2" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" app:uikit_buttonDimenV5="xSmall" app:uikit_buttonTypeV5="secondary_gray" />
+</LinearLayout>

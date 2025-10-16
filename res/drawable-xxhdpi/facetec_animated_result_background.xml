@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector android:drawable="@drawable/facetec_result_background_vector_drawable"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <target android:name="strokePath" android:animation="@anim/facetec_circle_stroke_end_animation" />
+    <target android:name="strokePath" android:animation="@anim/facetec_circle_stroke_width_animation" />
+    <target android:name="strokePath" android:animation="@anim/facetec_circle_stroke_path_animation" />
+</animated-vector>

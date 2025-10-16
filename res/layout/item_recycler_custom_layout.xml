@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruffian.library.widget.RLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginTop="8.0dip" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" app:background_normal="@color/uikit_card_1_v3" app:corner_radius="3.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_reduce" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@mipmap/home_ic_reduce_layout" android:paddingStart="12.0dip" android:paddingEnd="8.0dip" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/uikit_text_1_v3" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Uikit_font_sans_2_0_weight_500" />
+    <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+    <ImageView android:id="@id/iv_sort" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@mipmap/home_ic_layout_sort" android:paddingStart="8.0dip" android:paddingEnd="12.0dip" />
+</com.ruffian.library.widget.RLinearLayout>

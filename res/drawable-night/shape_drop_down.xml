@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="end|center|top" android:drawable="@mipmap/ic_triangle_up" android:right="@dimen/margin_padding_5" />
+    <item android:top="@dimen/margin_padding_6">
+        <shape android:shape="rectangle">
+            <solid android:color="#ff111f31" />
+            <corners android:radius="4.0dip" />
+        </shape>
+    </item>
+</layer-list>

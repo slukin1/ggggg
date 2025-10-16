@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layoutPlaceRoot" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ruffian.library.widget.RLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/optionsLayoutPriceType" android:layout_width="fill_parent" android:layout_height="28.0dip" android:paddingStart="@dimen/margin_padding_8" app:background_normal="@color/uikit_cmpt_input_v5" app:corner_radius="@dimen/margin_padding_6">
+        <TextView android:ellipsize="end" android:id="@id/optionsPriceType" android:layout_width="wrap_content" android:text="@string/exchange_limit" android:maxLines="1" android:includeFontPadding="false" style="@style/Text_text_primary_14_weight_500_v5" />
+        <com.gateio.uiComponent.GateIconFont android:textSize="12.0dip" android:textColor="@color/uikit_text_tertiary_v5" android:gravity="start|center" android:id="@id/optionsIvPriceTypeTips" android:paddingLeft="@dimen/margin_padding_4" android:paddingRight="@dimen/margin_padding_4" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="20.0dip" android:text="" />
+    </com.ruffian.library.widget.RLinearLayout>
+    <FrameLayout android:id="@id/layoutInput" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_8" />
+    <FrameLayout android:id="@id/layoutPlaceTrade" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_8" />
+</LinearLayout>

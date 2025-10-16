@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/color_80_000000" style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioButton android:textColor="@drawable/selector_record_playlist_txt" android:gravity="center" android:id="@id/rb_fill" android:layout_width="fill_parent" android:layout_height="50.0dip" android:button="@null" android:text="@string/video_scale_fill" />
+    <View android:background="@color/color_50_ffffff" style="@style/view_line_v4" />
+    <RadioButton android:textColor="@drawable/selector_record_playlist_txt" android:gravity="center" android:id="@id/rb_fit" android:layout_width="fill_parent" android:layout_height="50.0dip" android:button="@null" android:text="@string/video_scale_fit" />
+</LinearLayout>

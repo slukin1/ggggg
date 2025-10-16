@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_root" android:background="@color/uikit_color_ffffff_111f31" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/layout_header_normal_new" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/refresh" android:layout_height="wrap_content" android:layout_below="@id/layout_header" style="@style/match_wrap">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_margin_fund_records" android:focusableInTouchMode="true" android:scrollbars="none" android:fadingEdge="none" android:overScrollMode="never" style="@style/match_wrap" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <include layout="@layout/layout_empty_view" />
+</RelativeLayout>

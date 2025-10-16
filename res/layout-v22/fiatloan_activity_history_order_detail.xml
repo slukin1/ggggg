@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/uikit_bg_1_v3" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.title.GTTitleViewV3 android:id="@id/title" android:background="@color/uikit_bg_1_dark_v3" android:layout_width="fill_parent" android:layout_height="wrap_content" app:uikit_titleColorV3="@color/uikit_text_1_v3_dark" app:uikit_titleLeftColorV3="@color/uikit_icon_1_v3_dark" app:uikit_titleRightTextColorV3="@color/uikit_text_1_v3_dark" app:uikit_titleRightTextV3="@string/fiatloan_contact_counterpart" />
+    <androidx.core.widget.NestedScrollView android:id="@id/scroll_view" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/margin_padding_16" android:layout_weight="1.0" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/head" layout="@layout/fiatloan_layout_order_detail_head" />
+            <include android:id="@id/period" android:visibility="gone" layout="@layout/fiatloan_layout_order_detail_period" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.gateio.lib.uikit.button.GTButtonV3 android:id="@id/appeal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_margin_padding_12" android:layout_marginTop="@dimen/uikit_margin_padding_8" android:layout_marginRight="@dimen/uikit_margin_padding_12" android:layout_marginBottom="@dimen/uikit_margin_padding_16" android:text="@string/fiatloan_appeal" android:layout_marginHorizontal="@dimen/uikit_margin_padding_12" app:uikit_buttonDimenV3="medium" app:uikit_buttonTypeV3="secondary" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:id="@id/layoutRoot" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ruffian.library.widget.RLinearLayout android:orientation="vertical" android:id="@id/ll_part_order_root" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="68.0dip" app:background_normal="@color/uikit_layer_1_v5" app:corner_radius_top_left="12.0dip" app:corner_radius_top_right="12.0dip">
+        <include android:id="@id/layout_title" layout="@layout/futures_layout_dialog_common_title" />
+        <com.ruffian.library.widget.RLinearLayout android:orientation="horizontal" android:id="@id/layoutEditTitle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip" app:background_normal="@color/uikit_layer_1_v5" app:corner_radius_top_left="12.0dip" app:corner_radius_top_right="12.0dip">
+            <com.gateio.uiComponent.GateIconFont android:textSize="20.0sp" android:textColor="@color/uikit_icon_primary_v5" android:gravity="center_vertical" android:id="@id/tvEditBack" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="" android:paddingStart="@dimen/margin_padding_16" android:paddingEnd="@dimen/margin_padding_2" />
+            <TextView android:layout_gravity="center_vertical" android:id="@id/tvEditTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/futures_edit_tpsl" style="@style/Text_text_primary_18_weight_600_v5" />
+        </com.ruffian.library.widget.RLinearLayout>
+        <include android:id="@id/layout_pair_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_margin_padding_16" android:layout_marginTop="@dimen/margin_padding_4" android:layout_marginRight="@dimen/uikit_margin_padding_16" layout="@layout/futures_layout_dialog_common_pair_header" />
+        <FrameLayout android:id="@id/fl_tpsl" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.ruffian.library.widget.RLinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:background="@drawable/fiatotc_cmpt1_divider1_r4"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/ts_14" android:textColor="@color/text_4" android:id="@id/input_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_padding_12" android:layout_marginEnd="@dimen/margin_padding_8" />
+    <EditText android:textSize="@dimen/ts_14" android:textColor="@color/text_1" android:textColorHint="@color/text_4" android:id="@id/input_edit" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:maxLines="1" android:layout_weight="1.0" android:textCursorDrawable="@drawable/shape_cursor_comlib" android:paddingStart="@dimen/margin_padding_12" android:textFontWeight="500" />
+    <TextView android:textSize="@dimen/ts_14" android:textColor="@color/text_3" android:gravity="center_vertical" android:id="@id/input_unit" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingEnd="@dimen/margin_padding_12" android:layout_marginStart="@dimen/margin_padding_8" android:textFontWeight="500" />
+</merge>

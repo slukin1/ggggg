@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:drawable="@color/uikit_neutral_3" />
+    <item android:state_enabled="true" android:drawable="@drawable/uikit_selector_bg_card_3_card_2" />
+    <item android:drawable="@drawable/uikit_selector_bg_card_3_card_2" />
+</selector>

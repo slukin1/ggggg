@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/uikit_color_main_bg" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_header_normal" />
+    <FrameLayout android:id="@id/fm_content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

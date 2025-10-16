@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/uikit_bg_market_item" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/news_search_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_12" android:layout_marginBottom="@dimen/margin_padding_5">
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/uikit_main_text_color" android:id="@id/news_all_coins" android:padding="@dimen/margin_padding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/news_all_coin" android:drawablePadding="@dimen/margin_padding_5" android:layout_marginStart="@dimen/margin_padding_10" app:drawableEndCompat="@mipmap/icon_arrow_down1" />
+        <com.gateio.gateio.view.GateioSearchView android:id="@id/search_view" android:layout_marginStart="@dimen/margin_padding_5" android:layout_marginEnd="@dimen/margin_padding_16" style="@style/wrap_wrap" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/news_search_history" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/news_search_ll">
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/second_text_color" android:padding="@dimen/margin_padding_15" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/news_history_search" android:layout_weight="1.0" />
+        <ImageView android:id="@id/news_search_history_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_invest_percent_del" android:layout_marginStart="@dimen/margin_padding_15" android:layout_marginEnd="@dimen/margin_padding_15" />
+    </LinearLayout>
+    <com.gateio.comlib.view.FlowLayout android:id="@id/news_search_history_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/news_search_history" android:layout_marginStart="@dimen/margin_padding_15" android:layout_marginEnd="@dimen/margin_padding_15" />
+    <androidx.fragment.app.FragmentContainerView android:id="@id/fragment_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/news_search_ll" />
+</RelativeLayout>

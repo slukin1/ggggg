@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar" android:background="@color/uikit_bg_market_item" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+        <LinearLayout android:id="@id/ll_title" android:layout_height="@dimen/home_sort" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" style="@style/match_wrap_h">
+            <TextView android:textSize="12.0sp" android:textColor="@color/text_market_sort" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/trans_market" android:layout_weight="1.0" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/text_market_sort" android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/index_new" android:layout_weight="1.0" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/text_market_sort" android:gravity="end|center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/index_zf" android:layout_weight="1.0" />
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout android:descendantFocusability="blocksDescendants" app:layout_behavior="@string/appbar_scrolling_view_behavior" style="@style/match_match">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/market_list_view" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

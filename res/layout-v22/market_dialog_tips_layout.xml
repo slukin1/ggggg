@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/uikit_text_2_v3" android:id="@id/market_tv_top_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" android:text="@string/market_ai_crypto_picker_tips_top_content" android:layout_marginHorizontal="24.0dip" style="@style/Uikit_font_sans_2_0_weight_400" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/uikit_text_3_v3" android:id="@id/market_tv_bottom_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" android:text="@string/market_ai_crypto_picker_tips_bottom_content" android:layout_marginHorizontal="24.0dip" style="@style/Uikit_font_sans_2_0_weight_400" />
+</LinearLayout>

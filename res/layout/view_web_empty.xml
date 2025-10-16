@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingLeft="@dimen/uikit_margin_padding_16" android:paddingRight="@dimen/uikit_margin_padding_16" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_create_guide" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="140.0dip" android:layout_height="140.0dip" android:layout_marginTop="@dimen/uikit_margin_padding_80" android:src="@mipmap/ic_web_guide" />
+        <TextView android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_text_primary_v5" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_16" android:text="@string/wallets_onchain_web_create" style="@style/Uikit_font_sans_5_0_weight_500" />
+        <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_tertiary_v5" android:id="@id/desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_12" android:text="@string/wallets_onchain_web_create_notice" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_empty" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="96.0dip" android:layout_height="96.0dip" android:layout_marginTop="@dimen/uikit_margin_padding_80" android:src="@mipmap/ic_web_wallet_empty" />
+        <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_secondary_v5" android:id="@id/tv_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_4" android:text="@string/wallets_web3_no_network" />
+    </LinearLayout>
+</FrameLayout>

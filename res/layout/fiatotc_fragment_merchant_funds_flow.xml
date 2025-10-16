@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.fiatotclib.function.flexible.view.FlexibleCoinDropDown android:id="@id/dropdown_filter_type" android:layout_width="wrap_content" android:layout_height="44.0dip" android:layout_marginStart="@dimen/uikit_spacing_16_v5" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/time_picker_selector_container" android:layout_width="48.0dip" android:layout_height="44.0dip" app:layout_constraintBottom_toBottomOf="@id/dropdown_filter_type" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/dropdown_filter_type">
+        <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_20" android:textColor="@color/uikit_icon_primary_v5" android:gravity="center" android:id="@id/time_picker_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_marginEnd="@dimen/uikit_spacing_16_v5" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <com.gateio.lib.uikit.badge.GTBadgeV5 android:id="@id/time_picker_status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="@id/time_picker_selector" app:layout_constraintTop_toTopOf="@id/time_picker_selector" app:uikit_badgeSizeV5="small" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.gateio.common.view.ViewPagerSwipeRefreshLayout android:id="@id/refresh_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:overScrollMode="never" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/dropdown_filter_type">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <include android:id="@id/empty_view" layout="@layout/fiatotc_item_merchant_finance_empty" />
+        </FrameLayout>
+    </com.gateio.common.view.ViewPagerSwipeRefreshLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

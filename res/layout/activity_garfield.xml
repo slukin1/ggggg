@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/garfield_layout_all_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:filterTouchesWhenObscured="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.alipay.zoloz.hardware.camera.widget.gl.CameraGLSurfaceView android:id="@id/zface_surface_view" android:layout_width="172.0dip" android:layout_height="172.0dip" android:layout_centerInParent="true" />
+    <RelativeLayout android:id="@id/garfield_root_view" android:background="@android:color/transparent" android:layout_width="172.0dip" android:layout_height="172.0dip" android:layout_centerInParent="true">
+        <View android:id="@id/garfield_mask_view" android:background="@drawable/garfield_face_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:textSize="19.0dip" android:textColor="#ff727272" android:id="@id/garfield_scene_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="@string/zface_garfield_scan_face" android:maxLines="1" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/garfield_back_btn" android:padding="5.0dip" android:visibility="invisible" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginTop="8.0dip" android:layout_below="@id/garfield_root_view" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="center" android:layout_width="14.0dip" android:layout_height="14.0dip" android:src="@drawable/garfield_x" />
+    </FrameLayout>
+</RelativeLayout>

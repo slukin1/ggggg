@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/uikit_bg_3" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/layout_header" layout="@layout/layout_header_bg3" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="56.0dip">
+        <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.gateio.common.view.CircleImageView android:id="@id/iv_payee_currency" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+            <TextView android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_text_1" android:id="@id/tv_payee_currency" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:layout_marginStart="@dimen/uikit_margin_padding_8" style="@style/Uikit_font_weight_600" />
+        </LinearLayout>
+        <EditText android:textSize="@dimen/uikit_text_size_24" android:textColor="@color/uikit_text_1" android:textColorHint="@color/uikit_text_4" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/et_input_number" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="32.0dip" android:minWidth="160.0dip" android:hint="@string/miniapp_enter_amount" android:digits="0123456789." android:inputType="numberDecimal" style="@style/Uikit_font_weight_600" />
+        <TextView android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_text_3" android:layout_gravity="center_horizontal" android:id="@id/tv_amount_fiat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_padding_32" android:layout_marginRight="@dimen/margin_padding_32" android:text="≈ 0.00" style="@style/Uikit_font_weight_600" />
+    </LinearLayout>
+    <com.gateio.lib.uikit.button.GTButtonV3 android:id="@id/tv_continue" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="@dimen/margin_padding_12" android:layout_marginTop="@dimen/uikit_margin_padding_16" android:layout_marginRight="@dimen/margin_padding_12" android:layout_marginBottom="@dimen/uikit_margin_padding_16" android:text="@string/miniapp_continue" android:layout_alignParentBottom="true" app:uikit_buttonDimenV3="medium" app:uikit_buttonTypeV3="primary" style="@style/Uikit_font_weight_700" />
+</RelativeLayout>

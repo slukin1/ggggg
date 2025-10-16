@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/market_ll_pilot_tab_bg" android:background="@drawable/market_pilot_tab_default_bg_shape" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="16.0dip" android:layout_marginBottom="12.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.gateio.comlib.view.CircleImageView android:id="@id/market_iv_pilot_tab" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

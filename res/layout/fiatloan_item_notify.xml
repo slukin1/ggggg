@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="@dimen/uikit_margin_padding_16" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gateio.lib.uikit.widget.GTCheckBoxV3 android:id="@id/check" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/uikit_margin_padding_12" />
+    <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_1_v3" android:id="@id/order_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toEndOf="@id/check" style="@style/Uikit_font_sans_2_0_weight_700" />
+    <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_3_v3" android:gravity="center_vertical" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/order_id" android:layout_alignBottom="@id/order_id" android:layout_alignParentEnd="true" style="@style/Uikit_font_sans_2_0_weight_400" />
+    <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_2_v3" android:id="@id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_12" android:layout_below="@id/order_id" android:layout_alignStart="@id/order_id" style="@style/Uikit_font_sans_2_0_weight_400" />
+    <FrameLayout android:id="@id/unread" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/message" android:layout_alignBottom="@id/message" android:layout_alignParentEnd="true">
+        <com.gateio.lib.uikit.badge.GTBadgeViewV3 android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</RelativeLayout>

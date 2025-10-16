@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.common.view.CornerRelativeLayout android:id="@id/rl_account_invest" android:background="@mipmap/ic_invest_my_asset" android:padding="@dimen/margin_padding_12" android:layout_height="190.0dip" android:layout_marginTop="12.0dip" android:layout_marginStart="@dimen/margin_padding_16" android:layout_marginEnd="@dimen/margin_padding_16" app:layout_scrollFlags="scroll" style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_title" style="@style/match_wrap">
+        <com.gateio.common.view.CornerLinearLayout android:gravity="center_vertical" android:id="@id/ll_invest_name" android:background="@color/uikit_color_ffffff_111f31" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:paddingStart="@dimen/margin_padding_12" android:paddingEnd="@dimen/margin_padding_12" app:radius="16.0dip" style="@style/wrap_wrap_h">
+            <com.gateio.common.view.CornerTextView android:textColor="@color/uikit_color_333333_e7e9ea" android:gravity="center" android:id="@id/tv_invest_name" style="@style/tv_user_white_14" />
+            <ImageView android:id="@id/iv_arrow" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@mipmap/ic_gate_arrow_down" android:layout_marginStart="4.0dip" />
+        </com.gateio.common.view.CornerLinearLayout>
+        <com.gateio.lib.uikit.text.GTDashTextView android:textColor="@color/color_999999_7c848d" android:id="@id/tv_available_text" android:text="@string/asset_ky" android:layout_centerVertical="true" android:layout_toStartOf="@id/tv_invest_kyye" app:tips="@string/uikit_availableUpgradeTooltip" app:title="@string/title_alert_ts" style="@style/tv_user_black_12" />
+        <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_invest_kyye" android:text="--" android:layout_centerVertical="true" android:layout_marginStart="4.0dip" android:layout_alignParentEnd="true" style="@style/tv_user_black_12" />
+    </RelativeLayout>
+    <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_invest_dqsz" android:layout_marginTop="@dimen/margin_padding_16" android:text="--" android:layout_below="@id/rl_title" android:layout_centerHorizontal="true" android:layout_toStartOf="@id/tv_invest_kyye" style="@style/tv_user_black_22" />
+    <TextView android:textColor="@color/color_999999_7c848d" android:text="@string/invest_dqsz" android:layout_below="@id/tv_invest_dqsz" android:layout_centerHorizontal="true" style="@style/tv_user_black_12" />
+    <LinearLayout android:layout_above="@id/ll_label" style="@style/match_wrap_h">
+        <TextView android:textColor="@color/color_999999_7c848d" android:layout_width="0.0dip" android:text="@string/invest_zrsy" android:layout_weight="1.0" style="@style/tv_user_black_12" />
+        <TextView android:textColor="@color/color_999999_7c848d" android:layout_width="0.0dip" android:text="@string/invest_cysy" android:layout_weight="0.9" android:layout_marginStart="@dimen/margin_padding_8" style="@style/tv_user_black_12" />
+        <TextView android:textColor="@color/color_999999_7c848d" android:gravity="end" android:layout_width="0.0dip" android:text="@string/funding_ljsy" android:layout_weight="0.9" android:layout_marginStart="@dimen/margin_padding_8" style="@style/tv_user_black_12" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/ll_label" android:layout_marginTop="4.0dip" android:layout_alignParentBottom="true" style="@style/match_wrap_h">
+        <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_invest_zrsy" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/tv_user_black_14" />
+        <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_invest_cysy" android:layout_width="0.0dip" android:layout_weight="0.9" android:layout_marginStart="@dimen/margin_padding_8" style="@style/tv_user_black_14" />
+        <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:gravity="end" android:id="@id/tv_invest_ljsy" android:layout_width="0.0dip" android:layout_weight="0.9" android:layout_marginStart="@dimen/margin_padding_8" style="@style/tv_user_black_14" />
+    </LinearLayout>
+</com.gateio.common.view.CornerRelativeLayout>

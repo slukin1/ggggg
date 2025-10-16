@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.common.view.CornerLinearLayout android:layout_gravity="bottom" android:id="@id/ll_bottom" android:background="@color/uikit_color_main_bg" app:left_top_radis="16.0dip" app:right_top_radis="16.0dip" style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_reward_list" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="51.0dip">
+        <RadioButton android:textSize="@dimen/text_size_16" android:textColor="@color/uikit_color_333333_e6e6e6" android:gravity="center" android:id="@id/rb_reward_list" android:layout_width="fill_parent" android:layout_height="50.0dip" android:button="@null" android:text="@string/command_reward_list" android:layout_marginStart="@dimen/margin_padding_20" android:layout_marginEnd="@dimen/margin_padding_20" />
+        <View style="@style/uikit_view_line_mian_v" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_how_to_send" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="51.0dip">
+        <RadioButton android:textSize="@dimen/text_size_16" android:textColor="@color/uikit_color_333333_e6e6e6" android:gravity="center" android:id="@id/rb_how_to_send" android:layout_width="fill_parent" android:layout_height="50.0dip" android:button="@null" android:text="@string/command_how_to_send" android:layout_marginStart="@dimen/margin_padding_20" android:layout_marginEnd="@dimen/margin_padding_20" />
+        <View style="@style/uikit_view_line_mian_v" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_how_to_receive" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="51.0dip">
+        <RadioButton android:textSize="@dimen/text_size_16" android:textColor="@color/uikit_color_333333_e6e6e6" android:gravity="center" android:id="@id/rb_how_to_receive" android:layout_width="fill_parent" android:layout_height="50.0dip" android:button="@null" android:text="@string/command_how_to_receive" android:layout_marginStart="@dimen/margin_padding_20" android:layout_marginEnd="@dimen/margin_padding_20" />
+        <View style="@style/uikit_view_line_mian_v" />
+    </LinearLayout>
+    <View style="@style/view_line_mian_v_blod" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_cancel" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="51.0dip">
+        <RadioButton android:textSize="@dimen/text_size_16" android:textColor="@color/uikit_color_333333_e6e6e6" android:gravity="center" android:id="@id/rb_cancel" android:layout_width="fill_parent" android:layout_height="50.0dip" android:button="@null" android:text="@string/user_qx" />
+    </LinearLayout>
+</com.gateio.common.view.CornerLinearLayout>

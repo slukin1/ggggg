@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/llRoot" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/ivPop" android:background="@mipmap/exchange_ic_reverse_triangle_v5" android:layout_width="38.0dip" android:layout_height="5.0dip" />
+    <com.gateio.common.view.CornerLinearLayout android:background="@color/uikit_cmpt_tooltip_toast_v5" android:paddingTop="@dimen/length_8" android:paddingBottom="@dimen/length_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="8.0dip" android:paddingStart="@dimen/length_12" android:paddingEnd="@dimen/length_4" app:radius="@dimen/length_6">
+        <TextView android:textSize="14.0sp" android:textColor="@color/uikit_text_always_white_v5" android:id="@id/tv_text_info" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/exchange_upgrade_margin_trading_tip" android:layout_weight="1.0" android:lineSpacingMultiplier="1.3" style="@style/Uikit_font_sans_5_0_weight_400" />
+        <com.gateio.uiComponent.GateIconFont android:textSize="14.0sp" android:textColor="@color/uikit_text_always_white_v5" android:id="@id/ivClose" android:paddingLeft="@dimen/length_8" android:paddingRight="@dimen/length_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+    </com.gateio.common.view.CornerLinearLayout>
+</FrameLayout>

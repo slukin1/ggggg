@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/goto_deal" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <ImageView android:id="@id/img_currentType" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:scaleType="fitXY" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/img_exchangeType" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:scaleType="fitXY" android:layout_centerVertical="true" android:layout_marginStart="-3.0dip" android:layout_toEndOf="@id/img_currentType" />
+        <TextView android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/k_text_333333_e6e6e6" android:id="@id/currentType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/k_margin_padding_10" android:layout_toEndOf="@id/img_exchangeType" />
+    </RelativeLayout>
+    <View android:id="@id/view_k_line" android:background="@color/k_color_view" android:layout_width="fill_parent" android:layout_height="@dimen/w_0.5" android:layout_alignParentBottom="true" />
+</RelativeLayout>

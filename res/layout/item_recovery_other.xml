@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/selector_item_network_choice" android:layout_width="wrap_content" android:layout_height="@dimen/margin_padding_80" android:paddingEnd="@dimen/margin_padding_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:apps="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/text_1" android:id="@id/network" style="@style/ItemRecovery" />
+    <TextView android:textColor="@color/brand_1" android:id="@id/txid" style="@style/ItemRecovery" />
+    <TextView android:textColor="@color/text_1" android:id="@id/token_contract" style="@style/ItemRecovery" />
+    <TextView android:textColor="@color/text_1" android:id="@id/limit" style="@style/ItemRecovery" />
+    <TextView android:textColor="@color/brand_1" android:id="@id/deposit_address" style="@style/ItemRecovery" />
+    <TextView android:textColor="@color/text_1" android:id="@id/fees" style="@style/ItemRecovery" />
+    <TextView android:id="@id/status" style="@style/ItemRecovery" />
+    <TextView android:textColor="@color/text_1" android:ellipsize="middle" android:gravity="end|center" android:id="@id/result" android:drawablePadding="@dimen/dp_8" apps:drawableEndCompat="@mipmap/ic_copy_wa" style="@style/ItemRecovery" />
+</LinearLayout>

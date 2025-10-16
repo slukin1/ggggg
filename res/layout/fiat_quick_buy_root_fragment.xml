@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.alert.GTAlertV5 android:id="@id/nonKycAlert" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fiat_non_kyc_alert_tips" app:uikit_alertTypeV5="yellow" />
+    <com.gateio.lib.uikit.tab.v5.GTTabsV5 android:id="@id/indicator" android:layout_width="wrap_content" android:layout_height="@dimen/uikit_dp_32" android:layout_marginTop="24.0dip" android:layout_marginStart="@dimen/uikit_dp_12" />
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/viewPager" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:overScrollMode="never" />
+</LinearLayout>

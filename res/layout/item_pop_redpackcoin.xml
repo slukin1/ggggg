@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:background="@drawable/bg_status_item_pop" android:layout_width="120.0dip" android:layout_height="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_logo" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_centerVertical="true" android:layout_marginStart="10.0dip" android:layout_toStartOf="@id/tv_pop_redpack_coin" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/uikit_text_1" android:gravity="end|center" android:id="@id/tv_pop_redpack_coin" android:layout_width="90.0dip" android:layout_height="wrap_content" android:minHeight="30.0dip" android:text="----" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" android:layout_alignParentEnd="true" />
+</RelativeLayout>

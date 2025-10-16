@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/wrap_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gateio.common.view.LinearLayoutInterceptTouch android:id="@id/ll_market_info" android:layout_height="48.0dip" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" style="@style/match_wrap_h">
+        <CheckBox android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/cb_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:text="" style="@style/cb_warning_tickersub" />
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/tv_currency_vol" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/margin_padding_10">
+            <TextView android:textColor="@color/uikit_color_333333_e6e6e6" android:id="@id/tv_currency_name" android:text="@string/app_name" android:layout_alignParentTop="true" android:layout_alignParentStart="true" style="@style/tv_user_black_14" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/uikit_color_999999_8692a3" android:id="@id/tv_exchange_name" android:visibility="visible" android:text="@string/app_name" android:layout_alignBottom="@id/tv_currency_name" android:layout_toEndOf="@id/tv_currency_name" style="@style/tv_user_black_14" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="8.0dip">
+            <TextView android:textColor="@color/uikit_color_333333_e6e6e6" android:layout_gravity="center_vertical" android:id="@id/tv_currentPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.000" style="@style/tv_user_black_14" />
+        </RelativeLayout>
+        <TextView android:textColor="@color/bg_thme_green2" android:gravity="end" android:layout_gravity="center_vertical" android:id="@id/btn_ratePercent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="58.0dip" android:text="+ 0.00%" android:singleLine="true" style="@style/tv_user_white_14" />
+    </com.gateio.common.view.LinearLayoutInterceptTouch>
+    <View android:id="@id/line" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" style="@style/uikit_view_line_mian_v" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/home_fragment_ticker_0" android:background="@color/uikit_bg_primary_v5" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:orientation="vertical" android:id="@id/ll_page_root" android:background="@drawable/home_market_card_border" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginHorizontal="16.0dip">
+        <androidx.viewpager2.widget.ViewPager2 android:id="@id/vp_ticker" android:saveEnabled="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="70.0dip" />
+        <com.gateio.lib.uikit.widget.GTCarouselV5 android:layout_gravity="bottom|center" android:id="@id/gt_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" app:indicator_type="line" />
+    </FrameLayout>
+    <include android:id="@id/layout_skeleton_ticker" android:visibility="gone" layout="@layout/home_view_skeleton_ticker" />
+</FrameLayout>

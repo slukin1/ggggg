@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:background="@drawable/trans_v1_layer_1_top_r12" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_title" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="@dimen/length_7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dip" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="@dimen/uikit_text_size_18" android:textColor="@color/uikit_text_primary_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/length_16" android:text="@string/trans_repay_all" style="@style/Uikit_font_sans_5_0_weight_600" />
+        <com.gateio.uiComponent.GateIconFont android:textSize="16.0sp" android:textColor="@color/uikit_icon_secondary_v5" android:id="@id/iv_close" android:paddingTop="@dimen/length_22" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:paddingStart="@dimen/length_16" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/fl_content" android:paddingLeft="@dimen/length_16" android:paddingRight="@dimen/length_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/length_16" app:layout_constraintTop_toBottomOf="@id/rl_title" />
+</androidx.constraintlayout.widget.ConstraintLayout>

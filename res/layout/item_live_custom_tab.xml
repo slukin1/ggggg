@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="32.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/sp_14" android:textColor="@color/selector_tab_text_color" android:gravity="center" android:id="@id/checkbox" android:background="@drawable/live_selector_tab_bg" android:layout_width="wrap_content" android:layout_height="@dimen/length_32" android:checked="true" android:button="@null" android:paddingStart="@dimen/dp_12" android:paddingEnd="@dimen/dp_12" android:layout_marginEnd="@dimen/length_9" />
+</FrameLayout>

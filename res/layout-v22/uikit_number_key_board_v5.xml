@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_dp_16" android:layout_marginTop="@dimen/uikit_margin_padding_12" android:layout_marginRight="@dimen/uikit_dp_16" android:layout_marginBottom="@dimen/uikit_margin_padding_12" android:layout_marginHorizontal="@dimen/uikit_dp_16" android:layout_marginVertical="@dimen/uikit_margin_padding_12" app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" app:spanCount="3" />
+    <GridLayout android:id="@id/grid_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_8" android:layout_marginBottom="@dimen/uikit_margin_padding_8" android:rowCount="4" android:columnCount="3" android:useDefaultMargins="false" android:alignmentMode="alignBounds" android:layout_marginVertical="@dimen/uikit_margin_padding_8">
+        <TextView android:text="1" style="@style/uikit_number_key_board_v5" />
+        <TextView android:text="2" style="@style/uikit_number_key_board_v5" />
+        <TextView android:text="3" style="@style/uikit_number_key_board_v5" />
+        <TextView android:text="4" style="@style/uikit_number_key_board_v5" />
+        <TextView android:text="5" style="@style/uikit_number_key_board_v5" />
+        <TextView android:text="6" style="@style/uikit_number_key_board_v5" />
+        <TextView android:text="7" style="@style/uikit_number_key_board_v5" />
+        <TextView android:text="8" style="@style/uikit_number_key_board_v5" />
+        <TextView android:text="9" style="@style/uikit_number_key_board_v5" />
+        <TextView android:text="." style="@style/uikit_number_key_board_v5" />
+        <TextView android:text="0" style="@style/uikit_number_key_board_v5" />
+        <com.gateio.uiComponent.GateIconFont android:id="@id/lite_keyboard_delete" android:text="" style="@style/uikit_number_key_board_v5" />
+    </GridLayout>
+    <com.gateio.lib.uikit.button.GTButtonV5 android:id="@id/btn_confirm" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_margin_padding_16" android:layout_marginTop="@dimen/uikit_margin_padding_16" android:layout_marginRight="@dimen/uikit_margin_padding_16" android:layout_marginBottom="@dimen/uikit_margin_padding_16" android:layout_marginHorizontal="@dimen/uikit_margin_padding_16" android:layout_marginVertical="@dimen/uikit_margin_padding_16" app:uikit_buttonDimenV5="large" />
+</merge>

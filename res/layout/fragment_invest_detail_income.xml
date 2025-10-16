@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <HorizontalScrollView android:scrollbars="none" android:overScrollMode="never" style="@style/match_wrap">
+        <RadioGroup android:id="@id/rg" android:padding="@dimen/margin_padding_16" style="@style/wrap_wrap_h">
+            <RadioButton android:textColor="@color/selector_futures_margin_color" android:id="@id/rb_0" android:background="@drawable/selector_invest_detail_time" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:checked="true" android:button="@null" android:text="@string/invest_jyy" android:paddingStart="@dimen/margin_padding_12" android:paddingEnd="@dimen/margin_padding_12" style="@style/tv_user_white_12" />
+            <RadioButton android:textColor="@color/selector_futures_margin_color" android:id="@id/rb_1" android:background="@drawable/selector_invest_detail_time" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:button="@null" android:text="@string/invest_jsy" android:paddingStart="@dimen/margin_padding_12" android:paddingEnd="@dimen/margin_padding_12" android:layout_marginStart="@dimen/margin_padding_16" style="@style/tv_user_white_12" />
+            <RadioButton android:textColor="@color/selector_futures_margin_color" android:id="@id/rb_2" android:background="@drawable/selector_invest_detail_time" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:button="@null" android:text="@string/invest_jbn" android:paddingStart="@dimen/margin_padding_12" android:paddingEnd="@dimen/margin_padding_12" android:layout_marginStart="@dimen/margin_padding_16" style="@style/tv_user_white_12" />
+            <RadioButton android:textColor="@color/selector_futures_margin_color" android:id="@id/rb_3" android:background="@drawable/selector_invest_detail_time" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:button="@null" android:text="@string/invest_jyn" android:paddingStart="@dimen/margin_padding_12" android:paddingEnd="@dimen/margin_padding_12" android:layout_marginStart="@dimen/margin_padding_16" style="@style/tv_user_white_12" />
+            <RadioButton android:textColor="@color/selector_futures_margin_color" android:id="@id/rb_4" android:background="@drawable/selector_invest_detail_time" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:button="@null" android:text="@string/invest_zcjyl" android:paddingStart="@dimen/margin_padding_12" android:paddingEnd="@dimen/margin_padding_12" android:layout_marginStart="@dimen/margin_padding_16" style="@style/tv_user_white_12" />
+        </RadioGroup>
+    </HorizontalScrollView>
+    <LinearLayout android:gravity="center_vertical" android:layout_marginStart="@dimen/margin_padding_16" style="@style/match_wrap_h">
+        <View android:background="@color/line_blue_new" android:layout_width="8.0dip" android:layout_height="2.0dip" />
+        <TextView android:textColor="@color/color_999999_7c848d" android:layout_height="fill_parent" android:text="@string/invest_bdt" android:layout_marginStart="4.0dip" style="@style/tv_user_gray_12" />
+        <TextView android:textColor="@color/bg_theme_red_new" android:id="@id/tv_invest_bdt" android:layout_marginStart="4.0dip" style="@style/tv_user_gray_12" />
+        <ImageView android:id="@id/iv_invest_bdt" android:layout_width="8.0dip" android:layout_height="8.0dip" android:src="@mipmap/uikit_ico_up2_red" android:layout_marginStart="4.0dip" />
+    </LinearLayout>
+    <com.sparkhuu.klinelib.chart.ChainInvestLineChart android:id="@id/market_chart" android:layout_width="fill_parent" android:layout_height="130.0dip" android:layout_margin="@dimen/margin_padding_12" />
+</LinearLayout>

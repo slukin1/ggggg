@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.gateio.marketball.view.InfomationItemView android:id="@id/infomation_view_item" style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

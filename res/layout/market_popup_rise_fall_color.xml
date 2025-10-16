@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/vGreenParent" android:background="@drawable/market_setting_selected" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.gateio.uiComponent.GateIconFont android:textSize="20.0sp" android:textColor="@color/uikit_green_trade_6_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+            <com.gateio.uiComponent.GateIconFont android:textSize="20.0sp" android:textColor="@color/uikit_red_trade_6_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textColor="@color/uikit_text_primary_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/market_rate_hdlz" android:layout_marginStart="10.0dip" style="@style/Uikit_font_sans_5_0_weight_500" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+            <View android:background="@drawable/market_rise_fall_color_bg_circle" android:layout_width="22.0dip" android:layout_height="22.0dip" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="@color/uikit_text_tertiary_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ETH" android:layout_marginStart="8.0dip" style="@style/Uikit_font_sans_5_0_weight_400" />
+            <View android:background="@drawable/market_rise_fall_color_bg_square" android:layout_width="36.0dip" android:layout_height="14.0dip" android:layout_marginStart="24.0dip" />
+            <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="@color/uikit_white" android:gravity="center" android:background="@drawable/market_rise_fall_color_bg_green" android:layout_width="56.0dip" android:layout_height="20.0dip" android:text="+6.53%" android:layout_marginStart="8.0dip" style="@style/Uikit_font_sans_5_0_weight_400" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+            <View android:background="@drawable/market_rise_fall_color_bg_circle" android:layout_width="22.0dip" android:layout_height="22.0dip" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="@color/uikit_text_tertiary_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="BTC" android:layout_marginStart="8.0dip" style="@style/Uikit_font_sans_5_0_weight_400" />
+            <View android:background="@drawable/market_rise_fall_color_bg_square" android:layout_width="36.0dip" android:layout_height="14.0dip" android:layout_marginStart="24.0dip" />
+            <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="@color/uikit_white" android:gravity="center" android:background="@drawable/market_rise_fall_color_bg_red" android:layout_width="56.0dip" android:layout_height="20.0dip" android:text="-7.59%" android:layout_marginStart="8.0dip" style="@style/Uikit_font_sans_5_0_weight_400" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/vRedParent" android:background="@drawable/market_setting_unselect" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.gateio.uiComponent.GateIconFont android:textSize="20.0sp" android:textColor="@color/uikit_red_trade_6_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+            <com.gateio.uiComponent.GateIconFont android:textSize="20.0sp" android:textColor="@color/uikit_green_trade_6_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textColor="@color/uikit_text_primary_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/market_rate_hzld" android:layout_marginStart="10.0dip" style="@style/Uikit_font_sans_5_0_weight_500" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+            <View android:background="@drawable/market_rise_fall_color_bg_circle" android:layout_width="22.0dip" android:layout_height="22.0dip" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="@color/uikit_text_tertiary_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ETH" android:layout_marginStart="8.0dip" style="@style/Uikit_font_sans_5_0_weight_400" />
+            <View android:background="@drawable/market_rise_fall_color_bg_square" android:layout_width="36.0dip" android:layout_height="14.0dip" android:layout_marginStart="24.0dip" />
+            <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="@color/uikit_white" android:gravity="center" android:background="@drawable/market_rise_fall_color_bg_red" android:layout_width="56.0dip" android:layout_height="20.0dip" android:text="+6.53%" android:layout_marginStart="8.0dip" style="@style/Uikit_font_sans_5_0_weight_400" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+            <View android:background="@drawable/market_rise_fall_color_bg_circle" android:layout_width="22.0dip" android:layout_height="22.0dip" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="@color/uikit_text_tertiary_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="BTC" android:layout_marginStart="8.0dip" style="@style/Uikit_font_sans_5_0_weight_400" />
+            <View android:background="@drawable/market_rise_fall_color_bg_square" android:layout_width="36.0dip" android:layout_height="14.0dip" android:layout_marginStart="24.0dip" />
+            <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="@color/uikit_white" android:gravity="center" android:background="@drawable/market_rise_fall_color_bg_green" android:layout_width="56.0dip" android:layout_height="20.0dip" android:text="-7.59%" android:layout_marginStart="8.0dip" style="@style/Uikit_font_sans_5_0_weight_400" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

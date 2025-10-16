@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center" android:orientation="vertical" android:visibility="visible"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/empty_image_iv" android:layout_width="wrap_content" android:layout_height="120.0dip" android:layout_marginBottom="8.0dip" android:src="@mipmap/uikit_ic_empty" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_1" android:gravity="center" android:id="@id/empty_title_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:lineSpacingExtra="4.0dip" android:textFontWeight="700" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_3" android:gravity="center" android:id="@id/empty_sub_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/uikit_loaned_nodata" android:lineSpacingExtra="4.0dip" />
+</merge>

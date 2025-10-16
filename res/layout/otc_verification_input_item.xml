@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.lib.uikit.input.GTInputV5 android:id="@id/otc_verification_input_item_et" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_dp_16" android:layout_marginTop="@dimen/uikit_dp_16" android:layout_marginRight="@dimen/uikit_dp_16" app:uikit_editDimenV5="large" app:uikit_editHintV5="@string/otc_home_please_enter" app:uikit_editTitleV5=""
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:layout_centerInParent="true" style="@style/uikit_wrap_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:id="@id/checked_dialog_layout" android:background="@drawable/uikit_shape_keyboard_input" android:padding="@dimen/uikit_margin_padding_10" android:layout_width="300.0dip" style="@style/uikit_match_wrap">
+        <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_card_title" android:gravity="start" android:id="@id/checked_dialog_msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_20" android:layout_marginBottom="@dimen/uikit_margin_padding_20" android:lineSpacingMultiplier="1.5" android:layout_marginStart="@dimen/uikit_margin_padding_5" android:layout_marginEnd="@dimen/uikit_margin_padding_5" />
+        <CheckBox android:textSize="@dimen/uikit_text_size_10" android:textColor="@color/uikit_text_color_gray" android:id="@id/checked_dialog_learned" android:padding="@dimen/uikit_margin_padding_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/uikit_margin_padding_5" style="@style/uikit_cb_chain" />
+        <TextView android:textSize="@dimen/uikit_limit_dialog_text_size" android:textColor="@color/uikit_text_color_white" android:gravity="center" android:id="@id/checked_dialog_commit" android:background="@drawable/uikit_bnt_user_login" android:padding="@dimen/uikit_margin_padding_10" android:layout_width="fill_parent" android:layout_margin="@dimen/uikit_margin_padding_5" android:text="@string/uikit_user_got_it" style="@style/uikit_user_confirm_wh" />
+    </LinearLayout>
+</RelativeLayout>

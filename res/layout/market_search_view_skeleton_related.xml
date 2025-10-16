@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.third.skeletonLayout.SkeletonLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.third.skeletonLayout.widget.SkeletonTextView android:id="@id/skeleton_search_img" android:layout_width="160.0dip" android:layout_height="40.0dip" android:layout_marginBottom="8.0dip" android:layout_marginEnd="8.0dip" app:maskCornerRadius="20.0dip" />
+</com.gateio.third.skeletonLayout.SkeletonLayout>

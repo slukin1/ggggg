@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_root" android:padding="0.5dip" android:layout_height="40.0dip" android:layout_marginBottom="8.0dip" style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.common.view.CornerLinearLayout android:background="@color/uikit_color_main_bg" app:radius="3.0dip" style="@style/match_match_h">
+        <View android:id="@id/v_progress" style="@style/wrap_wrap" />
+        <View android:id="@id/v_progress2" style="@style/wrap_wrap" />
+    </com.gateio.common.view.CornerLinearLayout>
+    <TextView android:textColor="@color/uikit_color_333333_e6e6e6" android:ellipsize="end" android:id="@id/tv_name_vote" android:maxLines="1" android:layout_centerInParent="true" android:layout_marginStart="@dimen/margin_padding_12" style="@style/tv_user_white_14" />
+    <TextView android:textColor="@color/uikit_color_333333_e6e6e6" android:ellipsize="end" android:gravity="start|center" android:id="@id/tv_name" android:maxLines="1" android:layout_centerVertical="true" android:paddingEnd="@dimen/margin_padding_12" android:layout_marginStart="@dimen/margin_padding_12" android:layout_marginEnd="30.0dip" style="@style/tv_user_white_14" />
+    <TextView android:textColor="@color/uikit_color_999999_8692a3" android:gravity="end" android:id="@id/tv_count" android:minWidth="30.0dip" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/margin_padding_12" android:layout_alignParentEnd="true" style="@style/tv_user_white_14" />
+</RelativeLayout>

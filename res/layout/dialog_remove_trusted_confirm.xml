@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:apps="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.input.GTInputV5 android:id="@id/code_input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_dp_16" android:layout_marginTop="@dimen/dp_4" android:layout_marginRight="@dimen/uikit_dp_16" apps:uikit_editDimenV5="large" apps:uikit_editHintV5="@string/wallets_please_enter" apps:uikit_editTitleV5="@string/wallets_google_code" />
+    <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_secondary_v5" android:id="@id/tips" android:paddingTop="@dimen/dp_4" android:scrollbars="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/uikit_margin_padding_8" android:text="@string/wallets_remove_trusted_tips" android:paddingStart="@dimen/uikit_margin_padding_16" android:paddingEnd="@dimen/uikit_margin_padding_16" style="@style/Uikit_font_sans_5_0_weight_400" />
+</LinearLayout>

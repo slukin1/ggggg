@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/uikit_color_333333_e6e6e6" android:id="@id/safety_strength_label" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_12">
+        <View android:id="@id/strength_weak" android:background="@color/safety_strength_weak" android:layout_width="0.0dip" android:layout_height="5.0dip" android:layout_weight="1.0" android:layout_marginEnd="@dimen/margin_padding_12" />
+        <View android:id="@id/strength_middle" android:background="@color/safety_strength_default" android:layout_width="0.0dip" android:layout_height="5.0dip" android:layout_weight="1.0" android:layout_marginEnd="@dimen/margin_padding_12" />
+        <View android:id="@id/strength_strong" android:background="@color/safety_strength_default" android:layout_width="0.0dip" android:layout_height="5.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+</merge>

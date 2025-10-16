@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/ll_root" android:paddingTop="12.0dip" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/account_layout" style="@style/match_wrap">
+        <com.gateio.common.view.GateioAvatarView android:id="@id/account_avatar" android:layout_width="36.0dip" android:layout_height="36.0dip" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/uikit_color_333333_e6e6e6" android:id="@id/account_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/user_dlzc" android:layout_alignTop="@id/account_avatar" android:layout_marginStart="5.0dip" android:layout_toEndOf="@id/account_avatar" />
+        <ImageView android:id="@id/account_vip_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/account_name" android:layout_alignBottom="@id/account_name" android:layout_marginStart="4.0dip" android:layout_toEndOf="@id/account_name" />
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/uikit_color_999999_8692a3" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_below="@id/account_name" android:layout_alignStart="@id/account_name" />
+    </RelativeLayout>
+    <TextView android:textColor="@color/uikit_color_333333_e6e6e6" android:id="@id/tv_comment" android:layout_marginTop="8.0dip" style="@style/tv_user_black_16" />
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/uikit_color_999999_8692a3" android:id="@id/tv_translate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/moments_translate" android:layout_marginEnd="@dimen/margin_padding_16" />
+    <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/uikit_color_333333_e6e6e6" android:id="@id/tv_translated_content" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:paddingVertical="4.0dip" />
+    <com.gateio.common.view.CornerLinearLayout android:gravity="center_vertical" android:background="@color/uikit_color_f7f7f7_1c2b42" android:padding="@dimen/margin_padding_8" android:layout_marginTop="8.0dip" app:radius="8.0dip" style="@style/match_wrap">
+        <LinearLayout android:id="@id/ll_reply" android:layout_marginBottom="@dimen/margin_padding_8" style="@style/match_wrap">
+            <TextView android:textColor="@color/uikit_color_333333_e6e6e6" android:id="@id/tv_reply" android:layout_marginBottom="@dimen/margin_padding_8" style="@style/tv_user_black_16" />
+            <View style="@style/uikit_view_line_mian_v" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" style="@style/match_wrap_h">
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_image" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_marginEnd="@dimen/margin_padding_8">
+                <com.gateio.common.view.RoundImageView android:id="@id/iv_image" android:src="@mipmap/ic_pic_error" android:scaleType="centerCrop" android:layout_centerInParent="true" app:round_radius="3.0dip" app:type="round" style="@style/match_match" />
+                <ImageView android:id="@id/iv_start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_moments_video_start" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <LinearLayout style="@style/match_wrap">
+                <TextView android:textStyle="bold" android:textColor="@color/uikit_color_333333_e6e6e6" android:id="@id/account_host" style="@style/tv_user_black_16" />
+                <com.gateio.common.view.GTClickSpanTextView android:textSize="12.0sp" android:textColor="@color/uikit_color_999999_8692a3" android:ellipsize="end" android:id="@id/expandable_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:maxLines="2" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.gateio.common.view.CornerLinearLayout>
+    <View android:layout_marginTop="12.0dip" style="@style/uikit_view_line_mian_v" />
+</LinearLayout>

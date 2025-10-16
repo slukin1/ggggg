@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.biz_options.widget.OptionsPriceInputAddSubView android:id="@id/inputPrice" android:layout_width="fill_parent" android:layout_height="wrap_content" app:inputHint="@string/options_place_price" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+        <com.gateio.biz_options.view.OptionsDashTextViewV5 android:textSize="12.0sp" android:textColor="@color/uikit_text_secondary_v5" android:id="@id/dashIv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/options_place_iv" app:uikit_underline_dash="true" app:uikit_underline_dashclick="true" app:uikit_underline_show_more_text="false" app:uikit_underline_tips="@string/options_place_iv_tips" style="@style/Text_text_secondary_12_weight_400_v5" />
+        <TextView android:id="@id/tvIvValue" android:text="--" android:layout_marginStart="2.0dip" style="@style/Text_text_secondary_12_weight_400_v5" />
+    </LinearLayout>
+    <com.gateio.lib.uikit.input.GTInputV5 android:id="@id/inputAmount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" app:uikit_editAlwaysShowHintV5="true" app:uikit_editHintV5="@string/options_place_amount" app:uikit_editInputDropdownArrowMarginV5="2.0dip" app:uikit_editInputTypeV5="decimal" app:uikit_editRightTextColorV5="@color/uikit_text_primary_v5" app:uikit_editShowRightTextWhenNoFocusAndInputEmptyV5="true" app:uikit_editVisibleDeleteV5="false" />
+    <View android:id="@id/viewPlaceHolder" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/llReduceOnly" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.gateio.lib.uikit.widget.GTCheckBoxV5 android:textColor="@color/uikit_text_primary_v5" android:id="@id/cbReduceOnly" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:paddingEnd="4.0dip" app:uikit_button_size_v5="12.0dip" />
+        <com.gateio.biz_options.view.OptionsDashTextViewV5 android:ellipsize="end" android:id="@id/dashZjc" android:text="@string/options_place_reduce_only" android:maxLines="1" app:uikit_underline_color="@color/uikit_text_tertiary_v5" app:uikit_underline_show_more_text="false" app:uikit_underline_tips="@string/options_place_reduce_only_tips" style="@style/Text_text_primary_12_weight_400_v5" />
+    </LinearLayout>
+</LinearLayout>

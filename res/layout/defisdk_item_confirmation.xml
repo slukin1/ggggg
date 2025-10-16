@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_confirmation" android:background="@drawable/defisdk_background_card_new" android:paddingTop="@dimen/defi_dp14" android:paddingBottom="@dimen/defi_dp14" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gate_sdk.web3_wallet.dapps.widget.ProgressKnobkerry android:id="@id/progress_knob" android:visibility="visible" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_centerInParent="true" />
+    <TextView android:textSize="@dimen/defi_sp16" android:id="@id/hash_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="#ff333333" android:shadowDx="2.0" android:shadowDy="2.0" android:shadowRadius="4.0" android:layout_centerInParent="true" android:layout_marginStart="@dimen/defi_dp16" android:layout_marginEnd="@dimen/defi_dp16" />
+</RelativeLayout>

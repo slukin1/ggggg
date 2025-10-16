@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="end" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.tag.GTTagV5 android:id="@id/tag_trust" android:layout_width="wrap_content" android:layout_height="wrap_content" app:uikit_tagSizeV5="tag16" app:uikit_tagTextV5="sfss" app:uikit_tagTypeV5="green" />
+    <com.gateio.lib.uikit.tag.GTTagV5 android:id="@id/tag_universal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/uikit_dp_4" app:uikit_tagSizeV5="tag16" app:uikit_tagTextV5="@string/wallets_universal_address" app:uikit_tagTypeV5="gray" />
+</LinearLayout>

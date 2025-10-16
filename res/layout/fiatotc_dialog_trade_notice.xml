@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_margin_padding_24" android:layout_marginRight="@dimen/uikit_margin_padding_24"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/ts_14" android:textColor="@color/uikit_text_3_v3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fiatotc_cny_alert" android:lineSpacingExtra="@dimen/dp_1" />
+</LinearLayout>

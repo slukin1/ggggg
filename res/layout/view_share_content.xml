@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/uikit_bg_1_dark_v3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="19.0dip" android:layout_marginTop="65.0dip" android:layout_marginRight="19.0dip" android:layout_marginBottom="79.0dip">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="@color/uikit_text_always_white_v5" android:id="@id/tv_pair" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" style="@style/Uikit_font_sans_5_0_weight_600" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="18.0sp" android:textColor="@color/uikit_text_always_white_v5" android:id="@id/tv_share_chart_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" style="@style/Uikit_font_sans_5_0_weight_700" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="@color/uikit_text_tertiary_v5" android:id="@id/tv_share_chart_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" style="@style/Uikit_font_sans_5_0_weight_400" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_share" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_marginBottom="20.0dip" android:adjustViewBounds="true" />
+    </LinearLayout>
+</FrameLayout>

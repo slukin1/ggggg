@@ -1,0 +1,71 @@
+.class public interface abstract Lcom/gateio/biz_options/fragment/positions/OptionsBottomPositionsListAdapter$OnItemClickListener;
+.super Ljava/lang/Object;
+.source "OptionsBottomPositionsListAdapter.kt"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/gateio/biz_options/fragment/positions/OptionsBottomPositionsListAdapter;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "OnItemClickListener"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0008f\u0018\u00002\u00020\u0001J\u0018\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H&J\u0018\u0010\u0008\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H&J\u0018\u0010\t\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H&J\u0018\u0010\n\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H&\u00a8\u0006\u000b"
+    }
+    d2 = {
+        "Lcom/gateio/biz_options/fragment/positions/OptionsBottomPositionsListAdapter$OnItemClickListener;",
+        "",
+        "onContractClick",
+        "",
+        "position",
+        "",
+        "model",
+        "Lcom/gateio/biz/exchange/service/model/FuturesPosition;",
+        "onItemClick",
+        "onItemEdit",
+        "onItemShare",
+        "biz_options_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# virtual methods
+.method public abstract onContractClick(ILcom/gateio/biz/exchange/service/model/FuturesPosition;)V
+    .param p2    # Lcom/gateio/biz/exchange/service/model/FuturesPosition;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+.end method
+
+.method public abstract onItemClick(ILcom/gateio/biz/exchange/service/model/FuturesPosition;)V
+    .param p2    # Lcom/gateio/biz/exchange/service/model/FuturesPosition;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+.end method
+
+.method public abstract onItemEdit(ILcom/gateio/biz/exchange/service/model/FuturesPosition;)V
+    .param p2    # Lcom/gateio/biz/exchange/service/model/FuturesPosition;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+.end method
+
+.method public abstract onItemShare(ILcom/gateio/biz/exchange/service/model/FuturesPosition;)V
+    .param p2    # Lcom/gateio/biz/exchange/service/model/FuturesPosition;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+.end method

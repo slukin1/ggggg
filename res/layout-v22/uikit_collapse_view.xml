@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/ll_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_16" android:id="@id/tv_left" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/uikit_margin_padding_8" />
+        <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_1" android:id="@id/tv_title" android:paddingTop="@dimen/uikit_margin_padding_15" android:paddingBottom="@dimen/uikit_margin_padding_15" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingVertical="@dimen/uikit_margin_padding_15" style="@style/Uikit_font_weight_500" />
+        <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_2" android:id="@id/tv_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+    </LinearLayout>
+    <com.gateio.common.view.CornerTextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_2" android:id="@id/tv_content" android:padding="@dimen/uikit_margin_padding_12" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:radius="@dimen/uikit_dp_8" />
+</LinearLayout>

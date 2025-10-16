@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="horizontal" android:background="@color/uikit_bg_1_v3" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/activity_horizontal_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.button.GTButtonV5 android:id="@id/btn_mint" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/kline_premint_to_mint" android:layout_weight="1.0" android:layout_marginEnd="@dimen/dp_8" app:uikit_buttonDimenV5="medium" app:uikit_buttonTypeV5="secondary_gray" />
+    <com.gateio.lib.uikit.button.GTButtonV5 android:id="@id/btn_trade" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/kline_premint_to_trade" android:layout_weight="1.0" app:uikit_buttonDimenV5="medium" app:uikit_buttonTypeV5="primary_black" />
+</merge>

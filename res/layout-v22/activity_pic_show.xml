@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/jumio_black_alpha90" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gateio.common.view.CustomViewpager android:id="@id/vp_showpic" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/iv_close" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginTop="50.0dip" android:src="@mipmap/ic_picture_close" android:layout_marginStart="16.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="56.0dip" android:layout_centerHorizontal="true">
+        <TextView android:textSize="16.0sp" android:textColor="@color/uikit_white" android:id="@id/tv_page1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:textFontWeight="500" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/uikit_neutral_6_v5" android:id="@id/tv_page2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/--" android:textFontWeight="500" />
+    </LinearLayout>
+    <ImageView android:id="@id/iv_fav_save" android:padding="4.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_margin="20.0dip" android:src="@mipmap/ic_fav_save_circle" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/margin_padding_16" android:layout_alignParentEnd="true" />
+</RelativeLayout>

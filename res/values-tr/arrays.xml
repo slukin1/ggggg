@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alert_cancel_array">
+        <item>Only ignore this time</item>
+        <item>10 minutes later</item>
+        <item>30 minutes later</item>
+        <item>2 hours later</item>
+        <item>24 hours later</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="exo_controls_playback_speeds">
+        <item>0,25x</item>
+        <item>0,5x</item>
+        <item>0,75x</item>
+        <item>Normal</item>
+        <item>1,25x</item>
+        <item>1,5x</item>
+        <item>2x</item>
+    </string-array>
+    <string-array name="funding_share_desc">
+        <item>There is a kind of happiness called stability</item>
+        <item>"Gate'yu seçin ve kolayca kazanın"</item>
+        <item>Professional leader is boundless</item>
+        <item>"Yeteneklerinizi sergilemek için Gate'da şansınızı deneyin"</item>
+        <item>"Bütün yollar Roma'ya çıkar ama sağlamlık önce gelir"</item>
+        <item>Going to manage money? Steady</item>
+        <item>Hayat yaşamaya değer ve gelecek ümit vadediyor</item>
+    </string-array>
+    <string-array name="home_week_string_array">
+        <item>Pazar</item>
+        <item>Pazartesi</item>
+        <item>Salı</item>
+        <item>Çarşamba</item>
+        <item>Perşembe</item>
+        <item>Cuma</item>
+        <item>Cumartesi</item>
+    </string-array>
+    <string-array name="modify_procedure_items">
+        <item>Değiştirilecek bir güvenlik ayarı seçin</item>
+        <item>Değişiklik için başvurun</item>
+        <item>Başvuruyu bitirin</item>
+    </string-array>
+    <string-array name="position_share_desc_loss">
+        <item>Zarar kes mi? Asla!</item>
+        <item>Tut ve bekle.</item>
+        <item>Daha az zarar, lütfen</item>
+        <item>Son gülen en iyi gülendir</item>
+        <item>Uyan ve kalk. Şimdi harekete geç.</item>
+        <item>Bana iyi davran</item>
+        <item>Panik yok</item>
+        <item>Her şey yolunda.İnancını koru</item>
+    </string-array>
+    <string-array name="position_share_desc_win">
+        <item>All in and win big.</item>
+        <item>All in as always.</item>
+        <item>Just hold</item>
+        <item>Just keep it</item>
+        <item>The next step? Follow trends</item>
+        <item>I am the big star!</item>
+        <item>Follow me to win big</item>
+        <item>I am on the right side as always!</item>
+        <item>Long or Short? All up to me.</item>
+    </string-array>
+    <string-array name="push_alert_cancel_array">
+        <item>30 dakika boyunca</item>
+        <item>2 saat boyunca</item>
+        <item>24 saat boyunca</item>
+        <item>Sonsuza dek</item>
+    </string-array>
+    <string-array name="week_string_array">
+        <item>Pazar Pazartesi Salı Çarşamba Perşembe Cuma Cumartesi</item>
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+    </string-array>
+</resources>

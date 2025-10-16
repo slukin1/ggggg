@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/uikit_margin_padding_16" android:paddingRight="@dimen/uikit_margin_padding_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/uikit_margin_padding_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:paddingTop="@dimen/uikit_margin_padding_12" android:paddingBottom="@dimen/uikit_margin_padding_12" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingVertical="@dimen/uikit_margin_padding_12">
+        <TextView android:textSize="@dimen/uikit_text_size_15" android:textColor="@color/uikit_text_primary_v5" android:id="@id/amount" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Uikit_font_sans_5_0_weight_500" />
+        <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_secondary_v5" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_4" style="@style/Uikit_font_sans_5_0_weight_400" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_primary_v5" android:id="@id/status" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Uikit_font_sans_5_0_weight_400" />
+</androidx.appcompat.widget.LinearLayoutCompat>

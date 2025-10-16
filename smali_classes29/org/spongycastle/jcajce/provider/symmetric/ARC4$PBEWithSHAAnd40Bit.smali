@@ -1,0 +1,50 @@
+.class public Lorg/spongycastle/jcajce/provider/symmetric/ARC4$PBEWithSHAAnd40Bit;
+.super Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;
+.source "ARC4.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lorg/spongycastle/jcajce/provider/symmetric/ARC4;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "PBEWithSHAAnd40Bit"
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 4
+
+    .line 1
+    .line 2
+    new-instance v0, Lorg/spongycastle/crypto/engines/RC4Engine;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-direct {v0}, Lorg/spongycastle/crypto/engines/RC4Engine;-><init>()V
+
+    .line 6
+    .line 7
+    const/16 v1, 0x28
+
+    .line 8
+    const/4 v2, 0x1
+
+    .line 9
+    const/4 v3, 0x0
+
+    .line 10
+    .line 11
+    .line 12
+    invoke-direct {p0, v0, v3, v1, v2}, Lorg/spongycastle/jcajce/provider/symmetric/util/BaseStreamCipher;-><init>(Lorg/spongycastle/crypto/StreamCipher;III)V
+
+    .line 13
+    return-void
+    .line 14
+    .line 15
+    .line 16
+.end method

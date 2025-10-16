@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.gateio.view.CornerConstraintLayout android:layout_width="wrap_content" android:layout_height="32.0dip" app:bgColor="@color/uikit_card_2" app:radius="@dimen/uikit_dp_4" app:stroke_color="@color/uikit_divider_2" app:stroke_width="@dimen/uikit_dp_1"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_2" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_margin_padding_12" android:layout_marginRight="@dimen/uikit_margin_padding_12" android:maxLines="1" android:layout_marginHorizontal="@dimen/uikit_margin_padding_12" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Uikit_font_weight_500" />
+    <ImageView android:id="@id/iv_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/uikit_selector_check" app:layout_constraintEnd_toEndOf="parent" />
+</com.gateio.gateio.view.CornerConstraintLayout>

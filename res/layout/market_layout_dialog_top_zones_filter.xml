@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.daynight.DayNightTextView android:textSize="12.0sp" android:textColor="@color/uikit_text_tertiary_v5" android:id="@id/tv_top_zones_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_4" android:text="@string/market_heatmap_filter_amount" android:layout_marginStart="@dimen/uikit_dp_16" android:layout_marginEnd="@dimen/uikit_dp_16" style="@style/Uikit_font_sans_5_0_weight_400" />
+    <com.gateio.lib.uikit.selector.GTSelectorV5 android:id="@id/gt_selector_view_zones" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_8" android:layout_marginStart="@dimen/uikit_dp_16" android:layout_marginEnd="@dimen/uikit_dp_16" app:uikit_selectorSingleSelectV5="true" app:uikit_selectorSizeV5="small" app:uikit_selectorSpanCountV5="2" />
+</LinearLayout>

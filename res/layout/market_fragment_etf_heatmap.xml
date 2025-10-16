@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.lib.uikit.daynight.DayNightConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/margin_padding_16" android:paddingEnd="@dimen/margin_padding_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.daynight.DayNightCornerTextView android:textSize="18.0sp" android:textColor="@color/uikit_text_primary_v5" android:id="@id/market_tv_sector_heatmap" android:paddingBottom="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/market_etf_home_trading_heatmap" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Uikit_font_sans_5_0_weight_600" />
+    <com.gateio.biz.market.weight.treemap.SimpleMarketMapLayoutView android:id="@id/market_opportunity_heatmap" android:layout_width="fill_parent" android:layout_height="232.0dip" app:layout_constraintTop_toBottomOf="@id/market_tv_sector_heatmap" app:market_borderWidth="2.0dip" app:market_cornerRadius="12.0dip" />
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/vEmptyParent" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" app:layout_constraintTop_toBottomOf="@id/market_tv_sector_heatmap">
+        <com.gateio.lib.uikit.state.GTEmptyV5 android:id="@id/empty_view" android:layout_width="fill_parent" android:layout_height="wrap_content" app:uikit_descTextV5="@string/ticker_not_data" app:uikit_emptyButtonTextV5="@string/market_empty_reload" app:uikit_emptySizeV5="small" app:uikit_emptyTypeV5="data_empty" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <RelativeLayout android:id="@id/market_skeleton_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/market_tv_sector_heatmap">
+        <include layout="@layout/market_skeleton_etf_home_heatmap" />
+    </RelativeLayout>
+</com.gateio.lib.uikit.daynight.DayNightConstraintLayout>

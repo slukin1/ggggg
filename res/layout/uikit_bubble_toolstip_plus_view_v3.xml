@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.gateio.lib.uikit.text.GTMultiLineTextViewV3 android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_6_v3" android:id="@id/tv_context" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="327.0dip" android:maxLines="3" app:autoSizeMinTextSize="@dimen/uikit_text_body_xs_v3" app:autoSizeStepGranularity="1.0sp" app:autoSizeTextType="uniform" style="@style/Uikit_font_sans_2_0_weight_500" />
+        <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_6_v3" android:gravity="right" android:id="@id/iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:paddingStart="@dimen/uikit_dp_8" />
+    </LinearLayout>
+</merge>

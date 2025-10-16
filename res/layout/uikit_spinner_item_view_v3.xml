@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingTop="@dimen/uikit_dp_2" android:paddingBottom="@dimen/uikit_dp_2" android:layout_width="fill_parent" android:layout_height="44.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.common.view.CornerLinearLayout android:gravity="center_vertical" android:id="@id/cll" android:paddingLeft="@dimen/uikit_dp_12" android:paddingRight="@dimen/uikit_dp_12" android:layout_width="fill_parent" android:layout_height="fill_parent" app:radius="6.0dip">
+        <ImageView android:id="@id/iv_coin" android:visibility="gone" android:layout_width="@dimen/uikit_dp_24" android:layout_height="@dimen/uikit_dp_24" android:scaleType="fitXY" android:layout_marginEnd="@dimen/uikit_dp_8" />
+        <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_1_v3" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Uikit_font_sans_2_0_weight_500" />
+        <com.gateio.lib.uikit.tag.GTTagV3 android:id="@id/tag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/uikit_dp_8" app:uikit_tagTypeV3="gray" />
+        <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+        <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_icon_9_v3" android:layout_gravity="center_vertical" android:id="@id/iv_check" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_marginStart="@dimen/uikit_dp_12" />
+    </com.gateio.common.view.CornerLinearLayout>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruffian.library.widget.RLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:background_normal="@color/uikit_layer_1_v5" app:corner_radius_top_left="12.0dip" app:corner_radius_top_right="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/layoutCommonTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/options_layout_dialog_common_title" />
+    <include android:id="@id/layoutCommonHeader" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" layout="@layout/options_layout_dialog_common_pair_header" />
+    <LinearLayout android:orientation="vertical" android:paddingTop="4.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" style="@style/match_wrap_h">
+            <TextView android:text="@string/options_place_order_price" style="@style/Text_text_secondary_14_weight_400_v5" />
+            <TextView android:gravity="end" android:id="@id/tvPrice" android:layout_width="fill_parent" android:text="--" android:layout_marginStart="8.0dip" style="@style/Text_text_primary_14_weight_500_v5" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/layoutAmount" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" style="@style/match_wrap_h">
+            <TextView android:text="@string/options_place_order_amount" style="@style/Text_text_secondary_14_weight_400_v5" />
+            <TextView android:gravity="end" android:id="@id/tvAmount" android:layout_width="fill_parent" android:text="--" android:layout_marginStart="8.0dip" style="@style/Text_text_primary_14_weight_500_v5" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/llOrderType" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" style="@style/match_wrap_h">
+            <TextView android:maxWidth="225.0dip" android:text="@string/options_place_order_type" style="@style/Text_text_secondary_14_weight_400_v5" />
+            <TextView android:gravity="end" android:id="@id/tvOrderType" android:layout_width="fill_parent" android:text="@string/options_place_limit" android:layout_marginStart="8.0dip" style="@style/Text_text_primary_14_weight_500_v5" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.gateio.lib.uikit.widget.GTCheckBoxV5 android:textSize="14.0sp" android:gravity="center_vertical" android:id="@id/cbTips" android:visibility="visible" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:checked="false" android:text="@string/no_tip_me" android:drawablePadding="8.0dip" app:uikit_button_size_v5="14.0dip" style="@style/Text_text_primary_14_weight_400_v5" />
+    <com.gateio.lib.uikit.button.GTButtonV5 android:id="@id/btnConfirm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:text="@string/trans_qr" app:uikit_buttonDimenV5="medium" app:uikit_buttonTypeV5="primary_black" />
+</com.ruffian.library.widget.RLinearLayout>

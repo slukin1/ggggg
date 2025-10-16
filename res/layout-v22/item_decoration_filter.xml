@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:background="@color/uikit_bg_1_v3" android:paddingLeft="@dimen/uikit_margin_padding_12" android:paddingRight="@dimen/uikit_margin_padding_12" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/uikit_margin_padding_12"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_3_v3" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12333" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Uikit_font_sans_2_0_weight_500" />
+    <com.gateio.lib.uikit.dropdown.color.GTDropdownColorV3 android:layout_width="wrap_content" android:layout_height="@dimen/uikit_margin_padding_14" app:layout_constraintBottom_toBottomOf="@id/title" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/title" />
+    <View android:id="@id/space" android:layout_width="0.0dip" android:layout_height="@dimen/uikit_margin_padding_12" />
+</androidx.constraintlayout.widget.ConstraintLayout>

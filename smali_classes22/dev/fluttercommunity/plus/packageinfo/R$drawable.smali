@@ -1,0 +1,52 @@
+.class public final Ldev/fluttercommunity/plus/packageinfo/R$drawable;
+.super Ljava/lang/Object;
+
+
+# static fields
+.field public static final ic_call_answer:I = 0x7f0803df
+
+.field public static final ic_call_answer_low:I = 0x7f0803e0
+
+.field public static final ic_call_answer_video:I = 0x7f0803e1
+
+.field public static final ic_call_answer_video_low:I = 0x7f0803e2
+
+.field public static final ic_call_decline:I = 0x7f0803e3
+
+.field public static final ic_call_decline_low:I = 0x7f0803e4
+
+.field public static final notification_action_background:I = 0x7f08055f
+
+.field public static final notification_bg:I = 0x7f080560
+
+.field public static final notification_bg_low:I = 0x7f080561
+
+.field public static final notification_bg_low_normal:I = 0x7f080562
+
+.field public static final notification_bg_low_pressed:I = 0x7f080563
+
+.field public static final notification_bg_normal:I = 0x7f080564
+
+.field public static final notification_bg_normal_pressed:I = 0x7f080565
+
+.field public static final notification_icon_background:I = 0x7f080566
+
+.field public static final notification_oversize_large_icon_bg:I = 0x7f080567
+
+.field public static final notification_template_icon_bg:I = 0x7f080568
+
+.field public static final notification_template_icon_low_bg:I = 0x7f080569
+
+.field public static final notification_tile_bg:I = 0x7f08056a
+
+.field public static final notify_panel_notification_icon_bg:I = 0x7f08056b
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

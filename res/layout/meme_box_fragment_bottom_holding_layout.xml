@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.gateio.view.CornerConstraintLayout android:background="@color/uikit_bg_primary_v5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:id="@id/nest_scroll" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.gateio.lib.uikit.widget.GTCheckBoxV5 android:textSize="@dimen/text_size_12" android:textColor="@color/uikit_text_primary_v5" android:id="@id/cb_current" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/length_16" android:layout_marginTop="@dimen/length_8" android:layout_marginRight="@dimen/length_16" android:checked="false" android:text="@string/meme_box_current_market" android:drawablePadding="@dimen/length_4" app:uikit_button_size_v5="@dimen/length_12" style="@style/Uikit_font_sans_5_0_weight_400" />
+            <com.gateio.lib.uikit.state.GTEmptyV5 android:id="@id/memeBoxBottomHoldingEmptyView" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/length_16" app:uikit_emptySizeV5="small" app:uikit_titleTextV5="@string/meme_box_tab_no_records" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/memeBoxBottomHoldingRV" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/nest_scroll" />
+</com.gateio.gateio.view.CornerConstraintLayout>

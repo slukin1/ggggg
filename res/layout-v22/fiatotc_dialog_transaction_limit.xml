@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/uikit_margin_padding_16" android:paddingRight="@dimen/uikit_margin_padding_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/uikit_margin_padding_16"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_primary_v5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_16" android:text="@string/fiatotc_trade_limit" android:lineSpacingExtra="@dimen/dp_5" style="@style/Uikit_font_sans_5_0_weight_400" />
+    <com.gateio.lib.uikit.description.GTDescriptionViewV5 android:id="@id/description_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_24" android:layout_marginBottom="@dimen/dp_8" />
+    <com.gateio.lib.uikit.description.GTDescriptionViewV5 android:id="@id/description_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_24" android:layout_marginBottom="@dimen/dp_8" />
+    <com.gateio.lib.uikit.description.GTDescriptionViewV5 android:id="@id/description_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_24" android:layout_marginBottom="@dimen/dp_8" />
+    <com.gateio.lib.uikit.description.GTDescriptionViewV5 android:id="@id/description_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_24" android:layout_marginBottom="@dimen/dp_8" />
+</LinearLayout>

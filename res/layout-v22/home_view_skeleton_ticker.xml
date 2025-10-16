@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.third.skeletonLayout.SkeletonLayout android:id="@id/skeleton_ticker" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginHorizontal="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.third.skeletonLayout.widget.SkeletonTextView android:layout_width="fill_parent" android:layout_height="104.0dip" app:maskCornerRadius="8.0dip" />
+</com.gateio.third.skeletonLayout.SkeletonLayout>

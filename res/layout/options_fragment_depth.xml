@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/layoutDepthTitle" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/tvPriceTop1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/exchange_v1_price" android:layout_marginStart="6.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Text_text_secondary_10_weight_400_v5" />
+        <TextView android:id="@id/tvPriceUnit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="6.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tvPriceTop1" style="@style/Text_text_secondary_10_weight_400_v5" />
+        <com.gateio.uiComponent.GateIconFont android:textSize="12.0sp" android:textColor="@color/uikit_icon_tertiary_v5" android:id="@id/ivAmountArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:id="@id/tvAmountTop1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/exchange_v1_amount" app:layout_constraintEnd_toStartOf="@id/ivAmountArrow" app:layout_constraintTop_toTopOf="parent" style="@style/Text_text_secondary_10_weight_400_v5" />
+        <TextView android:id="@id/tvAmountUnit" app:layout_constraintEnd_toEndOf="@id/tvAmountTop1" app:layout_constraintTop_toBottomOf="@id/tvAmountTop1" style="@style/Text_text_secondary_10_weight_400_v5" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.gateio.biz_options.widget.OptionsDepthView android:id="@id/optionsDepthView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" />
+</LinearLayout>

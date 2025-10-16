@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alert_cancel_array">
+        <item>Ignorar solo esta vez</item>
+        <item>10 minutos después</item>
+        <item>30 minutos después</item>
+        <item>2 horas después</item>
+        <item>24 horas después</item>
+        <item>nunca</item>
+    </string-array>
+    <string-array name="exo_controls_playback_speeds">
+        <item>0,25x</item>
+        <item>0,5x</item>
+        <item>0,75x</item>
+        <item>Normal</item>
+        <item>1,25x</item>
+        <item>1,5x</item>
+        <item>2x</item>
+    </string-array>
+    <string-array name="funding_share_desc">
+        <item>Hay un tipo de felicidad llamado estabilidad</item>
+        <item>Elija Gate y gane en un instante</item>
+        <item>El líder profesional no tiene límites</item>
+        <item>Pruebe su suerte en Gate para demostrar su talento</item>
+        <item>Todos los caminos llevan a Roma pero la solidez es lo primero</item>
+        <item>¿Va a administrar dinero? Estable</item>
+        <item>Vale la pena vivir la vida, y el futuro es prometedor</item>
+    </string-array>
+    <string-array name="home_week_string_array">
+        <item>Domingo</item>
+        <item>Lunes</item>
+        <item>Martes</item>
+        <item>Miércoles</item>
+        <item>Jueves</item>
+        <item>Viernes</item>
+        <item>Sábado</item>
+    </string-array>
+    <string-array name="modify_procedure_items">
+        <item>Elija una configuración de seguridad para cambiar</item>
+        <item>Solicitar un cambio</item>
+        <item>Finalizar solicitud</item>
+    </string-array>
+    <string-array name="position_share_desc_loss">
+        <item>¿Reducir pérdidas? ¡Nunca!</item>
+        <item>Quédese y espere.</item>
+        <item>Menos pérdidas, por favor</item>
+        <item>El que ríe último, ríe mejor</item>
+        <item>Levántese y brille. Muévase ahora.</item>
+        <item>Sea amable conmigo</item>
+        <item>Sin miedo</item>
+        <item>Todo en juego. Tenga fe</item>
+    </string-array>
+    <string-array name="position_share_desc_win">
+        <item>Meter todo y ganar a lo grande.</item>
+        <item>Meter todo como siempre.</item>
+        <item>Solo esperar</item>
+        <item>Solo mantener</item>
+        <item>¿El siguiente paso? Seguir tendencias</item>
+        <item>¡Soy la gran estrella!</item>
+        <item>Sígame para ganar a lo grande</item>
+        <item>¡Estoy en el lado correcto, como siempre!</item>
+        <item>¿Largo o corto? Todo depende de mí.</item>
+    </string-array>
+    <string-array name="push_alert_cancel_array">
+        <item>Durante 30 minutos</item>
+        <item>Durante 2 horas</item>
+        <item>Durante 24 horas</item>
+        <item>Siempre</item>
+    </string-array>
+    <string-array name="week_string_array">
+        <item>Dom</item>
+        <item>Lun</item>
+        <item>Mar</item>
+        <item>Mie</item>
+        <item>Jue</item>
+        <item>Vie</item>
+        <item>Sáb</item>
+    </string-array>
+</resources>

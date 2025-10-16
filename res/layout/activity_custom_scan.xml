@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:fitsSystemWindows="false" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:fitsSystemWindows="false" style="@style/scan_qr_code_bg_bg_color">
+        <com.journeyapps.barcodescanner.DecoratedBarcodeView android:layout_gravity="center|top" android:id="@id/dbv_custom" android:layout_width="fill_parent" android:layout_height="fill_parent" app:zxing_framing_rect_height="295.0dip" app:zxing_framing_rect_width="295.0dip" app:zxing_preview_scaling_strategy="fitXY" app:zxing_scanner_layout="@layout/custom_barcode_scanner" app:zxing_use_texture_view="true" />
+    </LinearLayout>
+    <View android:id="@id/status_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+    <com.gateio.lib.uikit.title.GTTitleViewV3 android:id="@id/layout_main" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/asset_smewm" android:layout_below="@id/status_bg" app:uikit_titleColorV3="@color/uikit_text_6_v3" app:uikit_titleLeftColorV3="@color/uikit_text_6_v3" app:uikit_titleLeftV3="" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_take_photo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <FrameLayout android:background="@drawable/bg_circle_translate" android:layout_width="56.0dip" android:layout_height="56.0dip">
+            <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_24" android:textColor="@color/uikit_text_always_white_v5" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+        </FrameLayout>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_always_white_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/select_get_pic_in_photo" style="@style/Uikit_font_sans_5_0_weight_400" />
+    </LinearLayout>
+</RelativeLayout>

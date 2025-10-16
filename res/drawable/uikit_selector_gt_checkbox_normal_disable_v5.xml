@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:drawable="@drawable/uikit_checkbox_normal_disable_active_v5" />
+    <item android:state_checked="false" android:drawable="@drawable/uikit_checkbox_normal_disable_inactive_v5" />
+    <item android:drawable="@drawable/uikit_checkbox_normal_disable_inactive_v5" />
+</selector>

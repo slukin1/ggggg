@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="trans_percent_buy">
+        <item name="android:textColor">@drawable/trans_percent_red</item>
+    </style>
+    <style name="trans_percent_buy2">
+        <item name="android:textColor">@drawable/trans_percent_red2</item>
+    </style>
+    <style name="trans_percent_sell">
+        <item name="android:textColor">@drawable/trans_percent_green</item>
+    </style>
+    <style name="trans_percent_sell2">
+        <item name="android:textColor">@drawable/trans_percent_green2</item>
+    </style>
+    <style name="trans_type_buy">
+        <item name="android:background">@drawable/uikit_selector_red_left</item>
+    </style>
+    <style name="trans_type_buy2">
+        <item name="android:background">@drawable/selector_red_left2</item>
+    </style>
+    <style name="trans_type_buy_alpha">
+        <item name="android:background">@drawable/selector_red_left_alpha</item>
+    </style>
+    <style name="trans_type_sell">
+        <item name="android:background">@drawable/uikit_selector_green_right</item>
+    </style>
+    <style name="trans_type_sell2">
+        <item name="android:background">@drawable/selector_green_right2</item>
+    </style>
+    <style name="trans_type_sell_alpha">
+        <item name="android:background">@drawable/selector_green_right_alpha</item>
+    </style>
+    <style name="trans_v1_type_buy">
+        <item name="android:background">@drawable/trans_selector_red_right</item>
+    </style>
+    <style name="trans_v1_type_sell">
+        <item name="android:background">@drawable/trans_selector_green_left</item>
+    </style>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/shape_button_4" android:paddingLeft="@dimen/uikit_margin_padding_8" android:paddingRight="@dimen/uikit_margin_padding_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="45.0dip" android:minHeight="@dimen/uikit_margin_padding_24"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_text_inverse_primary_v5" android:layout_gravity="center" android:id="@id/text_desc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" style="@style/Uikit_font_sans_5_0_weight_600" />
+    <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_inverse_primary_v5" android:layout_gravity="center" android:id="@id/text_copy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wallets_copy" style="@style/Uikit_font_sans_5_0_weight_500" />
+</FrameLayout>

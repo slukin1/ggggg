@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/uikit_bg_market_item" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/layout_header_normal" />
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/margin_commit" android:layout_below="@id/layout_header" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip">
+                <TextView android:textStyle="bold" android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_zdkj" android:text="---" android:layout_alignParentEnd="true" style="@style/tv_user_black_14" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/color_999999_7c848d" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/margin_loan_zdkj" android:layout_toStartOf="@id/tv_zdkj" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="@color/color_999999_7c848d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/margin_loan_rate" />
+                <TextView android:textStyle="bold" android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_rate" android:text="---" android:layout_alignParentEnd="true" style="@style/tv_user_black_14" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="@color/color_999999_7c848d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/margin_loan_period" />
+                <TextView android:textStyle="bold" android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_period" android:text="---" android:layout_alignParentEnd="true" style="@style/tv_user_black_14" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="@color/color_999999_7c848d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loan_mini" />
+                <TextView android:textStyle="bold" android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_minimun" android:text="---" android:layout_alignParentEnd="true" style="@style/tv_user_black_14" />
+            </RelativeLayout>
+            <View style="@style/view_line_v_new" />
+            <RelativeLayout android:orientation="horizontal" android:layout_margin="15.0dip" style="@style/match_wrap">
+                <TextView android:textStyle="bold" android:textColor="@color/uikit_color_333333_e7e9ea" android:text="@string/margin_loan_zdxj" style="@style/tv_user_black_14" />
+                <Switch android:id="@id/sw_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:thumb="@drawable/switch_custom_thumb_selector" android:track="@drawable/switch_custom_track_selector" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <View android:layout_height="@dimen/margin_padding_16" style="@style/view_line_v" />
+            <LinearLayout android:layout_height="40.0dip" android:layout_margin="15.0dip" style="@style/ll_funding">
+                <TextView android:textSize="14.0sp" android:textColor="@color/color_999999_7c848d" android:text="@string/funding_jdsl" style="@style/tv_user_white_12" />
+                <EditText android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/uikit_color_333333_e7e9ea" android:textColorHint="@color/color_cccccc_58626f" android:gravity="center_vertical" android:id="@id/ed_funding_jdsl" android:layout_width="0.0dip" android:hint="@string/margin_jdsl_input" android:layout_weight="1.0" android:layout_marginStart="8.0dip" style="@style/ed_funding" />
+                <TextView android:textStyle="bold" android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_coin" android:text="---" style="@style/tv_user_black_14" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_bail_add" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" style="@style/ll_funding3">
+                <TextView android:textColor="@color/text_wallet_gray4" android:text="@string/coin2coin_bail" style="@style/tv_user_white_14" />
+                <EditText android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/uikit_color_333333_e7e9ea" android:textColorHint="@color/color_cccccc_58626f" android:gravity="center_vertical" android:id="@id/et_bail_add" android:layout_width="0.0dip" android:hint="@string/hint_dybzj_tips" android:layout_weight="1.0" android:layout_marginStart="8.0dip" style="@style/ed_funding" />
+                <TextView android:textStyle="bold" android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_mortgage_coin" android:layout_width="wrap_content" android:text="--" android:drawablePadding="8.0dip" android:paddingStart="8.0dip" android:layout_marginEnd="7.0dip" app:drawableEndCompat="@mipmap/icon_arrow_down1" style="@style/tv_user_black_14" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_coin_avali" android:layout_marginTop="@dimen/margin_padding_4" android:layout_marginStart="15.0dip" style="@style/match_wrap_h">
+                <com.gateio.lib.uikit.text.GTDashTextView android:textColor="@color/color_999999_7c848d" android:id="@id/tv_coin_avali_label" android:layout_height="fill_parent" android:text="@string/asset_ky" app:tips="@string/uikit_availableUpgradeTooltip" app:title="@string/title_alert_ts" style="@style/tv_user_white_12" />
+                <TextView android:textColor="@color/color_999999_7c848d" android:id="@id/tv_coin_avali" android:text="--" android:layout_marginStart="10.0dip" style="@style/tv_user_white_12" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_morgate_new" android:background="@color/color_fafafa_2b364d" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="8.0dip" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" style="@style/ll_funding3">
+                <com.gateio.common.view.DashTextView android:textColor="@color/color_999999_7c848d" android:text="@string/c2c_loan_pledge_ratio" app:cancelenabled="false" app:tips="@string/tips_loan_pledge_ratio" style="@style/tv_user_white_12" />
+                <TextView android:textStyle="bold" android:gravity="center_vertical" android:id="@id/et_morgate_new" android:layout_width="0.0dip" android:text="0%" android:layout_weight="1.0" android:layout_marginStart="8.0dip" style="@style/ed_funding3" />
+                <com.gateio.gateio.view.Coin2CoinRiskTipsView android:id="@id/risk_coin2coin_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="7.0dip" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/rl_seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_below="@id/ll_morgate_new" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip">
+                <com.gateio.common.view.indicatorseekbar.IndicatorSeekBar android:id="@id/seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" app:isb_indicator_color="@color/uikit_color_2354e6" app:isb_max="70.0" app:isb_progress="0.0" app:isb_show_indicator="rounded_rectangle" app:isb_show_tick_marks_type="square" app:isb_show_tick_texts="true" app:isb_thumb_drawable="@mipmap/thumb_seekbar" app:isb_thumb_size="48.0dip" app:isb_tick_marks_color="@color/selector_tick_marks_color" app:isb_tick_texts_color="@color/uikit_color_2354e6" app:isb_ticks_count="8" app:isb_track_progress_color="@color/uikit_color_2354e6" />
+                <com.gateio.common.view.DashTextView android:textColor="@color/color_999999_7c848d" android:id="@id/warning_risklimit_init_label" android:layout_marginTop="16.0dip" android:text="@string/coin2coin_cszyl" android:layout_below="@id/seekbar" app:tips="@string/tips_coin2coin_risklimit_init" style="@style/tv_user_black_12" />
+                <TextView android:textColor="@color/color_999999_7c848d" android:id="@id/warning_risklimit_init" android:layout_marginTop="16.0dip" android:text="--" android:layout_below="@id/seekbar" android:layout_alignParentEnd="true" style="@style/tv_user_black_12" />
+                <com.gateio.common.view.DashTextView android:textColor="@color/color_999999_7c848d" android:id="@id/warning_risklimit_hold_label" android:layout_marginTop="8.0dip" android:text="@string/coin2coin_bczyl" android:layout_below="@id/warning_risklimit_init_label" app:tips="@string/tips_coin2coin_risklimit_hold" style="@style/tv_user_black_12" />
+                <TextView android:textColor="@color/color_999999_7c848d" android:id="@id/warning_risklimit_hold" android:layout_marginTop="8.0dip" android:text="--" android:layout_below="@id/warning_risklimit_init_label" android:layout_alignParentEnd="true" style="@style/tv_user_black_12" />
+                <com.gateio.common.view.DashTextView android:textColor="@color/color_999999_7c848d" android:id="@id/warning_risklimit_close_label" android:layout_marginTop="8.0dip" android:text="@string/coin2coin_pczyl" android:layout_below="@id/warning_risklimit_hold_label" app:tips="@string/tips_coin2coin_risklimit_close" style="@style/tv_user_black_12" />
+                <TextView android:textColor="@color/color_999999_7c848d" android:id="@id/warning_risklimit_close" android:layout_marginTop="8.0dip" android:text="--" android:layout_below="@id/warning_risklimit_hold_label" android:layout_alignParentEnd="true" style="@style/tv_user_black_12" />
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.gateio.common.view.CornerTextView android:textColor="@color/uikit_white" android:gravity="center" android:id="@id/margin_commit" android:background="@color/uikit_color_2354e6" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_margin="16.0dip" android:text="@string/margin_loan_ljjd" android:layout_alignParentBottom="true" app:radius="4.0dip" />
+</RelativeLayout>

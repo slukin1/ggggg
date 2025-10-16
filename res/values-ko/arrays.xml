@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alert_cancel_array">
+        <item>Only ignore this time</item>
+        <item>10 minutes later</item>
+        <item>30 minutes later</item>
+        <item>2 hours later</item>
+        <item>24 hours later</item>
+        <item>입력하지 않음</item>
+    </string-array>
+    <string-array name="chat_mute_unit">
+        <item>분</item>
+        <item>시간</item>
+        <item>일</item>
+        <item>월</item>
+    </string-array>
+    <string-array name="exo_controls_playback_speeds">
+        <item>0.25배속</item>
+        <item>0.5배속</item>
+        <item>0.75배속</item>
+        <item>보통</item>
+        <item>1.25배속</item>
+        <item>1.5배속</item>
+        <item>2배속</item>
+    </string-array>
+    <string-array name="funding_share_desc">
+        <item>There is a kind of happiness called stability</item>
+        <item>Gate를 선택하고 손쉽게 승리를 거두십시오.</item>
+        <item>Professional leader is boundless</item>
+        <item>Gate를 활용하여 재능을 뽐내보세요.</item>
+        <item>All roads lead to Rome but robustness comes first</item>
+        <item>Going to manage money? Steady</item>
+        <item>Life is worth living and future is promising</item>
+    </string-array>
+    <string-array name="home_week_string_array">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+    <string-array name="modify_procedure_items">
+        <item>유실된 보안항목 선택</item>
+        <item>보안항목 수정 신청</item>
+        <item>신청완료</item>
+    </string-array>
+    <string-array name="position_share_desc_loss">
+        <item>Cutting loss? Never!</item>
+        <item>Keep and wait.</item>
+        <item>Less loss, please</item>
+        <item>He who laughs last, laughs best</item>
+        <item>Rise and shine. Move now.</item>
+        <item>Be nice to me</item>
+        <item>No Panic</item>
+        <item>All in.Keep the faith</item>
+    </string-array>
+    <string-array name="position_share_desc_win">
+        <item>All in and win big.</item>
+        <item>All in as always.</item>
+        <item>Just hold</item>
+        <item>Just keep it</item>
+        <item>The next step? Follow trends</item>
+        <item>I am the big star!</item>
+        <item>Follow me to win big</item>
+        <item>I am on the right side as always!</item>
+        <item>Long or Short? All up to me.</item>
+    </string-array>
+    <string-array name="push_alert_cancel_array">
+        <item>For 30 minutes</item>
+        <item>For 2 hours</item>
+        <item>For 24 hours</item>
+        <item>Forever</item>
+    </string-array>
+    <string-array name="week_string_array">
+        <item>일요일</item>
+        <item>월요일</item>
+        <item>화요일</item>
+        <item>수요일</item>
+        <item>목요일</item>
+        <item>금요일</item>
+        <item>토요일</item>
+    </string-array>
+</resources>

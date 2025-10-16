@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/stubView" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.face.csg.lv5.sdk.view.CameraGLSurfaceViewNew android:id="@id/liveness_layout_cameraView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.face.csg.lv5.sdk.view.RadarView android:id="@id/radar_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.face.csg.lv5.sdk.view.EggView android:id="@id/egg_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include android:layout_width="fill_parent" android:layout_height="@dimen/bottom_bar_height" android:layout_alignParentBottom="true" layout="@layout/face_liveness_bar_bottom" />
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:ellipsize="end" android:gravity="center" android:id="@id/tv_liveness_top_tips" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="39.0dip" android:maxLines="3" android:layout_centerHorizontal="true" />
+        <LinearLayout android:id="@id/ll_detect_close" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/tv_liveness_top_tips" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/iv_liveness_homepage_close" android:layout_width="19.0dip" android:layout_height="19.0dip" android:scaleType="centerCrop" />
+        </LinearLayout>
+        <TextView android:textSize="20.0sp" android:gravity="center" android:id="@id/tv_status_tips" android:visibility="gone" android:layout_width="320.0dip" android:layout_height="wrap_content" android:layout_marginTop="94.0dip" android:maxLines="1" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <RelativeLayout android:gravity="center" android:id="@id/rl_status_tips" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_centerHorizontal="true">
+            <TextView android:textSize="20.0sp" android:gravity="center" android:id="@id/tv_status_tips_long_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_finish_tips" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:visibility="gone" android:layout_width="320.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

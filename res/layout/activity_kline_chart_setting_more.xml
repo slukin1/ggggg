@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/uikit_bg_primary_v5" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.title.GTNavBarV5 android:id="@id/kline_nav" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/kline_more_settings" app:uikit_titleLeftColorV5="@color/uikit_icon_primary_v5" app:uikit_titleLeftV5="" />
+    <androidx.core.widget.NestedScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+            <com.gateio.lib.uikit.cell.GTCellV5 android:id="@id/tv_adjusted" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/kline_adjust_label" app:uikit_cellShowRightArrowV5="true" />
+            <com.gateio.lib.uikit.cell.GTCellV5 android:id="@id/tv_theme" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/kline_theme" app:uikit_cellShowRightArrowV5="true" />
+            <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.gateio.lib.uikit.cell.GTCellV5 android:id="@id/tv_rise_fall_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/market_rate_zdys" app:uikit_cellShowRightArrowV5="true" />
+                <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_rise_fall_color" android:layout_width="20.0dip" android:layout_height="20.0dip" android:scaleType="fitXY" android:layout_centerVertical="true" android:layout_marginEnd="38.0dip" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <com.gateio.lib.uikit.cell.GTCellV5 android:id="@id/rl_real_market" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/kline_real_time_market_tracking" app:uikit_cellShowRightArrowV5="true" />
+            <com.gateio.lib.uikit.cell.GTCellV5 android:id="@id/tv_type" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/kline_tblx" app:uikit_cellShowRightArrowV5="true" />
+            <com.gateio.lib.uikit.cell.GTCellV5 android:id="@id/tv_display" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/kline_cross_line_summary" app:uikit_cellShowRightArrowV5="true" />
+            <com.gateio.lib.uikit.cell.GTCellV5 android:id="@id/cell_double_click" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/kline_double_click_landscape" app:uikit_cellSwitchSizeV5="small" />
+            <com.gateio.lib.uikit.cell.GTCellV5 android:id="@id/rl_quick_order" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/kline_quick_order" app:uikit_cellSwitchSizeV5="small" />
+            <com.gateio.lib.uikit.cell.GTCellV5 android:id="@id/rl_scroll_setting" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/kline_scroll_exchange_pair" app:uikit_cellSwitchSizeV5="small" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

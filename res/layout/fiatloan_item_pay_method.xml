@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.widget.GTCheckBoxV3 android:id="@id/pay_check" android:layout_width="@dimen/uikit_margin_padding_12" android:layout_height="@dimen/uikit_margin_padding_12" app:uikit_button_size_v3="@dimen/uikit_margin_padding_12" app:uikit_isCorner_v3="true" />
+    <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_1_v3" android:id="@id/pay_account" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_marginStart="@dimen/uikit_margin_padding_8" style="@style/Uikit_font_sans_2_0_weight_400" />
+</LinearLayout>

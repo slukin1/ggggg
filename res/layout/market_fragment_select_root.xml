@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.biz.market.weight.DispatchFrameLayout android:id="@id/flRoot" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.common.view.CornerView android:id="@id/bg_view" android:background="@color/uikit_layer_1_v5" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="70.0dip" app:left_top_radis="12.0dip" app:right_top_radis="12.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="75.0dip">
+        <com.gateio.common.view.CornerView android:layout_gravity="center_horizontal" android:id="@id/ic_indicator" android:background="@color/uikit_line_short_divider_v5" android:layout_width="31.0dip" android:layout_height="3.0dip" app:radius="6.0dip" />
+        <FrameLayout android:id="@id/market_select_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</com.gateio.biz.market.weight.DispatchFrameLayout>

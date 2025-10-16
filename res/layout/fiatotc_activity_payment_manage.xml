@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/uikit_bg_primary_v5" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.title.GTNavBarV5 android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fiatotc_payment_methods_title" />
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/bind_refresh" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" app:srlEnableLoadMore="false">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/bind_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_spacing_16_v5" android:layout_marginRight="@dimen/uikit_spacing_16_v5" android:overScrollMode="never" />
+            <com.gateio.lib.uikit.state.GTEmptyV5 android:id="@id/empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_spacing_48_v5" android:layout_marginTop="80.0dip" android:layout_marginRight="@dimen/uikit_spacing_48_v5" app:uikit_descTextV5="@string/fiatotc_have_not_payment" app:uikit_emptyTypeV5="wallet_empty" />
+        </FrameLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <com.gateio.lib.uikit.helper.GTFooterButtonV5 android:id="@id/add" android:padding="@dimen/uikit_spacing_16_v5" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:uikit_footerButtonLargeSizeV5="true" app:uikit_footerConfirmTextV5="@string/fiatotc_add_payment" />
+</LinearLayout>

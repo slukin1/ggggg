@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center_vertical" android:id="@id/tv_contract" style="@style/Text_text_primary_16_weight_600_v5" />
+    <LinearLayout android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:gravity="center_vertical" android:id="@id/tv_side" style="@style/Text_text_primary_16_weight_600_v5" />
+    </LinearLayout>
+</LinearLayout>

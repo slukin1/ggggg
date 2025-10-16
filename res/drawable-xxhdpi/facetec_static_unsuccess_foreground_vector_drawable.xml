@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="24.0dip" android:width="24.0dip" android:viewportWidth="24.0" android:viewportHeight="24.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:name="cross1">
+        <path android:name="cross1Path" android:pathData="M8.4,8.4 l7.8,7.8" android:strokeColor="#ffffffff" android:strokeWidth="1.0" android:strokeMiterLimit="10.0" />
+    </group>
+    <group android:name="cross2">
+        <path android:name="cross2Path" android:pathData="M16.2,8.4 l-7.8,7.8" android:strokeColor="#ffffffff" android:strokeWidth="1.0" android:strokeMiterLimit="10.0" />
+    </group>
+</vector>

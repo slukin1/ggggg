@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector android:drawable="@drawable/facetec_unsuccess_foreground_vector_drawable"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <target android:name="cross1Path" android:animation="@anim/facetec_cross_1_animation" />
+    <target android:name="cross2Path" android:animation="@anim/facetec_cross_2_animation" />
+</animated-vector>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="@dimen/uikit_dp_8" android:paddingBottom="@dimen/uikit_dp_8" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.table.GTTableItemViewV3 android:id="@id/table_left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginStart="@dimen/uikit_dp_12" android:layout_marginEnd="@dimen/uikit_margin_padding_12" app:layout_constraintEnd_toStartOf="@id/table_center" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.gateio.lib.uikit.table.GTTableItemViewV3 android:gravity="end" android:id="@id/table_center" android:layout_width="95.0dip" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/uikit_margin_padding_12" app:layout_constraintEnd_toStartOf="@id/table_right" app:layout_constraintTop_toTopOf="@id/table_right" />
+    <com.gateio.lib.uikit.table.GTTableItemViewV3 android:gravity="end" android:id="@id/table_right" android:layout_width="95.0dip" android:layout_height="0.0dip" android:layout_marginEnd="@dimen/uikit_dp_12" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

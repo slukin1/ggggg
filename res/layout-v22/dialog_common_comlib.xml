@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.comlib.view.CornerRelativeLayout android:layout_gravity="center" android:background="@color/card_2" android:padding="@dimen/margin_padding_24" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" android:radius="@dimen/dp_12"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/ts_20" android:textColor="@color/text_1" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/dp_5" android:textFontWeight="500" />
+    <ScrollView android:id="@id/sv_content" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_below="@id/title" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/ts_14" android:textColor="@color/text_3" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_24" android:maxHeight="200.0dip" android:lineSpacingExtra="@dimen/dp_5" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_24" android:layout_below="@id/sv_content">
+        <com.gateio.lib.uikit.button.GTButtonV3 android:id="@id/cancel" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/kyc_cancel" android:layout_weight="1.0" android:layout_marginEnd="@dimen/margin_padding_8" app:uikit_buttonDimenV3="medium" app:uikit_buttonTypeV3="secondary" />
+        <com.gateio.lib.uikit.button.GTButtonV3 android:id="@id/confirm" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/kyc_confirm" android:layout_weight="1.0" app:uikit_buttonDimenV3="medium" app:uikit_buttonTypeV3="primary" />
+    </LinearLayout>
+</com.gateio.comlib.view.CornerRelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/uikit_color_ffffff_111f31" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.common.view.GateioTitleView android:id="@id/title_view" android:layout_width="fill_parent" android:layout_height="48.0dip" app:leftSrc="@mipmap/uikit_btn_back" app:rightVisibility="false" app:titleText="@string/point_gm" />
+    <androidx.core.widget.NestedScrollView style="@style/match_ww_h">
+        <LinearLayout style="@style/match_wrap">
+            <LinearLayout android:layout_margin="@dimen/margin_padding_16" style="@style/match_wrap">
+                <RelativeLayout style="@style/match_wrap">
+                    <TextView android:textColor="@color/color_999999_7c848d" android:text="@string/dual_cpmc" style="@style/tv_user_white_14" />
+                    <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_dual_name" android:layout_alignParentEnd="true" style="@style/tv_user_white_14" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_marginTop="12.0dip" style="@style/match_wrap">
+                    <com.gateio.common.view.DashTextView android:textColor="@color/color_999999_7c848d" android:text="@string/strategy_rate_year" app:cancelenabled="false" app:tips="@string/dual_nhsyl_tip" style="@style/tv_user_white_14" />
+                    <TextView android:id="@id/tv_dual_rate" android:layout_alignParentEnd="true" style="@style/tv_user_white_14" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_marginTop="12.0dip" style="@style/match_wrap">
+                    <TextView android:textColor="@color/color_999999_7c848d" android:id="@id/tv_dual_ggckj_label" android:text="@string/dual_ggckj" style="@style/tv_user_white_14" />
+                    <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_dual_ggckj" android:layout_alignParentEnd="true" style="@style/tv_user_white_14" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_marginTop="12.0dip" style="@style/match_wrap">
+                    <TextView android:textColor="@color/color_999999_7c848d" android:id="@id/tv_dual_ccqx_label" android:text="@string/dual_ccqx" style="@style/tv_user_white_14" />
+                    <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_dual_ccqx" android:layout_alignParentEnd="true" style="@style/tv_user_white_14" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_marginTop="12.0dip" style="@style/match_wrap">
+                    <TextView android:textColor="@color/color_999999_7c848d" android:text="@string/dual_dqr" style="@style/tv_user_white_14" />
+                    <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_dual_dqr" android:layout_alignParentEnd="true" style="@style/tv_user_white_14" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_marginTop="12.0dip" style="@style/match_wrap">
+                    <com.gateio.common.view.DashTextView android:textColor="@color/color_999999_7c848d" android:text="@string/dual_start_share_amount" app:cancelenabled="false" app:tips="@string/dual_start_share_amount_tip" style="@style/tv_user_white_14" />
+                    <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_start_share" android:layout_alignParentEnd="true" style="@style/tv_user_white_14" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_marginTop="12.0dip" style="@style/match_wrap">
+                    <TextView android:textColor="@color/color_999999_7c848d" android:text="@string/dual_syfe" style="@style/tv_user_white_14" />
+                    <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_dual_syfe" android:layout_alignParentEnd="true" style="@style/tv_user_white_14" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View style="@style/view_line_v_new2_blod" />
+            <LinearLayout android:layout_margin="@dimen/margin_padding_16" style="@style/match_wrap">
+                <RelativeLayout style="@style/match_wrap">
+                    <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:text="@string/dual_tzfe" style="@style/tv_user_white_16" />
+                    <TextView android:textColor="@color/color_999999_7c848d" android:id="@id/tv_dual_per" android:text="--" android:layout_alignParentEnd="true" style="@style/tv_user_white_12" />
+                </RelativeLayout>
+                <LinearLayout android:layout_height="40.0dip" android:layout_marginTop="8.0dip" android:paddingStart="8.0dip" android:paddingEnd="0.0dip" style="@style/ll_funding_new">
+                    <EditText android:textSize="14.0sp" android:textColor="@color/uikit_color_333333_e7e9ea" android:textColorHint="@color/color_999999_7c848d" android:gravity="center_vertical" android:id="@id/ed_dual_num" android:hint="@string/low" android:layout_weight="1.0" android:inputType="number" android:textCursorDrawable="@drawable/uikit_shape_edit_cursor_blue" android:layout_marginEnd="16.0dip" style="@style/ed_funding" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/uikit_color_333333_e7e9ea" android:textColorHint="@color/color_c6c6ca_424e66" android:gravity="center_vertical" android:padding="8.0dip" android:text="@string/dual_f" style="@style/tv_user_black_14" />
+                    <ImageView android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" style="@style/view_line_h_new" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/uikit_color_2354e6" android:gravity="center_vertical" android:id="@id/tv_dual_all" android:padding="8.0dip" android:text="@string/trans_qb" style="@style/tv_user_black_14" />
+                </LinearLayout>
+                <LinearLayout android:layout_marginTop="@dimen/margin_padding_8" style="@style/match_wrap_h">
+                    <com.gateio.lib.uikit.text.GTDashTextView android:textColor="@color/color_999999_7c848d" android:id="@id/tv_dual_kyye_label" android:layout_height="fill_parent" android:text="@string/asset_ky" app:tips="@string/uikit_availableUpgradeTooltip" app:title="@string/title_alert_ts" style="@style/tv_user_white_12" />
+                    <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_dual_kyye" android:text="--" android:layout_marginStart="10.0dip" style="@style/tv_user_white_12" />
+                </LinearLayout>
+                <LinearLayout android:layout_marginTop="@dimen/margin_padding_8" style="@style/match_wrap_h">
+                    <TextView android:textColor="@color/color_999999_7c848d" android:id="@id/tv_dual_gmsx_label" android:text="@string/dual_gmsx" style="@style/tv_user_white_12" />
+                    <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_dual_gmsx" android:text="--" android:layout_marginStart="10.0dip" style="@style/tv_user_white_12" />
+                </LinearLayout>
+                <RelativeLayout android:layout_marginTop="@dimen/margin_padding_16" style="@style/match_wrap">
+                    <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:text="@string/dual_hkyc" style="@style/tv_user_white_12" />
+                    <TextView android:textColor="@color/color_999999_7c848d" android:text="@string/trans_zxj" android:layout_toStartOf="@id/tv_dual_price" style="@style/tv_user_white_12" />
+                    <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_dual_price" android:text="--" android:layout_marginStart="4.0dip" android:layout_alignParentEnd="true" style="@style/tv_user_white_12" />
+                </RelativeLayout>
+                <com.gateio.common.view.CornerRelativeLayout android:background="@color/color_3_2354e6" android:paddingTop="@dimen/margin_padding_12" android:paddingBottom="@dimen/margin_padding_12" android:layout_marginTop="4.0dip" android:paddingStart="@dimen/margin_padding_8" android:paddingEnd="@dimen/margin_padding_8" app:radius="5.0dip" style="@style/match_wrap">
+                    <TextView android:textColor="@color/color_999999_7c848d" android:id="@id/tv_dual_djsj_label1" android:text="@string/dual_djsj" style="@style/tv_user_white_12" />
+                    <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_dual_djsj1" android:text="--" android:layout_marginStart="4.0dip" android:layout_toEndOf="@id/tv_dual_djsj_label1" style="@style/tv_user_white_12" />
+                    <TextView android:textStyle="bold" android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_dual_amount1" android:layout_marginTop="4.0dip" android:text="--" android:layout_below="@id/tv_dual_djsj_label1" style="@style/tv_user_white_18" />
+                </com.gateio.common.view.CornerRelativeLayout>
+                <com.gateio.common.view.CornerRelativeLayout android:background="@color/color_3_2354e6" android:paddingTop="@dimen/margin_padding_12" android:paddingBottom="@dimen/margin_padding_12" android:layout_marginTop="8.0dip" android:paddingStart="@dimen/margin_padding_8" android:paddingEnd="@dimen/margin_padding_8" app:radius="5.0dip" style="@style/match_wrap">
+                    <TextView android:textColor="@color/color_999999_7c848d" android:id="@id/tv_dual_djsj_label2" android:text="@string/dual_djsj" style="@style/tv_user_white_12" />
+                    <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_dual_djsj2" android:text="--" android:layout_marginStart="4.0dip" android:layout_toEndOf="@id/tv_dual_djsj_label2" style="@style/tv_user_white_12" />
+                    <TextView android:textStyle="bold" android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_dual_amount2" android:layout_marginTop="4.0dip" android:text="--" android:layout_below="@id/tv_dual_djsj_label2" style="@style/tv_user_white_18" />
+                </com.gateio.common.view.CornerRelativeLayout>
+                <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:layout_marginTop="@dimen/margin_padding_16" android:text="@string/dual_cpsm" style="@style/tv_user_white_12" />
+                <com.gateio.common.view.CornerTextView android:textColor="@color/color_999999_7c848d" android:id="@id/tv_dual_desc" android:background="@color/color_80_f5f5f5_061725" android:paddingTop="@dimen/margin_padding_12" android:paddingBottom="@dimen/margin_padding_12" android:layout_width="fill_parent" android:layout_marginTop="8.0dip" android:lineSpacingMultiplier="1.2" android:paddingStart="@dimen/margin_padding_8" android:paddingEnd="@dimen/margin_padding_8" app:radius="5.0dip" style="@style/tv_user_black_12" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout android:gravity="center_horizontal" android:paddingTop="@dimen/margin_padding_12" android:paddingBottom="@dimen/margin_padding_16" android:paddingStart="@dimen/margin_padding_16" android:paddingEnd="@dimen/margin_padding_16" style="@style/match_wrap">
+        <LinearLayout android:gravity="center_vertical" style="@style/wrap_wrap_h">
+            <TextView android:textColor="@color/color_999999_7c848d" android:id="@id/tv_dual_total_label" android:text="@string/trans_zj" style="@style/tv_user_white_14" />
+            <TextView android:textColor="@color/uikit_color_2354e6" android:id="@id/tv_dual_total" android:text="0" android:layout_marginStart="8.0dip" style="@style/tv_user_white_14" />
+        </LinearLayout>
+        <com.gateio.common.view.CornerTextView android:gravity="center" android:id="@id/tv_dual_buy" android:background="@color/uikit_color_2354e6" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_marginTop="12.0dip" android:text="@string/point_gm" app:radius="6.0dip" style="@style/tv_user_white_18" />
+    </LinearLayout>
+</LinearLayout>

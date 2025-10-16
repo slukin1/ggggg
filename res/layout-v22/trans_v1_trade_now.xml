@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.lib.uikit.popup.GTPopupDragLinearLayout android:id="@id/root" android:background="@color/uikit_layer_1_v5" android:layout_width="fill_parent" android:layout_height="wrap_content" app:left_top_radis="@dimen/length_12" app:right_top_radis="@dimen/length_12"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.comlib.view.CornerRelativeLayout android:id="@id/cl_content" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent">
+        <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/uikit_text_primary_v5" android:id="@id/tradeNowTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/length_16" android:layout_marginTop="24.0dip" android:layout_marginRight="@dimen/length_16" android:text="@string/trans_v1_trade_now" android:layout_marginHorizontal="@dimen/length_16" style="@style/Uikit_font_sans_5_0_weight_600" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/length_16" android:layout_marginTop="8.0dip" android:layout_marginRight="@dimen/length_16" android:layout_marginBottom="20.0dip" android:layout_below="@id/tradeNowTv" android:layout_marginHorizontal="@dimen/length_16" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </com.gateio.comlib.view.CornerRelativeLayout>
+</com.gateio.lib.uikit.popup.GTPopupDragLinearLayout>

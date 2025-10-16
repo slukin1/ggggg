@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.gateio.view.EmptyView android:gravity="center" android:orientation="vertical" android:id="@id/empty_view" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="300.0dip" android:layout_below="@id/layout_largetrans_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_empty" />
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/uikit_color_999999_8692a3" android:gravity="center" android:id="@id/tv_text" android:paddingTop="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_apply_become_a_host_content" android:lineSpacingExtra="4.0dip" />
+</com.gateio.gateio.view.EmptyView>

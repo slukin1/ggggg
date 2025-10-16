@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="1.0dip" />
+            <solid android:color="@color/uikit_line_border_subtle_v5" />
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <scale android:scaleWidth="100%">
+            <shape>
+                <corners android:radius="1.0dip" />
+                <solid android:color="@color/uikit_function_trade_buy_v5" />
+            </shape>
+        </scale>
+    </item>
+</layer-list>

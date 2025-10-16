@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:drawable="@drawable/futures_stroke_divider_5_radio_6" />
+    <item android:state_enabled="false" android:drawable="@drawable/uikit_cmpt2_v3_radio_3" />
+    <item android:drawable="@drawable/futures_stroke_divider_5_radio_6" />
+</selector>

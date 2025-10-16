@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruffian.library.widget.RLinearLayout android:orientation="vertical" android:id="@id/bbo_option_item_root" android:padding="@dimen/margin_padding_16" android:layout_width="fill_parent" android:layout_height="wrap_content" app:border_color_normal="@color/uikit_line_divider_v5" app:border_color_selected="@color/uikit_cmpt_component_active_v5" app:border_width_normal="@dimen/uikit_dp_1" app:corner_radius="@dimen/margin_padding_8"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/tv_bbo_type_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Text_text_primary_16_weight_500_v5" />
+    <TextView android:id="@id/tv_bbo_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:lineSpacingMultiplier="1.2" style="@style/Text_text_secondary_12_weight_400_v5" />
+</com.ruffian.library.widget.RLinearLayout>

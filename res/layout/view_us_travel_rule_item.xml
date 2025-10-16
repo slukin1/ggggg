@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:apps="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_travel_tab" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_24">
+        <TextView android:textSize="@dimen/ts_14" android:textColor="@color/uikit_text_primary_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wallets_travel_rule_beneficiary_type" style="@style/Uikit_font_sans_5_0_weight_400" />
+        <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/radio_option_group" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_12">
+            <RadioButton android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_primary_v5" android:gravity="center_vertical" android:id="@id/radio_natural" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:text="@string/wallets_beneficiary_type_natural_person" android:drawablePadding="@dimen/margin_padding_4" android:drawableStart="@drawable/uikit_selector_gt_radiobutton_v5" style="@style/Uikit_font_sans_5_0_weight_400" />
+            <RadioButton android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_primary_v5" android:gravity="center_vertical" android:id="@id/radio_legal" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:button="@null" android:text="@string/wallets_beneficiary_type_legal_person" android:drawablePadding="@dimen/margin_padding_4" android:drawableStart="@drawable/uikit_selector_gt_radiobutton_v5" android:layout_marginStart="@dimen/uikit_margin_padding_40" style="@style/Uikit_font_sans_5_0_weight_400" />
+        </RadioGroup>
+    </LinearLayout>
+    <FrameLayout android:id="@id/fr_item_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_item_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

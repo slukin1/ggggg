@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_marginTop="@dimen/margin_padding_12" style="@style/match_wrap_h">
+        <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_dual_name" android:layout_width="0.0dip" android:text="--" android:layout_weight="2.0" style="@style/tv_user_white_14" />
+        <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:gravity="end" android:id="@id/tv_dual_status" android:layout_width="0.0dip" android:text="--" android:layout_weight="1.0" style="@style/tv_user_white_14" />
+    </LinearLayout>
+    <LinearLayout android:layout_marginTop="2.0dip" style="@style/match_wrap_h">
+        <TextView android:textColor="@color/color_999999_7c848d" android:id="@id/tv_dual_time" android:layout_width="0.0dip" android:text="--" android:layout_weight="2.0" style="@style/tv_user_white_12" />
+        <TextView android:textColor="@color/color_999999_7c848d" android:gravity="end" android:id="@id/tv_dual_id" android:layout_width="0.0dip" android:text="--" android:layout_weight="1.0" style="@style/tv_user_white_12" />
+    </LinearLayout>
+    <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_dual_amount" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:text="--" style="@style/tv_user_white_18" />
+    <LinearLayout style="@style/match_wrap_h">
+        <TextView android:textColor="@color/color_999999_7c848d" android:id="@id/tv_dual_ggckj_label" android:layout_width="0.0dip" android:text="@string/dual_ggckj" android:layout_weight="1.5" style="@style/tv_user_white_12" />
+        <TextView android:textColor="@color/color_999999_7c848d" android:layout_width="0.0dip" android:text="@string/dual_dqr" android:layout_weight="1.0" style="@style/tv_user_white_12" />
+        <TextView android:textColor="@color/color_999999_7c848d" android:gravity="end" android:id="@id/tv_dual_ccqx_label" android:layout_width="0.0dip" android:text="@string/dual_ccqx" android:layout_weight="1.0" style="@style/tv_user_white_12" />
+    </LinearLayout>
+    <LinearLayout android:layout_marginTop="4.0dip" style="@style/match_wrap_h">
+        <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_dual_ggckj" android:layout_width="0.0dip" android:text="--" android:layout_weight="1.5" style="@style/tv_user_white_14" />
+        <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_dual_dqr" android:layout_width="0.0dip" android:text="--" android:layout_weight="1.0" style="@style/tv_user_white_14" />
+        <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:gravity="end" android:id="@id/tv_dual_ccqx" android:layout_width="0.0dip" android:text="--" android:layout_weight="1.0" style="@style/tv_user_white_14" />
+    </LinearLayout>
+    <LinearLayout android:layout_marginTop="@dimen/margin_padding_16" style="@style/match_wrap_h">
+        <TextView android:textColor="@color/color_999999_7c848d" android:layout_width="0.0dip" android:text="@string/strategy_rate_year" android:layout_weight="1.5" style="@style/tv_user_white_12" />
+        <TextView android:textColor="@color/color_999999_7c848d" android:id="@id/tv_dual_jsj_label" android:layout_width="0.0dip" android:text="@string/option_jsj" android:layout_weight="1.0" style="@style/tv_user_white_12" />
+        <TextView android:textColor="@color/color_999999_7c848d" android:gravity="end" android:layout_width="0.0dip" android:text="@string/dual_hkje" android:layout_weight="1.0" style="@style/tv_user_white_12" />
+    </LinearLayout>
+    <LinearLayout android:layout_marginTop="4.0dip" style="@style/match_wrap_h">
+        <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_dual_rate" android:layout_width="0.0dip" android:text="--" android:layout_weight="1.5" style="@style/tv_user_white_14" />
+        <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_dual_jsj" android:layout_width="0.0dip" android:text="--" android:layout_weight="1.0" style="@style/tv_user_white_14" />
+        <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:gravity="end" android:id="@id/tv_dual_hkje" android:layout_width="0.0dip" android:text="--" android:layout_weight="1.0" style="@style/tv_user_white_14" />
+    </LinearLayout>
+    <View android:layout_marginTop="@dimen/margin_padding_12" style="@style/view_line_v_new" />
+</LinearLayout>

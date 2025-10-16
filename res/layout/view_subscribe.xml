@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:layout_centerInParent="true" style="@style/wrap_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:padding="@dimen/margin_padding_24" android:text="@string/live_dyzgk" style="@style/tv_user_white_14" />
+    <com.gateio.common.view.CornerTextView android:id="@id/tv_commit" android:background="@color/color_f25050" android:paddingTop="@dimen/margin_padding_8" android:paddingBottom="@dimen/margin_padding_8" android:text="@string/moments_sub_sub" android:paddingStart="@dimen/margin_padding_16" android:paddingEnd="@dimen/margin_padding_16" app:radius="3.0dip" style="@style/tv_user_white_16" />
+</LinearLayout>

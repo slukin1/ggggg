@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.gateio.view.GateioStatusPlaceHolderBar android:id="@id/status_bg" android:background="@color/uikit_bg_primary_v5" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.gateio.biz.kline.widget.AdaptNoScrollChildSmartRefreshLayout android:id="@id/kline_refresh" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/layoutBottomRoot" android:layout_below="@id/top_tab_layout">
+        <com.gateio.biz.kline.widget.NestedScrollViewPreScroll android:id="@id/kline_scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_scrollFlags="scroll">
+                            <com.gateio.biz.kline.widget.KlineGTNoticeBar android:id="@id/gtNotice" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                            <com.gateio.biz.kline.widget.KlinePairPage android:id="@id/view_pair_page_trade_data" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/gtNotice">
+                                <com.gateio.biz.kline.widget.KlineTradeDataView android:id="@id/view_trade_data" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                            </com.gateio.biz.kline.widget.KlinePairPage>
+                            <ViewStub android:id="@id/kline_pre_market_explain" android:layout="@layout/layout_view_premarket_explain" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_padding_16" android:layout_marginRight="@dimen/margin_padding_16" android:layout_marginBottom="8.0dip" android:layout_below="@id/view_pair_page_trade_data" />
+                        </RelativeLayout>
+                        <com.gateio.biz.kline.widget.KLineLeadGenerationView android:id="@id/klineLeadGenerationView" android:layout_width="fill_parent" android:layout_height="32.0dip" />
+                        <com.gateio.biz.kline.widget.KlineListProgressView android:id="@id/klineListProgressView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" />
+                        <View android:id="@id/divider" android:background="@color/uikit_line_divider_v5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                        <FrameLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <com.gateio.biz.kline.widget.KlineSpotChangeView android:id="@id/view_spot_change" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/uikit_dp_16">
+                        <com.gateio.lib.uikit.tab.v5.GTTabsV5 android:id="@id/tab_layout" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="16.0dip" android:layout_weight="1.0" />
+                        <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_20" android:textColor="@color/uikit_icon_tertiary_v5" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/ivOrder" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_8" android:text="" android:layout_marginStart="@dimen/dp_8" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                    <View android:id="@id/tab_layout_divider" android:background="@color/uikit_line_divider_v5" android:layout_width="fill_parent" android:layout_height="@dimen/uikit_w_0.5" />
+                    <com.gateio.biz.kline.widget.KlinePairPage android:id="@id/view_pair_page_view_pager" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.gateio.biz.kline.widget.KlineAutoHeightViewPager android:id="@id/view_pager" android:scrollbars="none" android:fadingEdge="none" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+                    </com.gateio.biz.kline.widget.KlinePairPage>
+                </LinearLayout>
+                <FrameLayout android:id="@id/float_info_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <com.sparkhuu.klinelib.chart.view.KLineTopInfoView android:gravity="top" android:id="@id/kline_info_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </FrameLayout>
+        </com.gateio.biz.kline.widget.NestedScrollViewPreScroll>
+    </com.gateio.biz.kline.widget.AdaptNoScrollChildSmartRefreshLayout>
+    <com.gateio.common.view.CustomViewpager android:id="@id/top_view_pager" android:background="@color/uikit_bg_primary_v5" android:visibility="gone" android:scrollbars="none" android:fadingEdge="none" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/layoutBottomRoot" android:layout_below="@id/top_tab_layout" android:overScrollMode="never" />
+    <com.gateio.biz.kline.widget.SingleContainerFlutter android:id="@id/top_flutter_container" android:visibility="gone" android:scrollbars="none" android:fadingEdge="none" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/layoutBottomRoot" android:layout_below="@id/top_tab_layout" android:overScrollMode="never" />
+    <com.gateio.lib.uikit.tab.v5.GTTabsV5 android:id="@id/top_tab_layout" android:background="@color/uikit_bg_primary_v5" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_below="@id/layoutHeaderRoot" android:overScrollMode="never" android:layout_marginEnd="16.0dip" />
+    <View android:id="@id/topDivider" android:background="@color/uikit_line_divider_v5" android:layout_width="fill_parent" android:layout_height="@dimen/uikit_w_0.5" android:layout_below="@id/top_tab_layout" />
+    <com.gateio.biz.kline.widget.KlineTitleWidget android:id="@id/layoutHeaderRoot" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/status_bg" />
+    <FrameLayout android:id="@id/layoutBottomRoot" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.gateio.biz.kline.widget.KlineLayoutBottom android:id="@id/layoutBottom" android:background="@color/uikit_bg_primary_v5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="56.0dip" />
+        <com.gateio.biz.kline.widget.KlinePreMintBottomView android:gravity="center_vertical" android:id="@id/pre_mint_bottom" android:background="@color/uikit_bg_primary_v5" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="65.0dip" android:paddingStart="@dimen/margin_padding_12" android:paddingEnd="@dimen/margin_padding_12" />
+    </FrameLayout>
+</RelativeLayout>

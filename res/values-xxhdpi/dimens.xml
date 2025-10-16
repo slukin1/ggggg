@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="jumio_activity_horizontal_margin">16.0dip</dimen>
+    <dimen name="jumio_chip_text_max">20.0sp</dimen>
+    <dimen name="jumio_chip_text_min">14.0sp</dimen>
+    <dimen name="jumio_confirmation_image_preview_height">400.0dip</dimen>
+    <dimen name="jumio_face_animation_height">250.0dip</dimen>
+    <dimen name="jumio_nfc_animation_height">340.0dip</dimen>
+    <dimen name="jumio_reject_image_preview_height">300.0dip</dimen>
+    <dimen name="jumio_scan_title_max">22.0sp</dimen>
+    <dimen name="jumio_scan_title_min">16.0sp</dimen>
+    <dimen name="message_view_text_content_padding">15.0dip</dimen>
+    <dimen name="take_photo_size">54.0dip</dimen>
+    <dimen name="z_text_size_15">15.0dip</dimen>
+</resources>

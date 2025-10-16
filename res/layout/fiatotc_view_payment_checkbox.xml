@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/ts_14" android:textColor="@color/uikit_text_secondary_v5" android:layout_gravity="center_vertical" android:id="@id/payment_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Uikit_font_sans_5_0_weight_400" />
+    <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_text_secondary_v5" android:layout_gravity="center_vertical" android:id="@id/payment_check" android:layout_width="@dimen/uikit_dp_16" android:layout_height="@dimen/uikit_dp_16" android:text="" />
+</merge>

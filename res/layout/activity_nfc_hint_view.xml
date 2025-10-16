@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="bottom" android:background="#80000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:filterTouchesWhenObscured="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/dialog_content" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <LinearLayout android:id="@id/cancel" android:padding="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+            <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/znfc_close" />
+        </LinearLayout>
+        <ImageView android:id="@id/znfc_divider" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/cancel" />
+        <ImageView android:id="@id/nfc_icon" android:layout_width="130.0dip" android:layout_height="150.0dip" android:layout_marginTop="20.0dip" android:src="@drawable/znfc_prepare" android:layout_below="@id/znfc_divider" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="18.0sp" android:textColor="@android:color/black" android:gravity="center" android:id="@id/dialog_content_title" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="Please prepare to begin NFC Recognition" android:layout_below="@id/nfc_icon" />
+        <TextView android:textSize="16.0sp" android:textColor="#ffaaaaaa" android:gravity="center" android:id="@id/nfc_hint" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="Hold your passport near this phone, And then hold on still..." android:layout_below="@id/dialog_content_title" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/progress_bar_h" android:visibility="invisible" android:layout_width="300.0dip" android:layout_height="8.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="30.0dip" android:max="100" android:progressDrawable="@drawable/znfc_progress_bar_bg" android:layout_below="@id/nfc_hint" android:layout_centerHorizontal="true" style="?android:progressBarStyleHorizontal" />
+    </RelativeLayout>
+</RelativeLayout>

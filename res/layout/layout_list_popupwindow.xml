@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/uikit_bg_market_item" app:cardCornerRadius="@dimen/margin_padding_5" app:cardElevation="@dimen/dp_5" app:cardUseCompatPadding="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerview" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</androidx.cardview.widget.CardView>

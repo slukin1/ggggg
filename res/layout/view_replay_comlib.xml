@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:background="@color/bg_1"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/text_1" android:id="@id/replay_title" android:background="@color/split_primary" android:padding="@dimen/margin_padding_10" android:layout_width="fill_parent" android:layout_height="wrap_content" app:drawableEndCompat="@mipmap/ic_arrow_down" />
+    <FrameLayout android:id="@id/replay_content_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_padding_5" android:layout_below="@id/replay_title">
+        <EditText android:textSize="@dimen/ts_14" android:textColor="@color/text_1" android:textColorHint="@color/text_4" android:gravity="start" android:id="@id/replay_content" android:background="@null" android:padding="@dimen/margin_padding_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_5" android:minHeight="50.0dip" android:maxLength="500" />
+        <TextView android:textSize="@dimen/ts_12" android:textColor="@color/text_2" android:layout_gravity="end|bottom|center" android:id="@id/replay_word_count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/replay_keyboard" android:layout_width="fill_parent" android:layout_height="240.0dip" android:layout_below="@id/replay_content_layout">
+        <FrameLayout android:id="@id/replay_pic_layout" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_margin="@dimen/margin_padding_20" android:layout_weight="1.0">
+            <ImageView android:id="@id/replay_pic" android:background="@drawable/ticket_photo_bg_comlib" android:layout_width="120.0dip" android:layout_height="120.0dip" android:layout_marginTop="@dimen/margin_padding_10" android:src="@mipmap/icon_addphotos" android:scaleType="centerInside" android:adjustViewBounds="true" android:layout_marginEnd="@dimen/margin_padding_10" />
+            <ImageView android:layout_gravity="end|center|top" android:id="@id/replay_pic_delete" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/icon_delete" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/ts_18" android:textColor="@color/bg_1" android:gravity="center" android:id="@id/replay_commit" android:background="@drawable/btn_theme_blue_comlib" android:padding="@dimen/margin_padding_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_padding_20" android:text="@string/user_confirm" />
+    </LinearLayout>
+</merge>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/ll_root" android:padding="@dimen/margin_padding_16" style="@style/wrap_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_live_back" android:background="@drawable/bg_live_talk" android:padding="@dimen/margin_padding_8" android:visibility="gone" android:layout_width="@dimen/margin_padding_40" android:layout_height="@dimen/margin_padding_40" android:src="@mipmap/ic_live_back" />
+    <ImageView android:id="@id/iv_live_record" android:layout_width="@dimen/margin_padding_40" android:layout_height="@dimen/margin_padding_40" android:layout_marginTop="@dimen/margin_padding_16" android:src="@mipmap/ic_live_record_on" />
+    <ImageView android:id="@id/iv_live_gate" android:background="@drawable/bg_live_talk" android:padding="@dimen/margin_padding_8" android:visibility="gone" android:layout_width="@dimen/margin_padding_40" android:layout_height="@dimen/margin_padding_40" android:layout_marginTop="@dimen/margin_padding_16" android:src="@mipmap/ic_live_logo" />
+</LinearLayout>

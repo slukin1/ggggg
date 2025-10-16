@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.biz.kline.widget.ListenHeightUpdateFrameLayout android:id="@id/fl_root" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_scrollFlags="scroll"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.gateio.biz.kline.widget.KlineBaseToolBarView android:id="@id/klineToolBar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:id="@id/layoutKline" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/klineToolBar">
+            <RelativeLayout android:id="@id/rl_kline_chart" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:layoutDirection="ltr" android:layout_toStartOf="@id/trans_pair_index_hor">
+                <com.gateio.biz.kline.widget.StateView android:id="@id/timeline_state_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/margin_padding_4">
+                    <com.sparkhuu.klinelib.chart.KTimeLineView android:id="@id/timeline" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </com.gateio.biz.kline.widget.StateView>
+            </RelativeLayout>
+            <com.gateio.biz.kline.widget.KlineBizRightToolBarView android:id="@id/rlRightTool" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <com.sparkhuu.klinelib.chart.view.KLineTopInfoView android:id="@id/kline_info_landscape" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginEnd="76.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <com.gateio.biz.kline.widget.OverLayHorizontalScrollView android:id="@id/ll_main_sub_scroll" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginLeft="@dimen/dp_8" android:layout_marginRight="@dimen/dp_8" android:fillViewport="true" app:layout_constraintTop_toBottomOf="@id/layoutKline">
+            <com.gateio.biz.kline.widget.KlineIndexSelectorView android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_main_sub" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        </com.gateio.biz.kline.widget.OverLayHorizontalScrollView>
+        <View android:id="@id/view_main_sub_bottom" android:background="@color/uikit_line_divider_v5" android:layout_width="fill_parent" android:layout_height="0.5dip" app:layout_constraintTop_toBottomOf="@id/ll_main_sub_scroll" />
+        <FrameLayout android:id="@id/fragment_container_countdown" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/klineToolBar" />
+        <com.gateio.biz.kline.widget.KlineBizCoverDrawToolView android:id="@id/klineDrawToolCover" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.gateio.biz.kline.widget.ListenHeightUpdateFrameLayout>

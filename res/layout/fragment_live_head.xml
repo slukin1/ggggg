@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom" android:background="@color/color_80_000000" android:paddingTop="@dimen/margin_padding_16" style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.common.view.GateioAvatarView android:id="@id/tv_head" android:layout_width="64.0dip" android:layout_height="64.0dip" app:avatar_text_size="32" />
+    <TextView android:textColor="@color/color_FFEBCC" android:id="@id/tv_name" android:layout_marginTop="@dimen/margin_padding_8" android:layout_marginBottom="@dimen/margin_padding_16" style="@style/tv_user_white_14" />
+    <View style="@style/view_line_v3" />
+    <TextView android:textStyle="bold" android:textColor="@color/uikit_white" android:gravity="center" android:id="@id/tv_mute" android:padding="@dimen/margin_padding_16" android:text="@string/live_mute_gyh" android:drawablePadding="4.0dip" app:drawableStartCompat="@mipmap/ic_slience" style="@style/tv_user_white_14" />
+</LinearLayout>

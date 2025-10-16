@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:id="@id/llVoucherMode" android:background="@color/uikit_cmpt_bluefunct_bg_v5" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:text="@string/futures_countdown_to_auto_settlement" style="@style/Text_text_primary_12_weight_400_v5" />
+    <com.gateio.lib.uikit.countdown.GTCountDownV5 android:layout_gravity="center_vertical" android:id="@id/countDownV3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4.0dip" app:isHideTimeBackground="true" />
+</LinearLayout>

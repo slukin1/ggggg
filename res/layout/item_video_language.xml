@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/ll_root" style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <TextView android:textColor="@color/uikit_color_333333_e6e6e6" android:id="@id/tv_video_title" android:text="@string/txt_warning_hidepairs" android:layout_centerVertical="true" style="@style/tv_user_black_14" />
+        <ImageView android:id="@id/iv_video_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_chosen" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View style="@style/uikit_view_line_mian_v" />
+</LinearLayout>

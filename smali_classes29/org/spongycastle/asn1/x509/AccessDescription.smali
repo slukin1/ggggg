@@ -1,0 +1,428 @@
+.class public Lorg/spongycastle/asn1/x509/AccessDescription;
+.super Lorg/spongycastle/asn1/ASN1Object;
+.source "AccessDescription.java"
+
+
+# static fields
+.field public static final id_ad_caIssuers:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+
+.field public static final id_ad_ocsp:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+
+
+# instance fields
+.field accessLocation:Lorg/spongycastle/asn1/x509/GeneralName;
+
+.field accessMethod:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 1
+    .line 2
+    new-instance v0, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+
+    .line 3
+    .line 4
+    const-string/jumbo v1, "1.3.6.1.5.5.7.48.2"
+
+    .line 5
+    .line 6
+    .line 7
+    invoke-direct {v0, v1}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;-><init>(Ljava/lang/String;)V
+
+    .line 8
+    .line 9
+    sput-object v0, Lorg/spongycastle/asn1/x509/AccessDescription;->id_ad_caIssuers:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+
+    .line 10
+    .line 11
+    new-instance v0, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+
+    .line 12
+    .line 13
+    const-string/jumbo v1, "1.3.6.1.5.5.7.48.1"
+
+    .line 14
+    .line 15
+    .line 16
+    invoke-direct {v0, v1}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;-><init>(Ljava/lang/String;)V
+
+    .line 17
+    .line 18
+    sput-object v0, Lorg/spongycastle/asn1/x509/AccessDescription;->id_ad_ocsp:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+
+    .line 19
+    return-void
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+.end method
+
+.method public constructor <init>(Lorg/spongycastle/asn1/ASN1ObjectIdentifier;Lorg/spongycastle/asn1/x509/GeneralName;)V
+    .locals 0
+
+    .line 8
+    invoke-direct {p0}, Lorg/spongycastle/asn1/ASN1Object;-><init>()V
+
+    .line 9
+    iput-object p1, p0, Lorg/spongycastle/asn1/x509/AccessDescription;->accessMethod:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+
+    .line 10
+    iput-object p2, p0, Lorg/spongycastle/asn1/x509/AccessDescription;->accessLocation:Lorg/spongycastle/asn1/x509/GeneralName;
+
+    return-void
+.end method
+
+.method private constructor <init>(Lorg/spongycastle/asn1/ASN1Sequence;)V
+    .locals 2
+
+    .line 1
+    invoke-direct {p0}, Lorg/spongycastle/asn1/ASN1Object;-><init>()V
+
+    const/4 v0, 0x0
+
+    .line 2
+    iput-object v0, p0, Lorg/spongycastle/asn1/x509/AccessDescription;->accessMethod:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+
+    .line 3
+    iput-object v0, p0, Lorg/spongycastle/asn1/x509/AccessDescription;->accessLocation:Lorg/spongycastle/asn1/x509/GeneralName;
+
+    .line 4
+    invoke-virtual {p1}, Lorg/spongycastle/asn1/ASN1Sequence;->size()I
+
+    move-result v0
+
+    const/4 v1, 0x2
+
+    if-ne v0, v1, :cond_0
+
+    const/4 v0, 0x0
+
+    .line 5
+    invoke-virtual {p1, v0}, Lorg/spongycastle/asn1/ASN1Sequence;->getObjectAt(I)Lorg/spongycastle/asn1/ASN1Encodable;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->getInstance(Ljava/lang/Object;)Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lorg/spongycastle/asn1/x509/AccessDescription;->accessMethod:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+
+    const/4 v0, 0x1
+
+    .line 6
+    invoke-virtual {p1, v0}, Lorg/spongycastle/asn1/ASN1Sequence;->getObjectAt(I)Lorg/spongycastle/asn1/ASN1Encodable;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lorg/spongycastle/asn1/x509/GeneralName;->getInstance(Ljava/lang/Object;)Lorg/spongycastle/asn1/x509/GeneralName;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lorg/spongycastle/asn1/x509/AccessDescription;->accessLocation:Lorg/spongycastle/asn1/x509/GeneralName;
+
+    return-void
+
+    .line 7
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalArgumentException;
+
+    const-string/jumbo v0, "wrong number of elements in sequence"
+
+    invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+.end method
+
+.method public static getInstance(Ljava/lang/Object;)Lorg/spongycastle/asn1/x509/AccessDescription;
+    .locals 1
+
+    .line 1
+    .line 2
+    instance-of v0, p0, Lorg/spongycastle/asn1/x509/AccessDescription;
+
+    .line 3
+    .line 4
+    if-eqz v0, :cond_0
+
+    .line 5
+    .line 6
+    check-cast p0, Lorg/spongycastle/asn1/x509/AccessDescription;
+
+    .line 7
+    return-object p0
+
+    .line 8
+    .line 9
+    :cond_0
+    if-eqz p0, :cond_1
+
+    .line 10
+    .line 11
+    new-instance v0, Lorg/spongycastle/asn1/x509/AccessDescription;
+
+    .line 12
+    .line 13
+    .line 14
+    invoke-static {p0}, Lorg/spongycastle/asn1/ASN1Sequence;->getInstance(Ljava/lang/Object;)Lorg/spongycastle/asn1/ASN1Sequence;
+
+    .line 15
+    move-result-object p0
+
+    .line 16
+    .line 17
+    .line 18
+    invoke-direct {v0, p0}, Lorg/spongycastle/asn1/x509/AccessDescription;-><init>(Lorg/spongycastle/asn1/ASN1Sequence;)V
+
+    .line 19
+    return-object v0
+
+    .line 20
+    :cond_1
+    const/4 p0, 0x0
+
+    .line 21
+    return-object p0
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+.end method
+
+
+# virtual methods
+.method public getAccessLocation()Lorg/spongycastle/asn1/x509/GeneralName;
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lorg/spongycastle/asn1/x509/AccessDescription;->accessLocation:Lorg/spongycastle/asn1/x509/GeneralName;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+.end method
+
+.method public getAccessMethod()Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+    .locals 1
+
+    .line 1
+    .line 2
+    iget-object v0, p0, Lorg/spongycastle/asn1/x509/AccessDescription;->accessMethod:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+.end method
+
+.method public toASN1Primitive()Lorg/spongycastle/asn1/ASN1Primitive;
+    .locals 2
+
+    .line 1
+    .line 2
+    new-instance v0, Lorg/spongycastle/asn1/ASN1EncodableVector;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-direct {v0}, Lorg/spongycastle/asn1/ASN1EncodableVector;-><init>()V
+
+    .line 6
+    .line 7
+    iget-object v1, p0, Lorg/spongycastle/asn1/x509/AccessDescription;->accessMethod:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+
+    .line 8
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Lorg/spongycastle/asn1/ASN1EncodableVector;->add(Lorg/spongycastle/asn1/ASN1Encodable;)V
+
+    .line 11
+    .line 12
+    iget-object v1, p0, Lorg/spongycastle/asn1/x509/AccessDescription;->accessLocation:Lorg/spongycastle/asn1/x509/GeneralName;
+
+    .line 13
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Lorg/spongycastle/asn1/ASN1EncodableVector;->add(Lorg/spongycastle/asn1/ASN1Encodable;)V
+
+    .line 16
+    .line 17
+    new-instance v1, Lorg/spongycastle/asn1/DERSequence;
+
+    .line 18
+    .line 19
+    .line 20
+    invoke-direct {v1, v0}, Lorg/spongycastle/asn1/DERSequence;-><init>(Lorg/spongycastle/asn1/ASN1EncodableVector;)V
+
+    .line 21
+    return-object v1
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    .line 2
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 6
+    .line 7
+    const-string/jumbo v1, "AccessDescription: Oid("
+
+    .line 8
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    iget-object v1, p0, Lorg/spongycastle/asn1/x509/AccessDescription;->accessMethod:Lorg/spongycastle/asn1/ASN1ObjectIdentifier;
+
+    .line 13
+    .line 14
+    .line 15
+    invoke-virtual {v1}, Lorg/spongycastle/asn1/ASN1ObjectIdentifier;->getId()Ljava/lang/String;
+
+    .line 16
+    move-result-object v1
+
+    .line 17
+    .line 18
+    .line 19
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 20
+    .line 21
+    const-string/jumbo v1, ")"
+
+    .line 22
+    .line 23
+    .line 24
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 25
+    .line 26
+    .line 27
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 28
+    move-result-object v0
+
+    .line 29
+    return-object v0
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+.end method

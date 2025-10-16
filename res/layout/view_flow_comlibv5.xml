@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_tertiary_v5" android:id="@id/flow_label" android:paddingLeft="@dimen/uikit_margin_padding_16" android:paddingTop="@dimen/uikit_margin_padding_8" android:paddingRight="@dimen/uikit_margin_padding_16" android:paddingBottom="@dimen/uikit_margin_padding_12" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Uikit_font_sans_5_0_weight_400" />
+        <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_margin_padding_16" android:textColor="@color/uikit_text_tertiary_v5" android:id="@id/flow_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_marginEnd="@dimen/uikit_margin_padding_16" app:left_or_right="true" />
+    </LinearLayout>
+    <com.gateio.comlib.view.FlowLayout android:id="@id/flow_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_margin_padding_16" android:layout_marginRight="@dimen/uikit_margin_padding_16" app:flow_layout_uikit_type="v5" style="@style/Uikit_font_sans_5_0_weight_500" />
+</merge>

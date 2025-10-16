@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:layout_centerInParent="true" style="@style/wrap_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:background="@drawable/shape_keyboard_input" android:padding="@dimen/margin_padding_10" android:layout_width="300.0dip" android:layout_marginTop="@dimen/margin_padding_30" style="@style/match_wrap">
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/retry_dialog_msg" android:layout_marginTop="@dimen/margin_padding_40" android:layout_marginBottom="@dimen/margin_padding_10" style="@style/tv_user_black_14" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_20">
+            <TextView android:textSize="@dimen/limit_dialog_text_size" android:textColor="@color/uikit_text_color_white" android:id="@id/retry_dialog_commit" android:background="@drawable/bnt_theme_sell" android:layout_width="wrap_content" android:layout_margin="@dimen/margin_padding_5" android:text="@string/user_qd" style="@style/user_confirm_wh" />
+            <TextView android:textSize="@dimen/limit_dialog_text_size" android:textColor="@color/uikit_text_color_white" android:id="@id/retry_dialog_cancel" android:background="@drawable/bnt_theme_buy" android:layout_width="wrap_content" android:layout_margin="@dimen/margin_padding_5" android:text="@string/user_qx" style="@style/user_confirm_wh" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@mipmap/app_logo_radius" android:layout_centerHorizontal="true" android:contentDescription="@string/app_name" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.uiComponent.shadow.BoxShadowLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:layout_marginHorizontal="16.0dip" app:box_shadowAlpha="0.08" app:box_shadowBlur="14.0dip" app:box_shadowColor="@color/black" app:box_shadowOffsetVertical="@dimen/uikit_dp_2">
+        <com.gateio.common.view.CornerLinearLayout android:background="@color/uikit_cmpt_16_v3" android:layout_width="fill_parent" android:layout_height="wrap_content" app:gate_view_radius="@dimen/uikit_radius_4">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/uikit_rv" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" app:spanCount="5" />
+        </com.gateio.common.view.CornerLinearLayout>
+    </com.gateio.uiComponent.shadow.BoxShadowLayout>
+</FrameLayout>

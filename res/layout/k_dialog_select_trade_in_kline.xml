@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/kline_bottom_bg" style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/uikit_text_size_15" android:textColor="@color/uikit_main_text_color" android:gravity="center" android:id="@id/assert_trade_notice" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/k_margin_padding_9" android:text="@string/asset_list_qxzbz" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/assert_trade_rv" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <View android:background="@color/k_color_f7f7f7_061325" android:layout_width="fill_parent" android:layout_height="8.0dip" android:layout_marginTop="-1.0dip" />
+    <RelativeLayout android:id="@id/rl_bottom_cancel" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <TextView android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/k_color_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_qx" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

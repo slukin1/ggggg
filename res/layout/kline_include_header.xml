@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/uikit_bg_primary_v5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="44.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_20" android:textColor="@color/uikit_icon_primary_v5" android:gravity="center" android:id="@id/btn_head_back" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="" android:layout_marginStart="@dimen/uikit_dp_16" app:left_or_right="true" />
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.gateio.biz.kline.widget.KlinePairPageScroll android:id="@id/titlePairScroll" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.gateio.biz.kline.widget.KlineLayoutTitlePair android:id="@id/title_pair" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="44.0dip" />
+        </com.gateio.biz.kline.widget.KlinePairPageScroll>
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+        <com.gateio.lib.uikit.agent.AIEntryView android:id="@id/view_ai_entry" android:padding="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="8.0dip" app:entry_type="spot_kline_detail" />
+        <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_20" android:textColor="@color/uikit_text_tips_v5" android:gravity="center" android:id="@id/trans_pair_fav" android:padding="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="" />
+        <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_20" android:textColor="@color/uikit_icon_secondary_v5" android:gravity="center" android:id="@id/trans_pair_active" android:padding="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="" android:layout_marginStart="8.0dip" />
+        <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_20" android:textColor="@color/uikit_icon_secondary_v5" android:gravity="center" android:id="@id/trans_pair_notice" android:padding="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="" android:layout_marginStart="8.0dip" />
+        <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_20" android:textColor="@color/uikit_icon_secondary_v5" android:gravity="center" android:id="@id/trans_pair_share" android:padding="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="" android:layout_marginStart="8.0dip" />
+    </LinearLayout>
+</merge>

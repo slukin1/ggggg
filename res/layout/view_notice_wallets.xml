@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:src="@mipmap/ic_notice_wa" />
+    <TextView android:textSize="@dimen/ts_12" android:textColor="@color/uikit_text_1_v3" android:id="@id/tips" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:lineSpacingMultiplier="1.2" android:alpha="0.4" android:layout_marginStart="@dimen/margin_padding_8" />
+</merge>

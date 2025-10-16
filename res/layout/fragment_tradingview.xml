@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/trans_top_horizonal" android:background="@color/uikit_bg_1_v3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="44.0dip" android:paddingStart="17.0dip" android:paddingEnd="12.0dip">
+        <View android:id="@id/view_bangs_holder_top" android:visibility="gone" android:layout_width="28.0dip" android:layout_height="fill_parent" />
+        <TextView android:textStyle="bold" android:id="@id/trans_pair_name_hor" android:maxWidth="130.0dip" android:lines="1" android:layout_centerVertical="true" android:layout_marginEnd="3.0dip" android:layout_toEndOf="@id/view_bangs_holder_top" app:autoSizeMaxTextSize="@dimen/uikit_text_size_18" app:autoSizeMinTextSize="@dimen/uikit_text_size_10" app:autoSizeStepGranularity="1.0sp" app:autoSizeTextType="uniform" style="@style/tv_k_white_18" />
+        <TextView android:id="@id/trans_top_left_tv_h" android:text="" android:layout_centerVertical="true" android:layout_marginStart="6.0dip" android:layout_toEndOf="@id/trans_pair_name_hor" style="@style/tv_k_white_12" />
+        <TextView android:id="@id/trans_top_right_tv_h" android:layout_width="wrap_content" android:layout_marginBottom="2.0dip" android:text="" android:layout_centerVertical="true" android:layout_marginStart="8.0dip" android:layout_toEndOf="@id/trans_top_left_tv_h" style="@style/tv_k_white_12" />
+        <TextView android:textSize="@dimen/uikit_text_size_10" android:textColor="@color/uikit_brand_1_v3" android:id="@id/trans_top_left_mark_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignBottom="@id/trans_top_right_tv_h" android:layout_toEndOf="@id/trans_top_right_tv_h" />
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="12.0dip" android:layout_toStartOf="@id/trans_pairs_settings_hor">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/uikit_text_size_10" android:textColor="@color/k_color_sub" android:id="@id/tv_h_top_high_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/high" />
+                <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/k_color_text" android:layout_gravity="center" android:id="@id/tv_h_top_high" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/k_margin_padding_12">
+                <TextView android:textSize="@dimen/uikit_text_size_10" android:textColor="@color/k_color_sub" android:id="@id/tv_h_top_low_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/low" />
+                <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/k_color_text" android:layout_gravity="center" android:id="@id/tv_h_top_low" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/k_margin_padding_12">
+                <TextView android:textSize="@dimen/uikit_text_size_10" android:textColor="@color/k_color_sub" android:id="@id/tv_h_top_vol_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kline_vol" />
+                <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/k_color_text" android:layout_gravity="center" android:id="@id/tv_h_top_vol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_icon_1_v3" android:gravity="center" android:id="@id/trans_pairs_settings_hor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerVertical="true" android:paddingEnd="@dimen/uikit_margin_padding_8" android:layout_marginEnd="@dimen/uikit_margin_padding_8" android:layout_toStartOf="@id/trans_pair_changeui_hor" />
+        <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_icon_1_v3" android:gravity="center" android:id="@id/trans_pair_changeui_hor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:paddingEnd="@dimen/uikit_margin_padding_10" android:layout_marginEnd="@dimen/uikit_margin_padding_20" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_kline_chart" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/trans_top_horizonal" android:translationY="-8.0dip">
+        <View android:id="@id/view_bangs_holder_vp" android:visibility="gone" android:layout_width="28.0dip" android:layout_height="fill_parent" />
+        <FrameLayout android:id="@id/fragment_trade_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/trading_view_pair_time" android:layout_width="70.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_12" android:layout_alignParentEnd="true">
+            <View android:id="@id/trading_view_rtl_right" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+            <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_icon_1_v3" android:id="@id/trading_view_pair_changeui" android:padding="@dimen/k_margin_padding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_marginEnd="@dimen/k_margin_padding_8" android:layout_alignParentEnd="true" />
+            <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_18" android:textColor="@color/uikit_icon_1_v3" android:id="@id/trading_view_pairs_settings" android:padding="@dimen/k_margin_padding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_marginEnd="@dimen/k_margin_padding_8" android:layout_toStartOf="@id/trading_view_pair_changeui" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

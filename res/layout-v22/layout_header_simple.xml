@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_header" android:tag="layout/layout_header_simple_0" android:background="@color/uikit_main_header_bg" android:layout_width="fill_parent" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <ImageView android:id="@id/btn_head_back" android:paddingLeft="10.0dip" android:paddingTop="12.0dip" android:paddingRight="10.0dip" android:paddingBottom="12.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@mipmap/uikit_btn_back" android:layout_centerVertical="true" android:paddingHorizontal="10.0dip" android:paddingVertical="12.0dip" />
+        <TextView android:textSize="@dimen/text_size_18" android:textStyle="bold" android:textColor="@color/uikit_main_header_txt_normal" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tv_title" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="200.0dip" android:maxLines="2" android:layout_centerInParent="true" android:layout_marginEnd="@dimen/margin_padding_10" />
+    </RelativeLayout>
+</LinearLayout>

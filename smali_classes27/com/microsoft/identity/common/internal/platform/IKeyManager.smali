@@ -1,0 +1,79 @@
+.class public interface abstract Lcom/microsoft/identity/common/internal/platform/IKeyManager;
+.super Ljava/lang/Object;
+.source "IKeyManager.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<K::",
+        "Ljava/security/KeyStore$Entry;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation
+
+
+# virtual methods
+.method public abstract clear()Z
+.end method
+
+.method public abstract exists()Z
+.end method
+
+.method public abstract getCertificateChain()[Ljava/security/cert/Certificate;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/microsoft/identity/common/exception/ClientException;
+        }
+    .end annotation
+.end method
+
+.method public abstract getCreationDate()Ljava/util/Date;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/microsoft/identity/common/exception/ClientException;
+        }
+    .end annotation
+.end method
+
+.method public abstract getEntry()Ljava/security/KeyStore$Entry;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()TK;"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/security/UnrecoverableEntryException;,
+            Ljava/security/NoSuchAlgorithmException;,
+            Ljava/security/KeyStoreException;
+        }
+    .end annotation
+.end method
+
+.method public abstract getKeyAlias()Ljava/lang/String;
+.end method
+
+.method public abstract getSecureHardwareState()Lcom/microsoft/identity/common/internal/platform/SecureHardwareState;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/microsoft/identity/common/exception/ClientException;
+        }
+    .end annotation
+.end method
+
+.method public abstract getThumbprint()[B
+.end method
+
+.method public abstract hasThumbprint([B)Z
+.end method
+
+.method public abstract importKey([BLjava/lang/String;)V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/microsoft/identity/common/exception/ClientException;
+        }
+    .end annotation
+.end method

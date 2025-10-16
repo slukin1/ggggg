@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/fiatotc_card2_divider2_r4" android:padding="@dimen/uikit_dp_12" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_dp_12" android:layout_marginRight="@dimen/uikit_dp_12" android:layout_marginBottom="@dimen/uikit_dp_12"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_1_v3" android:id="@id/discover" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fiatotc_discover_merchants" android:drawablePadding="@dimen/uikit_dp_4" app:drawableEndCompat="@mipmap/fiatotc_arrow_right_12" app:drawableStartCompat="@mipmap/fiatotc_star_16" app:drawableTint="@color/uikit_icon_1_v3" style="@style/Uikit_font_sans_2_0_weight_500" />
+</LinearLayout>

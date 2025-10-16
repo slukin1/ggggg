@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/uikit_text_primary_v5" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fiat_pending_funds_tip" android:paddingHorizontal="16.0dip" style="@style/Uikit_font_sans_5_0_weight_400" />
+    <com.gateio.lib.uikit.steps.GTStepBarV5 android:id="@id/step_bar_refund" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" app:uikit_stepBarOrientationV5="1" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/k_text_333333_e6e6e6" android:gravity="center" android:id="@id/depth_merge" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="USDT" android:layout_centerInParent="true" />
+    <View android:id="@id/view_k_line" android:background="@color/k_color_view" android:layout_width="fill_parent" android:layout_height="@dimen/k_w_0.5" android:layout_alignParentBottom="true" />
+</RelativeLayout>

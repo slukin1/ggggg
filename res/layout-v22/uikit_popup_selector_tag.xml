@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.selector.GTSelectorViewV2 android:id="@id/selector1" android:layout_width="fill_parent" android:layout_height="wrap_content" app:uikit_selectorSingleSelect="true" app:uikit_selectorSpanCount="4" />
+    <com.gateio.lib.uikit.selector.GTSelectorViewV2 android:id="@id/selector2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_16" app:uikit_selectorSingleSelect="true" app:uikit_selectorSpanCount="4" />
+    <com.gateio.lib.uikit.selector.GTSelectorViewV2 android:id="@id/selector3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_16" app:uikit_selectorSingleSelect="true" app:uikit_selectorSpanCount="4" />
+    <com.gateio.lib.uikit.selector.GTSelectorViewV2 android:id="@id/selector4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="@dimen/uikit_margin_padding_16" android:layout_marginRight="4.0dip" android:layout_marginHorizontal="4.0dip" app:uikit_selectorType="button" />
+</LinearLayout>

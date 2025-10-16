@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/kline_state_empty_view" android:background="@color/uikit_bg_primary_v5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.state.GTLoadingViewV5 android:layout_gravity="center" android:id="@id/view_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.gateio.lib.uikit.state.GTEmptyViewV5 android:layout_gravity="center" android:id="@id/view_empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:uikit_descTextV5="@string/kline_empty_no_connection_des" app:uikit_titleTextV5="@string/kline_empty_no_connection" />
+</FrameLayout>

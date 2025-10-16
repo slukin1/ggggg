@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_sltp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/length_16">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/fl_sltp" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:id="@id/iv_sltp" android:layout_width="@dimen/length_12" android:layout_height="@dimen/length_12" android:src="@drawable/uikit_checkbox_v5_inactive" android:layout_marginEnd="@dimen/length_4" />
+        </LinearLayout>
+        <com.gateio.biz.trans.widget.TransDashTextView android:textSize="@dimen/text_size_12" android:textColor="@color/uikit_text_primary_v5" android:id="@id/tv_sltp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trans_v1_tp_sl" app:dash_content="@string/trans_v1_tp_sl_desc_v5" style="@style/Uikit_font_sans_5_0_weight_400" />
+        <View android:layout_gravity="bottom" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/llSLTPAdvanced" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="@color/uikit_text_primary_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trans_v2_advanced" style="@style/Uikit_font_sans_5_0_weight_400" />
+        </LinearLayout>
+        <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_icon_primary_v5" android:layout_gravity="bottom" android:id="@id/iv_edit" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_input_price" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/length_8">
+        <com.gateio.lib.uikit.input.GTInputV5 android:id="@id/gsi_tp_price" android:layout_width="fill_parent" android:layout_height="wrap_content" app:uikit_editAlwaysShowHintV5="true" app:uikit_editInputDropdownArrowMarginV5="2.0dip" app:uikit_editInputTypeV5="decimal" app:uikit_editShowRightTextWhenNoFocusAndInputEmptyV5="true" app:uikit_editVisibleDeleteV5="false" />
+        <com.gateio.lib.uikit.input.GTInputV5 android:id="@id/gsi_sl_price" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/length_8" app:uikit_editAlwaysShowHintV5="true" app:uikit_editInputDropdownArrowMarginV5="2.0dip" app:uikit_editInputTypeV5="decimal" app:uikit_editShowRightTextWhenNoFocusAndInputEmptyV5="true" app:uikit_editVisibleDeleteV5="false" />
+    </LinearLayout>
+    <com.gateio.common.view.CornerLinearLayout android:orientation="vertical" android:id="@id/ll_price_options" android:background="@color/uikit_bg_secondary_v5" android:padding="@dimen/length_6" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/length_8" app:radius="@dimen/length_6">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/length_6">
+            <TextView android:textSize="@dimen/uikit_text_size_10" android:textColor="@color/uikit_text_secondary_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trans_v1_tp_trigger_price" style="@style/Uikit_font_sans_5_0_weight_400" />
+            <TextView android:textSize="@dimen/uikit_text_size_10" android:textColor="@color/uikit_text_primary_v5" android:gravity="end" android:id="@id/tv_tp_trigger" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Uikit_font_sans_5_0_weight_400" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/length_6">
+            <TextView android:textSize="@dimen/uikit_text_size_10" android:textColor="@color/uikit_text_secondary_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trans_v1_tp_price" style="@style/Uikit_font_sans_5_0_weight_400" />
+            <TextView android:textSize="@dimen/uikit_text_size_10" android:textColor="@color/uikit_text_primary_v5" android:gravity="end" android:id="@id/tv_tp_order" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Uikit_font_sans_5_0_weight_400" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/length_6">
+            <TextView android:textSize="@dimen/uikit_text_size_10" android:textColor="@color/uikit_text_secondary_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trans_v1_sl_trigger_price" style="@style/Uikit_font_sans_5_0_weight_400" />
+            <TextView android:textSize="@dimen/uikit_text_size_10" android:textColor="@color/uikit_text_primary_v5" android:gravity="end" android:id="@id/tv_sl_trigger" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Uikit_font_sans_5_0_weight_400" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/uikit_text_size_10" android:textColor="@color/uikit_text_secondary_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trans_v1_sl_price" style="@style/Uikit_font_sans_5_0_weight_400" />
+            <TextView android:textSize="@dimen/uikit_text_size_10" android:textColor="@color/uikit_text_primary_v5" android:gravity="end" android:id="@id/tv_sl_order" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Uikit_font_sans_5_0_weight_400" />
+        </LinearLayout>
+    </com.gateio.common.view.CornerLinearLayout>
+</LinearLayout>

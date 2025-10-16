@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.imageview.ShapeableImageView android:id="@id/iv" android:background="@color/uikit_bg_2_v3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerInside" app:shapeAppearanceOverlay="@style/circle8dpImageStyle" app:strokeColor="@color/uikit_divider_1_v3" app:strokeWidth="@dimen/dp_1" />
+    <com.gateio.lib.uikit.anim.GTLottieAnimationViewV3 android:layout_gravity="center" android:id="@id/lottie_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:lottie_autoPlay="true" app:lottie_fileName="btn_loading_black_v3.json" app:lottie_loop="true" />
+</FrameLayout>

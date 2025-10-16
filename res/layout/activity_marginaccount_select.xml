@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/uikit_color_ffffff_111f31" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/layout_header_normal_new" />
+    <com.gateio.gateio.view.GateioSearchView android:id="@id/search_view" android:layout_marginTop="@dimen/margin_padding_12" android:layout_marginBottom="@dimen/margin_padding_12" android:layout_marginStart="@dimen/margin_padding_16" android:layout_marginEnd="@dimen/margin_padding_16" style="@style/wrap_wrap" />
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/swipyrefreshlayout" android:layout_below="@id/layout_header" style="@style/match_match">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:scrollbars="none" android:dividerHeight="0.5dip" android:overScrollMode="never" style="@style/match_wrap" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <include layout="@layout/layout_empty_view" />
+</LinearLayout>

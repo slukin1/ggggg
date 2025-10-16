@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fiat_price_format">%3$s %2$s ≈ %1$s 1</string>
+    <string name="fiatotc_express_rate">%3$s %2$s ≈ %1$s 1</string>
+    <string name="strategy_item_arrow_icon_unicode"></string>
+</resources>

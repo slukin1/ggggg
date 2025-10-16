@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/view" android:layout_width="12.0dip" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/ll" android:background="@color/uikit_bg_primary_v5" android:paddingLeft="@dimen/uikit_dp_12" android:paddingRight="@dimen/uikit_dp_12" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingHorizontal="@dimen/uikit_dp_12">
+        <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_20" android:textColor="@color/uikit_icon_primary_v5" android:id="@id/tv_second_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="@dimen/uikit_dp_12" />
+        <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_20" android:textColor="@color/uikit_icon_primary_v5" android:id="@id/tv_end_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

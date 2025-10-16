@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:apps="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_secondary_v5" android:id="@id/subtitle" android:paddingTop="@dimen/margin_padding_8" android:paddingBottom="@dimen/margin_padding_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_padding_16" android:layout_marginTop="@dimen/uikit_margin_padding_8" android:layout_marginRight="@dimen/margin_padding_16" android:text="@string/wallets_inavailable_reminder_dialog_content" android:lineSpacingExtra="@dimen/margin_padding_3" android:layout_marginHorizontal="@dimen/margin_padding_16" android:paddingVertical="@dimen/margin_padding_8" style="@style/Uikit_font_sans_5_0_weight_400" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_push" android:padding="@dimen/margin_padding_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_12">
+        <TextView android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_text_primary_v5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/wallets_suspend_reminder_push" android:layout_weight="1.0" android:layout_marginEnd="@dimen/uikit_dp_8" style="@style/Uikit_font_sans_5_0_weight_500" />
+        <com.gateio.walletslib.view.number.SelectCheckBox android:id="@id/gt_check_push" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_email" android:padding="@dimen/margin_padding_16" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/uikit_dp_32">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_text_primary_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wallets_suspend_reminder_email" android:layout_weight="1.0" android:layout_marginEnd="@dimen/uikit_dp_8" style="@style/Uikit_font_sans_5_0_weight_500" />
+            <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_secondary_v5" android:id="@id/tv_email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_4" style="@style/Uikit_font_sans_5_0_weight_400" />
+        </LinearLayout>
+        <com.gateio.walletslib.view.number.SelectCheckBox android:id="@id/gt_check_email" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_email_unBind" android:padding="@dimen/margin_padding_16" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/uikit_dp_32">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_text_disabled_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wallets_suspend_reminder_email" android:layout_weight="1.0" android:layout_marginEnd="@dimen/uikit_dp_8" style="@style/Uikit_font_sans_5_0_weight_500" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_4">
+                <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_disabled_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wallets_suspend_reminder_no_email" style="@style/Uikit_font_sans_5_0_weight_400" />
+                <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_primary_v5" android:id="@id/tv_bind_email_action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wallets_inavailable_reminder_setdialog_email_no_action" android:layout_marginStart="@dimen/uikit_dp_4" style="@style/Uikit_font_sans_2_0_weight_500" />
+                <com.gateio.uiComponent.GateIconFont android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_marginStart="@dimen/uikit_dp_4" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.gateio.walletslib.view.number.SelectCheckBox android:enabled="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

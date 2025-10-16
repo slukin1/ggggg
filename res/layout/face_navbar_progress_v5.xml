@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.title.GTNavBarV5 android:id="@id/heard" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent" />
+    <com.gateio.lib.uikit.progress_bar.GTProgressV5 android:id="@id/progress" android:layout_width="172.0dip" android:layout_height="@dimen/uikit_dp_4" app:layout_constraintBottom_toBottomOf="@id/heard" app:layout_constraintEnd_toEndOf="@id/heard" app:layout_constraintStart_toStartOf="@id/heard" app:layout_constraintTop_toTopOf="@id/heard" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="279.0dip" app:cardBackgroundColor="@color/uikit_cmpt_4" app:cardCornerRadius="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:background="@mipmap/uikit_toast_bg" android:padding="@dimen/uikit_margin_padding_12" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/uikit_margin_padding_8" />
+        <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_white" android:id="@id/tv_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Uikit_font_weight_600" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

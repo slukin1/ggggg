@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.biz_fiat_channel.widget.FiatDropdownView android:id="@id/birthNew" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fiat_please_select" app:uikit_dropdownDimenV5="large" app:uikit_dropdownShowScreenBottomV5="true" app:uikit_dropdownStyleV5="stroke" app:uikit_dropdownTypeV5="drop_down"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

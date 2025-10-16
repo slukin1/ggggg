@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.common.view.GateioTitleView android:id="@id/startup_titleview" android:layout_width="fill_parent" android:layout_height="48.0dip" app:bg="@color/uikit_bg_1_v3" app:rightVisibility="false" app:titleTextEllipsize="end" app:titleTextSingleLine="true" />
+    <ProgressBar android:id="@id/progress_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:max="100" android:progress="0" android:layout_below="@id/startup_titleview" style="?android:progressBarStyleHorizontal" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/startup_refresh_layout" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/progress_bar" android:overScrollMode="never">
+        <com.gateio.lib.webview.GTBaseWebView android:id="@id/webview" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <ImageView android:id="@id/iv_close" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/startup_titleview" android:paddingStart="8.0dip" android:paddingEnd="15.0dip" android:layout_alignParentEnd="true" />
+    <ImageView android:id="@id/iv_share" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/startup_titleview" android:paddingStart="15.0dip" android:paddingEnd="8.0dip" android:layout_toStartOf="@id/iv_close" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_main_error" android:background="@color/uikit_bg_1_v3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/startup_titleview">
+        <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_card_desc" android:id="@id/layout_main_error_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dip" />
+        <TextView android:textSize="@dimen/uikit_text_size_15" android:textColor="@color/uikit_color_2354e6" android:id="@id/layout_main_retry" android:padding="@dimen/uikit_margin_padding_10" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/layout_loading_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

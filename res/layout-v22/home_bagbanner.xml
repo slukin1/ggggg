@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:id="@id/scroll" android:tag="layout/home_bagbanner_0" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.gateio.lib.uikit.banner.GTBanner android:id="@id/gt_banner" android:layout_width="fill_parent" android:layout_height="135.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginHorizontal="12.0dip" app:uikit_banner_indicator_marginBottom="8.0dip" app:uikit_banner_radius="4.0dip" />
+        <ImageView android:id="@id/iv_collapse" android:padding="@dimen/uikit_dp_10" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/home_ic_banner_expand" android:layout_alignEnd="@id/gt_banner" />
+        <com.gateio.lib.uikit.notice.GTNoticeBarV3 android:id="@id/gt_notice" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/gt_banner" />
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

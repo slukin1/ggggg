@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.search.GTSearchV5 android:id="@id/searchview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_dp_16" android:layout_marginRight="@dimen/uikit_dp_16" android:hint="@string/fiatotc_search" app:uikit_searchVisualStyleV5="normal" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/uikit_dp_16" android:layout_marginTop="@dimen/uikit_margin_padding_8" android:layout_marginRight="@dimen/uikit_dp_16" android:layout_weight="1.0">
+        <com.gateio.lib.uikit.state.GTEmptyViewV3 android:id="@id/nodata" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_40" android:layout_centerHorizontal="true" app:uikit_emptyTypeV3="search_empty" app:uikit_titleTextV3="@string/fiatotc_no_data" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

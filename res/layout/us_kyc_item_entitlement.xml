@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/uikit_margin_padding_8" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_icon_secondary_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+    <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_secondary_v5" android:id="@id/entitlement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/uikit_dp_4" style="@style/Uikit_font_sans_5_0_weight_500" />
+</LinearLayout>

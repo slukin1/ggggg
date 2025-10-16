@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/uikit_bg_market_item" android:paddingBottom="8.0dip" style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/rl_search" layout="@layout/finance_layout_asset_search" />
+    <LinearLayout android:gravity="center_vertical" android:background="@color/bg_wallet" android:layout_height="35.0dip" style="@style/match_wrap_h">
+        <TextView android:textColor="@color/text_wallet_gray3" android:gravity="start" android:layout_width="0.0dip" android:text="@string/margin_loan_coin" android:layout_weight="1.0" android:layout_marginStart="@dimen/margin_padding_16" style="@style/tv_user_white_12" />
+        <TextView android:textColor="@color/text_wallet_gray3" android:gravity="start" android:layout_width="0.0dip" android:text="@string/asset_ky" android:layout_weight="1.0" style="@style/tv_user_white_12" />
+        <TextView android:textColor="@color/text_wallet_gray3" android:gravity="end" android:layout_width="0.0dip" android:text="@string/funding_lcz" android:layout_weight="1.0" android:layout_marginEnd="@dimen/margin_padding_16" style="@style/tv_user_white_12" />
+    </LinearLayout>
+    <LinearLayout android:layout_height="240.0dip" style="@style/match_wrap">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/futures_market_list" android:paddingBottom="@dimen/margin_padding_8" android:scrollbars="vertical" style="@style/match_wrap" />
+        <com.gateio.lib.uikit.state.GateEmptyViewV2 android:id="@id/tv_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/length_64" />
+    </LinearLayout>
+    <View style="@style/view_line_v2" />
+    <View android:background="@drawable/finance_ic_trans_pop_shadow" android:layout_width="fill_parent" android:layout_height="@dimen/margin_padding_8" />
+</LinearLayout>

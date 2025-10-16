@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/shape_main_dialog_top" android:padding="@dimen/margin_padding_16" android:layout_alignParentBottom="true" style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout style="@style/match_wrap">
+        <TextView android:textStyle="bold" android:textColor="@color/uikit_color_333333_e6e6e6" android:text="@string/moment_zdsz" android:layout_centerVertical="true" style="@style/tv_user_white_18" />
+        <ImageView android:id="@id/iv_cancel" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@mipmap/ic_trans_close" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <TextView android:textStyle="bold" android:textColor="@color/uikit_color_333333_e6e6e6" android:layout_marginTop="24.0dip" android:text="@string/moment_kjfw" style="@style/tv_user_white_16" />
+    <TextView android:textColor="@color/uikit_color_999999_8692a3" android:layout_marginTop="4.0dip" android:text="@string/moment_kjfw_tip" style="@style/tv_user_white_12" />
+    <RelativeLayout android:id="@id/rl_kjfw" android:layout_marginTop="8.0dip" android:minHeight="40.0dip" style="@style/rl_trans_strategy">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:scrollbars="none" android:divider="@color/color_main_line" android:layout_centerVertical="true" android:overScrollMode="never" android:layout_marginEnd="50.0dip" style="@style/wrap_wrap" />
+        <ImageView android:id="@id/tv_arrow" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@mipmap/ic_gate_arrow_right" android:layout_centerVertical="true" android:layout_marginEnd="6.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <TextView android:textStyle="bold" android:textColor="@color/uikit_color_333333_e6e6e6" android:layout_marginTop="24.0dip" android:text="@string/moment_zdsj" style="@style/tv_user_white_16" />
+    <TextView android:textColor="@color/uikit_color_999999_8692a3" android:layout_marginTop="4.0dip" android:text="@string/moment_zdsj_tip" style="@style/tv_user_white_12" />
+    <RelativeLayout android:id="@id/rl_time" android:layout_marginTop="8.0dip" android:minHeight="40.0dip" style="@style/rl_trans_strategy">
+        <TextView android:textSize="16.0sp" android:textStyle="normal" android:textColor="@color/uikit_color_999999_8692a3" android:gravity="center_vertical" android:text="@string/vote_enddate" android:layout_centerVertical="true" android:layout_toStartOf="@id/tv_time" style="@style/ed_trans_new" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/uikit_color_333333_e6e6e6" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/ed_trans_new" />
+    </RelativeLayout>
+    <com.gateio.common.view.CornerTextView android:gravity="center" android:id="@id/tv_ok" android:background="@color/uikit_color_2354e6" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_marginTop="24.0dip" android:text="@string/user_qd" app:radius="4.0dip" style="@style/tv_user_white_16" />
+</LinearLayout>

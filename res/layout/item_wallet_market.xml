@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_root" android:paddingTop="@dimen/margin_padding_8" android:paddingBottom="@dimen/margin_padding_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/margin_padding_16" android:paddingEnd="@dimen/margin_padding_16"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/market_currency_icon" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@mipmap/widget_bar_im_press" />
+    <TextView android:textColor="@color/text_wallet_gray2" android:gravity="start" android:id="@id/tv_coin_cur" android:layout_width="wrap_content" android:layout_marginStart="16.0dip" style="@style/tv_user_black_14" />
+    <TextView android:textColor="@color/text_wallet_gray3" android:gravity="start" android:id="@id/tv_coin_name" android:layout_width="wrap_content" android:layout_marginStart="16.0dip" style="@style/tv_user_black_12" />
+</LinearLayout>

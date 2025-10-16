@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.common.view.CornerLinearLayout android:gravity="center_horizontal" android:layout_gravity="center|top" android:orientation="vertical" android:id="@id/klineDtStepView" android:background="@color/uikit_card_1_v3" android:paddingLeft="@dimen/uikit_margin_padding_16" android:paddingTop="@dimen/uikit_margin_padding_8" android:paddingRight="@dimen/uikit_margin_padding_16" android:paddingBottom="@dimen/uikit_margin_padding_8" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_24" app:gate_view_radius="6.0dip">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_1_v3" android:id="@id/klineDtStepTitleView" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Uikit_font_sans_5_0_weight_700" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_1_v3" android:id="@id/klineDtStepDescView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_12" style="@style/Uikit_font_sans_5_0_weight_400" />
+    </com.gateio.common.view.CornerLinearLayout>
+    <com.gateio.biz.kline.widget.DragFramLayout android:id="@id/dragLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.gateio.biz.kline.drawTool.KLineDrawLineStyleTool android:layout_gravity="bottom|center" android:id="@id/kline_draw_line_style_tool" android:layout_width="wrap_content" android:layout_height="wrap_content" app:blurRadius="4.0dip" app:llBgColor="@color/uikit_card_4_v3" app:shadowColor="@color/uikit_divider_2_v3" app:shadowRadius="4.0dip" app:xOffset="0.0dip" app:yOffset="0.0dip" />
+    </com.gateio.biz.kline.widget.DragFramLayout>
+</merge>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.gateio.activity.web.floating.InterceptTouchCardView android:id="@id/floating_card" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:cardBackgroundColor="#00000000" app:cardCornerRadius="@dimen/uikit_margin_padding_8" app:cardElevation="0.0dip">
+        <ImageView android:id="@id/floating_icon" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/uikit_dp_4" android:layout_marginBottom="@dimen/uikit_dp_4" android:scaleType="fitCenter" />
+    </com.gateio.gateio.activity.web.floating.InterceptTouchCardView>
+    <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_bg_always_white_v5" android:id="@id/floating_dot" android:background="@drawable/bg_floating_web_view_dot" android:paddingLeft="@dimen/uikit_dp_4" android:paddingRight="@dimen/uikit_dp_4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Uikit_font_sans_5_0_weight_400" />
+    <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_icon_tertiary_v5" android:layout_gravity="end" android:id="@id/floating_close" android:padding="@dimen/uikit_margin_padding_8" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_6" android:text="" android:layout_marginEnd="@dimen/uikit_dp_4" />
+</FrameLayout>

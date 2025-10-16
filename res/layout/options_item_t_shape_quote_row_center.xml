@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:tag="layout/options_item_t_shape_quote_row_center_0" android:layout_width="fill_parent" android:layout_height="37.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/viewPlaceholderLeft" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/layoutCenter" android:background="@color/uikit_bg_tertiary_v5" android:layout_width="60.0dip" android:layout_height="37.0dip">
+        <TextView android:id="@id/tvStrikePrice" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Text_text_primary_12_weight_400_v5" />
+        <TextView android:id="@id/tvStrikeDistance" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Text_text_secondary_12_weight_400_v5" />
+    </LinearLayout>
+    <View android:id="@id/viewPlaceholderRight" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+</LinearLayout>

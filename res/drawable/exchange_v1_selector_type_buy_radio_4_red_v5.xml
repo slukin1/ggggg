@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:drawable="@mipmap/exchange_v1_buy_red_v5" />
+    <item android:state_checked="false" android:drawable="@mipmap/exchange_v1_buy_default_v5" />
+</selector>

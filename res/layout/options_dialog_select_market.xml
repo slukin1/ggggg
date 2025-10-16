@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.lib.uikit.popup.GTPopupDragLinearLayout android:orientation="vertical" android:background="@color/uikit_layer_1_v5" android:layout_width="fill_parent" android:layout_height="fill_parent" app:left_top_radis="@dimen/uikit_radius_12" app:right_top_radis="@dimen/uikit_radius_12"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginTop="12.0dip">
+            <com.gateio.lib.uikit.tab.v5.GTTabsV5 android:id="@id/tabCrypto" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" />
+            <com.gateio.lib.uikit.tab.v5.GTTabGradientViewV5 android:id="@id/gradientEnd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="16.0dip" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <View style="@style/view_line_divider_v5" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <com.gateio.lib.uikit.tab.v5.GTTabsV5 android:id="@id/tabDate" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_centerVertical="true" />
+            <com.gateio.lib.uikit.tab.v5.GTTabGradientViewV5 android:id="@id/gradientEndSub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="16.0dip" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <View android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" style="@style/view_line_divider_v5" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llFilters" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="16.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llStrikeFilter" android:layout_width="80.0dip" android:layout_height="wrap_content">
+                <TextView android:ellipsize="end" android:id="@id/tvStrikeFilter" android:maxWidth="66.0dip" android:text="@string/options_place_all_strike" android:maxLines="2" style="@style/Text_text_secondary_12_weight_400_v5" />
+                <com.gateio.uiComponent.GateIconFont android:textSize="12.0sp" android:textColor="@color/uikit_icon_quaternary_v5" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/ivStrike" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="" android:layout_marginStart="2.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llTypeFilter" android:layout_width="80.0dip" android:layout_height="wrap_content" android:layout_marginStart="16.0dip">
+                <TextView android:ellipsize="end" android:id="@id/tvTypeFilter" android:maxWidth="66.0dip" android:text="@string/options_place_all_type" android:maxLines="2" style="@style/Text_text_secondary_12_weight_400_v5" />
+                <com.gateio.uiComponent.GateIconFont android:textSize="12.0sp" android:textColor="@color/uikit_icon_quaternary_v5" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/ivType" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="" android:layout_marginStart="2.0dip" />
+            </LinearLayout>
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llPriceOrChangeSort" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.gateio.lib.uikit.widget.GTSorterV5 android:id="@id/gsPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" app:uikit_sortLabelGravityV5="left" app:uikit_sortLabelMaxLinesV5="1" app:uikit_sortLabelV5="@string/options_place_price_v1" app:uikit_sortTagV5="1" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/uikit_text_secondary_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" / " />
+                <com.gateio.lib.uikit.widget.GTSorterV5 android:id="@id/gsChangePercent" android:layout_width="wrap_content" android:layout_height="wrap_content" app:uikit_sortLabelGravityV5="left" app:uikit_sortLabelMaxLinesV5="1" app:uikit_sortLabelV5="@string/options_place_change_percent" app:uikit_sortTagV5="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rvOptionsList" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:overScrollMode="never" />
+    </LinearLayout>
+</com.gateio.lib.uikit.popup.GTPopupDragLinearLayout>

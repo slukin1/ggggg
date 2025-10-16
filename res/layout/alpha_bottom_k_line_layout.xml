@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/llBottomKLine" android:background="@color/uikit_bg_primary_v5" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/uikit_line_border_subtle_v5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llBottomKLineShow" android:background="@color/uikit_bg_primary_v5" android:layout_width="fill_parent" android:layout_height="32.0dip">
+        <com.gateio.lib.uikit.text.SpecialPairsNameView android:textSize="11.0dip" android:textColor="@color/uikit_text_primary_v5" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_bottom_trans_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="16.0dip" style="@style/Uikit_font_sans_2_0_weight_400" />
+        <TextView android:textSize="11.0dip" android:textColor="@color/uikit_text_primary_v5" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/exchange_v3_mini_k_chart_title" android:layout_weight="1.0" android:layout_marginStart="@dimen/length_2" />
+        <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_16" android:textStyle="bold" android:textColor="@color/uikit_icon_3_v3" android:gravity="center" android:id="@id/icShowBottomKLine" android:layout_width="24.0dip" android:layout_height="24.0dip" android:text="" android:layout_marginEnd="12.0dip" />
+    </LinearLayout>
+</LinearLayout>

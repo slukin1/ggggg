@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/v_outside" android:layout_width="fill_parent" android:layout_height="100.0dip" />
+    <LinearLayout android:layout_gravity="bottom" android:background="@color/transparent_deeper" android:padding="@dimen/margin_padding_16" style="@style/match_wrap">
+        <RelativeLayout style="@style/match_wrap">
+            <TextView android:textStyle="bold" android:text="@string/live_mute_setting" android:layout_centerVertical="true" style="@style/tv_user_white_14" />
+            <TextView android:textStyle="bold" android:id="@id/tv_commit" android:background="@drawable/shape_send" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:text="@string/user_qd" android:paddingStart="@dimen/margin_padding_16" android:paddingEnd="@dimen/margin_padding_16" android:layout_marginStart="@dimen/margin_padding_16" android:layout_alignParentEnd="true" style="@style/tv_user_white_12" />
+        </RelativeLayout>
+        <LinearLayout android:layout_marginTop="@dimen/margin_padding_16" style="@style/ll_live">
+            <TextView android:textColor="@color/color_80FFFFFF" android:text="@string/live_mute_target" style="@style/tv_user_white_14" />
+            <TextView android:id="@id/tv_name" android:text="---" style="@style/ed_live" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_marginTop="@dimen/margin_padding_16" style="@style/match_wrap_h">
+            <LinearLayout style="@style/ll_live">
+                <TextView android:textColor="@color/color_80FFFFFF" android:text="@string/live_mute_time" style="@style/tv_user_white_14" />
+                <EditText android:id="@id/ed_time" android:inputType="number" style="@style/ed_live" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_marginTop="@dimen/margin_padding_16" style="@style/ll_live">
+            <EditText android:gravity="start|center" android:id="@id/ed_content" android:hint="@string/user_assert_bzxx" android:inputType="text" style="@style/ed_live" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

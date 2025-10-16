@@ -1,0 +1,43 @@
+.class public interface abstract Lcom/gateio/gateio/point/buy/PointBuyContract$IView;
+.super Ljava/lang/Object;
+.source "PointBuyContract.java"
+
+# interfaces
+.implements Lcom/gateio/rxjava/basemvp/IBaseView;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/gateio/gateio/point/buy/PointBuyContract;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "IView"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lcom/gateio/rxjava/basemvp/IBaseView<",
+        "Lcom/trello/rxlifecycle4/android/FragmentEvent;",
+        ">;"
+    }
+.end annotation
+
+
+# virtual methods
+.method public abstract buySuccess()V
+.end method
+
+.method public abstract refreshFinish()V
+.end method
+
+.method public abstract selectItem(Lcom/gateio/gateio/entity/PointEntity;)V
+.end method
+
+.method public abstract showPoint(Lcom/gateio/gateio/entity/PointTotalEntity;)V
+.end method
+
+.method public abstract showSpinner()V
+.end method

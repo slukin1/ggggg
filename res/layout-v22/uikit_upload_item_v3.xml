@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_add_media" android:layout_width="120.0dip" android:layout_height="120.0dip" android:layout_marginTop="4.0dip" android:src="@mipmap/uikit_upload_add_image_v3" android:scaleType="fitXY" android:layout_marginEnd="4.0dip" />
+    <RelativeLayout android:id="@id/rl_pic" android:layout_width="120.0dip" android:layout_height="120.0dip" android:layout_marginTop="4.0dip" android:layout_marginEnd="4.0dip">
+        <com.gateio.common.view.RoundImageView android:id="@id/iv_pic" android:layout_width="120.0dip" android:layout_height="120.0dip" android:scaleType="centerCrop" app:corner_radius="8.0dip" app:type="round" />
+        <ImageView android:id="@id/iv_upload_failed" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@mipmap/uikit_upload_error_image_v3" android:layout_centerInParent="true" />
+        <com.gateio.common.view.CornerView android:id="@id/view_skeleton" android:background="#50000000" android:visibility="gone" android:layout_width="120.0dip" android:layout_height="120.0dip" app:radius="8.0dip" />
+        <com.gateio.lib.uikit.progress_bar.GTProgressBarV3 android:id="@id/progress_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="4.0dip" android:layout_marginLeft="@dimen/uikit_dp_24" android:layout_marginRight="@dimen/uikit_dp_24" android:layout_centerInParent="true" android:layout_marginHorizontal="@dimen/uikit_dp_24" />
+    </RelativeLayout>
+    <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_icon_6_v3" android:id="@id/iv_delete" android:padding="@dimen/uikit_dp_8" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignTop="@id/rl_pic" android:layout_alignEnd="@id/rl_pic" />
+</RelativeLayout>

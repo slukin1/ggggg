@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:app="http://schemas.android.com/apk/res-auto">
+    <font app:font="@font/uikit_product_arabic_light" app:fontStyle="normal" app:fontWeight="200" />
+    <font app:font="@font/uikit_product_arabic_light" app:fontStyle="italic" app:fontWeight="200" />
+    <font app:font="@font/uikit_product_arabic_light" app:fontStyle="normal" app:fontWeight="300" />
+    <font app:font="@font/uikit_product_arabic_light" app:fontStyle="italic" app:fontWeight="300" />
+    <font app:font="@font/uikit_product_arabic_regular" app:fontStyle="normal" app:fontWeight="400" />
+    <font app:font="@font/uikit_product_arabic_regular" app:fontStyle="italic" app:fontWeight="400" />
+    <font app:font="@font/uikit_product_arabic_medium" app:fontStyle="normal" app:fontWeight="500" />
+    <font app:font="@font/uikit_product_arabic_medium" app:fontStyle="italic" app:fontWeight="500" />
+    <font app:font="@font/uikit_product_arabic_semi_bold" app:fontStyle="normal" app:fontWeight="600" />
+    <font app:font="@font/uikit_product_arabic_semi_bold" app:fontStyle="italic" app:fontWeight="600" />
+    <font app:font="@font/uikit_product_arabic_bold" app:fontStyle="normal" app:fontWeight="700" />
+    <font app:font="@font/uikit_product_arabic_bold" app:fontStyle="italic" app:fontWeight="700" />
+    <font app:font="@font/uikit_product_arabic_bold" app:fontStyle="normal" app:fontWeight="1000" />
+    <font app:font="@font/uikit_product_arabic_bold" app:fontStyle="italic" app:fontWeight="1000" />
+</font-family>

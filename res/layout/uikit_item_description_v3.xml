@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/uikit_dp_12"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@id/uikit_ll_start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.gateio.lib.uikit.widget.UnderlineTextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_3_v3" android:id="@id/tv_description_item_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="true" />
+            <com.gateio.lib.uikit.bobble.AdjustTextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_3_v3" android:id="@id/uikit_tv_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+            <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_icon_3_v3" android:layout_gravity="bottom" android:id="@id/tv_tips_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/uikit_dp_1" android:text="" android:paddingStart="@dimen/uikit_dp_4" />
+        </LinearLayout>
+        <LinearLayout android:gravity="end" android:id="@id/uikit_ll_end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/uikit_dp_12">
+            <LinearLayout android:gravity="end" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.gateio.lib.uikit.tag.GTTagV3 android:id="@id/left_tag_horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="8.0dip" app:uikit_tagTypeV3="gray" />
+                    <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_1_v3" android:gravity="end" android:layout_gravity="end" android:id="@id/tv_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" style="@style/Uikit_font_sans_2_0_weight_500" />
+                    <com.gateio.lib.uikit.tag.GTTagV3 android:id="@id/tag_horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8.0dip" />
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="end" android:orientation="horizontal" android:id="@id/ll_tag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_8">
+                    <com.gateio.lib.uikit.tag.GTTagV3 android:id="@id/tag_start" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <com.gateio.lib.uikit.tag.GTTagV3 android:id="@id/tag_end" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/uikit_dp_8" />
+                </LinearLayout>
+            </LinearLayout>
+            <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_16" android:gravity="center_vertical" android:id="@id/tv_end_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            <ImageView android:id="@id/iv_end" android:visibility="gone" android:layout_width="@dimen/uikit_dp_16" android:layout_height="@dimen/uikit_dp_16" android:scaleType="fitXY" android:layout_marginStart="@dimen/uikit_dp_8" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.gateio.lib.uikit.alert.GTAlertV3 android:id="@id/alert" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_8" app:uikit_alertEndIconVisibleV3="false" app:uikit_alertTypeV3="yellow" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/uikit_bg_primary_v5" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.title.GTNavBarV5 android:id="@id/market_titleview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/warning_batch_add_alerts" app:uikit_titleLeftColorV5="@color/uikit_icon_primary_v5" app:uikit_titleLeftV5="" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_height="wrap_content" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" style="@style/match_wrap_h">
+            <com.gateio.lib.uikit.button.GTButtonV5 android:layout_gravity="bottom" android:id="@id/btn_reset" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/reset" android:layout_weight="1.0" app:uikit_buttonDimenV5="medium" app:uikit_buttonTypeV5="secondary_gray" />
+            <View android:layout_gravity="bottom" android:layout_width="12.0dip" android:layout_height="1.0dip" />
+            <com.gateio.lib.uikit.button.GTButtonV5 android:enabled="false" android:layout_gravity="bottom" android:id="@id/btn_commit" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/tips_next" android:layout_weight="1.0" app:uikit_buttonDimenV5="medium" app:uikit_buttonTypeV5="primary_black" />
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.fragment.app.FragmentContainerView android:id="@id/fc_market" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/ll_bottom" android:layout_below="@id/market_titleview" />
+</RelativeLayout>

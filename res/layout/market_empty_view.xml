@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Space android:id="@id/spacer" android:layout_width="fill_parent" android:layout_height="80.0dip" app:layout_constraintTop_toTopOf="parent" />
+    <com.gateio.lib.uikit.state.GTEmptyV5 android:gravity="center" android:id="@id/market_empty_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/spacer" app:uikit_descTextV5="@string/ticker_not_data" app:uikit_emptyTypeV5="data_empty" />
+</merge>

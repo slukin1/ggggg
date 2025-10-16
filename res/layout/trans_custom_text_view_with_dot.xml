@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@drawable/trans_v1_shape_circle_icon_1_v3_r2" android:layout_width="@dimen/length_4" android:layout_height="@dimen/length_4" app:layout_constraintBottom_toBottomOf="@id/tv_help" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/transparent" android:id="@id/tv_help" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:lineSpacingExtra="@dimen/length_4" android:layout_marginStart="@dimen/length_8" app:layout_constraintTop_toTopOf="parent" style="@style/Uikit_font_sans_2_0_weight_500" />
+    <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_1_v3" android:id="@id/tv_custom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:includeFontPadding="false" android:lineSpacingExtra="@dimen/length_4" android:layout_marginStart="@dimen/length_12" app:layout_constraintTop_toTopOf="parent" style="@style/Uikit_font_sans_2_0_weight_500" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="---" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/color_999999_7c848d" android:id="@id/tv_kyye" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="---" android:layout_below="@id/tv_name" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_kdhe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="---" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    <View android:layout_marginTop="16.0dip" android:layout_below="@id/tv_kyye" style="@style/view_line_v_new" />
+</RelativeLayout>

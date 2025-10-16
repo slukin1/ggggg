@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.comlib.view.CornerRelativeLayout android:background="@color/bg_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:topLeftRadius="@dimen/margin_padding_16" android:topRightRadius="@dimen/margin_padding_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/ts_16" android:textColor="@color/text_1" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_24" android:text="@string/fiatotc_order_payment_method" android:lineSpacingExtra="@dimen/dp_5" android:layout_marginStart="@dimen/margin_padding_16" android:layout_marginEnd="44.0dip" />
+    <ImageView android:id="@id/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_padding_16" android:src="@mipmap/fiatotc_icon_close" android:layout_alignParentEnd="true" app:tint="@color/text_4" />
+    <androidx.core.widget.NestedScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_12" android:layout_marginBottom="@dimen/margin_padding_24" android:layout_below="@id/title" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:id="@id/payment_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_padding_16" android:layout_marginRight="@dimen/margin_padding_16" />
+    </androidx.core.widget.NestedScrollView>
+</com.gateio.comlib.view.CornerRelativeLayout>

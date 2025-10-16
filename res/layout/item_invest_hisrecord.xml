@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/color_dadce3_20_ffffff" android:layout_width="@dimen/w_0.5" android:layout_height="0.0dip" android:layout_marginStart="20.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.3" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.2" />
+    <View android:id="@id/v_point" android:background="@color/color_caccd3_7c848d" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginTop="6.0dip" android:layout_marginStart="@dimen/margin_padding_16" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/order_time" android:layout_marginStart="@dimen/margin_padding_12" app:layout_constraintStart_toEndOf="@id/v_point" app:layout_constraintTop_toTopOf="parent" style="@style/tv_user_black_14" />
+    <com.gateio.common.view.CornerLinearLayout android:id="@id/ll_root" android:background="@color/uikit_color_ffffff_111f31" android:layout_marginTop="@dimen/margin_padding_12" android:layout_marginBottom="16.0dip" android:layout_marginStart="36.0dip" android:layout_marginEnd="16.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/order_time" app:radius="5.0dip" style="@style/match_wrap">
+        <RelativeLayout android:layout_marginTop="@dimen/margin_padding_16" android:layout_marginStart="@dimen/margin_padding_12" android:layout_marginEnd="@dimen/margin_padding_12" style="@style/match_wrap_h">
+            <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:ellipsize="end" android:id="@id/ordersName" android:maxWidth="200.0dip" android:maxLines="2" style="@style/tv_user_black_16" />
+            <TextView android:textColor="@color/color_999999_7c848d" android:text="ID" android:layout_centerVertical="true" android:layout_toStartOf="@id/order_id" style="@style/tv_user_black_12" />
+            <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/order_id" android:layout_centerVertical="true" android:layout_marginStart="4.0dip" android:layout_alignParentEnd="true" style="@style/tv_user_black_12" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_marginTop="@dimen/margin_padding_16" android:layout_marginStart="@dimen/margin_padding_12" android:layout_marginEnd="@dimen/margin_padding_12" style="@style/match_wrap_h">
+            <TextView android:textColor="@color/color_999999_7c848d" android:layout_width="0.0dip" android:text="@string/invest_ljsyl" android:layout_weight="1.0" style="@style/tv_user_gray_12" />
+            <TextView android:textColor="@color/color_999999_7c848d" android:id="@id/tv_invest_ljdt_label" android:layout_width="0.0dip" android:text="@string/invest_ljdt" android:layout_weight="0.9" style="@style/tv_user_gray_12" />
+            <TextView android:textColor="@color/color_999999_7c848d" android:gravity="end" android:layout_width="0.0dip" android:text="@string/invest_ljqs" android:layout_weight="0.9" style="@style/tv_user_gray_12" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_marginTop="4.0dip" android:layout_marginStart="@dimen/margin_padding_12" android:layout_marginEnd="@dimen/margin_padding_12" style="@style/match_wrap_h">
+            <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_invest_ljsyl" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/tv_user_black_14" />
+            <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_invest_ljdt" android:layout_width="0.0dip" android:layout_weight="0.9" style="@style/tv_user_black_14" />
+            <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:gravity="end" android:id="@id/tv_invest_ljqs" android:layout_width="0.0dip" android:layout_weight="0.9" style="@style/tv_user_black_14" />
+        </LinearLayout>
+        <View android:layout_height="1.0dip" android:layout_marginTop="12.0dip" style="@style/view_line_v_new2" />
+        <include android:id="@id/ll_chain" layout="@layout/fragment_invest_detail_chain" />
+        <LinearLayout android:gravity="center" android:padding="@dimen/margin_padding_12" style="@style/match_wrap_h">
+            <TextView android:textColor="@color/color_999999_7c848d" android:gravity="center" android:id="@id/tv_bzpz" android:text="@string/invest_zkbzpz" style="@style/tv_user_black_12" />
+            <ImageView android:id="@id/iv_bzpz" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@mipmap/ic_gate_arrow_down" />
+        </LinearLayout>
+    </com.gateio.common.view.CornerLinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

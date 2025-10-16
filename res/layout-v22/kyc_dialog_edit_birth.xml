@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/uikit_margin_padding_16" android:paddingRight="@dimen/uikit_margin_padding_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/uikit_margin_padding_16"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gateio.kyclib.view.KycDropdownView android:id="@id/dropdown_birth" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/kyc_choose_hint" />
+    <TextView android:textColor="@color/uikit_text_tertiary_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_4" android:text="@string/kyc_edit_birth_tip" android:lineSpacingExtra="@dimen/uikit_dp_4" style="@style/Uikit_font_sans_5_0_weight_400" />
+</LinearLayout>

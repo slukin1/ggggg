@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="16.0dip" android:paddingTop="8.0dip" android:paddingRight="16.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:id="@id/tvStrikePrice" android:layout_width="80.0dip" android:layout_height="wrap_content" style="@style/Text_text_primary_14_weight_500_v5" />
+    <TextView android:textSize="15.0sp" android:id="@id/tvOptionType" android:layout_width="80.0dip" android:layout_height="wrap_content" android:layout_marginStart="16.0dip" style="@style/Text_text_primary_14_weight_500_v5" />
+    <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="end" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0sp" android:id="@id/tvPrice" style="@style/Text_text_primary_14_weight_500_v5" />
+        <TextView android:textColor="@color/uikit_function_trade_buy_v5" android:id="@id/tvChangePercent" style="@style/Text_text_primary_12_weight_400_v5" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,51 @@
+.class public interface abstract Lcom/gateio/gateio/moments/video/player/ShortVideoPlayerContract$IView;
+.super Ljava/lang/Object;
+.source "ShortVideoPlayerContract.java"
+
+# interfaces
+.implements Lcom/gateio/rxjava/basemvp/IBaseView;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/gateio/gateio/moments/video/player/ShortVideoPlayerContract;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "IView"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lcom/gateio/rxjava/basemvp/IBaseView<",
+        "Lcom/trello/rxlifecycle4/android/ActivityEvent;",
+        ">;"
+    }
+.end annotation
+
+
+# virtual methods
+.method public abstract addFragment(Lcom/gateio/gateio/entity/MomentsEntity;)V
+.end method
+
+.method public abstract getSize()I
+.end method
+
+.method public abstract registerCall()V
+.end method
+
+.method public abstract showMomentVideos(Ljava/util/List;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Lcom/gateio/gateio/entity/MomentsEntity;",
+            ">;)V"
+        }
+    .end annotation
+.end method
+
+.method public abstract unregisterCall()V
+.end method

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alert_cancel_array">
+        <item>僅忽略本次</item>
+        <item>10分鐘後</item>
+        <item>30分鐘後</item>
+        <item>2小時後</item>
+        <item>24小時後</item>
+        <item>永不提示</item>
+    </string-array>
+    <string-array name="chat_mute_unit">
+        <item>分钟</item>
+        <item>小时</item>
+        <item>天</item>
+        <item>月</item>
+    </string-array>
+    <string-array name="exo_controls_playback_speeds">
+        <item>0.25 倍</item>
+        <item>0.5 倍</item>
+        <item>0.75 倍</item>
+        <item>正常</item>
+        <item>1.25 倍</item>
+        <item>1.5 倍</item>
+        <item>2 倍</item>
+    </string-array>
+    <string-array name="funding_share_desc">
+        <item>有一種幸福叫做穩</item>
+        <item>躺贏的人生不需要解釋</item>
+        <item>專業領跑無限可能</item>
+        <item>小試牛刀，初顯身手</item>
+        <item>道路千萬條，穩字第一條</item>
+        <item>來理財嗎？穩穩的那種</item>
+        <item>人間值得，未來可期</item>
+    </string-array>
+    <string-array name="home_week_string_array">
+        <item>星期日</item>
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+    </string-array>
+    <string-array name="modify_procedure_items">
+        <item>選擇丟失的安全項</item>
+        <item>申請更改安全項</item>
+        <item>完成申請</item>
+    </string-array>
+    <string-array name="position_share_desc_loss">
+        <item>割肉是不可能了，這輩子都不可能割肉的</item>
+        <item>扶我起來，我還能炒幣</item>
+        <item>大佬求輕割</item>
+        <item>大家穩住，這是敵軍的陰謀</item>
+        <item>幣友們，起床搬磚啦</item>
+        <item>我不屬韭菜，我勸你善良</item>
+        <item>不要慌，技術性調整</item>
+        <item>不要慫就是幹</item>
+    </string-array>
+    <string-array name="position_share_desc_win">
+        <item>夜觀天象，眾卿今晚梭哈</item>
+        <item>老夫玩幣都是一把梭</item>
+        <item>上來了，就別下車</item>
+        <item>老哥這波穩</item>
+        <item>幣圈大佬？叫我幹啥</item>
+        <item>我就是幣圈最靚的星</item>
+        <item>收割秘籍，九代單傳</item>
+        <item>確認過眼神，我是對的人</item>
+        <item>空多K線掌上紋，掌聲送給幣圈人</item>
+    </string-array>
+    <string-array name="push_alert_cancel_array">
+        <item>30分鐘</item>
+        <item>2小時</item>
+        <item>24小時</item>
+        <item>永不提示</item>
+    </string-array>
+    <string-array name="week_string_array">
+        <item>星期日</item>
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+    </string-array>
+    <string-array name="weekday">
+        <item>日</item>
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+    </string-array>
+</resources>

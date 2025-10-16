@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/amountView" android:background="@color/defi_mercury" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/defi_dp20" android:layout_marginBottom="@dimen/defi_dp20">
+        <TextView android:textSize="@dimen/defi_sp13" android:textColor="@color/defi_dove" android:gravity="start" android:id="@id/amountLeft" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/defi_amount" android:layout_weight="1.0" android:layout_marginStart="@dimen/defi_dp16" />
+        <TextView android:textSize="@dimen/defi_sp16" android:textColor="@color/defi_black" android:gravity="start" android:id="@id/text_amount" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.5" />
+        <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/tokens_list" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.5" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </LinearLayout>
+</LinearLayout>

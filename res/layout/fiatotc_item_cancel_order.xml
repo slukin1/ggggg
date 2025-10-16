@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.gateio.lib.uikit.widget.GTCheckBoxV5 android:id="@id/reason" android:layout_width="wrap_content" android:layout_height="wrap_content" app:uikit_isCorner_v5="true" />
+        <com.gateio.lib.uikit.text.GTMultiLineTextViewV5 android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_primary_v5" android:id="@id/reason_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/margin_padding_8" style="@style/Uikit_font_sans_5_0_weight_400" />
+    </LinearLayout>
+    <com.gateio.common.view.CornerLinearLayout android:orientation="vertical" android:id="@id/content" android:background="@color/uikit_cmpt_input_v5" android:padding="@dimen/margin_padding_12" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_radius_8" android:layout_marginStart="@dimen/margin_padding_24" app:radius="@dimen/uikit_radius_medium_v5">
+        <com.gateio.lib.uikit.text.GTMultiLineTextViewV5 android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_secondary_v5" android:id="@id/explain" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Uikit_font_sans_5_0_weight_400" />
+        <com.gateio.lib.uikit.button.GTButtonV5 android:id="@id/contact_seller" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_8" android:text="@string/fiatotc_contact_seller" app:uikit_buttonDimenV5="xxSmall" app:uikit_buttonMinWidthV5="72.0dip" app:uikit_buttonTypeV5="primary_black" />
+    </com.gateio.common.view.CornerLinearLayout>
+    <com.gateio.lib.uikit.textarea.GTTextAreaV5 android:id="@id/input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_radius_6" app:uikit_hintV5="@string/fiatotc_please_enter" app:uikit_inputMaxEnable="false" app:uikit_max_lengthV5="450" />
+</LinearLayout>

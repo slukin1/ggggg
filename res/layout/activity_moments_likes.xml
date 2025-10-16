@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/uikit_color_main_bg" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_back" android:layout_width="wrap_content" android:layout_height="48.0dip" android:src="@mipmap/uikit_btn_back" android:layout_marginStart="@dimen/margin_padding_12" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/uikit_text_1_v3" android:gravity="center" android:id="@id/iv_title" android:layout_width="wrap_content" android:layout_height="48.0dip" android:text="" app:layout_constraintEnd_toStartOf="@id/iv_back1" app:layout_constraintStart_toEndOf="@id/iv_back" style="@style/Uikit_font_weight_500" />
+    <ImageView android:id="@id/iv_back1" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="48.0dip" android:src="@mipmap/uikit_btn_back" android:layout_marginStart="@dimen/margin_padding_12" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <net.lucode.hackware.magicindicator.MagicIndicator android:id="@id/tabs" android:layout_width="wrap_content" android:layout_height="44.0dip" app:layout_constraintTop_toBottomOf="@id/iv_back" />
+    <com.gateio.common.view.CustomViewpager android:id="@id/vp_content" android:scrollbars="none" android:fadingEdge="none" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="0.0dip" android:overScrollMode="never" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/tabs" />
+</androidx.constraintlayout.widget.ConstraintLayout>

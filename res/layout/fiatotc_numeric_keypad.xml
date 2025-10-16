@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:text="1" style="@style/FiatotcNumericKey" />
+    <TextView android:text="2" style="@style/FiatotcNumericKey" />
+    <TextView android:text="3" style="@style/FiatotcNumericKey" />
+    <TextView android:text="4" style="@style/FiatotcNumericKey" />
+    <TextView android:text="5" style="@style/FiatotcNumericKey" />
+    <TextView android:text="6" style="@style/FiatotcNumericKey" />
+    <TextView android:text="7" style="@style/FiatotcNumericKey" />
+    <TextView android:text="8" style="@style/FiatotcNumericKey" />
+    <TextView android:text="9" style="@style/FiatotcNumericKey" />
+    <TextView android:text="." style="@style/FiatotcNumericKey" />
+    <TextView android:text="0" style="@style/FiatotcNumericKey" />
+    <ImageView android:gravity="center" android:id="@id/lite_keyboard_delete" android:src="@mipmap/fiatotc_keyboard_delete" android:scaleType="center" style="@style/FiatotcNumericKey" />
+</merge>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="52.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:enabled="false" android:id="@id/tvTitle" android:layout_centerVertical="true" style="@style/Text_text_primary_16_weight_500_v5" />
+    <com.gateio.uiComponent.GateIconFont android:enabled="false" android:textSize="16.0sp" android:textColor="@color/futures_selector_color_icon_v5" android:id="@id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    <TextView android:enabled="false" android:id="@id/tvInfo" android:layout_centerVertical="true" android:layout_marginStart="8.0dip" android:layout_marginEnd="12.0dip" android:layout_toStartOf="@id/image" style="@style/Text_text_primary_12_weight_500_v5" />
+</RelativeLayout>

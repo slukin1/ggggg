@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:id="@id/rl_tips" android:paddingTop="@dimen/margin_padding_8" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:paddingStart="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gateio.uiComponent.GateIconFont android:textSize="16.0sp" android:textColor="@color/uikit_text_secondary_v5" android:id="@id/iv_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+    <com.gateio.uiComponent.GateIconFont android:textSize="12.0sp" android:textColor="@color/uikit_text_secondary_v5" android:id="@id/iv_tips_close" android:paddingTop="@dimen/margin_padding_2" android:paddingBottom="@dimen/margin_padding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:paddingStart="@dimen/margin_padding_4" android:paddingEnd="@dimen/margin_padding_12" android:layout_alignParentEnd="true" android:paddingVertical="@dimen/margin_padding_2" />
+    <TextView android:id="@id/tvCenterTips" android:text="---" android:lineSpacingMultiplier="1.2" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" android:layout_toStartOf="@id/iv_tips_close" android:layout_toEndOf="@id/iv_tips" style="@style/Text_text_primary_12_weight_400_v5" />
+</RelativeLayout>

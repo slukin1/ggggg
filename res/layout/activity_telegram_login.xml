@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:background="@color/uikit_bg_3" android:focusable="true" android:focusableInTouchMode="true" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/text_size_22" android:textStyle="bold" android:textColor="@color/uikit_text_1" android:id="@id/iv_back" android:padding="@dimen/margin_padding_14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:left_or_right="true" />
+    <FrameLayout android:id="@id/tgAuthRoot" android:background="@color/uikit_bg_3" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/iv_back">
+        <include android:id="@id/loadingView" layout="@layout/uikit_progress_custom" />
+        <FrameLayout android:id="@id/tgAuthContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/iv_back" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

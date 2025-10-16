@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.common.view.CornerLinearLayout android:gravity="center" android:id="@id/ll_start" android:background="@color/uikit_neutral_5_v3" android:paddingLeft="@dimen/uikit_dp_16" android:paddingTop="@dimen/uikit_margin_padding_6" android:paddingRight="@dimen/uikit_dp_16" android:paddingBottom="@dimen/uikit_margin_padding_6" android:layout_width="wrap_content" android:layout_height="wrap_content" app:gate_view_radius="@dimen/uikit_dp_2">
+        <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_icon_1_v3" android:id="@id/tv_start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+    </com.gateio.common.view.CornerLinearLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_number_container" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.gateio.common.view.CornerLinearLayout android:gravity="center" android:id="@id/ll_end" android:background="@color/uikit_neutral_5_v3" android:paddingLeft="@dimen/uikit_dp_16" android:paddingTop="@dimen/uikit_margin_padding_6" android:paddingRight="@dimen/uikit_dp_16" android:paddingBottom="@dimen/uikit_margin_padding_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/uikit_dp_16" app:gate_view_radius="@dimen/uikit_dp_2">
+        <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_icon_1_v3" android:id="@id/tv_end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+    </com.gateio.common.view.CornerLinearLayout>
+</LinearLayout>

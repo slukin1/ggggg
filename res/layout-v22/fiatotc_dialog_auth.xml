@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/uikit_dp_16" android:paddingRight="@dimen/uikit_dp_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/uikit_dp_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.input.GTInputV5 android:id="@id/input_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_8" app:uikit_editHintV5="@string/fiatotc_please_enter" app:uikit_editInputTypeV5="number" app:uikit_editVisibleDeleteV5="false" />
+    <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_brand_v5" android:id="@id/switch_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_4" android:layout_marginBottom="@dimen/uikit_dp_8" android:text="@string/fiatotc_switch_methods" android:layout_below="@id/input_code" style="@style/Uikit_font_sans_5_0_weight_500" />
+    <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_3_v3" android:id="@id/switch_fingerprint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_24" android:layout_marginBottom="@dimen/uikit_dp_8" android:layout_below="@id/switch_type" />
+</RelativeLayout>

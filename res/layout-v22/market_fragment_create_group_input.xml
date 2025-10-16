@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/uikit_line_divider_v5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/uikit_text_primary_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:text="@string/market_group_name" android:layout_marginHorizontal="16.0dip" style="@style/Uikit_font_sans_5_0_weight_400" />
+    <com.gateio.lib.uikit.input.GTInputV5 android:textSize="14.0sp" android:id="@id/et_name" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="10.0dip" android:layout_marginHorizontal="16.0dip" app:uikit_editHintV5="@string/market_please_input_group_name" app:uikit_editInputTypeV5="text" />
+</LinearLayout>

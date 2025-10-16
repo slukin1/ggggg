@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/llIcebergLayout" android:tag="layout/futures_view_advanced_iceberg_0" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/rlOperationIceberg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.gateio.lib.uikit.widget.GTCheckBoxV5 android:id="@id/cbOperateIceberg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:paddingEnd="4.0dip" app:uikit_button_size_v5="12.0dip" />
+        <com.gateio.gateio.view.FuturesDashTextViewV5 android:textSize="12.0sp" android:textColor="@color/uikit_text_primary_v5" android:id="@id/tv_iceberg_advance_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/futures_trans_orders_gjxx" app:uikit_underline_color="@color/uikit_text_tertiary_v5" style="@style/Uikit_font_sans_5_0_weight_400" />
+    </LinearLayout>
+    <com.gateio.lib.uikit.input.GTInputV5 android:id="@id/edActivationPrice" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" app:uikit_editAlwaysShowHintV5="true" app:uikit_editHintV5="@string/futures_v5_place_order_act_price" app:uikit_editInputDropdownArrowMarginV5="2.0dip" app:uikit_editRightTextColorV5="@color/uikit_text_primary_v5" app:uikit_editShowRightTextWhenNoFocusAndInputEmptyV5="true" />
+    <com.gateio.lib.uikit.input.GTInputV5 android:id="@id/edLimitPrice" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" app:uikit_editAlwaysShowHintV5="true" app:uikit_editHintV5="@string/exchange_futures_iceberg_advance_limit_price" app:uikit_editInputDropdownArrowMarginV5="2.0dip" app:uikit_editRightTextColorV5="@color/uikit_text_primary_v5" app:uikit_editShowRightTextWhenNoFocusAndInputEmptyV5="true" />
+</LinearLayout>

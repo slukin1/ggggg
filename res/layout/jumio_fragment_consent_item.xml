@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="top" android:orientation="horizontal" android:id="@id/holder_bg" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/Jumio.TextAppearance.Body1" android:textColorLink="?colorPrimary" android:gravity="start|center|top" android:id="@id/tv_consent_item" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="8.0" />
+    <com.google.android.material.switchmaterial.SwitchMaterial android:gravity="top" android:id="@id/btn_consent_switch" android:saveEnabled="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.5" />
+</androidx.appcompat.widget.LinearLayoutCompat>

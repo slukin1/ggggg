@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.tab.v5.GTTabsV5 android:id="@id/tab" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="@dimen/uikit_dp_32" android:layout_marginLeft="@dimen/uikit_margin_padding_16" android:layout_marginTop="@dimen/uikit_margin_padding_16" android:layout_marginRight="@dimen/uikit_margin_padding_16" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.viewpager.widget.ViewPager android:id="@id/view_pager" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginTop="@dimen/uikit_margin_padding_8" app:layout_constraintBottom_toTopOf="@id/keyboard" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tab" />
+    <com.gateio.fiatotclib.view.keyboard.NumberKeyBoardView android:id="@id/keyboard" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.alert.GTAlertV3 android:id="@id/uab_alert" android:layout_width="fill_parent" android:layout_height="wrap_content" app:uikit_alertEndIconVisibleV3="false" app:uikit_alertTypeV3="red" />
+    <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_2_v3" android:id="@id/tv_reason" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_12" android:layout_marginBottom="8.0dip" />
+</LinearLayout>

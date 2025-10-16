@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/uikit_color_ffffff_111f31" android:paddingStart="@dimen/margin_padding_16" android:paddingEnd="@dimen/margin_padding_16" style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_marginTop="@dimen/margin_padding_16" style="@style/match_wrap">
+        <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_invest_market" style="@style/tv_user_gray_14" />
+        <TextView android:textColor="@color/color_999999_7c848d" android:id="@id/tv_invest_id_label" android:text="ID" android:layout_toStartOf="@id/tv_invest_id" style="@style/tv_user_gray_12" />
+        <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_invest_id" android:layout_marginStart="4.0dip" android:layout_alignParentEnd="true" style="@style/tv_user_gray_12" />
+    </RelativeLayout>
+    <LinearLayout android:layout_marginTop="8.0dip" style="@style/match_wrap_h">
+        <TextView android:textColor="@color/color_999999_7c848d" android:layout_width="0.0dip" android:text="@string/trans_price" android:layout_weight="1.0" style="@style/tv_user_gray_12" />
+        <TextView android:textColor="@color/color_999999_7c848d" android:layout_width="0.0dip" android:text="@string/funding_sl" android:layout_weight="0.9" style="@style/tv_user_gray_12" />
+        <TextView android:textColor="@color/color_999999_7c848d" android:gravity="end" android:layout_width="0.0dip" android:text="@string/trans_time" android:layout_weight="0.9" style="@style/tv_user_gray_12" />
+    </LinearLayout>
+    <LinearLayout android:layout_marginTop="4.0dip" style="@style/match_wrap_h">
+        <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_invest_price" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/tv_user_gray_14" />
+        <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_invest_num" android:layout_width="0.0dip" android:layout_weight="0.9" style="@style/tv_user_gray_14" />
+        <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:gravity="end" android:id="@id/tv_invest_time" android:layout_width="0.0dip" android:layout_weight="0.9" style="@style/tv_user_gray_14" />
+    </LinearLayout>
+    <LinearLayout android:layout_marginTop="2.0dip" style="@style/match_wrap_h">
+        <TextView android:textColor="@color/color_999999_7c848d" android:id="@id/tv_invest_price_local" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/tv_user_gray_12" />
+        <TextView android:textColor="@color/color_999999_7c848d" android:id="@id/tv_invest_num_local" android:layout_width="0.0dip" android:layout_weight="0.9" style="@style/tv_user_gray_12" />
+        <TextView android:textColor="@color/color_999999_7c848d" android:gravity="end" android:id="@id/tv_invest_time_local" android:layout_width="0.0dip" android:layout_weight="0.9" style="@style/tv_user_gray_12" />
+    </LinearLayout>
+    <View android:layout_marginTop="@dimen/margin_padding_16" style="@style/view_line_v_new2" />
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/layoutLabel" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:paddingHorizontal="16.0dip">
+        <TextView android:text="@string/futures_new_guide_learn_label_title" style="@style/Text_text_primary_16_weight_500_v5" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+            <com.gateio.lib.uikit.tag.GTTagV5 android:layout_width="wrap_content" android:layout_height="wrap_content" app:uikit_tagTextV5="@string/futures_new_guide_learn_label_futures" app:uikit_tagTypeV5="gray" />
+            <com.gateio.lib.uikit.tag.GTTagV5 android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8.0dip" app:uikit_tagTextV5="@string/futures_new_guide_learn_label_leverage" app:uikit_tagTypeV5="gray" />
+            <com.gateio.lib.uikit.tag.GTTagV5 android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8.0dip" app:uikit_tagTextV5="@string/futures_new_guide_learn_label_cross_isolated" app:uikit_tagTypeV5="gray" />
+            <com.gateio.lib.uikit.tag.GTTagV5 android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8.0dip" app:uikit_tagTextV5="@string/futures_new_guide_learn_label_long_short" app:uikit_tagTypeV5="gray" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.ruffian.library.widget.RImageView android:id="@id/ivVideo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="16.0dip" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_marginHorizontal="16.0dip" app:corner_radius="8.0dip" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="10.0dip" android:overScrollMode="never" app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" app:layout_constraintTop_toTopOf="parent" app:spanCount="4" />
+    <com.gateio.biz.exchange.ui.view.ExchangeUnifiedAccountView android:id="@id/layoutAccount" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" />
+</LinearLayout>

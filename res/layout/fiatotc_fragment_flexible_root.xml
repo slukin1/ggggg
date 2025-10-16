@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/swipe_refresh" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar" android:background="@color/uikit_bg_primary_v5" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip" app:layout_behavior="com.gateio.lib.uikit.behavior.AppBarLayoutBehaviorV2">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_12" app:layout_scrollFlags="scroll">
+                <com.gateio.lib.uikit.alert.GTAlertV5 android:id="@id/kyc_alert" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_12" app:uikit_alertTypeV5="yellow" />
+                <com.gateio.fiatotclib.view.banner.FiatotcBanner android:id="@id/fl_merchant_banner_container" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_marginLeft="@dimen/uikit_dp_16" android:layout_marginRight="@dimen/uikit_dp_16" android:layout_marginBottom="@dimen/uikit_margin_padding_20" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <net.lucode.hackware.magicindicator.MagicIndicator android:id="@id/indicator" android:layout_width="wrap_content" android:layout_height="@dimen/uikit_dp_32" android:layout_marginStart="@dimen/uikit_dp_16" />
+                    <com.gateio.fiatotclib.function.flexible.view.FlexibleDropDown android:id="@id/gt_switch_fiat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/uikit_margin_padding_16" android:layout_alignParentEnd="true" />
+                    <com.gateio.common.view.CornerLinearLayout android:gravity="center" android:id="@id/ll_trend_chart" android:layout_width="@dimen/uikit_margin_padding_28" android:layout_height="@dimen/uikit_margin_padding_28" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/uikit_dp_8" android:layout_toStartOf="@id/gt_switch_fiat" app:gate_view_radius="@dimen/uikit_radius_6">
+                        <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_icon_secondary_v5" android:id="@id/tv_trend_chart" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                    </com.gateio.common.view.CornerLinearLayout>
+                </RelativeLayout>
+                <Space android:layout_width="wrap_content" android:layout_height="@dimen/uikit_dp_12" />
+            </LinearLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.viewpager.widget.ViewPager android:id="@id/viewpager" android:scrollbars="none" android:fadingEdge="none" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

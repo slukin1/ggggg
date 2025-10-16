@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/market_fragment_meme_box_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/filter" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_padding_12" android:layout_marginRight="@dimen/margin_padding_12" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.core.widget.NestedScrollView android:id="@id/fl_empty" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/filter" />
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout android:id="@id/swipe_refresh" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/filter" app:srlEnableLoadMore="false" app:srlEnableRefresh="false">
+        <com.gateio.biz.market.weight.MarketRecycleView android:id="@id/recycler" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+    <androidx.constraintlayout.widget.Group android:id="@id/fl_content" android:layout_width="wrap_content" android:layout_height="wrap_content" app:constraint_referenced_ids="filter,swipe_refresh" />
+    <FrameLayout android:id="@id/fl_loading" android:tag="binding_1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/uikit_progress_custom" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

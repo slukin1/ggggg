@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.title.GTTitleViewV3 android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/finger" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="160.0dip" android:src="@mipmap/fiatotc_finger" android:layout_below="@id/title" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_text_1_v3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_24" android:text="@string/fiatotc_verify_finger" android:layout_below="@id/finger" android:layout_centerHorizontal="true" style="@style/Uikit_font_weight_500" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.gateio.lib.uikit.button.GTButtonV3 android:id="@id/enable_now" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_margin_padding_12" android:layout_marginRight="@dimen/uikit_margin_padding_12" android:layout_marginBottom="@dimen/uikit_dp_16" android:text="@string/fiatotc_enable_now" app:uikit_buttonDimenV3="medium" app:uikit_buttonTypeV3="primary" />
+        <com.gateio.lib.uikit.button.GTButtonV3 android:id="@id/switch_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_margin_padding_12" android:layout_marginRight="@dimen/uikit_margin_padding_12" android:layout_marginBottom="@dimen/uikit_dp_24" android:text="@string/fiatotc_switch_methods" app:uikit_buttonDimenV3="medium" app:uikit_buttonTypeV3="thirty" />
+        <com.gateio.lib.uikit.widget.GTCheckBoxV3 android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_3_v3" android:layout_gravity="center_horizontal" android:id="@id/dont_remind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/uikit_margin_padding_40" android:text="@string/fiatotc_dont_remind" />
+    </LinearLayout>
+</RelativeLayout>

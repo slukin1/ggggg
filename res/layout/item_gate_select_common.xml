@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/uikit_color_333333_e6e6e6" android:gravity="center" android:id="@id/tv_name" android:padding="@dimen/margin_padding_16" android:layout_width="fill_parent" style="@style/tv_user_black_16" />
+    <View android:id="@id/v_line" style="@style/uikit_view_line_mian_v" />
+</LinearLayout>

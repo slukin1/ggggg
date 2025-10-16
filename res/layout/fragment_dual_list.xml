@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:background="@color/color_f5f5f5_061725" style="@style/match_match">
+        <androidx.core.widget.NestedScrollView android:id="@id/scroll_view" android:scrollbars="none" android:overScrollMode="never" style="@style/match_match">
+            <LinearLayout style="@style/match_match">
+                <TextView android:textColor="@color/color_999999_7c848d" android:id="@id/tv_title" android:visibility="gone" android:layout_marginTop="@dimen/length_20" android:layout_marginStart="@dimen/length_16" android:layout_marginEnd="@dimen/length_16" style="@style/tv_user_white_12" />
+                <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/color_b3b3b3_67738a" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_empty" android:visibility="gone" android:layout_marginTop="@dimen/length_30" android:text="@string/coin_chain_nodata" android:drawablePadding="@dimen/length_8" app:drawableTopCompat="@mipmap/ic_empty" style="@style/tv_user_black_16" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/recycleview" android:scrollbars="none" android:layout_marginTop="@dimen/length_8" android:dividerHeight="0.5dip" android:overScrollMode="never" android:layout_marginStart="@dimen/length_16" android:layout_marginEnd="@dimen/length_16" style="@style/match_match" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

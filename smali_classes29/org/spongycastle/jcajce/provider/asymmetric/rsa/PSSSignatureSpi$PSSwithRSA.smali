@@ -1,0 +1,46 @@
+.class public Lorg/spongycastle/jcajce/provider/asymmetric/rsa/PSSSignatureSpi$PSSwithRSA;
+.super Lorg/spongycastle/jcajce/provider/asymmetric/rsa/PSSSignatureSpi;
+.source "PSSSignatureSpi.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lorg/spongycastle/jcajce/provider/asymmetric/rsa/PSSSignatureSpi;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "PSSwithRSA"
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 2
+
+    .line 1
+    .line 2
+    new-instance v0, Lorg/spongycastle/crypto/engines/RSABlindedEngine;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-direct {v0}, Lorg/spongycastle/crypto/engines/RSABlindedEngine;-><init>()V
+
+    .line 6
+    const/4 v1, 0x0
+
+    .line 7
+    .line 8
+    .line 9
+    invoke-direct {p0, v0, v1}, Lorg/spongycastle/jcajce/provider/asymmetric/rsa/PSSSignatureSpi;-><init>(Lorg/spongycastle/crypto/AsymmetricBlockCipher;Ljava/security/spec/PSSParameterSpec;)V
+
+    .line 10
+    return-void
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+.end method

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ruffian.library.widget.RLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_coin" android:layout_width="fill_parent" android:layout_height="61.0dip" android:paddingStart="12.0dip">
+        <ImageView android:id="@id/coin" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginEnd="8.0dip" />
+        <com.gateio.lib.uikit.currency.GTCurrencyV3 android:id="@id/two_coin" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="8.0dip" app:uikit_currencySizeV3="size28" />
+        <RelativeLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_name" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.gateio.lib.uikit.text.SpecialPairsNameView android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_text_1_v3" android:ellipsize="end" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" style="@style/Uikit_font_sans_2_0_weight_500" />
+                <com.gateio.lib.uikit.tag.GTTagV3 android:layout_gravity="center_vertical" android:id="@id/tv_pre_tag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4.0dip" app:uikit_tagShowUnderLineV3="true" app:uikit_tagSizeV3="tag16" app:uikit_tagTypeV3="orange" />
+                <com.ruffian.library.widget.RTextView android:textSize="10.0dip" android:textColor="@color/uikit_text_2_v3" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tv_tag" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="16.0dip" android:layout_marginStart="4.0dip" app:background_normal="@color/uikit_cmpt_11_v3" app:corner_radius="2.0dip" style="@style/Uikit_font_sans_2_0_weight_400" />
+                <com.gateio.lib.uikit.tag.GTTagV3 android:layout_gravity="center_vertical" android:id="@id/tv_st_tag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4.0dip" app:uikit_tagSizeV3="tag16" app:uikit_tagTextV3="ST" app:uikit_tagTypeV3="red" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_3_v3" android:id="@id/tv_type" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_below="@id/ll_name" style="@style/Uikit_font_sans_2_0_weight_400" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="end" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="@color/uikit_text_1_v3" android:id="@id/tv_rate" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Uikit_font_sans_2_0_weight_600" />
+            <TextView android:textSize="@dimen/uikit_text_size_11" android:textColor="@color/uikit_text_3_v3" android:ellipsize="end" android:gravity="end" android:id="@id/range" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="130.0dip" android:maxLines="2" android:textDirection="ltr" style="@style/Uikit_font_sans_2_0_weight_400" />
+        </LinearLayout>
+        <ImageView android:id="@id/iv_fav" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@mipmap/search_ic_favourite_check" android:paddingStart="@dimen/uikit_dp_10" android:paddingEnd="12.0dip" />
+        <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_icon_3_v3" android:id="@id/iv_right_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_marginStart="@dimen/uikit_dp_14" android:layout_marginEnd="12.0dip" app:left_or_right="true" />
+    </com.ruffian.library.widget.RLinearLayout>
+</LinearLayout>

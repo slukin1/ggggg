@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/text_size_16" android:textColor="@color/uikit_text_primary_v5" android:id="@id/tv_coin_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Uikit_font_sans_5_0_weight_600" />
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:id="@id/tags_ll" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_4" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_coin_name">
+        <com.gateio.lib.uikit.tag.GTTagV5 android:id="@id/tag_trade_side" android:layout_width="wrap_content" android:layout_height="wrap_content" app:uikit_tagSizeV5="tag16" app:uikit_tagTextV5="Buy" app:uikit_tagTypeV5="green" />
+        <Space android:layout_width="@dimen/dp_4" android:layout_height="0.0dip" />
+        <com.gateio.lib.uikit.tag.GTTagV5 android:id="@id/tag_trade_type" android:layout_width="wrap_content" android:layout_height="wrap_content" app:uikit_tagSizeV5="tag16" app:uikit_tagTextV5="" app:uikit_tagTypeV5="gray" />
+        <Space android:layout_width="@dimen/dp_4" android:layout_height="0.0dip" />
+        <com.gateio.lib.uikit.tag.GTTagV5 android:id="@id/tag_trade_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" app:uikit_tagSizeV5="tag16" app:uikit_tagTextV5="" app:uikit_tagTypeV5="gray" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:id="@id/cell_ll_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_16" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tags_ll">
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.gateio.lib.uikit.widget.GTUnderlineTextViewV5 android:textSize="@dimen/text_size_12" android:textColor="@color/uikit_text_secondary_v5" android:ellipsize="end" android:id="@id/dash_tv_pnl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trans_v5_unrealized_pnl" android:maxLines="2" style="@style/Uikit_font_sans_5_0_weight_400" />
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/uikit_function_trade_sell_v5" android:id="@id/tv_pnl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textDirection="ltr" style="@style/Uikit_font_sans_5_0_weight_600" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <Space android:layout_width="@dimen/uikit_dp_4" android:layout_height="0.0dip" />
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="end" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.gateio.biz.trans.widget.TransDashTextView android:textSize="@dimen/text_size_12" android:textColor="@color/uikit_text_secondary_v5" android:id="@id/dashtv_return" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trans_v5_return" style="@style/Uikit_font_sans_5_0_weight_400" />
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/uikit_function_trade_sell_v5" android:gravity="end" android:id="@id/tv_return" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textDirection="ltr" style="@style/Uikit_font_sans_5_0_weight_600" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:id="@id/cell_ll_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_12" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/cell_ll_1">
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.gateio.biz.trans.widget.TransDashTextView android:textSize="@dimen/text_size_12" android:textColor="@color/uikit_text_secondary_v5" android:id="@id/dashtv_position" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trans_v5_position" style="@style/Uikit_font_sans_5_0_weight_400" />
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/uikit_text_primary_v5" android:id="@id/tv_position" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textDirection="ltr" style="@style/Uikit_font_sans_5_0_weight_500" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <Space android:layout_width="@dimen/uikit_dp_4" android:layout_height="0.0dip" />
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.gateio.lib.uikit.widget.GTUnderlineTextViewV5 android:textSize="@dimen/text_size_12" android:textColor="@color/uikit_text_secondary_v5" android:id="@id/dashtv_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trans_v5_value" app:dash="false" style="@style/Uikit_font_sans_5_0_weight_400" />
+            <View android:id="@id/valueUnderLineSpace" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.95000005dip" />
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/uikit_text_primary_v5" android:id="@id/tv_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textDirection="ltr" style="@style/Uikit_font_sans_5_0_weight_500" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <Space android:layout_width="@dimen/uikit_dp_4" android:layout_height="0.0dip" />
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="end" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.gateio.lib.uikit.widget.GTUnderlineTextViewV5 android:textSize="@dimen/text_size_12" android:textColor="@color/uikit_text_secondary_v5" android:gravity="end" android:id="@id/dashtv_mmr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trans_v5_mmr_short" style="@style/Uikit_font_sans_5_0_weight_400" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/text_size_14" android:textColor="@color/uikit_text_success_v5" android:gravity="end" android:id="@id/tv_mmr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textDirection="ltr" style="@style/Uikit_font_sans_5_0_weight_500" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:id="@id/cell_ll_3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_12" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/cell_ll_2">
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.gateio.lib.uikit.widget.GTUnderlineTextViewV5 android:textSize="@dimen/text_size_12" android:textColor="@color/uikit_text_secondary_v5" android:id="@id/dashtv_average_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trans_v5_average_price" app:dash="false" style="@style/Uikit_font_sans_5_0_weight_400" />
+            <View android:id="@id/averageUnderLineSpace" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.95000005dip" />
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/uikit_text_primary_v5" android:id="@id/tv_average_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textDirection="ltr" style="@style/Uikit_font_sans_5_0_weight_500" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <Space android:layout_width="@dimen/uikit_dp_4" android:layout_height="0.0dip" />
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0">
+            <com.gateio.biz.trans.widget.TransDashTextView android:textSize="@dimen/text_size_12" android:textColor="@color/uikit_text_secondary_v5" android:id="@id/dashtv_last_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trans_v5_est_price" style="@style/Uikit_font_sans_5_0_weight_400" />
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/uikit_text_warning_v5" android:id="@id/tv_last_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textDirection="ltr" style="@style/Uikit_font_sans_5_0_weight_500" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <Space android:layout_width="@dimen/uikit_dp_4" android:layout_height="0.0dip" />
+        <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="0.0" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:id="@id/btn_ll" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_16" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/cell_ll_3">
+        <com.gateio.lib.uikit.button.GTButtonV5 android:id="@id/btn_close_market" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/trans_v5_close_market" android:layout_weight="1.0" app:uikit_buttonDimenV5="xSmall" app:uikit_buttonTypeV5="secondary_gray" />
+        <Space android:layout_width="@dimen/uikit_dp_8" android:layout_height="0.0dip" />
+        <com.gateio.lib.uikit.button.GTButtonV5 android:id="@id/btn_add_margin" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/trans_v5_add_margin" android:layout_weight="1.0" app:uikit_buttonDimenV5="xSmall" app:uikit_buttonTypeV5="secondary_gray" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <View android:id="@id/divider" android:background="@color/uikit_line_divider_v5" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="@dimen/uikit_dp_16" app:layout_constraintTop_toBottomOf="@id/btn_ll" />
+    <View android:id="@id/view_space" android:layout_width="fill_parent" android:layout_height="@dimen/uikit_dp_32" app:layout_constraintTop_toBottomOf="@id/divider" />
+</androidx.constraintlayout.widget.ConstraintLayout>

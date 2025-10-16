@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruffian.library.widget.RLinearLayout android:orientation="vertical" android:paddingLeft="@dimen/uikit_margin_padding_12" android:paddingRight="@dimen/uikit_margin_padding_12" android:paddingBottom="@dimen/uikit_margin_padding_12" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/uikit_margin_padding_12" app:background_normal="@color/uikit_cmpt_16_v3" app:corner_radius_top_left="@dimen/uikit_radius_12" app:corner_radius_top_right="@dimen/uikit_radius_12"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.fiatloan.view.SelectCoinHeader android:id="@id/popup_header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.gateio.lib.uikit.search.GTSearchViewV3 android:id="@id/search_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/uikit_margin_padding_8" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_popup" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <com.gateio.lib.uikit.state.GTEmptyViewV3 android:layout_gravity="center_horizontal" android:id="@id/empty_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="48.0dip" app:uikit_emptyTypeV3="search_empty" />
+</com.ruffian.library.widget.RLinearLayout>

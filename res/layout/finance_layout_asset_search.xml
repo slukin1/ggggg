@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_search" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginStart="@dimen/margin_padding_15" android:layout_marginEnd="@dimen/margin_padding_15"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:textSize="14.0sp" android:textColor="@color/uikit_color_999999_8692a3" android:id="@id/cb_assets" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxWidth="200.0dip" android:text="@string/asset_hide_zero" android:layout_centerVertical="true" android:paddingStart="5.0dip" style="@style/cb_chain" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/ed_login_bg" android:layout_width="120.0dip" android:layout_height="24.0dip" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+        <ImageView android:padding="4.0dip" android:visibility="visible" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@mipmap/ic_search_new" />
+        <EditText android:textSize="14.0sp" android:textColor="@color/uikit_color_333333_e6e6e6" android:textColorHint="@color/uikit_color_999999_8692a3" android:id="@id/search_for_coin" android:background="@null" android:hint="@string/search" android:singleLine="true" style="@style/ww_wrap" />
+        <ImageView android:id="@id/iv_delete_search" android:padding="6.0dip" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@mipmap/finance_ic_delete_new" />
+    </LinearLayout>
+    <View android:layout_alignParentBottom="true" style="@style/uikit_view_line_mian_v" />
+</RelativeLayout>

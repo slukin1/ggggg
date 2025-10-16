@@ -1,0 +1,108 @@
+{
+  "all": [  ],
+  "default_menus": [],
+  "authed_menus": [{
+    "code": "information",
+    "name": "Information",
+    "children": [{
+      "code": "learn",
+      "name": "Gate Learn",
+      "url": "https://app.bitstreamonline.net/learn",
+      "image": "https://gimg2.gateimg.com/image/1711801903467738621GateLearnDark.png",
+      "hoted": false,
+      "login": false,
+      "top_order": 0,
+      "default_order": 10,
+      "default_menu": 0,
+      "support_langs": []
+    },{
+      "code": "boke",
+      "name": "Blog",
+      "url": "https://app.bitstreamonline.net/blog",
+      "image": "https://gimg2.gateimg.com/image/171180190331144094BlogDark.png",
+      "hoted": false,
+      "login": false,
+      "top_order": 9,
+      "default_order": 0,
+      "default_menu": 0,
+      "support_langs": []
+    },  {
+      "code": "bigdata",
+      "name": "Analytics",
+      "image": "https://gimg.gateimg.com/image/1711796815905093693BigDataDark.png",
+      "hoted": false,
+      "login": false,
+      "top_order": 0,
+      "default_order": 0,
+      "default_menu": 0,
+      "support_langs": []
+    }]
+  }, {
+    "code": "more",
+    "name": "More",
+    "children": [{
+      "code": "preference",
+      "name": "Preferences",
+      "image": "https://gimg2.gateimg.com/image/1711589260382565168PreferenceSettingsDark.png",
+      "hoted": false,
+      "login": false,
+      "top_order": 0,
+      "default_order": 0,
+      "default_menu": 0,
+      "support_langs": []
+    }]
+  }],
+  "not_logged_menus": [{
+    "code": "information",
+    "name": "Information",
+    "children": [{
+      "code": "learn",
+      "name": "Gate Learn",
+      "url": "https://app.bitstreamonline.net/learn",
+      "image": "https://gimg2.gateimg.com/image/1711801903467738621GateLearnDark.png",
+      "hoted": false,
+      "login": false,
+      "top_order": 0,
+      "default_order": 10,
+      "default_menu": 0,
+      "support_langs": []
+    },{
+      "code": "boke",
+      "name": "blog",
+      "url": "https://app.bitstreamonline.net/blog",
+      "image": "https://gimg2.gateimg.com/image/171180190331144094BlogDark.png",
+      "hoted": false,
+      "login": false,
+      "top_order": 9,
+      "default_order": 0,
+      "default_menu": 0,
+      "support_langs": []
+    },  {
+      "code": "bigdata",
+      "name": "Analytics",
+      "image": "https://gimg.gateimg.com/image/1711796815905093693BigDataDark.png",
+      "hoted": false,
+      "login": false,
+      "top_order": 0,
+      "default_order": 0,
+      "default_menu": 0,
+      "support_langs": []
+    }]
+  }, {
+    "code": "more",
+    "name": "More",
+    "children": [{
+      "code": "preference",
+      "name": "Preferences",
+      "image": "https://gimg2.gateimg.com/image/1711589260382565168PreferenceSettingsDark.png",
+      "hoted": false,
+      "login": false,
+      "top_order": 0,
+      "default_order": 0,
+      "default_menu": 0,
+      "support_langs": []
+    }]
+  }],
+  "recommend": [],
+  "customer": []
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/margin_padding_16" android:paddingRight="@dimen/margin_padding_16" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_16" android:text="@string/futures_trigger_condition" style="@style/Text_text_primary_16_weight_600_v5" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/futures_start_condition_iceberg_desc" android:lineSpacingExtra="@dimen/dp_2" style="@style/Text_text_primary_14_weight_400_v5" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_12" android:text="@string/exchange_futures_iceberg_advance_limit_price" style="@style/Text_text_primary_16_weight_600_v5" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="@dimen/margin_padding_8" android:text="@string/futures_order_iceberg_advance_limit_tips" android:lineSpacingExtra="@dimen/dp_2" style="@style/Text_text_primary_14_weight_400_v5" />
+</LinearLayout>

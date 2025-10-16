@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:background="@drawable/shape_main_dialog_top" style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/ll_all" android:visibility="gone" style="@style/match_wrap">
+        <TextView android:textColor="@color/uikit_color_333333_e6e6e6" android:gravity="center" android:layout_width="fill_parent" android:layout_height="50.0dip" android:button="@null" android:text="@string/moments_qbkj" />
+        <View style="@style/uikit_view_line_mian_v" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/ll_rmbkj" style="@style/match_wrap">
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/uikit_color_333333_e6e6e6" android:gravity="center" android:layout_width="fill_parent" android:layout_height="50.0dip" android:button="@null" android:text="@string/moments_rmbkj" />
+        <View style="@style/uikit_view_line_mian_v" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/ll_zjkj" style="@style/match_wrap">
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/uikit_color_333333_e6e6e6" android:gravity="center" android:layout_width="fill_parent" android:layout_height="50.0dip" android:button="@null" android:text="@string/moments_zjkj" />
+        <View style="@style/uikit_view_line_mian_v" />
+    </LinearLayout>
+    <View style="@style/view_line_mian_v_blod" />
+    <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/uikit_color_333333_e6e6e6" android:gravity="center" android:id="@id/tv_cancel" android:layout_width="fill_parent" android:layout_height="50.0dip" android:button="@null" android:text="@string/user_qx" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/wrap_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.common.view.CornerLinearLayout android:id="@id/ll_head3" android:padding="1.0dip" android:layout_marginStart="36.0dip" app:radius="14.0dip" style="@style/wrap_wrap">
+        <com.gateio.common.view.GateioAvatarView android:gravity="center" android:id="@id/tv_head3" android:layout_width="@dimen/margin_padding_24" android:layout_height="@dimen/margin_padding_24" app:avatar_text_size="12" />
+    </com.gateio.common.view.CornerLinearLayout>
+    <com.gateio.common.view.CornerLinearLayout android:id="@id/ll_head2" android:padding="1.0dip" android:layout_marginStart="18.0dip" app:radius="14.0dip" style="@style/wrap_wrap">
+        <com.gateio.common.view.GateioAvatarView android:gravity="center" android:id="@id/tv_head2" android:layout_width="@dimen/margin_padding_24" android:layout_height="@dimen/margin_padding_24" app:avatar_text_size="12" />
+    </com.gateio.common.view.CornerLinearLayout>
+    <com.gateio.common.view.CornerLinearLayout android:id="@id/ll_head1" android:padding="1.0dip" app:radius="14.0dip" style="@style/wrap_wrap">
+        <com.gateio.common.view.GateioAvatarView android:gravity="center" android:id="@id/tv_head1" android:layout_width="@dimen/margin_padding_24" android:layout_height="@dimen/margin_padding_24" app:avatar_text_size="12" />
+    </com.gateio.common.view.CornerLinearLayout>
+</RelativeLayout>

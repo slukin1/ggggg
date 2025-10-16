@@ -1,0 +1,1370 @@
+.class public final Lcom/gateio/biz/market/databinding/MarketItemAiCoinSelectionBinding;
+.super Ljava/lang/Object;
+.source "MarketItemAiCoinSelectionBinding.java"
+
+# interfaces
+.implements Landroidx/viewbinding/ViewBinding;
+
+
+# instance fields
+.field public final layoutTop:Landroidx/constraintlayout/widget/ConstraintLayout;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final llMini:Landroid/widget/LinearLayout;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final marketAiCoinSelectionIconMore:Lcom/gateio/uiComponent/GateIconFont;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final marketAiCoinSelectionTag1:Lcom/gateio/lib/uikit/tag/GTTagV3;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final marketAiCoinSelectionTag2:Lcom/gateio/lib/uikit/tag/GTTagV3;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final marketAiCoinSelectionTag3:Lcom/gateio/lib/uikit/tag/GTTagV3;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final marketChangeRatio:Lcom/gateio/common/view/CornerTextView;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final marketCurrency:Landroid/widget/TextView;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final marketCurrencyIcon:Lcom/gateio/common/view/RoundImageView;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final marketCurrencyLabel:Landroid/widget/TextView;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final marketCurrencyLayout:Landroidx/constraintlayout/widget/ConstraintLayout;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final marketCurrencySeparator:Landroid/widget/TextView;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final marketCurrentPrice:Lcom/gateio/biz/market/weight/MarketAutoSizingText;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final marketExchangePrice:Landroid/widget/TextView;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final marketFlChangeKLineLayout:Landroid/widget/FrameLayout;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final marketLlPriceLayout:Landroid/widget/LinearLayout;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final marketLlTagLayout:Landroid/widget/LinearLayout;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final marketMiniChart:Lcom/gateio/biz/market/weight/MarketMiniKLineChart;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field private final rootView:Landroidx/constraintlayout/widget/ConstraintLayout;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final tvMiniChange:Landroid/widget/TextView;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final tvVolume:Landroid/widget/TextView;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+
+# direct methods
+.method private constructor <init>(Landroidx/constraintlayout/widget/ConstraintLayout;Landroidx/constraintlayout/widget/ConstraintLayout;Landroid/widget/LinearLayout;Lcom/gateio/uiComponent/GateIconFont;Lcom/gateio/lib/uikit/tag/GTTagV3;Lcom/gateio/lib/uikit/tag/GTTagV3;Lcom/gateio/lib/uikit/tag/GTTagV3;Lcom/gateio/common/view/CornerTextView;Landroid/widget/TextView;Lcom/gateio/common/view/RoundImageView;Landroid/widget/TextView;Landroidx/constraintlayout/widget/ConstraintLayout;Landroid/widget/TextView;Lcom/gateio/biz/market/weight/MarketAutoSizingText;Landroid/widget/TextView;Landroid/widget/FrameLayout;Landroid/widget/LinearLayout;Landroid/widget/LinearLayout;Lcom/gateio/biz/market/weight/MarketMiniKLineChart;Landroid/widget/TextView;Landroid/widget/TextView;)V
+    .locals 2
+    .param p1    # Landroidx/constraintlayout/widget/ConstraintLayout;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroidx/constraintlayout/widget/ConstraintLayout;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p3    # Landroid/widget/LinearLayout;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p4    # Lcom/gateio/uiComponent/GateIconFont;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p5    # Lcom/gateio/lib/uikit/tag/GTTagV3;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p6    # Lcom/gateio/lib/uikit/tag/GTTagV3;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p7    # Lcom/gateio/lib/uikit/tag/GTTagV3;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p8    # Lcom/gateio/common/view/CornerTextView;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p9    # Landroid/widget/TextView;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p10    # Lcom/gateio/common/view/RoundImageView;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p11    # Landroid/widget/TextView;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p12    # Landroidx/constraintlayout/widget/ConstraintLayout;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p13    # Landroid/widget/TextView;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p14    # Lcom/gateio/biz/market/weight/MarketAutoSizingText;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p15    # Landroid/widget/TextView;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p16    # Landroid/widget/FrameLayout;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p17    # Landroid/widget/LinearLayout;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p18    # Landroid/widget/LinearLayout;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p19    # Lcom/gateio/biz/market/weight/MarketMiniKLineChart;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p20    # Landroid/widget/TextView;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p21    # Landroid/widget/TextView;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    move-object v0, p0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    move-object v1, p1
+
+    .line 2
+    iput-object v1, v0, Lcom/gateio/biz/market/databinding/MarketItemAiCoinSelectionBinding;->rootView:Landroidx/constraintlayout/widget/ConstraintLayout;
+
+    move-object v1, p2
+
+    .line 3
+    iput-object v1, v0, Lcom/gateio/biz/market/databinding/MarketItemAiCoinSelectionBinding;->layoutTop:Landroidx/constraintlayout/widget/ConstraintLayout;
+
+    move-object v1, p3
+
+    .line 4
+    iput-object v1, v0, Lcom/gateio/biz/market/databinding/MarketItemAiCoinSelectionBinding;->llMini:Landroid/widget/LinearLayout;
+
+    move-object v1, p4
+
+    .line 5
+    iput-object v1, v0, Lcom/gateio/biz/market/databinding/MarketItemAiCoinSelectionBinding;->marketAiCoinSelectionIconMore:Lcom/gateio/uiComponent/GateIconFont;
+
+    move-object v1, p5
+
+    .line 6
+    iput-object v1, v0, Lcom/gateio/biz/market/databinding/MarketItemAiCoinSelectionBinding;->marketAiCoinSelectionTag1:Lcom/gateio/lib/uikit/tag/GTTagV3;
+
+    move-object v1, p6
+
+    .line 7
+    iput-object v1, v0, Lcom/gateio/biz/market/databinding/MarketItemAiCoinSelectionBinding;->marketAiCoinSelectionTag2:Lcom/gateio/lib/uikit/tag/GTTagV3;
+
+    move-object v1, p7
+
+    .line 8
+    iput-object v1, v0, Lcom/gateio/biz/market/databinding/MarketItemAiCoinSelectionBinding;->marketAiCoinSelectionTag3:Lcom/gateio/lib/uikit/tag/GTTagV3;
+
+    move-object v1, p8
+
+    .line 9
+    iput-object v1, v0, Lcom/gateio/biz/market/databinding/MarketItemAiCoinSelectionBinding;->marketChangeRatio:Lcom/gateio/common/view/CornerTextView;
+
+    move-object v1, p9
+
+    .line 10
+    iput-object v1, v0, Lcom/gateio/biz/market/databinding/MarketItemAiCoinSelectionBinding;->marketCurrency:Landroid/widget/TextView;
+
+    move-object v1, p10
+
+    .line 11
+    iput-object v1, v0, Lcom/gateio/biz/market/databinding/MarketItemAiCoinSelectionBinding;->marketCurrencyIcon:Lcom/gateio/common/view/RoundImageView;
+
+    move-object v1, p11
+
+    .line 12
+    iput-object v1, v0, Lcom/gateio/biz/market/databinding/MarketItemAiCoinSelectionBinding;->marketCurrencyLabel:Landroid/widget/TextView;
+
+    move-object v1, p12
+
+    .line 13
+    iput-object v1, v0, Lcom/gateio/biz/market/databinding/MarketItemAiCoinSelectionBinding;->marketCurrencyLayout:Landroidx/constraintlayout/widget/ConstraintLayout;
+
+    move-object v1, p13
+
+    .line 14
+    iput-object v1, v0, Lcom/gateio/biz/market/databinding/MarketItemAiCoinSelectionBinding;->marketCurrencySeparator:Landroid/widget/TextView;
+
+    move-object/from16 v1, p14
+
+    .line 15
+    iput-object v1, v0, Lcom/gateio/biz/market/databinding/MarketItemAiCoinSelectionBinding;->marketCurrentPrice:Lcom/gateio/biz/market/weight/MarketAutoSizingText;
+
+    move-object/from16 v1, p15
+
+    .line 16
+    iput-object v1, v0, Lcom/gateio/biz/market/databinding/MarketItemAiCoinSelectionBinding;->marketExchangePrice:Landroid/widget/TextView;
+
+    move-object/from16 v1, p16
+
+    .line 17
+    iput-object v1, v0, Lcom/gateio/biz/market/databinding/MarketItemAiCoinSelectionBinding;->marketFlChangeKLineLayout:Landroid/widget/FrameLayout;
+
+    move-object/from16 v1, p17
+
+    .line 18
+    iput-object v1, v0, Lcom/gateio/biz/market/databinding/MarketItemAiCoinSelectionBinding;->marketLlPriceLayout:Landroid/widget/LinearLayout;
+
+    move-object/from16 v1, p18
+
+    .line 19
+    iput-object v1, v0, Lcom/gateio/biz/market/databinding/MarketItemAiCoinSelectionBinding;->marketLlTagLayout:Landroid/widget/LinearLayout;
+
+    move-object/from16 v1, p19
+
+    .line 20
+    iput-object v1, v0, Lcom/gateio/biz/market/databinding/MarketItemAiCoinSelectionBinding;->marketMiniChart:Lcom/gateio/biz/market/weight/MarketMiniKLineChart;
+
+    move-object/from16 v1, p20
+
+    .line 21
+    iput-object v1, v0, Lcom/gateio/biz/market/databinding/MarketItemAiCoinSelectionBinding;->tvMiniChange:Landroid/widget/TextView;
+
+    move-object/from16 v1, p21
+
+    .line 22
+    iput-object v1, v0, Lcom/gateio/biz/market/databinding/MarketItemAiCoinSelectionBinding;->tvVolume:Landroid/widget/TextView;
+
+    return-void
+.end method
+
+.method public static bind(Landroid/view/View;)Lcom/gateio/biz/market/databinding/MarketItemAiCoinSelectionBinding;
+    .locals 23
+    .param p0    # Landroid/view/View;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 1
+    .line 2
+    move-object/from16 v0, p0
+
+    .line 3
+    move-object v2, v0
+
+    .line 4
+    .line 5
+    check-cast v2, Landroidx/constraintlayout/widget/ConstraintLayout;
+
+    .line 6
+    .line 7
+    sget v1, Lcom/gateio/biz/market/R$id;->ll_mini:I
+
+    .line 8
+    .line 9
+    .line 10
+    invoke-static {v0, v1}, Landroidx/viewbinding/ViewBindings;->findChildViewById(Landroid/view/View;I)Landroid/view/View;
+
+    .line 11
+    move-result-object v3
+
+    .line 12
+    .line 13
+    check-cast v3, Landroid/widget/LinearLayout;
+
+    .line 14
+    .line 15
+    if-eqz v3, :cond_0
+
+    .line 16
+    .line 17
+    sget v1, Lcom/gateio/biz/market/R$id;->market_ai_coin_selection_icon_more:I
+
+    .line 18
+    .line 19
+    .line 20
+    invoke-static {v0, v1}, Landroidx/viewbinding/ViewBindings;->findChildViewById(Landroid/view/View;I)Landroid/view/View;
+
+    .line 21
+    move-result-object v4
+
+    .line 22
+    .line 23
+    check-cast v4, Lcom/gateio/uiComponent/GateIconFont;
+
+    .line 24
+    .line 25
+    if-eqz v4, :cond_0
+
+    .line 26
+    .line 27
+    sget v1, Lcom/gateio/biz/market/R$id;->market_ai_coin_selection_tag_1:I
+
+    .line 28
+    .line 29
+    .line 30
+    invoke-static {v0, v1}, Landroidx/viewbinding/ViewBindings;->findChildViewById(Landroid/view/View;I)Landroid/view/View;
+
+    .line 31
+    move-result-object v5
+
+    .line 32
+    .line 33
+    check-cast v5, Lcom/gateio/lib/uikit/tag/GTTagV3;
+
+    .line 34
+    .line 35
+    if-eqz v5, :cond_0
+
+    .line 36
+    .line 37
+    sget v1, Lcom/gateio/biz/market/R$id;->market_ai_coin_selection_tag_2:I
+
+    .line 38
+    .line 39
+    .line 40
+    invoke-static {v0, v1}, Landroidx/viewbinding/ViewBindings;->findChildViewById(Landroid/view/View;I)Landroid/view/View;
+
+    .line 41
+    move-result-object v6
+
+    .line 42
+    .line 43
+    check-cast v6, Lcom/gateio/lib/uikit/tag/GTTagV3;
+
+    .line 44
+    .line 45
+    if-eqz v6, :cond_0
+
+    .line 46
+    .line 47
+    sget v1, Lcom/gateio/biz/market/R$id;->market_ai_coin_selection_tag_3:I
+
+    .line 48
+    .line 49
+    .line 50
+    invoke-static {v0, v1}, Landroidx/viewbinding/ViewBindings;->findChildViewById(Landroid/view/View;I)Landroid/view/View;
+
+    .line 51
+    move-result-object v7
+
+    .line 52
+    .line 53
+    check-cast v7, Lcom/gateio/lib/uikit/tag/GTTagV3;
+
+    .line 54
+    .line 55
+    if-eqz v7, :cond_0
+
+    .line 56
+    .line 57
+    sget v1, Lcom/gateio/biz/market/R$id;->market_change_ratio:I
+
+    .line 58
+    .line 59
+    .line 60
+    invoke-static {v0, v1}, Landroidx/viewbinding/ViewBindings;->findChildViewById(Landroid/view/View;I)Landroid/view/View;
+
+    .line 61
+    move-result-object v8
+
+    .line 62
+    .line 63
+    check-cast v8, Lcom/gateio/common/view/CornerTextView;
+
+    .line 64
+    .line 65
+    if-eqz v8, :cond_0
+
+    .line 66
+    .line 67
+    sget v1, Lcom/gateio/biz/market/R$id;->market_currency:I
+
+    .line 68
+    .line 69
+    .line 70
+    invoke-static {v0, v1}, Landroidx/viewbinding/ViewBindings;->findChildViewById(Landroid/view/View;I)Landroid/view/View;
+
+    .line 71
+    move-result-object v9
+
+    .line 72
+    .line 73
+    check-cast v9, Landroid/widget/TextView;
+
+    .line 74
+    .line 75
+    if-eqz v9, :cond_0
+
+    .line 76
+    .line 77
+    sget v1, Lcom/gateio/biz/market/R$id;->market_currency_icon:I
+
+    .line 78
+    .line 79
+    .line 80
+    invoke-static {v0, v1}, Landroidx/viewbinding/ViewBindings;->findChildViewById(Landroid/view/View;I)Landroid/view/View;
+
+    .line 81
+    move-result-object v10
+
+    .line 82
+    .line 83
+    check-cast v10, Lcom/gateio/common/view/RoundImageView;
+
+    .line 84
+    .line 85
+    if-eqz v10, :cond_0
+
+    .line 86
+    .line 87
+    sget v1, Lcom/gateio/biz/market/R$id;->market_currency_label:I
+
+    .line 88
+    .line 89
+    .line 90
+    invoke-static {v0, v1}, Landroidx/viewbinding/ViewBindings;->findChildViewById(Landroid/view/View;I)Landroid/view/View;
+
+    .line 91
+    move-result-object v11
+
+    .line 92
+    .line 93
+    check-cast v11, Landroid/widget/TextView;
+
+    .line 94
+    .line 95
+    if-eqz v11, :cond_0
+
+    .line 96
+    .line 97
+    sget v1, Lcom/gateio/biz/market/R$id;->market_currency_layout:I
+
+    .line 98
+    .line 99
+    .line 100
+    invoke-static {v0, v1}, Landroidx/viewbinding/ViewBindings;->findChildViewById(Landroid/view/View;I)Landroid/view/View;
+
+    .line 101
+    move-result-object v12
+
+    .line 102
+    .line 103
+    check-cast v12, Landroidx/constraintlayout/widget/ConstraintLayout;
+
+    .line 104
+    .line 105
+    if-eqz v12, :cond_0
+
+    .line 106
+    .line 107
+    sget v1, Lcom/gateio/biz/market/R$id;->market_currency_separator:I
+
+    .line 108
+    .line 109
+    .line 110
+    invoke-static {v0, v1}, Landroidx/viewbinding/ViewBindings;->findChildViewById(Landroid/view/View;I)Landroid/view/View;
+
+    .line 111
+    move-result-object v13
+
+    .line 112
+    .line 113
+    check-cast v13, Landroid/widget/TextView;
+
+    .line 114
+    .line 115
+    if-eqz v13, :cond_0
+
+    .line 116
+    .line 117
+    sget v1, Lcom/gateio/biz/market/R$id;->market_current_price:I
+
+    .line 118
+    .line 119
+    .line 120
+    invoke-static {v0, v1}, Landroidx/viewbinding/ViewBindings;->findChildViewById(Landroid/view/View;I)Landroid/view/View;
+
+    .line 121
+    move-result-object v14
+
+    .line 122
+    .line 123
+    check-cast v14, Lcom/gateio/biz/market/weight/MarketAutoSizingText;
+
+    .line 124
+    .line 125
+    if-eqz v14, :cond_0
+
+    .line 126
+    .line 127
+    sget v1, Lcom/gateio/biz/market/R$id;->market_exchange_price:I
+
+    .line 128
+    .line 129
+    .line 130
+    invoke-static {v0, v1}, Landroidx/viewbinding/ViewBindings;->findChildViewById(Landroid/view/View;I)Landroid/view/View;
+
+    .line 131
+    move-result-object v15
+
+    .line 132
+    .line 133
+    check-cast v15, Landroid/widget/TextView;
+
+    .line 134
+    .line 135
+    if-eqz v15, :cond_0
+
+    .line 136
+    .line 137
+    sget v1, Lcom/gateio/biz/market/R$id;->market_fl_change_k_line_layout:I
+
+    .line 138
+    .line 139
+    .line 140
+    invoke-static {v0, v1}, Landroidx/viewbinding/ViewBindings;->findChildViewById(Landroid/view/View;I)Landroid/view/View;
+
+    .line 141
+    move-result-object v16
+
+    .line 142
+    .line 143
+    check-cast v16, Landroid/widget/FrameLayout;
+
+    .line 144
+    .line 145
+    if-eqz v16, :cond_0
+
+    .line 146
+    .line 147
+    sget v1, Lcom/gateio/biz/market/R$id;->market_ll_price_layout:I
+
+    .line 148
+    .line 149
+    .line 150
+    invoke-static {v0, v1}, Landroidx/viewbinding/ViewBindings;->findChildViewById(Landroid/view/View;I)Landroid/view/View;
+
+    .line 151
+    move-result-object v17
+
+    .line 152
+    .line 153
+    check-cast v17, Landroid/widget/LinearLayout;
+
+    .line 154
+    .line 155
+    if-eqz v17, :cond_0
+
+    .line 156
+    .line 157
+    sget v1, Lcom/gateio/biz/market/R$id;->market_ll_tag_layout:I
+
+    .line 158
+    .line 159
+    .line 160
+    invoke-static {v0, v1}, Landroidx/viewbinding/ViewBindings;->findChildViewById(Landroid/view/View;I)Landroid/view/View;
+
+    .line 161
+    move-result-object v18
+
+    .line 162
+    .line 163
+    check-cast v18, Landroid/widget/LinearLayout;
+
+    .line 164
+    .line 165
+    if-eqz v18, :cond_0
+
+    .line 166
+    .line 167
+    sget v1, Lcom/gateio/biz/market/R$id;->market_mini_chart:I
+
+    .line 168
+    .line 169
+    .line 170
+    invoke-static {v0, v1}, Landroidx/viewbinding/ViewBindings;->findChildViewById(Landroid/view/View;I)Landroid/view/View;
+
+    .line 171
+    move-result-object v19
+
+    .line 172
+    .line 173
+    check-cast v19, Lcom/gateio/biz/market/weight/MarketMiniKLineChart;
+
+    .line 174
+    .line 175
+    if-eqz v19, :cond_0
+
+    .line 176
+    .line 177
+    sget v1, Lcom/gateio/biz/market/R$id;->tv_mini_change:I
+
+    .line 178
+    .line 179
+    .line 180
+    invoke-static {v0, v1}, Landroidx/viewbinding/ViewBindings;->findChildViewById(Landroid/view/View;I)Landroid/view/View;
+
+    .line 181
+    move-result-object v20
+
+    .line 182
+    .line 183
+    check-cast v20, Landroid/widget/TextView;
+
+    .line 184
+    .line 185
+    if-eqz v20, :cond_0
+
+    .line 186
+    .line 187
+    sget v1, Lcom/gateio/biz/market/R$id;->tv_volume:I
+
+    .line 188
+    .line 189
+    .line 190
+    invoke-static {v0, v1}, Landroidx/viewbinding/ViewBindings;->findChildViewById(Landroid/view/View;I)Landroid/view/View;
+
+    .line 191
+    move-result-object v21
+
+    .line 192
+    .line 193
+    check-cast v21, Landroid/widget/TextView;
+
+    .line 194
+    .line 195
+    if-eqz v21, :cond_0
+
+    .line 196
+    .line 197
+    new-instance v22, Lcom/gateio/biz/market/databinding/MarketItemAiCoinSelectionBinding;
+
+    .line 198
+    .line 199
+    move-object/from16 v0, v22
+
+    .line 200
+    move-object v1, v2
+
+    .line 201
+    .line 202
+    .line 203
+    invoke-direct/range {v0 .. v21}, Lcom/gateio/biz/market/databinding/MarketItemAiCoinSelectionBinding;-><init>(Landroidx/constraintlayout/widget/ConstraintLayout;Landroidx/constraintlayout/widget/ConstraintLayout;Landroid/widget/LinearLayout;Lcom/gateio/uiComponent/GateIconFont;Lcom/gateio/lib/uikit/tag/GTTagV3;Lcom/gateio/lib/uikit/tag/GTTagV3;Lcom/gateio/lib/uikit/tag/GTTagV3;Lcom/gateio/common/view/CornerTextView;Landroid/widget/TextView;Lcom/gateio/common/view/RoundImageView;Landroid/widget/TextView;Landroidx/constraintlayout/widget/ConstraintLayout;Landroid/widget/TextView;Lcom/gateio/biz/market/weight/MarketAutoSizingText;Landroid/widget/TextView;Landroid/widget/FrameLayout;Landroid/widget/LinearLayout;Landroid/widget/LinearLayout;Lcom/gateio/biz/market/weight/MarketMiniKLineChart;Landroid/widget/TextView;Landroid/widget/TextView;)V
+
+    .line 204
+    return-object v22
+
+    .line 205
+    .line 206
+    .line 207
+    :cond_0
+    invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
+
+    .line 208
+    move-result-object v0
+
+    .line 209
+    .line 210
+    .line 211
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getResourceName(I)Ljava/lang/String;
+
+    .line 212
+    move-result-object v0
+
+    .line 213
+    .line 214
+    new-instance v1, Ljava/lang/NullPointerException;
+
+    .line 215
+    .line 216
+    const-string/jumbo v2, "Missing required view with ID: "
+
+    .line 217
+    .line 218
+    .line 219
+    invoke-virtual {v2, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 220
+    move-result-object v0
+
+    .line 221
+    .line 222
+    .line 223
+    invoke-direct {v1, v0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    .line 224
+    throw v1
+    .line 225
+    .line 226
+    .line 227
+    .line 228
+    .line 229
+    .line 230
+    .line 231
+    .line 232
+    .line 233
+    .line 234
+    .line 235
+    .line 236
+    .line 237
+    .line 238
+    .line 239
+    .line 240
+    .line 241
+    .line 242
+    .line 243
+    .line 244
+    .line 245
+    .line 246
+    .line 247
+    .line 248
+    .line 249
+    .line 250
+    .line 251
+    .line 252
+    .line 253
+    .line 254
+    .line 255
+    .line 256
+    .line 257
+    .line 258
+    .line 259
+    .line 260
+    .line 261
+    .line 262
+    .line 263
+    .line 264
+    .line 265
+    .line 266
+    .line 267
+    .line 268
+    .line 269
+    .line 270
+    .line 271
+    .line 272
+    .line 273
+    .line 274
+    .line 275
+    .line 276
+    .line 277
+    .line 278
+    .line 279
+    .line 280
+    .line 281
+    .line 282
+    .line 283
+    .line 284
+    .line 285
+    .line 286
+    .line 287
+    .line 288
+    .line 289
+    .line 290
+    .line 291
+    .line 292
+    .line 293
+    .line 294
+    .line 295
+    .line 296
+    .line 297
+    .line 298
+    .line 299
+    .line 300
+    .line 301
+    .line 302
+    .line 303
+    .line 304
+    .line 305
+    .line 306
+    .line 307
+    .line 308
+    .line 309
+    .line 310
+    .line 311
+    .line 312
+    .line 313
+    .line 314
+    .line 315
+    .line 316
+    .line 317
+    .line 318
+    .line 319
+    .line 320
+    .line 321
+    .line 322
+    .line 323
+    .line 324
+    .line 325
+    .line 326
+    .line 327
+    .line 328
+    .line 329
+    .line 330
+    .line 331
+    .line 332
+    .line 333
+    .line 334
+    .line 335
+    .line 336
+    .line 337
+    .line 338
+    .line 339
+    .line 340
+    .line 341
+    .line 342
+    .line 343
+    .line 344
+    .line 345
+    .line 346
+    .line 347
+    .line 348
+    .line 349
+    .line 350
+    .line 351
+    .line 352
+    .line 353
+    .line 354
+    .line 355
+    .line 356
+    .line 357
+    .line 358
+    .line 359
+    .line 360
+    .line 361
+    .line 362
+    .line 363
+    .line 364
+    .line 365
+    .line 366
+    .line 367
+    .line 368
+    .line 369
+    .line 370
+    .line 371
+    .line 372
+    .line 373
+    .line 374
+    .line 375
+    .line 376
+    .line 377
+    .line 378
+    .line 379
+    .line 380
+    .line 381
+    .line 382
+    .line 383
+    .line 384
+    .line 385
+    .line 386
+    .line 387
+    .line 388
+    .line 389
+    .line 390
+    .line 391
+    .line 392
+    .line 393
+    .line 394
+    .line 395
+    .line 396
+    .line 397
+    .line 398
+    .line 399
+    .line 400
+    .line 401
+    .line 402
+    .line 403
+    .line 404
+    .line 405
+    .line 406
+    .line 407
+    .line 408
+    .line 409
+    .line 410
+    .line 411
+    .line 412
+    .line 413
+    .line 414
+    .line 415
+    .line 416
+    .line 417
+    .line 418
+    .line 419
+    .line 420
+    .line 421
+    .line 422
+    .line 423
+    .line 424
+    .line 425
+    .line 426
+    .line 427
+    .line 428
+    .line 429
+    .line 430
+    .line 431
+    .line 432
+    .line 433
+    .line 434
+    .line 435
+    .line 436
+    .line 437
+    .line 438
+    .line 439
+    .line 440
+    .line 441
+    .line 442
+    .line 443
+    .line 444
+    .line 445
+    .line 446
+    .line 447
+    .line 448
+    .line 449
+    .line 450
+    .line 451
+    .line 452
+    .line 453
+    .line 454
+    .line 455
+    .line 456
+    .line 457
+    .line 458
+    .line 459
+    .line 460
+    .line 461
+    .line 462
+    .line 463
+    .line 464
+    .line 465
+    .line 466
+    .line 467
+    .line 468
+    .line 469
+    .line 470
+    .line 471
+    .line 472
+    .line 473
+    .line 474
+    .line 475
+    .line 476
+    .line 477
+    .line 478
+    .line 479
+    .line 480
+    .line 481
+    .line 482
+    .line 483
+    .line 484
+    .line 485
+    .line 486
+    .line 487
+    .line 488
+    .line 489
+    .line 490
+    .line 491
+    .line 492
+    .line 493
+    .line 494
+    .line 495
+    .line 496
+    .line 497
+    .line 498
+    .line 499
+    .line 500
+    .line 501
+    .line 502
+    .line 503
+    .line 504
+    .line 505
+    .line 506
+    .line 507
+    .line 508
+    .line 509
+    .line 510
+    .line 511
+    .line 512
+    .line 513
+    .line 514
+    .line 515
+    .line 516
+    .line 517
+    .line 518
+    .line 519
+    .line 520
+    .line 521
+    .line 522
+    .line 523
+    .line 524
+    .line 525
+    .line 526
+    .line 527
+    .line 528
+    .line 529
+    .line 530
+    .line 531
+    .line 532
+    .line 533
+    .line 534
+    .line 535
+    .line 536
+    .line 537
+    .line 538
+    .line 539
+    .line 540
+    .line 541
+    .line 542
+    .line 543
+    .line 544
+    .line 545
+    .line 546
+    .line 547
+    .line 548
+    .line 549
+    .line 550
+    .line 551
+    .line 552
+    .line 553
+    .line 554
+    .line 555
+    .line 556
+    .line 557
+    .line 558
+    .line 559
+    .line 560
+    .line 561
+    .line 562
+    .line 563
+    .line 564
+    .line 565
+    .line 566
+    .line 567
+    .line 568
+    .line 569
+    .line 570
+    .line 571
+    .line 572
+    .line 573
+    .line 574
+    .line 575
+    .line 576
+    .line 577
+    .line 578
+    .line 579
+    .line 580
+    .line 581
+    .line 582
+    .line 583
+    .line 584
+    .line 585
+    .line 586
+    .line 587
+    .line 588
+    .line 589
+    .line 590
+    .line 591
+    .line 592
+    .line 593
+    .line 594
+    .line 595
+    .line 596
+    .line 597
+    .line 598
+    .line 599
+    .line 600
+    .line 601
+    .line 602
+    .line 603
+    .line 604
+    .line 605
+    .line 606
+    .line 607
+    .line 608
+    .line 609
+    .line 610
+    .line 611
+    .line 612
+    .line 613
+    .line 614
+    .line 615
+    .line 616
+    .line 617
+    .line 618
+    .line 619
+    .line 620
+    .line 621
+    .line 622
+    .line 623
+    .line 624
+    .line 625
+    .line 626
+    .line 627
+    .line 628
+    .line 629
+    .line 630
+    .line 631
+    .line 632
+    .line 633
+    .line 634
+    .line 635
+    .line 636
+    .line 637
+    .line 638
+    .line 639
+    .line 640
+    .line 641
+    .line 642
+    .line 643
+    .line 644
+    .line 645
+    .line 646
+    .line 647
+    .line 648
+    .line 649
+    .line 650
+    .line 651
+    .line 652
+    .line 653
+    .line 654
+    .line 655
+    .line 656
+    .line 657
+    .line 658
+    .line 659
+    .line 660
+    .line 661
+    .line 662
+    .line 663
+    .line 664
+    .line 665
+    .line 666
+    .line 667
+    .line 668
+    .line 669
+    .line 670
+    .line 671
+    .line 672
+    .line 673
+    .line 674
+    .line 675
+    .line 676
+    .line 677
+    .line 678
+    .line 679
+    .line 680
+    .line 681
+    .line 682
+    .line 683
+    .line 684
+    .line 685
+    .line 686
+    .line 687
+    .line 688
+    .line 689
+    .line 690
+    .line 691
+    .line 692
+    .line 693
+    .line 694
+    .line 695
+    .line 696
+    .line 697
+    .line 698
+    .line 699
+    .line 700
+    .line 701
+    .line 702
+    .line 703
+    .line 704
+    .line 705
+    .line 706
+    .line 707
+    .line 708
+    .line 709
+    .line 710
+    .line 711
+    .line 712
+    .line 713
+    .line 714
+    .line 715
+    .line 716
+    .line 717
+    .line 718
+    .line 719
+    .line 720
+    .line 721
+    .line 722
+    .line 723
+    .line 724
+    .line 725
+    .line 726
+    .line 727
+    .line 728
+    .line 729
+    .line 730
+    .line 731
+    .line 732
+    .line 733
+    .line 734
+    .line 735
+.end method
+
+.method public static inflate(Landroid/view/LayoutInflater;)Lcom/gateio/biz/market/databinding/MarketItemAiCoinSelectionBinding;
+    .locals 2
+    .param p0    # Landroid/view/LayoutInflater;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    const/4 v0, 0x0
+
+    const/4 v1, 0x0
+
+    .line 1
+    invoke-static {p0, v0, v1}, Lcom/gateio/biz/market/databinding/MarketItemAiCoinSelectionBinding;->inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Lcom/gateio/biz/market/databinding/MarketItemAiCoinSelectionBinding;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Lcom/gateio/biz/market/databinding/MarketItemAiCoinSelectionBinding;
+    .locals 2
+    .param p0    # Landroid/view/LayoutInflater;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p1    # Landroid/view/ViewGroup;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 2
+    sget v0, Lcom/gateio/biz/market/R$layout;->market_item_ai_coin_selection:I
+
+    const/4 v1, 0x0
+
+    invoke-virtual {p0, v0, p1, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+
+    move-result-object p0
+
+    if-eqz p2, :cond_0
+
+    .line 3
+    invoke-virtual {p1, p0}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
+
+    .line 4
+    :cond_0
+    invoke-static {p0}, Lcom/gateio/biz/market/databinding/MarketItemAiCoinSelectionBinding;->bind(Landroid/view/View;)Lcom/gateio/biz/market/databinding/MarketItemAiCoinSelectionBinding;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public bridge synthetic getRoot()Landroid/view/View;
+    .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0}, Lcom/gateio/biz/market/databinding/MarketItemAiCoinSelectionBinding;->getRoot()Landroidx/constraintlayout/widget/ConstraintLayout;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public getRoot()Landroidx/constraintlayout/widget/ConstraintLayout;
+    .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 2
+    iget-object v0, p0, Lcom/gateio/biz/market/databinding/MarketItemAiCoinSelectionBinding;->rootView:Landroidx/constraintlayout/widget/ConstraintLayout;
+
+    return-object v0
+.end method

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/match_wrap_h"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/ll_root" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:paddingStart="@dimen/margin_padding_16" style="@style/match_wrap_h">
+        <ImageView android:id="@id/iv_lgo" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@mipmap/ic_coinchoose" />
+        <LinearLayout android:layout_centerVertical="true" android:layout_marginStart="4.0dip" style="@style/ww_wrap">
+            <TextView android:textSize="16.0sp" android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_currency" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/color_999999_7c848d" android:id="@id/tv_coin_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:drawablePadding="2.0dip" app:drawableEndCompat="@mipmap/ic_arrow" />
+        </LinearLayout>
+        <ImageView android:id="@id/trans_price_sub" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@mipmap/ic_invest_percent_sub" android:scaleType="centerInside" />
+        <LinearLayout android:layout_width="80.0dip" android:layout_height="40.0dip" android:layout_marginStart="6.0dip" android:layout_marginEnd="6.0dip" style="@style/ll_funding3">
+            <EditText android:textSize="14.0sp" android:textColor="@color/text_trans_desc" android:textColorHint="@color/text_trans_title" android:gravity="center" android:id="@id/trans_price_input" android:padding="6.0dip" android:maxLength="3" android:inputType="number" style="@style/ed_funding_new" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/color_b3b3b3_67738a" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="%" android:layout_marginEnd="8.0dip" />
+        </LinearLayout>
+        <ImageView android:id="@id/trans_price_add" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@mipmap/ic_invest_percent_add" android:scaleType="centerInside" />
+        <ImageView android:id="@id/trans_price_del" android:layout_width="45.0dip" android:layout_height="50.0dip" android:src="@mipmap/ic_invest_percent_del" android:scaleType="centerInside" />
+    </LinearLayout>
+    <View android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" style="@style/view_line_v2" />
+</LinearLayout>

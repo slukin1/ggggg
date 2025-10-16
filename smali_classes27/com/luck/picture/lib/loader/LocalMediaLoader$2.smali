@@ -1,0 +1,182 @@
+.class Lcom/luck/picture/lib/loader/LocalMediaLoader$2;
+.super Lcom/luck/picture/lib/thread/PictureThreadUtils$SimpleTask;
+.source "LocalMediaLoader.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/luck/picture/lib/loader/LocalMediaLoader;->loadOnlyInAppDirAllMedia(Lcom/luck/picture/lib/interfaces/OnQueryAlbumListener;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/luck/picture/lib/thread/PictureThreadUtils$SimpleTask<",
+        "Lcom/luck/picture/lib/entity/LocalMediaFolder;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/luck/picture/lib/loader/LocalMediaLoader;
+
+.field final synthetic val$listener:Lcom/luck/picture/lib/interfaces/OnQueryAlbumListener;
+
+
+# direct methods
+.method constructor <init>(Lcom/luck/picture/lib/loader/LocalMediaLoader;Lcom/luck/picture/lib/interfaces/OnQueryAlbumListener;)V
+    .locals 0
+
+    .line 1
+    .line 2
+    iput-object p1, p0, Lcom/luck/picture/lib/loader/LocalMediaLoader$2;->this$0:Lcom/luck/picture/lib/loader/LocalMediaLoader;
+
+    .line 3
+    .line 4
+    iput-object p2, p0, Lcom/luck/picture/lib/loader/LocalMediaLoader$2;->val$listener:Lcom/luck/picture/lib/interfaces/OnQueryAlbumListener;
+
+    .line 5
+    .line 6
+    .line 7
+    invoke-direct {p0}, Lcom/luck/picture/lib/thread/PictureThreadUtils$SimpleTask;-><init>()V
+
+    .line 8
+    return-void
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+.end method
+
+
+# virtual methods
+.method public doInBackground()Lcom/luck/picture/lib/entity/LocalMediaFolder;
+    .locals 2
+
+    .line 2
+    iget-object v0, p0, Lcom/luck/picture/lib/loader/LocalMediaLoader$2;->this$0:Lcom/luck/picture/lib/loader/LocalMediaLoader;
+
+    invoke-virtual {v0}, Lcom/luck/picture/lib/loader/IBridgeMediaLoader;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/luck/picture/lib/loader/LocalMediaLoader$2;->this$0:Lcom/luck/picture/lib/loader/LocalMediaLoader;
+
+    invoke-virtual {v1}, Lcom/luck/picture/lib/loader/IBridgeMediaLoader;->getConfig()Lcom/luck/picture/lib/config/SelectorConfig;
+
+    move-result-object v1
+
+    iget-object v1, v1, Lcom/luck/picture/lib/config/SelectorConfig;->sandboxDir:Ljava/lang/String;
+
+    invoke-static {v0, v1}, Lcom/luck/picture/lib/loader/SandboxFileLoader;->loadInAppSandboxFolderFile(Landroid/content/Context;Ljava/lang/String;)Lcom/luck/picture/lib/entity/LocalMediaFolder;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public bridge synthetic doInBackground()Ljava/lang/Object;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Throwable;
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0}, Lcom/luck/picture/lib/loader/LocalMediaLoader$2;->doInBackground()Lcom/luck/picture/lib/entity/LocalMediaFolder;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public onSuccess(Lcom/luck/picture/lib/entity/LocalMediaFolder;)V
+    .locals 1
+
+    .line 2
+    invoke-static {p0}, Lcom/luck/picture/lib/thread/PictureThreadUtils;->cancel(Lcom/luck/picture/lib/thread/PictureThreadUtils$Task;)V
+
+    .line 3
+    iget-object v0, p0, Lcom/luck/picture/lib/loader/LocalMediaLoader$2;->val$listener:Lcom/luck/picture/lib/interfaces/OnQueryAlbumListener;
+
+    if-eqz v0, :cond_0
+
+    .line 4
+    invoke-interface {v0, p1}, Lcom/luck/picture/lib/interfaces/OnQueryAlbumListener;->onComplete(Ljava/lang/Object;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public bridge synthetic onSuccess(Ljava/lang/Object;)V
+    .locals 0
+
+    .line 1
+    check-cast p1, Lcom/luck/picture/lib/entity/LocalMediaFolder;
+
+    invoke-virtual {p0, p1}, Lcom/luck/picture/lib/loader/LocalMediaLoader$2;->onSuccess(Lcom/luck/picture/lib/entity/LocalMediaFolder;)V
+
+    return-void
+.end method

@@ -1,0 +1,12 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 1707491002">
+<circle id="Ellipse 1427" cx="8" cy="8" r="7.5" fill="url(#paint0_linear_15075_20992)" stroke="white"/>
+<path id="1" d="M9.66658 4L8.37525 12H6.81619L7.80832 6.02469L6.33325 6.57888L6.56947 5.16872L9.48286 4.00549L9.66658 4Z" fill="white"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_15075_20992" x1="8" y1="0" x2="8" y2="16" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F7A300"/>
+<stop offset="1" stop-color="#F4B948"/>
+</linearGradient>
+</defs>
+</svg>

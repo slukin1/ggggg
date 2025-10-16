@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/uikit_bg_primary_v5" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.title.GTNavBarV5 android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/uikit_text_size_24" android:textColor="@color/uikit_text_primary_v5" android:id="@id/title_label" android:paddingTop="@dimen/uikit_margin_padding_12" android:paddingBottom="@dimen/uikit_margin_padding_24" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fiatotc_contact_info" android:layout_below="@id/title" android:layout_marginStart="@dimen/uikit_margin_padding_16" style="@style/Uikit_font_sans_5_0_weight_600" />
+    <View android:id="@id/split_line" android:background="@color/uikit_line_divider_v5" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/uikit_margin_padding_16" android:layout_marginRight="@dimen/uikit_margin_padding_16" android:layout_below="@id/title_label" />
+    <com.gateio.common.view.ViewPagerSwipeRefreshLayout android:id="@id/swipe_refresh" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/split_line" android:overScrollMode="never" app:srlEnableLoadMore="false">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.gateio.lib.uikit.state.GTEmptyV5 android:id="@id/nodata" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="56.0dip" android:layout_centerHorizontal="true" app:uikit_descTextV5="@string/fiatotc_contact_info_tips" app:uikit_emptyButtonTextV5="@string/fiatotc_add" app:uikit_emptyTypeV5="data_empty" />
+            <androidx.core.widget.NestedScrollView android:id="@id/scroll_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/add">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/contactInfoList" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_secondary_v5" android:id="@id/tips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_margin_padding_16" android:layout_marginTop="@dimen/uikit_margin_padding_16" android:layout_marginRight="@dimen/uikit_margin_padding_16" android:text="@string/fiatotc_contact_info_tips" android:lineSpacingExtra="@dimen/dp_5" style="@style/Uikit_font_sans_5_0_weight_400" />
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+            <com.gateio.lib.uikit.helper.GTFooterButtonV5 android:id="@id/add" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_margin_padding_16" android:layout_marginRight="@dimen/uikit_margin_padding_16" android:layout_marginBottom="@dimen/uikit_margin_padding_40" android:layout_alignParentBottom="true" app:uikit_footerButtonLargeSizeV5="true" app:uikit_footerButtonTypeV5="defaultBtn" app:uikit_footerConfirmTextV5="@string/fiatotc_add" />
+        </RelativeLayout>
+    </com.gateio.common.view.ViewPagerSwipeRefreshLayout>
+</RelativeLayout>

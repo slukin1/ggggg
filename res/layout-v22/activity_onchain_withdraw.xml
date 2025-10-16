@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/uikit_bg_primary_v5" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.title.GTNavBarV5 android:id="@id/title" android:layout_width="fill_parent" android:layout_height="44.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:uikit_titleRightColorV5="@color/uikit_icon_secondary_v5" app:uikit_titleRightSecondColorV5="@color/uikit_icon_secondary_v5" app:uikit_titleRightSecondV5="" app:uikit_titleRightV5="" />
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinate_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/fra_bottom" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/title">
+        <com.google.android.material.appbar.AppBarLayout android:orientation="vertical" android:id="@id/app_bar" android:background="@null" android:paddingBottom="@dimen/uikit_margin_padding_16" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+            <com.gateio.lib.uikit.alert.GTAlertV5 android:id="@id/ga_sa_notice" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/wallets_sa_guide_kyc" app:layout_scrollFlags="scroll" app:uikit_alertEndIconVisibleV5="false" app:uikit_alertShowDialogV5="false" app:uikit_alertTypeV5="yellow" />
+            <FrameLayout android:id="@id/indicator_frame" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:layout_gravity="bottom" android:background="@color/uikit_divider_2_v3" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                <net.lucode.hackware.magicindicator.MagicIndicator android:layout_gravity="center" android:id="@id/indicator_comm" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="@dimen/uikit_margin_padding_16" android:layout_marginRight="@dimen/uikit_margin_padding_16" android:layout_marginHorizontal="@dimen/uikit_margin_padding_16" app:layout_scrollFlags="noScroll" />
+            </FrameLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <FrameLayout android:id="@id/frag_container" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <FrameLayout android:id="@id/fra_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

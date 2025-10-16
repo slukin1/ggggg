@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.banner.GTBanner android:id="@id/banner" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="420.0dip" android:layout_marginBottom="@dimen/uikit_dp_12" app:uikit_banner_indicator_normal_color="@color/uikit_neutral_1_alpha20" app:uikit_banner_indicator_selected_color="@color/uikit_neutral_1" />
+    <com.gateio.lib.uikit.widget.GTIndicatorV3 android:layout_gravity="center_horizontal" android:id="@id/indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="63.0dip" />
+    <FrameLayout android:id="@id/fl_content_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <com.gateio.uiComponent.shadow.BoxShadowLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:box_shadowAlpha="0.3" app:box_shadowBlur="16.0dip" app:box_shadowColor="@color/uikit_shadow_color_float_v3" app:box_shadowOffsetVertical="4.0dip">
+        <com.gateio.lib.uikit.widget.AdaptiveLinearLayout android:orientation="vertical" android:background="@color/uikit_cmpt_16_v3" android:layout_width="fill_parent" android:layout_height="wrap_content" app:left_top_radis="@dimen/uikit_radius_12" app:right_top_radis="@dimen/uikit_radius_12">
+            <com.gateio.lib.uikit.helper.GTPopupHeaderV3 android:id="@id/uikit_share_header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_share" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="4.0dip" android:overScrollMode="never" />
+        </com.gateio.lib.uikit.widget.AdaptiveLinearLayout>
+    </com.gateio.uiComponent.shadow.BoxShadowLayout>
+</LinearLayout>

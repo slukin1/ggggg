@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:id="@id/ll_root" android:background="@mipmap/bg_live_placeholder" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.common.view.CornerTextView android:textSize="@dimen/text_size_24" android:textStyle="bold" android:textColor="@color/color_80FFFFFF" android:gravity="center" android:background="@color/color_4DFFFFFF" android:layout_width="180.0dip" android:layout_height="80.0dip" android:text="@string/live_finished" app:radius="40.0dip" />
+    <LinearLayout style="@style/wrap_wrap">
+        <TextView android:id="@id/tv_time" android:layout_marginTop="@dimen/margin_padding_32" style="@style/tv_user_white_14" />
+        <TextView android:id="@id/tv_num" android:layout_marginTop="@dimen/margin_padding_16" style="@style/tv_user_white_14" />
+        <TextView android:id="@id/tv_like" android:layout_marginTop="@dimen/margin_padding_16" style="@style/tv_user_white_14" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_size_24" android:textStyle="bold" android:textColor="@color/uikit_white" android:gravity="center" android:id="@id/tv_close" android:background="@drawable/shape_send" android:layout_width="180.0dip" android:layout_height="48.0dip" android:layout_marginTop="100.0dip" android:text="@string/live_record_back" />
+</LinearLayout>

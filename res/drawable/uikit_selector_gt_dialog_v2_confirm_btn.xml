@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:drawable="@drawable/uikit_dialog_btn_bg_solid_color_blue" />
+    <item android:state_enabled="false" android:drawable="@drawable/uikit_gt_dialog_v2_confirm_btn_disable" />
+    <item android:drawable="@drawable/uikit_dialog_btn_bg_solid_color_blue" />
+</selector>

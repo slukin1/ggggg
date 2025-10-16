@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.common.view.CornerRelativeLayout android:layout_gravity="center" android:background="@color/uikit_color_ffffff_111f31" android:layout_width="340.0dip" android:layout_centerInParent="true" app:radius="16.0dip" style="@style/wrap_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/alert_dialog_title" android:layout_marginTop="24.0dip" android:layout_marginBottom="4.0dip" android:text="@string/service_input_account" android:layout_centerHorizontal="true" android:lineSpacingMultiplier="1.15" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip" style="@style/tv_user_black_18" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/color_999999_7c848d" android:id="@id/alert_dialog_title2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_5" android:layout_marginBottom="@dimen/margin_padding_5" android:text="@string/service_input_account_tip" android:layout_below="@id/alert_dialog_title" android:layout_centerHorizontal="true" android:layout_marginStart="@dimen/margin_padding_20" android:layout_marginEnd="@dimen/margin_padding_20" />
+    <EditText android:textColor="@color/uikit_color_333333_e7e9ea" android:textColorHint="@color/uikit_text_card_desc" android:id="@id/alert_dialog_input" android:background="@drawable/uikit_input_edit_selector" android:hint="@string/service_input_account_hint" android:layout_below="@id/alert_dialog_title2" android:layout_marginStart="@dimen/margin_padding_15" android:layout_marginEnd="@dimen/margin_padding_15" style="@style/ed_user_confirm" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_25" android:layout_below="@id/alert_dialog_input">
+        <View android:layout_width="fill_parent" android:layout_height="1.0px" style="@style/view_line_v_new" />
+        <LinearLayout android:id="@id/ll_bottom" android:layout_height="50.0dip" style="@style/match_wrap_h">
+            <TextView android:textSize="18.0sp" android:textColor="@color/color_e93a3d" android:gravity="center" android:id="@id/tv_login" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/user_login" android:layout_weight="1.0" />
+            <View android:layout_width="1.0px" android:layout_height="fill_parent" style="@style/view_line_v_new" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/uikit_color_333333_e7e9ea" android:gravity="center" android:id="@id/tv_submit" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/user_tjappeal" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</com.gateio.common.view.CornerRelativeLayout>

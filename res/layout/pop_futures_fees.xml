@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.common.view.CornerLinearLayout android:layout_gravity="center" android:background="@color/uikit_color_main_bg" android:layout_width="340.0dip" android:layout_centerInParent="true" app:radius="8.0dip" style="@style/wrap_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:paddingTop="@dimen/margin_padding_16" android:paddingStart="16.0dip" android:paddingEnd="@dimen/margin_padding_16" style="@style/match_wrap">
+        <TextView android:textColor="@color/uikit_color_333333_e6e6e6" android:gravity="center" android:layout_width="fill_parent" android:text="@string/futures_contracts_zjfl" style="@style/tv_user_black_18" />
+        <RelativeLayout android:layout_marginTop="@dimen/margin_padding_16" style="@style/match_wrap">
+            <TextView android:textColor="@color/uikit_color_666666_abb4c2" android:text="@string/futures_contracts_zjfl_cur" android:layout_centerVertical="true" style="@style/tv_user_black_14" />
+            <TextView android:textColor="@color/uikit_color_333333_e6e6e6" android:id="@id/tv_zjfl_cur" android:text="---" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/tv_user_black_14" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_marginTop="@dimen/margin_padding_8" style="@style/match_wrap">
+            <TextView android:textColor="@color/uikit_color_666666_abb4c2" android:text="@string/futures_contracts_zjfl_cur_time" android:layout_centerVertical="true" style="@style/tv_user_black_14" />
+            <cn.iwgang.countdownview.CountdownView android:id="@id/countview" android:padding="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" app:isHideTimeBackground="true" app:isShowHour="true" app:isShowMinute="true" app:isShowSecond="true" app:isSuffixTextBold="true" app:isTimeTextBold="true" app:suffixDayLeftMargin="4.0dip" app:suffixDayRightMargin="4.0dip" app:suffixGravity="center" app:suffixHourLeftMargin="4.0dip" app:suffixHourRightMargin="4.0dip" app:suffixSecondLeftMargin="4.0dip" app:suffixSecondRightMargin="4.0dip" app:suffixTextColor="@color/uikit_color_2354e6" app:suffixTextSize="14.0sp" app:timeTextColor="@color/uikit_color_2354e6" app:timeTextSize="14.0sp" />
+        </RelativeLayout>
+        <TextView android:textColor="@color/uikit_white" android:id="@id/tv_zjfl_tip" android:background="@color/color_e93a3d" android:padding="@dimen/margin_padding_8" android:visibility="gone" android:layout_marginTop="@dimen/margin_padding_16" android:text="@string/futures_contract_zjfl_tips" style="@style/tv_user_black_14" />
+    </LinearLayout>
+    <View android:layout_marginTop="12.0dip" style="@style/uikit_view_line_mian_v" />
+    <TextView android:textColor="@color/uikit_color_2354e6" android:gravity="center" android:id="@id/tv_cancel" android:padding="16.0dip" android:layout_width="fill_parent" android:text="@string/i_know" style="@style/tv_user_white_18" />
+</com.gateio.common.view.CornerLinearLayout>

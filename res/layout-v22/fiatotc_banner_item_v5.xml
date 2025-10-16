@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="56.0dip" android:paddingHorizontal="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/uikit_banner_start_iv" android:layout_width="40.0dip" android:layout_height="40.0dip" android:scaleType="centerCrop" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.gateio.lib.uikit.text.GTMultiLineTextViewV5 android:textSize="14.0sp" android:textColor="@color/uikit_text_primary_v5" android:ellipsize="end" android:id="@id/uikit_banner_tv_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="2" android:layout_marginStart="8.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/uikit_banner_start_iv" app:layout_constraintTop_toTopOf="parent" style="@style/Uikit_font_sans_5_0_weight_500" />
+</androidx.constraintlayout.widget.ConstraintLayout>

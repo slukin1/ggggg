@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/uikit_bg_1_v3" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/layout_header" layout="@layout/layout_header_bg1_v3" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.gateio.lib.uikit.state.GTEmptyViewV3 android:id="@id/tv_empty" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:uikit_titleTextV3="@string/ticker_not_data" />
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/swipyrefreshlayout" android:paddingBottom="20.0dip" android:layout_above="@id/tv_confirm" style="@style/match_match">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:visibility="gone" android:scrollbars="none" android:listSelector="@color/bg_skin_white" android:divider="@color/uikit_bg_market_line" android:dividerHeight="0.5dip" android:overScrollMode="never" style="@style/match_wrap" />
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+        <com.gateio.lib.uikit.button.GTButtonV3 android:id="@id/tv_confirm" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_padding_12" android:layout_marginTop="@dimen/uikit_margin_padding_16" android:layout_marginRight="@dimen/margin_padding_12" android:layout_marginBottom="@dimen/uikit_margin_padding_16" android:text="@string/title_gamefi_approve" android:layout_alignParentBottom="true" android:layout_marginHorizontal="@dimen/margin_padding_12" app:uikit_buttonDimenV3="medium" app:uikit_buttonTypeV3="primary" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:background="@color/uikit_layer_1_v5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/uikit_layer_1_v5" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/otc_guide_video_layout" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/uikit_margin_padding_16" android:layout_marginTop="@dimen/uikit_margin_padding_16" android:layout_marginRight="@dimen/uikit_margin_padding_16" app:layout_constraintDimensionRatio="343:192" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <ImageView android:id="@id/otc_guide_video_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/otc_guide_video_default_bg" />
+            <com.gateio.uiComponent.GateIconFont android:textSize="44.0dip" android:textColor="@color/uikit_bg_always_white_v5" android:layout_gravity="center" android:id="@id/otc_guide_video_play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/uikit_text_size_18" android:textColor="@color/uikit_text_primary_v5" android:gravity="center" android:id="@id/otc_trading_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_dp_16" android:layout_marginTop="32.0dip" android:layout_marginRight="@dimen/uikit_dp_16" android:text="@string/otc_guide_otc_trading_title" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/otc_guide_video_layout" style="@style/Uikit_font_sans_5_0_weight_700" />
+        <LinearLayout android:orientation="vertical" android:id="@id/otc_guide_desc_list" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_4" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/otc_trading_title" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

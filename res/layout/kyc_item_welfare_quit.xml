@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/uikit_margin_padding_6" android:paddingBottom="@dimen/uikit_margin_padding_6" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_secondary_v5" android:id="@id/welfare" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:lineSpacingExtra="@dimen/uikit_dp_4" android:layout_marginEnd="@dimen/uikit_margin_padding_5" style="@style/Uikit_font_sans_5_0_weight_400" />
+    <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_text_success_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+</LinearLayout>

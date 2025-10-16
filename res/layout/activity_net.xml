@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/uikit_bg_primary_v5" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.title.GTNavBarV5 android:id="@id/safety_title_view" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/network_state" app:uikit_titleRightColorV5="@color/uikit_icon_primary_v5" app:uikit_titleRightV5="" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh" style="@style/match_match">
+        <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:paddingLeft="16.0dip" android:paddingRight="16.0dip" style="@style/match_wrap">
+                <RelativeLayout android:paddingTop="12.0dip" android:paddingBottom="12.0dip" style="@style/match_wrap">
+                    <TextView android:textColor="@color/uikit_text_secondary_v5" android:id="@id/tv_xtsj_label" android:text="@string/net_dqxtsj" style="@style/tv_user_white_14" />
+                    <TextView android:id="@id/tv_xtsj" android:text="--" android:layout_alignParentEnd="true" style="@style/tv_user_black_14_500" />
+                </RelativeLayout>
+                <RelativeLayout android:paddingTop="12.0dip" android:paddingBottom="12.0dip" style="@style/match_wrap">
+                    <TextView android:textColor="@color/uikit_text_secondary_v5" android:text="@string/invest_bbh" style="@style/tv_user_white_14" />
+                    <TextView android:id="@id/tv_bbh" android:text="--" android:layout_alignParentEnd="true" style="@style/tv_user_black_14_500" />
+                </RelativeLayout>
+                <RelativeLayout android:paddingTop="12.0dip" android:paddingBottom="12.0dip" style="@style/match_wrap">
+                    <TextView android:textColor="@color/uikit_text_secondary_v5" android:text="@string/net_sbxx" style="@style/tv_user_white_14" />
+                    <TextView android:id="@id/tv_sbxx" android:text="--" android:layout_alignParentEnd="true" style="@style/tv_user_black_14_500" />
+                </RelativeLayout>
+                <RelativeLayout android:paddingTop="12.0dip" android:paddingBottom="12.0dip" style="@style/match_wrap">
+                    <TextView android:textColor="@color/uikit_text_secondary_v5" android:text="@string/net_czxt" style="@style/tv_user_white_14" />
+                    <TextView android:id="@id/tv_czxt" android:text="--" android:layout_alignParentEnd="true" style="@style/tv_user_black_14_500" />
+                </RelativeLayout>
+                <RelativeLayout android:paddingTop="12.0dip" android:paddingBottom="12.0dip" style="@style/match_wrap">
+                    <TextView android:textColor="@color/uikit_text_secondary_v5" android:text="@string/network_type" style="@style/tv_user_white_14" />
+                    <TextView android:id="@id/tv_wllx" android:text="--" android:layout_alignParentEnd="true" style="@style/tv_user_black_14_500" />
+                </RelativeLayout>
+                <RelativeLayout android:paddingTop="12.0dip" android:paddingBottom="12.0dip" style="@style/match_wrap">
+                    <TextView android:textColor="@color/uikit_text_secondary_v5" android:text="@string/net_yhipdz" style="@style/tv_user_white_14" />
+                    <TextView android:id="@id/tv_ip" android:text="--" android:layout_alignParentEnd="true" style="@style/tv_user_black_14_500" />
+                </RelativeLayout>
+                <RelativeLayout android:paddingTop="12.0dip" android:paddingBottom="12.0dip" style="@style/match_wrap">
+                    <TextView android:textColor="@color/uikit_text_secondary_v5" android:text="SSID" style="@style/tv_user_white_14" />
+                    <TextView android:id="@id/tv_ssid" android:text="--" android:layout_alignParentEnd="true" style="@style/tv_user_black_14_500" />
+                </RelativeLayout>
+                <RelativeLayout android:paddingTop="12.0dip" android:paddingBottom="12.0dip" style="@style/match_wrap">
+                    <TextView android:textColor="@color/uikit_text_secondary_v5" android:text="DID" style="@style/tv_user_white_14" />
+                    <TextView android:id="@id/tv_did" android:text="--" android:layout_alignParentEnd="true" style="@style/tv_user_black_14_500" />
+                </RelativeLayout>
+                <View android:background="@color/uikit_line_divider_v5" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="14.0dip" android:layout_marginBottom="14.0dip" />
+                <RelativeLayout android:id="@id/rl_dns" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" style="@style/match_wrap">
+                    <TextView android:textColor="@color/uikit_text_primary_v5" android:id="@id/tv_dns" android:text="@string/http_dns_resolution_service_title" style="@style/tv_user_white_16" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/uikit_text_secondary_v5" android:id="@id/tv_dns_hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/http_dns_resolution_service_proxy_tip" android:layout_below="@id/tv_dns" android:layout_marginEnd="12.0dip" android:layout_toStartOf="@id/sv_open_dns" android:layout_alignStart="@id/tv_dns" />
+                    <com.gateio.lib.uikit.switchview.GTSwitchV5 android:id="@id/sv_open_dns" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" app:uikit_switchStyleV5="large" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/rl_reset_cache" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" style="@style/match_wrap">
+                    <TextView android:textColor="@color/uikit_text_primary_v5" android:text="@string/http_reset_cache" style="@style/tv_user_white_16" />
+                    <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_icon_quaternary_v5" android:id="@id/iv_reset_cache" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentEnd="true" app:left_or_right="true" />
+                </RelativeLayout>
+                <View android:background="@color/uikit_line_divider_v5" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" />
+                <TextView android:textColor="@color/uikit_text_tertiary_v5" android:text="@string/asset_xh" style="@style/tv_user_black_14" />
+                <LinearLayout android:gravity="center_vertical" android:id="@id/ll_spot_ws" android:paddingTop="@dimen/margin_padding_16" android:paddingBottom="@dimen/margin_padding_16" style="@style/match_wrap_h">
+                    <TextView android:textColor="@color/uikit_text_primary_v5" android:text="Websocket" android:layout_weight="1.0" style="@style/tv_user_white_16" />
+                    <TextView android:textColor="@color/uikit_text_tertiary_v5" android:id="@id/tv_spot_ws_node" android:text="--" android:layout_marginStart="8.0dip" style="@style/tv_user_white_16" />
+                    <com.gateio.common.view.CornerTextView android:textStyle="bold" android:textColor="@color/uikit_text_3" android:id="@id/tv_spot_ws_time" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:text="--" android:paddingStart="4.0dip" android:paddingEnd="4.0dip" android:layout_marginStart="8.0dip" app:radius="8.0dip" style="@style/tv_user_white_12" />
+                    <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_icon_quaternary_v5" android:id="@id/iv_spot_ws" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" app:left_or_right="true" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:id="@id/ll_spot_apim" android:paddingTop="@dimen/margin_padding_16" android:paddingBottom="@dimen/margin_padding_16" style="@style/match_wrap_h">
+                    <TextView android:textColor="@color/uikit_text_primary_v5" android:text="Apim" android:layout_weight="1.0" style="@style/tv_user_white_16" />
+                    <TextView android:textColor="@color/uikit_text_tertiary_v5" android:id="@id/tv_spot_apim_node" android:text="--" android:layout_marginStart="8.0dip" style="@style/tv_user_white_16" />
+                    <com.gateio.common.view.CornerTextView android:textStyle="bold" android:textColor="@color/uikit_text_tertiary_v5" android:id="@id/tv_spot_apim_time" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:text="--" android:paddingStart="4.0dip" android:paddingEnd="4.0dip" android:layout_marginStart="8.0dip" app:radius="8.0dip" style="@style/tv_user_white_12" />
+                    <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_icon_quaternary_v5" android:id="@id/iv_spot_apim" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" app:left_or_right="true" />
+                </LinearLayout>
+                <View android:background="@color/uikit_line_divider_v5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_future_root" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/uikit_text_tertiary_v5" android:layout_marginTop="16.0dip" android:text="@string/futures" style="@style/tv_user_black_14" />
+                    <LinearLayout android:gravity="center_vertical" android:id="@id/ll_future_ws" android:paddingTop="@dimen/margin_padding_16" android:paddingBottom="@dimen/margin_padding_16" style="@style/match_wrap_h">
+                        <TextView android:textColor="@color/uikit_text_primary_v5" android:text="Websocket" android:layout_weight="1.0" style="@style/tv_user_white_16" />
+                        <TextView android:textColor="@color/uikit_text_tertiary_v5" android:id="@id/tv_future_ws_node" android:text="--" android:layout_marginStart="8.0dip" style="@style/tv_user_white_16" />
+                        <com.gateio.common.view.CornerTextView android:textStyle="bold" android:textColor="@color/uikit_text_tertiary_v5" android:id="@id/tv_future_ws_time" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:text="--" android:paddingStart="4.0dip" android:paddingEnd="4.0dip" android:layout_marginStart="8.0dip" app:radius="8.0dip" style="@style/tv_user_white_12" />
+                        <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_icon_quaternary_v5" android:id="@id/iv_future_ws" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" app:left_or_right="true" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:id="@id/ll_future_apim" android:paddingTop="@dimen/margin_padding_16" android:paddingBottom="@dimen/margin_padding_16" style="@style/match_wrap_h">
+                        <TextView android:textColor="@color/uikit_text_primary_v5" android:text="Apim" android:layout_weight="1.0" style="@style/tv_user_white_16" />
+                        <TextView android:textColor="@color/uikit_text_tertiary_v5" android:id="@id/tv_future_apim_node" android:text="--" android:layout_marginStart="8.0dip" style="@style/tv_user_white_16" />
+                        <com.gateio.common.view.CornerTextView android:textStyle="bold" android:textColor="@color/uikit_text_tertiary_v5" android:id="@id/tv_future_apim_time" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:text="--" android:paddingStart="4.0dip" android:paddingEnd="4.0dip" android:layout_marginStart="8.0dip" app:radius="8.0dip" style="@style/tv_user_white_12" />
+                        <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_icon_quaternary_v5" android:id="@id/iv_future_apim" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" app:left_or_right="true" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/uikit_line_divider_v5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_web3_root" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/uikit_text_tertiary_v5" android:layout_marginTop="16.0dip" android:text="Web3" style="@style/tv_user_black_14" />
+                    <LinearLayout android:gravity="center_vertical" android:id="@id/ll_web3_ws" android:paddingTop="@dimen/margin_padding_16" android:paddingBottom="@dimen/margin_padding_16" style="@style/match_wrap_h">
+                        <TextView android:textColor="@color/uikit_text_primary_v5" android:text="Websocket" android:layout_weight="1.0" style="@style/tv_user_white_16" />
+                        <TextView android:textColor="@color/uikit_text_tertiary_v5" android:id="@id/tv_web3_ws_node" android:text="--" android:layout_marginStart="8.0dip" style="@style/tv_user_white_16" />
+                        <com.gateio.common.view.CornerTextView android:textStyle="bold" android:textColor="@color/uikit_text_tertiary_v5" android:id="@id/tv_web3_ws_time" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:text="--" android:paddingStart="4.0dip" android:paddingEnd="4.0dip" android:layout_marginStart="8.0dip" app:radius="8.0dip" style="@style/tv_user_white_12" />
+                        <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_icon_quaternary_v5" android:id="@id/iv_web3_ws" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" app:left_or_right="true" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:id="@id/ll_web3_api" android:paddingTop="@dimen/margin_padding_16" android:paddingBottom="@dimen/margin_padding_16" style="@style/match_wrap_h">
+                        <TextView android:textColor="@color/uikit_text_primary_v5" android:text="Api" android:layout_weight="1.0" style="@style/tv_user_white_16" />
+                        <TextView android:textColor="@color/uikit_text_tertiary_v5" android:id="@id/tv_web3_api_node" android:text="--" android:layout_marginStart="8.0dip" style="@style/tv_user_white_16" />
+                        <com.gateio.common.view.CornerTextView android:textStyle="bold" android:textColor="@color/uikit_text_tertiary_v5" android:id="@id/tv_web3_api_time" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:text="--" android:paddingStart="4.0dip" android:paddingEnd="4.0dip" android:layout_marginStart="8.0dip" app:radius="8.0dip" style="@style/tv_user_white_12" />
+                        <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_icon_quaternary_v5" android:id="@id/iv_web3_api" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" app:left_or_right="true" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

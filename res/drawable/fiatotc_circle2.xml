@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="oval"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="@dimen/uikit_radius_6" android:color="@color/uikit_text_5_v3" />
+    <solid android:color="@color/uikit_card_2_v3" />
+    <size android:height="@dimen/margin_padding_20" android:width="@dimen/margin_padding_20" />
+</shape>

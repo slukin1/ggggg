@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/smart_refresh" android:tag="layout/home_fragment_page_0" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:srlEnableLoadMore="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/fragment_content" android:background="@color/uikit_bg_primary_v5" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.gateio.gateio.view.GateioStatusPlaceHolderBar android:id="@id/home_status_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.gateio.lib.homecontainer.render.HomeContentLayer android:gravity="center_vertical" android:id="@id/home_head_layer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/home_status_bar" />
+        <com.gateio.lib.uikit.alert.GTAlertV5 android:id="@id/gt_alert" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:layout_below="@id/home_head_layer" app:uikit_alertTypeV5="red" />
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/home_coordinator" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/gt_alert">
+            <com.google.android.material.appbar.AppBarLayout android:orientation="vertical" android:id="@id/home_app_bar" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip" app:layout_behavior="com.gateio.lib.uikit.behavior.AppBarLayoutBehaviorV2">
+                <com.gateio.lib.homecontainer.render.HomeContentLayer android:orientation="vertical" android:id="@id/home_content_layer" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll" />
+            </com.google.android.material.appbar.AppBarLayout>
+            <com.gateio.lib.homecontainer.render.HomeBottomLayer android:id="@id/home_bottom_layer" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </RelativeLayout>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

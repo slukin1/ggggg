@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/kyc_step_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="2.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_tertiary_v5" android:gravity="center" android:layout_gravity="center" android:id="@id/kyc_step_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/home_new_conversion_verify_identity" android:maxLines="1" style="@style/Uikit_font_sans_5_0_weight_600" />
+    <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_8">
+        <View android:id="@id/kyc_step_left_line" android:background="@color/uikit_cmpt_slider_inactive_line_v5" android:layout_width="0.0dip" android:layout_height="2.0dip" android:layout_weight="1.0" />
+        <ImageView android:id="@id/kyc_step_node" android:layout_width="14.0dip" android:layout_height="14.0dip" android:src="@drawable/shape_new_user_pause" />
+        <View android:id="@id/kyc_step_right_line" android:background="@color/uikit_cmpt_slider_inactive_line_v5" android:layout_width="0.0dip" android:layout_height="2.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

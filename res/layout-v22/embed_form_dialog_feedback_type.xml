@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.comlib.view.CornerLinearLayout android:orientation="vertical" android:background="@color/bg_3" android:paddingLeft="@dimen/margin_padding_16" android:paddingTop="@dimen/margin_padding_24" android:paddingRight="@dimen/margin_padding_16" android:paddingBottom="@dimen/margin_padding_24" android:layout_width="fill_parent" android:layout_height="wrap_content" android:topLeftRadius="@dimen/margin_padding_16" android:topRightRadius="@dimen/margin_padding_16" android:paddingHorizontal="@dimen/margin_padding_16" android:paddingVertical="@dimen/margin_padding_24"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:overScrollMode="never" />
+    <TextView android:textSize="@dimen/ts_14" android:textStyle="bold" android:textColor="@color/brand_1" android:layout_gravity="center_horizontal" android:id="@id/cancel" android:padding="@dimen/margin_padding_15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_15" android:text="@string/kyc_cancel" />
+</com.gateio.comlib.view.CornerLinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gateio.third.tradeview.chart.view.CustomKlineStepSelectorView android:id="@id/klineStepView" android:paddingBottom="@dimen/uikit_margin_padding_8" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.sparkhuu.klinelib.chart.PreMarketKTimeLineView android:id="@id/klineChartView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</androidx.appcompat.widget.LinearLayoutCompat>

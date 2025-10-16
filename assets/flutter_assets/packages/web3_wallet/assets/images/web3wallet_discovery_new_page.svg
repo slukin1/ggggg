@@ -1,0 +1,5 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 2H15H17H21C21.5523 2 22 2.44772 22 3V21C22 21.5523 21.5523 22 21 22H3C2.44772 22 2 21.5523 2 21V3C2 2.44772 2.44772 2 3 2H7H9ZM20 10H12H4V20H20V10ZM7 4H4V8V10H12H20V4H17H15H9H7Z" fill="#303236"/>
+<rect x="11" y="7" width="2" height="10" rx="1" fill="#303236"/>
+<rect x="17" y="11" width="2" height="10" rx="1" transform="rotate(90 17 11)" fill="#303236"/>
+</svg>

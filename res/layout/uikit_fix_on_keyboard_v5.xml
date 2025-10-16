@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:background="@color/uikit_cmpt_input_v5" android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ruffian.library.widget.RRelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="12.0sp" android:textColor="@color/uikit_text_secondary_v5" android:id="@id/tv_fix_keyboard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="16.0dip" android:layout_alignParentStart="true" style="@style/Uikit_font_sans_5_0_weight_400" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/uikit_text_primary_v5" android:gravity="center" android:id="@id/tv_fix_ok" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/uikit_keyboard_header_ok" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/Uikit_font_sans_5_0_weight_500" />
+    </com.ruffian.library.widget.RRelativeLayout>
+    <View android:background="@color/uikit_line_border_strong_v5" android:layout_width="fill_parent" android:layout_height="1.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

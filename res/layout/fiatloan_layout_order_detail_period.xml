@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/uikit_margin_padding_12" android:paddingTop="@dimen/uikit_margin_padding_24" android:paddingRight="@dimen/uikit_margin_padding_12" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/period_label_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/uikit_text_size_18" android:textColor="@color/uikit_text_1_v3" android:id="@id/period_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fiatloan_period" style="@style/Uikit_font_sans_2_0_weight_700" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/tag_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+            <com.gateio.lib.uikit.tag.GTTagV3 android:id="@id/period" android:layout_width="wrap_content" android:layout_height="wrap_content" app:uikit_tagSizeV3="tag16" app:uikit_tagTypeV3="gray" />
+            <com.gateio.lib.uikit.tag.GTTagV3 android:id="@id/renewable" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/uikit_margin_padding_8" app:uikit_tagSizeV3="tag16" app:uikit_tagTextV3="@string/fiatloan_renewable" app:uikit_tagTypeV3="gray" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.gateio.lib.uikit.steps.GTStepBarV3 android:id="@id/period_step" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_24" android:layout_below="@id/period_label_layout" app:uikit_stepBarOrientationV3="1" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/period_status1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/period_step" android:layout_alignParentEnd="true">
+        <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_icon_1_v3" android:id="@id/status1_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_marginEnd="@dimen/uikit_dp_4" app:left_or_right="true" />
+        <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_1_v3" android:id="@id/status1" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Uikit_font_sans_2_0_weight_500" />
+    </LinearLayout>
+    <com.gateio.lib.uikit.reminder.GTReminderV3 android:id="@id/period_reminder" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-12.0dip" android:layout_below="@id/period_step" app:uikit_reminderTypeV3="waring" />
+    <com.gateio.lib.uikit.button.GTButtonV3 android:id="@id/want_renew" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fiatloan_want_renew" android:layout_below="@id/period_reminder" app:uikit_buttonDimenV3="small" app:uikit_buttonTypeV3="outlined" />
+    <View android:id="@id/renew_divider" android:background="@color/uikit_divider_2_v3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/uikit_w_0.5" android:layout_below="@id/period_reminder" />
+    <RelativeLayout android:id="@id/renew_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_24" android:layout_below="@id/renew_divider">
+        <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_20" android:textColor="@color/uikit_icon_1_v3" android:id="@id/renew_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerVertical="true" app:left_or_right="true" />
+        <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_1_v3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fiatloan_allow_renewal" android:layout_centerVertical="true" android:layout_marginStart="@dimen/uikit_margin_padding_8" android:layout_toEndOf="@id/renew_icon" style="@style/Uikit_font_sans_2_0_weight_500" />
+        <com.gateio.lib.uikit.switchview.GTSwitchV3 android:id="@id/renew_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:uikit_switchStyleV3="small" />
+    </RelativeLayout>
+</RelativeLayout>

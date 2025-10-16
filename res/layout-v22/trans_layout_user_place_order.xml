@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingTop="@dimen/length_12" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center_vertical" android:background="@drawable/exchange_shape_line_border_subtle_r8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/length_16" android:layout_marginRight="@dimen/length_16" android:layout_marginHorizontal="@dimen/length_16">
+        <com.gateio.common.view.RoundImageView android:id="@id/iv_place_order" android:layout_width="@dimen/length_52" android:layout_height="@dimen/length_52" android:layout_marginTop="@dimen/length_12" android:layout_marginBottom="@dimen/length_12" android:layout_marginStart="@dimen/length_16" android:layout_alignParentStart="true" android:layout_marginVertical="@dimen/length_12" app:round_radius="@dimen/length_2" app:type="round" />
+        <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_primary_v5" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_place_order_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_centerInParent="true" android:layout_marginStart="@dimen/length_8" android:layout_toStartOf="@id/iv_place_order_close" android:layout_toEndOf="@id/iv_place_order" style="@style/Uikit_font_sans_5_0_weight_500" />
+        <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_icon_quaternary_v5" android:id="@id/iv_place_order_close" android:padding="@dimen/length_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</FrameLayout>

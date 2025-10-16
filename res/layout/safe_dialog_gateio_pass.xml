@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/safe_pass_dialog_bg" android:padding="@dimen/margin_padding_16" style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/uikit_color_333333_e7e9ea" android:layout_gravity="center_horizontal" android:id="@id/dialog_gateio_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/iv_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_home_notify_cancel" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <EditText android:textColor="@color/uikit_color_333333_e7e9ea" android:textColorHint="@color/color_999999_7c848d" android:id="@id/dialog_gateio_safePwd" android:background="@drawable/ed_login_bg" android:layout_marginTop="@dimen/margin_padding_16" android:hint="@string/safety_zjmm_hint" android:maxLength="100" android:inputType="textPassword" android:textAlignment="viewStart" android:paddingStart="10.0dip" android:paddingEnd="@dimen/margin_padding_10" style="@style/uikit_ed_user_confirm" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/dialog_gateio_go_to_set" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_16" android:text="@string/how_to_set_fund_pass" />
+    <com.gateio.lib.uikit.button.GTButtonV3 android:id="@id/dialog_gateio_confirm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_16" android:text="@string/user_qd" app:uikit_buttonDimenV3="medium" app:uikit_buttonTypeV3="primary" />
+    <com.gateio.lib.uikit.button.GTButtonV3 android:id="@id/dialog_gateio_cancel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_16" android:text="@string/user_qx" app:uikit_buttonDimenV3="medium" app:uikit_buttonTypeV3="thirty" />
+</LinearLayout>

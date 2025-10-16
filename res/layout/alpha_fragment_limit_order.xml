@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.biz.memebox.ui.weight.AlphaInputEditText android:id="@id/et_price_input" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent" app:uikit_editAlwaysShowHintV5="true" app:uikit_editHintV5="@string/trans_price" app:uikit_editInputDropdownArrowMarginV5="2.0dip" app:uikit_editInputTypeV5="decimal" app:uikit_editRightTextColorV5="@color/uikit_text_primary_v5" app:uikit_editShowRightTextWhenNoFocusAndInputEmptyV5="true" app:uikit_editVisibleDeleteV5="false" />
+    <com.gateio.biz.memebox.ui.weight.AlphaInputEditText android:id="@id/et_total_input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" app:layout_constraintTop_toTopOf="parent" app:uikit_editAlwaysShowHintV5="true" app:uikit_editHintV5="@string/trans_jye" app:uikit_editInputDropdownArrowMarginV5="2.0dip" app:uikit_editInputTypeV5="decimal" app:uikit_editRightTextColorV5="@color/uikit_text_primary_v5" app:uikit_editShowRightTextWhenNoFocusAndInputEmptyV5="true" app:uikit_editVisibleDeleteV5="false" />
+    <com.gateio.lib.uikit.selector.GTSelectorV5 android:id="@id/selector_percen_limit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/length_8" app:layout_constraintTop_toBottomOf="@id/input_total_market" app:uikit_selectorItemRadiusV5="4.0dip" app:uikit_selectorNeedAutoTextV5="true" app:uikit_selectorPaddingHorizontalV5="0.0dip" app:uikit_selectorSingleSelectV5="true" app:uikit_selectorSizeV5="xsmall" app:uikit_selectorSpanCountV5="4" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.fragment.app.FragmentContainerView android:id="@id/alpha_limit_tpsl_buy" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:id="@id/alpha_limit_tpsl_sell" android:layout_width="fill_parent" android:layout_height="25.0dip" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_chase_limit" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ruffian.library.widget.RLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutChaseLimitType" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="40.0dip" app:background_normal="@color/uikit_cmpt_input_disabled_v5" app:corner_radius="6.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tvChaseLimitType" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/futures_chase_limit_bid_ask_one" android:maxLines="1" android:layout_weight="1.0" style="@style/Text_text_primary_14_weight_500_v5" />
+        <com.gateio.uiComponent.GateIconFont android:textSize="12.0sp" android:textColor="@color/uikit_icon_tertiary_v5" android:id="@id/ivChaseLimitChange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:paddingStart="8.0dip" />
+    </com.ruffian.library.widget.RLinearLayout>
+    <com.gateio.lib.uikit.input.GTInputV5 android:id="@id/edRateVar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" app:uikit_editAlwaysShowHintV5="true" app:uikit_editGravityV5="start" app:uikit_editHintV5="@string/futures_v5_place_order_pullback" app:uikit_editInputDropdownArrowMarginV5="2.0dip" app:uikit_editInputTypeV5="decimal" app:uikit_editRightTextColorV5="@color/uikit_text_primary_v5" app:uikit_editVisibleDeleteV5="false" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutBidOrAskPrice" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+        <TextView android:textSize="11.0sp" android:id="@id/tvBidTitle" android:text="@string/futures_chase_limit_bid_one" style="@style/Text_text_secondary_12_weight_400_v5" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/uikit_function_trade_buy_v5" android:ellipsize="end" android:id="@id/tvBidPrice" android:visibility="visible" android:maxLines="1" android:layout_marginStart="2.0dip" style="@style/Text_text_secondary_12_weight_400_v5" />
+        <TextView android:textSize="11.0sp" android:id="@id/tvShowLine" android:text="/" android:layout_marginStart="2.0dip" style="@style/Text_text_secondary_12_weight_400_v5" />
+        <TextView android:textSize="11.0sp" android:id="@id/tvAskTitle" android:text="@string/futures_chase_limit_ask_one" android:layout_marginStart="2.0dip" style="@style/Text_text_secondary_12_weight_400_v5" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/uikit_function_trade_sell_v5" android:ellipsize="end" android:id="@id/tvAskPrice" android:maxLines="1" android:layout_marginStart="2.0dip" style="@style/Text_text_secondary_12_weight_400_v5" />
+    </LinearLayout>
+</LinearLayout>

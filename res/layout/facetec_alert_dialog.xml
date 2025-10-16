@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/facetec_default_foreground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="25.0sp" android:textColor="@color/facetec_alert_green" android:id="@id/alertIcon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/facetec_sdk_icon_attention_fill" android:layout_marginStart="20.0dip" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/facetec_default_tab_success_background" android:id="@id/alertTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="" android:layout_marginStart="50.0dip" />
+    </RelativeLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@color/facetec_default_tab_success_background" android:id="@id/alertMessage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <Button android:textColor="@android:color/white" android:id="@id/doneButton" android:background="@color/facetec_alert_green" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="" />
+    </RelativeLayout>
+</LinearLayout>

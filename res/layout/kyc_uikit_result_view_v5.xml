@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/uikit_iv_result" android:layout_width="104.0dip" android:layout_height="104.0dip" />
+    <TextView android:textSize="@dimen/uikit_text_size_28" android:textColor="@color/uikit_text_primary_v5" android:gravity="center_horizontal" android:id="@id/tv_result_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_16" android:includeFontPadding="false" style="@style/Uikit_font_sans_5_0_weight_600" />
+    <com.gateio.lib.uikit.text.GTMultiLineTextViewV5 android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_secondary_v5" android:gravity="center" android:id="@id/tv_result_sub_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_8" android:includeFontPadding="false" style="@style/Uikit_font_sans_5_0_weight_400" />
+    <com.gateio.lib.uikit.text.GTMultiLineTextViewV5 android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_secondary_v5" android:gravity="center" android:id="@id/tv_result_sub2_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_8" android:includeFontPadding="false" style="@style/Uikit_font_sans_5_0_weight_400" />
+</merge>

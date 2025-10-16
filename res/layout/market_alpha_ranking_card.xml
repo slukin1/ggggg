@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/vpContent" android:saveEnabled="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:minHeight="63.0dip" />
+    <com.gateio.lib.uikit.widget.GTCarouselV5 android:layout_gravity="bottom|center" android:id="@id/vIndicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" app:indicator_type="line" />
+</FrameLayout>

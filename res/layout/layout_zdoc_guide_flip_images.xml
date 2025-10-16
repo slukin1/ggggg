@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="300.0dip" android:layout_centerHorizontal="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/guideBack" android:background="@drawable/zdoc_guide_back" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/guideFront" android:background="@drawable/zdoc_guide_front" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</merge>

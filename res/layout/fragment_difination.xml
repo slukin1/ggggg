@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:background="@color/color_80_000000" android:scrollbars="none" android:fadingEdge="none" android:overScrollMode="never" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

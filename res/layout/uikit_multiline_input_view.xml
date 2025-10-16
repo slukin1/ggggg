@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_1" android:id="@id/tv_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Uikit_font_weight_600" />
+    <com.gateio.common.view.CornerLinearLayout android:orientation="vertical" android:id="@id/cll" android:background="@color/uikit_card_2" android:padding="@dimen/uikit_margin_padding_12" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_8" app:gate_view_radius="@dimen/uikit_dp_8" app:gate_view_stroke_color="@color/uikit_divider_1" app:gate_view_stroke_width="@dimen/uikit_dp_1">
+        <androidx.core.widget.NestedScrollView android:scrollbarStyle="insideInset" android:id="@id/scroll_view" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_1" android:textColorHint="@color/uikit_text_4" android:gravity="top" android:id="@id/et_content" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minLines="4" android:scrollHorizontally="false" android:lineSpacingMultiplier="1.3" android:textCursorDrawable="@drawable/uikit_color_cursor" />
+        </androidx.core.widget.NestedScrollView>
+        <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_4" android:layout_gravity="end" android:id="@id/tv_num" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_8" />
+    </com.gateio.common.view.CornerLinearLayout>
+    <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_2" android:id="@id/tv_help" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_8" />
+</LinearLayout>

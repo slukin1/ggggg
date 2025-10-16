@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_color_666666_abb4c2" android:id="@id/day_event_count" android:padding="@dimen/margin_padding_10" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/day_event_list" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.gateio.lib.uikit.state.GTEmptyViewV3 android:id="@id/day_event_empty" android:layout_width="fill_parent" android:layout_height="fill_parent" app:emptySrc="@mipmap/security_icon_nothing" app:emptyText="@string/security_calendar_active_nothing" />
+</merge>

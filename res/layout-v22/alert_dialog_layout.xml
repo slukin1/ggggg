@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:layout_centerInParent="true" style="@style/wrap_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:gravity="center_horizontal" android:id="@id/alert_dialog_layout" android:background="@drawable/trans_v1_layer_1_r8" android:paddingLeft="@dimen/margin_padding_15" android:paddingTop="@dimen/length_20" android:paddingRight="@dimen/margin_padding_15" android:paddingBottom="@dimen/length_16" android:layout_width="fill_parent" android:paddingHorizontal="@dimen/margin_padding_15" style="@style/match_wrap">
+        <LinearLayout android:gravity="center_horizontal" style="@style/match_wrap">
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/uikit_text_primary_v5" android:id="@id/alert_dialog_title" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Uikit_font_sans_5_0_weight_600" />
+            <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_primary_v5" android:layout_gravity="center_horizontal" android:id="@id/alert_dialog_msg" android:scrollbars="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/length_8" android:layout_marginBottom="@dimen/length_8" android:maxHeight="300.0dip" android:layout_marginVertical="@dimen/length_8" style="@style/Uikit_font_sans_5_0_weight_400" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/length_16">
+                <com.gateio.common.view.CornerTextView android:textColor="@color/uikit_text_primary_v5" android:gravity="center" android:id="@id/alert_dialog_cancel" android:background="@color/uikit_cmpt_button_soft_v5" android:layout_width="0.0dip" android:layout_height="@dimen/length_40" android:text="@string/user_qx" android:layout_weight="1.0" app:radius="@dimen/length_6" style="@style/Uikit_font_sans_5_0_weight_500" />
+                <com.gateio.common.view.CornerTextView android:textColor="@color/uikit_text_inverse_primary_v5" android:gravity="center" android:id="@id/alert_dialog_commit" android:background="@color/uikit_cmpt_button_primary_v5" android:layout_width="0.0dip" android:layout_height="@dimen/length_40" android:text="@string/user_qd" android:layout_weight="1.0" android:layout_marginStart="@dimen/length_12" app:radius="@dimen/length_6" style="@style/Uikit_font_sans_5_0_weight_500" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

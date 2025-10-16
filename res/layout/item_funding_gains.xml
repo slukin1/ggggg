@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:padding="@dimen/margin_padding_16" style="@style/match_wrap_h">
+        <TextView android:textColor="@color/text_trans_gray2" android:id="@id/tv_start" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/tv_user_black_12" />
+        <TextView android:textColor="@color/text_trans_gray2" android:id="@id/tv_currency" android:layout_width="0.0dip" android:layout_weight="0.8" style="@style/tv_user_black_14" />
+        <TextView android:textColor="@color/text_trans_gray2" android:id="@id/tv_amount" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/tv_user_black_14" />
+        <TextView android:textColor="@color/text_trans_gray2" android:gravity="end" android:id="@id/tv_real" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/tv_user_black_14" />
+    </LinearLayout>
+    <View style="@style/view_line_v" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.fiatotclib.view.DashTextView android:textSize="@dimen/ts_12" android:textColor="@color/uikit_white" android:id="@id/verify_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/sign_time" android:layout_toEndOf="@id/header" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/fiatotc_ic_done" android:layout_marginStart="@dimen/uikit_dp_4" />
+    <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="#ff3388ff" android:id="@id/status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fiatotc_upload" android:layout_marginStart="@dimen/uikit_dp_4" />
+</merge>

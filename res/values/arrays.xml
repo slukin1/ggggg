@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alert_cancel_array">
+        <item>Only ignore this time</item>
+        <item>10 minutes later</item>
+        <item>30 minutes later</item>
+        <item>2 hours later</item>
+        <item>24 hours later</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="assume_strong_biometrics_models">
+        <item>Pixel 4</item>
+        <item>Pixel 4 XL</item>
+    </string-array>
+    <string-array name="chat_mute_unit">
+        <item>min</item>
+        <item>hour</item>
+        <item>day</item>
+        <item>month</item>
+    </string-array>
+    <array name="crypto_fingerprint_fallback_prefixes" />
+    <string-array name="crypto_fingerprint_fallback_vendors">
+        <item>samsung</item>
+    </string-array>
+    <string-array name="defi_TrustedApps">
+        <item>org.telegram.messenger,tg:join?invite=</item>
+    </string-array>
+    <string-array name="defi_TrustedExtensions">
+        <item>application/pdf,pdf</item>
+    </string-array>
+    <string-array name="delay_showing_prompt_models">
+        <item>Pixel 4</item>
+        <item>Pixel 4 XL</item>
+    </string-array>
+    <string-array name="emoji_gateio_001">
+        <item>[大哭 New]</item>
+        <item>[点赞 New]</item>
+        <item>[上涨 New]</item>
+        <item>[下跌 New]</item>
+        <item>[谢谢 New]</item>
+        <item>[再见 New]</item>
+        <item>[震惊 New]</item>
+        <item>[干得好 New]</item>
+        <item>[好的 New]</item>
+        <item>[你好 New]</item>
+    </string-array>
+    <string-array name="emoji_gateio_002">
+        <item>[angry]</item>
+        <item>[buy it]</item>
+        <item>[brate]</item>
+        <item>[doubt]</item>
+        <item>[love]</item>
+        <item>[no New]</item>
+        <item>[Rich]</item>
+        <item>[sorry]</item>
+        <item>[strong]</item>
+        <item>[Sweat]</item>
+        <item>[threat]</item>
+    </string-array>
+    <string-array name="emoji_gateio_2021">
+        <item>[老子满仓]</item>
+        <item>[币海无涯]</item>
+        <item>[瀑布]</item>
+        <item>[涨幅?]</item>
+        <item>[稳稳加仓]</item>
+        <item>[满仓在手]</item>
+    </string-array>
+    <string-array name="emoji_gateio_new">
+        <item>[ETF了解一下]</item>
+        <item>[搬砖ing]</item>
+        <item>[崩盘了快跑]</item>
+        <item>[撤不撤]</item>
+        <item>[福利呢]</item>
+        <item>[刚才发生了什么]</item>
+        <item>[搞事情]</item>
+        <item>[跟我说话请投币]</item>
+        <item>[跟着行情走]</item>
+        <item>[薅羊毛]</item>
+        <item>[家里有矿]</item>
+        <item>[接空投]</item>
+        <item>[今晚加卤蛋]</item>
+        <item>[来个杠杆]</item>
+        <item>[链上走]</item>
+        <item>[卖了吗]</item>
+        <item>[求糖果]</item>
+        <item>[啥价啊]</item>
+        <item>[上币了]</item>
+        <item>[神的鄙视]</item>
+        <item>[屯币ing]</item>
+        <item>[围观大神]</item>
+        <item>[我等你]</item>
+        <item>[我就看着不说话]</item>
+        <item>[我来了]</item>
+        <item>[我膨胀了]</item>
+        <item>[我先走了]</item>
+        <item>[握草]</item>
+        <item>[无敌是多么寂寞]</item>
+        <item>[想不到吧]</item>
+        <item>[幸亏梭了]</item>
+        <item>[兄弟们顶住]</item>
+        <item>[语言组织中]</item>
+        <item>[怎么肥四]</item>
+        <item>[真香]</item>
+    </string-array>
+    <string-array name="emoji_gateio_new7">
+        <item>[7年]</item>
+        <item>[7周年]</item>
+        <item>[蛋糕7]</item>
+        <item>[挥旗7]</item>
+        <item>[墨镜7]</item>
+        <item>[我7岁了]</item>
+        <item>[抱钻7]</item>
+    </string-array>
+    <string-array name="exo_controls_playback_speeds">
+        <item>0.25x</item>
+        <item>0.5x</item>
+        <item>0.75x</item>
+        <item>Normal</item>
+        <item>1.25x</item>
+        <item>1.5x</item>
+        <item>2x</item>
+    </string-array>
+    <string-array name="fiatloan_periods">
+        <item>7</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>90</item>
+        <item>180</item>
+    </string-array>
+    <string-array name="filter_high_level">
+        <item>@string/amm_kyzc</item>
+        <item>@string/structure_filter_joined</item>
+    </string-array>
+    <string-array name="filter_investment_period">
+        <item>@string/structure_filter_invest_period2</item>
+        <item>@string/structure_filter_invest_period3</item>
+        <item>@string/structure_filter_invest_period4</item>
+        <item>@string/structure_filter_invest_period5</item>
+    </string-array>
+    <string-array name="filter_record_type">
+        <item>@string/trans_qb</item>
+        <item>@string/point_gm</item>
+        <item>@string/options_jscx</item>
+    </string-array>
+    <string-array name="filter_reference_annual" formatted="false">
+        <item>≤10%</item>
+        <item>10%-30%</item>
+        <item>30%-100%</item>
+        <item>@string/structure_filter_invest_period1</item>
+    </string-array>
+    <string-array name="filter_risk_type">
+        <item>@string/structure_break_even</item>
+        <item>@string/structure_more_gain</item>
+    </string-array>
+    <string-array name="filter_status">
+        <item>@string/structure_filter_in_process</item>
+        <item>@string/structure_filter_will_begin</item>
+        <item>@string/structure_finance_wait_settlement</item>
+        <item>@string/cbbc_status_yjs</item>
+    </string-array>
+    <string-array name="filter_type">
+        <item>@string/structure_filter_type_sharkfin</item>
+        <item>@string/structure_filter_type_sharkfin2</item>
+        <item>@string/structure_filter_type_bullishsharkfin</item>
+        <item>@string/structure_filter_type_bearishsharkfin</item>
+        <item>@string/structure_filter_type_doublenotouch</item>
+    </string-array>
+    <string-array name="funding_share_desc">
+        <item>There is a kind of happiness called stability</item>
+        <item>Choose Gate and win in a breeze</item>
+        <item>Professional leader is boundless</item>
+        <item>Try your hand at Gate to display your talents</item>
+        <item>All roads lead to Rome but robustness comes first</item>
+        <item>Going to manage money? Steady</item>
+        <item>Life is worth living and future is promising</item>
+    </string-array>
+    <string-array name="gateEmoticonName">
+        <item>[一把梭]</item>
+        <item>[梭哈]</item>
+        <item>[炒币太有意思了]</item>
+        <item>[不要怕]</item>
+        <item>[快上车]</item>
+        <item>[熬夜]</item>
+        <item>[该你了]</item>
+        <item>[抱住BTC]</item>
+        <item>[瀑布来了]</item>
+        <item>[带我飞]</item>
+        <item>[接盘侠]</item>
+        <item>[愣住]</item>
+        <item>[求打赏]</item>
+        <item>[求内幕]</item>
+        <item>[散户skr]</item>
+        <item>[躺着愁]</item>
+        <item>[涨疯了]</item>
+        <item>[透明]</item>
+        <item>[666]</item>
+        <item>[大哭了]</item>
+        <item>[好的大佬]</item>
+        <item>[红血丝]</item>
+        <item>[奸笑]</item>
+        <item>[囧]</item>
+        <item>[开心呢]</item>
+        <item>[说什么都对]</item>
+        <item>[哦哦]</item>
+        <item>[无语]</item>
+        <item>[透明联盟]</item>
+        <item>[安全第一客户至上]</item>
+        <item>[不收上币费]</item>
+        <item>[TOP7]</item>
+    </string-array>
+    <string-array name="hide_fingerprint_instantly_prefixes">
+        <item>SM-A50</item>
+        <item>SM-G973</item>
+        <item>SM-G975</item>
+        <item>SM-G977</item>
+        <item>SM-G770</item>
+        <item>SM-N970</item>
+        <item>SM-N971</item>
+        <item>SM-N975</item>
+        <item>SM-N976</item>
+        <item>SM-N770</item>
+        <item>SC-03L</item>
+        <item>SC-04L</item>
+        <item>SC-05L</item>
+        <item>SC-01M</item>
+        <item>SCV41</item>
+        <item>SCV42</item>
+        <item>SCV45</item>
+    </string-array>
+    <string-array name="home_week_string_array">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+    <array name="keyguard_biometric_and_credential_exclude_vendors" />
+    <string-array name="modify_procedure_items">
+        <item>Choose a security setting to change</item>
+        <item>Apply for a change</item>
+        <item>Finish application</item>
+    </string-array>
+    <string-array name="position_share_desc_loss">
+        <item>Cutting loss? Never!</item>
+        <item>Keep and wait.</item>
+        <item>Less loss, please</item>
+        <item>He who laughs last, laughs best</item>
+        <item>Rise and shine. Move now.</item>
+        <item>Be nice to me</item>
+        <item>No Panic</item>
+        <item>All in.Keep the faith</item>
+    </string-array>
+    <string-array name="position_share_desc_win">
+        <item>All in and win big.</item>
+        <item>All in as always.</item>
+        <item>Just hold</item>
+        <item>Just keep it</item>
+        <item>The next step? Follow trends</item>
+        <item>I am the big star!</item>
+        <item>Follow me to win big</item>
+        <item>I am on the right side as always!</item>
+        <item>Long or Short? All up to me.</item>
+    </string-array>
+    <string-array name="push_alert_cancel_array">
+        <item>For 30 minutes</item>
+        <item>For 2 hours</item>
+        <item>For 24 hours</item>
+        <item>Forever</item>
+    </string-array>
+    <string-array name="txEmotionName">
+        <item>[惊讶]</item>
+        <item>[撇嘴]</item>
+        <item>[色]</item>
+        <item>[发呆]</item>
+        <item>[得意]</item>
+        <item>[流泪]</item>
+        <item>[害羞]</item>
+        <item>[闭嘴]</item>
+        <item>[睡]</item>
+        <item>[大哭]</item>
+        <item>[尴尬]</item>
+        <item>[发怒]</item>
+        <item>[调皮]</item>
+        <item>[龇牙]</item>
+        <item>[微笑]</item>
+        <item>[难过]</item>
+        <item>[酷]</item>
+        <item>[冷汗]</item>
+        <item>[抓狂]</item>
+        <item>[吐]</item>
+        <item>[偷笑]</item>
+        <item>[可爱]</item>
+        <item>[白眼]</item>
+        <item>[傲慢]</item>
+        <item>[饥饿]</item>
+        <item>[困]</item>
+        <item>[惊恐]</item>
+        <item>[流汗]</item>
+        <item>[憨笑]</item>
+        <item>[大兵]</item>
+        <item>[奋斗]</item>
+        <item>[咒骂]</item>
+        <item>[疑问]</item>
+        <item>[嘘]</item>
+        <item>[晕]</item>
+        <item>[衰]</item>
+        <item>[骷髅]</item>
+        <item>[敲打]</item>
+        <item>[再见]</item>
+        <item>[发抖]</item>
+        <item>[爱情]</item>
+        <item>[跳跳]</item>
+        <item>[猪头]</item>
+        <item>[拥抱]</item>
+        <item>[蛋糕]</item>
+        <item>[闪电]</item>
+        <item>[炸弹]</item>
+        <item>[刀]</item>
+        <item>[足球]</item>
+        <item>[便便]</item>
+        <item>[咖啡]</item>
+        <item>[饭]</item>
+        <item>[鲜花]</item>
+        <item>[凋谢]</item>
+        <item>[爱心]</item>
+        <item>[心碎]</item>
+        <item>[礼物]</item>
+        <item>[太阳]</item>
+        <item>[月亮]</item>
+        <item>[强]</item>
+        <item>[弱]</item>
+        <item>[握手]</item>
+        <item>[飞吻]</item>
+        <item>[怄火]</item>
+        <item>[西瓜]</item>
+        <item>[抠鼻]</item>
+        <item>[鼓掌]</item>
+        <item>[糗大了]</item>
+        <item>[坏笑]</item>
+        <item>[左哼哼]</item>
+        <item>[右哼哼]</item>
+        <item>[哈欠]</item>
+        <item>[鄙视]</item>
+        <item>[委屈]</item>
+        <item>[快哭了]</item>
+        <item>[阴险]</item>
+        <item>[亲亲]</item>
+        <item>[吓]</item>
+        <item>[可怜]</item>
+        <item>[菜刀]</item>
+        <item>[啤酒]</item>
+        <item>[乒乓]</item>
+        <item>[示爱]</item>
+        <item>[瓢虫]</item>
+        <item>[抱拳]</item>
+        <item>[勾引]</item>
+        <item>[拳头]</item>
+        <item>[差劲]</item>
+        <item>[爱你]</item>
+        <item>[NO]</item>
+        <item>[OK]</item>
+        <item>[转圈]</item>
+        <item>[磕头]</item>
+        <item>[回头]</item>
+        <item>[跳绳]</item>
+        <item>[挥手]</item>
+        <item>[激动]</item>
+        <item>[街舞]</item>
+        <item>[献吻]</item>
+        <item>[左太极]</item>
+        <item>[右太极]</item>
+        <item>[祈祷]</item>
+    </string-array>
+    <string-array name="week_string_array">
+        <item>Sun</item>
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+    </string-array>
+    <string-array name="weekday">
+        <item>Sun</item>
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+    </string-array>
+</resources>

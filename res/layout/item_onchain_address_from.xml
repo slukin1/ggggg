@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/selector_item_check_bg_stroke" android:padding="@dimen/margin_padding_16" android:layout_width="fill_parent" android:layout_height="@dimen/dp_52" android:layout_marginTop="@dimen/margin_padding_8"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/ts_16" android:textColor="@color/text_1" android:id="@id/text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <ImageView android:id="@id/selected" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_checkbox_comlib" />
+</LinearLayout>

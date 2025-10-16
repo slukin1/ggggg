@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gateio.lib.uikit.text.GTMultiLineTextViewV5 android:textSize="14.0sp" android:textColor="@color/uikit_text_primary_v5" android:id="@id/title" android:paddingTop="@dimen/uikit_margin_padding_8" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_margin_padding_16" android:layout_marginRight="@dimen/uikit_margin_padding_16" android:text="@string/fiat_invalid_brazilian_phone" android:layout_marginHorizontal="@dimen/uikit_margin_padding_16" style="@style/Uikit_font_sans_5_0_weight_400" />
+    <LinearLayout android:orientation="vertical" android:id="@id/contentView" android:paddingTop="@dimen/uikit_margin_padding_8" android:paddingBottom="@dimen/uikit_margin_padding_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/uikit_margin_padding_8" />
+</LinearLayout>

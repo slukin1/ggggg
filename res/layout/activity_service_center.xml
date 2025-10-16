@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/bg_personal_center_top" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.common.view.GateioTitleView android:id="@id/service_center_title" android:layout_width="fill_parent" android:layout_height="48.0dip" app:rightVisibility="false" app:titleText="@string/service_center" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/aboutus_item_bg" android:layout_margin="@dimen/margin_padding_10" style="@style/match_wrap">
+        <com.gateio.gateio.view.GateioSettingView android:id="@id/service_center_help" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.gateio.gateio.view.GateioSettingView android:id="@id/service_center_ticket" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.gateio.gateio.view.GateioSettingView android:id="@id/service_center_online" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

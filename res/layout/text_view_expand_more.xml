@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/uikit_text_2" android:ellipsize="end" android:id="@id/tv_expand_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:lineSpacingExtra="@dimen/margin_padding_4" style="@style/Uikit_font_weight_400" />
+    <TextView android:id="@id/tv_content_all" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/ll_expand" android:paddingTop="@dimen/margin_padding_8" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/uikit_text_1" android:id="@id/tv_expand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/uikit_miniapp_expand" style="@style/Uikit_font_weight_600" />
+        <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_1" android:id="@id/tv_expand_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_marginStart="@dimen/margin_padding_3" />
+    </LinearLayout>
+</LinearLayout>

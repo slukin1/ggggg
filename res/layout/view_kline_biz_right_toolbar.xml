@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gateio.biz.kline.widget.OverLayNestedScrollView android:gravity="center" android:layout_gravity="end" android:orientation="vertical" android:id="@id/trans_pair_index_hor" android:background="@drawable/bg_h_main_sub_index" android:visibility="gone" android:layout_width="52.0dip" android:layout_height="fill_parent" android:layout_marginEnd="24.0dip">
+        <LinearLayout android:gravity="center" android:layout_gravity="end" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.gateio.uiComponent.GateIconFont android:textColor="@color/uikit_icon_quaternary_v5" android:layout_gravity="center" android:id="@id/trans_pair_draw_hor" android:padding="@dimen/margin_padding_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+            <View android:id="@id/view_hor_right_2" android:background="@color/uikit_line_divider_v5" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="@dimen/k_margin_padding_8" android:layout_marginRight="@dimen/k_margin_padding_8" />
+            <com.gateio.biz.kline.widget.KlineIndexSelectorView android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_main_sub_land" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+    </com.gateio.biz.kline.widget.OverLayNestedScrollView>
+    <com.gateio.biz.kline.drawTool.KLineDrawTool android:layout_gravity="end" android:orientation="vertical" android:id="@id/kline_draw_tool" android:background="@drawable/bg_h_main_sub_index" android:visibility="gone" android:layout_width="52.0dip" android:layout_height="fill_parent" android:layout_marginEnd="@dimen/k_margin_padding_24" />
+</merge>

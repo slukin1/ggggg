@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/uikit_dp_24" android:paddingRight="@dimen/uikit_dp_24" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/uikit_dp_24"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.input.GTEditTextV3 android:id="@id/et_verify_code" android:layout_width="fill_parent" android:layout_height="wrap_content" app:uikit_editHintV3="Please enter" app:uikit_editInputTypeV3="number" app:uikit_editTypeV3="stroke" app:uikit_editVisibleDeleteV3="false" />
+    <com.gateio.lib.uikit.text.GTMultiLineTextViewV3 android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_3_v3" android:id="@id/tv_verify_code_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_8" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/margin_padding_20" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.gateio.lib.uikit.widget.GTCheckBoxV5 android:id="@id/selected" android:layout_width="wrap_content" android:layout_height="wrap_content" app:uikit_isCorner_v5="true" />
+        <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_1_v3" android:id="@id/reason" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/uikit_dp_4" android:paddingStart="@dimen/uikit_margin_padding_8" android:paddingEnd="0.0dip" style="@style/Uikit_font_sans_5_0_weight_400" />
+    </LinearLayout>
+    <com.gateio.fiatotclib.view.FiatOtcCoinFullDropDown android:id="@id/dropdown" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_12" android:layout_marginStart="22.0dip" />
+    <com.gateio.lib.uikit.textarea.GTTextAreaV5 android:id="@id/issue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_dp_4" android:layout_marginStart="22.0dip" app:uikit_help_textV5="@string/fiatotc_describe_issue_hint" app:uikit_hintV5="@string/fiatotc_please_enter" app:uikit_inputMaxEnable="false" app:uikit_max_lengthV5="100" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="start" android:tag="START" android:background="@color/transparent_deep" android:layout_width="260.0dip" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:layout_margin="@dimen/margin_padding_16" android:text="@string/live_mute_list" style="@style/tv_user_white_14" />
+    <TextView android:textColor="#ffc1c1c2" android:gravity="center" android:id="@id/tv_empty" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="30.0dip" android:text="@string/ticker_not_data" android:drawablePadding="16.0dip" app:drawableTopCompat="@mipmap/ic_empty" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh" style="@style/match_match">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:scrollbars="none" android:fadingEdge="none" android:overScrollMode="never" android:paddingStart="@dimen/margin_padding_16" android:paddingEnd="@dimen/margin_padding_16" style="@style/match_match" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>> </LinearLayout>

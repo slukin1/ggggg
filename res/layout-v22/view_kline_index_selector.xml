@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_main_sub" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_below="@id/rl_kline_chart"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RadioGroup android:orientation="horizontal" android:id="@id/rg_main_indicator" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingEnd="6.0dip">
+            <androidx.appcompat.widget.AppCompatCheckBox android:id="@id/cb_main_sl" android:text="@string/kline_indicator_support_line" android:paddingEnd="0.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/k_trans_time_ver" />
+            <com.gateio.lib.uikit.badge.GTBadgeV5 android:id="@id/view_point_red_sl" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" app:layout_constraintStart_toEndOf="@id/cb_main_sl" app:layout_constraintTop_toTopOf="@id/cb_main_sl" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.appcompat.widget.AppCompatCheckBox android:id="@id/cb_main_ma" android:text="MA" style="@style/k_trans_time_ver" />
+        <androidx.appcompat.widget.AppCompatCheckBox android:id="@id/cb_main_ema" android:text="EMA" style="@style/k_trans_time_ver" />
+        <androidx.appcompat.widget.AppCompatCheckBox android:id="@id/cb_main_boll" android:text="BOLL" style="@style/k_trans_time_ver" />
+        <androidx.appcompat.widget.AppCompatCheckBox android:id="@id/cb_main_sar" android:text="SAR" style="@style/k_trans_time_ver" />
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/layoutWt" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingEnd="6.0dip">
+            <androidx.appcompat.widget.AppCompatCheckBox android:id="@id/cb_main_wt" android:text="@string/kline_indicator_wt" android:paddingEnd="0.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/k_trans_time_ver" />
+            <com.gateio.lib.uikit.badge.GTBadgeV5 android:id="@id/view_point_red_wt" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" app:layout_constraintStart_toEndOf="@id/cb_main_wt" app:layout_constraintTop_toTopOf="@id/cb_main_wt" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RadioGroup>
+    <View android:layout_gravity="center_vertical" android:id="@id/view_main_sub_middle" android:background="@color/uikit_line_divider_v5" android:layout_width="0.5dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/uikit_margin_padding_8" android:layout_marginTop="10.0dip" android:layout_marginRight="@dimen/uikit_margin_padding_8" android:layout_marginBottom="10.0dip" android:layout_marginHorizontal="@dimen/uikit_margin_padding_8" android:layout_marginVertical="10.0dip" />
+    <RadioGroup android:orientation="horizontal" android:id="@id/rg_sub_indicator" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <androidx.appcompat.widget.AppCompatCheckBox android:id="@id/cb_sub_vol" android:text="VOL" style="@style/k_trans_time_ver" />
+        <androidx.appcompat.widget.AppCompatCheckBox android:id="@id/cb_sub_macd" android:text="MACD" style="@style/k_trans_time_ver" />
+        <androidx.appcompat.widget.AppCompatCheckBox android:id="@id/cb_sub_kdj" android:text="KDJ" style="@style/k_trans_time_ver" />
+        <androidx.appcompat.widget.AppCompatCheckBox android:id="@id/cb_sub_rsi" android:text="RSI" style="@style/k_trans_time_ver" />
+        <androidx.appcompat.widget.AppCompatCheckBox android:id="@id/cb_sub_wr" android:text="WR" style="@style/k_trans_time_ver" />
+        <androidx.appcompat.widget.AppCompatCheckBox android:id="@id/cb_sub_obv" android:text="OBV" style="@style/k_trans_time_ver" />
+        <androidx.appcompat.widget.AppCompatCheckBox android:id="@id/cb_sub_stochrsi" android:text="StochRSI" style="@style/k_trans_time_ver" />
+    </RadioGroup>
+</merge>

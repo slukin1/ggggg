@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="bg_progress_trans_buy_new">@drawable/uikit_bg_progress_trans_red_new</item>
+    <item type="drawable" name="bg_progress_trans_sell_new">@drawable/uikit_bg_progress_trans_green_new</item>
+</resources>

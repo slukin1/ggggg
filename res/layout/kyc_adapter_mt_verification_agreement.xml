@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.widget.GTCheckBoxV3 android:id="@id/agreement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_margin_padding_12" android:layout_marginBottom="@dimen/uikit_margin_padding_12" android:drawablePadding="@dimen/uikit_margin_padding_6" android:paddingStart="0.0dip" android:paddingEnd="@dimen/uikit_margin_padding_6" app:uikit_button_size_v3="@dimen/uikit_margin_padding_16" style="@style/Uikit_font_sans_2_0_weight_500" />
+    <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_1_v3" android:id="@id/agreement_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/kyc_mt_protocol_message" style="@style/Uikit_font_sans_2_0_weight_500" />
+</LinearLayout>

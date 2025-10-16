@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/goto_deal" android:paddingTop="@dimen/margin_padding_10" android:paddingBottom="@dimen/margin_padding_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/margin_padding_35" android:paddingEnd="@dimen/margin_padding_5"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img_currentType" android:layout_width="20.0dip" android:layout_height="20.0dip" android:scaleType="fitXY" />
+    <ImageView android:id="@id/img_exchangeType" android:layout_width="20.0dip" android:layout_height="20.0dip" android:scaleType="fitXY" android:layout_marginStart="-3.0dip" />
+    <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/uikit_main_text_color" android:id="@id/currentType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_padding_10" />
+</LinearLayout>

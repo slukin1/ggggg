@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="24.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="52.0dip" android:layout_height="52.0dip" android:layout_marginTop="12.0dip" android:src="@mipmap/futures_icon_cancel_tips" />
+    <TextView android:id="@id/tvTitle" android:layout_marginTop="20.0dip" android:text="@string/futures_close_all" style="@style/Text_text_primary_16_weight_600_v5" />
+    <TextView android:gravity="center_horizontal" android:id="@id/tvContent" android:layout_marginTop="4.0dip" style="@style/Text_text_secondary_14_weight_400_v5" />
+</LinearLayout>

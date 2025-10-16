@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_theme_decreasing21">@color/color_10c2a4</color>
+    <color name="bg_theme_increasing21">@color/color_e93a3d</color>
+    <color name="chat_buy">@color/chat_red</color>
+    <color name="chat_sell">@color/chat_green</color>
+    <color name="decreasing_60color">@color/color_60green</color>
+    <color name="decreasing_color">@color/main_color_green</color>
+    <color name="increasing_60color">@color/color_60red</color>
+    <color name="increasing_color">@color/main_color_red</color>
+    <color name="line_buy">@color/line_red</color>
+    <color name="line_sell">@color/line_green</color>
+    <color name="main_color_buy">@color/main_color_red</color>
+    <color name="main_color_sell">@color/main_color_green</color>
+    <color name="path_buy">@color/path_red</color>
+    <color name="path_sell">@color/path_green</color>
+    <color name="trans_depth_buy">@color/color_10_e93a3d</color>
+    <color name="trans_depth_sell">@color/color_10_10c2a4</color>
+    <color name="trans_mark_buy">@color/color_e93a3d</color>
+    <color name="trans_mark_sell">@color/color_10c2a4</color>
+    <color name="uikit_text_decreasing">@color/uikit_bg_theme_blue_new</color>
+    <color name="uikit_text_decreasing_new">@color/uikit_color_10c2a4</color>
+    <color name="uikit_text_decreasing_new_alpha10">#1a10c2a4</color>
+    <color name="uikit_text_decreasing_new_disable">@color/uikit_color_9fe6da</color>
+    <color name="uikit_text_decreasing_new_light">@color/uikit_color_e1f8f5_102f3d</color>
+    <color name="uikit_text_increasing">@color/uikit_bg_theme_red_new</color>
+    <color name="uikit_text_increasing_new">@color/uikit_color_e93a3d</color>
+    <color name="uikit_text_increasing_new_alpha10">#1ae93a3d</color>
+    <color name="uikit_text_increasing_new_disable">@color/uikit_color_f6b0b1</color>
+    <color name="uikit_text_increasing_new_light">@color/uikit_color_fceded_312435</color>
+</resources>

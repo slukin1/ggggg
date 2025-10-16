@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/bg_wallet" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_main_header" />
+    <androidx.core.widget.NestedScrollView android:id="@id/nest_scroll" android:scrollbars="none" android:fadingEdge="none" android:fillViewport="true" android:overScrollMode="never" style="@style/match_ww_h">
+        <LinearLayout style="@style/match_match">
+            <TextView android:textColor="@color/text_wallet_gray2" android:id="@id/tv_point_type" android:layout_marginTop="@dimen/margin_padding_10" android:layout_marginBottom="@dimen/margin_padding_10" android:text="@string/point_zrdk" android:layout_marginStart="@dimen/margin_padding_16" style="@style/tv_user_black_18" />
+            <View style="@style/view_line_v2" />
+            <LinearLayout android:layout_margin="@dimen/margin_padding_16" style="@style/match_wrap">
+                <RelativeLayout style="@style/match_wrap">
+                    <TextView android:textColor="@color/text_wallet_gray3" android:text="@string/point_dfuid" style="@style/tv_user_black_12" />
+                    <TextView android:textColor="@color/text_wallet_gray2" android:id="@id/tv_point_uid" android:layout_alignParentEnd="true" style="@style/tv_user_black_12" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_marginTop="@dimen/margin_padding_8" style="@style/match_wrap">
+                    <TextView android:textColor="@color/text_wallet_gray3" android:text="@string/point_dfzh" style="@style/tv_user_black_12" />
+                    <TextView android:textColor="@color/text_wallet_gray2" android:id="@id/tv_point_dfzh" android:layout_alignParentEnd="true" style="@style/tv_user_black_12" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_marginTop="@dimen/margin_padding_8" style="@style/match_wrap">
+                    <TextView android:textColor="@color/text_wallet_gray3" android:id="@id/tv_point_zrsl_title" android:text="@string/point_zrsl" style="@style/tv_user_black_12" />
+                    <TextView android:textColor="@color/text_wallet_gray2" android:id="@id/tv_point_zrsl" android:layout_alignParentEnd="true" style="@style/tv_user_black_12" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_marginTop="@dimen/margin_padding_8" android:layout_marginBottom="@dimen/margin_padding_8" style="@style/match_wrap">
+                    <TextView android:textColor="@color/text_wallet_gray3" android:text="@string/point_zhjg" style="@style/tv_user_black_12" />
+                    <TextView android:textColor="@color/text_wallet_gray2" android:id="@id/tv_point_zhjg" android:layout_alignParentEnd="true" style="@style/tv_user_black_12" />
+                </RelativeLayout>
+                <View style="@style/view_line_v2" />
+                <RelativeLayout android:layout_marginTop="@dimen/margin_padding_16" style="@style/match_wrap">
+                    <TextView android:textColor="@color/text_wallet_gray3" android:id="@id/tv_point_zrze_title" android:text="@string/point_zrze" style="@style/tv_user_black_12" />
+                    <TextView android:textColor="@color/bg_theme_red_new" android:id="@id/tv_point_zrze" android:layout_alignParentEnd="true" style="@style/tv_user_black_16" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View style="@style/view_line_v2_blod" />
+            <LinearLayout android:layout_margin="@dimen/margin_padding_16" style="@style/match_wrap">
+                <LinearLayout android:id="@id/ll_point_zjmm" android:layout_marginBottom="@dimen/margin_padding_16" style="@style/ll_funding3">
+                    <TextView android:textColor="@color/text_wallet_gray4" android:text="@string/safety_zjmm" style="@style/tv_user_white_12" />
+                    <EditText android:gravity="center_vertical" android:id="@id/ed_point_zjmm" android:layout_width="0.0dip" android:hint="@string/safety_zjmm_hint" android:layout_weight="1.0" android:inputType="textPassword" android:textAlignment="viewStart" style="@style/ed_funding3" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/ll_point_dxyzm" android:layout_marginBottom="@dimen/margin_padding_16" style="@style/ll_funding3">
+                    <TextView android:textColor="@color/text_wallet_gray4" android:text="@string/safety_dxyzm" style="@style/tv_user_white_12" />
+                    <EditText android:gravity="center_vertical" android:id="@id/ed_point_dxyzm" android:layout_width="0.0dip" android:hint="@string/safety_dxyzm_hint" android:layout_weight="1.0" android:inputType="text" style="@style/ed_funding3" />
+                    <TextView android:textColor="@color/bg_theme_red_new" android:id="@id/tv_point_hqyzm" android:text="@string/user_hqyzm" style="@style/tv_user_white_12" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/ll_point_ggyzm" style="@style/ll_funding3">
+                    <TextView android:textColor="@color/text_wallet_gray4" android:text="@string/safety_ggyzm" style="@style/tv_user_white_12" />
+                    <EditText android:gravity="center_vertical" android:id="@id/ed_point_ggyzm" android:layout_width="0.0dip" android:hint="@string/safety_ggyzm_hint" android:layout_weight="1.0" android:inputType="text" style="@style/ed_funding3" />
+                    <TextView android:textColor="@color/bg_theme_red_new" android:id="@id/tv_point_zt" android:text="@string/user_zt" style="@style/tv_user_white_12" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <View style="@style/view_line_v2" />
+    <TextView android:gravity="center" android:id="@id/tv_point_buy" android:background="@color/bg_theme_red_new" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/point_tjzr" style="@style/tv_user_white_18" />
+</LinearLayout>

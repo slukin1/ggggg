@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_root" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" style="@style/wrap_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_logo" android:layout_width="20.0dip" android:layout_height="20.0dip" android:scaleType="centerInside" android:layout_centerVertical="true" android:layout_marginEnd="8.0dip" />
+    <TextView android:textColor="@color/uikit_color_333333_e6e6e6" android:gravity="start" android:id="@id/tv_name" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:minWidth="80.0dip" android:layout_centerVertical="true" android:layout_toEndOf="@id/iv_logo" style="@style/tv_user_black_14" />
+</RelativeLayout>

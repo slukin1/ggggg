@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/uikit_color_ffffff_111f31" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.common.view.GateioTitleView android:id="@id/title_view" android:layout_width="fill_parent" android:layout_height="48.0dip" app:leftSrc="@mipmap/uikit_btn_back" app:rightVisibility="false" app:titleText="@string/dual_gmjg" />
+    <ImageView android:layout_marginTop="50.0dip" android:src="@mipmap/ic_pay_success" style="@style/wrap_wrap" />
+    <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:layout_marginTop="@dimen/margin_padding_12" android:text="@string/dual_gmcg" style="@style/tv_user_white_20" />
+    <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_amount" android:layout_marginTop="45.0dip" style="@style/tv_user_white_20" />
+    <View android:layout_marginTop="30.0dip" android:layout_marginStart="36.0dip" android:layout_marginEnd="36.0dip" style="@style/view_line_v_new" />
+    <RelativeLayout android:layout_marginTop="16.0dip" android:layout_marginStart="36.0dip" android:layout_marginEnd="36.0dip" style="@style/match_wrap">
+        <TextView android:textColor="@color/color_999999_7c848d" android:text="ID" style="@style/tv_user_white_14" />
+        <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_id" android:layout_alignParentEnd="true" style="@style/tv_user_white_14" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_marginTop="16.0dip" android:layout_marginStart="36.0dip" android:layout_marginEnd="36.0dip" style="@style/match_wrap">
+        <TextView android:textColor="@color/color_999999_7c848d" android:text="@string/dual_xdsj" style="@style/tv_user_white_14" />
+        <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_time" android:layout_alignParentEnd="true" style="@style/tv_user_white_14" />
+    </RelativeLayout>
+    <View android:layout_marginTop="16.0dip" android:layout_marginStart="36.0dip" android:layout_marginEnd="36.0dip" style="@style/view_line_v_new" />
+    <LinearLayout android:layout_marginTop="60.0dip" style="@style/wrap_wrap_h">
+        <TextView android:textColor="@color/uikit_color_2354e6" android:id="@id/tv_list" android:background="@drawable/finance_shape_blue_stroke_r3" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:text="@string/dual_jxgg" android:paddingStart="24.0dip" android:paddingEnd="24.0dip" style="@style/tv_user_white_16" />
+        <TextView android:textColor="@color/uikit_white" android:id="@id/tv_detail" android:background="@drawable/finance_shape_solid_blue_r3" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:text="@string/dual_ckcb" android:paddingStart="24.0dip" android:paddingEnd="24.0dip" android:layout_marginStart="30.0dip" style="@style/tv_user_white_16" />
+    </LinearLayout>
+</LinearLayout>

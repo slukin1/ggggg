@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_live_func" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/layout_live_top" />
+    <RelativeLayout android:padding="@dimen/margin_padding_16" style="@style/match_match">
+        <com.gateio.common.view.VerticalTextView android:id="@id/tv_live_pushing" android:background="@drawable/bg_live_chat" android:padding="8.0dip" android:visibility="invisible" android:layout_marginBottom="@dimen/margin_padding_16" android:includeFontPadding="false" android:layout_above="@id/rl_msg" style="@style/tv_user_white_14" />
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/tv_live_pushing" layout="@layout/layout_gift_root" />
+        <RelativeLayout android:id="@id/rl_msg" android:layout_width="280.0dip" android:layout_height="200.0dip" android:layout_marginBottom="60.0dip" android:layout_alignParentBottom="true" android:layout_centerVertical="true">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/chat_room_list" android:scrollbars="none" android:fadingEdge="none" android:overScrollMode="never" style="@style/match_match" />
+            <com.gateio.common.view.CornerTextView android:gravity="center" android:id="@id/chat_new_msg" android:background="@color/color_FD9859" android:visibility="gone" android:layout_height="26.0dip" android:layout_alignParentBottom="true" android:paddingStart="@dimen/margin_padding_10" android:paddingEnd="@dimen/margin_padding_10" app:radius="13.0dip" style="@style/tv_user_white_14" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <include layout="@layout/layout_live_bottom" />
+</RelativeLayout>

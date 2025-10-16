@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruffian.library.widget.RFrameLayout android:layout_width="fill_parent" android:layout_height="32.0dip" app:background_normal="@color/uikit_cmpt_button_soft_v5" app:corner_radius="99.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_position_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:includeFontPadding="false" android:lineSpacingExtra="0.0dip" android:lineSpacingMultiplier="1.0" style="@style/Text_text_primary_12_weight_600_v5" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_tp_sl" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toEndOf="@id/tv_position_exit_price">
+        <TextView android:textColor="@color/uikit_function_trade_buy_v5" android:gravity="end" android:id="@id/tvSl" android:text="123456" android:layout_weight="1.0" style="@style/Text_text_primary_12_weight_600_v5" />
+        <TextView android:id="@id/tvSlLine" android:text="/" style="@style/Text_text_primary_12_weight_600_v5" />
+        <TextView android:textColor="@color/uikit_function_trade_sell_v5" android:id="@id/tvTp" android:text="123456" android:layout_weight="1.0" style="@style/Text_text_primary_12_weight_600_v5" />
+    </LinearLayout>
+</com.ruffian.library.widget.RFrameLayout>

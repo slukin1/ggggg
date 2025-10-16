@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:id="@id/ll_root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub android:layout_gravity="center_vertical" android:id="@id/stubTvLeft" android:layout="@layout/uikit_button_icon_font_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ViewStub android:layout_gravity="center_vertical" android:id="@id/stubIvLeft" android:layout="@layout/uikit_button_image_v5" android:layout_width="16.0dip" android:layout_height="16.0dip" />
+    <com.gateio.lib.uikit.widget.GTUnderlineTextViewV5 android:textSize="@dimen/uikit_text_size_16" android:gravity="center" android:id="@id/tv_button" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layoutDirection="ltr" app:uikit_underline_dashclick="false" style="@style/Uikit_font_sans_5_0_weight_500" />
+    <ViewStub android:layout_gravity="center_vertical" android:id="@id/stubIvRight" android:layout="@layout/uikit_button_image_v5" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginStart="@dimen/uikit_spacing_6_v5" android:layout_marginEnd="@dimen/uikit_spacing_6_v5" />
+    <ViewStub android:layout_gravity="center_vertical" android:id="@id/stubTvRight" android:layout="@layout/uikit_button_icon_font_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/uikit_spacing_6_v5" android:layout_marginEnd="@dimen/uikit_spacing_6_v5" />
+    <ViewStub android:id="@id/lt_animation" android:layout="@layout/uikit_button_lottie_animation_v5" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

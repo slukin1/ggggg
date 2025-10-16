@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.biz_fiat_channel.widget.FiatDropdownView android:id="@id/phoneCode" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintEnd_toStartOf="@id/phoneNum" app:layout_constraintHorizontal_weight="1.2" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:uikit_dropdownDimenV5="large" app:uikit_dropdownEmptyTextV5="@string/fiat_no_results" app:uikit_dropdownShowScreenBottomV5="true" app:uikit_dropdownStyleV5="stroke" />
+    <com.gateio.lib.uikit.input.GTInputV5 android:id="@id/phoneNum" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="12.0dip" app:layout_constraintBottom_toBottomOf="@id/phoneCode" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_weight="2.0" app:layout_constraintStart_toEndOf="@id/phoneCode" app:uikit_editDimenV5="large" app:uikit_editInputTypeV5="number" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,247 @@
+.class public final Landroidx/databinding/library/baseAdapters/R$id;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/databinding/library/baseAdapters/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "id"
+.end annotation
+
+
+# static fields
+.field public static final action_bar:I = 0x7f0b007c
+
+.field public static final action_bar_activity_content:I = 0x7f0b007d
+
+.field public static final action_bar_container:I = 0x7f0b007e
+
+.field public static final action_bar_root:I = 0x7f0b007f
+
+.field public static final action_bar_spinner:I = 0x7f0b0080
+
+.field public static final action_bar_subtitle:I = 0x7f0b0081
+
+.field public static final action_bar_title:I = 0x7f0b0082
+
+.field public static final action_container:I = 0x7f0b0085
+
+.field public static final action_context_bar:I = 0x7f0b0086
+
+.field public static final action_divider:I = 0x7f0b0087
+
+.field public static final action_image:I = 0x7f0b008b
+
+.field public static final action_menu_divider:I = 0x7f0b008c
+
+.field public static final action_menu_presenter:I = 0x7f0b008d
+
+.field public static final action_mode_bar:I = 0x7f0b008e
+
+.field public static final action_mode_bar_stub:I = 0x7f0b008f
+
+.field public static final action_mode_close_button:I = 0x7f0b0090
+
+.field public static final action_text:I = 0x7f0b0094
+
+.field public static final actions:I = 0x7f0b0095
+
+.field public static final activity_chooser_view_content:I = 0x7f0b0099
+
+.field public static final add:I = 0x7f0b009f
+
+.field public static final alertTitle:I = 0x7f0b00dd
+
+.field public static final async:I = 0x7f0b025e
+
+.field public static final blocking:I = 0x7f0b0325
+
+.field public static final bottom:I = 0x7f0b0344
+
+.field public static final buttonPanel:I = 0x7f0b0408
+
+.field public static final checkbox:I = 0x7f0b0536
+
+.field public static final chronometer:I = 0x7f0b0547
+
+.field public static final content:I = 0x7f0b0613
+
+.field public static final contentPanel:I = 0x7f0b0615
+
+.field public static final custom:I = 0x7f0b0691
+
+.field public static final customPanel:I = 0x7f0b0696
+
+.field public static final dataBinding:I = 0x7f0b06c5
+
+.field public static final decor_content_parent:I = 0x7f0b06da
+
+.field public static final default_activity_button:I = 0x7f0b06dd
+
+.field public static final edit_query:I = 0x7f0b0847
+
+.field public static final end:I = 0x7f0b087d
+
+.field public static final expand_activities_button:I = 0x7f0b08f7
+
+.field public static final expanded_menu:I = 0x7f0b0900
+
+.field public static final forever:I = 0x7f0b09f3
+
+.field public static final group_divider:I = 0x7f0b0b42
+
+.field public static final home:I = 0x7f0b0c30
+
+.field public static final icon:I = 0x7f0b0c68
+
+.field public static final icon_group:I = 0x7f0b0c9c
+
+.field public static final image:I = 0x7f0b0cf4
+
+.field public static final info:I = 0x7f0b0dba
+
+.field public static final italic:I = 0x7f0b0e23
+
+.field public static final left:I = 0x7f0b117c
+
+.field public static final line1:I = 0x7f0b11b8
+
+.field public static final line3:I = 0x7f0b11ba
+
+.field public static final listMode:I = 0x7f0b11f1
+
+.field public static final list_item:I = 0x7f0b11f5
+
+.field public static final message:I = 0x7f0b1720
+
+.field public static final multiply:I = 0x7f0b1769
+
+.field public static final none:I = 0x7f0b17ae
+
+.field public static final normal:I = 0x7f0b17af
+
+.field public static final notification_background:I = 0x7f0b17bf
+
+.field public static final notification_main_column:I = 0x7f0b17c1
+
+.field public static final notification_main_column_container:I = 0x7f0b17c2
+
+.field public static final onAttachStateChangeListener:I = 0x7f0b17dd
+
+.field public static final onDateChanged:I = 0x7f0b17de
+
+.field public static final parentPanel:I = 0x7f0b18fc
+
+.field public static final progress_circular:I = 0x7f0b1a66
+
+.field public static final progress_horizontal:I = 0x7f0b1a68
+
+.field public static final radio:I = 0x7f0b1ab5
+
+.field public static final right:I = 0x7f0b1bbc
+
+.field public static final right_icon:I = 0x7f0b1bc1
+
+.field public static final right_side:I = 0x7f0b1bc4
+
+.field public static final screen:I = 0x7f0b1d08
+
+.field public static final scrollIndicatorDown:I = 0x7f0b1d0b
+
+.field public static final scrollIndicatorUp:I = 0x7f0b1d0c
+
+.field public static final scrollView:I = 0x7f0b1d0d
+
+.field public static final search_badge:I = 0x7f0b1d1a
+
+.field public static final search_bar:I = 0x7f0b1d1b
+
+.field public static final search_button:I = 0x7f0b1d1e
+
+.field public static final search_close_btn:I = 0x7f0b1d20
+
+.field public static final search_edit_frame:I = 0x7f0b1d23
+
+.field public static final search_go_btn:I = 0x7f0b1d27
+
+.field public static final search_mag_icon:I = 0x7f0b1d2c
+
+.field public static final search_plate:I = 0x7f0b1d30
+
+.field public static final search_src_text:I = 0x7f0b1d32
+
+.field public static final search_voice_btn:I = 0x7f0b1d36
+
+.field public static final select_dialog_listview:I = 0x7f0b1d5c
+
+.field public static final shortcut:I = 0x7f0b1dae
+
+.field public static final spacer:I = 0x7f0b1ead
+
+.field public static final split_action_bar:I = 0x7f0b1ebe
+
+.field public static final src_atop:I = 0x7f0b1ec8
+
+.field public static final src_in:I = 0x7f0b1ec9
+
+.field public static final src_over:I = 0x7f0b1eca
+
+.field public static final start:I = 0x7f0b1ed5
+
+.field public static final submenuarrow:I = 0x7f0b1f45
+
+.field public static final submit_area:I = 0x7f0b1f47
+
+.field public static final tabMode:I = 0x7f0b1f9b
+
+.field public static final tag_transition_group:I = 0x7f0b1fdc
+
+.field public static final tag_unhandled_key_event_manager:I = 0x7f0b1fe1
+
+.field public static final tag_unhandled_key_listeners:I = 0x7f0b1fe2
+
+.field public static final text:I = 0x7f0b200a
+
+.field public static final text2:I = 0x7f0b200c
+
+.field public static final textSpacerNoButtons:I = 0x7f0b2010
+
+.field public static final textSpacerNoTitle:I = 0x7f0b2011
+
+.field public static final textWatcher:I = 0x7f0b2019
+
+.field public static final time:I = 0x7f0b2062
+
+.field public static final title:I = 0x7f0b2086
+
+.field public static final titleDividerNoCustom:I = 0x7f0b2091
+
+.field public static final title_template:I = 0x7f0b20a8
+
+.field public static final top:I = 0x7f0b20d1
+
+.field public static final topPanel:I = 0x7f0b20d6
+
+.field public static final uniform:I = 0x7f0b2bf2
+
+.field public static final up:I = 0x7f0b2bff
+
+.field public static final view_tree_lifecycle_owner:I = 0x7f0b2d63
+
+.field public static final view_tree_view_model_store_owner:I = 0x7f0b2d66
+
+.field public static final wrap_content:I = 0x7f0b2de2
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

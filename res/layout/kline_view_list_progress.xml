@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.widget.GTUnderlineTextViewV5 android:textSize="12.0sp" android:textColor="@color/uikit_text_secondary_v5" android:id="@id/progressLeftText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kline_memebox_listingprogress" style="@style/Uikit_font_sans_5_0_weight_400" />
+    <com.gateio.lib.uikit.progress_bar.GTProgressV5 android:id="@id/listProgress" android:layout_width="wrap_content" android:layout_height="4.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_weight="1.0" app:uikit_progress_animation_enable_V5="true" app:uikit_progress_left_color_V5="@color/uikit_function_trade_buy_v5" app:uikit_progress_right_color_V5="@color/uikit_cmpt_slider_inactive_line_v5" app:uikit_progress_roundSizeV5="small" app:uikit_progress_typeV5="line" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="@color/uikit_text_primary_v5" android:id="@id/progressRightText" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Uikit_font_sans_5_0_weight_400" />
+</merge>

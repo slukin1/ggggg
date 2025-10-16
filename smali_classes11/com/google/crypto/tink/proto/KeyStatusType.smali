@@ -1,0 +1,745 @@
+.class public final enum Lcom/google/crypto/tink/proto/KeyStatusType;
+.super Ljava/lang/Enum;
+.source "KeyStatusType.java"
+
+# interfaces
+.implements Lcom/google/crypto/tink/shaded/protobuf/Internal$EnumLite;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/google/crypto/tink/proto/KeyStatusType$KeyStatusTypeVerifier;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Enum<",
+        "Lcom/google/crypto/tink/proto/KeyStatusType;",
+        ">;",
+        "Lcom/google/crypto/tink/shaded/protobuf/Internal$EnumLite;"
+    }
+.end annotation
+
+
+# static fields
+.field private static final synthetic $VALUES:[Lcom/google/crypto/tink/proto/KeyStatusType;
+
+.field public static final enum DESTROYED:Lcom/google/crypto/tink/proto/KeyStatusType;
+
+.field public static final DESTROYED_VALUE:I = 0x3
+
+.field public static final enum DISABLED:Lcom/google/crypto/tink/proto/KeyStatusType;
+
+.field public static final DISABLED_VALUE:I = 0x2
+
+.field public static final enum ENABLED:Lcom/google/crypto/tink/proto/KeyStatusType;
+
+.field public static final ENABLED_VALUE:I = 0x1
+
+.field public static final enum UNKNOWN_STATUS:Lcom/google/crypto/tink/proto/KeyStatusType;
+
+.field public static final UNKNOWN_STATUS_VALUE:I
+
+.field public static final enum UNRECOGNIZED:Lcom/google/crypto/tink/proto/KeyStatusType;
+
+.field private static final internalValueMap:Lcom/google/crypto/tink/shaded/protobuf/Internal$EnumLiteMap;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/google/crypto/tink/shaded/protobuf/Internal$EnumLiteMap<",
+            "Lcom/google/crypto/tink/proto/KeyStatusType;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# instance fields
+.field private final value:I
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 12
+
+    .line 1
+    .line 2
+    new-instance v0, Lcom/google/crypto/tink/proto/KeyStatusType;
+
+    .line 3
+    .line 4
+    const-string/jumbo v1, "UNKNOWN_STATUS"
+
+    .line 5
+    const/4 v2, 0x0
+
+    .line 6
+    .line 7
+    .line 8
+    invoke-direct {v0, v1, v2, v2}, Lcom/google/crypto/tink/proto/KeyStatusType;-><init>(Ljava/lang/String;II)V
+
+    .line 9
+    .line 10
+    sput-object v0, Lcom/google/crypto/tink/proto/KeyStatusType;->UNKNOWN_STATUS:Lcom/google/crypto/tink/proto/KeyStatusType;
+
+    .line 11
+    .line 12
+    new-instance v1, Lcom/google/crypto/tink/proto/KeyStatusType;
+
+    .line 13
+    .line 14
+    const-string/jumbo v3, "ENABLED"
+
+    .line 15
+    const/4 v4, 0x1
+
+    .line 16
+    .line 17
+    .line 18
+    invoke-direct {v1, v3, v4, v4}, Lcom/google/crypto/tink/proto/KeyStatusType;-><init>(Ljava/lang/String;II)V
+
+    .line 19
+    .line 20
+    sput-object v1, Lcom/google/crypto/tink/proto/KeyStatusType;->ENABLED:Lcom/google/crypto/tink/proto/KeyStatusType;
+
+    .line 21
+    .line 22
+    new-instance v3, Lcom/google/crypto/tink/proto/KeyStatusType;
+
+    .line 23
+    .line 24
+    const-string/jumbo v5, "DISABLED"
+
+    .line 25
+    const/4 v6, 0x2
+
+    .line 26
+    .line 27
+    .line 28
+    invoke-direct {v3, v5, v6, v6}, Lcom/google/crypto/tink/proto/KeyStatusType;-><init>(Ljava/lang/String;II)V
+
+    .line 29
+    .line 30
+    sput-object v3, Lcom/google/crypto/tink/proto/KeyStatusType;->DISABLED:Lcom/google/crypto/tink/proto/KeyStatusType;
+
+    .line 31
+    .line 32
+    new-instance v5, Lcom/google/crypto/tink/proto/KeyStatusType;
+
+    .line 33
+    .line 34
+    const-string/jumbo v7, "DESTROYED"
+
+    .line 35
+    const/4 v8, 0x3
+
+    .line 36
+    .line 37
+    .line 38
+    invoke-direct {v5, v7, v8, v8}, Lcom/google/crypto/tink/proto/KeyStatusType;-><init>(Ljava/lang/String;II)V
+
+    .line 39
+    .line 40
+    sput-object v5, Lcom/google/crypto/tink/proto/KeyStatusType;->DESTROYED:Lcom/google/crypto/tink/proto/KeyStatusType;
+
+    .line 41
+    .line 42
+    new-instance v7, Lcom/google/crypto/tink/proto/KeyStatusType;
+
+    .line 43
+    const/4 v9, -0x1
+
+    .line 44
+    .line 45
+    const-string/jumbo v10, "UNRECOGNIZED"
+
+    .line 46
+    const/4 v11, 0x4
+
+    .line 47
+    .line 48
+    .line 49
+    invoke-direct {v7, v10, v11, v9}, Lcom/google/crypto/tink/proto/KeyStatusType;-><init>(Ljava/lang/String;II)V
+
+    .line 50
+    .line 51
+    sput-object v7, Lcom/google/crypto/tink/proto/KeyStatusType;->UNRECOGNIZED:Lcom/google/crypto/tink/proto/KeyStatusType;
+
+    .line 52
+    const/4 v9, 0x5
+
+    .line 53
+    .line 54
+    new-array v9, v9, [Lcom/google/crypto/tink/proto/KeyStatusType;
+
+    .line 55
+    .line 56
+    aput-object v0, v9, v2
+
+    .line 57
+    .line 58
+    aput-object v1, v9, v4
+
+    .line 59
+    .line 60
+    aput-object v3, v9, v6
+
+    .line 61
+    .line 62
+    aput-object v5, v9, v8
+
+    .line 63
+    .line 64
+    aput-object v7, v9, v11
+
+    .line 65
+    .line 66
+    sput-object v9, Lcom/google/crypto/tink/proto/KeyStatusType;->$VALUES:[Lcom/google/crypto/tink/proto/KeyStatusType;
+
+    .line 67
+    .line 68
+    new-instance v0, Lcom/google/crypto/tink/proto/KeyStatusType$1;
+
+    .line 69
+    .line 70
+    .line 71
+    invoke-direct {v0}, Lcom/google/crypto/tink/proto/KeyStatusType$1;-><init>()V
+
+    .line 72
+    .line 73
+    sput-object v0, Lcom/google/crypto/tink/proto/KeyStatusType;->internalValueMap:Lcom/google/crypto/tink/shaded/protobuf/Internal$EnumLiteMap;
+
+    .line 74
+    return-void
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+.end method
+
+.method private constructor <init>(Ljava/lang/String;II)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "value"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I)V"
+        }
+    .end annotation
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 4
+    .line 5
+    iput p3, p0, Lcom/google/crypto/tink/proto/KeyStatusType;->value:I
+
+    .line 6
+    return-void
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+.end method
+
+.method public static forNumber(I)Lcom/google/crypto/tink/proto/KeyStatusType;
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
+    .line 1
+    .line 2
+    if-eqz p0, :cond_3
+
+    .line 3
+    const/4 v0, 0x1
+
+    .line 4
+    .line 5
+    if-eq p0, v0, :cond_2
+
+    .line 6
+    const/4 v0, 0x2
+
+    .line 7
+    .line 8
+    if-eq p0, v0, :cond_1
+
+    .line 9
+    const/4 v0, 0x3
+
+    .line 10
+    .line 11
+    if-eq p0, v0, :cond_0
+
+    .line 12
+    const/4 p0, 0x0
+
+    .line 13
+    return-object p0
+
+    .line 14
+    .line 15
+    :cond_0
+    sget-object p0, Lcom/google/crypto/tink/proto/KeyStatusType;->DESTROYED:Lcom/google/crypto/tink/proto/KeyStatusType;
+
+    .line 16
+    return-object p0
+
+    .line 17
+    .line 18
+    :cond_1
+    sget-object p0, Lcom/google/crypto/tink/proto/KeyStatusType;->DISABLED:Lcom/google/crypto/tink/proto/KeyStatusType;
+
+    .line 19
+    return-object p0
+
+    .line 20
+    .line 21
+    :cond_2
+    sget-object p0, Lcom/google/crypto/tink/proto/KeyStatusType;->ENABLED:Lcom/google/crypto/tink/proto/KeyStatusType;
+
+    .line 22
+    return-object p0
+
+    .line 23
+    .line 24
+    :cond_3
+    sget-object p0, Lcom/google/crypto/tink/proto/KeyStatusType;->UNKNOWN_STATUS:Lcom/google/crypto/tink/proto/KeyStatusType;
+
+    .line 25
+    return-object p0
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+.end method
+
+.method public static internalGetValueMap()Lcom/google/crypto/tink/shaded/protobuf/Internal$EnumLiteMap;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/google/crypto/tink/shaded/protobuf/Internal$EnumLiteMap<",
+            "Lcom/google/crypto/tink/proto/KeyStatusType;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    .line 2
+    sget-object v0, Lcom/google/crypto/tink/proto/KeyStatusType;->internalValueMap:Lcom/google/crypto/tink/shaded/protobuf/Internal$EnumLiteMap;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+.end method
+
+.method public static internalGetVerifier()Lcom/google/crypto/tink/shaded/protobuf/Internal$EnumVerifier;
+    .locals 1
+
+    .line 1
+    .line 2
+    sget-object v0, Lcom/google/crypto/tink/proto/KeyStatusType$KeyStatusTypeVerifier;->INSTANCE:Lcom/google/crypto/tink/shaded/protobuf/Internal$EnumVerifier;
+
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+.end method
+
+.method public static valueOf(I)Lcom/google/crypto/tink/proto/KeyStatusType;
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    .line 2
+    invoke-static {p0}, Lcom/google/crypto/tink/proto/KeyStatusType;->forNumber(I)Lcom/google/crypto/tink/proto/KeyStatusType;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static valueOf(Ljava/lang/String;)Lcom/google/crypto/tink/proto/KeyStatusType;
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
+
+    .line 1
+    const-class v0, Lcom/google/crypto/tink/proto/KeyStatusType;
+
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/google/crypto/tink/proto/KeyStatusType;
+
+    return-object p0
+.end method
+
+.method public static values()[Lcom/google/crypto/tink/proto/KeyStatusType;
+    .locals 1
+
+    .line 1
+    .line 2
+    sget-object v0, Lcom/google/crypto/tink/proto/KeyStatusType;->$VALUES:[Lcom/google/crypto/tink/proto/KeyStatusType;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-virtual {v0}, [Lcom/google/crypto/tink/proto/KeyStatusType;->clone()Ljava/lang/Object;
+
+    .line 6
+    move-result-object v0
+
+    .line 7
+    .line 8
+    check-cast v0, [Lcom/google/crypto/tink/proto/KeyStatusType;
+
+    .line 9
+    return-object v0
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+.end method
+
+
+# virtual methods
+.method public final getNumber()I
+    .locals 2
+
+    .line 1
+    .line 2
+    sget-object v0, Lcom/google/crypto/tink/proto/KeyStatusType;->UNRECOGNIZED:Lcom/google/crypto/tink/proto/KeyStatusType;
+
+    .line 3
+    .line 4
+    if-eq p0, v0, :cond_0
+
+    .line 5
+    .line 6
+    iget v0, p0, Lcom/google/crypto/tink/proto/KeyStatusType;->value:I
+
+    .line 7
+    return v0
+
+    .line 8
+    .line 9
+    :cond_0
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
+    .line 10
+    .line 11
+    const-string/jumbo v1, "Can\'t get the number of an unknown enum value."
+
+    .line 12
+    .line 13
+    .line 14
+    invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    .line 15
+    throw v0
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+.end method

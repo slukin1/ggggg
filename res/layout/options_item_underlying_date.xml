@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_horizontal" android:orientation="vertical" android:tag="layout/options_item_underlying_date_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="16.0dip" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tvDate" android:layout_marginTop="11.0dip" android:text="06/27/2025" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Text_text_secondary_14_weight_500_v5" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="7.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="@id/tvDate" app:layout_constraintStart_toStartOf="@id/tvDate" app:layout_constraintTop_toBottomOf="@id/tvDate">
+        <View android:id="@id/viewBid" android:background="@color/uikit_function_trade_buy_v5" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="2.0dip" android:layout_weight="1.0" />
+        <View android:id="@id/viewAsk" android:background="@color/uikit_function_trade_sell_v5" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="2.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

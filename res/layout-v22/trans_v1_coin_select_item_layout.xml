@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/uikit_dp_8" android:paddingBottom="@dimen/uikit_dp_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/uikit_dp_16" android:paddingVertical="@dimen/uikit_dp_8"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gateio.common.view.RoundImageView android:id="@id/iv_coin_logo" android:layout_width="@dimen/uikit_dp_24" android:layout_height="@dimen/uikit_dp_24" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/uikit_text_size_15" android:textColor="@color/uikit_text_primary_v5" android:id="@id/iv_coin_symbol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/uikit_dp_8" style="@style/Uikit_font_sans_5_0_weight_500" />
+</androidx.appcompat.widget.LinearLayoutCompat>

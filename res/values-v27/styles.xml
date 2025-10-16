@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.SNSCore" parent="@style/Base.Theme.MaterialThemeBuilder">
+        <item name="android:colorBackground">@color/uikit_bg_primary_v5</item>
+        <item name="android:textAppearance">@style/TextAppearance.SNSCore.Body1</item>
+        <item name="android:textColorPrimary">@color/uikit_text_primary_v5</item>
+        <item name="android:textColorSecondary">@color/uikit_text_secondary_v5</item>
+        <item name="android:textColorHighlight">@color/uikit_text_brand_v5</item>
+        <item name="android:textColorHint">@color/uikit_text_secondary_v5</item>
+        <item name="android:textColorLink">@color/uikit_text_brand_v5</item>
+        <item name="android:listDivider">@drawable/sns_list_divider</item>
+        <item name="android:statusBarColor">?android:colorBackground</item>
+        <item name="android:navigationBarDividerColor">?android:colorBackground</item>
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.SNSCore.BottomSheetDialog</item>
+        <item name="colorControlNormal">@color/uikit_text_tertiary_v5</item>
+        <item name="colorError">@color/uikit_text_error_v5</item>
+        <item name="colorOnBackground">@color/uikit_text_primary_v5</item>
+        <item name="colorOnError">@color/uikit_text_error_v5</item>
+        <item name="colorOnPrimary">@color/uikit_text_inverse_primary_v5</item>
+        <item name="colorOnSecondary">@color/uikit_text_inverse_primary_v5</item>
+        <item name="colorOnSurface">@color/uikit_text_primary_v5</item>
+        <item name="colorPrimary">@color/uikit_cmpt_button_primary_v5</item>
+        <item name="colorPrimaryVariant">@color/uikit_cmpt_button_primary_v5</item>
+        <item name="colorSecondary">@color/uikit_cmpt_button_primary_v5</item>
+        <item name="colorSecondaryVariant">@color/uikit_cmpt_button_primary_v5</item>
+        <item name="colorSurface">@color/uikit_layer_1_v5</item>
+        <item name="editTextStyle">@style/Widget.SNSTextEdit</item>
+        <item name="materialButtonOutlinedStyle">@style/Widget.SNSButton.Outlined</item>
+        <item name="materialButtonStyle">@style/Widget.SNSButton</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.SNSCore.LargeComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.SNSCore.MediumComponent</item>
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.SNSCore.SmallComponent</item>
+        <item name="sns_colorInit">@color/uikit_cmpt_input_v5</item>
+        <item name="sns_colorOnInit">@color/uikit_icon_primary_v5</item>
+        <item name="sns_colorOnPending">@color/uikit_text_warning_v5</item>
+        <item name="sns_colorOnProcessing">@color/uikit_text_brand_v5</item>
+        <item name="sns_colorOnRejected">@color/uikit_text_error_v5</item>
+        <item name="sns_colorOnSuccess">@color/uikit_text_success_v5</item>
+        <item name="sns_colorPending">@color/uikit_cmpt_input_v5</item>
+        <item name="sns_colorProcessing">@color/uikit_cmpt_input_v5</item>
+        <item name="sns_colorRejected">@color/uikit_cmpt_input_v5</item>
+        <item name="sns_colorSuccess">@color/uikit_cmpt_input_v5</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.SNSCore.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.SNSCore.Body2</item>
+        <item name="textAppearanceButton">@style/TextAppearance.SNSCore.Button</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.SNSCore.Caption</item>
+        <item name="textAppearanceHeadline1">@style/TextAppearance.SNSCore.Headline1</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.SNSCore.Headline2</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.SNSCore.Headline3</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.SNSCore.Headline4</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.SNSCore.Headline5</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.SNSCore.Headline6</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.SNSCore.Overline</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.SNSCore.Subtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.SNSCore.Subtitle2</item>
+    </style>
+    <style name="iproov__AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+    </style>
+</resources>

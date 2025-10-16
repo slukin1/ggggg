@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruffian.library.widget.RRelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_add_media" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginTop="4.0dip" android:src="@mipmap/ic_user_feedback_upload_media" android:scaleType="fitXY" android:layout_marginEnd="4.0dip" />
+    <RelativeLayout android:id="@id/rl_pic" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginTop="4.0dip" android:layout_marginEnd="4.0dip">
+        <com.ruffian.library.widget.RImageView android:id="@id/iv_pic" android:layout_width="80.0dip" android:layout_height="80.0dip" android:scaleType="centerCrop" app:corner_radius="8.0dip" />
+        <ImageView android:id="@id/iv_play_video" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@mipmap/ic_feedback_play_video" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/iv_upload_failed" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@mipmap/ic_feedback_upload_failed" android:layout_centerInParent="true" />
+        <com.ruffian.library.widget.RView android:id="@id/view_skeleton" android:layout_width="80.0dip" android:layout_height="80.0dip" app:background_normal="#50000000" app:corner_radius="8.0dip" />
+        <ProgressBar android:id="@id/progressBar" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:max="100" android:indeterminate="false" android:progressDrawable="@drawable/progress_shape_feedback_media" android:layout_centerInParent="true" android:layout_marginHorizontal="12.0dip" style="@android:style/Widget.ProgressBar.Horizontal" />
+    </RelativeLayout>
+    <ImageView android:id="@id/iv_delete" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_delete_feedback_media" android:layout_marginStart="-20.0dip" android:layout_toEndOf="@id/rl_pic" />
+</com.ruffian.library.widget.RRelativeLayout>

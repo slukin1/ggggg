@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@drawable/shape_main_dialog_top" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/ll_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_close" android:padding="@dimen/margin_padding_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_trans_close" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/uikit_color_333333_e6e6e6" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/moments_black_time" android:layout_centerInParent="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/uikit_color_2354e6" android:id="@id/tv_confirm" android:padding="@dimen/margin_padding_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_qd" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View style="@style/uikit_view_line_mian_v" />
+    <com.contrarywind.view.WheelView android:id="@id/wheelView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_10" android:layout_marginBottom="@dimen/margin_padding_10" android:layout_marginVertical="@dimen/margin_padding_10" app:wheelview_dividerColor="@color/uikit_transparent" app:wheelview_lineSpacingMultiplier="2.0" app:wheelview_textColorCenter="@color/uikit_color_333333_e6e6e6" />
+</LinearLayout>

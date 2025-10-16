@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_padding_16" android:layout_marginTop="14.0dip" android:layout_marginRight="@dimen/margin_padding_16"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="10.0sp" android:textColor="@color/uikit_text_4" android:id="@id/tv_bill_type" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/user_zhlx" android:layout_weight="1.0" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/uikit_text_4" android:id="@id/tv_type_operate" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/user_czlx" android:layout_weight="1.0" android:layout_marginStart="16.0dip" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/uikit_text_4" android:gravity="end" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/c2c_loan_amount" android:layout_weight="1.0" android:layout_marginStart="16.0dip" />
+</LinearLayout>

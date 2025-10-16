@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.common.view.CornerLinearLayout android:gravity="center" android:background="@color/uikit_transparent" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="40.0dip" app:gate_view_radius="@dimen/uikit_radius_6" app:gate_view_stroke_color="@color/uikit_divider_5_v3" app:gate_view_stroke_width="@dimen/uikit_stroke_width_v3"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0sp" android:textColor="@color/uikit_text_1_v3" android:id="@id/uikit_tv_change" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Uikit_font_sans_2_0_weight_500" />
+    <com.gateio.uiComponent.GateIconFont android:textColor="@color/uikit_icon_1_v3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_marginStart="@dimen/uikit_dp_4" />
+</com.gateio.common.view.CornerLinearLayout>

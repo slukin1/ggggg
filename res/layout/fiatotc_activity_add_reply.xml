@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:background="@color/uikit_bg_primary_v5" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.title.GTNavBarV5 android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fiatotc_create_auto_reply" app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/save" app:layout_constraintTop_toBottomOf="@id/title">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.gateio.lib.uikit.textarea.GTTextAreaV5 android:id="@id/input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/uikit_spacing_16_v5" app:uikit_hintV5="@string/fiatotc_please_enter" app:uikit_input_heightV5="240.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <com.gateio.lib.uikit.helper.GTFooterButtonV5 android:id="@id/save" android:padding="@dimen/uikit_spacing_16_v5" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:uikit_footerButtonLargeSizeV5="true" app:uikit_footerConfirmTextV5="@string/fiatotc_save" />
+</androidx.constraintlayout.widget.ConstraintLayout>

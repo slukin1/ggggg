@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_header" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/btn_head_back" android:padding="10.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/uikit_btn_back" />
+    <TextView android:textSize="24.0sp" android:id="@id/tv_head_title" android:text="@string/app_name" android:layout_toEndOf="@id/btn_head_back" style="@style/tv_head_title" />
+    <ImageView android:id="@id/btn_head_front" android:padding="10.0dip" android:visibility="invisible" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@mipmap/usd_price" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    <ImageView android:id="@id/btn_head_front_for_c2c" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@mipmap/usd_price" android:layout_centerVertical="true" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" style="@style/title_base_button_r" />
+    <ImageView android:id="@id/share" android:padding="14.0dip" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@mipmap/share" android:layout_centerVertical="true" android:layout_toStartOf="@id/btn_head_front" />
+    <TextView android:textColor="@color/uikit_text_color_white" android:id="@id/tv_click_lxgly" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chart_contact_controller" android:layout_centerVertical="true" android:layout_marginEnd="10.0dip" android:layout_alignParentEnd="true" />
+</RelativeLayout>

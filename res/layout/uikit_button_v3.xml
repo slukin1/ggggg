@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:id="@id/ll_root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_16" android:id="@id/tv_left" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/iv_left" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:clickable="false" android:layout_width="16.0dip" android:layout_height="16.0dip" android:scaleType="centerCrop" />
+    <com.gateio.lib.uikit.widget.UnderlineTextView android:textSize="@dimen/uikit_text_size_16" android:gravity="center" android:id="@id/tv_button" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/Uikit_font_sans_2_0_weight_600" />
+    <ImageView android:id="@id/iv_right" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:clickable="false" android:layout_width="16.0dip" android:layout_height="16.0dip" android:scaleType="centerCrop" />
+    <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_16" android:layout_gravity="center_vertical" android:id="@id/tv_right" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/lt_animation" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:lottie_loop="true" />
+</LinearLayout>

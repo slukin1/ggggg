@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingTop="@dimen/margin_padding_16" android:paddingStart="@dimen/margin_padding_16" android:paddingEnd="@dimen/margin_padding_16" style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/match_wrap_h">
+        <com.gateio.common.view.GateioAvatarView android:id="@id/item_head" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/margin_padding_8" android:layout_marginEnd="@dimen/margin_padding_8">
+            <LinearLayout style="@style/wrap_wrap_h">
+                <TextView android:textColor="@color/color_5d5d5d" android:ellipsize="end" android:id="@id/tv_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" style="@style/tv_user_black_16" />
+                <ImageView android:id="@id/iv_luck" android:src="@mipmap/ic_command_lucker" android:layout_marginStart="4.0dip" style="@style/wrap_wrap" />
+            </LinearLayout>
+            <TextView android:textColor="@color/color_c6c6ca" android:id="@id/tv_time" android:layout_marginTop="4.0dip" style="@style/tv_user_black_12" />
+        </LinearLayout>
+        <LinearLayout android:gravity="end" style="@style/wrap_wrap">
+            <TextView android:textColor="@color/color_5d5d5d" android:ellipsize="end" android:gravity="end" android:id="@id/tv_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="240.0dip" android:maxLines="1" style="@style/tv_user_black_16" />
+            <TextView android:textColor="@color/color_c6c6ca" android:id="@id/tv_amount_local" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" style="@style/tv_user_black_12" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/color_eaebed" android:layout_marginTop="@dimen/margin_padding_16" style="@style/view_line_v4" />
+</LinearLayout>

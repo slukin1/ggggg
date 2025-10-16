@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.common.view.CornerLinearLayoutV5 android:gravity="center_vertical" android:background="@color/uikit_cmpt_input_v5" android:padding="@dimen/uikit_spacing_8_v5" android:layout_width="fill_parent" android:layout_height="40.0dip" app:radius="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.common.view.CornerView android:id="@id/cv_payment_color" android:visibility="gone" android:layout_width="@dimen/dp_2" android:layout_height="@dimen/dp_10" android:layout_marginEnd="@dimen/uikit_spacing_8_v5" />
+    <com.gateio.comlib.view.CircleImageView android:id="@id/icon" android:visibility="gone" android:layout_width="@dimen/uikit_dp_16" android:layout_height="@dimen/uikit_dp_16" android:layout_marginEnd="@dimen/dp_8" />
+    <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_primary_v5" android:ellipsize="end" android:id="@id/content" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" style="@style/Uikit_font_sans_5_0_weight_500" />
+    <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_16" android:textColor="@color/uikit_icon_primary_v5" android:id="@id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_marginStart="@dimen/dp_12" />
+</com.gateio.common.view.CornerLinearLayoutV5>

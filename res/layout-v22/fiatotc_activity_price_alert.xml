@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/uikit_bg_primary_v5" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.title.GTNavBarV5 android:id="@id/titleview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fiatotc_notification_price_alert" />
+    <com.gateio.lib.uikit.state.GTEmptyViewV5 android:layout_gravity="center_horizontal" android:id="@id/empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_spacing_48_v5" android:layout_marginTop="48.0dip" android:layout_marginRight="@dimen/uikit_spacing_48_v5" android:layout_marginHorizontal="@dimen/uikit_spacing_48_v5" app:uikit_descTextV5="@string/fiatotc_notification_price_alert_nodata" />
+    <LinearLayout android:orientation="vertical" android:id="@id/data_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/uikit_spacing_16_v5" android:layout_marginRight="@dimen/uikit_spacing_16_v5" android:layout_marginHorizontal="@dimen/uikit_spacing_16_v5">
+        <com.gateio.common.view.ViewPagerSwipeRefreshLayout android:id="@id/swipe_refresh" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:overScrollMode="never" app:srlEnableLoadMore="false">
+            <androidx.core.widget.NestedScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerview" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+                    <TextView android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_secondary_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_spacing_16_v5" android:text="@string/fiatotc_note" style="@style/Uikit_font_sans_5_0_weight_400" />
+                    <com.gateio.lib.uikit.text.GTMultiLineTextViewV5 android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_text_secondary_v5" android:id="@id/note" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uikit_spacing_8_v5" android:text="@string/fiatotc_notification_price_alert_note" style="@style/Uikit_font_sans_5_0_weight_400" />
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </com.gateio.common.view.ViewPagerSwipeRefreshLayout>
+        <com.gateio.lib.uikit.helper.GTFooterButtonV5 android:id="@id/add" android:paddingTop="@dimen/uikit_spacing_16_v5" android:paddingBottom="@dimen/uikit_spacing_16_v5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/uikit_spacing_16_v5" app:uikit_footerButtonLargeSizeV5="true" app:uikit_footerConfirmTextV5="@string/fiatotc_notification_create_alert" />
+    </LinearLayout>
+</LinearLayout>

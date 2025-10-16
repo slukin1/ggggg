@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/color_f6f7f8_061725" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/layout_header_normal" />
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/uikit_color_333333_e7e9ea" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/amm_wtqjl" android:layout_below="@id/layout_header" android:layout_toStartOf="@id/tv_rewards" />
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_rewards" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="---" android:layout_below="@id/layout_header" android:layout_alignParentEnd="true" />
+    <com.gateio.common.view.CornerTextView android:textSize="12.0sp" android:textColor="@color/color_e93a3d" android:id="@id/ctv_tips" android:background="@color/color_10_e93a3d" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/amm_reward_tips" android:layout_above="@id/ctv_add" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" app:radius="4.0dip" />
+    <com.gateio.common.view.CornerTextView android:textSize="16.0sp" android:textColor="@color/uikit_white" android:gravity="center" android:id="@id/ctv_add" android:background="@color/uikit_color_2354e6" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:text="@string/amm_tq" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" app:radius="8.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ctv_tips" android:layout_below="@id/tv_rewards">
+        <TextView android:textSize="16.0sp" android:textColor="@color/color_b3b3b3_67738a" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_empty" android:layout_marginTop="64.0dip" android:text="@string/ticker_not_data" android:drawablePadding="8.0dip" app:drawableTopCompat="@mipmap/ic_empty" style="@style/tv_user_black_16" />
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/swipyrefreshlayout" android:paddingBottom="20.0dip" style="@style/match_match">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/listview" android:visibility="gone" android:scrollbars="none" android:listSelector="@color/bg_skin_white" android:divider="@color/uikit_bg_market_line" android:dividerHeight="0.5dip" android:overScrollMode="never" style="@style/match_wrap" />
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    </LinearLayout>
+</RelativeLayout>

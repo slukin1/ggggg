@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:background="@color/color_d93d42" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.common.view.GateioTitleView android:id="@id/gt_title" android:layout_width="fill_parent" android:layout_height="48.0dip" app:bg="@color/uikit_transparent" app:leftSrc="@drawable/ic_command_back" app:rightVisibility="false" app:titleText="@string/command_hbfx" />
+    <RelativeLayout android:layout_weight="1.0" style="@style/match_match">
+        <RelativeLayout android:id="@id/rl_share" android:padding="@dimen/margin_padding_12" android:layout_width="300.0dip" android:layout_height="534.0dip" android:layout_centerInParent="true">
+            <com.gateio.common.view.CornerTextView android:textStyle="bold" android:gravity="center" android:id="@id/tv_content" android:background="@color/color_ff3c35_light" android:layout_width="fill_parent" android:layout_marginBottom="@dimen/margin_padding_20" android:minHeight="40.0dip" android:layout_above="@id/iv_code" android:lineSpacingMultiplier="1.2" android:paddingStart="@dimen/margin_padding_24" android:paddingEnd="@dimen/margin_padding_24" app:radius="20.0dip" style="@style/tv_user_white_20" />
+            <com.gateio.common.view.RoundImageView android:id="@id/iv_code" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginBottom="@dimen/margin_padding_12" android:scaleType="fitXY" android:text="@string/command_lwsx" android:layout_above="@id/tv_tips" android:layout_centerHorizontal="true" app:round_radius="5.0dip" app:type="round" />
+            <TextView android:gravity="center_horizontal" android:id="@id/tv_tips" android:layout_marginTop="@dimen/margin_padding_8" android:text="@string/commond_share_tip1" android:layout_above="@id/tv_olds" android:layout_centerHorizontal="true" style="@style/tv_user_white_10" />
+            <TextView android:gravity="center_horizontal" android:id="@id/tv_olds" android:layout_marginTop="@dimen/margin_padding_8" android:text="@string/commond_share_tip2" android:layout_above="@id/v_line" android:layout_centerHorizontal="true" style="@style/tv_user_white_10" />
+            <View android:id="@id/v_line" android:layout_height="@dimen/w_0.5" android:layout_marginTop="@dimen/margin_padding_8" android:layout_marginBottom="@dimen/margin_padding_8" android:layout_above="@id/tv_time" style="@style/view_line_v3" />
+            <TextView android:gravity="center_horizontal" android:id="@id/tv_time" android:text="@string/command_lwsx" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/tv_user_white_10" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView android:textColor="@color/color_992b2f" android:gravity="center_horizontal" android:id="@id/tv_share_tip" android:visibility="gone" android:layout_margin="@dimen/margin_padding_8" android:text="@string/command_tpbc" android:layout_centerHorizontal="true" style="@style/tv_user_white_12" />
+    <LinearLayout android:layout_margin="@dimen/margin_padding_16" style="@style/match_wrap_h">
+        <com.gateio.common.view.CornerTextView android:textColor="@color/color_6b3800" android:gravity="center" android:id="@id/tv_share" android:background="@color/color_ffdd99" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/share" android:layout_weight="1.0" app:radius="24.0dip" style="@style/tv_user_black_18" />
+        <com.gateio.common.view.CornerTextView android:textColor="@color/color_6b3800" android:gravity="center" android:id="@id/tv_save" android:background="@color/color_ffdd99" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/user_save" android:layout_weight="1.0" android:layout_marginStart="@dimen/margin_padding_16" app:radius="24.0dip" style="@style/tv_user_black_18" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/bg_wallet" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/layout_header" layout="@layout/layout_main_header" />
+    <LinearLayout android:layout_marginTop="16.0dip" android:paddingStart="@dimen/margin_padding_16" android:paddingEnd="@dimen/margin_padding_16" style="@style/match_wrap_h">
+        <TextView android:textColor="@color/text_wallet_gray3" android:layout_width="0.0dip" android:text="ID" android:layout_weight="1.0" style="@style/tv_user_black_14" />
+        <TextView android:textColor="@color/text_wallet_gray3" android:layout_width="0.0dip" android:text="@string/hold_jssjd" android:layout_weight="1.6" style="@style/tv_user_black_14" />
+        <TextView android:textColor="@color/text_wallet_gray3" android:gravity="end" android:layout_width="0.0dip" android:text="@string/hold_jslx_pjcc" android:layout_weight="1.6" style="@style/tv_user_black_14" />
+    </LinearLayout>
+    <RelativeLayout style="@style/match_wrap">
+        <TextView android:textColor="#ffc1c1c2" android:gravity="center" android:id="@id/tv_empty" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="30.0dip" android:text="@string/ticker_not_data" android:drawablePadding="16.0dip" app:drawableTopCompat="@mipmap/ic_empty" />
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh" style="@style/match_match">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:scrollbars="none" style="@style/match_match" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </RelativeLayout>
+</LinearLayout>

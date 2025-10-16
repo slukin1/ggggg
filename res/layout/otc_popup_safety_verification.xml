@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/main" android:background="@color/uikit_layer_1_v5" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/verification_pwd_item" android:visibility="gone" layout="@layout/otc_popup_safety_verification_item" />
+    <include android:id="@id/verification_ga_item" android:visibility="gone" layout="@layout/otc_popup_safety_verification_item" />
+    <include android:id="@id/verification_email_item" android:visibility="gone" layout="@layout/otc_popup_safety_verification_item" />
+    <include android:id="@id/verification_phone_item" android:visibility="gone" layout="@layout/otc_popup_safety_verification_item" />
+</LinearLayout>

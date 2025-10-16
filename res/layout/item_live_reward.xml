@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingBottom="@dimen/margin_padding_16" style="@style/wrap_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.common.view.CornerTextView android:textSize="@dimen/text_size_12" android:textColor="@color/uikit_white" android:gravity="center" android:id="@id/tv_rank" android:layout_width="@dimen/margin_padding_24" android:layout_height="@dimen/margin_padding_24" app:radius="12.0dip" />
+    <com.gateio.common.view.GateioAvatarView android:id="@id/tv_head" android:layout_width="@dimen/margin_padding_24" android:layout_height="@dimen/margin_padding_24" android:layout_marginStart="12.0dip" android:layout_toEndOf="@id/tv_rank" app:avatar_text_size="12" />
+    <TextView android:textColor="@color/color_FFEBCC" android:gravity="center_vertical" android:id="@id/tv_name" android:minHeight="24.0dip" android:layout_marginStart="@dimen/margin_padding_8" android:layout_toEndOf="@id/tv_head" style="@style/tv_user_white_14" />
+    <TextView android:textColor="@color/color_F4D284" android:id="@id/tv_max" android:layout_below="@id/tv_name" android:layout_alignStart="@id/tv_head" style="@style/tv_user_white_14" />
+    <TextView android:id="@id/tv_msg" android:layout_marginTop="2.0dip" android:layout_below="@id/tv_max" android:layout_alignStart="@id/tv_max" style="@style/tv_user_white_14" />
+</RelativeLayout>

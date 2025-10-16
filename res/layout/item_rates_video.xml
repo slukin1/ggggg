@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="51.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioButton android:textColor="@drawable/selector_record_playlist_txt" android:gravity="center" android:id="@id/gb_rate" android:layout_width="fill_parent" android:layout_height="50.0dip" android:button="@null" />
+    <ImageView android:background="@color/color_50_ffffff" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

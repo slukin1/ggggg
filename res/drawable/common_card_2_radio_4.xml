@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <layer-list>
+            <item>
+                <shape>
+                    <solid android:color="@android:color/transparent" />
+                </shape>
+            </item>
+            <item android:left="4.0dip" android:right="4.0dip">
+                <shape>
+                    <corners android:radius="4.0dip" />
+                    <solid android:color="@color/uikit_card_2" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_selected="false">
+        <layer-list>
+            <item>
+                <shape>
+                    <solid android:color="@android:color/transparent" />
+                </shape>
+            </item>
+            <item android:left="4.0dip" android:right="4.0dip">
+                <shape>
+                    <corners android:radius="4.0dip" />
+                    <solid android:color="@color/uikit_card_2" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

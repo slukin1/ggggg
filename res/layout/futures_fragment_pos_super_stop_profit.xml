@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:id="@id/layoutRoot" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ruffian.library.widget.RLinearLayout android:orientation="vertical" android:id="@id/layoutContentRoot" android:layout_width="fill_parent" android:layout_height="fill_parent" app:background_normal="@color/uikit_layer_1_v5" app:corner_radius_top_left="12.0dip" app:corner_radius_top_right="12.0dip">
+        <include android:id="@id/layout_title" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/futures_layout_dialog_common_title" />
+        <include android:id="@id/layout_pair_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uikit_dp_16" android:layout_marginTop="@dimen/uikit_dp_4" android:layout_marginRight="@dimen/uikit_dp_16" layout="@layout/futures_layout_dialog_common_pair_header" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/llTitles" android:paddingTop="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.gateio.lib.uikit.tab.v5.GTTabsV5 android:layout_gravity="center" android:id="@id/tabLayout" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_weight="1.0" />
+            <com.gateio.uiComponent.GateIconFont android:textSize="16.0sp" android:textColor="@color/uikit_icon_quaternary_v5" android:layout_gravity="center_vertical" android:id="@id/iv_question" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:paddingStart="4.0dip" android:paddingEnd="16.0dip" />
+        </LinearLayout>
+        <View android:id="@id/viewLine" style="@style/view_line_divider_v5" />
+        <com.gateio.common.view.CustomViewpager android:id="@id/viewPager" android:scrollbars="none" android:fadingEdge="none" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:overScrollMode="never" />
+        <com.gateio.lib.uikit.button.GTButtonV5 android:id="@id/btn_confirm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_padding_16" android:layout_marginTop="@dimen/margin_padding_16" android:layout_marginRight="@dimen/margin_padding_16" android:layout_marginBottom="@dimen/margin_padding_24" android:text="@string/trans_qr" app:uikit_buttonDimenV5="medium" app:uikit_buttonTypeV5="primary_black" />
+    </com.ruffian.library.widget.RLinearLayout>
+</LinearLayout>

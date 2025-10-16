@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" style="@style/match_wrap_h_normal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/wrap_wrap_h">
+        <TextView android:textColor="@color/color_999999_7c848d" android:text="@string/invest_xcdtsj" style="@style/tv_user_black_12" />
+        <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_invest_xccfsj" android:layout_marginStart="@dimen/margin_padding_8" style="@style/tv_user_black_12" />
+    </LinearLayout>
+    <LinearLayout android:gravity="end" android:layout_marginTop="2.0dip" style="@style/match_wrap_h_normal">
+        <TextView android:textColor="@color/color_999999_7c848d" android:text="@string/invest_ljqs" style="@style/tv_user_black_12" />
+        <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_invest_ljqs" android:text="---" android:layout_marginStart="@dimen/margin_padding_10" style="@style/tv_user_black_12" />
+    </LinearLayout>
+</LinearLayout>

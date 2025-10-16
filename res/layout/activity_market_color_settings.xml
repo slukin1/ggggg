@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/uikit_bg_1_v3" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <com.gateio.uiComponent.GateIconFont android:textSize="20.0dip" android:textColor="@color/uikit_icon_1_v3" android:gravity="center_vertical" android:id="@id/tv_back" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="" android:paddingStart="12.0dip" android:paddingEnd="10.0dip" app:left_or_right="true" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/uikit_text_1_v3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/market_rate_zdys" android:layout_centerInParent="true" style="@style/Uikit_font_sans_2_0_weight_600" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_hzld" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="@color/uikit_text_1_v3" android:id="@id/tv_hzld_lable" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/market_rate_hzld" android:layout_toStartOf="@id/iv_hzld" style="@style/Uikit_font_sans_2_0_weight_500" />
+        <com.gateio.lib.uikit.widget.GTCheckBoxV3 android:id="@id/iv_hzld" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" app:uikit_isCorner_v3="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_hdlz" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0dip" android:textColor="@color/uikit_text_1_v3" android:id="@id/tv_hdlz_lable" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/market_rate_hdlz" android:layout_toStartOf="@id/iv_hdlz" style="@style/Uikit_font_sans_2_0_weight_500" />
+        <com.gateio.lib.uikit.widget.GTCheckBoxV3 android:id="@id/iv_hdlz" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" app:uikit_isCorner_v3="true" />
+    </RelativeLayout>
+</LinearLayout>

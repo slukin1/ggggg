@@ -1,0 +1,93 @@
+.class public final Lcom/sumsub/sns/camera/photo/presentation/selfie/a$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/sumsub/sns/camera/photo/presentation/selfie/a;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "a"
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/sumsub/sns/camera/photo/presentation/selfie/a$a;-><init>()V
+
+    return-void
+.end method
+
+.method public static synthetic a(Lcom/sumsub/sns/camera/photo/presentation/selfie/a$a;Lcom/sumsub/sns/internal/core/data/model/DocumentType;ZILjava/lang/Object;)Lcom/sumsub/sns/camera/photo/presentation/selfie/a;
+    .locals 0
+
+    and-int/lit8 p3, p3, 0x2
+
+    if-eqz p3, :cond_0
+
+    const/4 p2, 0x0
+
+    .line 1
+    :cond_0
+    invoke-virtual {p0, p1, p2}, Lcom/sumsub/sns/camera/photo/presentation/selfie/a$a;->a(Lcom/sumsub/sns/internal/core/data/model/DocumentType;Z)Lcom/sumsub/sns/camera/photo/presentation/selfie/a;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public final a(Lcom/sumsub/sns/internal/core/data/model/DocumentType;Z)Lcom/sumsub/sns/camera/photo/presentation/selfie/a;
+    .locals 3
+    .param p1    # Lcom/sumsub/sns/internal/core/data/model/DocumentType;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 2
+    new-instance v0, Lcom/sumsub/sns/camera/photo/presentation/selfie/a;
+
+    invoke-direct {v0}, Lcom/sumsub/sns/camera/photo/presentation/selfie/a;-><init>()V
+
+    .line 3
+    new-instance v1, Landroid/os/Bundle;
+
+    invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
+
+    .line 4
+    invoke-virtual {p1}, Lcom/sumsub/sns/internal/core/data/model/DocumentType;->c()Ljava/lang/String;
+
+    move-result-object p1
+
+    const-string/jumbo v2, "EXTRA_DOCUMENT_TYPE"
+
+    invoke-virtual {v1, v2, p1}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string/jumbo p1, "EXTRA_GALLERY_AVAILABLE"
+
+    .line 5
+    invoke-virtual {v1, p1, p2}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
+
+    .line 6
+    invoke-virtual {v0, v1}, Landroidx/fragment/app/Fragment;->setArguments(Landroid/os/Bundle;)V
+
+    return-object v0
+.end method

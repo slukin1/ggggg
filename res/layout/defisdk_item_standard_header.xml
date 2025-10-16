@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/defi_alabaster" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/defi_mercury" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/defi_dove" android:gravity="end|center" android:id="@id/text_header" android:layout_width="wrap_content" android:layout_height="50.0dip" android:textAllCaps="true" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
+    <View android:background="@color/defi_mercury" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

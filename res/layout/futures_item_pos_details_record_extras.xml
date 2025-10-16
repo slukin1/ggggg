@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="end|center" android:tag="layout/futures_item_pos_details_record_extras_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/tvKey" android:visibility="gone" style="@style/Text_text_secondary_12_weight_400_v5" />
+    <TextView android:gravity="center" android:id="@id/tvValue" android:visibility="visible" android:layout_marginStart="4.0dip" style="@style/Text_text_primary_12_weight_400_v5" />
+</LinearLayout>

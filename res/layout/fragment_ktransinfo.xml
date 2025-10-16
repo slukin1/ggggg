@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <net.lucode.hackware.magicindicator.MagicIndicator android:id="@id/tabs" android:layout_width="fill_parent" android:layout_height="28.0dip" android:layout_marginBottom="@dimen/margin_padding_10" />
+    <View android:id="@id/line" android:background="@color/horizonal_line_color" android:layout_width="fill_parent" android:layout_height="@dimen/dp_1" />
+    <com.gateio.common.view.CustomViewpager android:id="@id/vp_view_transinfo" android:background="@color/k_color_background" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

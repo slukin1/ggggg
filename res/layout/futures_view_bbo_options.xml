@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/margin_padding_16" android:paddingRight="@dimen/margin_padding_16" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/layout_counterpary_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_12" layout="@layout/futures_view_bbo_option_item" />
+    <include android:id="@id/layout_counterpary_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_12" layout="@layout/futures_view_bbo_option_item" />
+    <include android:id="@id/layout_queue_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_12" layout="@layout/futures_view_bbo_option_item" />
+    <include android:id="@id/layout_queue_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_12" layout="@layout/futures_view_bbo_option_item" />
+    <TextView android:id="@id/tv_bbo_view_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_12" android:layout_marginBottom="@dimen/margin_padding_24" android:lineSpacingMultiplier="1.2" style="@style/Text_text_secondary_12_weight_400_v5" />
+</LinearLayout>

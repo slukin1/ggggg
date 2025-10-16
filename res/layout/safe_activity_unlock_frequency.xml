@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/color_f7f7f7_061325" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.common.view.GateioTitleView android:id="@id/password_title" android:layout_width="fill_parent" android:layout_height="48.0dip" app:rightVisibility="false" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_fundpass" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_10" android:layout_marginStart="@dimen/margin_padding_15" android:layout_marginEnd="@dimen/margin_padding_15">
+        <RelativeLayout android:id="@id/rl_layout_0" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/uikit_color_333333_e6e6e6" android:id="@id/tv_frequency_0" android:padding="@dimen/margin_padding_16" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/iv_frequency_0" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_fav_select" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/margin_padding_15" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <View android:background="@color/split_line_color_new" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="@dimen/margin_padding_16" android:layout_marginEnd="@dimen/margin_padding_16" />
+        <RelativeLayout android:id="@id/rl_layout_1m" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/uikit_color_333333_e6e6e6" android:id="@id/tv_frequency_1m" android:padding="@dimen/margin_padding_16" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/iv_frequency_1m" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_fav_select" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/margin_padding_15" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <View android:background="@color/split_line_color_new" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="@dimen/margin_padding_16" android:layout_marginEnd="@dimen/margin_padding_16" />
+        <RelativeLayout android:id="@id/rl_layout_5m" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/uikit_color_333333_e6e6e6" android:id="@id/tv_frequency_5m" android:padding="@dimen/margin_padding_16" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/iv_frequency_5m" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_fav_select" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/margin_padding_15" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <View android:background="@color/split_line_color_new" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="@dimen/margin_padding_16" android:layout_marginEnd="@dimen/margin_padding_16" />
+        <RelativeLayout android:id="@id/rl_layout_10m" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/uikit_color_333333_e6e6e6" android:id="@id/tv_frequency_10m" android:padding="@dimen/margin_padding_16" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/iv_frequency_10m" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_fav_select" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/margin_padding_15" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <View android:background="@color/split_line_color_new" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="@dimen/margin_padding_16" android:layout_marginEnd="@dimen/margin_padding_16" />
+        <RelativeLayout android:id="@id/rl_layout_30m" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/uikit_color_333333_e6e6e6" android:id="@id/tv_frequency_30m" android:padding="@dimen/margin_padding_16" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/iv_frequency_30m" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_fav_select" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/margin_padding_15" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <View android:background="@color/split_line_color_new" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="@dimen/margin_padding_16" android:layout_marginEnd="@dimen/margin_padding_16" />
+        <RelativeLayout android:id="@id/rl_layout_1h" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/uikit_color_333333_e6e6e6" android:id="@id/tv_frequency_1h" android:padding="@dimen/margin_padding_16" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/iv_frequency_1h" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_fav_select" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/margin_padding_15" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.gateio.lib.uikit.button.GTButtonV3 android:gravity="center" android:id="@id/tv_submit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_padding_40" android:layout_marginBottom="@dimen/margin_padding_40" android:text="@string/trans_qr" android:layout_marginStart="@dimen/margin_padding_20" android:layout_marginEnd="@dimen/margin_padding_20" app:uikit_buttonDimenV3="medium" app:uikit_buttonTypeV3="primary" />
+</LinearLayout>

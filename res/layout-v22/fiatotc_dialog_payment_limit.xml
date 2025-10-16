@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/uikit_dp_24" android:paddingTop="@dimen/uikit_dp_8" android:paddingRight="@dimen/uikit_dp_24" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="@dimen/uikit_dp_24"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_2_v3" android:id="@id/tips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fiatotc_payment_unable" style="@style/Uikit_font_sans_2_0_weight_400" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/limit_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/tips" />
+</RelativeLayout>

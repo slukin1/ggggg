@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/ll_chain" android:padding="@dimen/margin_padding_16" android:visibility="visible" android:minHeight="165.0dip" style="@style/match_wrap_h"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sparkhuu.klinelib.chart.view.ChainTopView android:layout_gravity="center_vertical" android:id="@id/marketchart" android:background="@color/uikit_transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="130.0dip" android:layout_weight="1.5" />
+    <LinearLayout style="@style/ww_wrap">
+        <com.gateio.gateio.view.MyRecyclerView android:id="@id/rv_chain_scatter" android:scrollbars="none" style="@style/match_wrap" />
+    </LinearLayout>
+</LinearLayout>

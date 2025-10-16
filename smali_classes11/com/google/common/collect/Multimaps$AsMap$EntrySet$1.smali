@@ -1,0 +1,122 @@
+.class Lcom/google/common/collect/Multimaps$AsMap$EntrySet$1;
+.super Ljava/lang/Object;
+.source "Multimaps.java"
+
+# interfaces
+.implements Lcom/google/common/base/Function;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/google/common/collect/Multimaps$AsMap$EntrySet;->iterator()Ljava/util/Iterator;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lcom/google/common/base/Function<",
+        "TK;",
+        "Ljava/util/Collection<",
+        "TV;>;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic this$1:Lcom/google/common/collect/Multimaps$AsMap$EntrySet;
+
+
+# direct methods
+.method constructor <init>(Lcom/google/common/collect/Multimaps$AsMap$EntrySet;)V
+    .locals 0
+
+    .line 1
+    .line 2
+    iput-object p1, p0, Lcom/google/common/collect/Multimaps$AsMap$EntrySet$1;->this$1:Lcom/google/common/collect/Multimaps$AsMap$EntrySet;
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 6
+    return-void
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+.end method
+
+
+# virtual methods
+.method public bridge synthetic apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+
+    .line 1
+    invoke-virtual {p0, p1}, Lcom/google/common/collect/Multimaps$AsMap$EntrySet$1;->apply(Ljava/lang/Object;)Ljava/util/Collection;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public apply(Ljava/lang/Object;)Ljava/util/Collection;
+    .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TK;)",
+            "Ljava/util/Collection<",
+            "TV;>;"
+        }
+    .end annotation
+
+    .line 2
+    iget-object v0, p0, Lcom/google/common/collect/Multimaps$AsMap$EntrySet$1;->this$1:Lcom/google/common/collect/Multimaps$AsMap$EntrySet;
+
+    iget-object v0, v0, Lcom/google/common/collect/Multimaps$AsMap$EntrySet;->this$0:Lcom/google/common/collect/Multimaps$AsMap;
+
+    invoke-static {v0}, Lcom/google/common/collect/Multimaps$AsMap;->access$200(Lcom/google/common/collect/Multimaps$AsMap;)Lcom/google/common/collect/Multimap;
+
+    move-result-object v0
+
+    invoke-interface {v0, p1}, Lcom/google/common/collect/Multimap;->get(Ljava/lang/Object;)Ljava/util/Collection;
+
+    move-result-object p1
+
+    return-object p1
+.end method

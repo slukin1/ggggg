@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl" style="@style/match_wrap">
+        <TextView android:textSize="16.0sp" android:textColor="@color/uikit_text_1_v3" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:includeFontPadding="false" android:layout_marginStart="16.0dip" style="@style/Uikit_font_sans_2_0_weight_700" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_below="@id/tv_title" android:layout_marginHorizontal="16.0dip">
+            <com.gateio.lib.uikit.text.SpecialPairsNameView android:textSize="12.0sp" android:textColor="@color/uikit_text_1_v3" android:id="@id/tv_contract" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Uikit_font_sans_2_0_weight_400" />
+            <com.gateio.lib.uikit.tag.GTTagV3 android:id="@id/tv_side" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4.0dip" app:uikit_tagSizeV3="tag16" />
+            <com.gateio.common.view.CornerTextView android:textSize="10.0sp" android:textColor="@color/uikit_text_2_v3" android:id="@id/tvSmartMarket" android:background="@color/uikit_cmpt_11_v3" android:paddingLeft="4.0dip" android:paddingTop="2.0dip" android:paddingRight="4.0dip" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/exchange_smart_market" android:layout_marginStart="4.0dip" android:paddingHorizontal="4.0dip" android:paddingVertical="2.0dip" app:radius="2.0dip" style="@style/Uikit_font_sans_2_0_weight_400" />
+            <com.gateio.lib.uikit.tag.GTTagV3 android:id="@id/tv_order_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4.0dip" app:uikit_tagSizeV3="tag16" app:uikit_tagTextV3="" app:uikit_tagTypeV3="gray" />
+            <com.gateio.lib.uikit.tag.GTTagV3 android:id="@id/tv_margin_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4.0dip" app:uikit_tagSizeV3="tag16" app:uikit_tagTypeV3="gray" />
+            <com.gateio.lib.uikit.tag.GTTagV3 android:id="@id/tv_leverage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4.0dip" app:uikit_tagSizeV3="tag16" app:uikit_tagTypeV3="gray" />
+        </LinearLayout>
+        <com.gateio.uiComponent.GateIconFont android:textSize="16.0sp" android:textColor="@color/uikit_icon_3_v3" android:id="@id/iv_close" android:paddingTop="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View android:id="@id/view_line" android:background="@color/uikit_divider_2_v3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="12.0dip" />
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_root" android:background="@drawable/bg_item_wallet_shadow" android:layout_margin="4.0dip" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView app:cardBackgroundColor="@color/uikit_transparent" app:cardCornerRadius="5.0dip" app:cardElevation="0.0dip" style="@style/match_match">
+        <LinearLayout android:gravity="center" android:background="@mipmap/icon_point_bg" style="@style/match_match">
+            <View android:layout_weight="1.6" style="@style/match_ww" />
+            <TextView android:id="@id/tv_point_title" android:background="@drawable/shape_point_gt" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:paddingStart="@dimen/margin_padding_16" android:paddingEnd="@dimen/margin_padding_16" style="@style/tv_user_white_12" />
+            <View android:layout_weight="1.0" style="@style/match_ww" />
+            <LinearLayout android:gravity="center_vertical" style="@style/wrap_wrap_h">
+                <TextView android:textColor="@color/uikit_color_333333_e6e6e6" android:text="@string/point_sj" style="@style/tv_user_gray_12" />
+                <TextView android:textStyle="bold" android:textColor="@color/uikit_color_333333_e6e6e6" android:id="@id/tv_point_amount" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" style="@style/tv_user_black_22" />
+                <TextView android:textColor="@color/uikit_color_333333_e6e6e6" android:text="USDT" style="@style/tv_user_gray_12" />
+            </LinearLayout>
+            <View android:layout_weight="1.6" style="@style/match_ww" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <ImageView android:id="@id/iv_point_select" android:src="@mipmap/icon_point_select" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" style="@style/wrap_wrap" />
+    <ImageView android:id="@id/iv_point_select2" android:src="@drawable/shape_point_item" style="@style/match_match" />
+</RelativeLayout>

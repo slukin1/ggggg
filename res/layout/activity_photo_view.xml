@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/layout_main_header" />
+    <com.github.chrisbanes.photoview.PhotoView android:id="@id/photo_view" android:layout_below="@id/layout_header" style="@style/match_match" />
+    <com.gateio.common.view.PercentProgressBar android:id="@id/photo_progress" android:focusable="true" android:clickable="true" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_centerInParent="true" app:percentTextColor="@color/uikit_white" app:percentTextSize="@dimen/text_size_10" app:progressFrontColor="@color/uikit_color_primary" app:progressWidth="2.0dip" />
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_padding_32" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true">
+        <ImageView android:id="@id/iv_fav_add" android:background="@drawable/bg_live_chat" android:padding="8.0dip" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@mipmap/ic_fav_add" />
+        <ImageView android:id="@id/iv_fav_save" android:background="@drawable/bg_live_chat" android:padding="8.0dip" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@mipmap/ic_fav_save" android:layout_marginStart="@dimen/margin_padding_16" />
+    </LinearLayout>
+</RelativeLayout>

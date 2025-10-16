@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="UiKit_font_sans_5_0_style">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="fontFamily">sans-serif</item>
+    </style>
+    <style name="Uikit_font_sans_5_0_weight_400">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="fontFamily">sans-serif</item>
+        <item name="fontWeight">400</item>
+    </style>
+    <style name="Uikit_font_sans_5_0_weight_500">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="fontWeight">500</item>
+    </style>
+    <style name="Uikit_font_sans_5_0_weight_600">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="fontWeight">600</item>
+    </style>
+    <style name="Uikit_font_sans_5_0_weight_700">
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="fontFamily">sans-serif</item>
+        <item name="fontWeight">700</item>
+    </style>
+</resources>

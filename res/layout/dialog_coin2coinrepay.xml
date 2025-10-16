@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gateio.common.view.CornerRelativeLayout android:background="@color/uikit_color_ffffff_111f31" android:padding="@dimen/margin_padding_16" app:left_top_radis="15.0dip" app:right_top_radis="15.0dip" style="@style/match_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/rl_title" style="@style/match_wrap">
+        <TextView android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_cancel" android:text="@string/user_qx" android:layout_alignParentEnd="true" style="@style/tv_user_white_14" />
+        <RadioGroup android:orientation="horizontal" android:layout_centerVertical="true" android:layout_toStartOf="@id/tv_cancel" style="@style/match_wrap">
+            <RadioButton android:textSize="18.0sp" android:textColor="@color/selector_black_grey" android:gravity="center" android:id="@id/alert_dialog_title_add" android:checked="true" android:button="@null" android:text="@string/futures_bail_add" style="@style/wrap_wrap" />
+        </RadioGroup>
+    </RelativeLayout>
+    <CheckBox android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/cb_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:checked="false" android:text="@string/trans_qb" android:layout_below="@id/rl_title" android:layout_marginStart="10.0dip" android:layout_alignParentEnd="true" style="@style/margin_transfer_check_box" />
+    <LinearLayout android:id="@id/ll_bail_add" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="8.0dip" android:layout_below="@id/cb_all" style="@style/ll_funding3">
+        <EditText android:textStyle="bold" android:gravity="center_vertical" android:id="@id/et_bail_add" android:layout_width="0.0dip" android:hint="@string/hint_repay_amount" android:layout_weight="1.0" android:paddingStart="0.0dip" style="@style/ed_funding3" />
+        <TextView android:textStyle="bold" android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/et_bail_coin" android:text="---" android:layout_marginEnd="7.0dip" style="@style/tv_user_white_12" />
+    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/ll_content_value" android:background="@drawable/bg_radios_3_fafafa_2b364d" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_below="@id/ll_bail_add">
+        <TextView android:textColor="@color/color_999999_7c848d" android:id="@id/tv_bail_label" android:text="@string/margin_loan_yhbx" style="@style/tv_user_black_12" />
+        <TextView android:textStyle="bold" android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_repay_total" android:text="0.00" android:layout_alignParentEnd="true" style="@style/tv_user_black_14" />
+        <com.gateio.lib.uikit.text.GTDashTextView android:textColor="@color/color_999999_7c848d" android:id="@id/tv_ratio_label" android:layout_marginTop="8.0dip" android:text="@string/asset_ky" android:layout_below="@id/tv_bail_label" app:tips="@string/uikit_availableUpgradeTooltip" app:title="@string/title_alert_ts" style="@style/tv_user_black_12" />
+        <TextView android:textStyle="bold" android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_cash" android:text="0.00" android:layout_alignTop="@id/tv_ratio_label" android:layout_alignParentEnd="true" style="@style/tv_user_black_14" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_newrisk" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/ll_content_value">
+        <View android:id="@id/v_line" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" style="@style/view_line_v_new" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/uikit_color_333333_e7e9ea" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/coin2coin_yghkhzyl" android:layout_below="@id/v_line" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/uikit_color_333333_e7e9ea" android:id="@id/tv_risk_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:layout_below="@id/v_line" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_below="@id/rl_newrisk">
+        <com.gateio.common.view.CornerLinearLayout android:orientation="horizontal" android:background="@color/color_10_e93a3d" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="8.0dip" app:radius="4.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_warning" />
+            <TextView android:textColor="@color/color_e93a3d" android:id="@id/warning_risklimit" android:text="@string/warning_coin2coin_repayed" android:layout_marginStart="4.0dip" style="@style/tv_user_black_12" />
+        </com.gateio.common.view.CornerLinearLayout>
+    </RelativeLayout>
+    <com.gateio.common.view.CornerTextView android:textSize="18.0sp" android:textColor="@color/uikit_dialog_ok_color" android:gravity="center" android:id="@id/tv_confirm" android:background="@color/uikit_color_2354e6" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:text="@string/margin_loan_ljhk" android:layout_below="@id/rl_seekbar" app:radius="6.0dip" />
+</com.gateio.common.view.CornerRelativeLayout>

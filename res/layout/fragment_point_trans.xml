@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/bg_wallet" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <net.lucode.hackware.magicindicator.MagicIndicator android:layout_gravity="center_horizontal" android:id="@id/magic_indicator" android:layout_height="48.0dip" android:paddingStart="@dimen/margin_padding_8" style="@style/match_wrap" />
+    <View style="@style/view_line_v2" />
+    <com.gateio.common.view.CustomViewpager android:id="@id/viewpager" style="@style/match_match" />
+</LinearLayout>

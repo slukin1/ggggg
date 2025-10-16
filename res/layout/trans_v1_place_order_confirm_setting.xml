@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gateio.lib.uikit.cell.GTCellV5 android:id="@id/cell_limit_order" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/trans_xjd" app:uikit_cellSwitchSizeV5="small" />
+    <com.gateio.lib.uikit.cell.GTCellV5 android:id="@id/cell_market_order" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/trans_sjd" app:uikit_cellSwitchSizeV5="small" />
+    <com.gateio.lib.uikit.cell.GTCellV5 android:id="@id/cell_conditional" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/exchange_conditional" app:uikit_cellSwitchSizeV5="small" />
+    <com.gateio.lib.uikit.cell.GTCellV5 android:id="@id/cell_adavanced_limit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/trans_v5_ice_order_advanced_limited" app:uikit_cellSwitchSizeV5="small" />
+    <com.gateio.lib.uikit.cell.GTCellV5 android:id="@id/cell_twap" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/exchange_twap" app:uikit_cellSwitchSizeV5="small" />
+    <com.gateio.lib.uikit.cell.GTCellV5 android:id="@id/cell_sl_tp_oco" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/trans_v1_sl_tp" app:uikit_cellSwitchSizeV5="small" />
+    <com.gateio.lib.uikit.cell.GTCellV5 android:id="@id/cell_trail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/trans_v1_trailing_stop" app:uikit_cellSwitchSizeV5="small" />
+</LinearLayout>

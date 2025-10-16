@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/uikit_ll_alert_bottom" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/uikit_text_size_14" android:textColor="@color/uikit_text_primary_v5" android:id="@id/tv_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Uikit_font_sans_5_0_weight_500" />
+    <com.gateio.uiComponent.GateIconFont android:textSize="@dimen/uikit_text_size_12" android:textColor="@color/uikit_icon_primary_v5" android:layout_gravity="center_vertical" android:id="@id/iv_bottom_icon" android:layout_width="@dimen/uikit_dp_12" android:layout_height="@dimen/uikit_dp_12" android:text="" android:layout_marginStart="@dimen/uikit_dp_4" />
+</LinearLayout>

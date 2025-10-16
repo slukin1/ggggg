@@ -1,0 +1,95 @@
+.class public abstract Ljumio/dui/v;
+.super Ljumio/dui/w0;
+.source "SourceFile"
+
+
+# static fields
+.field public static final b:Lcom/jumio/defaultui/view/scan/scanstates/IDScanState$Companion;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 1
+    .line 2
+    new-instance v0, Lcom/jumio/defaultui/view/scan/scanstates/IDScanState$Companion;
+
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-direct {v0, v1}, Lcom/jumio/defaultui/view/scan/scanstates/IDScanState$Companion;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    .line 7
+    .line 8
+    sput-object v0, Ljumio/dui/v;->b:Lcom/jumio/defaultui/view/scan/scanstates/IDScanState$Companion;
+
+    .line 9
+    return-void
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljumio/dui/w0;-><init>()V
+
+    .line 4
+    return-void
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+.end method

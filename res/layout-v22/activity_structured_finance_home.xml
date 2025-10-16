@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/color_f7f7f7_061325" style="@style/match_match"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/titleView" layout="@layout/layout_header_normal" />
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/refresh" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/titleView" app:srlEnableLoadMore="false">
+        <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include android:id="@id/menu" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/view_structured_finance_home_menu" />
+                <cn.bingoogolapple.bgabanner.BGABanner android:id="@id/top_sale_banner" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="250.0dip" android:layout_marginTop="@dimen/margin_padding_20" app:banner_isNeedShowIndicatorOnOnlyOnePage="true" app:banner_numberIndicatorBackground="@android:color/transparent" app:banner_pointContainerBackground="@android:color/transparent" app:banner_pointDrawable="@drawable/structured_finance_indicator_selector" />
+                <include android:id="@id/top_new" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_padding_16" android:layout_marginTop="@dimen/margin_padding_16" android:layout_marginRight="@dimen/margin_padding_16" android:layout_marginHorizontal="@dimen/margin_padding_16" layout="@layout/view_structured_finance_home_top_new" />
+                <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_padding_16" android:layout_marginTop="@dimen/margin_padding_8" android:layout_marginRight="@dimen/margin_padding_16" android:layout_marginBottom="@dimen/margin_padding_20" android:layout_marginHorizontal="@dimen/margin_padding_16" layout="@layout/view_structured_finance_home_top_annual_rate" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
